@@ -13,7 +13,7 @@ Learn how to get your images ready for ingestion into pre-trained models or as t
 * RGB to BRG
 * image prep for Caffe2 ingestion
 
-[Browse the IPython Tutorial](https://github.com/caffe2/caffe2/blob/master/caffe2/python/tutorials/Image_Pre-Processing_Pipeline.ipynb)
+[Browse the IPython Tutorial](https://github.com/caffe2/tutorials/Image_Pre-Processing_Pipeline.ipynb)
 
 In this tutorial we're going to look at how we can load in images from a local file or a URL which you can then utilize in other tutorials or examples. Also, we're going to go in depth on the kinds of preprocessing that is necessary to utilize Caffe2 with images.
 
