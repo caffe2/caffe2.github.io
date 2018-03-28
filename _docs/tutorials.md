@@ -12,7 +12,7 @@ permalink: /docs/tutorials.html
 First download the tutorials source.
 
 ```bash
-git clone --recursive https://github.com/caffe2/caffe2 caffe2_tutorials
+git clone --recursive https://github.com/caffe2/tutorials caffe2_tutorials
 ```
 
 To run the tutorials you will need some third-party libraries, including [ipython-notebooks](http://jupyter.org/install.html) and [matplotlib](http://matplotlib.org/users/installing.html). You can install everything you'll need with the following command.
@@ -104,11 +104,11 @@ There are example scripts that can be found in [/caffe2/python/examples](https:/
 
 New to Caffe and Deep Learning? Start here and find out more about the different models and datasets available to you.
 
-#### [Loading Pre-trained Models](https://github.com/caffe2/tutorials/Loading_Pretrained_Models.ipynb)
+#### [Loading Pre-trained Models](https://github.com/caffe2/tutorials/blob/master/Loading_Pretrained_Models.ipynb)
 
 Take advantage of the Model Zoo and grab some pre-trained models and take them for a test drive. This tutorial has a set of different models that are ready to go and will show you the basic steps for prepping them and firing up your neural net. Then you can throw some images or other tests at them and see how they perform.
 
-#### [Image Pre-Processing Pipeline](https://github.com/caffe2/tutorials/Image_Pre-Processing_Pipeline.ipynb)
+#### [Image Pre-Processing Pipeline](https://github.com/caffe2/tutorials/blob/master/Image_Pre-Processing_Pipeline.ipynb)
 
 Learn how to get your images ready for ingestion into pre-trained models or as test images against other datasets. From cell phones to web cams to new medical imagery you will want to consider your image ingestion pipeline and what conversions are necessary for both speed and accuracy during any kind of image classification.
 
@@ -128,7 +128,7 @@ Get introduced to Caffe2 and how you can translate your old Caffe models to Caff
 
 This follow-along tutorial starts you off with blobs, the Caffe2 workspace, and tensors. It covers nets and operators and how to build a simple model and execute it.
 
-#### [Basics of Caffe2 - Workspaces, Operators, and Nets](https://github.com/caffe2/tutorials/Basics.ipynb)
+#### [Basics of Caffe2 - Workspaces, Operators, and Nets](https://github.com/caffe2/tutorials/blob/master/Basics.ipynb)
 
 This IPython tutorial introduces a few basic Caffe2 components:
 
@@ -144,7 +144,7 @@ Another follow-along tutorial that introduces `brew`, an easy to use API for cre
 * brew and arg_scope
 * Making custom helper functions
 
-#### [Toy Regression - Plotting Lines & Random Data](https://github.com/caffe2/tutorials/Toy_Regression.ipynb)
+#### [Toy Regression - Plotting Lines & Random Data](https://github.com/caffe2/tutorials/blob/master/Toy_Regression.ipynb)
 
 This tutorial shows how to use more Caffe2 features with simple linear regression as the theme.
 
@@ -155,17 +155,17 @@ This tutorial shows how to use more Caffe2 features with simple linear regressio
 
 ### Intermediate Tutorials
 
-#### [MNIST - Handwriting Recognition](https://github.com/caffe2/tutorials/MNIST.ipynb)
+#### [MNIST - Handwriting Recognition](https://github.com/caffe2/tutorials/blob/master/MNIST.ipynb)
 
 This tutorial creates a small convolutional neural network (CNN) that can identify handwriting. The train and test the CNN, we use handwriting imagery from the MNIST dataset. This is a collection of 60,000 images of 500 different people's handwriting that is used for training your CNN. Another set of 10,000 test images (different from the training images) is used to test the accuracy of the resulting CNN.
 
-#### [Create Your Own Dataset](https://github.com/caffe2/tutorials/create_your_own_dataset.ipynb)
+#### [Create Your Own Dataset](https://github.com/caffe2/tutorials/blob/master/create_your_own_dataset.ipynb)
 
 Try your hand at importing and massaging data so it can be used in Caffe2. This tutorial uses the Iris dataset.
 
 ### Advanced Tutorials
 
-#### [Multi-GPU Training with Caffe2](https://github.com/caffe2/tutorials/Multi-GPU_Training.ipynb)
+#### [Multi-GPU Training with Caffe2](https://github.com/caffe2/tutorials/blob/master/Multi-GPU_Training.ipynb)
 
 For this tutorial we will explore multi-GPU training. We will show you a basic structure for using the `data_parallel_model` to quickly process a subset of the ImageNet database along the same design as the [ResNet-50 model](https://arxiv.org/abs/1512.03385). We will also get a chance to look under the hood at a few of Caffe2's C++ operators that efficiently handle your image pipeline, build a ResNet model, train on a single GPU and show some optimizations that are included with `data_parallel_model`, and finally we'll scale it up and show you how to parallelize your model so you can run it on multiple GPUs.
 
