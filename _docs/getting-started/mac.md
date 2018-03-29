@@ -16,8 +16,6 @@ conda install -c caffe2 caffe2
 
 NOTE: This will install Caffe2 and all of its required dependencies into the current conda environment. We strongly suggest that you create a new conda environment and install Caffe2 into that. A conda environment is like a separate python installation and so won't have problems with your other conda environments. You can learn more about conda environments [here](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
-To see what libraries these Caffe2 conda packages are built against, see `conda/no_cuda/meta.yaml`. If you want to use different libraries then you must build from  source.
-
 ### Prebuilt Caffe2 Python Wheel
 
 No wheel is available at this time.

@@ -34,8 +34,6 @@ conda install -c caffe2 caffe2-cuda8.0-cudnn7
 
 NOTE: This will install Caffe2 and all of its required dependencies into the current conda environment. We strongly suggest that you create a new conda environment and install Caffe2 into that. A conda environment is like a separate python installation and so won't have problems with your other conda environments. You can learn more about conda environments [here](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
-To see what libraries these Caffe2 conda packages are built against, see `conda/cuda/meta.yaml` for the CUDA builds and `conda/no_cuda/meta.yaml` for the CPU only build. If you want to use different libraries then you must build from  source.
-
 
 <block class="ubuntu cloud" />
 You can easily try out Caffe2 by using the Cloud services. Caffe2 is available as AWS (Amazon Web Services) Deep Learning AMI and Microsoft Azure Virtual Machine offerings. You can run run Caffe2 in the Cloud at any scale.

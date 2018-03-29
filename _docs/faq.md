@@ -10,6 +10,7 @@ permalink: /docs/faq.html
 * [How do I use Caffe2 with my GPU?](#how-do-i-use-caffe2-with-my-gpu)
 * [What are all of these optional libraries used for?](#what-are-all-of-these-optional-libraries-used-for)
 * [Why do I get import errors in Python when I try to use Caffe2?](#why-do-i-get-import-errors-in-python-when-i-try-to-use-caffe2)
+  * [How do Python installations work?](#null__how-do-python-installations-work)
 * [Why isn't Caffe2 working as expected in Anaconda?](#why-is-caffe2-not-working-as-expected-in-anaconda)
 * [How do I fix error messages that are protobuf related?](#how-do-i-fix-error-messages-that-are-protobuf-related)
 * [How can I find a file, library, or package on my computer?](#how-can-i-find-a-file-library-or-package-on-my-computer)
@@ -69,11 +70,20 @@ Caffe2 can has many optional dependencies, which extend Caffe2's core functional
 
 ## Why do I get import errors in Python when I try to use Caffe2?
 
+You will get errors like ```ModuleNotFoundError: No module named <packagename>``` if the Python interpreter that you are running can not find the module that you are trying to import (a Python module is a Python source file or a directory of Python source files). This is always caused by one of the following problems
+
+1. The needed package is not installed
+2. The needed package is installed in the wrong place
+3. The wrong Python is being used
+
 If you are trying to run a tutorial, then make sure you have installed all of the dependencies at the top of the [tutorials](tutorials.html) page. If you are getting an import error on `caffe2` itself, then you might have to set PYTHONPATH, but should understand the following first.
+
+
+### How do Python installations work?
 
 A Python installation consists of a Python executable (just called `python`) and a corresponding set of directories:
 
-* **lib/** where c and c++ libraries are found
+* **lib/** where c and c++ libraries are found (.so and .a extensions on Linux, .dylib extensions on Mac)
 * **lib/python2.7/site-packages/** where installed Python modules are found (Python modules are just Python source files)
 * **include/** where headers for c and c++ libraries are found
 * **bin/** where the Python executable itself is found
@@ -97,9 +107,11 @@ Your python installation looks like this:
         +-- <other installed python modules>
 ```
 
-Your python root is at "$(which python)/../.." . If you are using a conda environment then it will be `<Anaconda root directory>/envs/<conda env name>` instead of `/usr/local/` . If you are using Anaconda but not an environment, then it will be your Anaconda root directory instead of `/usr/local/`.
+There may be multiple Python installations on your machine, but only one should be active at a time. Your current Python root is at "$(which python)/../.." . If you are using a conda environment then it will be `<Anaconda root directory>/envs/<conda env name>` instead of `/usr/local/` . If you are using Anaconda but not an environment, then it will be your Anaconda root directory instead of `/usr/local/`.
 
-When Python imports anything, it first looks in its own site-packages directory and then looks in all directories in the PYTHONPATH environment variable. If you are having trouble importing Caffe2 in python (errors such as "ModuleNotFoundError"), then:
+> Note: `pip` will only install into the current environment if `which pip` is in the same directory as `which python`. `conda` will only install into the current environment if `which conda` is in the same directory as `which python`. Otherwise, these tools will install into unexpected places that will probably not work correctly.
+
+When Python imports anything, it first looks in its own site-packages directory and then looks in all directories in the PYTHONPATH environment variable. If you are having trouble importing Caffe2 in python, then:
 
 1. Make sure that you are using the same python that was used to build Caffe2. If you installed or uninstalled a new version of python or Anaconda since building Caffe2 then your python may have changed. If you are using Anaconda, make sure you are using the same conda environment that was used to build Caffe2.
 2. If Caffe2 is installed into the correct site-packages (the directory structure looks like it does above) and python can still not import Caffe2, then add the current python root to PYTHONPATH by running `export PYTHONPATH="${PYTHONPATH}:$(which python)/../..` and try again.
@@ -109,9 +121,7 @@ If you overrode the default CMAKE_INSTALL_PREFIX when you built Caffe2, then you
 
 ## Why is Caffe2 not working as expected in Anaconda?
 
-Also answers **How do Anaconda Python installations work**
-
-If you use Anaconda then your python installation is a little more complicated and will look more like
+First read [the above section](#null__how-do-python-installations-work). If you use Anaconda then your python installation is a little more complicated and will look more like
 
 ```
 ~/anaconda2/
@@ -142,29 +152,50 @@ Notice that there is still a complete Python installation in the root Anaconda d
 
 ## How do I fix error messages that are Protobuf related?
 
-Protobuf version mismatch is a common problem. Having different protobuf versions often leads to incompatible headers and libraries.
+Protobuf version mismatch is a common problem. Having different protobuf versions often leads to incompatible headers and libraries. **Upgrading to the latest protobuf problem is not the solution.** The version of Protobuf used during compile time must match the one used at runtime.
 
-Run these commands to see which protobuf is your default (if you are using conda environments, then the current conda environment affects the output of these commands).
+Run these commands to see which Protobuf version is currently visible on your machine.
 
 ```bash
 which protoc
 protoc --version
+find $(dirname $(which protoc))/../lib -name 'libproto*'
 ```
 
-Run this commands to find other protobuf installations that may be causing problems.
+Now find what Protobuf version your Caffe2 installation expects. First [find your Caffe2 library](#how-can-i-find-a-file-library-or-package-on-my-computer), which can have several possible locations depending on your install environment. Then run the following command with ```<your libcaffe2>``` replaced with the location of your Caffe2 library.
 
-```bash
-find /usr -name libprotobuf.dylib 2>/dev/null
+For Linux: ```ldd <your libcaffe2>```
+For macOS: ```otool -L <your libcaffe2>```
+
+You need the Protobuf versions to match.
+
+For example, on a Mac you might find that your current visible Protobuf is:
+
+```
+$ which protoc
+/usr/local/bin/protoc
+$ protoc --version
+libprotoc 3.5.1
+$ otool -L /usr/local/lib/libprotobuf.dylib
+/usr/local/lib/libprotobuf.dylib:
+	/usr/local/opt/protobuf/lib/libprotobuf.15.dylib (compatibility version 16.0.0, current version 16.1.0)
+	/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.11)
+	/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 400.9.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.0.0)
 ```
 
-If you can't figure out what's wrong, then the easiest way to fix protobuf problems is to uninstall all protobuf versions and then reinstall the one that you want to use. For example, if you want to use the protobuf in Anaconda's conda-forge, you could try
+but that your Caffe2 installation expects
 
-```bash
-brew uninstall protobuf
-pip uninstall protobuf
-conda uninstall -y protobuf
-conda install -y -c conda-forge protobuf
 ```
+$ otool -L /usr/local/lib/libcaffe2.dylib
+@rpath/libcaffe2.dylib (compatibility version 0.0.0, current version 0.0.0)
+	@rpath/libprotobuf.14.dylib (compatibility version 15.0.0, current version 15.0.0)
+	/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 400.9.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.0.0)
+```
+
+This example would lead to Protobuf errors, as `libprotobuf.14.dylib` which Caffe2 expects is not the same as `libprotobuf.15.dylib` which exists on the machine. In this example, the Protobuf on the machine will have to be downgraded to 3.4.1.
+
 
 ## How can I find a file, library, or package on my computer?
 
