@@ -5,11 +5,11 @@ layout: docs
 permalink: /docs/zoo.html
 ---
 
-> [Caffe2's Model Zoo](https://github.com/caffe2/caffe2/wiki/Model-Zoo) is maintained by project contributors on the [GitHub Wiki](https://github.com/caffe2/caffe2/wiki/Model-Zoo). Head over there for the full list.
+> [Caffe2's Model Zoo](https://github.com/caffe2/models) is maintained by project contributors on this [GitHub repository](https://github.com/caffe2/models). Head over there for the full list.
 
 ## ![model zoo icon ](../static/images/landing-puzzle.png) Model Zoo Overview
 
-If you want to get your hands on pre-trained models, you are in the right place! One of the greatest things about Caffe was the vibrant community of developers and researchers that shared their work in the [original Caffe model zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo). In [Caffe2's Model Zoo](https://github.com/caffe2/caffe2/wiki/Model-Zoo) you will not only find a selection of original Caffe models, but we also provide a set of models here that are ready for use with Caffe2.
+If you want to get your hands on pre-trained models, you are in the right place! One of the greatest things about Caffe was the vibrant community of developers and researchers that shared their work in the [original Caffe model zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo). In [Caffe2's Model Zoo](https://github.com/caffe2/models) you will not only find a selection of original Caffe models, but we also provide a set of models here that are ready for use with Caffe2.
 
 You can use these models to quickly build demo applications and explore deep learning capabilities without doing any time-consuming and resource-intensive training. You can recreate and evaluate the results from other's projects, hack together new uses, or improve upon the previously posted models. This is the place for sharing too. If you've created something interesting, please create a Github [Issue](https://github.com/caffe2/caffe2/issues) and share your project, so after a community evaluation, we can share it here in the Model Zoo!
 
@@ -23,7 +23,7 @@ If you have existing Caffe models or have been using Caffe and want a quick jump
 
 ### Submitting Your Model to Caffe2's Model Zoo
 
-Please file an [Issue](https://github.com/caffe2/caffe2/issues) to have your project and related models added to the zoo, or if you're already a contributor to the project you can add your entry directly to the [wiki page](https://github.com/caffe2/caffe2/wiki/Model-Zoo).
+Please file an [Issue](https://github.com/caffe2/caffe2/issues) to have your project and related models added to the zoo, or if you're already a contributor to the project you can add your entry directly to the [model zoo repo](https://github.com/caffe2/models).
 
 ### Downloading and Importing Caffe2 Models
 

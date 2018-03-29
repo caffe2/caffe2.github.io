@@ -106,7 +106,7 @@ New to Caffe and Deep Learning? Start here and find out more about the different
 
 #### [Loading Pre-trained Models](https://github.com/caffe2/tutorials/blob/master/Loading_Pretrained_Models.ipynb)
 
-Take advantage of the Model Zoo and grab some pre-trained models and take them for a test drive. This tutorial has a set of different models that are ready to go and will show you the basic steps for prepping them and firing up your neural net. Then you can throw some images or other tests at them and see how they perform.
+Take advantage of the [Model Zoo](#zoo.html) and grab some pre-trained models and take them for a test drive. This tutorial has a set of different models that are ready to go and will show you the basic steps for prepping them and firing up your neural net. Then you can throw some images or other tests at them and see how they perform.
 
 #### [Image Pre-Processing Pipeline](https://github.com/caffe2/tutorials/blob/master/Image_Pre-Processing_Pipeline.ipynb)
 
@@ -171,9 +171,9 @@ For this tutorial we will explore multi-GPU training. We will show you a basic s
 
 ### Write Your Own Tutorial!
 
-Have a great tutorial that you've created or have some ideas? Let's chat about it - create an Issue to discuss it on Github. The project's [Tutorials wiki](https://github.com/caffe2/caffe2/wiki/Tutorials) has more info or you can go straight to [Create a Pull Request](https://github.com/caffe2/caffe2/issues) with your new tutorial.
+Have a great tutorial that you've created or have some ideas? Let's chat about it - create an Issue to discuss it on Github. The project's [Tutorials repository](https://github.com/caffe2/tutorials) has more info or you can go straight to [Create a Pull Request](https://github.com/caffe2/caffe2/issues) with your new tutorial.
 
-[Would you like to know more?](https://github.com/caffe2/caffe2/wiki/Tutorials).
+[Would you like to know more?](https://github.com/caffe2/tutorials).
 
 ### Operators
 
