@@ -152,7 +152,7 @@ Notice that there is still a complete Python installation in the root Anaconda d
 
 ## How do I fix error messages that are Protobuf related?
 
-Protobuf version mismatch is a common problem. Having different protobuf versions often leads to incompatible headers and libraries. **Upgrading to the latest protobuf problem is not the solution.** The version of Protobuf used during compile time must match the one used at runtime.
+Protobuf version mismatch is a common problem. Having different protobuf versions often leads to incompatible headers and libraries. **Upgrading to the latest protobuf is not the solution.** The version of Protobuf used during compile time must match the one used at runtime.
 
 Run these commands to see which Protobuf version is currently visible on your machine.
 
