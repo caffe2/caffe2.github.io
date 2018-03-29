@@ -34,8 +34,6 @@ conda install -c caffe2 caffe2-cuda8.0-cudnn7
 
 NOTE: This will install Caffe2 and all of its required dependencies into the current conda environment. We strongly suggest that you create a new conda environment and install Caffe2 into that. A conda environment is like its own python installation that won't have library version problems with your other conda environments. You can learn more about conda environments [here](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
-To see what libraries these Caffe2 conda packages are built against, see `conda/cuda/meta.yaml` for the CUDA builds and `conda/no_cuda/meta.yaml` for the CPU only build. If you want to use different libraries then you must build from source.
-
 
 <block class="centos docker" />
 
