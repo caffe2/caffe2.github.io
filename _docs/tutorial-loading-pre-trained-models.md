@@ -53,10 +53,10 @@ Settings are in a code block below. Most of the time these should run out of the
 
 
 ```python
-# where you installed caffe2. Probably '~/caffe2' or '~/src/caffe2'.
-CAFFE2_ROOT = "~/caffe2"
+# where you installed caffe2. Probably '~/pytorch' or '~/src/pytorch'.
+CAFFE2_ROOT = "~/pytorch"
 # assumes being a subdirectory of caffe2
-CAFFE_MODELS = "~/caffe2/caffe2/python/models"
+CAFFE_MODELS = "~/pytorch/caffe2/python/models"
 # if you have a mean file, place it in the same dir as the model
 
 %matplotlib inline

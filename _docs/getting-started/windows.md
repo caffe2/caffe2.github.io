@@ -76,7 +76,7 @@ pip install flask ^
 Open up a Developer Command Prompt, find an appropriate place to clone the repo, and use this command. Or if you have GitHub Desktop, you can use that instead. If you've already forked Caffe2 or have it locally and you're using Visual Studio, skip ahead to the next step.
 
 ```
-git clone --recursive https://github.com/caffe2/caffe2.git
+git clone --recursive https://github.com/pytorch/pytorch.git
 ```
 
 Run the `Developer Command Prompt for VS 2017`, browse to the repo's `\caffe2\scripts` folder and execute:

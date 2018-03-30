@@ -19,7 +19,7 @@ Install [Automake](https://www.gnu.org/software/automake/) and [Libtool](https:/
 If you have not done so already, download the Caffe2 source code from GitHub
 
 ```
-git clone --recursive https://github.com/caffe2/caffe2.git
+git clone --recursive https://github.com/pytorch/pytorch.git
 git submodule update --init
 ```
 

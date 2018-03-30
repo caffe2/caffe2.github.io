@@ -43,10 +43,10 @@ Here you can find a tutorial with examples of downloading models from Caffe's or
 
 #### Converting Models from Caffe to Caffe2
 
- We have provided a command line python script tailor made for this purpose. It is found in Caffe2's [python folder](https://github.com/caffe2/caffe2/tree/master/caffe2/python).
+ We have provided a command line python script tailor made for this purpose. It is found in Caffe2's [python folder](https://github.com/pytorch/pytorch/tree/master/caffe2/python).
 
-* [caffe_translator.py](https://github.com/caffe2/caffe2/blob/master/caffe2/python/caffe_translator.py) - This script has built-in translators for common layers. The tutorial mentioned above implements this same script, so it may be helpful to review the tutorial to see how the script can be utilized. You can also call the script directly from command line.
-* [caffe_translator_test.py](https://github.com/caffe2/caffe2/blob/master/caffe2/python/caffe_translator_test.py) - This a large test that goes through the translation of the BVLC caffenet model, runs an example through the whole model, and verifies numerically that all the results look right. In default, it is disabled unless you explicitly want to run it.
+* [caffe_translator.py](https://github.com/pytorch/pytorch/blob/master/caffe2/python/caffe_translator.py) - This script has built-in translators for common layers. The tutorial mentioned above implements this same script, so it may be helpful to review the tutorial to see how the script can be utilized. You can also call the script directly from command line.
+* [caffe_translator_test.py](https://github.com/pytorch/pytorch/blob/master/caffe2/python/caffe_translator_test.py) - This a large test that goes through the translation of the BVLC caffenet model, runs an example through the whole model, and verifies numerically that all the results look right. In default, it is disabled unless you explicitly want to run it.
 
 Usage is:
 

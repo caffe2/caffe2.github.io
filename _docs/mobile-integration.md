@@ -106,7 +106,7 @@ This will automatically share activations where valid in the topological orderin
 
 #### Startup considerations on iOS
 
-Caffe2 uses a registry pattern for registering operator classes. The macros are in the operator registry section of core Operator, [operator.h](https://github.com/caffe2/caffe2/blob/master/caffe2/core/operator.h):
+Caffe2 uses a registry pattern for registering operator classes. The macros are in the operator registry section of core Operator, [operator.h](https://github.com/pytorch/pytorch/blob/master/caffe2/core/operator.h):
 
 ```
 // The operator registry. Since we are not expecting a great number of devices,
@@ -132,7 +132,7 @@ CAFFE_DECLARE_REGISTRY(
   CAFFE_REGISTER_CLASS(CPUOperatorRegistry, name##_ENGINE_##engine, __VA_ARGS__)
 ```
 
-  and used by, for example, [conv_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/conv_op.cc):
+  and used by, for example, [conv_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/conv_op.cc):
 
 ```
 REGISTER_CPU_OPERATOR(Conv, ConvOp<float, CPUContext>);

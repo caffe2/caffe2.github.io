@@ -10,7 +10,7 @@ There are only a few documents that explain how to use Caffe2 with C++. In this 
 
 ## 1. Things you need to prepare
 * [Visual Studio for C++ (over VC15)](https://www.visualstudio.com/downloads/)
-* [Caffe2 Sources (from GitHub)](https://github.com/caffe2/caffe2)
+* [Caffe2 Sources (from GitHub)](https://github.com/pytorch/pytorch)
 * [Google Protocol Buffer Sources (from GitHub)](https://developers.google.com/protocol-buffers/)
 * [Google Protocol Buffer Execution File for Windows (from Github)](https://github.com/google/protobuf/releases)
 

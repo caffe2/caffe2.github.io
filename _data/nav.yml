@@ -15,15 +15,15 @@
   category: blog
 
 - title: GitHub
-  href: http://github.com/caffe2/caffe2
+  href: http://github.com/pytorch/pytorch
   category: external
 
 - title: File an Issue
-  href: http://github.com/caffe2/caffe2/issues
+  href: http://github.com/pytorch/pytorch/issues
   category: external
 
 - title: Contribute
-  href: http://github.com/caffe2/caffe2/pulls
+  href: http://github.com/pytorch/pytorch/pulls
   category: external
 
 # Use external for external links not associated with the paths of the current site.

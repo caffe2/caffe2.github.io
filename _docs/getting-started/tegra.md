@@ -11,7 +11,7 @@ To install Caffe2 on NVidia's Tegra X1 platform, simply install the latest syste
 If you have not done so already, download the Caffe2 source code from GitHub.
 
 ```
-git clone --recursive https://github.com/caffe2/caffe2.git
+git clone --recursive https://github.com/pytorch/pytorch.git
 git submodule update --init
 ```
 
