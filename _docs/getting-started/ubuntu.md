@@ -6,7 +6,7 @@ We only support Anaconda packages at the moment. If you do not wish to use Anaco
 
 ### Anaconda packages
 
-We build Linux packages without CUDA support, with CUDA 9.0 support, and with CUDA 8.0 support, for both Python 2.7 and Python 3.6. These packages are built on Ubuntu 16.04, but they will probably work on Ubuntu14.04 as well (if they do not, please tell us by creating an issue on our [Github page](https://github.com/caffe2/caffe2/issues)). To install Caffe2 with Anaconda, simply activate your desired conda environment and then run one of the following commands:
+We build Linux packages without CUDA support, with CUDA 9.0 support, and with CUDA 8.0 support, for both Python 2.7 and Python 3.6. These packages are built on Ubuntu 16.04, but they will probably work on Ubuntu14.04 as well (if they do not, please tell us by creating an issue on our [Github page](https://github.com/pytorch/pytorch/issues)). To install Caffe2 with Anaconda, simply activate your desired conda environment and then run one of the following commands:
 
 > If your gcc version is older than 5 (less than 5) (you can run ```gcc --version``` to find out), then append '-gcc4.8' to the package name. For example, run `conda install -c caffe2 caffe2-gcc4.8` or `conda install -c caffe2 caffe2-cuda9.0-cudnn7-gcc4.8` instead of the commands below.
 
@@ -93,7 +93,7 @@ sudo apt-get install -y --no-install-recommends libgflags-dev
 
 ```bash
 # Clone Caffe2's source code from our Github repository
-git clone --recursive https://github.com/caffe2/caffe2.git && cd caffe2
+git clone --recursive https://github.com/pytorch/pytorch.git && cd caffe2
 git submodule update --init
 
 # Create a directory to put Caffe2's build files in

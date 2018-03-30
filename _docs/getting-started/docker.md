@@ -105,7 +105,7 @@ If you want to get in the image and play around with Python or C++ directly, jus
 docker run -it mydocker-repo/mytag /bin/bash
 ```
 
-Another test that you can use to put Caffe2 through its paces, including GPU support, is by calling one of the [operator tests](https://github.com/caffe2/caffe2/blob/master/caffe2/python/operator_test/relu_op_test.py). Here's a [sample output](https://gist.github.com/aaronmarkham/dcdb284065c9ea4569214bcb0ca3a858).
+Another test that you can use to put Caffe2 through its paces, including GPU support, is by calling one of the [operator tests](https://github.com/pytorch/pytorch/blob/master/caffe2/python/operator_test/relu_op_test.py). Here's a [sample output](https://gist.github.com/aaronmarkham/dcdb284065c9ea4569214bcb0ca3a858).
 
 ```
 nvidia-docker run -it caffe2 python -m caffe2.python.operator_test.relu_op_test

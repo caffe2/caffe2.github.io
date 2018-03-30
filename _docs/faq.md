@@ -34,7 +34,7 @@ Caffe2 is tested on
 
 ## What languages does Caffe2 support?
 
-Caffe2 is written in C++ with a Python frontend. You can find all of the code on our [Github page](https://github.com/caffe2/caffe2).
+Caffe2 is written in C++ with a Python frontend. You can find all of the code on our [Github page](https://github.com/pytorch/pytorch).
 
 ## How do I use Caffe2 with my GPU?
 
@@ -273,7 +273,7 @@ This happens when you try to call Jupyter server directly (like in a Docker cont
 
 ## I still have a question, where can I get more help?
 
-For further issues, please post a new issue to our [issue tracker on Github](https://github.com/caffe2/caffe2/issues). 
+For further issues, please post a new issue to our [issue tracker on Github](https://github.com/pytorch/pytorch/issues). 
 
 > If your question is about an error installing Caffe2, then please include the following information in your issue:
 

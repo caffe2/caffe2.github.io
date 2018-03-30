@@ -13,7 +13,7 @@ Almost every operator will use both a .cc file for the registering of the operat
 
 If a CUDA implementation involves actual CUDA kernels it has to be named .cu so it is complied by NVCC. If it is only implementing existing CUDA libraries then we name it `_gpu.cc` to save on compilation time.
 
-We will start by describing what goes into the .cc file. As an example, consider the operator defined in [fully_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/fully_connected_op.cc):
+We will start by describing what goes into the .cc file. As an example, consider the operator defined in [fully_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/fully_connected_op.cc):
 
 
 ```cpp
@@ -29,7 +29,7 @@ REGISTER_CPU_OPERATOR(FCGradient, FullyConnectedGradientOp<float, CPUContext>);
 
 At first, the names of the operators and the corresponding gradient operator is registered with this macro; this binds the function FC whenever used in Python to the FullyConnectedOp operator, where the `float` and `CPUContext` dictate what kind of input type is expected, and what the context is; this value can be either `CPUContext` or `CUDAContext` depending on whether this is used on a CPU or GPU device.
 
-Fully Connected also has a GPU implementation that can be found in [fully_connected_op_gpu.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/fully_connected_op_gpu.cc).
+Fully Connected also has a GPU implementation that can be found in [fully_connected_op_gpu.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/fully_connected_op_gpu.cc).
 
 
 ```cpp
@@ -45,11 +45,11 @@ REGISTER_CUDA_OPERATOR(FCGradient,
 }  // namespace caffe2
 ```
 
-Note that the primary differences between this GPU implementation versus the CPU implementation is using `REGISTER_CUDA_OPERATOR` and `CUDAContext` instead of `REGISTER_CPU_OPERATOR` and `CPUContext`. Also note the inclusion of the additional header file [context_gpu.h](https://github.com/caffe2/caffe2/blob/master/caffe2/core/context_gpu.h) which is something you'll want to include for any GPU implementation.
+Note that the primary differences between this GPU implementation versus the CPU implementation is using `REGISTER_CUDA_OPERATOR` and `CUDAContext` instead of `REGISTER_CPU_OPERATOR` and `CPUContext`. Also note the inclusion of the additional header file [context_gpu.h](https://github.com/pytorch/pytorch/blob/master/caffe2/core/context_gpu.h) which is something you'll want to include for any GPU implementation.
 
 Referring back to `fully_connected_op.cc` we will look at the remainder of the file and discuss the operator schema. This is where the operator is told how many inputs and outputs are created. This section is also used to generate the documentation for the operator in the [Operators Catalog](operators_catalogue.html), so be thorough in describing the arguments and the functionality. Also note below that with `.Arg`, `.Input`, and `.Output` the last parameter is a description that is also utilized in generating documentation.
 
-**[fully_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/fully_connected_op.cc)**
+**[fully_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/fully_connected_op.cc)**
 
 ```cpp
 OPERATOR_SCHEMA(FC)
@@ -81,7 +81,7 @@ As you can see in the schema code above, this operator has 3 inputs and 1 output
 
 The schema goes on to describe a second operator, `FCGradient`.
 
-**[fully_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/fully_connected_op.cc)**
+**[fully_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/fully_connected_op.cc)**
 
 ```cpp
 OPERATOR_SCHEMA(FCGradient).NumInputs(3).NumOutputs(2, 3);
@@ -110,16 +110,16 @@ It is a very good idea to write some unit tests to verify your operator is corre
 
 [Hypothesis](http://hypothesis.readthedocs.io/) is a very useful library for property-based testing. The key idea here is to express properties of the code under test (e.g. that it passes a gradient check, that it implements a reference function, etc), and then generate random instances and verify they satisfy these properties.
 
-The main functions of interest are exposed on `HypothesisTestCase`, defined in [caffe2/python/hypothesis_test_util.py](https://github.com/caffe2/caffe2/blob/master/caffe2/python/hypothesis_test_util.py).
+The main functions of interest are exposed on `HypothesisTestCase`, defined in [caffe2/python/hypothesis_test_util.py](https://github.com/pytorch/pytorch/blob/master/caffe2/python/hypothesis_test_util.py).
 
-You should add your unit test to the folder [caffe2/caffe2/python/operator_tests/](https://github.com/caffe2/caffe2/tree/master/caffe2/python/operator_test). In that directory you can find many existing examples to work from.
+You should add your unit test to the folder [caffe2/python/operator_tests/](https://github.com/pytorch/pytorch/tree/master/caffe2/python/operator_test). In that directory you can find many existing examples to work from.
 
 The key functions are:
 
 * `assertDeviceChecks(devices, op, inputs, outputs)`: This asserts that the operator computes the same outputs, regardless of which device it is executed on.
 * `assertGradientChecks(device, op, inputs, output_, outputs_with_grads)`: This implements a standard numerical gradient checker for the operator in question.
 * `assertReferenceChecks(device, op, inputs, reference)`: This runs the reference function (effectively calling reference(\*inputs), and comparing that to the output of output.
-[hypothesis_test_util.py](https://github.com/caffe2/caffe2/blob/master/caffe2/python/hypothesis_test_util.py) exposes some useful pre-built samplers.
+[hypothesis_test_util.py](https://github.com/pytorch/pytorch/blob/master/caffe2/python/hypothesis_test_util.py) exposes some useful pre-built samplers.
 * hu.gcs - a gradient checker device (gc) and device checker devices (dc)
 * hu.gcs_cpu_only - a gradient checker device (gc) and device checker devices (dc) for CPU-only operators
 
@@ -217,4 +217,4 @@ def test_accuracy(self, prediction, labels, gc, dc):
         reference=op_ref)
 ```
 
-Don't forget to contribute by creating an [Issue](https://github.com/caffe2/caffe2/issues) and describing your operator and linking to your project. 
+Don't forget to contribute by creating an [Issue](https://github.com/pytorch/pytorch/issues) and describing your operator and linking to your project. 

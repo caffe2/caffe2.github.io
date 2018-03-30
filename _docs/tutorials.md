@@ -92,11 +92,11 @@ The IPython notebook tutorials and example scripts we have provided below will g
 
 ### Example Scripts
 
-There are example scripts that can be found in [/caffe2/python/examples](https://github.com/caffe2/caffe2/tree/master/caffe2/python/examples) that are also great resources for starting off on a project using Caffe2.
+There are example scripts that can be found in [/caffe2/python/examples](https://github.com/pytorch/pytorch/tree/master/caffe2/python/examples) that are also great resources for starting off on a project using Caffe2.
 
-* [char_rnn.py](https://github.com/caffe2/caffe2/blob/master/caffe2/python/examples/char_rnn.py): generate a recurrent convolution neural network that will sample text that you input and randomly generate text of a similar style. The [RNN and LSTM page](RNNs-and-LSTM-networks.html) has further info on this script's usage.
-* [lmdb_create_example.py](https://github.com/caffe2/caffe2/blob/master/caffe2/python/examples/lmdb_create_example.py): create an lmdb database of random image data and labels that can be used a skeleton to write your own data import
-* [resnet50_trainer.py](https://github.com/caffe2/caffe2/blob/master/caffe2/python/examples/resnet50_trainer.py): parallelized multi-GPU distributed trainer for Resnet 50. Can be used to train on imagenet data, for example. The [Synchronous SGD page](SynchronousSGD.html) has further info on this script's usage.
+* [char_rnn.py](https://github.com/pytorch/pytorch/blob/master/caffe2/python/examples/char_rnn.py): generate a recurrent convolution neural network that will sample text that you input and randomly generate text of a similar style. The [RNN and LSTM page](RNNs-and-LSTM-networks.html) has further info on this script's usage.
+* [lmdb_create_example.py](https://github.com/pytorch/pytorch/blob/master/caffe2/python/examples/lmdb_create_example.py): create an lmdb database of random image data and labels that can be used a skeleton to write your own data import
+* [resnet50_trainer.py](https://github.com/pytorch/pytorch/blob/master/caffe2/python/examples/resnet50_trainer.py): parallelized multi-GPU distributed trainer for Resnet 50. Can be used to train on imagenet data, for example. The [Synchronous SGD page](SynchronousSGD.html) has further info on this script's usage.
 
 ### Beginner Tutorials
 
@@ -171,7 +171,7 @@ For this tutorial we will explore multi-GPU training. We will show you a basic s
 
 ### Write Your Own Tutorial!
 
-Have a great tutorial that you've created or have some ideas? Let's chat about it - create an Issue to discuss it on Github. The project's [Tutorials repository](https://github.com/caffe2/tutorials) has more info or you can go straight to [Create a Pull Request](https://github.com/caffe2/caffe2/issues) with your new tutorial.
+Have a great tutorial that you've created or have some ideas? Let's chat about it - create an Issue to discuss it on Github. The project's [Tutorials repository](https://github.com/caffe2/tutorials) has more info or you can go straight to [Create a Pull Request](https://github.com/pytorch/pytorch/issues) with your new tutorial.
 
 [Would you like to know more?](https://github.com/caffe2/tutorials).
 

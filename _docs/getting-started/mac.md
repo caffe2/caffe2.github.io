@@ -38,7 +38,7 @@ For any problems, see our [troubleshooting guide](faq.html).
 > If you download the zip file from Github instead of using `git clone`, then you must run `git submodule update` before building.
 
 ```bash
-git clone --recursive https://github.com/caffe2/caffe2.git && cd caffe2
+git clone --recursive https://github.com/pytorch/pytorch.git && cd caffe2
 CONDA_INSTALL_LOCALLY=1 ./scripts/build_anaconda.sh
 ```
 
@@ -86,7 +86,7 @@ sudo -H pip install \
 
 ```bash
 # Clone Caffe2's source code from our Github repository
-git clone --recursive https://github.com/caffe2/caffe2.git && cd caffe2
+git clone --recursive https://github.com/pytorch/pytorch.git && cd caffe2
 git submodule update --init
 
 # Create a directory to put Caffe2's build files in
@@ -128,7 +128,7 @@ conda install -y \
     six
 
 # Clone Caffe2's source code from our Github repository
-cd ~ && git clone --recursive https://github.com/caffe2/caffe2.git && cd caffe2
+cd ~ && git clone --recursive https://github.com/pytorch/pytorch.git && cd caffe2
 git submodule update --init
 
 # Create a directory to put Caffe2's build files in

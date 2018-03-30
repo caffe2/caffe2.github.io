@@ -22,7 +22,7 @@
     <tab type="examples" visible="yes" title="" intro=""/>
     <tab type="user" url="/doxygen-c/html/classes.html" title="C++ API"/>
     <tab type="user" url="/doxygen-python/html/annotated.html" title="Python API"/>
-    <tab type="user" url="https://github.com/caffe2/caffe2" title="GitHub"/>
+    <tab type="user" url="https://github.com/pytorch/pytorch" title="GitHub"/>
   </navindex>
 
   <!-- Layout definition for a class page -->

@@ -9,7 +9,7 @@ permalink: /docs/brew.html
 
 ## Model Building and Brew's Helper Functions
 
-In this overview we will introduce  [brew](https://github.com/caffe2/caffe2/blob/master/caffe2/python/brew.py), a lightweight collection of helper functions to help you build your model. We will start with explaining the key concepts of Ops versus Helper Functions. Then we will show `brew` usage, how it acts as an interface to the `ModelHelper` object, the and `arg_scope` syntax sugar. Finally we discuss the motivation of introducing `brew`.
+In this overview we will introduce  [brew](https://github.com/pytorch/pytorch/blob/master/caffe2/python/brew.py), a lightweight collection of helper functions to help you build your model. We will start with explaining the key concepts of Ops versus Helper Functions. Then we will show `brew` usage, how it acts as an interface to the `ModelHelper` object, the and `arg_scope` syntax sugar. Finally we discuss the motivation of introducing `brew`.
 
 ## Concepts: Ops vs Helper Functions
 
@@ -63,7 +63,7 @@ bias = model.param_init_net.ConstantFill(
 model.net.FC([blob_in, weights, bias], blob_out, **kwargs)
 ```
 
-Luckily Caffe2 helper functions are here to help. Helper functions are wrapper functions that create a complete layer for a model. The helper function will typically handle parameter initialization, operator definition, and engine selection. Caffe2 default helper functions are named in Python PEP8 function convention. For example, using [python/helpers/fc.py](https://github.com/caffe2/caffe2/blob/master/caffe2/python/helpers/fc.py), implementing an `FC` Op via the helper function `fc` is much simpler:
+Luckily Caffe2 helper functions are here to help. Helper functions are wrapper functions that create a complete layer for a model. The helper function will typically handle parameter initialization, operator definition, and engine selection. Caffe2 default helper functions are named in Python PEP8 function convention. For example, using [python/helpers/fc.py](https://github.com/pytorch/pytorch/blob/master/caffe2/python/helpers/fc.py), implementing an `FC` Op via the helper function `fc` is much simpler:
 
 **An easier way using a helper function:**
 
@@ -71,9 +71,9 @@ Luckily Caffe2 helper functions are here to help. Helper functions are wrapper f
 fcLayer = fc(model, blob_in, blob_out, **kwargs) # returns a blob reference
 ```
 
-> Some helper functions build much more than 1 operator. For example, the LSTM function in [python/rnn_cell.py](https://github.com/caffe2/caffe2/blob/master/caffe2/python/rnn_cell.py) is helping you building a whole LSTM unit in your network.
+> Some helper functions build much more than 1 operator. For example, the LSTM function in [python/rnn_cell.py](https://github.com/pytorch/pytorch/blob/master/caffe2/python/rnn_cell.py) is helping you building a whole LSTM unit in your network.
 
-Check out the [repo](https://github.com/caffe2/caffe2/tree/master/caffe2/python/helpers) for more cool helper functions!
+Check out the [repo](https://github.com/pytorch/pytorch/tree/master/caffe2/python/helpers) for more cool helper functions!
 
 ## brew
 
@@ -181,4 +181,4 @@ To get more details about each of these functions, visit the [Operators Catalogu
 
 Thanks for reading a whole overview on `brew`! Congratulations, you are finally here! Long story short, we want to separate model building process and model storage. In our view, `ModelHelper` class should only contain network definition and parameter information. The `brew` module will have the functions to build network and initialize parameters.
 
-Compared with previous gigantic `CNNModelHelper` that is doing both model storage and model building, the `ModelHelper` + `brew` way of model building is much more modularized and easier to extend. In terms of naming, it is also much less confusing as the Caffe2 family supports a variety of networks, including MLP, RNN and CNN. We hope this tutorial will help your model building to be faster and easier while also getting to know Caffe2 in more depth. There is a detailed example of brew usage in [python/brew_test.py](https://github.com/caffe2/caffe2/blob/master/caffe2/python/brew_test.py). If you have any question about brew, please feel free to contact us and ask a question in an Issue on the repo. Thank you again for embracing the new `brew` API.
+Compared with previous gigantic `CNNModelHelper` that is doing both model storage and model building, the `ModelHelper` + `brew` way of model building is much more modularized and easier to extend. In terms of naming, it is also much less confusing as the Caffe2 family supports a variety of networks, including MLP, RNN and CNN. We hope this tutorial will help your model building to be faster and easier while also getting to know Caffe2 in more depth. There is a detailed example of brew usage in [python/brew_test.py](https://github.com/pytorch/pytorch/blob/master/caffe2/python/brew_test.py). If you have any question about brew, please feel free to contact us and ask a question in an Issue on the repo. Thank you again for embracing the new `brew` API.
