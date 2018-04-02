@@ -34,4 +34,3 @@ id: home
       </div>
     </div>
 </section>
-<div>New</div>
