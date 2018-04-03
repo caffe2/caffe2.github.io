@@ -93,7 +93,7 @@ sudo apt-get install -y --no-install-recommends libgflags-dev
 
 ```bash
 # Clone Caffe2's source code from our Github repository
-git clone --recursive https://github.com/pytorch/pytorch.git && cd caffe2
+git clone --recursive https://github.com/pytorch/pytorch.git && cd pytorch
 git submodule update --init
 
 # Create a directory to put Caffe2's build files in
@@ -116,11 +116,11 @@ Run this to see if your Caffe2 installation was successful.
 cd ~ && python -c 'from caffe2.python import core' 2>/dev/null && echo "Success" || echo "Failure"
 ```
 
-If this fails, then get a better error message by running a Python interpreter in the `caffe2/build` directory and then trying `from caffe2.python import core`.
+If this fails, then get a better error message by running Python in your home directory and then running `from caffe2.python import core` inside Python.
 
 If this fails with a message about not finding caffe2.python or not finding libcaffe2.so, please see [this info](faq.html#why-do-i-get-import-errors-in-python-when-i-try-to-use-caffe2) on how Caffe2 installs in Python.
 
-If you installed with GPU support, test that the GPU build was a success with this command. You will get a test output either way, but it will warn you at the top of the output if CPU was used instead of GPU, along with other errors such as missing libraries.
+If you installed with GPU support, test that the GPU build was a success with this command (run from the top level pytorch directory). You will get a test output either way, but it will warn you at the top of the output if CPU was used instead of GPU, along with other errors such as missing libraries.
 
 ```bash
 python caffe2/python/operator_test/relu_op_test.py
