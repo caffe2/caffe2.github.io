@@ -100,25 +100,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">GLImageAllocator&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Copyright (c) 2016-present, Facebook, Inc.  
- <a href="class_g_l_image_allocator.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="_g_l_image_allocator_8h_source.html">GLImageAllocator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GLImageAllocator&lt; T &gt;:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_g_l_image_allocator.png" usemap="#GLImageAllocator_3C_20T_20_3E_map" alt=""/>
   <map id="GLImageAllocator_3C_20T_20_3E_map" name="GLImageAllocator&lt; T &gt;_map">
-<area href="class_i_o_s_g_l_image_allocator.html" title="Copyright (c) 2016-present, Facebook, Inc. " alt="IOSGLImageAllocator&lt; T &gt;" shape="rect" coords="0,56,164,80"/>
+<area href="class_i_o_s_g_l_image_allocator.html" alt="IOSGLImageAllocator&lt; T &gt;" shape="rect" coords="0,56,164,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adf29b288a55645db075cb96e4c008f31"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_g_l_image_vector.html">GLImageVector</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_image_allocator.html#adf29b288a55645db075cb96e4c008f31">newImage</a> (int num_images, int width, int height, int channels, int tile_x, int tile_y, bool is_output)</td></tr>
-<tr class="memdesc:adf29b288a55645db075cb96e4c008f31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) 2016-present, Facebook, Inc.  <a href="#adf29b288a55645db075cb96e4c008f31">More...</a><br /></td></tr>
+<tr class="memitem:adf29b288a55645db075cb96e4c008f31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf29b288a55645db075cb96e4c008f31"></a>
+virtual <a class="el" href="class_g_l_image_vector.html">GLImageVector</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>newImage</b> (int num_images, int width, int height, int channels, int tile_x, int tile_y, bool is_output)</td></tr>
 <tr class="separator:adf29b288a55645db075cb96e4c008f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb4559e848a7372a4a25405734810f1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb4559e848a7372a4a25405734810f1b"></a>
 virtual <a class="el" href="class_g_l_image_vector.html">GLImageVector</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>newImage</b> (int num_images, int width, int height, int channels, int tile_x, int tile_y, std::function&lt; const <a class="el" href="class_g_l_texture.html">GLTexture</a> *(const int width, const int height)&gt; textureAllocator)</td></tr>
@@ -129,8 +124,8 @@ virtual <a class="el" href="class_g_l_image_vector.html">GLImageVector</a>&lt; T
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aec49b72729c1c4d02bcea26492b6a331"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_l_image_allocator.html">GLImageAllocator</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_image_allocator.html#aec49b72729c1c4d02bcea26492b6a331">newGLImageAllocator</a> ()</td></tr>
-<tr class="memdesc:aec49b72729c1c4d02bcea26492b6a331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) 2016-present, Facebook, Inc.  <a href="#aec49b72729c1c4d02bcea26492b6a331">More...</a><br /></td></tr>
+<tr class="memitem:aec49b72729c1c4d02bcea26492b6a331"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec49b72729c1c4d02bcea26492b6a331"></a>
+static <a class="el" href="class_g_l_image_allocator.html">GLImageAllocator</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>newGLImageAllocator</b> ()</td></tr>
 <tr class="separator:aec49b72729c1c4d02bcea26492b6a331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -143,118 +138,9 @@ static const <a class="el" href="struct_g_l_texture_1_1_type.html">GLTexture::Ty
 <div class="textblock"><h3>template&lt;class T&gt;<br />
 class GLImageAllocator&lt; T &gt;</h3>
 
-<p>Copyright (c) 2016-present, Facebook, Inc. </p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><pre class="fragment">http://www.apache.org/licenses/LICENSE-2.0
-</pre><p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 
-<p>Definition at line <a class="el" href="_g_l_image_allocator_8h_source.html#l00024">24</a> of file <a class="el" href="_g_l_image_allocator_8h_source.html">GLImageAllocator.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aec49b72729c1c4d02bcea26492b6a331"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_g_l_image_allocator.html">GLImageAllocator</a>&lt; T &gt; * <a class="el" href="class_g_l_image_allocator.html">GLImageAllocator</a>&lt; T &gt;::newGLImageAllocator </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Copyright (c) 2016-present, Facebook, Inc. </p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><pre class="fragment">http://www.apache.org/licenses/LICENSE-2.0
-</pre><p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
-
-<p>Definition at line <a class="el" href="android_2_g_l_image_allocator_8cc_source.html#l00022">22</a> of file <a class="el" href="android_2_g_l_image_allocator_8cc_source.html">GLImageAllocator.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adf29b288a55645db075cb96e4c008f31"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_g_l_image_vector.html">GLImageVector</a>&lt; T &gt; * <a class="el" href="class_g_l_image_allocator.html">GLImageAllocator</a>&lt; T &gt;::newImage </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_images</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>channels</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tile_x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tile_y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is_output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Copyright (c) 2016-present, Facebook, Inc. </p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><pre class="fragment">http://www.apache.org/licenses/LICENSE-2.0
-</pre><p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
-
-<p>Reimplemented in <a class="el" href="class_i_o_s_g_l_image_allocator.html#ab6e6a071275b41409ee677f5443b8968">IOSGLImageAllocator&lt; T &gt;</a>.</p>
-
-<p>Definition at line <a class="el" href="core_2_g_l_image_allocator_8cc_source.html#l00022">22</a> of file <a class="el" href="core_2_g_l_image_allocator_8cc_source.html">GLImageAllocator.cc</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<p>Definition at line <a class="el" href="_g_l_image_allocator_8h_source.html#l00008">8</a> of file <a class="el" href="_g_l_image_allocator_8h_source.html">GLImageAllocator.h</a>.</p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>caffe2/mobile/contrib/opengl/core/<a class="el" href="_g_l_image_allocator_8h_source.html">GLImageAllocator.h</a></li>
 <li>caffe2/mobile/contrib/opengl/android/<a class="el" href="android_2_g_l_image_allocator_8cc_source.html">GLImageAllocator.cc</a></li>
 </ul>
@@ -262,7 +148,7 @@ template&lt;class T &gt; </div>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 26 2018 13:03:52 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 6 2018 13:03:56 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

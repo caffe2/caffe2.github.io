@@ -13,6 +13,6 @@ var searchData=
   ['benchmark',['Benchmark',['../classdevice__reduce__sum__bench_1_1_benchmark.html',1,'device_reduce_sum_bench']]],
   ['benchmarkmeta',['BenchmarkMeta',['../classdevice__reduce__sum__bench_1_1_benchmark_meta.html',1,'device_reduce_sum_bench']]],
   ['blobreference',['BlobReference',['../classcaffe2_1_1python_1_1core_1_1_blob_reference.html',1,'caffe2::python::core']]],
-  ['build_5fext',['build_ext',['../classsetup_1_1build__ext.html',1,'setup']]],
-  ['build_5fpy',['build_py',['../classsetup_1_1build__py.html',1,'setup']]]
+  ['build_5fext',['build_ext',['../classsetup__caffe2_1_1build__ext.html',1,'setup_caffe2']]],
+  ['build_5fpy',['build_py',['../classsetup__caffe2_1_1build__py.html',1,'setup_caffe2']]]
 ];

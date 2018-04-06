@@ -229,7 +229,7 @@ std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>l
 <div class="textblock"><p><a class="el" href="classcaffe2_1_1_workspace.html" title="Workspace is a class that holds all the related objects created during runtime: (1) all blobs...">Workspace</a> is a class that holds all the related objects created during runtime: (1) all blobs, and (2) all instantiated networks. </p>
 <p>It is the owner of all these objects and deals with the scaffolding logistics. </p>
 
-<p>Definition at line <a class="el" href="workspace_8h_source.html#l00063">63</a> of file <a class="el" href="workspace_8h_source.html">workspace.h</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8h_source.html#l00047">47</a> of file <a class="el" href="workspace_8h_source.html">workspace.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab99f20bb1dffde6b560bf6476844ad2b"></a>
 <div class="memitem">
@@ -256,7 +256,7 @@ std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>l
 <p>Initializes an empty workspace with the given root folder. </p>
 <p>For any operators that are going to interface with the file system, such as load operators, they will write things under this root folder given by the workspace. </p>
 
-<p>Definition at line <a class="el" href="workspace_8h_source.html#l00080">80</a> of file <a class="el" href="workspace_8h_source.html">workspace.h</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8h_source.html#l00064">64</a> of file <a class="el" href="workspace_8h_source.html">workspace.h</a>.</p>
 
 </div>
 </div>
@@ -285,7 +285,7 @@ std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>l
 <p>Initializes a workspace with a shared workspace. </p>
 <p>When we access a <a class="el" href="classcaffe2_1_1_blob.html" title="Blob is a general container that hosts a typed pointer. ">Blob</a>, we will first try to access the blob that exists in the local workspace, and if not, access the blob that exists in the shared workspace. The caller keeps the ownership of the shared workspace and is responsible for making sure that its lifetime is longer than the created workspace. </p>
 
-<p>Definition at line <a class="el" href="workspace_8h_source.html#l00092">92</a> of file <a class="el" href="workspace_8h_source.html">workspace.h</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8h_source.html#l00076">76</a> of file <a class="el" href="workspace_8h_source.html">workspace.h</a>.</p>
 
 </div>
 </div>
@@ -323,7 +323,7 @@ std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>l
 <p>Adds blob mappings from workspace to the blobs from parent workspace. </p>
 <p>Creates blobs under possibly new names that redirect read/write operations to the blobs in the parent workspace. Arguments: parent - pointer to parent workspace forwarded_blobs - map from new blob name to blob name in parent's workspace skip_defined_blob - if set skips blobs with names that already exist in the workspace, otherwise throws exception </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00199">199</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00183">183</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>l
 <p>Return a list of blob names. </p>
 <p>This may be a bit slow since it will involve creation of multiple temp variables. For best performance, simply use <a class="el" href="classcaffe2_1_1_workspace.html#ab0b28346a24f95f330d3d4d491b39311" title="Checks if a blob with the given name is present in the current workspace. ">HasBlob()</a> and <a class="el" href="classcaffe2_1_1_workspace.html#aeae0d3e73cf44e447b034d2f0bbd4c6b" title="Gets the blob with the given name as a const pointer. ">GetBlob()</a>. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00100">100</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00084">84</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -374,7 +374,7 @@ template&lt;class Context &gt; </div>
 <p>Converts prevously mapped tensor blobs to local blobs, copies values from parent workspace blobs into new local blobs. </p>
 <p>Ignores undefined blobs. </p>
 
-<p>Definition at line <a class="el" href="workspace_8h_source.html#l00145">145</a> of file <a class="el" href="workspace_8h_source.html">workspace.h</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8h_source.html#l00129">129</a> of file <a class="el" href="workspace_8h_source.html">workspace.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +395,7 @@ template&lt;class Context &gt; </div>
 <p>Creates a blob of the given name. </p>
 <p>The pointer to the blob is returned, but the workspace keeps ownership of the pointer. If a blob of the given name already exists, the creation is skipped and the existing blob is returned. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00120">120</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00104">104</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -416,7 +416,7 @@ template&lt;class Context &gt; </div>
 <p>Similar to <a class="el" href="classcaffe2_1_1_workspace.html#a224e2d844e235c2db1804b7f45cd6822" title="Creates a blob of the given name. ">CreateBlob()</a>, but it creates a blob in the local workspace even if another blob with the same name already exists in the parent workspace &ndash; in such case the new blob hides the blob in parent workspace. </p>
 <p>If a blob of the given name already exists in the local workspace, the creation is skipped and the existing blob is returned. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00134">134</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00118">118</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -448,7 +448,7 @@ template&lt;class Context &gt; </div>
 <p>If there is anything wrong during the creation of the network, a nullptr is returned. The <a class="el" href="classcaffe2_1_1_workspace.html" title="Workspace is a class that holds all the related objects created during runtime: (1) all blobs...">Workspace</a> keeps ownership of the pointer.</p>
 <p>If there is already a net created in the workspace with the given name, CreateNet will overwrite it if overwrite=true is specified. Otherwise, an exception is thrown. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00234">234</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00218">218</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -469,7 +469,7 @@ template&lt;class Context &gt; </div>
 <p>Gets the blob with the given name as a const pointer. </p>
 <p>If the blob does not exist, a nullptr is returned. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00180">180</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00164">164</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -490,7 +490,7 @@ template&lt;class Context &gt; </div>
 <p>Gets the blob with the given name as a mutable pointer. </p>
 <p>If the blob does not exist, a nullptr is returned. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00230">230</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00214">214</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -511,7 +511,7 @@ template&lt;class Context &gt; </div>
 <p>Gets the pointer to a created net. </p>
 <p>The workspace keeps ownership of the network. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00271">271</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00255">255</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -532,7 +532,7 @@ template&lt;class Context &gt; </div>
 <p>Remove the blob of the given name. </p>
 <p>Return true if removed and false if not exist. Will NOT remove from the shared workspace. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00167">167</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00151">151</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -563,7 +563,7 @@ template&lt;class Context &gt; </div>
 <p>Renames a local workspace blob. </p>
 <p>If blob is not found in the local blob list or if the target name is already present in local or any parent blob list the function will through. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00144">144</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00128">128</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -584,7 +584,7 @@ template&lt;class Context &gt; </div>
 <p>Finds and runs the instantiated network with the given name. </p>
 <p>If the network does not exist or there are errors running the network, the function returns false. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00285">285</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00269">269</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -596,7 +596,7 @@ template&lt;class Context &gt; </div>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 26 2018 13:03:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 6 2018 13:04:00 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

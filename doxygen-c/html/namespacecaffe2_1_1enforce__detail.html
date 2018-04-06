@@ -114,14 +114,14 @@ Data Structures</h2></td></tr>
 <div class="textblock"><p>Rich logging messages. </p>
 <p>CAFFE_ENFORCE_THAT can be used with one of the "checker functions" that capture input argument values and add it to the exception message. E.g. <code>CAFFE_ENFORCE_THAT(Equals(foo(x), bar(y)), "Optional additional message")</code> would evaluate both foo and bar only once and if the results are not equal - include them in the exception message.</p>
 <p>Some of the basic checker functions like Equals or Greater are already defined below. Other header might define customized checkers by adding functions to <a class="el" href="namespacecaffe2_1_1enforce__detail.html" title="Rich logging messages. ">caffe2::enforce_detail</a> namespace. For example:</p>
-<p>namespace <a class="el" href="namespacecaffe2.html" title="Copyright (c) 2016-present, Facebook, Inc. ">caffe2</a> { namespace <a class="el" href="namespacecaffe2_1_1enforce__detail.html" title="Rich logging messages. ">enforce_detail</a> { inline <a class="el" href="classcaffe2_1_1enforce__detail_1_1_enforce_fail_message.html">EnforceFailMessage</a> IsVector(const vector&lt;TIndex&gt;&amp; shape) { if (shape.size() == 1) { return EnforceOK(); } return MakeString("Shape ", shape, " is not a vector"); } }}</p>
+<p>namespace <a class="el" href="namespacecaffe2.html" title="A global dictionary that holds information about what Caffe2 modules have been loaded in the current ...">caffe2</a> { namespace <a class="el" href="namespacecaffe2_1_1enforce__detail.html" title="Rich logging messages. ">enforce_detail</a> { inline <a class="el" href="classcaffe2_1_1enforce__detail_1_1_enforce_fail_message.html">EnforceFailMessage</a> IsVector(const vector&lt;TIndex&gt;&amp; shape) { if (shape.size() == 1) { return EnforceOK(); } return MakeString("Shape ", shape, " is not a vector"); } }}</p>
 <p>With further usages like <code>CAFFE_ENFORCE_THAT(IsVector(Input(0).dims()))</code></p>
 <p>Convenient wrappers for binary operations like CAFFE_ENFORCE_EQ are provided too. Please use them instead of CHECK_EQ and friends for failures in user-provided input. </p>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 26 2018 13:03:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 6 2018 13:04:00 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

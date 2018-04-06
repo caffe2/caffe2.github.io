@@ -779,7 +779,7 @@ output.dimension = {5, 4, 3, 2}
 </ul>
 <p>Supported tensor rank: up to 4.</p>
 <p>Inputs:</p><ul>
-<li>0: A tensor, specifying the input. If rank is greater than 2, then it gets flattened to a 2-D <a class="el" href="struct_tensor.html" title="Copyright (c) 2016-present, Facebook, Inc. ">Tensor</a>. The 2-D <a class="el" href="struct_tensor.html" title="Copyright (c) 2016-present, Facebook, Inc. ">Tensor</a> is handled as if dimensions corresponded to shape [batch_size, input_size], where “batch_size” corresponds to the batching dimension, and “input_size” is the size of the input.</li>
+<li>0: A tensor, specifying the input. If rank is greater than 2, then it gets flattened to a 2-D <a class="el" href="struct_tensor.html">Tensor</a>. The 2-D <a class="el" href="struct_tensor.html">Tensor</a> is handled as if dimensions corresponded to shape [batch_size, input_size], where “batch_size” corresponds to the batching dimension, and “input_size” is the size of the input.</li>
 <li>1: A 2-D tensor, specifying the weights, of shape [num_units, input_size], where "num_units" corresponds to the number of output nodes.</li>
 <li>2: A 1-D tensor, of shape [num_units], specifying the bias. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a> type, the bias should also be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a>. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the bias should be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, with zeroPoint of 0 and bias_scale == input_scale * filter_scale.</li>
 <li>3: An INT32 value, and has to be one of the <a class="el" href="group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414">FuseCode</a> values. Specifies the activation to invoke on the result of each addition.</li>
@@ -895,15 +895,15 @@ output = input / pow((bias + alpha * sqr_sum), beta)
 <tr><td class="fieldname"><a class="anchor" id="ggaabbe492c60331b13038e39d4207940e0a800cdcec5d7ba776789cb2d1ef669965"></a>ANEURALNETWORKS_LSH_PROJECTION&#160;</td><td class="fielddoc">
 <p>Projects an input to a bit vector via locality senstive hashing. </p>
 <p>Inputs:</p><ul>
-<li>0: Hash functions. Dim.size == 2, DataType: Float. <a class="el" href="struct_tensor.html" title="Copyright (c) 2016-present, Facebook, Inc. ">Tensor</a>[0].Dim[0]: Number of hash functions. <a class="el" href="struct_tensor.html" title="Copyright (c) 2016-present, Facebook, Inc. ">Tensor</a>[0].Dim[1]: Number of seeds per hash functions. <a class="el" href="struct_tensor.html" title="Copyright (c) 2016-present, Facebook, Inc. ">Tensor</a>[0].Dim[1] &lt;= 32 in sparse case.</li>
+<li>0: Hash functions. Dim.size == 2, DataType: Float. <a class="el" href="struct_tensor.html">Tensor</a>[0].Dim[0]: Number of hash functions. <a class="el" href="struct_tensor.html">Tensor</a>[0].Dim[1]: Number of seeds per hash functions. <a class="el" href="struct_tensor.html">Tensor</a>[0].Dim[1] &lt;= 32 in sparse case.</li>
 <li>1: Input. Dim.size &gt;= 1, no restriction on DataType.</li>
-<li>2: Weight. Optional. Dim.size == 1, DataType: Float. If not set, each input element is considered to have the same weight of 1.0. <a class="el" href="struct_tensor.html" title="Copyright (c) 2016-present, Facebook, Inc. ">Tensor</a>[1].Dim[0] == <a class="el" href="struct_tensor.html" title="Copyright (c) 2016-present, Facebook, Inc. ">Tensor</a>[2].Dim[0]</li>
+<li>2: Weight. Optional. Dim.size == 1, DataType: Float. If not set, each input element is considered to have the same weight of 1.0. <a class="el" href="struct_tensor.html">Tensor</a>[1].Dim[0] == <a class="el" href="struct_tensor.html">Tensor</a>[2].Dim[0]</li>
 <li><p class="startli">3: Type: Sparse: Value LSHProjectionType_SPARSE(=1). Computed bit vector is considered to be sparse. Each output element is an int32 made up of multiple bits computed from hash functions.</p>
 <p class="startli">Dense: Value LSHProjectionType_DENSE(=2). Computed bit vector is considered to be dense. Each output element represents a bit and can take the value of either 0 or 1.</p>
 </li>
 </ul>
 <p>Outputs:</p><ul>
-<li>0: If the projection type is sparse: Output.Dim == { <a class="el" href="struct_tensor.html" title="Copyright (c) 2016-present, Facebook, Inc. ">Tensor</a>[0].Dim[0] } A tensor of int32 that represents hash signatures. If the projection type is Dense: Output.Dim == { <a class="el" href="struct_tensor.html" title="Copyright (c) 2016-present, Facebook, Inc. ">Tensor</a>[0].Dim[0] * <a class="el" href="struct_tensor.html" title="Copyright (c) 2016-present, Facebook, Inc. ">Tensor</a>[0].Dim[1] } A flattened tensor that represents projected bit vectors. </li>
+<li>0: If the projection type is sparse: Output.Dim == { <a class="el" href="struct_tensor.html">Tensor</a>[0].Dim[0] } A tensor of int32 that represents hash signatures. If the projection type is Dense: Output.Dim == { <a class="el" href="struct_tensor.html">Tensor</a>[0].Dim[0] * <a class="el" href="struct_tensor.html">Tensor</a>[0].Dim[1] } A flattened tensor that represents projected bit vectors. </li>
 </ul>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaabbe492c60331b13038e39d4207940e0ad0377e8c305e596fb7f64ff896671fc5"></a>ANEURALNETWORKS_LSTM&#160;</td><td class="fielddoc">
@@ -2318,7 +2318,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 26 2018 13:03:52 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 6 2018 13:03:56 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

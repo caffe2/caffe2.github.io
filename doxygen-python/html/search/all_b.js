@@ -2,6 +2,7 @@ var searchData=
 [
   ['l1norm',['L1Norm',['../classcaffe2_1_1python_1_1regularizer_1_1_l1_norm.html',1,'caffe2::python::regularizer']]],
   ['l2norm',['L2Norm',['../classcaffe2_1_1python_1_1regularizer_1_1_l2_norm.html',1,'caffe2::python::regularizer']]],
+  ['labelsmooth',['LabelSmooth',['../classcaffe2_1_1python_1_1layers_1_1label__smooth_1_1_label_smooth.html',1,'caffe2::python::layers::label_smooth']]],
   ['last_5fn_5fwindow_5fcollector',['last_n_window_collector',['../namespacelast__n__window__collector.html',1,'']]],
   ['lastnwindowcollector',['LastNWindowCollector',['../classcaffe2_1_1python_1_1layers_1_1last__n__window__collector_1_1_last_n_window_collector.html',1,'caffe2::python::layers::last_n_window_collector']]],
   ['layer_5fmodel_5fhelper',['layer_model_helper',['../namespacelayer__model__helper.html',1,'']]],

@@ -3,6 +3,7 @@ var searchData=
   ['random_5freader',['random_reader',['../classcaffe2_1_1python_1_1dataset_1_1_dataset.html#a399984ea72f85e478a949f342cce19fa',1,'caffe2::python::dataset::Dataset']]],
   ['read',['read',['../classcaffe2_1_1python_1_1dataio_1_1_reader.html#a024602c0217e1c49b436d5d592a9ff70',1,'caffe2.python.dataio.Reader.read()'],['../classcaffe2_1_1python_1_1text__file__reader_1_1_text_file_reader.html#a6042c35c558ab326d57a039ce4129fa7',1,'caffe2.python.text_file_reader.TextFileReader.read()']]],
   ['read_5fex',['read_ex',['../classcaffe2_1_1python_1_1dataio_1_1_reader_with_limit_base.html#a947fb82fe17fd625685cad6f63874c50',1,'caffe2::python::dataio::ReaderWithLimitBase']]],
+  ['readablesize',['ReadableSize',['../namespacecaffe2_1_1python_1_1binarysize.html#a516097199b08a5ca37100265d1999a66',1,'caffe2::python::binarysize']]],
   ['reader',['reader',['../classcaffe2_1_1python_1_1dataset_1_1_dataset.html#ae9594270ef78ed1f6b480e41cfd09ac7',1,'caffe2::python::dataset::Dataset']]],
   ['recover_5finput_5frecord_5fby_5fprefix',['recover_input_record_by_prefix',['../classcaffe2_1_1python_1_1core_1_1_net.html#ab0b93cd8135a019b576907d2ebe1c136',1,'caffe2::python::core::Net']]],
   ['recover_5foutput_5frecord_5fby_5fprefix',['recover_output_record_by_prefix',['../classcaffe2_1_1python_1_1core_1_1_net.html#aa314ca0257fb032ef6dff9c7e8ad8a6c',1,'caffe2::python::core::Net']]],

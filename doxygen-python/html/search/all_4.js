@@ -13,7 +13,7 @@ var searchData=
   ['debugmode',['DebugMode',['../classcaffe2_1_1python_1_1utils_1_1_debug_mode.html',1,'caffe2::python::utils']]],
   ['define_5fcontext',['define_context',['../classcaffe2_1_1python_1_1context_1_1define__context.html',1,'caffe2::python::context']]],
   ['depthconcat',['DepthConcat',['../classcaffe2_1_1python_1_1cnn_1_1_c_n_n_model_helper.html#a0166e7f4fb434a68838e6d579ba78190',1,'caffe2::python::cnn::CNNModelHelper']]],
-  ['develop',['develop',['../classsetup_1_1develop.html',1,'setup']]],
+  ['develop',['develop',['../classsetup__caffe2_1_1develop.html',1,'setup_caffe2']]],
   ['device_5fchecker',['device_checker',['../namespacedevice__checker.html',1,'']]],
   ['device_5freduce_5fsum_5fbench',['device_reduce_sum_bench',['../namespacedevice__reduce__sum__bench.html',1,'']]],
   ['devicechecker',['DeviceChecker',['../classcaffe2_1_1python_1_1device__checker_1_1_device_checker.html',1,'caffe2::python::device_checker']]],

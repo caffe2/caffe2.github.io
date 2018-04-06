@@ -14,7 +14,6 @@ var searchData=
   ['getnetdef',['GetNetDef',['../structcaffe2_1_1transform_1_1_graph.html#a4fb5c3575448f8ddc2a2f42f4fec5d20',1,'caffe2::transform::Graph']]],
   ['getsubgraphinput',['GetSubgraphInput',['../structcaffe2_1_1transform_1_1_graph.html#a6f1da48d04765175c5f79a3fa29f054b',1,'caffe2::transform::Graph']]],
   ['getsubgraphoutput',['GetSubgraphOutput',['../structcaffe2_1_1transform_1_1_graph.html#a21e8c07d12381ecb21903e424477d01a',1,'caffe2::transform::Graph']]],
-  ['glfilter',['GLFilter',['../class_g_l_filter.html#a568160a4205e7dcfb458ee7b84fd0bc6',1,'GLFilter']]],
   ['globalinit',['GlobalInit',['../namespacecaffe2.html#af70b04a01a1779ddd61f9ef1e0a141b7',1,'caffe2']]],
   ['globalmpicomm',['GlobalMPIComm',['../namespacecaffe2.html#aca313bd69abda6cc82792348e1d64cc1',1,'caffe2']]],
   ['graph',['Graph',['../structcaffe2_1_1transform_1_1_graph.html#a1378fa2d7af496cd43efe60363619bc5',1,'caffe2::transform::Graph']]]

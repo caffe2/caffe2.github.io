@@ -6,6 +6,7 @@ var searchData=
   ['markdown',['Markdown',['../classformatter_1_1_markdown.html',1,'formatter']]],
   ['masknallocate',['maskNallocate',['../namespace_sparse_transformer.html#ae644ca926619d1d661a3c9efdd2b009c',1,'SparseTransformer']]],
   ['maxnorm',['MaxNorm',['../classcaffe2_1_1python_1_1regularizer_1_1_max_norm.html',1,'caffe2::python::regularizer']]],
+  ['maybeaddcolor',['MaybeAddColor',['../namespacecaffe2_1_1python_1_1binarysize.html#afed2b5ec2c712256e674ab0d7b9e2715',1,'caffe2::python::binarysize']]],
   ['memonger',['memonger',['../namespacememonger.html',1,'']]],
   ['mergeidlists',['MergeIdLists',['../classcaffe2_1_1python_1_1layers_1_1merge__id__lists_1_1_merge_id_lists.html',1,'caffe2::python::layers::merge_id_lists']]],
   ['metadata',['Metadata',['../classcaffe2_1_1python_1_1schema_1_1_metadata.html',1,'caffe2::python::schema']]],

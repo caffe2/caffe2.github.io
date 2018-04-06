@@ -196,7 +196,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_parallel_timesteps
 <p>Its main benefit over running each RNN timestep as a separate net is that it can run ops in subsequent timesteps in parallel when possible. For example, multi-layer LSTMs allow for timestep parallelism because next timestep's lower layer can start executing at the same time as the same timestep's upper layer.</p>
 <p>There are two implementations of the RNN executor: one for CPUs (<a class="el" href="classcaffe2_1_1_threaded_recurrent_network_executor.html">ThreadedRecurrentNetworkExecutor</a>) and another for GPUs (<a class="el" href="classcaffe2_1_1_c_u_d_a_recurrent_network_executor.html">CUDARecurrentNetworkExecutor</a>). </p>
 
-<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00047">47</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
+<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00032">32</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac122275d245583e313dace8adaf11104"></a>
 <div class="memitem">
@@ -239,7 +239,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_parallel_timesteps
 <p>Callers must call EnsureTimestepInitialized before starting execution for each of the relevant timesteps. </p>
 <p>If timestep was initialized before, this is a no-op. First time this is called the dependencies of the operators in timestep are analyzed, and that incurs higher overhead than subsequent calls. </p>
 
-<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00081">81</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
+<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00066">66</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_parallel_timesteps
 <p>For debug purposes, print the dependency structure. </p>
 <p>Set rnn_executor_debug=1 in the <a class="el" href="classcaffe2_1_1_recurrent_network_op.html">RecurrentNetworkOp</a> to enable. </p>
 
-<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00429">429</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
+<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00424">424</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
 
 </div>
 </div>
@@ -297,18 +297,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_parallel_timesteps
 <p>Set limit for the number of timesteps that run in parallel. </p>
 <p>Useful for forward-only execution when we rotate workspaces over timesteps, i.e when timestep[t] and timestep[t + p] have same workspace. </p>
 
-<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00196">196</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
+<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00191">191</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>caffe2/operators/<a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a></li>
+<li>caffe2/operators/rnn/<a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 26 2018 13:03:56 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 6 2018 13:03:59 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

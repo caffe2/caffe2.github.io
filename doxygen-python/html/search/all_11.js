@@ -5,6 +5,7 @@ var searchData=
   ['randomfourierfeatures',['RandomFourierFeatures',['../classcaffe2_1_1python_1_1layers_1_1random__fourier__features_1_1_random_fourier_features.html',1,'caffe2::python::layers::random_fourier_features']]],
   ['read',['read',['../classcaffe2_1_1python_1_1dataio_1_1_reader.html#a024602c0217e1c49b436d5d592a9ff70',1,'caffe2.python.dataio.Reader.read()'],['../classcaffe2_1_1python_1_1text__file__reader_1_1_text_file_reader.html#a6042c35c558ab326d57a039ce4129fa7',1,'caffe2.python.text_file_reader.TextFileReader.read()']]],
   ['read_5fex',['read_ex',['../classcaffe2_1_1python_1_1dataio_1_1_reader_with_limit_base.html#a947fb82fe17fd625685cad6f63874c50',1,'caffe2::python::dataio::ReaderWithLimitBase']]],
+  ['readablesize',['ReadableSize',['../namespacecaffe2_1_1python_1_1binarysize.html#a516097199b08a5ca37100265d1999a66',1,'caffe2::python::binarysize']]],
   ['reader',['Reader',['../classcaffe2_1_1python_1_1dataio_1_1_reader.html',1,'caffe2::python::dataio']]],
   ['reader',['reader',['../classcaffe2_1_1python_1_1dataset_1_1_dataset.html#ae9594270ef78ed1f6b480e41cfd09ac7',1,'caffe2::python::dataset::Dataset']]],
   ['readerbuilder',['ReaderBuilder',['../classcaffe2_1_1python_1_1dataio_1_1_reader_builder.html',1,'caffe2::python::dataio']]],

@@ -169,7 +169,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPatternMatchType</
 <p>The effect of a <a class="el" href="classcaffe2_1_1_transform.html" title="The Transform Base Object. ">Transform</a> is defined by its 3 protected virtual functions. 1) PatternRule determines for an ordered subgraph and a node, whether to consider adding the node to the subgraph. 2) ValidatorRule determines, for an ordered subgraph, whether it is a match. 3) ReplaceRule mutates the graph, based on a matched subgraph.</p>
 <p>This is the base class for all derived classes to base off. To create your own transform, write your implementations for PatternRule, ValidatorRule, and ReplaceRule. </p>
 
-<p>Definition at line <a class="el" href="transform_8h_source.html#l00050">50</a> of file <a class="el" href="transform_8h_source.html">transform.h</a>.</p>
+<p>Definition at line <a class="el" href="transform_8h_source.html#l00034">34</a> of file <a class="el" href="transform_8h_source.html">transform.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a2d486da88c71c3e0a1dc552e0d99e791"></a>
 <div class="memitem">
@@ -186,7 +186,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPatternMatchType</
 <p>SORTED_WRT_EXECUTION_ORDER will match subgraphs that guarantee sorted execution order. The nodes don't have to be connected. It is faster than General. For example, in the graph (1) &ndash;&gt; (2) &ndash;&gt; (3) &ndash;&gt; (4), This is capable of matching the subgraph [2, 4], [3, 4]. This is not capable of matching the subgraph [3, 1], [4, 3].</p>
 <p>GENERAL can match any subgraph. For example, in the graph (1) &ndash;&gt; (2) &ndash;&gt; (3) &ndash;&gt; (4), This is capable of matching subgraphs [2, 4], [3, 4], [4, 2, 1]. There is no ordered subgraph of G that cannot be matched by this. </p>
 
-<p>Definition at line <a class="el" href="transform_8h_source.html#l00086">86</a> of file <a class="el" href="transform_8h_source.html">transform.h</a>.</p>
+<p>Definition at line <a class="el" href="transform_8h_source.html#l00070">70</a> of file <a class="el" href="transform_8h_source.html">transform.h</a>.</p>
 
 </div>
 </div>
@@ -208,7 +208,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPatternMatchType</
 <p>Apply a <a class="el" href="classcaffe2_1_1_transform.html" title="The Transform Base Object. ">Transform</a> onto a NetDef. </p>
 <p>Returns the transformed NetDef. </p>
 
-<p>Definition at line <a class="el" href="transform_8cc_source.html#l00191">191</a> of file <a class="el" href="transform_8cc_source.html">transform.cc</a>.</p>
+<p>Definition at line <a class="el" href="transform_8cc_source.html#l00175">175</a> of file <a class="el" href="transform_8cc_source.html">transform.cc</a>.</p>
 
 </div>
 </div>
@@ -229,7 +229,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPatternMatchType</
 <p>Generates all matches (stored as ordered subgraphs) and returns them. </p>
 <p>A match is stored as vector&lt;int&gt;, which is a mapping to OperatorDefs in Graph. The order matters. </p>
 
-<p>Definition at line <a class="el" href="transform_8cc_source.html#l00031">31</a> of file <a class="el" href="transform_8cc_source.html">transform.cc</a>.</p>
+<p>Definition at line <a class="el" href="transform_8cc_source.html#l00015">15</a> of file <a class="el" href="transform_8cc_source.html">transform.cc</a>.</p>
 
 </div>
 </div>
@@ -241,7 +241,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPatternMatchType</
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 26 2018 13:03:56 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 6 2018 13:04:00 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

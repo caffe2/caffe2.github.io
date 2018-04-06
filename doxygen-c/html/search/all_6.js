@@ -27,7 +27,6 @@ var searchData=
   ['floattorowwisequantized8bitsop',['FloatToRowwiseQuantized8BitsOp',['../classcaffe2_1_1_float_to_rowwise_quantized8_bits_op.html',1,'caffe2']]],
   ['floorop',['FloorOp',['../classcaffe2_1_1_floor_op.html',1,'caffe2']]],
   ['foreach',['ForEach',['../structcaffe2_1_1_for_each.html',1,'caffe2']]],
-  ['fp16',['FP16',['../class_g_l_texture.html#a224c14476ae48e6a733e18a3e4b686d3',1,'GLTexture']]],
   ['fp16momentumsgdupdateop',['FP16MomentumSGDUpdateOp',['../classcaffe2_1_1_f_p16_momentum_s_g_d_update_op.html',1,'caffe2']]],
   ['fp32momentumsgdupdateop',['FP32MomentumSGDUpdateOp',['../classcaffe2_1_1_f_p32_momentum_s_g_d_update_op.html',1,'caffe2']]],
   ['fps',['fps',['../classcaffe2_1_1_params.html#a95e24d75bf60d44dcc42edaa9a2e83e5',1,'caffe2::Params']]],
@@ -45,6 +44,6 @@ var searchData=
   ['funhashgradientop',['FunHashGradientOp',['../classcaffe2_1_1_fun_hash_gradient_op.html',1,'caffe2']]],
   ['funhashop',['FunHashOp',['../classcaffe2_1_1_fun_hash_op.html',1,'caffe2']]],
   ['fusecode',['FuseCode',['../group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414',1,'NeuralNetworks.h']]],
-  ['fused8bitrowwiseembeddinglookup',['Fused8BitRowwiseEmbeddingLookup',['../namespacecaffe2.html#a3aaf346b2578e6a4300823adc211ca26',1,'caffe2']]],
+  ['fused8bitrowwiseembeddinglookup',['Fused8BitRowwiseEmbeddingLookup',['../namespacecaffe2.html#a20dc965415048928235c6979fe5ea9c8',1,'caffe2']]],
   ['fused8bitrowwisequantizedtofloatop',['Fused8BitRowwiseQuantizedToFloatOp',['../classcaffe2_1_1_fused8_bit_rowwise_quantized_to_float_op.html',1,'caffe2']]]
 ];

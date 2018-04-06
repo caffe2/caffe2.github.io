@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['binarysize',['binarysize',['../namespacecaffe2_1_1python_1_1binarysize.html',1,'caffe2::python']]],
   ['cached_5freader',['cached_reader',['../namespacecached__reader.html',1,'']]],
   ['caffe_5ftranslator',['caffe_translator',['../namespacecaffe__translator.html',1,'']]],
   ['char_5frnn',['char_rnn',['../namespacechar__rnn.html',1,'']]],

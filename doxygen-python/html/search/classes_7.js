@@ -9,6 +9,7 @@ var searchData=
   ['globalcoordinator',['GlobalCoordinator',['../classcaffe2_1_1python_1_1data__workers_1_1_global_coordinator.html',1,'caffe2::python::data_workers']]],
   ['globalworkercoordinator',['GlobalWorkerCoordinator',['../classcaffe2_1_1python_1_1parallel__workers_1_1_global_worker_coordinator.html',1,'caffe2::python::parallel_workers']]],
   ['gradientchecker',['GradientChecker',['../classcaffe2_1_1python_1_1gradient__checker_1_1_gradient_checker.html',1,'caffe2::python::gradient_checker']]],
+  ['gradientclipping',['GradientClipping',['../classcaffe2_1_1python_1_1modeling_1_1gradient__clipping_1_1_gradient_clipping.html',1,'caffe2::python::modeling::gradient_clipping']]],
   ['gradientregistry',['GradientRegistry',['../classcaffe2_1_1python_1_1core_1_1_gradient_registry.html',1,'caffe2::python::core']]],
   ['grucell',['GRUCell',['../classcaffe2_1_1python_1_1gru__cell_1_1_g_r_u_cell.html',1,'caffe2::python::gru_cell']]]
 ];

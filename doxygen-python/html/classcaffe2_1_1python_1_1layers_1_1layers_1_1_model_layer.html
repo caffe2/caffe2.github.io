@@ -122,11 +122,12 @@ Inheritance diagram for caffe2.python.layers.layers.ModelLayer:</div>
 <area href="classcaffe2_1_1python_1_1layers_1_1fc__without__bias_1_1_f_c_without_bias.html" alt="caffe2.python.layers.fc_without_bias.FCWithoutBias" shape="rect" coords="523,672,1036,696"/>
 <area href="classcaffe2_1_1python_1_1layers_1_1gather__record_1_1_gather_record.html" alt="caffe2.python.layers.gather_record.GatherRecord" shape="rect" coords="523,728,1036,752"/>
 <area href="classcaffe2_1_1python_1_1layers_1_1homotopy__weight_1_1_homotopy_weight.html" alt="caffe2.python.layers.homotopy_weight.HomotopyWeight" shape="rect" coords="523,784,1036,808"/>
-<area href="classcaffe2_1_1python_1_1layers_1_1last__n__window__collector_1_1_last_n_window_collector.html" alt="caffe2.python.layers.last_n_window_collector.LastNWindowCollector" shape="rect" coords="523,840,1036,864"/>
-<area href="classcaffe2_1_1python_1_1layers_1_1random__fourier__features_1_1_random_fourier_features.html" alt="caffe2.python.layers.random_fourier_features.RandomFourierFeatures" shape="rect" coords="523,896,1036,920"/>
-<area href="classcaffe2_1_1python_1_1layers_1_1reservoir__sampling_1_1_reservoir_sampling.html" alt="caffe2.python.layers.reservoir_sampling.ReservoirSampling" shape="rect" coords="523,952,1036,976"/>
-<area href="classcaffe2_1_1python_1_1layers_1_1sampling__train_1_1_sampling_train.html" alt="caffe2.python.layers.sampling_train.SamplingTrain" shape="rect" coords="523,1008,1036,1032"/>
-<area href="classcaffe2_1_1python_1_1layers_1_1uniform__sampling_1_1_uniform_sampling.html" alt="caffe2.python.layers.uniform_sampling.UniformSampling" shape="rect" coords="523,1064,1036,1088"/>
+<area href="classcaffe2_1_1python_1_1layers_1_1label__smooth_1_1_label_smooth.html" alt="caffe2.python.layers.label_smooth.LabelSmooth" shape="rect" coords="523,840,1036,864"/>
+<area href="classcaffe2_1_1python_1_1layers_1_1last__n__window__collector_1_1_last_n_window_collector.html" alt="caffe2.python.layers.last_n_window_collector.LastNWindowCollector" shape="rect" coords="523,896,1036,920"/>
+<area href="classcaffe2_1_1python_1_1layers_1_1random__fourier__features_1_1_random_fourier_features.html" alt="caffe2.python.layers.random_fourier_features.RandomFourierFeatures" shape="rect" coords="523,952,1036,976"/>
+<area href="classcaffe2_1_1python_1_1layers_1_1reservoir__sampling_1_1_reservoir_sampling.html" alt="caffe2.python.layers.reservoir_sampling.ReservoirSampling" shape="rect" coords="523,1008,1036,1032"/>
+<area href="classcaffe2_1_1python_1_1layers_1_1sampling__train_1_1_sampling_train.html" alt="caffe2.python.layers.sampling_train.SamplingTrain" shape="rect" coords="523,1064,1036,1088"/>
+<area href="classcaffe2_1_1python_1_1layers_1_1uniform__sampling_1_1_uniform_sampling.html" alt="caffe2.python.layers.uniform_sampling.UniformSampling" shape="rect" coords="523,1120,1036,1144"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -221,7 +222,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="layers_8py_source.html#l00209">209</a> of file <a class="el" href="layers_8py_source.html">layers.py</a>.</p>
+<p>Definition at line <a class="el" href="layers_8py_source.html#l00195">195</a> of file <a class="el" href="layers_8py_source.html">layers.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad4d374374b3ee21984eeea213c24c837"></a>
 <div class="memitem">
@@ -294,7 +295,7 @@ records are expected to be a subset of input_record/output_schema).
 Each layer has a list of Tags associated with it, that depends on
 current context and arguments. It's possible to use those tags during
 the instantiation time.</pre> 
-<p>Definition at line <a class="el" href="layers_8py_source.html#l00212">212</a> of file <a class="el" href="layers_8py_source.html">layers.py</a>.</p>
+<p>Definition at line <a class="el" href="layers_8py_source.html#l00198">198</a> of file <a class="el" href="layers_8py_source.html">layers.py</a>.</p>
 
 </div>
 </div>
@@ -324,7 +325,7 @@ the instantiation time.</pre>
 </div><div class="memdoc">
 <pre class="fragment">Adds layer initialization operators to passed net.
 </pre> 
-<p>Definition at line <a class="el" href="layers_8py_source.html#l00313">313</a> of file <a class="el" href="layers_8py_source.html">layers.py</a>.</p>
+<p>Definition at line <a class="el" href="layers_8py_source.html#l00299">299</a> of file <a class="el" href="layers_8py_source.html">layers.py</a>.</p>
 
 </div>
 </div>
@@ -366,7 +367,7 @@ the instantiation time.</pre>
 <pre class="fragment">Adds layer trainig or initialization operators to the passed in net.
 init_net can be None and can be called independently from add_init_params
 </pre> 
-<p>Definition at line <a class="el" href="layers_8py_source.html#l00357">357</a> of file <a class="el" href="layers_8py_source.html">layers.py</a>.</p>
+<p>Definition at line <a class="el" href="layers_8py_source.html#l00351">351</a> of file <a class="el" href="layers_8py_source.html">layers.py</a>.</p>
 
 </div>
 </div>
@@ -384,7 +385,7 @@ init_net can be None and can be called independently from add_init_params
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Return a subset of parameters which can be converted to fp16</pre> 
-<p>Definition at line <a class="el" href="layers_8py_source.html#l00306">306</a> of file <a class="el" href="layers_8py_source.html">layers.py</a>.</p>
+<p>Definition at line <a class="el" href="layers_8py_source.html#l00292">292</a> of file <a class="el" href="layers_8py_source.html">layers.py</a>.</p>
 
 </div>
 </div>
@@ -395,7 +396,7 @@ init_net can be None and can be called independently from add_init_params
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 26 2018 13:03:59 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 6 2018 13:04:03 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

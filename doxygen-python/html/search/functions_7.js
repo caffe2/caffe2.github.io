@@ -20,5 +20,6 @@ var searchData=
   ['getcomputedparams',['GetComputedParams',['../classcaffe2_1_1python_1_1model__helper_1_1_model_helper.html#a5c7beca937dd37f3456604dee7779fa7',1,'caffe2::python::model_helper::ModelHelper']]],
   ['getnontrainableparams',['GetNonTrainableParams',['../classcaffe2_1_1python_1_1models_1_1seq2seq_1_1seq2seq__model__helper_1_1_seq2_seq_model_helper.html#ad058a33eeee40c5b83522e4a08137e0a',1,'caffe2::python::models::seq2seq::seq2seq_model_helper::Seq2SeqModelHelper']]],
   ['getoptimizationparaminfo',['GetOptimizationParamInfo',['../classcaffe2_1_1python_1_1model__helper_1_1_model_helper.html#a5a4dc34fcd8a1726edcdfc999edf11b1',1,'caffe2::python::model_helper::ModelHelper']]],
-  ['getparams',['GetParams',['../classcaffe2_1_1python_1_1model__helper_1_1_model_helper.html#a31265ec10c1c806d10b36821c6faaf6a',1,'caffe2::python::model_helper::ModelHelper']]]
+  ['getparams',['GetParams',['../classcaffe2_1_1python_1_1model__helper_1_1_model_helper.html#a31265ec10c1c806d10b36821c6faaf6a',1,'caffe2::python::model_helper::ModelHelper']]],
+  ['getsymboltrie',['GetSymbolTrie',['../namespacecaffe2_1_1python_1_1binarysize.html#a1bcf2e66f4ce3e60de522f96fa1fa625',1,'caffe2::python::binarysize']]]
 ];

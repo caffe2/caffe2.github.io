@@ -145,7 +145,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DBReaderSerializer</
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A reader wrapper for <a class="el" href="classcaffe2_1_1db_1_1_d_b.html" title="An abstract class for accessing a database of key-value pairs. ">DB</a> that also allows us to serialize it. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00160">160</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00144">144</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a67e032b62adfa1eeeb2ad24613b46bf8"></a>
 <div class="memitem">
@@ -171,7 +171,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DBReaderSerializer</
 <p>Returns the underlying cursor of the db reader. </p>
 <p>Note that if you directly use the cursor, the read will not be thread safe, because there is no mechanism to stop multiple threads from accessing the same cursor. You should consider using <a class="el" href="classcaffe2_1_1db_1_1_d_b_reader.html#a3eca647fed497c7997ba457a96f72251" title="Read a set of key and value from the db and move to next. ">Read()</a> explicitly. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00270">270</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00254">254</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -213,7 +213,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DBReaderSerializer</
 <p>If the cursor reaches its end, the reader will go back to the head of the db. This function can be used to enable multiple input ops to read the same db.</p>
 <p>Note(jiayq): we loosen the definition of a const function here a little bit: the state of the cursor is actually changed. However, this allows us to pass in a <a class="el" href="classcaffe2_1_1db_1_1_d_b_reader.html" title="A reader wrapper for DB that also allows us to serialize it. ">DBReader</a> to an <a class="el" href="classcaffe2_1_1_operator.html">Operator</a> without the need of a duplicated output blob. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00238">238</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00222">222</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -241,7 +241,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DBReaderSerializer</
 <p>Seeks to the first key. </p>
 <p>Thread safe. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00257">257</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00241">241</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +252,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DBReaderSerializer</
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 26 2018 13:03:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 6 2018 13:04:00 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

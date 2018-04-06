@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['scale',['scale',['../group___neural_networks.html#gaee95637670d7b7179b28a9d5a22f621a',1,'ANeuralNetworksOperandType']]]
+  ['type',['type',['../group___neural_networks.html#gaebe0bf8514de064d1d68e8857a3dccfd',1,'ANeuralNetworksOperandType']]]
 ];

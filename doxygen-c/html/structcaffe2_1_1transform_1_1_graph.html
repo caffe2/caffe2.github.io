@@ -154,7 +154,7 @@ const std::set&lt; string &gt; &amp;&#160;</td><td class="memItemRight" valign="
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structcaffe2_1_1transform_1_1_graph.html" title="Graph representation of a Netdef. ">Graph</a> representation of a Netdef. </p>
 
-<p>Definition at line <a class="el" href="graph_8h_source.html#l00064">64</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00048">48</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1378fa2d7af496cd43efe60363619bc5"></a>
 <div class="memitem">
@@ -183,7 +183,7 @@ const std::set&lt; string &gt; &amp;&#160;</td><td class="memItemRight" valign="
 <p>Each node represents an operator. An edge exists between two nodes if the parent op writes to a blob, which is the input of the child blob, with no other op writing to the blob in between the execution order.</p>
 <p>Time Complexity: O(E), where E is the number of blobs </p>
 
-<p>Definition at line <a class="el" href="graph_8cc_source.html#l00028">28</a> of file <a class="el" href="graph_8cc_source.html">graph.cc</a>.</p>
+<p>Definition at line <a class="el" href="graph_8cc_source.html#l00012">12</a> of file <a class="el" href="graph_8cc_source.html">graph.cc</a>.</p>
 
 </div>
 </div>
@@ -204,7 +204,7 @@ const std::set&lt; string &gt; &amp;&#160;</td><td class="memItemRight" valign="
 <p>Generates a NetDef Representation for the current graph. </p>
 <p>Nodes are visited in topological order, which is proper Opdef ordering. TODO(benz): There exists conflicts with repeated blob names, where topological sorting is not sufficient for correct netdef representation, unless blobs are renamed. For example, if after a transformation, We have operator ancestry: A &ndash;&gt; B &ndash;&gt; C, and also A &ndash;&gt; D &ndash;&gt; E, where B -&gt; C and D -&gt; E uses the same blob name, then A, B, D, E, C is a correct topological ordering, but D will write to the blob that C reads from, instead of B. Currently believe that there will always be ambiguity unless blobs are renamed. This is solved by performing SSA on all transformed blob names. </p>
 
-<p>Definition at line <a class="el" href="graph_8cc_source.html#l00117">117</a> of file <a class="el" href="graph_8cc_source.html">graph.cc</a>.</p>
+<p>Definition at line <a class="el" href="graph_8cc_source.html#l00101">101</a> of file <a class="el" href="graph_8cc_source.html">graph.cc</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ const std::set&lt; string &gt; &amp;&#160;</td><td class="memItemRight" valign="
 <p>Sorted by blob names.</p>
 <p>&lt;string, int&gt; := (name of blob writing into subgraph, index of node that writes into subgraph using that blob) </p>
 
-<p>Definition at line <a class="el" href="graph_8cc_source.html#l00075">75</a> of file <a class="el" href="graph_8cc_source.html">graph.cc</a>.</p>
+<p>Definition at line <a class="el" href="graph_8cc_source.html#l00059">59</a> of file <a class="el" href="graph_8cc_source.html">graph.cc</a>.</p>
 
 </div>
 </div>
@@ -248,7 +248,7 @@ const std::set&lt; string &gt; &amp;&#160;</td><td class="memItemRight" valign="
 <p>Sorted by blob names.</p>
 <p>&lt;string, int&gt; := (name of blob reading from subgraph, index of node that reads from subgraph using that blob) </p>
 
-<p>Definition at line <a class="el" href="graph_8cc_source.html#l00080">80</a> of file <a class="el" href="graph_8cc_source.html">graph.cc</a>.</p>
+<p>Definition at line <a class="el" href="graph_8cc_source.html#l00064">64</a> of file <a class="el" href="graph_8cc_source.html">graph.cc</a>.</p>
 
 </div>
 </div>
@@ -260,7 +260,7 @@ const std::set&lt; string &gt; &amp;&#160;</td><td class="memItemRight" valign="
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 26 2018 13:03:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 6 2018 13:04:00 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

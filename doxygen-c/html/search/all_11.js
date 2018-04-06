@@ -58,6 +58,7 @@ var searchData=
   ['rmacregionsop',['RMACRegionsOp',['../classcaffe2_1_1_r_m_a_c_regions_op.html',1,'caffe2']]],
   ['rmspropop',['RmsPropOp',['../classcaffe2_1_1_rms_prop_op.html',1,'caffe2']]],
   ['rnnapplylinkop',['RNNApplyLinkOp',['../classcaffe2_1_1_r_n_n_apply_link_op.html',1,'caffe2']]],
+  ['rnncapableoperatorobserver',['RNNCapableOperatorObserver',['../classcaffe2_1_1_r_n_n_capable_operator_observer.html',1,'caffe2']]],
   ['rnnnetoperator',['RNNNetOperator',['../structcaffe2_1_1_r_n_n_net_operator.html',1,'caffe2']]],
   ['rocksdb',['RocksDB',['../classcaffe2_1_1db_1_1_rocks_d_b.html',1,'caffe2::db']]],
   ['rocksdbcursor',['RocksDBCursor',['../classcaffe2_1_1db_1_1_rocks_d_b_cursor.html',1,'caffe2::db']]],
