@@ -33,6 +33,9 @@ url: "http://caffe2.ai"
 # The GitHub repo for your project
 ghrepo: "pytorch/pytorch"
 
+# The GitHub repo for your site
+siterepo: "caffe2/caffe2.github.io"
+
 # Use these color settings to determine your colour scheme for the site.
 color:
   # primary should be a vivid color that reflects the project's brand
