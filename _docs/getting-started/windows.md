@@ -79,10 +79,13 @@ Open up a Developer Command Prompt, find an appropriate place to clone the repo,
 git clone --recursive https://github.com/pytorch/pytorch.git
 ```
 
-Run the `Developer Command Prompt for VS 2017`, browse to the repo's `\caffe2\scripts` folder and execute:
+If you want to build Python bindings, you need to edit '\scripts\build_windows.bat' and set BUILD_PYTHON to ON
 
-1. `build_host_protoc.bat`, which will build protobuf from source for your system.
-2. `build_windows.bat`, which will build Caffe2.
+Then run the `Developer Command Prompt for VS 2017`, browse to the repo's `\scripts` folder and execute:
+
+```
+build_windows.bat
+```
 
 For VS15 and VS17 users with GitHub Desktop:
 
@@ -91,10 +94,11 @@ For VS15 and VS17 users with GitHub Desktop:
 
 ### Python Configuration
 
-You will find the Caffe2 binary in `$USER\Source\Repos` (if that's where you put the caffe2 source) `\caffe2\build\caffe2\binaries\Release`
+You will find the Caffe2 binary in `$USER\Source\Repos` (if that's where you put the caffe2 source) `\pytorch\build\caffe2\python`
 
-To get python to recognize the DLL, rename `caffe2_pybind11_state.dll` from `.dll` to `.pyb` and copy it to Python's DLL folder `$USER\AppData\Local\Continuum\Anaconda2\DLLs`. If you're not using Anaconda, then look for it in your Python27 or python-2713 folder.
+Copy `caffe2_pybind11_state.pyd` to Python's DLL folder `$USER\AppData\Local\Continuum\Anaconda2\DLLs`. If you're not using Anaconda, then put it in your Python27 or python-2713 folder.
 
+Now you can run python from `\pytorch\build` directory and successfully import caffe2 and other modules.
 
 ### Anaconda Python
 
