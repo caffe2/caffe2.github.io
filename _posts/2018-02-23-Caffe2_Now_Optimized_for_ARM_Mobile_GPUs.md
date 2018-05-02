@@ -8,6 +8,6 @@ Developers are looking to apply AI to an ever expanding range of use cases. As w
 
 <!--truncate-->
 
-The results of this technical collaboration are now available via the Caffe2 and ARM Compute Library's open source repositories, allowing Caffe2 developers to benefit from performance improvements on mobile devices using ARM GPUs. The ARM Compute Library can be accessed at [https://developer.arm.com/technologies/compute-library](https://developer.arm.com/technologies/compute-library). The collaboration will extend into the future for future ARM ML processors as the Compute Library adds support for these new hardware elements.
+The results of this technical collaboration are now available via the Caffe2 and ARM Compute Library's open source repositories, allowing Caffe2 developers to benefit from performance improvements on mobile devices using ARM GPUs. The ARM Compute Library can be accessed at [https://developer.arm.com/technologies/compute-library](https://developer.arm.com/technologies/compute-library). The collaboration will extend into the future for upcoming ARM ML processors as the Compute Library adds support for these new hardware elements.
 
 For additional information about this exciting collaboration please visit [https://community.arm.com/graphics/b/blog/posts/mwc18-a-smartphone-camera-with-a-brain](https://community.arm.com/graphics/b/blog/posts/mwc18-a-smartphone-camera-with-a-brain).
