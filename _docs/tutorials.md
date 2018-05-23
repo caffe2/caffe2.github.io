@@ -106,7 +106,7 @@ New to Caffe and Deep Learning? Start here and find out more about the different
 
 #### [Loading Pre-trained Models](https://github.com/caffe2/tutorials/blob/master/Loading_Pretrained_Models.ipynb)
 
-Take advantage of the [Model Zoo](#zoo.html) and grab some pre-trained models and take them for a test drive. This tutorial has a set of different models that are ready to go and will show you the basic steps for prepping them and firing up your neural net. Then you can throw some images or other tests at them and see how they perform.
+Take advantage of the [Model Zoo](zoo.html) and grab some pre-trained models and take them for a test drive. This tutorial has a set of different models that are ready to go and will show you the basic steps for prepping them and firing up your neural net. Then you can throw some images or other tests at them and see how they perform.
 
 #### [Image Pre-Processing Pipeline](https://github.com/caffe2/tutorials/blob/master/Image_Pre-Processing_Pipeline.ipynb)
 
