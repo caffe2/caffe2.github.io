@@ -26,14 +26,14 @@ git submodule update --init
 If you want to build Caffe2 for Android with armeabi-v7a ABI:
 
 ```
-cd caffe2
+cd pytorch
 ./scripts/build_android.sh
 ```
 
 Or if you want to build Caffe2 for Android with arm64-v8a ABI:
 
 ```
-cd caffe2
+cd pytorch
 ./scripts/build_android.sh -DANDROID_ABI=arm64-v8a -DANDROID_TOOLCHAIN=clang
 ```
 
