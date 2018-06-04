@@ -39,12 +39,16 @@ For any problems, see our [troubleshooting guide](faq.html).
 
 ```bash
 git clone --recursive https://github.com/pytorch/pytorch.git && cd pytorch
-CONDA_INSTALL_LOCALLY=1 ./scripts/build_anaconda.sh
+./scripts/build_anaconda.sh --install-locally
 ```
 
 This will build Caffe2 using [conda build](https://conda.io/docs/user-guide/tasks/build-packages/recipe.html), with the flags specified in `conda/no_cuda/build.sh` and the packages specified in `conda/no_cuda/meta.yaml`. To build Caffe2 with different settings, change the dependencies in `meta.yaml` and the `CMAKE_ARGS` flags in `conda/no_cuda/build.sh` and run the script again.
 
-If you want to build with GPU, then use `CONDA_INSTALL_LOCALLY=1 BUILD_ENVIRONMENT=conda-cuda-macos ./scripts/build_anaconda.sh` instead.
+If you want to build with GPU, then you need to pass your CUDA and CuDNN versions to the script. For example, to build with CUDA 9.0 and CuDNN 7 use
+
+```bash
+./scripts/build_anaconda.sh --install-locally --cuda 9.0 --cudnn 7
+```
 
 Now [test your Caffe2 installation](#test-the-caffe2-installation).
 
