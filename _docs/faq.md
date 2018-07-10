@@ -9,6 +9,7 @@ permalink: /docs/faq.html
 * [What languages does Caffe2 support?](#what-languages-does-caffe2-support)
 * [How do I use Caffe2 with my GPU?](#how-do-i-use-caffe2-with-my-gpu)
 * [What are all of these optional libraries used for?](#what-are-all-of-these-optional-libraries-used-for)
+* [What is the cmake output?](#what-is-the-cmake-output)
 * [Why do I get import errors in Python when I try to use Caffe2?](#why-do-i-get-import-errors-in-python-when-i-try-to-use-caffe2)
   * [How do Python installations work?](#null__how-do-python-installations-work)
 * [Why isn't Caffe2 working as expected in Anaconda?](#why-is-caffe2-not-working-as-expected-in-anaconda)
@@ -31,6 +32,8 @@ Caffe2 is tested on
 * iOS and Android
 * Raspberry Pi
 * Nvidia Tegra
+
+We try to support other operating systems not included in the above list. The above list is what we test every PR on.
 
 ## What languages does Caffe2 support?
 
@@ -68,6 +71,56 @@ Caffe2 can has many optional dependencies, which extend Caffe2's core functional
 [ZeroMQ](http://zeromq.org/) | needed for Caffe2's ZmqDB IO backend (serving data through a socket)
 
 
+## What is the cmake output?
+
+The cmake output looks like this
+
+```
+--
+-- ******** Summary ********
+-- General:
+--   CMake version         : 3.11.2
+--   CMake command         : /usr/local/Cellar/cmake/3.11.2/bin/cmake
+--   Git version           : v0.1.11-9229-g972440bea
+--   System                : Darwin
+--   C++ compiler          : /usr/local/opt/ccache/libexec/g++
+--   C++ compiler version  : 9.1.0.9020039
+--   BLAS                  : Eigen
+--   CXX flags             :  -Wno-deprecated -fvisibility-inlines-hidden -Wno-deprecated-declarations -DONNX_NAMESPACE=onnx_c2 -O2 -fPIC -Wno-narrowing -Wall -Wextra -Wno-missing-field-initializers -Wno-type-limits -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-error=deprecated-declarations -faligned-new
+--   Build type            : Release
+--   Compile definitions   :
+--   CMAKE_PREFIX_PATH     : /Users/hellemn/anaconda3/envs/setup
+--   CMAKE_INSTALL_PREFIX  : /Users/hellemn/anaconda3/envs/setup
+--
+--   BUILD_CAFFE2          : ON
+--   BUILD_ATEN            : OFF
+--   BUILD_BINARY          : OFF
+--   BUILD_CUSTOM_PROTOBUF : ON
+--     Link local protobuf : ON
+--   BUILD_DOCS            : OFF
+--   BUILD_PYTHON          : ON
+--     Python version      : 3.6.6
+--     Python executable   : /Users/hellemn/anaconda3/envs/setup/bin/python
+--     Python includes     : /Users/hellemn/anaconda3/envs/setup/include/python3.6m
+--     Python site-packages: lib/python3.6/site-packages
+--   BUILD_SHARED_LIBS     : ON
+--   BUILD_TEST            : OFF
+--   USE_ASAN              : OFF
+--   USE_ATEN              : OFF
+--   USE_CUDA              : OFF
+--   USE_ROCM              : OFF
+--   USE_EIGEN_FOR_BLAS    : ON
+--   USE_FFMPEG            : OFF
+--   USE_GFLAGS            : OFF
+--   USE_GLOG              : OFF
+--   USE_GLOO              : OFF
+--   USE_LEVELDB           : OFF
+<more output omitted>
+```
+
+You can find it by searching for the string "Summary". If you build Caffe2 from source then there is cmake output somewhere. If you used `setup.py` or `scripts/build_anaconda.sh` then those scripts called cmake, so there is still this output. This output is the most important information for us on most Github issues, so please include it whenever you open an issue.
+
+
 ## Why do I get import errors in Python when I try to use Caffe2?
 
 You will get errors like ```ModuleNotFoundError: No module named <packagename>``` if the Python interpreter that you are running can not find the module that you are trying to import (a Python module is a Python source file or a directory of Python source files). This is always caused by one of the following problems
@@ -76,7 +129,17 @@ You will get errors like ```ModuleNotFoundError: No module named <packagename>``
 2. The needed package is installed in the wrong place
 3. The wrong Python is being used
 
-If you are trying to run a tutorial, then make sure you have installed all of the dependencies at the top of the [tutorials](tutorials.html) page. If you are getting an import error on `caffe2` itself, then you might have to set PYTHONPATH, but should understand the following first.
+Follow this quick checklist to debug the problem:
+
+1. If you are trying to run a tutorial, then make sure you have installed all of the dependencies at the top of the [tutorials](tutorials.html) page.
+2. `which python` should not be `/usr/bin/python`
+3. `echo "$(which python)/../.."` and `echo "$(which pip)/../.."` should be the exact same
+4. Make sure you are using the same Python that you installed with
+5. Check that in your [cmake output](#what-is-the-cmake-output):
+  - Python executable, includes, and site-packages all point to the same installation
+  - CMAKE_INSTALL_PREFIX and CMAKE_PREFIX_PATH both point to your Python installation (unless you are using `/usr/local` Python)
+6. Read the next three questions on this FAQ about Python installations.
+7. Try again in a brand new environment
 
 
 ### How do Python installations work?
@@ -88,67 +151,90 @@ A Python installation consists of a Python executable (just called `python`) and
 * **include/** where headers for c and c++ libraries are found
 * **bin/** where the Python executable itself is found
 
-Your python installation looks like this:
+For example, a typical Python 2.7 installed into /usr/local looks like this:
 
 ```
 /usr/local/                                     # your python root and CMAKE_INSTALL_PREFIX
   +-- bin/
-    +-- python
+    +-- python                                  # just a symbolic link to /usr/local/bin/python2
+    +-- python2                                 # just a symbolic link to /usr/local/bin/python2.7
+    +-- python2.7
     +-- <other executables>
   +-- include/
     +-- <header files for c and c++ libraries>
   +-- lib/
-    +-- libcaffe2.dylib
+    +-- libcaffe2.so                            # The Caffe2 cpp library
     +-- <other Caffe2 c and c++ libraries>
     +-- <other c and c++ libraries>
-    +-- python2.7/                              # or python 3.6, or whatever your version is
+    +-- python2.7/
       +-- site-packages/
         +-- caffe2/                             # where compiled Caffe2 python source files are
+          +--python/
+            +--caffe2_pybind11_state.so         # Another Caffe2 cpp library
         +-- <other installed python modules>
 ```
 
-There may be multiple Python installations on your machine, but only one should be active at a time. Your current Python root is at "$(which python)/../.." . If you are using a conda environment then it will be `<Anaconda root directory>/envs/<conda env name>` instead of `/usr/local/` . If you are using Anaconda but not an environment, then it will be your Anaconda root directory instead of `/usr/local/`.
+There may be multiple Python installations on your machine, but only one can be active at a time. Your current Python is at ```which python``` and your current Python root is thus at "$(which python)/../.." . Many users of Python have several Python installations on their machine:
 
-> Note: `pip` will only install into the current environment if `which pip` is in the same directory as `which python`. `conda` will only install into the current environment if `which conda` is in the same directory as `which python`. Otherwise, these tools will install into unexpected places that will probably not work correctly.
+**System Python**: All Mac and Linux computers have a system Python installation at ```/usr```, with libraries at ```/usr/lib``` and the Python executable at ```/usr/bin/python```. This system Python installation is needed by your system, so you should not mess with it. Try to avoid installing anything into your system Python. If you ever get a "Permission Denied" when trying to install a Python package, then you are probably installing into your system Python and you should stop what you are doing. **Never use ```sudo``` to install a Python package**, or else you may break your system Python installation. On more recent versions of Python, you may pass ```--user``` flag to pip to install into a separate site-packages in your home directory.
 
-When Python imports anything, it first looks in its own site-packages directory and then looks in all directories in the PYTHONPATH environment variable. If you are having trouble importing Caffe2 in python, then:
+**Homebrew Python**: Many Mac users install Python with Homebrew ```brew install python```, which installs a Python into ```/usr/local``` The installation looks the same as above, but may have a different Python version. It is safe to install into this Python.
 
-1. Make sure that you are using the same python that was used to build Caffe2. If you installed or uninstalled a new version of python or Anaconda since building Caffe2 then your python may have changed. If you are using Anaconda, make sure you are using the same conda environment that was used to build Caffe2.
-2. If Caffe2 is installed into the correct site-packages (the directory structure looks like it does above) and python can still not import Caffe2, then add the current python root to PYTHONPATH by running `export PYTHONPATH="${PYTHONPATH}:$(which python)/../..` and try again.
+**Anaconda Python or virtualenvs**: Anaconda and virtualenv are both Python environment managers. A Python env is a separate Python installation with its own Python version and its own installed Python packages. **We recommend that you do all of your work in a Python env.** An Anaconda Python 3.6 installation with one Python 2.7 env called my_first_env and one Python 3.6 env called my_second_env looks like this:
 
-If you overrode the default CMAKE_INSTALL_PREFIX when you built Caffe2, then you might have to add that to PYTHONPATH as well.
+```
+~/anaconda3/
+  +-- bin/
+     +--
+     +-- python                             # just a symlink to ~/anaconda3/bin/python3.6
+     +-- python3.6
+  +-- include/
+  +-- lib/
+     +-- <c and c++ libraries installed in the root env>
+     +-- python3.6/
+        +-- site-packages/
+          +-- <python modules installed in the root env>
+  +-- envs/
+     +-- my_first_env/
+        +-- bin/
+           +-- pip
+           +-- python                       # just a symlink to ~/anaconda3/envs/my_first_env/bin/python2.7
+           +-- python2.7
+        +-- include/
+        +-- lib/
+           +-- <c and c++ libraries installed in my_first_env>
+           +-- python2.7/
+             +-- site-packages/
+               +-- <python modules installed in my_first_env>
+     +-- my_second_env/
+        +-- bin/
+           +-- pip
+           +-- python                       # just a symlink to ~/anaconda3/envs/my_second_env/bin/python3.6
+           +-- python3.6
+        +-- include/
+        +-- lib/
+           +-- <c and c++ libraries installed in my_second_env>
+           +-- python3.6/
+             +-- site-packages/
+               +-- <python modules installed in my_second_env>
+```
+
+There are three Python installations in the example above. "Activating" a Python environment just points your system to use a particular Python installation. Note how a Python2.7 env can exist inside a Python3.6 installation. virtualenv works the same way as conda-envs; they just have different syntax on how to activate or deactivate a Python environment. Remember that a different Python env may be activated in each of your bash or terminal windows.
+
+`which python` tells you what your current active Python env is. `which pip` tells you what your current active pip is. **`"$(which pip)/.."` and `"$(which python)/.."` should be the same**; if not then your current env is broken and you should create a new one.
 
 
 ## Why is Caffe2 not working as expected in Anaconda?
 
-First read [the above section](#null__how-do-python-installations-work). If you use Anaconda then your python installation is a little more complicated and will look more like
+1. Anaconda Python has a different search path. Normally, Python searches for imported modules in the current directory, then in its site-packages, and then in $PYTHONPATH. Anaconda Python searches first in the current directory, then in its site-packages, then ALSO searches in the root Anaconda's site-packages, and then searches in $PYTHONPATH. This can give confusing behavior and confuse tools like pip and conda-build. For this reason, we recommend that you **only install into conda envs, never into the root Anaconda python**. 
 
-```
-~/anaconda2/
-  +-- bin/
-    +-- python
-  +-- include/
-  +-- lib/
-    +-- <c and c++ libraries installed in the root env>
-    +-- python2.7/
-      +-- site-packages/
-        +-- <python modules installed in the root env>
-  +-- envs/
-    +-- my_caffe2_env/
-      +-- bin/
-        +-- python
-      +-- include/
-      +-- lib/
-        +-- <c and c++ libraries installed in my_caffe2_env>
-        +-- python2.7/
-          +-- site-packages/
-            +-- <python modules installed in my_caffe2_env>
-    +-- <your other conda envs>
-```
+2. There are several ways to create a conda env.
 
-Whenever you make a new conda environment with `conda create <env_name>` then Anaconda adds a new directory `~/anaconda2/envs/<env_name>` with its own `bin/python`, `lib/` and `python2.7/site-packages/` . This is how Anaconda keeps each environment separate from each other.
+- `conda create -n some_env` : **Don't use this**, as this creates a brand new env but does NOT install Python or setuptools into the env. This means that if you activate your new env with `source activate some_env` immediately after you create it, then your root env will still be activated. Many build tools, including ours, rely on the Python package `distutils` to know where to install Python files. If you use this method, then `distutils` will still point to the root Anaconda Python instead of your Python env, which might conflict with other flags passed to our cmake system.
 
-Notice that there is still a complete Python installation in the root Anaconda directory. This is the "root" or "default" conda environment, and where `pip` and `conda` will install packages when you do not have conda environment activated. However, **conda envs will also look in the root env** if they do not find required modules in their own env. So if you install Protobuf into env my_caffe2_env and also into the root env and install Caffe2 into env my_caffe2_env and then uninstall Protobuf from my_caffe2_env, then Caffe2 will start using the Protobuf from your root env instead. This behaviour is often not what you want and can easily cause version mismatch problems. For this reason we recommend that you avoid installing packages into your root conda environment and install Caffe2 into a brand new conda environment.
+- `conda create -n some_env anaconda` : **Don't use this** either. This will install *all* base Anaconda packages into your new env. This is a *lot* of packages, most of which you will not use. This wastes a lot of memory and takes a long time to install. This also makes it harder to install later packages, as dependency resolution is complicated by all the existing packages.
+
+- `conda create -n some_env python=3` : **Always use this**. This will create a new env and install only the minimal packages, including Python setuptools and distutils. If you use this to create all your conda envs and never install packages into your root env then you will have a much better experience with Anaconda.
 
 ## How do I fix error messages that are Protobuf related?
 
@@ -279,8 +365,8 @@ For further issues, please post a new issue to our [issue tracker on Github](htt
 
 * `$(uname -a)`
 * Which installation guide you followed.
-* What flags you passed to `cmake`
-* The full output of your `cmake` command
+* The full command you used to build Caffe2, including commands to setup your Python environment
+* The full [cmake output](#what-is-the-cmake-output)
 
 
 ## Miscellaneous errors
