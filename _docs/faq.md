@@ -174,7 +174,7 @@ For example, a typical Python 2.7 installed into /usr/local looks like this:
         +-- <other installed python modules>
 ```
 
-There may be multiple Python installations on your machine, but only one can be active at a time. Your current Python is at ```which python``` and your current Python root is thus at "$(which python)/../.." . Safe users of Python have several Python installations on their machine:
+There may be multiple Python installations on your machine, but only one can be active at a time. Your current Python is at ```which python``` and your current Python root is thus at "$(which python)/../.." . Many users of Python have several Python installations on their machine:
 
 **System Python**: All Mac and Linux computers have a system Python installation at ```/usr```, with libraries at ```/usr/lib``` and the Python executable at ```/usr/bin/python```. This system Python installation is needed by your system, so you should not mess with it. Try to avoid installing anything into your system Python. If you ever get a "Permission Denied" when trying to install a Python package, then you are probably installing into your system Python and you should stop what you are doing. **Never use ```sudo``` to install a Python package**, or else you may break your system Python installation. On more recent versions of Python, you may pass ```--user``` flag to pip to install into a separate site-packages in your home directory.
 
@@ -365,8 +365,8 @@ For further issues, please post a new issue to our [issue tracker on Github](htt
 
 * `$(uname -a)`
 * Which installation guide you followed.
-* What flags you passed to `cmake`
-* The full output of your `cmake` command
+* The full command you used to build Caffe2, including commands to setup your Python environment
+* The full [cmake output](#what-is-the-cmake-output)
 
 
 ## Miscellaneous errors
