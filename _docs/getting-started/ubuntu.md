@@ -72,7 +72,7 @@ sudo apt-get install -y --no-install-recommends \
       protobuf-compiler \
       python-dev \
       python-pip                          
-sudo pip install \
+pip install --user \
       future \
       numpy \
       protobuf

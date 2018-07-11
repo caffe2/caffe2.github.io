@@ -107,21 +107,21 @@ make -j 8 && sudo make install && cd ../..
 Now we need the Python dependencies. Note the troubleshooting info below... the install path with Python can get difficult.
 
 ```
-sudo pip install \
-future \
-graphviz \
-hypothesis \
-jupyter \
-matplotlib \
-numpy \
-protobuf \
-pydot \
-python-nvd3 \
-pyyaml \
-requests \
-scikit-image \
-scipy \
-six
+pip install --user \
+    future \
+    graphviz \
+    hypothesis \
+    jupyter \
+    matplotlib \
+    numpy \
+    protobuf \
+    pydot \
+    python-nvd3 \
+    pyyaml \
+    requests \
+    scikit-image \
+    scipy \
+    six
 ```
 
 This may fail with error:
