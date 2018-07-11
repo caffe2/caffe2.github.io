@@ -16,8 +16,12 @@ permalink: /docs/faq.html
 * [How do I fix error messages that are protobuf related?](#how-do-i-fix-error-messages-that-are-protobuf-related)
 * [How can I find a file, library, or package on my computer?](#how-can-i-find-a-file-library-or-package-on-my-computer)
 * [How can I find what dependencies my Caffe2 library (or other library) has?](#how-can-i-find-what-dependencies-my-caffe2-library-or-other-library-has)
+
+**Common Errors**
+
 * [The source directory does not contain a CMakeLists.txt file](#the-source-directory-does-not-contain-a-cmakeliststxt-file)
 * [No module named caffe2_pybind11_state_gpu](#no-module-named-caffe2pybind11stategpu)
+* [token ""CUDACC_VER is no longer supported. Use CUDACC_VER_MAJOR, CUDACC_VER_MINOR, and CUDACC_VER_BUILD instead."" is not valid in preprocessor expressions](#token-is-not-valid-in-preprocessor-expressions)
 * [My python kernel keeps crashing when using Jupyter](#my-python-kernel-keeps-crashing-when-using-jupyter)
 * [I still have a question, where can I get more help?](#i-still-have-a-question-where-can-i-get-more-help)
 
@@ -349,12 +353,26 @@ You need to run `git submodule update --init` in the Caffe2 root directory.
 
 ## No module named caffe2_pybind11_state_gpu
 
-If you are not building for GPU then ignore this. If you are building for GPU, then make sure CUDA was found correctly in the output of the `cmake` command that was run to build Caffe2.
+If you are not building for GPU then ignore this. If you are building for GPU, then make sure CUDA was found correctly in the [output of the `cmake` command](#what-is-the-cmake-output) that was run to build Caffe2.
 
 
 ## My python kernel keeps crashing when using Jupyter
 
 This happens when you try to call Jupyter server directly (like in a Docker container). Use `sh -c "jupyter notebook ..."` to get around this problem.
+
+## Token is not valid in preprocessor expressions
+
+If you get the error 
+
+```bash
+token ""CUDACC_VER is no longer supported. Use CUDACC_VER_MAJOR, CUDACC_VER_MINOR, and CUDACC_VER_BUILD instead."" is not valid in preprocessor expressions
+```
+
+The most common cause is an incompatibility between your Eigen and your CUDA. There are three possible workarounds:
+
+1. Update your Eigen to be compatible with your version of CUDA
+2. Use the Eigen that ships with Caffe2 in third_party. You can use this by disabling/uninstalling your system Eigen (not always possible), or by removing the ```find_package(Eigen)``` line around [here](https://github.com/pytorch/pytorch/blob/master/cmake/Dependencies.cmake#L330).
+3. Use a different BLAS such as MKL instead of Eigen.
 
 
 ## I still have a question, where can I get more help?
@@ -363,10 +381,24 @@ For further issues, please post a new issue to our [issue tracker on Github](htt
 
 > If your question is about an error installing Caffe2, then please include the following information in your issue:
 
-* `$(uname -a)`
+* `uname -a`
 * Which installation guide you followed.
 * The full command you used to build Caffe2, including commands to setup your Python environment
 * The full [cmake output](#what-is-the-cmake-output)
+
+If your question involves Python, also include
+
+* All comands you used to set up your Python environment
+* `which python`
+* `which pip`
+* Are you using Anaconda or virtualenv? If so, what versions?
+
+If your question involves CUDA, also include
+
+* `nvidia-smi`
+* `nvcc --version`
+* `ls -lah /usr/local/cuda`
+* What CUDA versions you have installed, and which you would like to use.
 
 
 ## Miscellaneous errors

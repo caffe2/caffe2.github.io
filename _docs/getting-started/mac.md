@@ -18,7 +18,11 @@ NOTE: This will install Caffe2 and all of its required dependencies into the cur
 
 ### Prebuilt Caffe2 Python Wheel
 
-No wheel is available at this time.
+This is in beta mode, but you can try
+
+```bash
+pip install caffe2
+```
 
 
 <block class="mac compile" />
@@ -72,7 +76,7 @@ brew install \
 ```
 
 ```bash
-sudo -H pip install \
+pip install --user \
     future \
     leveldb \
     numpy \
@@ -91,7 +95,7 @@ sudo -H pip install \
 ```bash
 # Clone Caffe2's source code from our Github repository
 git clone --recursive https://github.com/pytorch/pytorch.git && cd pytorch
-git submodule update --init
+git submodule update --init --recursive
 
 # Create a directory to put Caffe2's build files in
 mkdir build && cd build
