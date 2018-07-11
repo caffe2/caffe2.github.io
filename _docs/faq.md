@@ -404,7 +404,6 @@ If your question involves CUDA, also include
 ## Miscellaneous errors
 
 * On Mac, you may need to install [Xcode](https://developer.apple.com/xcode/) or at a minimum xcode command line tools. You can install it by running `xcode-select --install`
-* If you experience errors related to confu or PeachPy when running `make install`, then install dependencies of NNPACK: `[sudo] pip install --upgrade git+https://github.com/Maratyszcza/PeachPy` and `[sudo] pip install --upgrade git+https://github.com/Maratyszcza/confu`
 * If you get model downloading errors when running in `sudo`, then PYTHONPATH might not be visible in that context. Run `sudo visudo` then add this line: `Defaults    env_keep += "PYTHONPATH"`
 * If you encounter "AttributeError: 'module' object has no attribute 'MakeArgument'" when calling `core.CreateOperator` then try removing `caffe2/python/utils` from the directory that you installed Caffe2 in.
 * If you see [errors with libdc1394](http://stackoverflow.com/questions/12689304/ctypes-error-libdc1394-error-failed-to-initialize-libdc1394) when opencv is installed, then run `ln /dev/null /dev/raw1394` . That solution is not [persistent](http://stackoverflow.com/questions/31768441/how-to-persist-ln-in-docker-with-ubuntu) so try `sh -c 'ln -s /dev/null /dev/raw1394'` or when instantiating the container use: `--device /dev/null:/dev/raw1394`
