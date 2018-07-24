@@ -132,18 +132,20 @@ You will get errors like ```ModuleNotFoundError: No module named <packagename>``
 1. The needed package is not installed
 2. The needed package is installed in the wrong place
 3. The wrong Python is being used
+4. You are running Python in a directory that has a directory named "caffe2" in it.
 
 Follow this quick checklist to debug the problem:
 
 1. If you are trying to run a tutorial, then make sure you have installed all of the dependencies at the top of the [tutorials](tutorials.html) page.
+2. If `ls caffe2` is not an error, then change directories (try `cd ~`) until it is an error. There should not be a directory named "caffe2" in the working environment that you are invoking Python in.
 2. `which python` should not be `/usr/bin/python`
 3. `echo "$(which python)/../.."` and `echo "$(which pip)/../.."` should be the exact same
-4. Make sure you are using the same Python that you installed with
+4. Make sure you are using the same Python that you installed with The Python that you installed with can be found in your [cmake output](#what-is-the-cmake-output).
 5. Check that in your [cmake output](#what-is-the-cmake-output):
   - Python executable, includes, and site-packages all point to the same installation
   - CMAKE_INSTALL_PREFIX and CMAKE_PREFIX_PATH both point to your Python installation (unless you are using `/usr/local` Python)
 6. Read the next three questions on this FAQ about Python installations.
-7. Try again in a brand new environment
+7. Try again in a brand new environment. If you are using Anaconda, make sure to follow [these recommendations.](#why-is-caffe2-not-working-as-expected-in-anaconda)
 
 
 ### How do Python installations work?
