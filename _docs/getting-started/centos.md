@@ -109,18 +109,10 @@ Now we need the Python dependencies. Note the troubleshooting info below... the 
 ```
 pip install --user \
     future \
-    graphviz \
-    hypothesis \
-    jupyter \
-    matplotlib \
     numpy \
     protobuf \
-    pydot \
     python-nvd3 \
     pyyaml \
-    requests \
-    scikit-image \
-    scipy \
     six
 ```
 
@@ -172,11 +164,9 @@ export LD_LIBRARY_PATH=/opt/nvidia/cuda/lib64:/usr/local/bin
 Almost done. Now you need to clone Caffe2 repo and build it (note: update the `-j8` with your system's number of processors; to check this, run `nproc` from the terminal.):
 
 ```
-git clone --recursive https://github.com/pytorch/pytorch.git
-cd pytorch && git submodule update --init
-mkdir build && cd build
-cmake3 ..
-sudo make -j8 install
+git clone https://github.com/pytorch/pytorch.git && cd pytorch
+git submodule update --init --recursive
+FULL_CAFFE2=1 python setup.py install
 ```
 
 #### Test it out!

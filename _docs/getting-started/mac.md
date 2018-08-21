@@ -29,41 +29,9 @@ pip install caffe2
 
 To compile Caffe2 to use your GPU, follow [these](#gpu-support) instructions first, then:
 
-* Follow [these](#anaconda-install-path) instructions if you have Anaconda.
-* Follow [these](#brew-and-pip-install-path) instructions if you do not have Anaconda.
-* (Advanced) Follow [these](#custom-anaconda-install) instructions if you have Anaconda, are used to working with Anaconda environments, are familiar with how Anaconda installs and finds dependencies, and need to change Caffe2 c++ source and recompile frequently.
+We recommend that you use [Anaconda](https://www.continuum.io/downloads). Activate Anaconda, create a new environment, install dependencies
 
-For any problems, see our [troubleshooting guide](faq.html).
-
-## Anaconda Install Path
-
-[Anaconda](https://www.continuum.io/downloads) is the recommended install route.  The following commands will install Caffe2 wherever your other conda packages are installed.
-
-> If you download the zip file from Github instead of using `git clone`, then you must run `git submodule update` before building.
-
-```bash
-git clone --recursive https://github.com/pytorch/pytorch.git && cd pytorch
-./scripts/build_anaconda.sh --install-locally
-```
-
-This will build Caffe2 using [conda build](https://conda.io/docs/user-guide/tasks/build-packages/recipe.html), with the flags specified in `conda/no_cuda/build.sh` and the packages specified in `conda/no_cuda/meta.yaml`. To build Caffe2 with different settings, change the dependencies in `meta.yaml` and the `CMAKE_ARGS` flags in `conda/no_cuda/build.sh` and run the script again.
-
-If you want to build with GPU, then you need to pass your CUDA and CuDNN versions to the script. For example, to build with CUDA 9.0 and CuDNN 7 use
-
-```bash
-./scripts/build_anaconda.sh --install-locally --cuda 9.0 --cudnn 7
-```
-
-Now [test your Caffe2 installation](#test-the-caffe2-installation).
-
-
-## Brew and Pip Install Path
-
-> If Anaconda is installed on your system, then please use the [Anaconda install route](https://caffe2.ai/docs/getting-started.html?platform=mac&configuration=compile#anaconda-install-path). Otherwise it is easy to encounter version mismatch issues.
-
-### Install Caffe2's dependencies
-
-You will need [brew](https://brew.sh/) to install Caffe2's dependencies.
+First install your dependencies. You will need [brew](https://brew.sh/) to install Caffe2's dependencies.
 
 ```bash
 brew install \
@@ -73,88 +41,28 @@ brew install \
     gflags \
     glog \
     python
-```
 
-```bash
 pip install --user \
     future \
-    leveldb \
     numpy \
     protobuf \
-    pydot \
-    python-gflags \
     pyyaml \
-    scikit-image \
     six
 ```
 
 > To run the tutorials you will need to install more packages, see the [Tutorial](https://caffe2.ai/docs/tutorials) page for full requirements.
 
-### Clone and Build
+
+Then compile Caffe2 from source:
 
 ```bash
-# Clone Caffe2's source code from our Github repository
-git clone --recursive https://github.com/pytorch/pytorch.git && cd pytorch
+git clone https://github.com/pytorch/pytorch.git && cd pytorch
 git submodule update --init --recursive
-
-# Create a directory to put Caffe2's build files in
-mkdir build && cd build
-
-# Configure Caffe2's build
-# This looks for packages on your machine and figures out which functionality
-# to include in the Caffe2 installation. The output of this command is very
-# useful in debugging.
-cmake ..
-
-# Compile, link, and install Caffe2
-sudo make install
+FULL_CAFFE2=1 python setup.py install
 ```
 
-Now [test your Caffe2 installation](#test-the-caffe2-installation).
+For any problems, see our [troubleshooting guide](faq.html).
 
-## Custom Anaconda Install
-
-> Only use this path if you have Anaconda and plan to change Caffe2 source and rebuild frequently. It is easiest to encounter version mismatch or incompatibility issues using this approach.
-
-If you plan to change the source code of Caffe2 frequently and don't want to wait for a full conda build and install cycle, you may want to bypass conda and call Cmake manually. The following commands will build Caffe2 in a directory called `build` under your Caffe2 root and install Caffe2 in a conda env. **In this example Anaconda is installed in `~/anaconda2`,** if your Anaconda has a different root directory then change that in the code below.
-
-```bash
-# Create a conda environment
-conda create -yn my_caffe2_env && source activate my_caffe2_env
-
-# Install required packages
-conda install -y \
-    future \
-    gflags \
-    glog \
-    leveldb \
-    mkl \
-    mkl-include \
-    numpy \
-    opencv \
-    protobuf \
-    six
-
-# Clone Caffe2's source code from our Github repository
-cd ~ && git clone --recursive https://github.com/pytorch/pytorch.git && cd pytorch
-git submodule update --init
-
-# Create a directory to put Caffe2's build files in
-rm -rf build && mkdir build && cd build
-
-# Configure Caffe2's build
-# This looks for packages on your machine and figures out which functionality
-# to include in the Caffe2 installation. The output of this command is very
-# useful in debugging.
-cmake -DCMAKE_PREFIX_PATH=~/anaconda2/envs/my_caffe2_env -DCMAKE_INSTALL_PREFIX=~/anaconda2/envs/my_caffe2_env ..
-
-# Compile, link, and install Caffe2
-make install
-```
-
-The flag `CMAKE_PREFIX_PATH` tells Cmake to look for packages in your conda environment before looking in system install locations (like `/usr/local`); you almost certainly want to set this flag, since `conda install` installs into the activated conda environment. `CMAKE_INSTALL_PREFIX` tells Cmake where to install Caffe2 binaries such as `libcaffe2.dylib` after Caffe2 has been successfully built; the default is `/usr/local` (which probably isn't what you want).
-
-If you do this, know that Cmake will cache things in this build folder, so you may want to remove it before rebuilding.
 
 ## Test the Caffe2 Installation
 Run this to see if your Caffe2 installation was successful. 
