@@ -48,8 +48,6 @@ We test the latest code on
 * Ubuntu 14.04
 * Ubuntu 16.04
 
-> Anaconda users: To build with Anaconda, follow the instructions on the [Mac page](https://caffe2.ai/docs/getting-started.html?platform=mac&configuration=compile#anaconda-install-path).
-
 ### Install Dependencies
 
 ```bash
@@ -92,21 +90,9 @@ sudo apt-get install -y --no-install-recommends libgflags-dev
 ### Clone & Build
 
 ```bash
-# Clone Caffe2's source code from our Github repository
-git clone --recursive https://github.com/pytorch/pytorch.git && cd pytorch
-git submodule update --init
-
-# Create a directory to put Caffe2's build files in
-mkdir build && cd build
-
-# Configure Caffe2's build
-# This looks for packages on your machine and figures out which functionality
-# to include in the Caffe2 installation. The output of this command is very
-# useful in debugging.
-cmake ..
-
-# Compile, link, and install Caffe2
-sudo make install
+git clone https://github.com/pytorch/pytorch.git && cd pytorch
+git submodule update --init --recursive
+FULL_CAFFE2=1 python setup.py install
 ```
 
 ### Test the Caffe2 Installation
