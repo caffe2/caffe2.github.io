@@ -29,8 +29,6 @@ pip install caffe2
 
 To compile Caffe2 to use your GPU, follow [these](#gpu-support) instructions first, then:
 
-We recommend that you use [Anaconda](https://www.continuum.io/downloads). Activate Anaconda, create a new environment, install dependencies
-
 First install your dependencies. You will need [brew](https://brew.sh/) to install Caffe2's dependencies.
 
 ```bash
