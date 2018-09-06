@@ -90,7 +90,7 @@ Iterations Per Second: 330
 Here's another example of running the RNN for about 10 minutes, but increasing the `batch_size` to 32, the `hidden_size` to 512, and the `seq_length` to 32. Note how the screenplay format is evident, with names and dialogue after, and the loss is now 23%.
 
 ```
-python char_rnn.py --train_data shakespear.txt --gpu --batch_size 32 --hidden_size 512 --seq_length 32
+python char_rnn.py --train_data shakespeare.txt --gpu --batch_size 32 --hidden_size 512 --seq_length 32
 
 ---------- Iteration 26000 ----------
 ;
