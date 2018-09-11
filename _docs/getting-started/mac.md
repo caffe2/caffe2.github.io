@@ -56,7 +56,7 @@ Then compile Caffe2 from source:
 ```bash
 git clone https://github.com/pytorch/pytorch.git && cd pytorch
 git submodule update --init --recursive
-FULL_CAFFE2=1 python setup.py install
+python setup.py install
 ```
 
 For any problems, see our [troubleshooting guide](faq.html).

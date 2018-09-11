@@ -166,7 +166,7 @@ Almost done. Now you need to clone Caffe2 repo and build it (note: update the `-
 ```
 git clone https://github.com/pytorch/pytorch.git && cd pytorch
 git submodule update --init --recursive
-FULL_CAFFE2=1 python setup.py install
+python setup.py install
 ```
 
 #### Test it out!
