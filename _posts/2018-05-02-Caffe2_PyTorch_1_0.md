@@ -18,7 +18,7 @@ We realized that in order to deliver the best user experience, it makes sense to
 
 ## What's going to happen?
 
-We've already merged [code repositories a month ago](https://github.com/caffe2/caffe2/issues/2439) to streamline some of the developer infrastructure tooling.  The following is an outline of our plans of the next months.
+We've already merged [code repositories a month ago](https://github.com/pytorch/pytorch/issues/2439) to streamline some of the developer infrastructure tooling.  The following is an outline of our plans of the next months.
 
 ### Builds and packages
 
