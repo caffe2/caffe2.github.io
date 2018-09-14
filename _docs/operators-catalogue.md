@@ -32,7 +32,7 @@ It takes two inputs: prediction scores P of size (n_samples x n_classes), and tr
 ### Code
 
 
-[caffe2/operators/apmeter_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/apmeter_op.cc)
+[caffe2/operators/apmeter_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/apmeter_op.cc)
 
 ---
 
@@ -58,7 +58,7 @@ Calculates the absolute value of the given input tensor, element-wise.
 ### Code
 
 
-[caffe2/operators/abs_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/abs_op.cc)
+[caffe2/operators/abs_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/abs_op.cc)
 
 ---
 
@@ -72,7 +72,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/abs_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/abs_op.cc)
+[caffe2/operators/abs_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/abs_op.cc)
 
 ---
 
@@ -107,7 +107,7 @@ Accumulation is done using Axpby operation as shown:
 ### Code
 
 
-[caffe2/operators/accumulate_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/accumulate_op.cc)
+[caffe2/operators/accumulate_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/accumulate_op.cc)
 
 ---
 
@@ -140,7 +140,7 @@ The output would contain num_buckets + 2 values. index[1 ... num_buckets] for va
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -169,7 +169,7 @@ Accuracy takes two inputs- predictions and labels, and returns a float accuracy 
 ### Code
 
 
-[caffe2/operators/accuracy_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/accuracy_op.cc)
+[caffe2/operators/accuracy_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/accuracy_op.cc)
 
 ---
 
@@ -210,7 +210,7 @@ Accuracy takes two inputs- predictions and labels, and returns a float accuracy 
 ### Code
 
 
-[caffe2/sgd/adagrad_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/adagrad_op.cc)
+[caffe2/sgd/adagrad_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/adagrad_op.cc)
 
 ---
 
@@ -260,7 +260,7 @@ Accuracy takes two inputs- predictions and labels, and returns a float accuracy 
 ### Code
 
 
-[caffe2/sgd/adam_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/adam_op.cc)
+[caffe2/sgd/adam_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/adam_op.cc)
 
 ---
 
@@ -303,7 +303,7 @@ Performs element-wise binary addition (with limited broadcast support).
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -339,7 +339,7 @@ If no lengths vector is provided, add padding only once, at the start and end of
 ### Code
 
 
-[caffe2/operators/sequence_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sequence_ops.cc)
+[caffe2/operators/sequence_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sequence_ops.cc)
 
 ---
 
@@ -367,7 +367,7 @@ Makes the output and the input share the same underlying storage.
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -394,7 +394,7 @@ Does an allgather operation among the nodes.
 ### Code
 
 
-[caffe2/operators/communicator_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/communicator_op.cc)
+[caffe2/operators/communicator_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/communicator_op.cc)
 
 ---
 
@@ -421,7 +421,7 @@ Does an allreduce operation among the nodes. Currently only Sum is supported.
 ### Code
 
 
-[caffe2/operators/communicator_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/communicator_op.cc)
+[caffe2/operators/communicator_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/communicator_op.cc)
 
 ---
 
@@ -465,7 +465,7 @@ Both input operands should be of type  `bool` .
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -496,7 +496,7 @@ All except the outer-most dimension must be the same between input 1 and 2.
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -531,7 +531,7 @@ Retrive the argmax of the axis dimension. Given an input tensor of shape [a_0, a
 ### Code
 
 
-[caffe2/operators/arg_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/arg_ops.cc)
+[caffe2/operators/arg_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/arg_ops.cc)
 
 ---
 
@@ -566,7 +566,7 @@ Retrive the argmin of the axis dimension. Given an input tensor of shape [a_0, a
 ### Code
 
 
-[caffe2/operators/arg_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/arg_ops.cc)
+[caffe2/operators/arg_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/arg_ops.cc)
 
 ---
 
@@ -590,7 +590,7 @@ Assertion op. Takes in a tensor of bools, ints, longs, or long longs and checks 
 ### Code
 
 
-[caffe2/operators/assert_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/assert_op.cc)
+[caffe2/operators/assert_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/assert_op.cc)
 
 ---
 
@@ -604,7 +604,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -633,7 +633,7 @@ Given a mutex and two int32 scalar tensors, performs an atomic fetch add by muta
 ### Code
 
 
-[caffe2/operators/atomic_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/atomic_ops.cc)
+[caffe2/operators/atomic_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/atomic_ops.cc)
 
 ---
 
@@ -658,7 +658,7 @@ Similar to Iter, but takes a mutex as the first input to make sure that updates 
 ### Code
 
 
-[caffe2/sgd/iter_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/iter_op.cc)
+[caffe2/sgd/iter_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/iter_op.cc)
 
 ---
 
@@ -683,7 +683,7 @@ AveragePool  consumes an input blob X and applies average pooling across the the
 ### Code
 
 
-[caffe2/operators/pool_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_op.cc)
+[caffe2/operators/pool_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_op.cc)
 
 ---
 
@@ -708,7 +708,7 @@ AveragePool1D  consumes an input blob X and applies average pooling across the t
 ### Code
 
 
-[caffe2/operators/pool_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_op.cc)
+[caffe2/operators/pool_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_op.cc)
 
 ---
 
@@ -722,7 +722,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/pool_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_gradient_op.cc)
+[caffe2/operators/pool_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_gradient_op.cc)
 
 ---
 
@@ -747,7 +747,7 @@ AveragePool2D  consumes an input blob X and applies average pooling across the t
 ### Code
 
 
-[caffe2/operators/pool_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_op.cc)
+[caffe2/operators/pool_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_op.cc)
 
 ---
 
@@ -761,7 +761,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/pool_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_gradient_op.cc)
+[caffe2/operators/pool_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_gradient_op.cc)
 
 ---
 
@@ -786,7 +786,7 @@ AveragePool3D  consumes an input blob X and applies average pooling across the t
 ### Code
 
 
-[caffe2/operators/pool_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_op.cc)
+[caffe2/operators/pool_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_op.cc)
 
 ---
 
@@ -800,7 +800,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/pool_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_gradient_op.cc)
+[caffe2/operators/pool_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_gradient_op.cc)
 
 ---
 
@@ -814,7 +814,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/pool_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_gradient_op.cc)
+[caffe2/operators/pool_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_gradient_op.cc)
 
 ---
 
@@ -840,7 +840,7 @@ AveragedLoss takes in a 1-D tensor as input and returns a single output float va
 ### Code
 
 
-[caffe2/operators/loss_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/loss_op.cc)
+[caffe2/operators/loss_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/loss_op.cc)
 
 ---
 
@@ -854,7 +854,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/loss_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/loss_op.cc)
+[caffe2/operators/loss_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/loss_op.cc)
 
 ---
 
@@ -892,7 +892,7 @@ Transform proposal bounding boxes to target bounding box using bounding box
 ### Code
 
 
-[caffe2/operators/bbox_transform_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/bbox_transform_op.cc)
+[caffe2/operators/bbox_transform_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/bbox_transform_op.cc)
 
 ---
 
@@ -906,7 +906,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/stylizer_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/stylizer_ops.cc)
+[caffe2/operators/stylizer_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/stylizer_ops.cc)
 
 ---
 
@@ -930,7 +930,7 @@ Does a barrier operation among the nodes.
 ### Code
 
 
-[caffe2/operators/communicator_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/communicator_op.cc)
+[caffe2/operators/communicator_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/communicator_op.cc)
 
 ---
 
@@ -966,7 +966,7 @@ Input  `data`  is a N * D matrix. Apply box-cox transform for each column.
 ### Code
 
 
-[caffe2/operators/batch_box_cox_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/batch_box_cox_op.cc)
+[caffe2/operators/batch_box_cox_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/batch_box_cox_op.cc)
 
 ---
 
@@ -1005,7 +1005,7 @@ For example
 ### Code
 
 
-[caffe2/operators/one_hot_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/one_hot_ops.cc)
+[caffe2/operators/one_hot_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/one_hot_ops.cc)
 
 ---
 
@@ -1055,7 +1055,7 @@ With in each batch,  `indices`  should not have duplicate number.
 ### Code
 
 
-[caffe2/operators/batch_sparse_to_dense_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/batch_sparse_to_dense_op.cc)
+[caffe2/operators/batch_sparse_to_dense_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/batch_sparse_to_dense_op.cc)
 
 ---
 
@@ -1101,7 +1101,7 @@ Given DATA tensor of rank r >= 2, and INDICES tensor of rank q >= 1, gather entr
 ### Code
 
 
-[caffe2/operators/batch_gather_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/batch_gather_ops.cc)
+[caffe2/operators/batch_gather_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/batch_gather_ops.cc)
 
 ---
 
@@ -1115,7 +1115,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/batch_gather_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/batch_gather_ops.cc)
+[caffe2/operators/batch_gather_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/batch_gather_ops.cc)
 
 ---
 
@@ -1146,7 +1146,7 @@ Batch Matrix multiplication Yi = Ai  * Bi, where A has shape (dim0, dim1, ... M,
 ### Code
 
 
-[caffe2/operators/batch_matmul_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/batch_matmul_op.cc)
+[caffe2/operators/batch_matmul_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/batch_matmul_op.cc)
 
 ---
 
@@ -1182,7 +1182,7 @@ Input is a matrix tensor. Its first dimension is the batch size. Expand each col
 ### Code
 
 
-[caffe2/operators/one_hot_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/one_hot_ops.cc)
+[caffe2/operators/one_hot_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/one_hot_ops.cc)
 
 ---
 
@@ -1237,7 +1237,7 @@ With in each batch,  `indices`  should not have duplicate number.
 ### Code
 
 
-[caffe2/operators/batch_sparse_to_dense_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/batch_sparse_to_dense_op.cc)
+[caffe2/operators/batch_sparse_to_dense_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/batch_sparse_to_dense_op.cc)
 
 ---
 
@@ -1254,7 +1254,7 @@ With in each batch,  `indices`  should not have duplicate number.
 ### Code
 
 
-[caffe2/operators/space_batch_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/space_batch_op.cc)
+[caffe2/operators/space_batch_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/space_batch_op.cc)
 
 ---
 
@@ -1280,7 +1280,7 @@ Computes the Jensen-Shannon divergence (JSD) between two Bernoulli distributions
 ### Code
 
 
-[caffe2/operators/jsd_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/jsd_op.cc)
+[caffe2/operators/jsd_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/jsd_op.cc)
 
 ---
 
@@ -1294,7 +1294,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/jsd_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/jsd_op.cc)
+[caffe2/operators/jsd_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/jsd_op.cc)
 
 ---
 
@@ -1322,7 +1322,7 @@ Given a data tensor and a 1D boolean mask tensor, returns a tensor containing on
 ### Code
 
 
-[caffe2/operators/boolean_mask_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/boolean_mask_ops.cc)
+[caffe2/operators/boolean_mask_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/boolean_mask_ops.cc)
 
 ---
 
@@ -1349,7 +1349,7 @@ Given a tensor of int32 segment lengths and a mask (boolean) tensor, return the 
 ### Code
 
 
-[caffe2/operators/boolean_mask_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/boolean_mask_ops.cc)
+[caffe2/operators/boolean_mask_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/boolean_mask_ops.cc)
 
 ---
 
@@ -1434,7 +1434,7 @@ Given a series of mask and values, reconstruct values together according to mask
 ### Code
 
 
-[caffe2/operators/boolean_unmask_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/boolean_unmask_ops.cc)
+[caffe2/operators/boolean_unmask_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/boolean_unmask_ops.cc)
 
 ---
 
@@ -1475,7 +1475,7 @@ Apply NMS to each class (except background) and limit the number of returned box
 ### Code
 
 
-[caffe2/operators/box_with_nms_limit_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/box_with_nms_limit_op.cc)
+[caffe2/operators/box_with_nms_limit_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/box_with_nms_limit_op.cc)
 
 ---
 
@@ -1504,7 +1504,7 @@ Does a broadcast operation from the root node to every other node. The tensor on
 ### Code
 
 
-[caffe2/operators/communicator_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/communicator_op.cc)
+[caffe2/operators/communicator_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/communicator_op.cc)
 
 ---
 
@@ -1533,7 +1533,7 @@ The operator casts the elements of a given input tensor to a data type specified
 ### Code
 
 
-[caffe2/operators/cast_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cast_op.cc)
+[caffe2/operators/cast_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cast_op.cc)
 
 ---
 
@@ -1559,7 +1559,7 @@ Ceil takes one input data (Tensor<T>) and produces one output data (Tensor<T>) w
 ### Code
 
 
-[caffe2/operators/ceil_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/ceil_op.cc)
+[caffe2/operators/ceil_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/ceil_op.cc)
 
 ---
 
@@ -1588,7 +1588,7 @@ Given an input tensor in NCHW format, the gradient for the output of SpatialBN a
 ### Code
 
 
-[caffe2/operators/channel_backprop_stats_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/channel_backprop_stats_op.cc)
+[caffe2/operators/channel_backprop_stats_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/channel_backprop_stats_op.cc)
 
 ---
 
@@ -1602,7 +1602,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/channel_shuffle_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/channel_shuffle_op.cc)
+[caffe2/operators/channel_shuffle_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/channel_shuffle_op.cc)
 
 ---
 
@@ -1616,7 +1616,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/channel_shuffle_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/channel_shuffle_op.cc)
+[caffe2/operators/channel_shuffle_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/channel_shuffle_op.cc)
 
 ---
 
@@ -1643,7 +1643,7 @@ Given an input tensor in NCHW format, computes the sum of all elements per chann
 ### Code
 
 
-[caffe2/operators/channel_stats_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/channel_stats_op.cc)
+[caffe2/operators/channel_stats_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/channel_stats_op.cc)
 
 ---
 
@@ -1667,7 +1667,7 @@ Copy the value of an atomic<bool> to a bool
 ### Code
 
 
-[caffe2/operators/atomic_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/atomic_ops.cc)
+[caffe2/operators/atomic_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/atomic_ops.cc)
 
 ---
 
@@ -1692,7 +1692,7 @@ If the internal count value <= 0, outputs true, otherwise outputs false,
 ### Code
 
 
-[caffe2/operators/counter_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/counter_ops.cc)
+[caffe2/operators/counter_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/counter_ops.cc)
 
 ---
 
@@ -1718,7 +1718,7 @@ Checks that the given data fields represents a consistent dataset under the sche
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -1745,7 +1745,7 @@ The Checkpoint operator is similar to the Save operator, but allows one to save 
 ### Code
 
 
-[caffe2/operators/load_save_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/load_save_op.cc)
+[caffe2/operators/load_save_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/load_save_op.cc)
 
 ---
 
@@ -1773,7 +1773,7 @@ Clip operator limits the given input within an interval. The interval is specifi
 ### Code
 
 
-[caffe2/operators/clip_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/clip_op.cc)
+[caffe2/operators/clip_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/clip_op.cc)
 
 ---
 
@@ -1787,7 +1787,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/clip_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/clip_op.cc)
+[caffe2/operators/clip_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/clip_op.cc)
 
 ---
 
@@ -1831,7 +1831,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/sgd/clip_tensor_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/clip_tensor_op.cc)
+[caffe2/sgd/clip_tensor_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/clip_tensor_op.cc)
 
 ---
 
@@ -1857,7 +1857,7 @@ Clones existing common world.
 ### Code
 
 
-[caffe2/operators/communicator_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/communicator_op.cc)
+[caffe2/operators/communicator_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/communicator_op.cc)
 
 ---
 
@@ -1871,7 +1871,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/queue/queue_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/queue/queue_ops.cc)
+[caffe2/queue/queue_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/queue/queue_ops.cc)
 
 ---
 
@@ -1895,7 +1895,7 @@ Closes the Queue.
 ### Code
 
 
-[caffe2/queue/rebatching_queue_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/queue/rebatching_queue_ops.cc)
+[caffe2/queue/rebatching_queue_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/queue/rebatching_queue_ops.cc)
 
 ---
 
@@ -1909,7 +1909,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/im2col_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/im2col_op.cc)
+[caffe2/operators/im2col_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/im2col_op.cc)
 
 ---
 
@@ -1960,7 +1960,7 @@ An anchor at one FPN level may predict an RoI that will map to another level, he
 ### Code
 
 
-[caffe2/operators/collect_and_distribute_fpn_rpn_proposals_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/collect_and_distribute_fpn_rpn_proposals_op.cc)
+[caffe2/operators/collect_and_distribute_fpn_rpn_proposals_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/collect_and_distribute_fpn_rpn_proposals_op.cc)
 
 ---
 
@@ -1984,7 +1984,7 @@ Collect tensor into tensor vector by reservoir sampling, argument num_to_collect
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -2008,7 +2008,7 @@ Compute column-wise max reduction of the input tensor.
 ### Code
 
 
-[caffe2/operators/reduction_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_ops.cc)
+[caffe2/operators/reduction_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_ops.cc)
 
 ---
 
@@ -2022,7 +2022,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/reduction_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_ops.cc)
+[caffe2/operators/reduction_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_ops.cc)
 
 ---
 
@@ -2050,7 +2050,7 @@ Compute the offsets matrix given cursor and data blobs. Need to be ran at beginn
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -2077,7 +2077,7 @@ Concatenate a list of tensors into a single tensor
 ### Code
 
 
-[caffe2/operators/concat_split_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/concat_split_op.cc)
+[caffe2/operators/concat_split_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/concat_split_op.cc)
 
 ---
 
@@ -2103,7 +2103,7 @@ Concat Tensors in the std::unique_ptr<std::vector<Tensor> > along the first dime
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -2131,7 +2131,7 @@ Given a 1-D tensor of boolean values, apply conditional operator along the first
 ### Code
 
 
-[caffe2/operators/conditional_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/conditional_op.cc)
+[caffe2/operators/conditional_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/conditional_op.cc)
 
 ---
 
@@ -2155,7 +2155,7 @@ Set an atomic<bool> to true if the given condition bool variable is true
 ### Code
 
 
-[caffe2/operators/atomic_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/atomic_ops.cc)
+[caffe2/operators/atomic_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/atomic_ops.cc)
 
 ---
 
@@ -2190,7 +2190,7 @@ The operator fills the elements of the output tensor with a constant value speci
 ### Code
 
 
-[caffe2/operators/filler_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/filler_op.cc)
+[caffe2/operators/filler_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/filler_op.cc)
 
 ---
 
@@ -2218,7 +2218,7 @@ The convolution operator consumes an input vector, a filter blob and a bias blob
 ### Code
 
 
-[caffe2/operators/conv_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/conv_op.cc)
+[caffe2/operators/conv_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/conv_op.cc)
 
 ---
 
@@ -2246,7 +2246,7 @@ The convolution operator consumes an input vector, a 1D filter blob and a bias b
 ### Code
 
 
-[caffe2/operators/conv_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/conv_op.cc)
+[caffe2/operators/conv_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/conv_op.cc)
 
 ---
 
@@ -2260,7 +2260,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/conv_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/conv_gradient_op.cc)
+[caffe2/operators/conv_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/conv_gradient_op.cc)
 
 ---
 
@@ -2288,7 +2288,7 @@ The convolution operator consumes an input vector, a 2D filter blob and a bias b
 ### Code
 
 
-[caffe2/operators/conv_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/conv_op.cc)
+[caffe2/operators/conv_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/conv_op.cc)
 
 ---
 
@@ -2302,7 +2302,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/conv_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/conv_gradient_op.cc)
+[caffe2/operators/conv_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/conv_gradient_op.cc)
 
 ---
 
@@ -2330,7 +2330,7 @@ The convolution operator consumes an input vector, a 3D filter blob and a bias b
 ### Code
 
 
-[caffe2/operators/conv_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/conv_op.cc)
+[caffe2/operators/conv_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/conv_op.cc)
 
 ---
 
@@ -2344,7 +2344,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/conv_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/conv_gradient_op.cc)
+[caffe2/operators/conv_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/conv_gradient_op.cc)
 
 ---
 
@@ -2358,7 +2358,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/conv_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/conv_gradient_op.cc)
+[caffe2/operators/conv_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/conv_gradient_op.cc)
 
 ---
 
@@ -2387,7 +2387,7 @@ As is expected, the filter is deconvolved with a subset of the image and the bia
 ### Code
 
 
-[caffe2/operators/conv_transpose_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/conv_transpose_op.cc)
+[caffe2/operators/conv_transpose_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/conv_transpose_op.cc)
 
 ---
 
@@ -2401,7 +2401,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/conv_transpose_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/conv_transpose_gradient_op.cc)
+[caffe2/operators/conv_transpose_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/conv_transpose_gradient_op.cc)
 
 ---
 
@@ -2425,7 +2425,7 @@ Copy input tensor into output, potentially across devices.
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -2451,7 +2451,7 @@ Take a CPU input tensor and copy it to an output in the current Context (GPU or 
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -2476,7 +2476,7 @@ Copy input tensor into output to the specific device.
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -2502,7 +2502,7 @@ Calculates the cosine of the given input tensor, element-wise.
 ### Code
 
 
-[caffe2/operators/cos_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cos_op.cc)
+[caffe2/operators/cos_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cos_op.cc)
 
 ---
 
@@ -2516,7 +2516,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/cos_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cos_op.cc)
+[caffe2/operators/cos_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cos_op.cc)
 
 ---
 
@@ -2554,7 +2554,7 @@ CosineEmbeddingCriterion takes two inputs: the similarity value and the label, a
 ### Code
 
 
-[caffe2/operators/cosine_embedding_criterion_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cosine_embedding_criterion_op.cc)
+[caffe2/operators/cosine_embedding_criterion_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cosine_embedding_criterion_op.cc)
 
 ---
 
@@ -2568,7 +2568,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/cosine_embedding_criterion_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cosine_embedding_criterion_op.cc)
+[caffe2/operators/cosine_embedding_criterion_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cosine_embedding_criterion_op.cc)
 
 ---
 
@@ -2595,7 +2595,7 @@ Given two input float tensors X, Y, and produces one output float tensor of the 
 ### Code
 
 
-[caffe2/operators/distance_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/distance_op.cc)
+[caffe2/operators/distance_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/distance_op.cc)
 
 ---
 
@@ -2609,7 +2609,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/distance_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/distance_op.cc)
+[caffe2/operators/distance_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/distance_op.cc)
 
 ---
 
@@ -2635,7 +2635,7 @@ If the internal count value > 0, decreases count value by 1 and outputs false, o
 ### Code
 
 
-[caffe2/operators/counter_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/counter_ops.cc)
+[caffe2/operators/counter_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/counter_ops.cc)
 
 ---
 
@@ -2660,7 +2660,7 @@ Increases count value by 1 and outputs the previous value atomically
 ### Code
 
 
-[caffe2/operators/counter_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/counter_ops.cc)
+[caffe2/operators/counter_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/counter_ops.cc)
 
 ---
 
@@ -2684,7 +2684,7 @@ Report the delta in max CPU utilization observed so far in the             plan
 ### Code
 
 
-[caffe2/operators/stats_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/stats_ops.cc)
+[caffe2/operators/stats_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/stats_ops.cc)
 
 ---
 
@@ -2706,7 +2706,7 @@ Create an unique_ptr blob to hold an atomic<bool>
 ### Code
 
 
-[caffe2/operators/atomic_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/atomic_ops.cc)
+[caffe2/operators/atomic_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/atomic_ops.cc)
 
 ---
 
@@ -2720,7 +2720,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/queue/queue_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/queue/queue_ops.cc)
+[caffe2/queue/queue_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/queue/queue_ops.cc)
 
 ---
 
@@ -2748,7 +2748,7 @@ Create a DBReader from a BlobsQueue
 ### Code
 
 
-[caffe2/queue/blobs_queue_db.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/queue/blobs_queue_db.cc)
+[caffe2/queue/blobs_queue_db.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/queue/blobs_queue_db.cc)
 
 ---
 
@@ -2777,7 +2777,7 @@ Creates a common world for communication operators.
 ### Code
 
 
-[caffe2/operators/communicator_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/communicator_op.cc)
+[caffe2/operators/communicator_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/communicator_op.cc)
 
 ---
 
@@ -2803,7 +2803,7 @@ Creates a count-down counter with initial value specified by the 'init_count' ar
 ### Code
 
 
-[caffe2/operators/counter_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/counter_ops.cc)
+[caffe2/operators/counter_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/counter_ops.cc)
 
 ---
 
@@ -2817,7 +2817,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/db/create_db_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/db/create_db_op.cc)
+[caffe2/db/create_db_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/db/create_db_op.cc)
 
 ---
 
@@ -2842,7 +2842,7 @@ Create an empty map blob
 ### Code
 
 
-[caffe2/operators/map_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/map_ops.cc)
+[caffe2/operators/map_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/map_ops.cc)
 
 ---
 
@@ -2864,7 +2864,7 @@ Creates an unlocked mutex and returns it in a unique_ptr blob.
 ### Code
 
 
-[caffe2/operators/atomic_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/atomic_ops.cc)
+[caffe2/operators/atomic_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/atomic_ops.cc)
 
 ---
 
@@ -2891,7 +2891,7 @@ Creates the Queue.
 ### Code
 
 
-[caffe2/queue/rebatching_queue_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/queue/rebatching_queue_ops.cc)
+[caffe2/queue/rebatching_queue_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/queue/rebatching_queue_ops.cc)
 
 ---
 
@@ -2906,7 +2906,7 @@ Creates the Queue.
 ### Code
 
 
-[caffe2/operators/create_scope_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/create_scope_op.cc)
+[caffe2/operators/create_scope_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/create_scope_op.cc)
 
 ---
 
@@ -2920,7 +2920,7 @@ Create a std::unique_ptr<std::vector<Tensor> >
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -2946,7 +2946,7 @@ Create a text file reader. Fields are delimited by <TAB>.
 ### Code
 
 
-[caffe2/operators/text_file_reader.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/text_file_reader.cc)
+[caffe2/operators/text_file_reader.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/text_file_reader.cc)
 
 ---
 
@@ -3048,7 +3048,7 @@ The "lengths" field for a given domain must appear before any reference to that 
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -3082,7 +3082,7 @@ Operator computes the cross entropy between the input and the label set. In  pra
 ### Code
 
 
-[caffe2/operators/cross_entropy_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cross_entropy_op.cc)
+[caffe2/operators/cross_entropy_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cross_entropy_op.cc)
 
 ---
 
@@ -3096,7 +3096,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/cross_entropy_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cross_entropy_op.cc)
+[caffe2/operators/cross_entropy_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cross_entropy_op.cc)
 
 ---
 
@@ -3124,7 +3124,7 @@ Checks if the DB exists.
 ### Code
 
 
-[caffe2/operators/load_save_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/load_save_op.cc)
+[caffe2/operators/load_save_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/load_save_op.cc)
 
 ---
 
@@ -3138,7 +3138,7 @@ Backward compatible operator name for Concat.
 ### Code
 
 
-[caffe2/operators/concat_split_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/concat_split_op.cc)
+[caffe2/operators/concat_split_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/concat_split_op.cc)
 
 ---
 
@@ -3152,7 +3152,7 @@ Backward compatible operator name for Split.
 ### Code
 
 
-[caffe2/operators/concat_split_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/concat_split_op.cc)
+[caffe2/operators/concat_split_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/concat_split_op.cc)
 
 ---
 
@@ -3185,7 +3185,7 @@ Backward compatible operator name for Split.
 ### Code
 
 
-[caffe2/queue/queue_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/queue/queue_ops.cc)
+[caffe2/queue/queue_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/queue/queue_ops.cc)
 
 ---
 
@@ -3214,7 +3214,7 @@ If num_elements > 1 the returned elements will be concatenated into one tensor p
 ### Code
 
 
-[caffe2/queue/rebatching_queue_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/queue/rebatching_queue_ops.cc)
+[caffe2/queue/rebatching_queue_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/queue/rebatching_queue_ops.cc)
 
 ---
 
@@ -3236,7 +3236,7 @@ Closes all connections managed by a common world.
 ### Code
 
 
-[caffe2/operators/communicator_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/communicator_op.cc)
+[caffe2/operators/communicator_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/communicator_op.cc)
 
 ---
 
@@ -3271,7 +3271,7 @@ The operator fills the diagonal elements of the output tensor (>= 2D) with a con
 ### Code
 
 
-[caffe2/operators/filler_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/filler_op.cc)
+[caffe2/operators/filler_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/filler_op.cc)
 
 ---
 
@@ -3314,7 +3314,7 @@ Performs element-wise binary division (with limited broadcast support).
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -3328,7 +3328,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -3357,7 +3357,7 @@ Last blobs in the input and output lists should be the same blob created with Cr
 ### Code
 
 
-[caffe2/operators/do_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/do_op.cc)
+[caffe2/operators/do_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/do_op.cc)
 
 ---
 
@@ -3384,7 +3384,7 @@ Given two input float tensors X, Y, and produces one output float tensor of the 
 ### Code
 
 
-[caffe2/operators/distance_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/distance_op.cc)
+[caffe2/operators/distance_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/distance_op.cc)
 
 ---
 
@@ -3398,7 +3398,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/distance_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/distance_op.cc)
+[caffe2/operators/distance_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/distance_op.cc)
 
 ---
 
@@ -3429,7 +3429,7 @@ Given two input float tensors X, Y with different shapes and produces one output
 ### Code
 
 
-[caffe2/operators/distance_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/distance_op.cc)
+[caffe2/operators/distance_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/distance_op.cc)
 
 ---
 
@@ -3443,7 +3443,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/distance_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/distance_op.cc)
+[caffe2/operators/distance_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/distance_op.cc)
 
 ---
 
@@ -3473,7 +3473,7 @@ Dropout takes one input data (Tensor<float>) and produces two Tensor outputs, ou
 ### Code
 
 
-[caffe2/operators/dropout_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dropout_op.cc)
+[caffe2/operators/dropout_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dropout_op.cc)
 
 ---
 
@@ -3487,7 +3487,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/dropout_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dropout_op.cc)
+[caffe2/operators/dropout_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dropout_op.cc)
 
 ---
 
@@ -3530,7 +3530,7 @@ Performs element-wise equality comparison  `==`  (with limited broadcast support
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -3559,7 +3559,7 @@ Given inputs X of size (N x D), w of size D and b of size D, the op computes Y o
 ### Code
 
 
-[caffe2/operators/elementwise_linear_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_linear_op.cc)
+[caffe2/operators/elementwise_linear_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_linear_op.cc)
 
 ---
 
@@ -3573,7 +3573,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/elementwise_linear_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_linear_op.cc)
+[caffe2/operators/elementwise_linear_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_linear_op.cc)
 
 ---
 
@@ -3599,7 +3599,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/elu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elu_op.cc)
+[caffe2/operators/elu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elu_op.cc)
 
 ---
 
@@ -3615,7 +3615,7 @@ EluGradient takes both Y and dY and uses this to update dX according to the chai
 ### Code
 
 
-[caffe2/operators/elu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elu_op.cc)
+[caffe2/operators/elu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elu_op.cc)
 
 ---
 
@@ -3629,7 +3629,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/queue/queue_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/queue/queue_ops.cc)
+[caffe2/queue/queue_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/queue/queue_ops.cc)
 
 ---
 
@@ -3659,7 +3659,7 @@ If enqueue_batch argument is set. We will split the input tensors by the first d
 ### Code
 
 
-[caffe2/queue/rebatching_queue_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/queue/rebatching_queue_ops.cc)
+[caffe2/queue/rebatching_queue_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/queue/rebatching_queue_ops.cc)
 
 ---
 
@@ -3685,7 +3685,7 @@ Take an input tensor in the current Context (GPU or CPU) and create an output wh
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -3714,7 +3714,7 @@ Therefore, sparse gradient can be back propagated to Operators that consume dens
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -3740,7 +3740,7 @@ Calculates the exponential of the given input tensor, element-wise. This operati
 ### Code
 
 
-[caffe2/operators/exp_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/exp_op.cc)
+[caffe2/operators/exp_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/exp_op.cc)
 
 ---
 
@@ -3776,7 +3776,7 @@ Dimension indices in  `dims`  are as seen in the output tensor. For example:
 ### Code
 
 
-[caffe2/operators/expand_squeeze_dims_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/expand_squeeze_dims_op.cc)
+[caffe2/operators/expand_squeeze_dims_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/expand_squeeze_dims_op.cc)
 
 ---
 
@@ -3807,7 +3807,7 @@ All except the outer-most dimension must be the same between input 0 and 1.
 ### Code
 
 
-[caffe2/operators/extend_tensor_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/extend_tensor_op.cc)
+[caffe2/operators/extend_tensor_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/extend_tensor_op.cc)
 
 ---
 
@@ -3843,7 +3843,7 @@ Each of these dimensions must be matched correctly, or else the operator will th
 ### Code
 
 
-[caffe2/operators/fully_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/fully_connected_op.cc)
+[caffe2/operators/fully_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/fully_connected_op.cc)
 
 ---
 
@@ -3857,7 +3857,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/fully_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/fully_connected_op.cc)
+[caffe2/operators/fully_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/fully_connected_op.cc)
 
 ---
 
@@ -3873,7 +3873,7 @@ FCTransposed stands for calling blass with no noTrans, noTrans
 ### Code
 
 
-[caffe2/operators/fully_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/fully_connected_op.cc)
+[caffe2/operators/fully_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/fully_connected_op.cc)
 
 ---
 
@@ -3887,7 +3887,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/fully_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/fully_connected_op.cc)
+[caffe2/operators/fully_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/fully_connected_op.cc)
 
 ---
 
@@ -3910,7 +3910,7 @@ FeedBlobs the content of the blobs. The input and output blobs should be one-to-
 ### Code
 
 
-[caffe2/operators/feed_blob_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/feed_blob_op.cc)
+[caffe2/operators/feed_blob_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/feed_blob_op.cc)
 
 ---
 
@@ -3938,7 +3938,7 @@ This store handler is not built to be fast. Its recommended use is for integrati
 ### Code
 
 
-[caffe2/distributed/file_store_handler_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/distributed/file_store_handler_op.cc)
+[caffe2/distributed/file_store_handler_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/distributed/file_store_handler_op.cc)
 
 ---
 
@@ -3969,7 +3969,7 @@ See IndexGet() for a version that modifies the index when values are not found.
 ### Code
 
 
-[caffe2/operators/find_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/find_op.cc)
+[caffe2/operators/find_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/find_op.cc)
 
 ---
 
@@ -3995,7 +3995,7 @@ Shrink the data tensor by removing data blocks with given zero-based indices in 
 ### Code
 
 
-[caffe2/operators/find_duplicate_elements_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/find_duplicate_elements_op.cc)
+[caffe2/operators/find_duplicate_elements_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/find_duplicate_elements_op.cc)
 
 ---
 
@@ -4022,7 +4022,7 @@ Flattens the input tensor into a 2D matrix. If input tensor has shape (d_0, d_1,
 ### Code
 
 
-[caffe2/operators/flatten_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/flatten_op.cc)
+[caffe2/operators/flatten_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/flatten_op.cc)
 
 ---
 
@@ -4048,7 +4048,7 @@ Flattens the input tensor into a 1D vector.
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -4091,7 +4091,7 @@ K is an input tensor of shape [a_1, a_2, ..., a_n, 1], where for each element, r
 ### Code
 
 
-[caffe2/operators/flexible_top_k.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/flexible_top_k.cc)
+[caffe2/operators/flexible_top_k.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/flexible_top_k.cc)
 
 ---
 
@@ -4105,7 +4105,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/flexible_top_k.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/flexible_top_k.cc)
+[caffe2/operators/flexible_top_k.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/flexible_top_k.cc)
 
 ---
 
@@ -4130,7 +4130,7 @@ Applies 8-bit row-wise quantization by determining the range (maximum - minimum)
 ### Code
 
 
-[caffe2/operators/fused_rowwise_8bit_conversion_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/fused_rowwise_8bit_conversion_ops.cc)
+[caffe2/operators/fused_rowwise_8bit_conversion_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/fused_rowwise_8bit_conversion_ops.cc)
 
 ---
 
@@ -4169,7 +4169,7 @@ This operator applies 8Bit row-wise quantization to input tensor and returns qua
 ### Code
 
 
-[caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc)
+[caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc)
 
 ---
 
@@ -4195,7 +4195,7 @@ Floor takes one input data (Tensor<T>) and produces one output data (Tensor<T>) 
 ### Code
 
 
-[caffe2/operators/floor_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/floor_op.cc)
+[caffe2/operators/floor_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/floor_op.cc)
 
 ---
 
@@ -4210,7 +4210,7 @@ Frees the content of the blobs. The input and output blobs should be one-to-one 
 ### Code
 
 
-[caffe2/operators/free_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/free_op.cc)
+[caffe2/operators/free_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/free_op.cc)
 
 ---
 
@@ -4224,7 +4224,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/sgd/ftrl_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/ftrl_op.cc)
+[caffe2/sgd/ftrl_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/ftrl_op.cc)
 
 ---
 
@@ -4250,7 +4250,7 @@ De-quantizes the result of the FloatToFused8BitRowwiseQuantized operator. The in
 ### Code
 
 
-[caffe2/operators/fused_rowwise_8bit_conversion_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/fused_rowwise_8bit_conversion_ops.cc)
+[caffe2/operators/fused_rowwise_8bit_conversion_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/fused_rowwise_8bit_conversion_ops.cc)
 
 ---
 
@@ -4293,7 +4293,7 @@ Performs element-wise greater or equal than comparison  `>=`  (with limited broa
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -4321,7 +4321,7 @@ GRUUnit computes the activations of a standard GRU, in a sequence-length aware f
 ### Code
 
 
-[caffe2/operators/gru_unit_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/gru_unit_op.cc)
+[caffe2/operators/gru_unit_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/gru_unit_op.cc)
 
 ---
 
@@ -4343,7 +4343,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/gru_unit_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/gru_unit_op.cc)
+[caffe2/operators/gru_unit_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/gru_unit_op.cc)
 
 ---
 
@@ -4386,7 +4386,7 @@ Performs element-wise greater than comparison  `>`  (with limited broadcast supp
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -4437,7 +4437,7 @@ Given DATA tensor of rank r >= 1, and INDICES tensor of rank q, gather entries o
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -4465,7 +4465,7 @@ Inverse operation of Partition.
 ### Code
 
 
-[caffe2/operators/partition_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/partition_ops.cc)
+[caffe2/operators/partition_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/partition_ops.cc)
 
 ---
 
@@ -4493,7 +4493,7 @@ DATA needs to have rank 2 and INDICES needs to have rank 1.
 ### Code
 
 
-[caffe2/operators/gather_fused_8bit_rowwise_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/gather_fused_8bit_rowwise_op.cc)
+[caffe2/operators/gather_fused_8bit_rowwise_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/gather_fused_8bit_rowwise_op.cc)
 
 ---
 
@@ -4524,7 +4524,7 @@ Gather the sum of start and end paddings in a padded input sequence. Used in ord
 ### Code
 
 
-[caffe2/operators/sequence_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sequence_ops.cc)
+[caffe2/operators/sequence_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sequence_ops.cc)
 
 ---
 
@@ -4570,7 +4570,7 @@ Given DATA tensor of rank 1, and RANGES tensor of rank 3, gather corresponding r
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -4649,7 +4649,7 @@ i.e. DATA.dim(1) = len(lengths) = NumOuptuts.
 ### Code
 
 
-[caffe2/operators/gather_ranges_to_dense_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/gather_ranges_to_dense_op.cc)
+[caffe2/operators/gather_ranges_to_dense_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/gather_ranges_to_dense_op.cc)
 
 ---
 
@@ -4663,7 +4663,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/filler_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/filler_op.cc)
+[caffe2/operators/filler_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/filler_op.cc)
 
 ---
 
@@ -4699,7 +4699,7 @@ Generate bounding box proposals for Faster RCNN. The propoasls are generated for
 ### Code
 
 
-[caffe2/operators/generate_proposals_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/generate_proposals_op.cc)
+[caffe2/operators/generate_proposals_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/generate_proposals_op.cc)
 
 ---
 
@@ -4713,7 +4713,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/generate_proposals_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/generate_proposals_op.cc)
+[caffe2/operators/generate_proposals_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/generate_proposals_op.cc)
 
 ---
 
@@ -4739,7 +4739,7 @@ Return a 1D tensor of strings containing the names of each blob in the active wo
 ### Code
 
 
-[caffe2/operators/workspace_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/workspace_ops.cc)
+[caffe2/operators/workspace_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/workspace_ops.cc)
 
 ---
 
@@ -4753,7 +4753,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/given_tensor_fill_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/given_tensor_fill_op.cc)
+[caffe2/operators/given_tensor_fill_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/given_tensor_fill_op.cc)
 
 ---
 
@@ -4767,7 +4767,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/given_tensor_fill_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/given_tensor_fill_op.cc)
+[caffe2/operators/given_tensor_fill_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/given_tensor_fill_op.cc)
 
 ---
 
@@ -4781,7 +4781,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/given_tensor_fill_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/given_tensor_fill_op.cc)
+[caffe2/operators/given_tensor_fill_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/given_tensor_fill_op.cc)
 
 ---
 
@@ -4795,7 +4795,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/given_tensor_fill_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/given_tensor_fill_op.cc)
+[caffe2/operators/given_tensor_fill_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/given_tensor_fill_op.cc)
 
 ---
 
@@ -4809,7 +4809,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/given_tensor_fill_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/given_tensor_fill_op.cc)
+[caffe2/operators/given_tensor_fill_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/given_tensor_fill_op.cc)
 
 ---
 
@@ -4823,7 +4823,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/given_tensor_fill_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/given_tensor_fill_op.cc)
+[caffe2/operators/given_tensor_fill_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/given_tensor_fill_op.cc)
 
 ---
 
@@ -4848,7 +4848,7 @@ Applies gated linear unit to the input Tensor X. The output Y is half the size o
 ### Code
 
 
-[caffe2/operators/glu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/glu_op.cc)
+[caffe2/operators/glu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/glu_op.cc)
 
 ---
 
@@ -4882,7 +4882,7 @@ Hierarchical softmax is an operator which approximates the softmax operator whil
 ### Code
 
 
-[caffe2/operators/h_softmax_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/h_softmax_op.cc)
+[caffe2/operators/h_softmax_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/h_softmax_op.cc)
 
 ---
 
@@ -4896,7 +4896,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/h_softmax_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/h_softmax_op.cc)
+[caffe2/operators/h_softmax_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/h_softmax_op.cc)
 
 ---
 
@@ -4929,7 +4929,7 @@ HSoftmaxSearch is an operator to generate the most possible paths given a well-t
 ### Code
 
 
-[caffe2/operators/h_softmax_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/h_softmax_op.cc)
+[caffe2/operators/h_softmax_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/h_softmax_op.cc)
 
 ---
 
@@ -4953,7 +4953,7 @@ Returns true iff the input tensor has size > 0
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -4968,7 +4968,7 @@ Checks whether scope blob has any saved scopes left
 ### Code
 
 
-[caffe2/operators/create_scope_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/create_scope_op.cc)
+[caffe2/operators/create_scope_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/create_scope_op.cc)
 
 ---
 
@@ -4995,7 +4995,7 @@ HuffmanTreeHierarchy is an operator to generate huffman tree hierarchy given the
 ### Code
 
 
-[caffe2/operators/h_softmax_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/h_softmax_op.cc)
+[caffe2/operators/h_softmax_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/h_softmax_op.cc)
 
 ---
 
@@ -5022,7 +5022,7 @@ HuffmanTreeHierarchy is an operator to generate huffman tree hierarchy given the
 ### Code
 
 
-[caffe2/operators/if_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/if_op.cc)
+[caffe2/operators/if_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/if_op.cc)
 
 ---
 
@@ -5046,7 +5046,7 @@ The Im2Col operator from Matlab.
 ### Code
 
 
-[caffe2/operators/im2col_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/im2col_op.cc)
+[caffe2/operators/im2col_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/im2col_op.cc)
 
 ---
 
@@ -5121,7 +5121,7 @@ Imports and processes images from a database. For each run of the operator, batc
 ### Code
 
 
-[caffe2/image/image_input_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/image/image_input_op.cc)
+[caffe2/image/image_input_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/image/image_input_op.cc)
 
 ---
 
@@ -5148,7 +5148,7 @@ Should not be called concurrently with IndexGet.
 ### Code
 
 
-[caffe2/operators/index_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/index_ops.cc)
+[caffe2/operators/index_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/index_ops.cc)
 
 ---
 
@@ -5176,7 +5176,7 @@ If an insert is necessary but max_elements has been reached, fail.
 ### Code
 
 
-[caffe2/operators/index_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/index_ops.cc)
+[caffe2/operators/index_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/index_ops.cc)
 
 ---
 
@@ -5207,7 +5207,7 @@ If a modulo is specified, all the hashed indices will be modulo the specified nu
 ### Code
 
 
-[caffe2/operators/index_hash_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/index_hash_ops.cc)
+[caffe2/operators/index_hash_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/index_hash_ops.cc)
 
 ---
 
@@ -5236,7 +5236,7 @@ Loads the index from the given 1-D tensor. Elements in the tensor will be given 
 ### Code
 
 
-[caffe2/operators/index_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/index_ops.cc)
+[caffe2/operators/index_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/index_ops.cc)
 
 ---
 
@@ -5262,7 +5262,7 @@ Returns the number of entries currently present in the index.
 ### Code
 
 
-[caffe2/operators/index_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/index_ops.cc)
+[caffe2/operators/index_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/index_ops.cc)
 
 ---
 
@@ -5288,7 +5288,7 @@ Stores the keys of this index in a 1-D tensor. Since element 0 is reserved for u
 ### Code
 
 
-[caffe2/operators/index_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/index_ops.cc)
+[caffe2/operators/index_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/index_ops.cc)
 
 ---
 
@@ -5332,7 +5332,7 @@ Carries out instance normalization as described in the paper  [https://arxiv.org
 ### Code
 
 
-[caffe2/operators/instance_norm_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/instance_norm_op.cc)
+[caffe2/operators/instance_norm_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/instance_norm_op.cc)
 
 ---
 
@@ -5346,7 +5346,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/instance_norm_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/instance_norm_gradient_op.cc)
+[caffe2/operators/instance_norm_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/instance_norm_gradient_op.cc)
 
 ---
 
@@ -5372,7 +5372,7 @@ Creates a dictionary that maps int32 keys to consecutive integers from 1 to max_
 ### Code
 
 
-[caffe2/operators/index_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/index_ops.cc)
+[caffe2/operators/index_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/index_ops.cc)
 
 ---
 
@@ -5396,7 +5396,7 @@ Returns true iff the input tensor has size == 0
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -5425,7 +5425,7 @@ IsMemberOf takes input data (Tensor<T>) and a list of values as argument, and pr
 ### Code
 
 
-[caffe2/operators/elementwise_logical_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_logical_ops.cc)
+[caffe2/operators/elementwise_logical_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_logical_ops.cc)
 
 ---
 
@@ -5442,7 +5442,7 @@ Useful for tracking the iteration count during SGD, for example.
 ### Code
 
 
-[caffe2/sgd/iter_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/iter_op.cc)
+[caffe2/sgd/iter_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/iter_op.cc)
 
 ---
 
@@ -5456,7 +5456,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/key_split_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/key_split_ops.cc)
+[caffe2/operators/key_split_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/key_split_ops.cc)
 
 ---
 
@@ -5481,7 +5481,7 @@ Convert key and value blob pairs into a map blob
 ### Code
 
 
-[caffe2/operators/map_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/map_ops.cc)
+[caffe2/operators/map_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/map_ops.cc)
 
 ---
 
@@ -5507,7 +5507,7 @@ Given two input float tensors X, Y, and produces one output float tensor of the 
 ### Code
 
 
-[caffe2/operators/distance_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/distance_op.cc)
+[caffe2/operators/distance_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/distance_op.cc)
 
 ---
 
@@ -5521,7 +5521,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/distance_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/distance_op.cc)
+[caffe2/operators/distance_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/distance_op.cc)
 
 ---
 
@@ -5549,7 +5549,7 @@ The locally connected operator consumes an input vector, a filter blob and a bia
 ### Code
 
 
-[caffe2/operators/locally_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/locally_connected_op.cc)
+[caffe2/operators/locally_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/locally_connected_op.cc)
 
 ---
 
@@ -5577,7 +5577,7 @@ The locally connected operator consumes an input vector, a 1D filter blob and a 
 ### Code
 
 
-[caffe2/operators/locally_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/locally_connected_op.cc)
+[caffe2/operators/locally_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/locally_connected_op.cc)
 
 ---
 
@@ -5591,7 +5591,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/locally_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/locally_connected_op.cc)
+[caffe2/operators/locally_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/locally_connected_op.cc)
 
 ---
 
@@ -5619,7 +5619,7 @@ The locally connected operator consumes an input vector, a 2D filter blob and a 
 ### Code
 
 
-[caffe2/operators/locally_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/locally_connected_op.cc)
+[caffe2/operators/locally_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/locally_connected_op.cc)
 
 ---
 
@@ -5633,7 +5633,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/locally_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/locally_connected_op.cc)
+[caffe2/operators/locally_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/locally_connected_op.cc)
 
 ---
 
@@ -5661,7 +5661,7 @@ The locally connected operator consumes an input vector, a 3D filter blob and a 
 ### Code
 
 
-[caffe2/operators/locally_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/locally_connected_op.cc)
+[caffe2/operators/locally_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/locally_connected_op.cc)
 
 ---
 
@@ -5675,7 +5675,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/locally_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/locally_connected_op.cc)
+[caffe2/operators/locally_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/locally_connected_op.cc)
 
 ---
 
@@ -5689,7 +5689,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/locally_connected_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/locally_connected_op.cc)
+[caffe2/operators/locally_connected_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/locally_connected_op.cc)
 
 ---
 
@@ -5732,7 +5732,7 @@ Performs element-wise less or equal than comparison  `<=`  (with limited broadca
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -5746,7 +5746,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/local_response_normalization_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/local_response_normalization_op.cc)
+[caffe2/operators/local_response_normalization_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/local_response_normalization_op.cc)
 
 ---
 
@@ -5760,7 +5760,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/local_response_normalization_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/local_response_normalization_op.cc)
+[caffe2/operators/local_response_normalization_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/local_response_normalization_op.cc)
 
 ---
 
@@ -5786,7 +5786,7 @@ LSTMUnit computes the activations of a standard LSTM (without peephole connectio
 ### Code
 
 
-[caffe2/operators/lstm_unit_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lstm_unit_op.cc)
+[caffe2/operators/lstm_unit_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lstm_unit_op.cc)
 
 ---
 
@@ -5808,7 +5808,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/lstm_unit_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lstm_unit_op.cc)
+[caffe2/operators/lstm_unit_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lstm_unit_op.cc)
 
 ---
 
@@ -5851,7 +5851,7 @@ Performs element-wise less than comparison  `<`  (with limited broadcast support
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -5885,7 +5885,7 @@ Operator computes the cross entropy between the input and the label set. In  pra
 ### Code
 
 
-[caffe2/operators/cross_entropy_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cross_entropy_op.cc)
+[caffe2/operators/cross_entropy_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cross_entropy_op.cc)
 
 ---
 
@@ -5899,7 +5899,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/cross_entropy_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cross_entropy_op.cc)
+[caffe2/operators/cross_entropy_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cross_entropy_op.cc)
 
 ---
 
@@ -5916,7 +5916,7 @@ It implements the LambdaRank as appeared in Wu, Qiang, et al. "Adapting boosting
 ### Code
 
 
-[caffe2/operators/listwise_l2r_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/listwise_l2r_op.cc)
+[caffe2/operators/listwise_l2r_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/listwise_l2r_op.cc)
 
 ---
 
@@ -5930,7 +5930,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/listwise_l2r_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/listwise_l2r_op.cc)
+[caffe2/operators/listwise_l2r_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/listwise_l2r_op.cc)
 
 ---
 
@@ -5980,7 +5980,7 @@ In this implementation, we uses l2 norm and output the rescaling factor
 ### Code
 
 
-[caffe2/sgd/lars_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/lars_op.cc)
+[caffe2/sgd/lars_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/lars_op.cc)
 
 ---
 
@@ -6053,7 +6053,7 @@ Collect the last N rows from input data. The purpose is to keep track of data ac
 ### Code
 
 
-[caffe2/operators/last_n_window_collector.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/last_n_window_collector.cc)
+[caffe2/operators/last_n_window_collector.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/last_n_window_collector.cc)
 
 ---
 
@@ -6085,7 +6085,7 @@ Given an input vector x \in [a_0, a_1, ...,a_{k-1}, a_k, ..., a_{n-1}], this op 
 ### Code
 
 
-[caffe2/operators/layer_norm_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/layer_norm_op.cc)
+[caffe2/operators/layer_norm_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/layer_norm_op.cc)
 
 ---
 
@@ -6099,7 +6099,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/layer_norm_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/layer_norm_op.cc)
+[caffe2/operators/layer_norm_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/layer_norm_op.cc)
 
 ---
 
@@ -6127,7 +6127,7 @@ LeakyRelu takes input data (Tensor<T>) and an argument alpha, and produces one o
 ### Code
 
 
-[caffe2/operators/leaky_relu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/leaky_relu_op.cc)
+[caffe2/operators/leaky_relu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/leaky_relu_op.cc)
 
 ---
 
@@ -6149,7 +6149,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/leaky_relu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/leaky_relu_op.cc)
+[caffe2/operators/leaky_relu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/leaky_relu_op.cc)
 
 ---
 
@@ -6245,7 +6245,7 @@ Learning rate is a decreasing function of time. With low learning rates the impr
 ### Code
 
 
-[caffe2/sgd/learning_rate_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/learning_rate_op.cc)
+[caffe2/sgd/learning_rate_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/learning_rate_op.cc)
 
 ---
 
@@ -6283,7 +6283,7 @@ Gather items from sparse tensor. Sparse tensor is described by items and lengths
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -6297,7 +6297,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -6327,7 +6327,7 @@ Applies 'Max' to each segment of the input tensor. Segments are defined by their
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -6341,7 +6341,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -6371,7 +6371,7 @@ Applies 'Mean' to each segment of the input tensor. Segments are defined by thei
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -6385,7 +6385,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -6416,7 +6416,7 @@ LengthsPartition splits the input int tensor into multiple ones according to the
 ### Code
 
 
-[caffe2/operators/partition_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/partition_ops.cc)
+[caffe2/operators/partition_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/partition_ops.cc)
 
 ---
 
@@ -6442,7 +6442,7 @@ Convert a length vector to a range sequence. For example, input=[4,3,1], the out
 ### Code
 
 
-[caffe2/operators/filler_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/filler_op.cc)
+[caffe2/operators/filler_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/filler_op.cc)
 
 ---
 
@@ -6472,7 +6472,7 @@ Applies 'Sum' to each segment of the input tensor. Segments are defined by their
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -6486,7 +6486,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -6533,7 +6533,7 @@ Given DATA tensor of rank r >= 1, and LENGTHS tensor of rank 1, duplicate each e
 ### Code
 
 
-[caffe2/operators/lengths_tile_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_tile_op.cc)
+[caffe2/operators/lengths_tile_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_tile_op.cc)
 
 ---
 
@@ -6560,7 +6560,7 @@ Given a vector of segment lengths, calculates offsets of each segment and packs 
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -6587,7 +6587,7 @@ In general, the inverse operation is SegmentIdsToLengths. Notice though that tra
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -6601,7 +6601,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -6628,7 +6628,7 @@ Similar as LengthsToSegmentIds but output vector of segment weights derived by l
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -6658,7 +6658,7 @@ Apply TopK to each segment of the input tensor, where segments are defined by th
 ### Code
 
 
-[caffe2/operators/lengths_top_k_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_top_k_op.cc)
+[caffe2/operators/lengths_top_k_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_top_k_op.cc)
 
 ---
 
@@ -6672,7 +6672,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/lengths_top_k_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_top_k_op.cc)
+[caffe2/operators/lengths_top_k_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_top_k_op.cc)
 
 ---
 
@@ -6705,7 +6705,7 @@ Applies 'WeightedSum' to each segment of the input tensor. Segments are defined 
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -6719,7 +6719,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -6733,7 +6733,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -6767,7 +6767,7 @@ The Load operator loads a set of serialized blobs from a db or multiple dbs. It 
 ### Code
 
 
-[caffe2/operators/load_save_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/load_save_op.cc)
+[caffe2/operators/load_save_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/load_save_op.cc)
 
 ---
 
@@ -6793,7 +6793,7 @@ Calculates the natural log of the given input tensor, element-wise. This operati
 ### Code
 
 
-[caffe2/operators/log_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/log_op.cc)
+[caffe2/operators/log_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/log_op.cc)
 
 ---
 
@@ -6821,7 +6821,7 @@ Elementwise logit transform: logit(x) = log(x / (1 - x)), where x is the input d
 ### Code
 
 
-[caffe2/operators/logit_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/logit_op.cc)
+[caffe2/operators/logit_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/logit_op.cc)
 
 ---
 
@@ -6848,7 +6848,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/logit_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/logit_op.cc)
+[caffe2/operators/logit_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/logit_op.cc)
 
 ---
 
@@ -6874,7 +6874,7 @@ Creates a dictionary that maps int64 keys to consecutive integers from 1 to max_
 ### Code
 
 
-[caffe2/operators/index_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/index_ops.cc)
+[caffe2/operators/index_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/index_ops.cc)
 
 ---
 
@@ -6903,7 +6903,7 @@ Given one input float tensor X, and produces one output float tensor of the Lp n
 ### Code
 
 
-[caffe2/operators/lpnorm_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lpnorm_op.cc)
+[caffe2/operators/lpnorm_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lpnorm_op.cc)
 
 ---
 
@@ -6933,7 +6933,7 @@ Given one input float tensor X, derivative dout, and produces one output float t
 ### Code
 
 
-[caffe2/operators/lpnorm_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lpnorm_op.cc)
+[caffe2/operators/lpnorm_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lpnorm_op.cc)
 
 ---
 
@@ -6959,7 +6959,7 @@ LpPool consumes an input blob X and applies L-p pooling across the the blob acco
 ### Code
 
 
-[caffe2/operators/lp_pool_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lp_pool_op.cc)
+[caffe2/operators/lp_pool_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lp_pool_op.cc)
 
 ---
 
@@ -6973,7 +6973,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/lp_pool_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lp_pool_op.cc)
+[caffe2/operators/lp_pool_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lp_pool_op.cc)
 
 ---
 
@@ -6987,7 +6987,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/filler_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/filler_op.cc)
+[caffe2/operators/filler_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/filler_op.cc)
 
 ---
 
@@ -7013,7 +7013,7 @@ Given a vector of probabilities, this operator transforms this into a 2-column  
 ### Code
 
 
-[caffe2/operators/cross_entropy_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cross_entropy_op.cc)
+[caffe2/operators/cross_entropy_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cross_entropy_op.cc)
 
 ---
 
@@ -7027,7 +7027,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/cross_entropy_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cross_entropy_op.cc)
+[caffe2/operators/cross_entropy_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cross_entropy_op.cc)
 
 ---
 
@@ -7052,7 +7052,7 @@ Convert a map blob into key and value blob pairs
 ### Code
 
 
-[caffe2/operators/map_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/map_ops.cc)
+[caffe2/operators/map_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/map_ops.cc)
 
 ---
 
@@ -7081,7 +7081,7 @@ MarginRankingCriterion takes two input data X1 (Tensor<float>), X2 (Tensor<float
 ### Code
 
 
-[caffe2/operators/margin_ranking_criterion_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/margin_ranking_criterion_op.cc)
+[caffe2/operators/margin_ranking_criterion_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/margin_ranking_criterion_op.cc)
 
 ---
 
@@ -7097,7 +7097,7 @@ MarginRankingCriterionGradient takes both X1, X2, Y and dY and uses them to upda
 ### Code
 
 
-[caffe2/operators/margin_ranking_criterion_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/margin_ranking_criterion_op.cc)
+[caffe2/operators/margin_ranking_criterion_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/margin_ranking_criterion_op.cc)
 
 ---
 
@@ -7129,7 +7129,7 @@ Matrix multiplication Y = A * B, where A has size (M x K), B has size (K x N), a
 ### Code
 
 
-[caffe2/operators/matmul_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/matmul_op.cc)
+[caffe2/operators/matmul_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/matmul_op.cc)
 
 ---
 
@@ -7155,7 +7155,7 @@ Element-wise max of each of the input tensors. The first input tensor can be use
 ### Code
 
 
-[caffe2/operators/minmax_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/minmax_ops.cc)
+[caffe2/operators/minmax_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/minmax_ops.cc)
 
 ---
 
@@ -7169,7 +7169,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/minmax_gradient_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/minmax_gradient_ops.cc)
+[caffe2/operators/minmax_gradient_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/minmax_gradient_ops.cc)
 
 ---
 
@@ -7194,7 +7194,7 @@ MaxPool  consumes an input blob X and applies max pooling across the the blob ac
 ### Code
 
 
-[caffe2/operators/pool_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_op.cc)
+[caffe2/operators/pool_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_op.cc)
 
 ---
 
@@ -7219,7 +7219,7 @@ MaxPool1D  consumes an input blob X and applies max pooling across the the blob 
 ### Code
 
 
-[caffe2/operators/pool_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_op.cc)
+[caffe2/operators/pool_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_op.cc)
 
 ---
 
@@ -7233,7 +7233,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/pool_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_gradient_op.cc)
+[caffe2/operators/pool_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_gradient_op.cc)
 
 ---
 
@@ -7258,7 +7258,7 @@ MaxPool2D  consumes an input blob X and applies max pooling across the the blob 
 ### Code
 
 
-[caffe2/operators/pool_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_op.cc)
+[caffe2/operators/pool_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_op.cc)
 
 ---
 
@@ -7272,7 +7272,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/pool_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_gradient_op.cc)
+[caffe2/operators/pool_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_gradient_op.cc)
 
 ---
 
@@ -7297,7 +7297,7 @@ MaxPool3D  consumes an input blob X and applies max pooling across the the blob 
 ### Code
 
 
-[caffe2/operators/pool_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_op.cc)
+[caffe2/operators/pool_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_op.cc)
 
 ---
 
@@ -7311,7 +7311,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/pool_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_gradient_op.cc)
+[caffe2/operators/pool_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_gradient_op.cc)
 
 ---
 
@@ -7325,7 +7325,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/pool_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pool_gradient_op.cc)
+[caffe2/operators/pool_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pool_gradient_op.cc)
 
 ---
 
@@ -7351,7 +7351,7 @@ Element-wise mean of each of the input tensors. The first input tensor can be us
 ### Code
 
 
-[caffe2/operators/mean_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/mean_op.cc)
+[caffe2/operators/mean_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/mean_op.cc)
 
 ---
 
@@ -7365,7 +7365,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/mean_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/mean_op.cc)
+[caffe2/operators/mean_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/mean_op.cc)
 
 ---
 
@@ -7391,7 +7391,7 @@ Merge first two dimensions in a single dimension with size dim(0) * dim(1).
 ### Code
 
 
-[caffe2/operators/prepend_dim_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/prepend_dim_op.cc)
+[caffe2/operators/prepend_dim_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/prepend_dim_op.cc)
 
 ---
 
@@ -7423,7 +7423,7 @@ which correspond to lengths and values of ID_LISTs of different features, this o
 ### Code
 
 
-[caffe2/operators/merge_id_lists_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/merge_id_lists_op.cc)
+[caffe2/operators/merge_id_lists_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/merge_id_lists_op.cc)
 
 ---
 
@@ -7449,7 +7449,7 @@ Element-wise min of each of the input tensors. The first input tensor can be use
 ### Code
 
 
-[caffe2/operators/minmax_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/minmax_ops.cc)
+[caffe2/operators/minmax_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/minmax_ops.cc)
 
 ---
 
@@ -7463,7 +7463,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/minmax_gradient_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/minmax_gradient_ops.cc)
+[caffe2/operators/minmax_gradient_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/minmax_gradient_ops.cc)
 
 ---
 
@@ -7492,7 +7492,7 @@ Elementwise modulo operation. Each element in the output is the modulo result of
 ### Code
 
 
-[caffe2/operators/mod_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/mod_op.cc)
+[caffe2/operators/mod_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/mod_op.cc)
 
 ---
 
@@ -7520,7 +7520,7 @@ Elementwise modulo operation. Each element in the output is the modulo result of
 ### Code
 
 
-[caffe2/sgd/momentum_sgd_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/momentum_sgd_op.cc)
+[caffe2/sgd/momentum_sgd_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/momentum_sgd_op.cc)
 
 ---
 
@@ -7551,7 +7551,7 @@ Elementwise modulo operation. Each element in the output is the modulo result of
 ### Code
 
 
-[caffe2/sgd/momentum_sgd_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/momentum_sgd_op.cc)
+[caffe2/sgd/momentum_sgd_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/momentum_sgd_op.cc)
 
 ---
 
@@ -7594,7 +7594,7 @@ Performs element-wise binary multiplication (with limited broadcast support).
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -7622,7 +7622,7 @@ Respectively compute accuracy score for each class given a number of instances a
 ### Code
 
 
-[caffe2/operators/multi_class_accuracy_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/multi_class_accuracy_op.cc)
+[caffe2/operators/multi_class_accuracy_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/multi_class_accuracy_op.cc)
 
 ---
 
@@ -7648,7 +7648,7 @@ The operator switches the order of data in a tensor from NCHW- sample index N, c
 ### Code
 
 
-[caffe2/operators/order_switch_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/order_switch_ops.cc)
+[caffe2/operators/order_switch_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/order_switch_ops.cc)
 
 ---
 
@@ -7662,7 +7662,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/ngram_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/ngram_ops.cc)
+[caffe2/operators/ngram_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/ngram_ops.cc)
 
 ---
 
@@ -7688,7 +7688,7 @@ The operator switches the order of data in a tensor from NHWC- sample index N, h
 ### Code
 
 
-[caffe2/operators/order_switch_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/order_switch_ops.cc)
+[caffe2/operators/order_switch_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/order_switch_ops.cc)
 
 ---
 
@@ -7712,7 +7712,7 @@ Identity operator, but checks all values for nan or inf
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -7727,7 +7727,7 @@ NegagteGradient operator in forward pass simply copies input to the output, and 
 ### Code
 
 
-[caffe2/operators/negate_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/negate_gradient_op.cc)
+[caffe2/operators/negate_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/negate_gradient_op.cc)
 
 ---
 
@@ -7753,7 +7753,7 @@ Computes the element-wise negative of the input.
 ### Code
 
 
-[caffe2/operators/negative_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/negative_op.cc)
+[caffe2/operators/negative_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/negative_op.cc)
 
 ---
 
@@ -7777,7 +7777,7 @@ Given a matrix, apply L2-normalization along the specified dimension.
 ### Code
 
 
-[caffe2/operators/normalize_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/normalize_op.cc)
+[caffe2/operators/normalize_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/normalize_op.cc)
 
 ---
 
@@ -7799,7 +7799,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/normalize_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/normalize_op.cc)
+[caffe2/operators/normalize_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/normalize_op.cc)
 
 ---
 
@@ -7823,7 +7823,7 @@ Given a matrix, apply L1-normalization along the specified axis.
 ### Code
 
 
-[caffe2/operators/normalize_l1_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/normalize_l1_op.cc)
+[caffe2/operators/normalize_l1_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/normalize_l1_op.cc)
 
 ---
 
@@ -7837,7 +7837,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/norm_planar_yuv_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/norm_planar_yuv_op.cc)
+[caffe2/operators/norm_planar_yuv_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/norm_planar_yuv_op.cc)
 
 ---
 
@@ -7861,7 +7861,7 @@ Performs element-wise negation.
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -7938,7 +7938,7 @@ Performs element-wise negation.
 ### Code
 
 
-[caffe2/operators/onnx_while_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/onnx_while_op.cc)
+[caffe2/operators/onnx_while_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/onnx_while_op.cc)
 
 ---
 
@@ -7965,7 +7965,7 @@ Given a sequence of indices, one for each example in a batch, returns a matrix w
 ### Code
 
 
-[caffe2/operators/one_hot_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/one_hot_ops.cc)
+[caffe2/operators/one_hot_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/one_hot_ops.cc)
 
 ---
 
@@ -8009,7 +8009,7 @@ Both input operands should be of type  `bool` .
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -8036,7 +8036,7 @@ Both input operands should be of type  `bool` .
 ### Code
 
 
-[caffe2/operators/prelu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/prelu_op.cc)
+[caffe2/operators/prelu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/prelu_op.cc)
 
 ---
 
@@ -8052,7 +8052,7 @@ Both input operands should be of type  `bool` .
 ### Code
 
 
-[caffe2/operators/prelu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/prelu_op.cc)
+[caffe2/operators/prelu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/prelu_op.cc)
 
 ---
 
@@ -8100,7 +8100,7 @@ Pack values based on the length blob. Each number from length blob represents th
 ### Code
 
 
-[caffe2/operators/pack_rnn_sequence_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pack_rnn_sequence_op.cc)
+[caffe2/operators/pack_rnn_sequence_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pack_rnn_sequence_op.cc)
 
 ---
 
@@ -8126,7 +8126,7 @@ Given a dataset under a schema specified by the  `fields`  argument will pack al
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -8155,7 +8155,7 @@ Map N dim tensor to N+1 dim based on length blob. Sequences that     are shorter
 ### Code
 
 
-[caffe2/operators/pack_segments.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pack_segments.cc)
+[caffe2/operators/pack_segments.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pack_segments.cc)
 
 ---
 
@@ -8169,7 +8169,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/stylizer_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/stylizer_ops.cc)
+[caffe2/operators/stylizer_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/stylizer_ops.cc)
 
 ---
 
@@ -8196,7 +8196,7 @@ Pad empty field given lengths and index features,  Input(0) is a blob pointing t
 ### Code
 
 
-[caffe2/operators/sequence_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sequence_ops.cc)
+[caffe2/operators/sequence_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sequence_ops.cc)
 
 ---
 
@@ -8222,7 +8222,7 @@ PadImage pads values around the boundary of an image according to the pad values
 ### Code
 
 
-[caffe2/operators/pad_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pad_op.cc)
+[caffe2/operators/pad_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pad_op.cc)
 
 ---
 
@@ -8236,7 +8236,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/pad_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pad_op.cc)
+[caffe2/operators/pad_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pad_op.cc)
 
 ---
 
@@ -8263,7 +8263,7 @@ Operator computes the pair wise loss between all pairs within a batch  using the
 ### Code
 
 
-[caffe2/operators/rank_loss_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/rank_loss_op.cc)
+[caffe2/operators/rank_loss_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/rank_loss_op.cc)
 
 ---
 
@@ -8277,7 +8277,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/rank_loss_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/rank_loss_op.cc)
+[caffe2/operators/rank_loss_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/rank_loss_op.cc)
 
 ---
 
@@ -8308,7 +8308,7 @@ Splits the input int tensor into multiple ones according to the first tensor.
 ### Code
 
 
-[caffe2/operators/partition_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/partition_ops.cc)
+[caffe2/operators/partition_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/partition_ops.cc)
 
 ---
 
@@ -8359,7 +8359,7 @@ Splits the input int tensor into multiple ones according to the first tensor.
 ### Code
 
 
-[caffe2/operators/percentile_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/percentile_op.cc)
+[caffe2/operators/percentile_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/percentile_op.cc)
 
 ---
 
@@ -8386,7 +8386,7 @@ Perplexity takes a 1-D tensor containing a batch of probabilities. Each value in
 ### Code
 
 
-[caffe2/operators/perplexity_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/perplexity_op.cc)
+[caffe2/operators/perplexity_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/perplexity_op.cc)
 
 ---
 
@@ -8424,7 +8424,7 @@ PiecewiseLinearTransform takes inputs -- predictions, a 2-D or 1-D tensor (Tenso
 ### Code
 
 
-[caffe2/operators/piecewise_linear_transform_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/piecewise_linear_transform_op.cc)
+[caffe2/operators/piecewise_linear_transform_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/piecewise_linear_transform_op.cc)
 
 ---
 
@@ -8453,7 +8453,7 @@ Pow takes input data (Tensor<T>) and an argument exponent, which can be a scalar
 ### Code
 
 
-[caffe2/operators/pow_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pow_op.cc)
+[caffe2/operators/pow_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pow_op.cc)
 
 ---
 
@@ -8481,7 +8481,7 @@ Reshape the tensor by prepending a dimension of fixed size and dividing the size
 ### Code
 
 
-[caffe2/operators/prepend_dim_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/prepend_dim_op.cc)
+[caffe2/operators/prepend_dim_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/prepend_dim_op.cc)
 
 ---
 
@@ -8505,7 +8505,7 @@ Logs shape and contents of input tensor to stderr or to a file.
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -8519,7 +8519,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/python/pybind_state.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/python/pybind_state.cc)
+[caffe2/python/pybind_state.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/python/pybind_state.cc)
 
 ---
 
@@ -8533,7 +8533,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/python/pybind_state.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/python/pybind_state.cc)
+[caffe2/python/pybind_state.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/python/pybind_state.cc)
 
 ---
 
@@ -8547,7 +8547,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/python/pybind_state.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/python/pybind_state.cc)
+[caffe2/python/pybind_state.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/python/pybind_state.cc)
 
 ---
 
@@ -8561,7 +8561,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/python/pybind_state.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/python/pybind_state.cc)
+[caffe2/python/pybind_state.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/python/pybind_state.cc)
 
 ---
 
@@ -8609,7 +8609,7 @@ Decode inputs using codebook. This is a general LUT operator that returns tensor
 ### Code
 
 
-[caffe2/operators/quant_decode_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/quant_decode_op.cc)
+[caffe2/operators/quant_decode_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/quant_decode_op.cc)
 
 ---
 
@@ -8623,7 +8623,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/quant_decode_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/quant_decode_op.cc)
+[caffe2/operators/quant_decode_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/quant_decode_op.cc)
 
 ---
 
@@ -8652,7 +8652,7 @@ Computes a fixed-grid of RMAC region coordinates at various levels as described 
 ### Code
 
 
-[caffe2/operators/rmac_regions_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/rmac_regions_op.cc)
+[caffe2/operators/rmac_regions_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/rmac_regions_op.cc)
 
 ---
 
@@ -8678,7 +8678,7 @@ Values are generated within the half-open interval [start, stop) (in other words
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -8692,7 +8692,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/filler_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/filler_op.cc)
+[caffe2/operators/filler_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/filler_op.cc)
 
 ---
 
@@ -8723,7 +8723,7 @@ Read the next batch of examples out of the given cursor and data blobs.
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -8757,7 +8757,7 @@ Read the next batch of examples out of the given cursor, idx blob, offset matrix
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -8792,7 +8792,7 @@ Receives the tensor from another node.
 ### Code
 
 
-[caffe2/operators/communicator_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/communicator_op.cc)
+[caffe2/operators/communicator_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/communicator_op.cc)
 
 ---
 
@@ -8812,7 +8812,7 @@ Run the input network in a recurrent fashion. This can be used to implement fair
 ### Code
 
 
-[caffe2/operators/rnn/recurrent_network_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/rnn/recurrent_network_op.cc)
+[caffe2/operators/rnn/recurrent_network_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/rnn/recurrent_network_op.cc)
 
 ---
 
@@ -8840,7 +8840,7 @@ Retrieves blobs from scratch workspaces (which contain intermediate recurrent ne
 ### Code
 
 
-[caffe2/operators/rnn/recurrent_network_blob_fetcher_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/rnn/recurrent_network_blob_fetcher_op.cc)
+[caffe2/operators/rnn/recurrent_network_blob_fetcher_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/rnn/recurrent_network_blob_fetcher_op.cc)
 
 ---
 
@@ -8854,7 +8854,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/rnn/recurrent_network_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/rnn/recurrent_network_op.cc)
+[caffe2/operators/rnn/recurrent_network_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/rnn/recurrent_network_op.cc)
 
 ---
 
@@ -8883,7 +8883,7 @@ Does a reduce operation from every node to the root node. Currently only Sum is 
 ### Code
 
 
-[caffe2/operators/communicator_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/communicator_op.cc)
+[caffe2/operators/communicator_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/communicator_op.cc)
 
 ---
 
@@ -8910,7 +8910,7 @@ Reduces the input tensor along the last dimension of the input tensor by applyin
 ### Code
 
 
-[caffe2/operators/reduction_front_back_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_front_back_ops.cc)
+[caffe2/operators/reduction_front_back_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_front_back_ops.cc)
 
 ---
 
@@ -8924,7 +8924,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/reduction_front_back_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_front_back_ops.cc)
+[caffe2/operators/reduction_front_back_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_front_back_ops.cc)
 
 ---
 
@@ -8951,7 +8951,7 @@ Reduces the input tensor along the last dimension of the input tensor by applyin
 ### Code
 
 
-[caffe2/operators/reduction_front_back_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_front_back_ops.cc)
+[caffe2/operators/reduction_front_back_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_front_back_ops.cc)
 
 ---
 
@@ -8965,7 +8965,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/reduction_front_back_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_front_back_ops.cc)
+[caffe2/operators/reduction_front_back_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_front_back_ops.cc)
 
 ---
 
@@ -8998,7 +8998,7 @@ Reduces the input tensor along the last dimension of the input tensor by applyin
 ### Code
 
 
-[caffe2/operators/reduction_front_back_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_front_back_ops.cc)
+[caffe2/operators/reduction_front_back_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_front_back_ops.cc)
 
 ---
 
@@ -9012,7 +9012,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/reduction_front_back_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_front_back_ops.cc)
+[caffe2/operators/reduction_front_back_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_front_back_ops.cc)
 
 ---
 
@@ -9039,7 +9039,7 @@ Reduces the input tensor along the first dimension of the input tensor by applyi
 ### Code
 
 
-[caffe2/operators/reduction_front_back_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_front_back_ops.cc)
+[caffe2/operators/reduction_front_back_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_front_back_ops.cc)
 
 ---
 
@@ -9053,7 +9053,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/reduction_front_back_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_front_back_ops.cc)
+[caffe2/operators/reduction_front_back_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_front_back_ops.cc)
 
 ---
 
@@ -9080,7 +9080,7 @@ Reduces the input tensor along the first dimension of the input tensor by applyi
 ### Code
 
 
-[caffe2/operators/reduction_front_back_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_front_back_ops.cc)
+[caffe2/operators/reduction_front_back_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_front_back_ops.cc)
 
 ---
 
@@ -9094,7 +9094,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/reduction_front_back_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_front_back_ops.cc)
+[caffe2/operators/reduction_front_back_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_front_back_ops.cc)
 
 ---
 
@@ -9127,7 +9127,7 @@ Reduces the input tensor along the first dimension of the input tensor by applyi
 ### Code
 
 
-[caffe2/operators/reduction_front_back_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_front_back_ops.cc)
+[caffe2/operators/reduction_front_back_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_front_back_ops.cc)
 
 ---
 
@@ -9141,7 +9141,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/reduction_front_back_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_front_back_ops.cc)
+[caffe2/operators/reduction_front_back_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_front_back_ops.cc)
 
 ---
 
@@ -9171,7 +9171,7 @@ Reduces the input tensor along the first dimension of the input tensor by applyi
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -9185,7 +9185,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -9221,7 +9221,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/reduce_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduce_ops.cc)
+[caffe2/operators/reduce_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduce_ops.cc)
 
 ---
 
@@ -9248,7 +9248,7 @@ Does reduce-scatter operation among the nodes. Currently only Sum is supported.
 ### Code
 
 
-[caffe2/operators/communicator_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/communicator_op.cc)
+[caffe2/operators/communicator_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/communicator_op.cc)
 
 ---
 
@@ -9284,7 +9284,7 @@ Does reduce-scatter operation among the nodes. Currently only Sum is supported.
 ### Code
 
 
-[caffe2/operators/reduce_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduce_ops.cc)
+[caffe2/operators/reduce_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduce_ops.cc)
 
 ---
 
@@ -9309,7 +9309,7 @@ Reduce the tailing dimensions
 ### Code
 
 
-[caffe2/operators/rowmul_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/rowmul_op.cc)
+[caffe2/operators/rowmul_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/rowmul_op.cc)
 
 ---
 
@@ -9335,7 +9335,7 @@ Relu takes one input data (Tensor<T>) and produces one output data (Tensor<T>) w
 ### Code
 
 
-[caffe2/operators/relu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/relu_op.cc)
+[caffe2/operators/relu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/relu_op.cc)
 
 ---
 
@@ -9351,7 +9351,7 @@ ReluGradient takes both Y and dY and uses this to update dX according to the cha
 ### Code
 
 
-[caffe2/operators/relu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/relu_op.cc)
+[caffe2/operators/relu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/relu_op.cc)
 
 ---
 
@@ -9378,7 +9378,7 @@ Shrink the data tensor by removing data blocks with given zero-based indices in 
 ### Code
 
 
-[caffe2/operators/remove_data_blocks_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/remove_data_blocks_op.cc)
+[caffe2/operators/remove_data_blocks_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/remove_data_blocks_op.cc)
 
 ---
 
@@ -9409,7 +9409,7 @@ Remove padding around the edges of each segment of the input data. This is the r
 ### Code
 
 
-[caffe2/operators/sequence_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sequence_ops.cc)
+[caffe2/operators/sequence_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sequence_ops.cc)
 
 ---
 
@@ -9435,7 +9435,7 @@ Replace the NaN (not a number) element in the input tensor with argument  `value
 ### Code
 
 
-[caffe2/operators/replace_nan_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/replace_nan_op.cc)
+[caffe2/operators/replace_nan_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/replace_nan_op.cc)
 
 ---
 
@@ -9474,7 +9474,7 @@ Collect  `DATA`  tensor into  `RESERVOIR`  of size  `num_to_collect` .  `DATA`  
 ### Code
 
 
-[caffe2/operators/reservoir_sampling.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reservoir_sampling.cc)
+[caffe2/operators/reservoir_sampling.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reservoir_sampling.cc)
 
 ---
 
@@ -9502,7 +9502,7 @@ Resets a count-down counter with initial value specified by the 'init_count' arg
 ### Code
 
 
-[caffe2/operators/counter_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/counter_ops.cc)
+[caffe2/operators/counter_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/counter_ops.cc)
 
 ---
 
@@ -9526,7 +9526,7 @@ Resets the offsets for the given TreeCursor. This operation is thread safe.
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -9560,7 +9560,7 @@ It outputs the reshaped tensor as well as the original shape.
 ### Code
 
 
-[caffe2/operators/reshape_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reshape_op.cc)
+[caffe2/operators/reshape_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reshape_op.cc)
 
 ---
 
@@ -9587,7 +9587,7 @@ Produces tensor containing data of first input and shape of second input.
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -9615,7 +9615,7 @@ Resizes the spatial dimensions of the input using nearest neighbor interpolation
 ### Code
 
 
-[caffe2/operators/resize_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/resize_op.cc)
+[caffe2/operators/resize_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/resize_op.cc)
 
 ---
 
@@ -9638,7 +9638,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/resize_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/resize_op.cc)
+[caffe2/operators/resize_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/resize_op.cc)
 
 ---
 
@@ -9664,7 +9664,7 @@ Retrieve the current value from the counter.
 ### Code
 
 
-[caffe2/operators/counter_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/counter_ops.cc)
+[caffe2/operators/counter_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/counter_ops.cc)
 
 ---
 
@@ -9691,7 +9691,7 @@ Reverse segments in a 3-D tensor (lengths, segments, embeddings,), leaving paddi
 ### Code
 
 
-[caffe2/operators/reverse_packed_segs_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reverse_packed_segs_op.cc)
+[caffe2/operators/reverse_packed_segs_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reverse_packed_segs_op.cc)
 
 ---
 
@@ -9717,7 +9717,7 @@ Concretely, given inputs (grad, mean_squares, mom, lr), computes:
 ### Code
 
 
-[caffe2/sgd/rmsprop_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/rmsprop_op.cc)
+[caffe2/sgd/rmsprop_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/rmsprop_op.cc)
 
 ---
 
@@ -9749,7 +9749,7 @@ Region of Interest (RoI) align operation as used in Mask R-CNN.
 ### Code
 
 
-[caffe2/operators/roi_align_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/roi_align_op.cc)
+[caffe2/operators/roi_align_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/roi_align_op.cc)
 
 ---
 
@@ -9775,7 +9775,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/roi_align_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/roi_align_gradient_op.cc)
+[caffe2/operators/roi_align_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/roi_align_gradient_op.cc)
 
 ---
 
@@ -9816,7 +9816,7 @@ Depending on the mode, there are multiple output cases:
 ### Code
 
 
-[caffe2/operators/roi_pool_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/roi_pool_op.cc)
+[caffe2/operators/roi_pool_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/roi_pool_op.cc)
 
 ---
 
@@ -9830,7 +9830,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/roi_pool_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/roi_pool_op.cc)
+[caffe2/operators/roi_pool_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/roi_pool_op.cc)
 
 ---
 
@@ -9857,7 +9857,7 @@ Given a matrix A and column vector w, the output is the multiplication of row i 
 ### Code
 
 
-[caffe2/operators/rowmul_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/rowmul_op.cc)
+[caffe2/operators/rowmul_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/rowmul_op.cc)
 
 ---
 
@@ -9890,7 +9890,7 @@ Given a matrix A and column vector w, the output is the multiplication of row i 
 ### Code
 
 
-[caffe2/operators/arg_max_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/arg_max_op.cc)
+[caffe2/operators/arg_max_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/arg_max_op.cc)
 
 ---
 
@@ -9923,7 +9923,7 @@ Given a matrix A and column vector w, the output is the multiplication of row i 
 ### Code
 
 
-[caffe2/sgd/adagrad_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/adagrad_op.cc)
+[caffe2/sgd/adagrad_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/adagrad_op.cc)
 
 ---
 
@@ -9968,7 +9968,7 @@ Given inputs (param, moment1, moment2, indices, grad, lr, iter), runs the Adam u
 ### Code
 
 
-[caffe2/sgd/adam_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/adam_op.cc)
+[caffe2/sgd/adam_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/adam_op.cc)
 
 ---
 
@@ -10002,7 +10002,7 @@ Given uint8 tensor, quantized using 8bit row-wise quantization, and auxiliary sc
 ### Code
 
 
-[caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc)
+[caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc)
 
 ---
 
@@ -10026,7 +10026,7 @@ Compute row-wise max reduction of the input tensor.
 ### Code
 
 
-[caffe2/operators/reduction_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_ops.cc)
+[caffe2/operators/reduction_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_ops.cc)
 
 ---
 
@@ -10040,7 +10040,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/reduction_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_ops.cc)
+[caffe2/operators/reduction_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_ops.cc)
 
 ---
 
@@ -10070,7 +10070,7 @@ The 1st input is the queue and the last output is the status. The rest are data 
 ### Code
 
 
-[caffe2/queue/queue_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/queue/queue_ops.cc)
+[caffe2/queue/queue_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/queue/queue_ops.cc)
 
 ---
 
@@ -10095,7 +10095,7 @@ The 1st input is the queue and the last output is the status. The rest are data 
 ### Code
 
 
-[caffe2/queue/queue_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/queue/queue_ops.cc)
+[caffe2/queue/queue_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/queue/queue_ops.cc)
 
 ---
 
@@ -10123,7 +10123,7 @@ The Save operator saves a set of blobs to a db. It takes [1, infinity) number of
 ### Code
 
 
-[caffe2/operators/load_save_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/load_save_op.cc)
+[caffe2/operators/load_save_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/load_save_op.cc)
 
 ---
 
@@ -10147,7 +10147,7 @@ Scale takes one input data (Tensor<float>) and produces one output data (Tensor<
 ### Code
 
 
-[caffe2/operators/scale_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/scale_op.cc)
+[caffe2/operators/scale_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/scale_op.cc)
 
 ---
 
@@ -10178,7 +10178,7 @@ Update slices of the tensor in-place by overriding current value.
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -10212,7 +10212,7 @@ Similar to WeightedSum, computes the weighted sum of several tensors, with the d
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -10240,7 +10240,7 @@ Transfers a vector of segment ids to a vector of segment lengths. This operation
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -10267,7 +10267,7 @@ Transfers a vector of segment ids to a vector of segment ranges. This operation 
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -10295,7 +10295,7 @@ Given a sequence of indices, segmented by the lengths tensor, returns a matrix t
 ### Code
 
 
-[caffe2/operators/one_hot_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/one_hot_ops.cc)
+[caffe2/operators/one_hot_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/one_hot_ops.cc)
 
 ---
 
@@ -10324,7 +10324,7 @@ Selu takes one input data (Tensor<T>) and produces one output data (Tensor<T>) w
 ### Code
 
 
-[caffe2/operators/selu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/selu_op.cc)
+[caffe2/operators/selu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/selu_op.cc)
 
 ---
 
@@ -10352,7 +10352,7 @@ SeluGradient takes both Y and dY and uses this to update dX according to the cha
 ### Code
 
 
-[caffe2/operators/selu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/selu_op.cc)
+[caffe2/operators/selu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/selu_op.cc)
 
 ---
 
@@ -10383,7 +10383,7 @@ Sends the tensor to another node.
 ### Code
 
 
-[caffe2/operators/communicator_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/communicator_op.cc)
+[caffe2/operators/communicator_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/communicator_op.cc)
 
 ---
 
@@ -10432,7 +10432,7 @@ Argument 'radius' should be provided.
 ### Code
 
 
-[caffe2/operators/boolean_mask_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/boolean_mask_ops.cc)
+[caffe2/operators/boolean_mask_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/boolean_mask_ops.cc)
 
 ---
 
@@ -10446,7 +10446,7 @@ Produce a 1D int64 tensor with the shape of the input tensor.
 ### Code
 
 
-[caffe2/operators/shape_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/shape_op.cc)
+[caffe2/operators/shape_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/shape_op.cc)
 
 ---
 
@@ -10472,7 +10472,7 @@ Sigmoid takes one input data (Tensor<T>) and produces one output data (Tensor<T>
 ### Code
 
 
-[caffe2/operators/sigmoid_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sigmoid_op.cc)
+[caffe2/operators/sigmoid_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sigmoid_op.cc)
 
 ---
 
@@ -10500,7 +10500,7 @@ Returns a tensor of shape (batch_size,) of losses for each example.
 ### Code
 
 
-[caffe2/operators/cross_entropy_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cross_entropy_op.cc)
+[caffe2/operators/cross_entropy_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cross_entropy_op.cc)
 
 ---
 
@@ -10514,7 +10514,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/cross_entropy_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cross_entropy_op.cc)
+[caffe2/operators/cross_entropy_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cross_entropy_op.cc)
 
 ---
 
@@ -10530,7 +10530,7 @@ SigmoidGradient takes both Y and dY and uses this to update dX according to the 
 ### Code
 
 
-[caffe2/operators/sigmoid_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sigmoid_op.cc)
+[caffe2/operators/sigmoid_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sigmoid_op.cc)
 
 ---
 
@@ -10544,7 +10544,7 @@ Computes sign for each element of the input: -1, 0 or 1.
 ### Code
 
 
-[caffe2/operators/math_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/math_ops.cc)
+[caffe2/operators/math_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/math_ops.cc)
 
 ---
 
@@ -10570,7 +10570,7 @@ Calculates the sine of the given input tensor, element-wise.
 ### Code
 
 
-[caffe2/operators/sin_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sin_op.cc)
+[caffe2/operators/sin_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sin_op.cc)
 
 ---
 
@@ -10584,7 +10584,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/sin_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sin_op.cc)
+[caffe2/operators/sin_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sin_op.cc)
 
 ---
 
@@ -10616,7 +10616,7 @@ The input tensor must satisfy input[m, 0] == input[m, k] for all k.
 ### Code
 
 
-[caffe2/operators/sinusoid_position_encoding_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sinusoid_position_encoding_op.cc)
+[caffe2/operators/sinusoid_position_encoding_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sinusoid_position_encoding_op.cc)
 
 ---
 
@@ -10640,7 +10640,7 @@ Return a 1D tensor of type int64 that contains the number of elements of the inp
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -10688,7 +10688,7 @@ Slices are passed as 2 1D vectors or as two keyword argument lists with starting
 ### Code
 
 
-[caffe2/operators/slice_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/slice_op.cc)
+[caffe2/operators/slice_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/slice_op.cc)
 
 ---
 
@@ -10702,7 +10702,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/slice_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/slice_op.cc)
+[caffe2/operators/slice_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/slice_op.cc)
 
 ---
 
@@ -10716,7 +10716,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/load_save_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/load_save_op.cc)
+[caffe2/operators/load_save_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/load_save_op.cc)
 
 ---
 
@@ -10747,7 +10747,7 @@ Each of these dimensions must be matched correctly, or else the operator will th
 ### Code
 
 
-[caffe2/operators/softmax_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/softmax_op.cc)
+[caffe2/operators/softmax_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/softmax_op.cc)
 
 ---
 
@@ -10761,7 +10761,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/softmax_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/softmax_op.cc)
+[caffe2/operators/softmax_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/softmax_op.cc)
 
 ---
 
@@ -10795,7 +10795,7 @@ Optional third input blob can be used to weight the samples for the loss.
 ### Code
 
 
-[caffe2/operators/softmax_with_loss_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/softmax_with_loss_op.cc)
+[caffe2/operators/softmax_with_loss_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/softmax_with_loss_op.cc)
 
 ---
 
@@ -10809,7 +10809,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/softmax_with_loss_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/softmax_with_loss_op.cc)
+[caffe2/operators/softmax_with_loss_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/softmax_with_loss_op.cc)
 
 ---
 
@@ -10835,7 +10835,7 @@ Softplus takes one input data (Tensor<T>) and produces one output data (Tensor<T
 ### Code
 
 
-[caffe2/operators/softplus_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/softplus_op.cc)
+[caffe2/operators/softplus_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/softplus_op.cc)
 
 ---
 
@@ -10849,7 +10849,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/softplus_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/softplus_op.cc)
+[caffe2/operators/softplus_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/softplus_op.cc)
 
 ---
 
@@ -10875,7 +10875,7 @@ Calculates the softsign (x/1+|x|) of the given input tensor element-wise. This o
 ### Code
 
 
-[caffe2/operators/softsign_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/softsign_op.cc)
+[caffe2/operators/softsign_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/softsign_op.cc)
 
 ---
 
@@ -10902,7 +10902,7 @@ Calculates the softsign gradient (sgn(x)/(1+|x|)^2) of the given input tensor el
 ### Code
 
 
-[caffe2/operators/softsign_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/softsign_op.cc)
+[caffe2/operators/softsign_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/softsign_op.cc)
 
 ---
 
@@ -10931,7 +10931,7 @@ Compute the sorted indices given a field index to sort by and break the sorted i
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -10961,7 +10961,7 @@ Applies 'Mean' to each segment of input tensor. Segments need to be sorted and c
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -10975,7 +10975,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11005,7 +11005,7 @@ Applies 'LogMeanExp' to each segment of input tensor. In order to allow for more
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11019,7 +11019,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11049,7 +11049,7 @@ Applies 'LogSumExp' to each segment of input tensor. In order to allow for more 
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11063,7 +11063,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11093,7 +11093,7 @@ Applies 'Max' to each segment of input tensor. In order to allow for more effici
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11107,7 +11107,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11137,7 +11137,7 @@ Applies 'Mean' to each segment of input tensor. In order to allow for more effic
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11151,7 +11151,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11181,7 +11181,7 @@ Applies 'Sum' to each segment of input tensor. In order to allow for more effici
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11195,7 +11195,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11225,7 +11225,7 @@ Applies 'Sum' to each segment of input tensor. Segments need to be sorted and co
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11239,7 +11239,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11272,7 +11272,7 @@ Applies 'WeightedSum' to each segment of input tensor. Segments need to be sorte
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11286,7 +11286,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11303,7 +11303,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/space_batch_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/space_batch_op.cc)
+[caffe2/operators/space_batch_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/space_batch_op.cc)
 
 ---
 
@@ -11336,7 +11336,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/sgd/adagrad_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/adagrad_op.cc)
+[caffe2/sgd/adagrad_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/adagrad_op.cc)
 
 ---
 
@@ -11374,7 +11374,7 @@ Given inputs (param, moment1, moment2, indices, grad, lr, iter), runs the dense 
 ### Code
 
 
-[caffe2/sgd/adam_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/adam_op.cc)
+[caffe2/sgd/adam_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/adam_op.cc)
 
 ---
 
@@ -11388,7 +11388,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/sgd/ftrl_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/ftrl_op.cc)
+[caffe2/sgd/ftrl_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/ftrl_op.cc)
 
 ---
 
@@ -11402,7 +11402,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11416,7 +11416,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11430,7 +11430,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11463,7 +11463,7 @@ Pulls in slices of the input tensor, groups them into segments and applies 'Mean
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11492,7 +11492,7 @@ Variation of SparseLengthsMean operator, where DATA is stored using 8bits. DATA 
 ### Code
 
 
-[caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc)
+[caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc)
 
 ---
 
@@ -11520,7 +11520,7 @@ Performs the same operation as SparseLengthsMean, but operating on 8-bit rowwise
 ### Code
 
 
-[caffe2/operators/lengths_reducer_fused_8bit_rowwise_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_reducer_fused_8bit_rowwise_ops.cc)
+[caffe2/operators/lengths_reducer_fused_8bit_rowwise_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_reducer_fused_8bit_rowwise_ops.cc)
 
 ---
 
@@ -11534,7 +11534,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11563,7 +11563,7 @@ This is basically a fused operator of LengthsRangeFill + Gather + SparseWeighted
 ### Code
 
 
-[caffe2/operators/lengths_reducer_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_reducer_ops.cc)
+[caffe2/operators/lengths_reducer_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_reducer_ops.cc)
 
 ---
 
@@ -11596,7 +11596,7 @@ Pulls in slices of the input tensor, groups them into segments and applies 'Sum'
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11625,7 +11625,7 @@ Variation of SparseLengthsSum operator, where DATA is stored using 8bits. DATA w
 ### Code
 
 
-[caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc)
+[caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc)
 
 ---
 
@@ -11653,7 +11653,7 @@ Performs the same operation as SparseLengthsSum, but operating on 8-bit rowwise 
 ### Code
 
 
-[caffe2/operators/lengths_reducer_fused_8bit_rowwise_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_reducer_fused_8bit_rowwise_ops.cc)
+[caffe2/operators/lengths_reducer_fused_8bit_rowwise_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_reducer_fused_8bit_rowwise_ops.cc)
 
 ---
 
@@ -11667,7 +11667,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11697,7 +11697,7 @@ Variation of SparseLengthsWeightedMean operator, where DATA is stored using 8bit
 ### Code
 
 
-[caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc)
+[caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc)
 
 ---
 
@@ -11733,7 +11733,7 @@ Pulls in slices of the input tensor, groups them into segments and applies 'Weig
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11763,7 +11763,7 @@ Variation of SparseLengthsWeightedSum operator, where DATA is stored using 8bits
 ### Code
 
 
-[caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc)
+[caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_reducer_rowwise_8bit_ops.cc)
 
 ---
 
@@ -11792,7 +11792,7 @@ Performs the same operation as SparseLengthsWeightedSum, but operating on 8-bit 
 ### Code
 
 
-[caffe2/operators/lengths_reducer_fused_8bit_rowwise_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/lengths_reducer_fused_8bit_rowwise_ops.cc)
+[caffe2/operators/lengths_reducer_fused_8bit_rowwise_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/lengths_reducer_fused_8bit_rowwise_ops.cc)
 
 ---
 
@@ -11806,7 +11806,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11820,7 +11820,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11855,7 +11855,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/sgd/momentum_sgd_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/momentum_sgd_op.cc)
+[caffe2/sgd/momentum_sgd_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/momentum_sgd_op.cc)
 
 ---
 
@@ -11886,7 +11886,7 @@ Given a sparse matrix, apply max_norm or constant_norm sparse regularization.
 ### Code
 
 
-[caffe2/operators/sparse_normalize_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sparse_normalize_op.cc)
+[caffe2/operators/sparse_normalize_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sparse_normalize_op.cc)
 
 ---
 
@@ -11919,7 +11919,7 @@ Pulls in slices of the input tensor, groups them into segments and applies 'Mean
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11933,7 +11933,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11966,7 +11966,7 @@ Pulls in slices of the input tensor, groups them into segments and applies 'Sum'
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -11980,7 +11980,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -12016,7 +12016,7 @@ Pulls in slices of the input tensor, groups them into segments and applies 'Weig
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -12030,7 +12030,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -12067,7 +12067,7 @@ Convert sparse representations to dense with given indices.
 ### Code
 
 
-[caffe2/operators/sparse_to_dense_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sparse_to_dense_op.cc)
+[caffe2/operators/sparse_to_dense_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sparse_to_dense_op.cc)
 
 ---
 
@@ -12110,7 +12110,7 @@ Convert sparse representations to dense with given indices.
 ### Code
 
 
-[caffe2/operators/sparse_to_dense_mask_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sparse_to_dense_mask_op.cc)
+[caffe2/operators/sparse_to_dense_mask_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sparse_to_dense_mask_op.cc)
 
 ---
 
@@ -12126,7 +12126,7 @@ The output is the gradient of the input value from SparseToDenseMask. The gradie
 ### Code
 
 
-[caffe2/operators/sparse_to_dense_mask_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sparse_to_dense_mask_op.cc)
+[caffe2/operators/sparse_to_dense_mask_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sparse_to_dense_mask_op.cc)
 
 ---
 
@@ -12159,7 +12159,7 @@ Pulls in slices of the input tensor, groups them into segments and applies 'Mean
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -12173,7 +12173,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -12206,7 +12206,7 @@ Pulls in slices of the input tensor, groups them into segments and applies 'Sum'
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -12220,7 +12220,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -12256,7 +12256,7 @@ Pulls in slices of the input tensor, groups them into segments and applies 'Weig
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -12270,7 +12270,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -12325,7 +12325,7 @@ Carries out spatial batch normalization as described in the paper  [https://arxi
 ### Code
 
 
-[caffe2/operators/spatial_batch_norm_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/spatial_batch_norm_op.cc)
+[caffe2/operators/spatial_batch_norm_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/spatial_batch_norm_op.cc)
 
 ---
 
@@ -12339,7 +12339,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/spatial_batch_norm_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/spatial_batch_norm_gradient_op.cc)
+[caffe2/operators/spatial_batch_norm_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/spatial_batch_norm_gradient_op.cc)
 
 ---
 
@@ -12371,7 +12371,7 @@ For spatial softmax, weighting is by x,y position of the input.
 ### Code
 
 
-[caffe2/operators/spatial_softmax_with_loss_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/spatial_softmax_with_loss_op.cc)
+[caffe2/operators/spatial_softmax_with_loss_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/spatial_softmax_with_loss_op.cc)
 
 ---
 
@@ -12385,7 +12385,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/spatial_softmax_with_loss_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/spatial_softmax_with_loss_op.cc)
+[caffe2/operators/spatial_softmax_with_loss_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/spatial_softmax_with_loss_op.cc)
 
 ---
 
@@ -12414,7 +12414,7 @@ Split a tensor into a list of tensors, along the specified 'axis'. The lengths o
 ### Code
 
 
-[caffe2/operators/concat_split_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/concat_split_op.cc)
+[caffe2/operators/concat_split_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/concat_split_op.cc)
 
 ---
 
@@ -12438,7 +12438,7 @@ Square (x^2) the elements of the input
 ### Code
 
 
-[caffe2/operators/math_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/math_ops.cc)
+[caffe2/operators/math_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/math_ops.cc)
 
 ---
 
@@ -12464,7 +12464,7 @@ Computes the element-wise sqrt of the input.
 ### Code
 
 
-[caffe2/operators/sqrt_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/sqrt_op.cc)
+[caffe2/operators/sqrt_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/sqrt_op.cc)
 
 ---
 
@@ -12496,7 +12496,7 @@ Given DATA tensor with first dimension N and SCALE vector of the same size N pro
 ### Code
 
 
-[caffe2/operators/square_root_divide_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/square_root_divide_op.cc)
+[caffe2/operators/square_root_divide_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/square_root_divide_op.cc)
 
 ---
 
@@ -12523,7 +12523,7 @@ Given two input float tensors X, Y, and produces one output float tensor of the 
 ### Code
 
 
-[caffe2/operators/distance_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/distance_op.cc)
+[caffe2/operators/distance_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/distance_op.cc)
 
 ---
 
@@ -12537,7 +12537,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/distance_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/distance_op.cc)
+[caffe2/operators/distance_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/distance_op.cc)
 
 ---
 
@@ -12566,7 +12566,7 @@ This is the exact inverse operation of ExpandDims given the same  `dims`  arg.
 ### Code
 
 
-[caffe2/operators/expand_squeeze_dims_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/expand_squeeze_dims_op.cc)
+[caffe2/operators/expand_squeeze_dims_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/expand_squeeze_dims_op.cc)
 
 ---
 
@@ -12590,7 +12590,7 @@ Create a StatRegistry object that will contain a map of performance counters key
 ### Code
 
 
-[caffe2/operators/stats_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/stats_ops.cc)
+[caffe2/operators/stats_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/stats_ops.cc)
 
 ---
 
@@ -12618,7 +12618,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/stats_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/stats_ops.cc)
+[caffe2/operators/stats_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/stats_ops.cc)
 
 ---
 
@@ -12644,7 +12644,7 @@ Update the given StatRegistry, or the global StatRegistry, with the values of co
 ### Code
 
 
-[caffe2/operators/stats_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/stats_ops.cc)
+[caffe2/operators/stats_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/stats_ops.cc)
 
 ---
 
@@ -12660,7 +12660,7 @@ StopGradient is a helper operator that does no actual numerical computation, and
 ### Code
 
 
-[caffe2/operators/stop_gradient.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/stop_gradient.cc)
+[caffe2/operators/stop_gradient.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/stop_gradient.cc)
 
 ---
 
@@ -12689,7 +12689,7 @@ Add a value to a remote counter. If the key is not set, the store initializes it
 ### Code
 
 
-[caffe2/distributed/store_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/distributed/store_ops.cc)
+[caffe2/distributed/store_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/distributed/store_ops.cc)
 
 ---
 
@@ -12717,7 +12717,7 @@ Get a blob from a store. The key is the output blob's name. The key can be overr
 ### Code
 
 
-[caffe2/distributed/store_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/distributed/store_ops.cc)
+[caffe2/distributed/store_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/distributed/store_ops.cc)
 
 ---
 
@@ -12744,7 +12744,7 @@ Set a blob in a store. The key is the input blob's name and the value is the dat
 ### Code
 
 
-[caffe2/distributed/store_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/distributed/store_ops.cc)
+[caffe2/distributed/store_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/distributed/store_ops.cc)
 
 ---
 
@@ -12771,7 +12771,7 @@ Wait for the specified blob names to be set. The blob names can be passed either
 ### Code
 
 
-[caffe2/distributed/store_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/distributed/store_ops.cc)
+[caffe2/distributed/store_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/distributed/store_ops.cc)
 
 ---
 
@@ -12800,7 +12800,7 @@ Returns tensor of boolean of the same dimension of input.
 ### Code
 
 
-[caffe2/operators/string_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/string_ops.cc)
+[caffe2/operators/string_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/string_ops.cc)
 
 ---
 
@@ -12826,7 +12826,7 @@ Creates a dictionary that maps string keys to consecutive integers from 1 to max
 ### Code
 
 
-[caffe2/operators/index_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/index_ops.cc)
+[caffe2/operators/index_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/index_ops.cc)
 
 ---
 
@@ -12855,7 +12855,7 @@ Takes a 1-D or a 2-D tensor as input and joins elements in each row with the pro
 ### Code
 
 
-[caffe2/operators/string_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/string_ops.cc)
+[caffe2/operators/string_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/string_ops.cc)
 
 ---
 
@@ -12885,7 +12885,7 @@ NOTE: Prefix is computed on number of bytes, which may lead to wrong behavior an
 ### Code
 
 
-[caffe2/operators/string_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/string_ops.cc)
+[caffe2/operators/string_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/string_ops.cc)
 
 ---
 
@@ -12914,7 +12914,7 @@ Returns tensor of boolean of the same dimension of input.
 ### Code
 
 
-[caffe2/operators/string_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/string_ops.cc)
+[caffe2/operators/string_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/string_ops.cc)
 
 ---
 
@@ -12944,7 +12944,7 @@ NOTE: Prefix is computed on number of bytes, which may lead to wrong behavior an
 ### Code
 
 
-[caffe2/operators/string_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/string_ops.cc)
+[caffe2/operators/string_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/string_ops.cc)
 
 ---
 
@@ -12970,7 +12970,7 @@ Converts each input element into either high_ or low_value based on the given th
 ### Code
 
 
-[caffe2/operators/stump_func_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/stump_func_op.cc)
+[caffe2/operators/stump_func_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/stump_func_op.cc)
 
 ---
 
@@ -13013,7 +13013,7 @@ Performs element-wise binary subtraction (with limited broadcast support).
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -13039,7 +13039,7 @@ Element-wise sum of each of the input tensors. The first input tensor can be use
 ### Code
 
 
-[caffe2/operators/elementwise_sum_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_sum_op.cc)
+[caffe2/operators/elementwise_sum_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_sum_op.cc)
 
 ---
 
@@ -13065,7 +13065,7 @@ Sums the elements of the input tensor.
 ### Code
 
 
-[caffe2/operators/reduction_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_ops.cc)
+[caffe2/operators/reduction_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_ops.cc)
 
 ---
 
@@ -13079,7 +13079,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/reduction_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_ops.cc)
+[caffe2/operators/reduction_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_ops.cc)
 
 ---
 
@@ -13103,7 +13103,7 @@ Sums the integer elements of the input tensor.
 ### Code
 
 
-[caffe2/operators/reduction_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_ops.cc)
+[caffe2/operators/reduction_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_ops.cc)
 
 ---
 
@@ -13117,7 +13117,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -13158,7 +13158,7 @@ For example, the following tensor shapes are supported:
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -13184,7 +13184,7 @@ Sums the squares elements of the input tensor.
 ### Code
 
 
-[caffe2/operators/reduction_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/reduction_ops.cc)
+[caffe2/operators/reduction_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/reduction_ops.cc)
 
 ---
 
@@ -13212,7 +13212,7 @@ Summarize computes four statistics of the input tensor (Tensor<float>)- min, max
 ### Code
 
 
-[caffe2/operators/summarize_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/summarize_op.cc)
+[caffe2/operators/summarize_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/summarize_op.cc)
 
 ---
 
@@ -13238,7 +13238,7 @@ Swish takes one input data (Tensor<T>) and produces one output data (Tensor<T>) 
 ### Code
 
 
-[caffe2/operators/swish_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/swish_op.cc)
+[caffe2/operators/swish_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/swish_op.cc)
 
 ---
 
@@ -13254,7 +13254,7 @@ SwishGradient takes X, Y and dY and uses this to update dX according to the chai
 ### Code
 
 
-[caffe2/operators/swish_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/swish_op.cc)
+[caffe2/operators/swish_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/swish_op.cc)
 
 ---
 
@@ -13293,7 +13293,7 @@ The TT-layer serves as a low-rank decomposition of a fully connected layer. The 
 ### Code
 
 
-[caffe2/operators/tt_linear_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/tt_linear_op.cc)
+[caffe2/operators/tt_linear_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/tt_linear_op.cc)
 
 ---
 
@@ -13307,7 +13307,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/tt_linear_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/tt_linear_op.cc)
+[caffe2/operators/tt_linear_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/tt_linear_op.cc)
 
 ---
 
@@ -13333,7 +13333,7 @@ Calculates the hyperbolic tangent of the given input tensor element-wise. This o
 ### Code
 
 
-[caffe2/operators/tanh_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/tanh_op.cc)
+[caffe2/operators/tanh_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/tanh_op.cc)
 
 ---
 
@@ -13347,7 +13347,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/tanh_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/tanh_op.cc)
+[caffe2/operators/tanh_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/tanh_op.cc)
 
 ---
 
@@ -13375,7 +13375,7 @@ TensorProtosDBInput is a simple input operator that basically reads things from 
 ### Code
 
 
-[caffe2/operators/tensor_protos_db_input.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/tensor_protos_db_input.cc)
+[caffe2/operators/tensor_protos_db_input.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/tensor_protos_db_input.cc)
 
 ---
 
@@ -13399,7 +13399,7 @@ Get the size of the input vector
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -13423,7 +13423,7 @@ Read a batch of rows from the given text file reader instance. Expects the numbe
 ### Code
 
 
-[caffe2/operators/text_file_reader.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/text_file_reader.cc)
+[caffe2/operators/text_file_reader.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/text_file_reader.cc)
 
 ---
 
@@ -13451,7 +13451,7 @@ ThresholdedRelu takes one input data (Tensor) and produces one output data (Tens
 ### Code
 
 
-[caffe2/operators/thresholded_relu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/thresholded_relu_op.cc)
+[caffe2/operators/thresholded_relu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/thresholded_relu_op.cc)
 
 ---
 
@@ -13467,7 +13467,7 @@ ThresholdedReluGradient takes both Y and dY and uses this to update dX according
 ### Code
 
 
-[caffe2/operators/thresholded_relu_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/thresholded_relu_op.cc)
+[caffe2/operators/thresholded_relu_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/thresholded_relu_op.cc)
 
 ---
 
@@ -13500,7 +13500,7 @@ For example, tiling [[a b c d]] by tile=2, axis=0 produces [[a b c d], [a b c d]
 ### Code
 
 
-[caffe2/operators/tile_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/tile_op.cc)
+[caffe2/operators/tile_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/tile_op.cc)
 
 ---
 
@@ -13514,7 +13514,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/tile_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/tile_op.cc)
+[caffe2/operators/tile_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/tile_op.cc)
 
 ---
 
@@ -13540,7 +13540,7 @@ The timer is stopped by calling TimerEnd
 ### Code
 
 
-[caffe2/operators/stats_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/stats_ops.cc)
+[caffe2/operators/stats_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/stats_ops.cc)
 
 ---
 
@@ -13562,7 +13562,7 @@ Stop a timer started with TimerBegin, publishing a CAFFE_EVENT
 ### Code
 
 
-[caffe2/operators/stats_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/stats_ops.cc)
+[caffe2/operators/stats_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/stats_ops.cc)
 
 ---
 
@@ -13586,7 +13586,7 @@ Queries the current time of a timer in nanos
 ### Code
 
 
-[caffe2/operators/stats_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/stats_ops.cc)
+[caffe2/operators/stats_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/stats_ops.cc)
 
 ---
 
@@ -13610,7 +13610,7 @@ Queries the current time of a timer in nanos, stops the timer             publis
 ### Code
 
 
-[caffe2/operators/stats_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/stats_ops.cc)
+[caffe2/operators/stats_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/stats_ops.cc)
 
 ---
 
@@ -13641,7 +13641,7 @@ Retrieve the top-K elements for the last dimension. Given an input tensor of sha
 ### Code
 
 
-[caffe2/operators/top_k.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/top_k.cc)
+[caffe2/operators/top_k.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/top_k.cc)
 
 ---
 
@@ -13655,7 +13655,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/top_k.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/top_k.cc)
+[caffe2/operators/top_k.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/top_k.cc)
 
 ---
 
@@ -13683,7 +13683,7 @@ Transpose the input tensor similar to numpy.transpose. For example, when axes=(1
 ### Code
 
 
-[caffe2/operators/transpose_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/transpose_op.cc)
+[caffe2/operators/transpose_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/transpose_op.cc)
 
 ---
 
@@ -13708,7 +13708,7 @@ Trimming happens such that the dataset will contain the largest possible number 
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -13735,7 +13735,7 @@ Given a packed dataset (packed by the PackRecordsOp) and the  `fields`  argument
 ### Code
 
 
-[caffe2/operators/dataset_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/dataset_ops.cc)
+[caffe2/operators/dataset_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/dataset_ops.cc)
 
 ---
 
@@ -13770,7 +13770,7 @@ Fill the output tensor with FLOAT samples from uniform distribution [min, max].
 ### Code
 
 
-[caffe2/operators/filler_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/filler_op.cc)
+[caffe2/operators/filler_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/filler_op.cc)
 
 ---
 
@@ -13786,7 +13786,7 @@ Like  `UniformFill`  but fill with INT32.
 ### Code
 
 
-[caffe2/operators/filler_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/filler_op.cc)
+[caffe2/operators/filler_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/filler_op.cc)
 
 ---
 
@@ -13814,7 +13814,7 @@ There's no guarantees on the ordering of the output indices.
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -13849,7 +13849,7 @@ If the second input is given, its elements will be excluded from uniform samplin
 ### Code
 
 
-[caffe2/operators/filler_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/filler_op.cc)
+[caffe2/operators/filler_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/filler_op.cc)
 
 ---
 
@@ -13897,7 +13897,7 @@ This is the reverse operator for PackRNNSequence. It maps the packed values back
 ### Code
 
 
-[caffe2/operators/pack_rnn_sequence_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pack_rnn_sequence_op.cc)
+[caffe2/operators/pack_rnn_sequence_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pack_rnn_sequence_op.cc)
 
 ---
 
@@ -13922,7 +13922,7 @@ Map N+1 dim tensor to N dim based on length blob
 ### Code
 
 
-[caffe2/operators/pack_segments.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/pack_segments.cc)
+[caffe2/operators/pack_segments.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/pack_segments.cc)
 
 ---
 
@@ -13943,7 +13943,7 @@ biases in a deep CNN) to be coalesced into a single larger operation, amortizing
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -13975,7 +13975,7 @@ Applies 'Mean' to each segment of input tensor. Segments ids can appear in arbit
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -13989,7 +13989,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -14021,7 +14021,7 @@ Applies 'Sum' to each segment of input tensor. Segments ids can appear in arbitr
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -14035,7 +14035,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -14069,7 +14069,7 @@ Applies 'WeightedSum' to each segment of input tensor. Segments ids can appear i
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -14083,7 +14083,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/segment_reduction_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/segment_reduction_op.cc)
+[caffe2/operators/segment_reduction_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/segment_reduction_op.cc)
 
 ---
 
@@ -14100,7 +14100,7 @@ Super special-case operator. Used to pad a tensor to mimic pytorch's pad_packed_
 ### Code
 
 
-[caffe2/operators/variable_length_sequence_padding.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/variable_length_sequence_padding.cc)
+[caffe2/operators/variable_length_sequence_padding.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/variable_length_sequence_padding.cc)
 
 ---
 
@@ -14122,7 +14122,7 @@ Time since epoch in nanoseconds.
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -14152,7 +14152,7 @@ All weights are cummulative probability thus sorted. The output is a 1-D tensor 
 ### Code
 
 
-[caffe2/operators/weighted_multi_sampling_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/weighted_multi_sampling_op.cc)
+[caffe2/operators/weighted_multi_sampling_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/weighted_multi_sampling_op.cc)
 
 ---
 
@@ -14183,7 +14183,7 @@ The output is a 1-D tensor (Tensor<int>) of size (batch_size x 1) and contains t
 ### Code
 
 
-[caffe2/operators/weighted_sample_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/weighted_sample_op.cc)
+[caffe2/operators/weighted_sample_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/weighted_sample_op.cc)
 
 ---
 
@@ -14209,7 +14209,7 @@ The 1st input is the queue and the last output is the status. The rest are data 
 ### Code
 
 
-[caffe2/queue/queue_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/queue/queue_ops.cc)
+[caffe2/queue/queue_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/queue/queue_ops.cc)
 
 ---
 
@@ -14238,7 +14238,7 @@ Returns a tensor of shape (batch_size,) of losses for each example.
 ### Code
 
 
-[caffe2/operators/cross_entropy_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cross_entropy_op.cc)
+[caffe2/operators/cross_entropy_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cross_entropy_op.cc)
 
 ---
 
@@ -14252,7 +14252,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/cross_entropy_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/cross_entropy_op.cc)
+[caffe2/operators/cross_entropy_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/cross_entropy_op.cc)
 
 ---
 
@@ -14279,7 +14279,7 @@ Input should be in the form X_0, weight_0, X_1, weight_1, ... where X_i all have
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -14293,7 +14293,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/utility_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/utility_ops.cc)
+[caffe2/operators/utility_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/utility_ops.cc)
 
 ---
 
@@ -14321,7 +14321,7 @@ Operator Where takes three input data (Tensor<bool>, Tensor<T>, Tensor<T>) and p
 ### Code
 
 
-[caffe2/operators/elementwise_logical_ops.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_logical_ops.cc)
+[caffe2/operators/elementwise_logical_ops.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_logical_ops.cc)
 
 ---
 
@@ -14348,7 +14348,7 @@ Operator Where takes three input data (Tensor<bool>, Tensor<T>, Tensor<T>) and p
 ### Code
 
 
-[caffe2/operators/while_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/while_op.cc)
+[caffe2/operators/while_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/while_op.cc)
 
 ---
 
@@ -14362,7 +14362,7 @@ No documentation yet.
 ### Code
 
 
-[caffe2/operators/filler_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/filler_op.cc)
+[caffe2/operators/filler_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/filler_op.cc)
 
 ---
 
@@ -14406,7 +14406,7 @@ Both input operands should be of type  `bool` .
 ### Code
 
 
-[caffe2/operators/elementwise_op_schema.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/elementwise_op_schema.cc)
+[caffe2/operators/elementwise_op_schema.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/elementwise_op_schema.cc)
 
 ---
 
@@ -14454,7 +14454,7 @@ Both input operands should be of type  `bool` .
 ### Code
 
 
-[caffe2/sgd/yellowfin_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/sgd/yellowfin_op.cc)
+[caffe2/sgd/yellowfin_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/sgd/yellowfin_op.cc)
 
 ---
 
@@ -14470,7 +14470,7 @@ ZeroGradient operators doesn't produce any output blobs. One can use this operat
 ### Code
 
 
-[caffe2/operators/zero_gradient_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/zero_gradient_op.cc)
+[caffe2/operators/zero_gradient_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/zero_gradient_op.cc)
 
 ---
 
@@ -14486,7 +14486,7 @@ Internal RNN operator.
 ### Code
 
 
-[caffe2/operators/rnn/recurrent_network_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/rnn/recurrent_network_op.cc)
+[caffe2/operators/rnn/recurrent_network_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/rnn/recurrent_network_op.cc)
 
 ---
 
@@ -14502,7 +14502,7 @@ Internal RNN operator.
 ### Code
 
 
-[caffe2/operators/rnn/recurrent_network_op.cc](https://github.com/caffe2/caffe2/blob/master/caffe2/operators/rnn/recurrent_network_op.cc)
+[caffe2/operators/rnn/recurrent_network_op.cc](https://github.com/pytorch/pytorch/blob/master/caffe2/operators/rnn/recurrent_network_op.cc)
 
 ---
 

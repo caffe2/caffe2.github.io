@@ -27,11 +27,11 @@ Configuration: Tesla K80 + cuDNN 6 (FP32), Tesla P100 + cuDNN 6 (FP32), Tesla V1
 
 > Benchmark performance numbers are provided by NVIDIA using DGX-1 with Tesla P100 (Pascal) and DGX-1V with Tesla V100 (Volta) GPUs.
 
-Caffe2 is open source and available at [GitHub](https://github.com/caffe2/caffe2) for download. Please check out the Caffe2 documentation & tutorials at [Caffe2.ai](https://caffe2.ai/). If you’re thinking about using Caffe2, we’re interested in hearing about your needs. Please participate in our [survey](https://www.surveymonkey.com/r/caffe2). We will send you information about new releases and special developer events/webinars.
+Caffe2 is open source and available at [GitHub](https://github.com/pytorch/pytorch) for download. Please check out the Caffe2 documentation & tutorials at [Caffe2.ai](https://caffe2.ai/). If you’re thinking about using Caffe2, we’re interested in hearing about your needs. Please participate in our [survey](https://www.surveymonkey.com/r/caffe2). We will send you information about new releases and special developer events/webinars.
 
 We will have our first Caffe2 meetup in San Francisco bay area at the end of May. Please join our [Caffe2 meetup group](https://www.meetup.com/Caffe2-Bay-Area/).
 
 * Homepage: [https://caffe2.ai/](https://caffe2.ai/)
-* Github: [https://github.com/caffe2/caffe2](https://github.com/caffe2/caffe2)
+* Github: [https://github.com/pytorch/pytorch](https://github.com/pytorch/pytorch)
 * Survey: [https://www.surveymonkey.com/r/caffe2](https://www.surveymonkey.com/r/caffe2)
 * Meetup: [https://www.meetup.com/Caffe2-Bay-Area](https://www.meetup.com/Caffe2-Bay-Area)

@@ -41,6 +41,6 @@ We follow the practice, common in machine translation, of using beam search at d
 
 
 * Homepage: [https://caffe2.ai/](https://caffe2.ai/)
-* Github: [https://github.com/caffe2/caffe2](https://github.com/caffe2/caffe2)
+* Github: [https://github.com/pytorch/pytorch](https://github.com/pytorch/pytorch)
 * Facebook: [https://facebook.com/Caffe2AI](https://facebook.com/Caffe2AI)
 
