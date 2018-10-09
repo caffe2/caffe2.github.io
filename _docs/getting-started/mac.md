@@ -9,7 +9,7 @@ We only support Anaconda packages at the moment. If you do not wish to use Anaco
 We build Mac packages without CUDA support for both Python 2.7 and Python 3.6. To install Caffe2 with Anaconda, simply activate your desired conda environment and run the following command.
 
 ```bash
-conda install -c caffe2 caffe2
+conda install pytorch-nightly-cpu -c pytorch
 ```
 
 > This does NOT include libraries that are necessary to run the tutorials, such as jupyter. See the [tutorials](https://caffe2.ai/docs/tutorials) page for the list of required packages needed to run the tutorials.
@@ -21,7 +21,7 @@ NOTE: This will install Caffe2 and all of its required dependencies into the cur
 This is in beta mode, but you can try
 
 ```bash
-pip install caffe2
+pip install torch_nightly -f https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html
 ```
 
 
