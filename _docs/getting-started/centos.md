@@ -8,12 +8,10 @@ We only support Anaconda packages at the moment. If you do not wish to use Anaco
 
 We build Linux packages without CUDA support, with CUDA 9.0 support, and with CUDA 8.0 support, for both Python 2.7 and Python 3.6. These packages are built on Ubuntu 16.04, but they will probably work on CentOS as well (if they do not, please tell us by creating an issue on our [Github page](https://github.com/pytorch/pytorch/issues)). To install Caffe2 with Anaconda, simply activate your desired conda environment and then run one of the following commands:
 
-> If your gcc version is older than 5 (you can run ```gcc --version``` to find out), then append '-gcc4.8' to the package name. For example, run `conda install -c caffe2 caffe2-gcc4.8` or `conda install -c caffe2 caffe2-cuda9.0-cudnn7-gcc4.8` instead of what's below. (The command you run should always start with `conda install -c caffe2`)
-
 If you do not have a GPU:
 
 ```bash
-conda install -c caffe2 caffe2
+conda install pytorch-nightly-cpu -c pytorch
 ```
 
 For GPU support you will need [CUDA](https://developer.nvidia.com/cuda-downloads), [CuDNN](https://developer.nvidia.com/cudnn), and [NCCL](https://developer.nvidia.com/nccl). These must be installed from Nvidia's website. 
@@ -21,13 +19,13 @@ For GPU support you will need [CUDA](https://developer.nvidia.com/cuda-downloads
 For Caffe2 with CUDA 9 and CuDNN 7 support:
 
 ```bash
-conda install -c caffe2 caffe2-cuda9.0-cudnn7
+conda install pytorch-nightly -c pytorch
 ```
 
 For Caffe2 with CUDA 8 and CuDNN 7 support:
 
 ```bash
-conda install -c caffe2 caffe2-cuda8.0-cudnn7
+conda install pytorch-nightly cuda80 -c pytorch
 ```
 
 > This does NOT include libraries that are necessary to run the tutorials, such as jupyter. See the [tutorials](https://caffe2.ai/docs/tutorials) page for the list of required packages needed to run the tutorials.
