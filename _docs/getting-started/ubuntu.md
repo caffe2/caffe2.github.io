@@ -52,7 +52,6 @@ We test the latest code on
 sudo apt-get update
 sudo apt-get install -y --no-install-recommends \
       build-essential \
-      cmake \
       git \
       libgoogle-glog-dev \
       libgtest-dev \
@@ -71,16 +70,22 @@ sudo apt-get install -y --no-install-recommends \
 pip install --user \
       future \
       numpy \
-      protobuf
+      protobuf \
+      typing \
+      hypothesis
 ```
 
 > Note `libgflags2` is for Ubuntu 14.04. `libgflags-dev` is for Ubuntu 16.04.
 
 ```bash
 # for Ubuntu 14.04
-sudo apt-get install -y --no-install-recommends libgflags2
+sudo apt-get install -y --no-install-recommends \
+      libgflags2 \
+      cmake3
 # for Ubuntu 16.04
-sudo apt-get install -y --no-install-recommends libgflags-dev
+sudo apt-get install -y --no-install-recommends \
+      libgflags-dev \
+      cmake
 ```
 
 > If you have a GPU, follow [these additional steps](#install-with-gpu-support) before continuing.
