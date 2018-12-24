@@ -40,8 +40,8 @@ In the code block below we will create a super simple model. It will have these 
 
 Composing nets directly is quite tedious, so it is better to use *model helpers* that are Python classes that aid in creating the nets. Even though we call it and pass in a single name "my first net", `ModelHelper` will create two interrelated nets:
 
-1. one that initializes the parameters (ref. init_net)
-2. one that runs the actual training (ref. exec_net)
+1. one that initializes the parameters (ref. param_init_net)
+2. one that runs the actual training (ref. net)
 
 ```py
 # Create the input data
@@ -62,7 +62,7 @@ We created some random data and random labels and then fed those as blobs into t
 m = model_helper.ModelHelper(name="my first net")
 ```
 
-You've now used the `model_helper` to create the two nets we mentioned earlier (`init_net` and `exec_net`). We plan to add a fully connected layer using the `FC` operator in this model next, but first we need to do prep work by creating randomly filled blobs for weight and bias that the `FC` op expects. We will reference the weights and bias blobs by name as inputs when we add the `FC` op.
+You've now used the `model_helper` to create the two nets we mentioned earlier (`param_init_net` and `net`). We plan to add a fully connected layer using the `FC` operator in this model next, but first we need to do prep work by creating randomly filled blobs for weight and bias that the `FC` op expects. We will reference the weights and bias blobs by name as inputs when we add the `FC` op.
 
 ```py
 weight = m.param_init_net.XavierFill([], 'fc_w', shape=[10, 100])
