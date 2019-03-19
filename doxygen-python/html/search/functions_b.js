@@ -1,7 +1,19 @@
 var searchData=
 [
-  ['make_5funique_5fblob_5fname',['make_unique_blob_name',['../classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html#a498428cad454f543e960b1faca2dbf08',1,'caffe2::python::optimizer::Optimizer']]],
-  ['masknallocate',['maskNallocate',['../namespace_sparse_transformer.html#ae644ca926619d1d661a3c9efdd2b009c',1,'SparseTransformer']]],
-  ['maybeaddcolor',['MaybeAddColor',['../namespacecaffe2_1_1python_1_1binarysize.html#afed2b5ec2c712256e674ab0d7b9e2715',1,'caffe2::python::binarysize']]],
-  ['metrics_5fschema',['metrics_schema',['../classcaffe2_1_1python_1_1layer__model__helper_1_1_layer_model_helper.html#a0d22a4d60341d8673deacc1599325129',1,'caffe2::python::layer_model_helper::LayerModelHelper']]]
+  ['load',['load',['../classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a45aa82dbeb2693b5d94d65b4bf3a0acc',1,'caffe2::python::checkpoint::CheckpointManager']]],
+  ['load_5fblobs_5ffrom_5fcheckpoint',['load_blobs_from_checkpoint',['../classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a10516c8e426b15e6de7b70e16bf50406',1,'caffe2::python::checkpoint::CheckpointManager']]],
+  ['load_5fblobs_5ffrom_5fcheckpoints',['load_blobs_from_checkpoints',['../classcaffe2_1_1python_1_1checkpoint_1_1_job_runner.html#ae31df7128c92c10f578e003320f55534',1,'caffe2::python::checkpoint::JobRunner']]],
+  ['load_5fblobs_5flocally',['load_blobs_locally',['../classcaffe2_1_1python_1_1checkpoint_1_1_multi_node_checkpoint_manager.html#a028b5c568e9b8cb417975e510a5dd67c',1,'caffe2::python::checkpoint::MultiNodeCheckpointManager']]],
+  ['load_5flibrary',['load_library',['../classtorch_1_1__ops_1_1___ops.html#a91516566c5b313735ee87f8d800dd779',1,'torch::_ops::_Ops']]],
+  ['load_5fstate_5fdict',['load_state_dict',['../classtorch_1_1optim_1_1lr__scheduler_1_1___l_r_scheduler.html#a45f32eba3bf2477bead15559cb9243b7',1,'torch.optim.lr_scheduler._LRScheduler.load_state_dict()'],['../classtorch_1_1optim_1_1lr__scheduler_1_1_lambda_l_r.html#a0aae3861c1570d3323a0c30b11420d7f',1,'torch.optim.lr_scheduler.LambdaLR.load_state_dict()']]],
+  ['local_5fexit',['local_exit',['../classcaffe2_1_1python_1_1net__builder_1_1_operations.html#a7d66d9c584b248dabbd14034e60d5aeb',1,'caffe2::python::net_builder::Operations']]],
+  ['local_5finit',['local_init',['../classcaffe2_1_1python_1_1net__builder_1_1_operations.html#a49c99a4e149479eaad55a8d521459963',1,'caffe2::python::net_builder::Operations']]],
+  ['local_5freporter',['local_reporter',['../classcaffe2_1_1python_1_1net__builder_1_1_operations.html#aa28190c2ee5d1d68a921c161eeb1ed21',1,'caffe2::python::net_builder::Operations']]],
+  ['log',['log',['../classcaffe2_1_1python_1_1experiment__util_1_1_external_logger.html#a50a69dd61b0afe8cf6ebc383d5350821',1,'caffe2::python::experiment_util::ExternalLogger']]],
+  ['log_5fabs_5fdet_5fjacobian',['log_abs_det_jacobian',['../classtorch_1_1distributions_1_1transforms_1_1_transform.html#aa11fa92b2b7aaa77bec5f482c952b5fe',1,'torch::distributions::transforms::Transform']]],
+  ['log_5fprob',['log_prob',['../classtorch_1_1distributions_1_1distribution_1_1_distribution.html#a47b341a5cf208696b9bcb114a9a379fc',1,'torch.distributions.distribution.Distribution.log_prob()'],['../classtorch_1_1distributions_1_1transformed__distribution_1_1_transformed_distribution.html#a3746f58939097763340b53276c7fa5e3',1,'torch.distributions.transformed_distribution.TransformedDistribution.log_prob()']]],
+  ['log_5fstd_5finit',['log_std_init',['../classcaffe2_1_1python_1_1layers_1_1adaptive__weight_1_1_adaptive_weight.html#abe7104d52f3474aef146f2933c5cd214',1,'caffe2::python::layers::adaptive_weight::AdaptiveWeight']]],
+  ['log_5fstd_5fweight',['log_std_weight',['../classcaffe2_1_1python_1_1layers_1_1adaptive__weight_1_1_adaptive_weight.html#a1e907f1c227c80382a48607c15ada5ac',1,'caffe2::python::layers::adaptive_weight::AdaptiveWeight']]],
+  ['long',['long',['../classtorch_1_1storage_1_1___storage_base.html#af2da6eb4ac01da6d0bc18d3ee9d7760e',1,'torch::storage::_StorageBase']]],
+  ['loop',['loop',['../classcaffe2_1_1python_1_1net__builder_1_1_operations.html#aa0e58a8b997a612bf3cb2b44c03a5175',1,'caffe2::python::net_builder::Operations']]]
 ];

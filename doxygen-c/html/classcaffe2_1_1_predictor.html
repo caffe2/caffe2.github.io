@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -98,63 +98,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">caffe2::Predictor Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for caffe2::Predictor:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classcaffe2_1_1_predictor.png" usemap="#caffe2::Predictor_map" alt=""/>
-  <map id="caffe2::Predictor_map" name="caffe2::Predictor_map">
-<area href="classcaffe2_1_1_g_l_predictor.html" alt="caffe2::GLPredictor" shape="rect" coords="0,56,122,80"/>
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a147fc193bddcb3bd61a7073346c3fd42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a147fc193bddcb3bd61a7073346c3fd42"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>TensorVector</b> = std::vector&lt; <a class="el" href="classcaffe2_1_1_tensor.html">TensorCPU</a> * &gt;</td></tr>
-<tr class="separator:a147fc193bddcb3bd61a7073346c3fd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a944741e89fe69197a84f895580f34873"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a944741e89fe69197a84f895580f34873"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>TensorMap</b> = std::unordered_map&lt; std::string, <a class="el" href="classcaffe2_1_1_tensor.html">TensorCPU</a> * &gt;</td></tr>
-<tr class="separator:a944741e89fe69197a84f895580f34873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2411e91d0230d8827d4fffb558b8d1e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2411e91d0230d8827d4fffb558b8d1e2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>TensorList</b> = std::vector&lt; <a class="el" href="classnom_1_1repr_1_1_tensor.html">TensorCPU</a> &gt;</td></tr>
+<tr class="separator:a2411e91d0230d8827d4fffb558b8d1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a9cff1b2246f9ff1478ac7925f4f6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38a9cff1b2246f9ff1478ac7925f4f6d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>TensorMap</b> = std::unordered_map&lt; std::string, <a class="el" href="classnom_1_1repr_1_1_tensor.html">TensorCPU</a> &gt;</td></tr>
+<tr class="separator:a38a9cff1b2246f9ff1478ac7925f4f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c8ac08ef03ac3fa67717857a48bebf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c8ac08ef03ac3fa67717857a48bebf4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Predictor</b> (const MetaNetDef &amp;net, <a class="el" href="classcaffe2_1_1_workspace.html">Workspace</a> *parent=nullptr)</td></tr>
-<tr class="separator:a7c8ac08ef03ac3fa67717857a48bebf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33247e5f8b95b770172195c39ff154ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33247e5f8b95b770172195c39ff154ee"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Predictor</b> (const NetDef &amp;init_net, const NetDef &amp;run_net, <a class="el" href="classcaffe2_1_1_workspace.html">Workspace</a> *parent=nullptr)</td></tr>
-<tr class="separator:a33247e5f8b95b770172195c39ff154ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a272373d17f5198d20e7754e5369cbca9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a272373d17f5198d20e7754e5369cbca9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const TensorVector &amp;inputs, TensorVector *outputs)</td></tr>
-<tr class="separator:a272373d17f5198d20e7754e5369cbca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e734c9fd7612adcde19142afcfae587"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e734c9fd7612adcde19142afcfae587"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>run_map</b> (const TensorMap &amp;inputs, TensorVector *outputs)</td></tr>
-<tr class="separator:a1e734c9fd7612adcde19142afcfae587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ec812384a6a0bd09122ff6b8212000"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55ec812384a6a0bd09122ff6b8212000"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Predictor</b> (const NetDef &amp;init_net, const NetDef &amp;run_net, <a class="el" href="classcaffe2_1_1_workspace.html">Workspace</a> *parent=nullptr, bool run_init=true, int optimization=1)</td></tr>
+<tr class="separator:a55ec812384a6a0bd09122ff6b8212000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf81a4b56d3682fdcbd99072d298501"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bf81a4b56d3682fdcbd99072d298501"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Predictor</b> (<a class="el" href="structcaffe2_1_1_predictor_config.html">PredictorConfig</a> config)</td></tr>
+<tr class="separator:a2bf81a4b56d3682fdcbd99072d298501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259c17408e9ed92e28b7130441a4db2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a259c17408e9ed92e28b7130441a4db2c"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const TensorList &amp;inputs, TensorList *outputs)</td></tr>
+<tr class="separator:a259c17408e9ed92e28b7130441a4db2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99febe4bb9c2d5a7b36f50742c14c5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac99febe4bb9c2d5a7b36f50742c14c5f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const TensorMap &amp;inputs, TensorList *outputs)</td></tr>
+<tr class="separator:ac99febe4bb9c2d5a7b36f50742c14c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e8c0b1a9d5595cbe9432b152c52f63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06e8c0b1a9d5595cbe9432b152c52f63"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const TensorMap &amp;inputs, TensorMap *outputs)</td></tr>
+<tr class="separator:a06e8c0b1a9d5595cbe9432b152c52f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac78dac675ccdd2252871f98b51daa264"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac78dac675ccdd2252871f98b51daa264"></a>
 const NetDef &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>def</b> () const </td></tr>
 <tr class="separator:ac78dac675ccdd2252871f98b51daa264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e86a5b10ba132a3ea1170b978569ab7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e86a5b10ba132a3ea1170b978569ab7"></a>
 <a class="el" href="classcaffe2_1_1_workspace.html">Workspace</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ws</b> ()</td></tr>
 <tr class="separator:a2e86a5b10ba132a3ea1170b978569ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecc22b54e210ebd244a4533c40bd262"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ecc22b54e210ebd244a4533c40bd262"></a>
+const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>input_names</b> () const </td></tr>
+<tr class="separator:a9ecc22b54e210ebd244a4533c40bd262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474c7e8eed166849f1b3bec605166c7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a474c7e8eed166849f1b3bec605166c7b"></a>
+const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>output_names</b> () const </td></tr>
+<tr class="separator:a474c7e8eed166849f1b3bec605166c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aae34abf17598c18823f4084c1860d3f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae34abf17598c18823f4084c1860d3f4"></a>
+<a class="el" href="structcaffe2_1_1_predictor_config.html">PredictorConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>config_</b></td></tr>
+<tr class="separator:aae34abf17598c18823f4084c1860d3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="predictor_8h_source.html#l00011">11</a> of file <a class="el" href="predictor_8h_source.html">predictor.h</a>.</p>
+<p>Definition at line <a class="el" href="predictor_8h_source.html#l00010">10</a> of file <a class="el" href="predictor_8h_source.html">predictor.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>caffe2/core/<a class="el" href="predictor_8h_source.html">predictor.h</a></li>
-<li>caffe2/core/<a class="el" href="predictor_8cc_source.html">predictor.cc</a></li>
+<li>caffe2/predictor/<a class="el" href="predictor_8h_source.html">predictor.h</a></li>
+<li>caffe2/predictor/<a class="el" href="predictor_8cc_source.html">predictor.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:56 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -177,7 +184,7 @@ Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

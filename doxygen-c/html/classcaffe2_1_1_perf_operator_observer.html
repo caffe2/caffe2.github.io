@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -120,6 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a95c3d6fe6a8b3b18ed404d7e5b75c619"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95c3d6fe6a8b3b18ed404d7e5b75c619"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>getMilliseconds</b> () const </td></tr>
 <tr class="separator:a95c3d6fe6a8b3b18ed404d7e5b75c619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0c0fc722d23d262f97bcc5eef6a83d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac0c0fc722d23d262f97bcc5eef6a83d"></a>
+std::vector&lt; TensorShape &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getTensorShapes</b> () const </td></tr>
+<tr class="separator:aac0c0fc722d23d262f97bcc5eef6a83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaffe2_1_1_observer_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1_observer_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1_observer_base.html">caffe2::ObserverBase&lt; OperatorBase &gt;</a></td></tr>
 <tr class="memitem:a1ad2776a5dd42ee2bd4c986550fde126 inherit pub_methods_classcaffe2_1_1_observer_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ad2776a5dd42ee2bd4c986550fde126"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ObserverBase</b> (<a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> *subject)</td></tr>
@@ -130,6 +133,9 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>debugI
 <tr class="memitem:a476e4a448ea1820aba2a12e0ff7b4638 inherit pub_methods_classcaffe2_1_1_observer_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a476e4a448ea1820aba2a12e0ff7b4638"></a>
 <a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>subject</b> () const</td></tr>
 <tr class="separator:a476e4a448ea1820aba2a12e0ff7b4638 inherit pub_methods_classcaffe2_1_1_observer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e79720c2b73765019f446e183bba5be inherit pub_methods_classcaffe2_1_1_observer_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e79720c2b73765019f446e183bba5be"></a>
+virtual std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1_observer_base.html">ObserverBase</a>&lt; <a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>rnnCopy</b> (<a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> *subject, int rnn_order) const</td></tr>
+<tr class="separator:a7e79720c2b73765019f446e183bba5be inherit pub_methods_classcaffe2_1_1_observer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -140,7 +146,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="perf__observer_8h_source.html#l00040">40</a> of file <a class="el" href="perf__observer_8h_source.html">perf_observer.h</a>.</p>
+<p>Definition at line <a class="el" href="perf__observer_8h_source.html#l00043">43</a> of file <a class="el" href="perf__observer_8h_source.html">perf_observer.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>modules/observers/<a class="el" href="perf__observer_8h_source.html">perf_observer.h</a></li>
 <li>modules/observers/<a class="el" href="perf__observer_8cc_source.html">perf_observer.cc</a></li>
@@ -149,7 +155,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:56 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -172,7 +178,7 @@ Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

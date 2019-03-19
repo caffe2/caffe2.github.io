@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -108,35 +108,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a991e7b02d0b9ce680b4dc479421d5c8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a991e7b02d0b9ce680b4dc479421d5c8f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TensorPrinter</b> (const std::string &amp;tensor_name=&quot;&quot;, const std::string &amp;file_name=&quot;&quot;, int limit=k_limit_default_)</td></tr>
 <tr class="separator:a991e7b02d0b9ce680b4dc479421d5c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a62c4ae2d88bdaf4bfca3c3416c6f67"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3a62c4ae2d88bdaf4bfca3c3416c6f67"></a>
+<tr class="memitem:a0ccbd3220cda5227619bdfb6aa925ae0"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0ccbd3220cda5227619bdfb6aa925ae0"></a>
 template&lt;class T &gt; </td></tr>
-<tr class="memitem:a3a62c4ae2d88bdaf4bfca3c3416c6f67"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Print</b> (const <a class="el" href="classcaffe2_1_1_tensor.html">Tensor</a>&lt; <a class="el" href="classcaffe2_1_1_c_p_u_context.html">CPUContext</a> &gt; &amp;tensor)</td></tr>
-<tr class="separator:a3a62c4ae2d88bdaf4bfca3c3416c6f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54363e735976cd17b9b5dd9d62d84529"><td class="memTemplParams" colspan="2"><a class="anchor" id="a54363e735976cd17b9b5dd9d62d84529"></a>
-template&lt;class Context &gt; </td></tr>
-<tr class="memitem:a54363e735976cd17b9b5dd9d62d84529"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>PrintMeta</b> (const <a class="el" href="classcaffe2_1_1_tensor.html">Tensor</a>&lt; Context &gt; &amp;tensor)</td></tr>
-<tr class="separator:a54363e735976cd17b9b5dd9d62d84529"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69215f9125e20fbe69902c9a1786cbea"><td class="memTemplParams" colspan="2"><a class="anchor" id="a69215f9125e20fbe69902c9a1786cbea"></a>
-template&lt;class Context &gt; </td></tr>
-<tr class="memitem:a69215f9125e20fbe69902c9a1786cbea"><td class="memTemplItemLeft" align="right" valign="top">string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>MetaStr</b> (const <a class="el" href="classcaffe2_1_1_tensor.html">Tensor</a>&lt; Context &gt; &amp;tensor)</td></tr>
-<tr class="separator:a69215f9125e20fbe69902c9a1786cbea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af26da8feffb45bad416befe883f93541"><td class="memTemplParams" colspan="2"><a class="anchor" id="af26da8feffb45bad416befe883f93541"></a>
-template&lt;class Context &gt; </td></tr>
-<tr class="memitem:af26da8feffb45bad416befe883f93541"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>MetaStr</b> (const <a class="el" href="classcaffe2_1_1_tensor.html">Tensor</a>&lt; Context &gt; &amp;tensor)</td></tr>
-<tr class="separator:af26da8feffb45bad416befe883f93541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ccbd3220cda5227619bdfb6aa925ae0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Print</b> (const <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> &amp;tensor)</td></tr>
+<tr class="separator:a0ccbd3220cda5227619bdfb6aa925ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5265e2b5139b58d4872d5e49851f64e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5265e2b5139b58d4872d5e49851f64e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintMeta</b> (const <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> &amp;tensor)</td></tr>
+<tr class="separator:a5265e2b5139b58d4872d5e49851f64e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac56c26f360cb72ebe9a05d7687f43da8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac56c26f360cb72ebe9a05d7687f43da8"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>MetaStr</b> (const <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> &amp;tensor)</td></tr>
+<tr class="separator:ac56c26f360cb72ebe9a05d7687f43da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="tensor_8h_source.html#l00798">798</a> of file <a class="el" href="tensor_8h_source.html">tensor.h</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2core_2tensor_8h_source.html#l00672">672</a> of file <a class="el" href="caffe2_2core_2tensor_8h_source.html">tensor.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>caffe2/core/<a class="el" href="tensor_8h_source.html">tensor.h</a></li>
+<li>caffe2/core/<a class="el" href="caffe2_2core_2tensor_8h_source.html">tensor.h</a></li>
 <li>caffe2/core/<a class="el" href="tensor_8cc_source.html">tensor.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -159,7 +153,7 @@ Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

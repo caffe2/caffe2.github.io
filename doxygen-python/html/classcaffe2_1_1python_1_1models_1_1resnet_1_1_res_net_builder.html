@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -106,21 +106,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a98fec7503d179c2fc3f283fcd931ecd9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98fec7503d179c2fc3f283fcd931ecd9"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, model, prev_blob, no_bias, is_test, spatial_bn_mom=0.9)</td></tr>
-<tr class="separator:a98fec7503d179c2fc3f283fcd931ecd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb6e4c0d1b9df280c754703ee1a854f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb6e4c0d1b9df280c754703ee1a854f5"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>add_conv</b> (self, in_filters, out_filters, kernel, stride=1, pad=0)</td></tr>
-<tr class="separator:aeb6e4c0d1b9df280c754703ee1a854f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cea138ac829363414b4383bdd9f0d68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cea138ac829363414b4383bdd9f0d68"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, model, prev_blob, no_bias, is_test, bn_epsilon=1e-5, bn_momentum=0.9)</td></tr>
+<tr class="separator:a7cea138ac829363414b4383bdd9f0d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496b1d0142a9ec6442715a05392943c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a496b1d0142a9ec6442715a05392943c7"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>add_conv</b> (self, in_filters, out_filters, kernel, stride=1, group=1, pad=0)</td></tr>
+<tr class="separator:a496b1d0142a9ec6442715a05392943c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d52ebe6bd2223d3929d9c6953b26d78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d52ebe6bd2223d3929d9c6953b26d78"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>add_relu</b> (self)</td></tr>
 <tr class="separator:a9d52ebe6bd2223d3929d9c6953b26d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c98a9ff42701db4ec45bba966fdae3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c98a9ff42701db4ec45bba966fdae3c"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>add_spatial_bn</b> (self, num_filters)</td></tr>
 <tr class="separator:a1c98a9ff42701db4ec45bba966fdae3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abee44478d16c45f9acd8ac55575eace8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abee44478d16c45f9acd8ac55575eace8"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>add_bottleneck</b> (self, input_filters, base_filters, output_filters, down_sampling=False, spatial_batch_norm=True)</td></tr>
-<tr class="separator:abee44478d16c45f9acd8ac55575eace8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a473fd02358cad8bc028714aa6fe84d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a473fd02358cad8bc028714aa6fe84d"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>add_bottleneck</b> (self, input_filters, base_filters, output_filters, stride=1, group=1, spatial_batch_norm=True)</td></tr>
+<tr class="separator:a3a473fd02358cad8bc028714aa6fe84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a663ee3b0a35ea4c78056d00b07036c99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a663ee3b0a35ea4c78056d00b07036c99"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>add_simple_block</b> (self, input_filters, num_filters, down_sampling=False, spatial_batch_norm=True)</td></tr>
 <tr class="separator:a663ee3b0a35ea4c78056d00b07036c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,9 +142,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9fa7b415f7e4ad0c573a65b9df740c58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fa7b415f7e4ad0c573a65b9df740c58"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>is_test</b></td></tr>
 <tr class="separator:a9fa7b415f7e4ad0c573a65b9df740c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dd48e33149ae843d6b44cd4369eeff9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5dd48e33149ae843d6b44cd4369eeff9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>spatial_bn_mom</b></td></tr>
-<tr class="separator:a5dd48e33149ae843d6b44cd4369eeff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af827e19d903bc52b847069d2c5eba882"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af827e19d903bc52b847069d2c5eba882"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>bn_epsilon</b></td></tr>
+<tr class="separator:af827e19d903bc52b847069d2c5eba882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410f619fa5b64b9e4b5a8cd03f0a49f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a410f619fa5b64b9e4b5a8cd03f0a49f6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>bn_momentum</b></td></tr>
+<tr class="separator:a410f619fa5b64b9e4b5a8cd03f0a49f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25fb7bc17093fcec77dbde6b5dc43810"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25fb7bc17093fcec77dbde6b5dc43810"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>no_bias</b></td></tr>
 <tr class="separator:a25fb7bc17093fcec77dbde6b5dc43810"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,7 +155,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Helper class for constructing residual blocks.
 </pre> 
-<p>Definition at line <a class="el" href="resnet_8py_source.html#l00015">15</a> of file <a class="el" href="resnet_8py_source.html">resnet.py</a>.</p>
+<p>Definition at line <a class="el" href="resnet_8py_source.html#l00018">18</a> of file <a class="el" href="resnet_8py_source.html">resnet.py</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/python/models/<a class="el" href="resnet_8py_source.html">resnet.py</a></li>
 </ul>
@@ -160,7 +163,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -183,7 +186,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

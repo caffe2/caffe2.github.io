@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resultcode',['ResultCode',['../group___neural_networks.html#gad8097859ab1bdd06be52a8421df152d4',1,'NeuralNetworks.h']]]
+  ['mode',['Mode',['../classtorch_1_1data_1_1datasets_1_1_m_n_i_s_t.html#a0d415009ead1823ed05a5f0fdaa75d5f',1,'torch::data::datasets::MNIST']]]
 ];

@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -97,7 +97,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
 <div class="title">nom::repr::ControlFlowGraph&lt; G &gt; Class Template Reference</div>  </div>
 </div><!--header-->
@@ -116,6 +118,12 @@ Inheritance diagram for nom::repr::ControlFlowGraph&lt; G &gt;:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a44acbb02802b789d35453453e103e8cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44acbb02802b789d35453453e103e8cd"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>BasicBlockRef</b> = typename <a class="el" href="structnom_1_1repr_1_1_control_flow_graph_impl.html">ControlFlowGraphImpl</a>&lt; G &gt;::type::NodeRef</td></tr>
+<tr class="separator:a44acbb02802b789d35453453e103e8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8590201d298947fe6918ca697b4befb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8590201d298947fe6918ca697b4befb4"></a>
@@ -127,15 +135,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a45cfe5cf050c68570ace36d72e2765c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45cfe5cf050c68570ace36d72e2765c6"></a>
 <a class="el" href="classnom_1_1repr_1_1_control_flow_graph.html">ControlFlowGraph</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classnom_1_1repr_1_1_control_flow_graph.html">ControlFlowGraph</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a45cfe5cf050c68570ace36d72e2765c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be94bcd20e47423bccd6d35ee8e5135"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9be94bcd20e47423bccd6d35ee8e5135"></a>
+BasicBlockRef&#160;</td><td class="memItemRight" valign="bottom"><b>createNamedFunction</b> (std::string name)</td></tr>
+<tr class="separator:a9be94bcd20e47423bccd6d35ee8e5135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225bba2b11d5fd147af659f1ff98f921"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a225bba2b11d5fd147af659f1ff98f921"></a>
+BasicBlockRef&#160;</td><td class="memItemRight" valign="bottom"><b>createAnonymousFunction</b> ()</td></tr>
+<tr class="separator:a225bba2b11d5fd147af659f1ff98f921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a7e0c949e5db00903eb2f701215c8a2f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e0c949e5db00903eb2f701215c8a2f1"></a>
+std::unordered_map&lt; std::string, typename <a class="el" href="structnom_1_1repr_1_1_control_flow_graph_impl.html">ControlFlowGraphImpl</a>&lt; G &gt;::type::SubgraphType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>functions</b></td></tr>
+<tr class="separator:a7e0c949e5db00903eb2f701215c8a2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename G&gt;<br />
 class nom::repr::ControlFlowGraph&lt; G &gt;</h3>
 
 <p>Control flow graph is a graph of basic blocks that can be used as an analysis tool. </p>
-<dl class="section note"><dt>Note</dt><dd>G Must be of type Graph&lt;T, U&gt;. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>G Must be of type Graph&lt;T, U...&gt;. </dd></dl>
 
-<p>Definition at line <a class="el" href="_control_flow_8h_source.html#l00090">90</a> of file <a class="el" href="_control_flow_8h_source.html">ControlFlow.h</a>.</p>
+<p>Definition at line <a class="el" href="_control_flow_8h_source.html#l00128">128</a> of file <a class="el" href="_control_flow_8h_source.html">ControlFlow.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/core/nomnigraph/include/nomnigraph/Representations/<a class="el" href="_control_flow_8h_source.html">ControlFlow.h</a></li>
 </ul>
@@ -143,7 +163,7 @@ class nom::repr::ControlFlowGraph&lt; G &gt;</h3>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -166,7 +186,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

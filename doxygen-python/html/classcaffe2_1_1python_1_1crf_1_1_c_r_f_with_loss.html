@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classcaffe2_1_1python_1_1crf_1_1_c_r_f_with_loss-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -126,6 +127,15 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>crf_loss</b> (self, pr
 def&#160;</td><td class="memItemRight" valign="bottom"><b>update_predictions</b> (self, classes)</td></tr>
 <tr class="separator:a234f09b14961630192e0c35b79eaf534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae12dd1da7cf39a14f64dc54a1e9b08e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae12dd1da7cf39a14f64dc54a1e9b08e7"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>pad_labels</b> (labels, init_net, net, num_classes)</td></tr>
+<tr class="separator:ae12dd1da7cf39a14f64dc54a1e9b08e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b0cb20cccab1b2eddcceed47b1d6c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53b0cb20cccab1b2eddcceed47b1d6c2"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>pad_predictions</b> (predictions, init_net, net, num_classes)</td></tr>
+<tr class="separator:a53b0cb20cccab1b2eddcceed47b1d6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a649ca396f0d94496986bca54c919fb56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a649ca396f0d94496986bca54c919fb56"></a>
@@ -143,7 +153,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="crf_8py_source.html#l00017">17</a> of file <a class="el" href="crf_8py_source.html">crf.py</a>.</p>
+<p>Definition at line <a class="el" href="crf_8py_source.html#l00016">16</a> of file <a class="el" href="crf_8py_source.html">crf.py</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a84137195405bb99af211be4c53dda8eb"></a>
 <div class="memitem">
@@ -180,18 +190,17 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Adds the crf_net recurrent operator to the model.
+<pre class="fragment">    Adds the crf_net recurrent operator to the model.
 
-model: model_helper.ModelHelper object new operators would be added
-to
+    model: model_helper.ModelHelper object new operators would be added
+    to
 
-input_blob: the input sequence in a format T x N x D
-where T is sequence size, N - batch size and D - input dimention
-##Only supports batch-size 1##
+    input_blob: the input sequence in a format T x N x D
+    where T is sequence size, N - batch size and D - input dimention
+    ##Only supports batch-size 1##
 
-seq_lengths: blob containing sequence lengths (unused)
-</pre> 
-<p>Definition at line <a class="el" href="crf_8py_source.html#l00230">230</a> of file <a class="el" href="crf_8py_source.html">crf.py</a>.</p>
+    seq_lengths: blob containing sequence lengths (unused)</pre> 
+<p>Definition at line <a class="el" href="crf_8py_source.html#l00136">136</a> of file <a class="el" href="crf_8py_source.html">crf.py</a>.</p>
 
 </div>
 </div>
@@ -202,7 +211,7 @@ seq_lengths: blob containing sequence lengths (unused)
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -225,7 +234,7 @@ Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

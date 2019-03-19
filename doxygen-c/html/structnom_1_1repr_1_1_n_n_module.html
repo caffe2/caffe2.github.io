@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -112,6 +112,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa59a2383338a1b8cc4199162d144b98f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa59a2383338a1b8cc4199162d144b98f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>NNModule</b> (<a class="el" href="structnom_1_1repr_1_1_n_n_module.html">NNModule</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:aa59a2383338a1b8cc4199162d144b98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0834962beb1c42147925e5c5d724af1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0834962beb1c42147925e5c5d724af1c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceSubgraph</b> (const <a class="el" href="classnom_1_1_subgraph.html">NNGraph::SubgraphType</a> &amp;subgraph, const <a class="el" href="classnom_1_1_node.html">NNGraph::NodeRef</a> &amp;node, const std::vector&lt; <a class="el" href="classnom_1_1_node.html">NNGraph::NodeRef</a> &gt; &amp;node_inputs, const std::vector&lt; <a class="el" href="classnom_1_1_node.html">NNGraph::NodeRef</a> &gt; &amp;node_outputs)</td></tr>
+<tr class="separator:a0834962beb1c42147925e5c5d724af1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8ac96f73f8e6ed51757c17ff7f110b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f8ac96f73f8e6ed51757c17ff7f110b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteSubgraph</b> (const <a class="el" href="classnom_1_1_subgraph.html">NNGraph::SubgraphType</a> &amp;subgraph)</td></tr>
+<tr class="separator:a0f8ac96f73f8e6ed51757c17ff7f110b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e595aa4a0e14e0b91114dd9da3e6be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03e595aa4a0e14e0b91114dd9da3e6be"></a>
+<a class="el" href="classnom_1_1_node.html">NNGraph::NodeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createUniqueDataNode</b> (const std::string &amp;s=&quot;_unique&quot;)</td></tr>
+<tr class="separator:a03e595aa4a0e14e0b91114dd9da3e6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d4521477885ea779cb77eae59346ade"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9d4521477885ea779cb77eae59346ade"></a>
+template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a9d4521477885ea779cb77eae59346ade"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnom_1_1_node.html">NNGraph::NodeRef</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>replaceSubgraphWithOperator</b> (const <a class="el" href="classnom_1_1_subgraph.html">NNGraph::SubgraphType</a> &amp;, const std::vector&lt; <a class="el" href="classnom_1_1_node.html">NNGraph::NodeRef</a> &gt; &amp;, const std::vector&lt; <a class="el" href="classnom_1_1_node.html">NNGraph::NodeRef</a> &gt; &amp;, Args...)</td></tr>
+<tr class="separator:a9d4521477885ea779cb77eae59346ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -121,18 +134,25 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a6003a0d3d8977c17ffe9b711b6c41287"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6003a0d3d8977c17ffe9b711b6c41287"></a>
 <a class="el" href="classnom_1_1repr_1_1_control_flow_graph.html">NNCFGraph</a>&#160;</td><td class="memItemRight" valign="bottom"><b>controlFlow</b></td></tr>
 <tr class="separator:a6003a0d3d8977c17ffe9b711b6c41287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c815d4982f2ddb4c9aef86c67622cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2c815d4982f2ddb4c9aef86c67622cb"></a>
+std::unordered_set&lt; <a class="el" href="classnom_1_1_node.html">NNGraph::NodeRef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:aa2c815d4982f2ddb4c9aef86c67622cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c9875cbfb7332dc82c26c2dc9750df8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c9875cbfb7332dc82c26c2dc9750df8"></a>
+std::unordered_set&lt; <a class="el" href="classnom_1_1_node.html">NNGraph::NodeRef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a3c9875cbfb7332dc82c26c2dc9750df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_neural_net_8h_source.html#l00308">308</a> of file <a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<p>Definition at line <a class="el" href="_neural_net_8h_source.html#l00247">247</a> of file <a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following files:<ul>
 <li>caffe2/core/nomnigraph/include/nomnigraph/Representations/<a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a></li>
+<li>caffe2/core/nomnigraph/Representations/<a class="el" href="_neural_net_8cc_source.html">NeuralNet.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:58 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -155,7 +175,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

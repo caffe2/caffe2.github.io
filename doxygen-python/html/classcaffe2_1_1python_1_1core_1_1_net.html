@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -117,9 +117,9 @@ Inheritance diagram for caffe2.python.core.Net:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3bed5f13031e10686bb5b5647826fde"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1core_1_1_net.html#ad3bed5f13031e10686bb5b5647826fde">__init__</a> (self, name_or_proto)</td></tr>
 <tr class="separator:ad3bed5f13031e10686bb5b5647826fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a62c062f691e3f35e3d45de9cc88a08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a62c062f691e3f35e3d45de9cc88a08"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>AppendNet</b> (self, net)</td></tr>
-<tr class="separator:a0a62c062f691e3f35e3d45de9cc88a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a763284a7cfb6fb10fbd39941a47a9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a763284a7cfb6fb10fbd39941a47a9d"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>AppendNet</b> (self, net, device_option=None)</td></tr>
+<tr class="separator:a2a763284a7cfb6fb10fbd39941a47a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a421e92bfc277b97b54170edd13d8defd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a421e92bfc277b97b54170edd13d8defd"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>LogInfo</b> (self, msg_or_blobs)</td></tr>
 <tr class="separator:a421e92bfc277b97b54170edd13d8defd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,13 +146,19 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>Const</b> (self, array
 <tr class="separator:aedb4bb62137546864994f586ba628751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11ea0fd9f1f7a4fb4512a1b894bd3578"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1core_1_1_net.html#a11ea0fd9f1f7a4fb4512a1b894bd3578">GetBlobRef</a> (self, blob_name)</td></tr>
 <tr class="separator:a11ea0fd9f1f7a4fb4512a1b894bd3578"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d6b6437c91d45d2f2f5965d99bba5cc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1core_1_1_net.html#a9d6b6437c91d45d2f2f5965d99bba5cc">Clone</a> (self, name, blob_remap=None, op_id_mask=None, remap_funcs=None, keep_schema=True)</td></tr>
-<tr class="separator:a9d6b6437c91d45d2f2f5965d99bba5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a872e34c90078b1e610091b8a100e3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1core_1_1_net.html#ac4a872e34c90078b1e610091b8a100e3">Clone</a> (self, name, blob_remap=None, op_id_mask=None, remap_funcs=None, keep_schema=True, update_external_list=False)</td></tr>
+<tr class="separator:ac4a872e34c90078b1e610091b8a100e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a401a30f4dcfb9ea658d81f62839eb1fd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1core_1_1_net.html#a401a30f4dcfb9ea658d81f62839eb1fd">ClonePartial</a> (self, name, inputs, outputs, remap_funcs=None)</td></tr>
 <tr class="separator:a401a30f4dcfb9ea658d81f62839eb1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1acf07e6ab1db3374f533dbc9248f692"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1acf07e6ab1db3374f533dbc9248f692"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>Proto</b> (self)</td></tr>
 <tr class="separator:a1acf07e6ab1db3374f533dbc9248f692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e08394f8c5ec7a3911f2458b0c2315"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40e08394f8c5ec7a3911f2458b0c2315"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>insert_op_at_idx</b> (self, op, op_idx)</td></tr>
+<tr class="separator:a40e08394f8c5ec7a3911f2458b0c2315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df63f9f9e54b0105147eea4ee42cb0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1df63f9f9e54b0105147eea4ee42cb0a"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>reroute_tensor</b> (self, tensor, new_producer, can_modify=None)</td></tr>
+<tr class="separator:a1df63f9f9e54b0105147eea4ee42cb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa821d97015d56df51a19fdf61c4be900"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa821d97015d56df51a19fdf61c4be900"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>PopulateProtoWithFileName</b> (self)</td></tr>
 <tr class="separator:aa821d97015d56df51a19fdf61c4be900"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +170,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>PopulateProtoWithFileN
 <tr class="separator:a305bd1b0120f20c54f4e508b526cac49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05a5b931daedb23c17d608b8108cb0c9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1core_1_1_net.html#a05a5b931daedb23c17d608b8108cb0c9">AddGradientOperators</a> (self, ys, skip=0)</td></tr>
 <tr class="separator:a05a5b931daedb23c17d608b8108cb0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797b00154dc8c55907747d23e93299a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a797b00154dc8c55907747d23e93299a8"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>AddArgument</b> (self, arg_name, arg_value)</td></tr>
+<tr class="separator:a797b00154dc8c55907747d23e93299a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6fdded8fac9455a591359c6f3df33e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6fdded8fac9455a591359c6f3df33e2"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>AddExternalInput</b> (self, inputs)</td></tr>
 <tr class="separator:ad6fdded8fac9455a591359c6f3df33e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,6 +232,8 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>DeduplicateGradientSli
 <tr class="separator:af67e059d8f4cc22e7e64ccdd07918681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a902ab2edcde567cc8454918cb81a9bba"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1core_1_1_net.html#a902ab2edcde567cc8454918cb81a9bba">RunAllOnMKL</a> (self)</td></tr>
 <tr class="separator:a902ab2edcde567cc8454918cb81a9bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757b86d6f37ce477dc914278cbc5c355"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1core_1_1_net.html#a757b86d6f37ce477dc914278cbc5c355">RunAllOnIDEEP</a> (self)</td></tr>
+<tr class="separator:a757b86d6f37ce477dc914278cbc5c355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61717da0b23459ba0c75070129417bc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61717da0b23459ba0c75070129417bc5"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>__getattr__</b> (self, op_type)</td></tr>
 <tr class="separator:a61717da0b23459ba0c75070129417bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,7 +263,7 @@ dictionary&#160;</td><td class="memItemRight" valign="bottom"><b>operator_regist
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="core_8py_source.html#l01352">1352</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01395">1395</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad3bed5f13031e10686bb5b5647826fde"></a>
 <div class="memitem">
@@ -282,7 +293,7 @@ Args:
     name_or_proto:  If a NetDef is provided, clone it. Otherwise,
             create an empty net with the given name.
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01374">1374</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01417">1417</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -319,7 +330,7 @@ Args:
 <pre class="fragment">Add `obj` to the list of attributes in this net under the given `name`.
 Attributes are user-defined objects and have no pre-defined semantics.
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01461">1461</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01509">1509</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -373,7 +384,7 @@ Currently, this is hard-coded for float operators if there are branches
 (i.e. a blob is used as input to multiple operators). This is because
 the gradient accumulation (Sum) is float only right now.
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01816">1816</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01948">1948</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -403,11 +414,11 @@ the gradient accumulation (Sum) is float only right now.
 <pre class="fragment">Returns true if the given BlobReference is produced as output of
 an operator in this net, or if it is provided as an external input.
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01530">1530</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01578">1578</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9d6b6437c91d45d2f2f5965d99bba5cc"></a>
+<a class="anchor" id="ac4a872e34c90078b1e610091b8a100e3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -445,7 +456,13 @@ an operator in this net, or if it is provided as an external input.
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>keep_schema</em> = <code>True</code>&#160;</td>
+          <td class="paramname"><em>keep_schema</em> = <code>True</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>update_external_list</em> = <code>False</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -461,7 +478,7 @@ Args:
     op_id_mask:  optional list of operator indices to include in
          the cloned net. If not provided, all ops are included.
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01584">1584</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01633">1633</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -526,7 +543,7 @@ new_net:       a new Net object.
 new_outputs:   list of BlobReferences corresponding to the
                outputs produced by new_net.
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01659">1659</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01726">1726</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -556,7 +573,7 @@ new_outputs:   list of BlobReferences corresponding to the
 <pre class="fragment">Returns the list of attributes in this net for a given `name`.
 Attributes are user-defined objects added with `add_attribute'.
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01468">1468</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01516">1516</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -587,7 +604,7 @@ Attributes are user-defined objects added with `add_attribute'.
 to it. If the blob is not produced by any op in this net,
 raises KeyError.
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01566">1566</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01614">1614</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -618,7 +635,7 @@ raises KeyError.
 current net. It returns `BlobReference(prefix)`, if it's valid,
 otherwise `BlobReference(prefix) + '_auto_' + ?`. Different calls
 is guaranteed to return blob with different names.</pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01744">1744</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01876">1876</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -653,7 +670,7 @@ is guaranteed to return blob with different names.</pre>
 </div><div class="memdoc">
 <pre class="fragment">Returns the next name to be used, if you do not want to explicitly
 name your blob. [Deprecated, use NextBlob, NextScopedBlob instead]</pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01760">1760</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01892">1892</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -685,7 +702,7 @@ current net. It returns `ScopedBlobReference(prefix)`, if it's valid,
 otherwise `ScopedBlobReference(prefix) + '_auto_' + ?`. Different calls
 is guaranteed to return blob with different names.
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01735">1735</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01867">1867</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -777,7 +794,7 @@ specified by providing `grad_output_indices` and/or `grad_input_indices`
 which identify the indices of `f`'s inputs and outputs which have
 gradients.
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l02062">2062</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l02219">2219</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -807,7 +824,7 @@ gradients.
 <pre class="fragment">Tries to recover input record by taking a subset of external_inputs with
 a given prefix name and interpreting them as schema column names
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01919">1919</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l02055">2055</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -837,7 +854,7 @@ a given prefix name and interpreting them as schema column names
 <pre class="fragment">Tries to recover out record by taking a subset of external_outputs with
 a given prefix name and interpreting them as schema column names
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01939">1939</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l02076">2076</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -871,7 +888,25 @@ a given prefix name and interpreting them as schema column names
       </table>
 </div><div class="memdoc">
 <pre class="fragment">A convenient function to run everything on the GPU.</pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01984">1984</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l02138">2138</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a757b86d6f37ce477dc914278cbc5c355"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def caffe2.python.core.Net.RunAllOnIDEEP </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">A convenient function to run everything using IDEEP.</pre> 
+<p>Definition at line <a class="el" href="core_8py_source.html#l02150">2150</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -889,7 +924,7 @@ a given prefix name and interpreting them as schema column names
       </table>
 </div><div class="memdoc">
 <pre class="fragment">A convenient function to run everything using MKLDNN.</pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01993">1993</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l02144">2144</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -933,7 +968,7 @@ If sequence_seed is set, the i-th op has rand_seed=`seed + i`
 If seed_on_op_def is set, the op rand_seed=hash(str(op))
 sequence_seed and seed_on_op_def cannot be both set to True.
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01475">1475</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01523">1523</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -952,7 +987,7 @@ sequence_seed and seed_on_op_def cannot be both set to True.
 </div><div class="memdoc">
 <pre class="fragment">Returns a set of blob names used in the net
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01552">1552</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01600">1600</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -982,7 +1017,7 @@ sequence_seed and seed_on_op_def cannot be both set to True.
 <pre class="fragment">Returns true iff the given BlobReference is used by any operator
 or this net, or if it is one of the external inputs of the net.
 </pre> 
-<p>Definition at line <a class="el" href="core_8py_source.html#l01540">1540</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
+<p>Definition at line <a class="el" href="core_8py_source.html#l01588">1588</a> of file <a class="el" href="core_8py_source.html">core.py</a>.</p>
 
 </div>
 </div>
@@ -993,7 +1028,7 @@ or this net, or if it is one of the external inputs of the net.
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -1016,7 +1051,7 @@ Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

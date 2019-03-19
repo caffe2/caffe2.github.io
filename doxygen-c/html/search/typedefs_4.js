@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unaryelementwiseop',['UnaryElementwiseOp',['../namespacecaffe2.html#a3c84075c5d69ce9499450fbbb3f72965',1,'caffe2']]]
+  ['kernelcachecreatorfunction',['KernelCacheCreatorFunction',['../namespacec10.html#ab0b0cc3d46867de8f1fc3eb5b2b1f05b',1,'c10']]],
+  ['kernelfunction',['KernelFunction',['../namespacec10.html#a86cf2f99dcc955e3b841db692c5b7102',1,'c10']]]
 ];

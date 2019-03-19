@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
@@ -115,6 +116,32 @@ Inheritance diagram for nom::repr::Tensor:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a08c9973b2b76f20950958429be63d416"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08c9973b2b76f20950958429be63d416"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DataType</b> { <b>Generic</b>, 
+<b>Float</b>, 
+<b>Half</b>, 
+<b>Int8</b>
+ }</td></tr>
+<tr class="separator:a08c9973b2b76f20950958429be63d416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6927e4e244deab5399cef4da3e1fc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb6927e4e244deab5399cef4da3e1fc8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Layout</b> { <b>Generic</b>, 
+<b>NCHW</b>, 
+<b>NHWC</b>
+ }</td></tr>
+<tr class="separator:acb6927e4e244deab5399cef4da3e1fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classnom_1_1repr_1_1_neural_net_data"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classnom_1_1repr_1_1_neural_net_data')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classnom_1_1repr_1_1_neural_net_data.html">nom::repr::NeuralNetData</a></td></tr>
+<tr class="memitem:aec8c22ea4fd1c54b65e059bfa101449f inherit pub_types_classnom_1_1repr_1_1_neural_net_data"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec8c22ea4fd1c54b65e059bfa101449f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1repr_1_1_neural_net_data.html#aec8c22ea4fd1c54b65e059bfa101449f">NNDataKind</a> { <b>Generic</b>, 
+<b>Tensor</b>
+ }<tr class="memdesc:aec8c22ea4fd1c54b65e059bfa101449f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discriminator for LLVM-style RTTI (isa&lt;&gt;) <br /></td></tr>
+</td></tr>
+<tr class="separator:aec8c22ea4fd1c54b65e059bfa101449f inherit pub_types_classnom_1_1repr_1_1_neural_net_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classnom_1_1repr_1_1_value"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classnom_1_1repr_1_1_value')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classnom_1_1repr_1_1_value.html">nom::repr::Value</a></td></tr>
+<tr class="memitem:aa3a2a2779ea84b516ac06b7c3615510a inherit pub_types_classnom_1_1repr_1_1_value"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3a2a2779ea84b516ac06b7c3615510a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ValueKind</b> { <b>Value</b>, 
+<b>Instruction</b>, 
+<b>Data</b>
+ }</td></tr>
+<tr class="separator:aa3a2a2779ea84b516ac06b7c3615510a inherit pub_types_classnom_1_1repr_1_1_value"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abc5d098152d6de8e8b0348519d3a6258"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc5d098152d6de8e8b0348519d3a6258"></a>
@@ -123,9 +150,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe772d333dce4e61c42cfb66ebff3dc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe772d333dce4e61c42cfb66ebff3dc1"></a>
 <a class="el" href="classnom_1_1repr_1_1_neural_net_data.html">NeuralNetData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> ()</td></tr>
 <tr class="separator:afe772d333dce4e61c42cfb66ebff3dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a217372f0b84b32fbf15cc42beb581"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48a217372f0b84b32fbf15cc42beb581"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (DataType type)</td></tr>
+<tr class="separator:a48a217372f0b84b32fbf15cc42beb581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92bd14341ac1f63910ea162a7a828a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac92bd14341ac1f63910ea162a7a828a2"></a>
+DataType&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> () const </td></tr>
+<tr class="separator:ac92bd14341ac1f63910ea162a7a828a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40aebefbcc1e1cba583751e3c16de490"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40aebefbcc1e1cba583751e3c16de490"></a>
 const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const </td></tr>
 <tr class="separator:a40aebefbcc1e1cba583751e3c16de490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d0c456049bd1061e8d0db7b97a0f77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14d0c456049bd1061e8d0db7b97a0f77"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (const std::string &amp;name)</td></tr>
+<tr class="separator:a14d0c456049bd1061e8d0db7b97a0f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classnom_1_1repr_1_1_neural_net_data"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classnom_1_1repr_1_1_neural_net_data')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classnom_1_1repr_1_1_neural_net_data.html">nom::repr::NeuralNetData</a></td></tr>
 <tr class="memitem:a6ce5ab1c52eb9db9bf2749397e818aab inherit pub_methods_classnom_1_1repr_1_1_neural_net_data"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ce5ab1c52eb9db9bf2749397e818aab"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>NeuralNetData</b> (<a class="el" href="classnom_1_1repr_1_1_neural_net_data.html#aec8c22ea4fd1c54b65e059bfa101449f">NNDataKind</a> kind)</td></tr>
@@ -154,31 +190,16 @@ ValueKind&#160;</td><td class="memItemRight" valign="bottom"><b>getKind</b> () c
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8bef2e46e83292cce44ee1d48992da8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bef2e46e83292cce44ee1d48992da8d"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>classof</b> (const <a class="el" href="classnom_1_1repr_1_1_neural_net_data.html">NeuralNetData</a> *D)</td></tr>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>classof</b> (const <a class="el" href="classnom_1_1repr_1_1_neural_net_data.html">NeuralNetData</a> *<a class="el" href="struct_d.html">D</a>)</td></tr>
 <tr class="separator:a8bef2e46e83292cce44ee1d48992da8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classnom_1_1repr_1_1_data"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classnom_1_1repr_1_1_data')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classnom_1_1repr_1_1_data.html">nom::repr::Data</a></td></tr>
 <tr class="memitem:af601f8de50daf2cb1d3c84e78d998008 inherit pub_static_methods_classnom_1_1repr_1_1_data"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af601f8de50daf2cb1d3c84e78d998008"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>classof</b> (const <a class="el" href="classnom_1_1repr_1_1_value.html">Value</a> *V)</td></tr>
 <tr class="separator:af601f8de50daf2cb1d3c84e78d998008 inherit pub_static_methods_classnom_1_1repr_1_1_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classnom_1_1repr_1_1_neural_net_data"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classnom_1_1repr_1_1_neural_net_data')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classnom_1_1repr_1_1_neural_net_data.html">nom::repr::NeuralNetData</a></td></tr>
-<tr class="memitem:aec8c22ea4fd1c54b65e059bfa101449f inherit pub_types_classnom_1_1repr_1_1_neural_net_data"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec8c22ea4fd1c54b65e059bfa101449f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1repr_1_1_neural_net_data.html#aec8c22ea4fd1c54b65e059bfa101449f">NNDataKind</a> { <b>Generic</b>, 
-<b>Tensor</b>
- }<tr class="memdesc:aec8c22ea4fd1c54b65e059bfa101449f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discriminator for LLVM-style RTTI (isa&lt;&gt;) <br /></td></tr>
-</td></tr>
-<tr class="separator:aec8c22ea4fd1c54b65e059bfa101449f inherit pub_types_classnom_1_1repr_1_1_neural_net_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_classnom_1_1repr_1_1_value"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classnom_1_1repr_1_1_value')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classnom_1_1repr_1_1_value.html">nom::repr::Value</a></td></tr>
-<tr class="memitem:aa3a2a2779ea84b516ac06b7c3615510a inherit pub_types_classnom_1_1repr_1_1_value"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3a2a2779ea84b516ac06b7c3615510a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ValueKind</b> { <b>Value</b>, 
-<b>Instruction</b>, 
-<b>Data</b>
- }</td></tr>
-<tr class="separator:aa3a2a2779ea84b516ac06b7c3615510a inherit pub_types_classnom_1_1repr_1_1_value"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_neural_net_8h_source.html#l00162">162</a> of file <a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>.</p>
+<p>Definition at line <a class="el" href="_neural_net_8h_source.html#l00158">158</a> of file <a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/core/nomnigraph/include/nomnigraph/Representations/<a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a></li>
 </ul>
@@ -186,7 +207,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:58 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -209,7 +230,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

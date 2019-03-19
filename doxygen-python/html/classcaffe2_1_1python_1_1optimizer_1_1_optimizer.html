@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -109,15 +109,16 @@ Inheritance diagram for caffe2.python.optimizer.Optimizer:</div>
  <div class="center">
   <img src="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.png" usemap="#caffe2.python.optimizer.Optimizer_map" alt=""/>
   <map id="caffe2.python.optimizer.Optimizer_map" name="caffe2.python.optimizer.Optimizer_map">
-<area href="classcaffe2_1_1python_1_1optimizer_1_1_adagrad_optimizer.html" alt="caffe2.python.optimizer.AdagradOptimizer" shape="rect" coords="0,112,303,136"/>
-<area href="classcaffe2_1_1python_1_1optimizer_1_1_adam_optimizer.html" alt="caffe2.python.optimizer.AdamOptimizer" shape="rect" coords="313,112,616,136"/>
-<area href="classcaffe2_1_1python_1_1optimizer_1_1_ftrl_optimizer.html" alt="caffe2.python.optimizer.FtrlOptimizer" shape="rect" coords="626,112,929,136"/>
-<area href="classcaffe2_1_1python_1_1optimizer_1_1_rms_prop_optimizer.html" alt="caffe2.python.optimizer.RmsPropOptimizer" shape="rect" coords="939,112,1242,136"/>
-<area href="classcaffe2_1_1python_1_1optimizer_1_1_sgd_optimizer.html" alt="caffe2.python.optimizer.SgdOptimizer" shape="rect" coords="1252,112,1555,136"/>
-<area href="classcaffe2_1_1python_1_1optimizer_1_1_weight_decay_builder.html" alt="caffe2.python.optimizer.WeightDecayBuilder" shape="rect" coords="1565,112,1868,136"/>
-<area href="classcaffe2_1_1python_1_1optimizer_1_1_yellow_fin_optimizer.html" alt="caffe2.python.optimizer.YellowFinOptimizer" shape="rect" coords="1878,112,2181,136"/>
-<area href="classcaffe2_1_1python_1_1optimizer_1_1_f_p16_sgd_optimizer.html" alt="caffe2.python.optimizer.FP16SgdOptimizer" shape="rect" coords="1095,168,1398,192"/>
-<area href="classcaffe2_1_1python_1_1optimizer_1_1_multi_precision_sgd_optimizer.html" alt="caffe2.python.optimizer.MultiPrecisionSgdOptimizer" shape="rect" coords="1408,168,1711,192"/>
+<area href="classcaffe2_1_1python_1_1optimizer_1_1_adadelta_optimizer.html" alt="caffe2.python.optimizer.AdadeltaOptimizer" shape="rect" coords="273,112,536,136"/>
+<area href="classcaffe2_1_1python_1_1optimizer_1_1_adagrad_optimizer.html" alt="caffe2.python.optimizer.AdagradOptimizer" shape="rect" coords="273,168,536,192"/>
+<area href="classcaffe2_1_1python_1_1optimizer_1_1_adam_optimizer.html" alt="caffe2.python.optimizer.AdamOptimizer" shape="rect" coords="273,224,536,248"/>
+<area href="classcaffe2_1_1python_1_1optimizer_1_1_ftrl_optimizer.html" alt="caffe2.python.optimizer.FtrlOptimizer" shape="rect" coords="273,280,536,304"/>
+<area href="classcaffe2_1_1python_1_1optimizer_1_1_g_ftrl_optimizer.html" alt="caffe2.python.optimizer.GFtrlOptimizer" shape="rect" coords="273,336,536,360"/>
+<area href="classcaffe2_1_1python_1_1optimizer_1_1_rms_prop_optimizer.html" alt="caffe2.python.optimizer.RmsPropOptimizer" shape="rect" coords="273,392,536,416"/>
+<area href="classcaffe2_1_1python_1_1optimizer_1_1_sgd_optimizer.html" alt="caffe2.python.optimizer.SgdOptimizer" shape="rect" coords="273,448,536,472"/>
+<area href="classcaffe2_1_1python_1_1optimizer_1_1_weight_decay_builder.html" alt="caffe2.python.optimizer.WeightDecayBuilder" shape="rect" coords="273,504,536,528"/>
+<area href="classcaffe2_1_1python_1_1optimizer_1_1_wngrad_optimizer.html" alt="caffe2.python.optimizer.WngradOptimizer" shape="rect" coords="273,560,536,584"/>
+<area href="classcaffe2_1_1python_1_1optimizer_1_1_yellow_fin_optimizer.html" alt="caffe2.python.optimizer.YellowFinOptimizer" shape="rect" coords="273,616,536,640"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -140,14 +141,16 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>get_gpu_blob_name</b> 
 <tr class="memitem:a0cda23e72c327be407b5e8a23db6c282"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cda23e72c327be407b5e8a23db6c282"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>build_lr</b> (self, net, param_init_net, base_learning_rate, learning_rate_blob=None, policy=&quot;fixed&quot;, iter_val=0, kwargs)</td></tr>
 <tr class="separator:a0cda23e72c327be407b5e8a23db6c282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73be4507eadb6d90e9f3ab521b4c5527"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73be4507eadb6d90e9f3ab521b4c5527"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>add_lr_multiplier</b> (self, lr_multiplier, is_gpu_blob=False)</td></tr>
-<tr class="separator:a73be4507eadb6d90e9f3ab521b4c5527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ab1e271e8f6b88931278855fd9565f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html#ad0ab1e271e8f6b88931278855fd9565f">add_lr_multiplier</a> (self, lr_multiplier)</td></tr>
+<tr class="separator:ad0ab1e271e8f6b88931278855fd9565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc95d8cd959f46d0a7cd48880f196288"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html#adc95d8cd959f46d0a7cd48880f196288">get_auxiliary_parameters</a> (self)</td></tr>
 <tr class="separator:adc95d8cd959f46d0a7cd48880f196288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f2e7b48f282eb60d159df4abfa5e17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3f2e7b48f282eb60d159df4abfa5e17"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>scale_learning_rate</b> (self, args, kwargs)</td></tr>
 <tr class="separator:ae3f2e7b48f282eb60d159df4abfa5e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ff70e869f6b79ab8409afbc4b272f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6ff70e869f6b79ab8409afbc4b272f4"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>create_lars_inputs</b> (self, param_init_net, weight_decay, trust, lr_max)</td></tr>
+<tr class="separator:ae6ff70e869f6b79ab8409afbc4b272f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -157,8 +160,39 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>dedup</b> (net, sparse
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="optimizer_8py_source.html#l00025">25</a> of file <a class="el" href="optimizer_8py_source.html">optimizer.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2optimizer_8py_source.html#l00030">30</a> of file <a class="el" href="caffe2_2python_2optimizer_8py_source.html">optimizer.py</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad0ab1e271e8f6b88931278855fd9565f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def caffe2.python.optimizer.Optimizer.add_lr_multiplier </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>lr_multiplier</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set the global learning rate multiplier. If a multiplier already
+existed, this will overwrite the existing multiplier. The multiplier is
+used for all future calls to _run(), unless it is overwritten.
+</pre> 
+<p>Definition at line <a class="el" href="caffe2_2python_2optimizer_8py_source.html#l00147">147</a> of file <a class="el" href="caffe2_2python_2optimizer_8py_source.html">optimizer.py</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="adc95d8cd959f46d0a7cd48880f196288"></a>
 <div class="memitem">
 <div class="memproto">
@@ -189,7 +223,7 @@ Returns:
     an example, the iteration parameter is a shared parameter, because
     all the learning rates share the same iteration parameter.
 </pre> 
-<p>Definition at line <a class="el" href="optimizer_8py_source.html#l00154">154</a> of file <a class="el" href="optimizer_8py_source.html">optimizer.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2optimizer_8py_source.html#l00181">181</a> of file <a class="el" href="caffe2_2python_2optimizer_8py_source.html">optimizer.py</a>.</p>
 
 </div>
 </div>
@@ -219,18 +253,18 @@ Returns:
 <pre class="fragment">Returns a blob name that will be unique to the current device
 and optimizer instance.
 </pre> 
-<p>Definition at line <a class="el" href="optimizer_8py_source.html#l00069">69</a> of file <a class="el" href="optimizer_8py_source.html">optimizer.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2optimizer_8py_source.html#l00075">75</a> of file <a class="el" href="caffe2_2python_2optimizer_8py_source.html">optimizer.py</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>caffe2/python/<a class="el" href="optimizer_8py_source.html">optimizer.py</a></li>
+<li>caffe2/python/<a class="el" href="caffe2_2python_2optimizer_8py_source.html">optimizer.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -253,7 +287,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

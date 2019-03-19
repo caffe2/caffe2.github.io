@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['keysplitop',['KeySplitOp',['../classcaffe2_1_1_key_split_op.html',1,'caffe2']]],
-  ['keyvaluetomapop',['KeyValueToMapOp',['../classcaffe2_1_1_key_value_to_map_op.html',1,'caffe2']]]
+  ['jitexception',['JITException',['../structtorch_1_1jit_1_1_j_i_t_exception.html',1,'torch::jit']]],
+  ['job',['Job',['../structtorch_1_1data_1_1_data_loader_base_1_1_job.html',1,'torch::data::DataLoaderBase']]]
 ];

@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -104,20 +104,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="directory">
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>__init__</b>(self, db_prefix, node_name, db_type, metadata_handler=None) (defined in <a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>blob_list</b>(self) (defined in <a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>check_db_exists</b>(self, epoch) (defined in <a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>BLOB_NAMES</b> (defined in <a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>check_db_exists</b>(self, epoch) (defined in <a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a5ef6e1c162008384437ba8ba5a9a6f2d">collect_checkpoint_stats</a>(self, stats)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a538f5ee05f4af8eeaa0e357e1747d9c2">cp_accessible</a>(self, epoch=None)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a611554aced82d79a488cc3273776f279">get_resume_from_epoch_id</a>(self, user_epoch=None)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a217b03847fcd6d11aecd9d5f90accbab">init</a>(self, nodes=None, retrieve_from_epoch=None, path_prefix=None, path_type=None)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a45aa82dbeb2693b5d94d65b4bf3a0acc">load</a>(self, epoch, path_prefix=None, path_type=None)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a10516c8e426b15e6de7b70e16bf50406">load_blobs_from_checkpoint</a>(self, blob_names, epoch)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a867311ff75877980e657626fbb098004">save</a>(self, epoch)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a9524ecae48a980e8a6d7481ff54efebf">set_params</a>(self, nodes, path_prefix=None, path_type=None)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#ad543f0bd496f620d456a216ac0a897a2">write_checkpoint_metadata</a>(self, epoch)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#ad96b5590aa138a44bac09a71caa9b5bd">report_checkpoint_stats</a>(self, action_name)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a867311ff75877980e657626fbb098004">save</a>(self, epoch)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a9524ecae48a980e8a6d7481ff54efebf">set_params</a>(self, nodes, path_prefix=None, path_type=None)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#ad543f0bd496f620d456a216ac0a897a2">write_checkpoint_metadata</a>(self, epoch)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html">caffe2.python.checkpoint.CheckpointManager</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -140,7 +143,7 @@ Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

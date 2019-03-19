@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -105,19 +105,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a0ab6352a79c4bbe2d445e709479cdf68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ab6352a79c4bbe2d445e709479cdf68"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Caffe2Backend</b> (<a class="el" href="classcaffe2_1_1onnx_1_1_dummy_name.html">DummyName</a> *dummy=nullptr)</td></tr>
+<tr class="separator:a0ab6352a79c4bbe2d445e709479cdf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae48b495818fe1d53e90477eb69ce7f58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae48b495818fe1d53e90477eb69ce7f58"></a>
 <a class="el" href="classcaffe2_1_1onnx_1_1_caffe2_backend_rep.html">Caffe2BackendRep</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Prepare</b> (const std::string &amp;onnx_model_str, const std::string &amp;device, const std::vector&lt; <a class="el" href="structcaffe2_1_1onnx_1_1_caffe2_ops.html">Caffe2Ops</a> &gt; &amp;extras)</td></tr>
 <tr class="separator:ae48b495818fe1d53e90477eb69ce7f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2670c8df02172600fe436c14f942a703"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2670c8df02172600fe436c14f942a703"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportOp</b> (const std::string tyep) const </td></tr>
 <tr class="separator:a2670c8df02172600fe436c14f942a703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2d6af38ac97dc3c49028e83c7083dbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2d6af38ac97dc3c49028e83c7083dbe"></a>
-<a class="el" href="structcaffe2_1_1onnx_1_1_caffe2_ops.html">Caffe2Ops</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertNode</b> (const std::string &amp;node_str, int opset_version)</td></tr>
-<tr class="separator:ab2d6af38ac97dc3c49028e83c7083dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a6dfc4d5122cf73676ae3d50f174b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4a6dfc4d5122cf73676ae3d50f174b2"></a>
+<a class="el" href="structcaffe2_1_1onnx_1_1_caffe2_ops.html">Caffe2Ops</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertNode</b> (const std::string &amp;node_str, const <a class="el" href="classcaffe2_1_1onnx_1_1_conversion_context.html">ConversionContext</a> &amp;ctx)</td></tr>
+<tr class="separator:ae4a6dfc4d5122cf73676ae3d50f174b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba8db9fccc742cef4d88dbfa2c21eca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ba8db9fccc742cef4d88dbfa2c21eca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildTensorFillingOp</b> (caffe2::OperatorDef *c2_op, const TensorProto &amp;onnx_tensor, const std::string &amp;output_name=&quot;&quot;, const std::string &amp;shape_name=&quot;&quot;)</td></tr>
+<tr class="separator:a6ba8db9fccc742cef4d88dbfa2c21eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="backend_8h_source.html#l00105">105</a> of file <a class="el" href="backend_8h_source.html">backend.h</a>.</p>
+<p>Definition at line <a class="el" href="backend_8h_source.html#l00131">131</a> of file <a class="el" href="backend_8h_source.html">backend.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>caffe2/onnx/<a class="el" href="backend_8h_source.html">backend.h</a></li>
 <li>caffe2/onnx/<a class="el" href="backend_8cc_source.html">backend.cc</a></li>
@@ -126,7 +132,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportOp</b> (const 
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -149,7 +155,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

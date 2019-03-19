@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['opcode',['Opcode',['../classnom_1_1repr_1_1_instruction.html#ad127bfb2f70e11e2b447d3fe1a6ea862',1,'nom::repr::Instruction']]],
-  ['operandcode',['OperandCode',['../group___neural_networks.html#gaf06d1affd33f3bc698d0c04eceb23298',1,'NeuralNetworks.h']]],
-  ['operationcode',['OperationCode',['../group___neural_networks.html#gaabbe492c60331b13038e39d4207940e0',1,'NeuralNetworks.h']]]
+  ['dldatatypecode',['DLDataTypeCode',['../dlpack_8h.html#a2a5dbaa5fb67f4845a973c09a7f2ec50',1,'dlpack.h']]],
+  ['dldevicetype',['DLDeviceType',['../dlpack_8h.html#a49db572e18d84c47738fc746568fb573',1,'dlpack.h']]]
 ];

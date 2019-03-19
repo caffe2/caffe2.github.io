@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -101,15 +101,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:af7c12b0eb52eba58a669ff86c6ad45b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7c12b0eb52eba58a669ff86c6ad45b2"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> = ''</td></tr>
-<tr class="separator:af7c12b0eb52eba58a669ff86c6ad45b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abede8193a46c3d2cfc34eba711f1252c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abede8193a46c3d2cfc34eba711f1252c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>inc</b> = sysconfig.get_python_inc()</td></tr>
-<tr class="separator:abede8193a46c3d2cfc34eba711f1252c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29e7c25aed93b3ac66579124513ea006"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29e7c25aed93b3ac66579124513ea006"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>lib</b> = sysconfig.get_config_var(&quot;LIBDIR&quot;)</td></tr>
-<tr class="separator:a29e7c25aed93b3ac66579124513ea006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98079f593d4a84a4e095f2b67600216"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b></td></tr>
+<tr class="separator:ac98079f593d4a84a4e095f2b67600216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5076258a15cbf0afe6e643a7f517cd0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5076258a15cbf0afe6e643a7f517cd0b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>end</b></td></tr>
 <tr class="separator:a5076258a15cbf0afe6e643a7f517cd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,12 +111,27 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> = ''</td>
 <div class="textblock"><p>Module scripts.get_python_cmake_flags. </p>
 <p>Use this script to find your preferred python installation.</p>
 <p>You can use the following to build with your preferred version of python if your installation is not being properly detected by CMake.</p>
-<p>mkdir -p build &amp;&amp; cd build cmake $(python ../scripts/get_python_libs.py) .. make </p>
-</div></div><!-- contents -->
+<p>mkdir -p build &amp;&amp; cd build cmake $(python ../scripts/get_python_cmake_flags.py) .. make </p>
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="ac98079f593d4a84a4e095f2b67600216"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list get_python_cmake_flags.flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespaceget__python__cmake__flags.html">    1</a></span>&#160;= [</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    <span class="stringliteral">&#39;-DPYTHON_EXECUTABLE:FILEPATH={}&#39;</span>.format(sys.executable),</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    <span class="stringliteral">&#39;-DPYTHON_INCLUDE_DIR={}&#39;</span>.format(sysconfig.get_python_inc()),</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;]</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="get__python__cmake__flags_8py_source.html#l00021">21</a> of file <a class="el" href="get__python__cmake__flags_8py_source.html">get_python_cmake_flags.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -146,7 +154,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

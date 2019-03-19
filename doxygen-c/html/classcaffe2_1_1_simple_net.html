@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -110,9 +110,9 @@ Inheritance diagram for caffe2::SimpleNet:</div>
  <div class="center">
   <img src="classcaffe2_1_1_simple_net.png" usemap="#caffe2::SimpleNet_map" alt=""/>
   <map id="caffe2::SimpleNet_map" name="caffe2::SimpleNet_map">
-<area href="classcaffe2_1_1_net_base.html" alt="caffe2::NetBase" shape="rect" coords="0,56,294,80"/>
-<area href="classcaffe2_1_1_observable.html" alt="caffe2::Observable&lt; NetBase &gt;" shape="rect" coords="0,0,294,24"/>
-<area href="classcaffe2_1_1gpu__single__thread_1_1_single_thread_async_net.html" alt="caffe2::gpu_single_thread::SingleThreadAsyncNet" shape="rect" coords="0,168,294,192"/>
+<area href="classcaffe2_1_1_net_base.html" alt="caffe2::NetBase" shape="rect" coords="0,56,191,80"/>
+<area href="classcaffe2_1_1_observable.html" alt="caffe2::Observable&lt; NetBase &gt;" shape="rect" coords="0,0,191,24"/>
+<area href="classcaffe2_1_1_simple_ref_count_net.html" alt="caffe2::SimpleRefCountNet" shape="rect" coords="0,168,191,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -156,6 +156,15 @@ const NetDef &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>debug_d
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_debug_def</b> () const </td></tr>
 <tr class="separator:a8be95e1d275d3f3041a8145436f9ee51 inherit pub_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaffe2_1_1_observable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1_observable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1_observable.html">caffe2::Observable&lt; NetBase &gt;</a></td></tr>
+<tr class="memitem:adf3f51ec5cb69d8d9d0190903234c9e7 inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf3f51ec5cb69d8d9d0190903234c9e7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Observable</b> (<a class="el" href="classcaffe2_1_1_observable.html">Observable</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:adf3f51ec5cb69d8d9d0190903234c9e7 inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5fb16d38308d8351ee3f51c76927fa inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d5fb16d38308d8351ee3f51c76927fa"></a>
+<a class="el" href="classcaffe2_1_1_observable.html">Observable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classcaffe2_1_1_observable.html">Observable</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a4d5fb16d38308d8351ee3f51c76927fa inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3144e1bee6c39e8f4c7b51f921a84ad inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3144e1bee6c39e8f4c7b51f921a84ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_observable.html">Observable</a>)</td></tr>
+<tr class="separator:ae3144e1bee6c39e8f4c7b51f921a84ad inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac04a21851203c49213fb12253a0523 inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ac04a21851203c49213fb12253a0523"></a>
 const <a class="el" href="classcaffe2_1_1_observer_base.html">Observer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AttachObserver</b> (std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1_observer_base.html">Observer</a> &gt; observer)</td></tr>
 <tr class="separator:a0ac04a21851203c49213fb12253a0523 inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,16 +189,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Run</b> () override</
 <tr class="memitem:a6eea4e72784f9762d19162d95fbfa98e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6eea4e72784f9762d19162d95fbfa98e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunAsync</b> () override</td></tr>
 <tr class="separator:a6eea4e72784f9762d19162d95fbfa98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef16a363e1840b859314a0bfb7f2955e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef16a363e1840b859314a0bfb7f2955e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_simple_net.html">SimpleNet</a>)</td></tr>
-<tr class="separator:aef16a363e1840b859314a0bfb7f2955e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf7cc20b572f279f1601f77e2b70dcfb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf7cc20b572f279f1601f77e2b70dcfb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_simple_net.html">SimpleNet</a>)</td></tr>
+<tr class="separator:acf7cc20b572f279f1601f77e2b70dcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classcaffe2_1_1_net_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcaffe2_1_1_net_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classcaffe2_1_1_net_base.html">caffe2::NetBase</a></td></tr>
 <tr class="memitem:a433cc796bb5acf72d50a67f397f145db inherit pro_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a433cc796bb5acf72d50a67f397f145db"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>DoRunAsync</b> ()</td></tr>
 <tr class="separator:a433cc796bb5acf72d50a67f397f145db inherit pro_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a3634ef9d22cd0be0207c383dd187e2 inherit pro_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a3634ef9d22cd0be0207c383dd187e2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_net_base.html">NetBase</a>)</td></tr>
-<tr class="separator:a1a3634ef9d22cd0be0207c383dd187e2 inherit pro_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad12963badb3788c8e9d64b62e10de1 inherit pro_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ad12963badb3788c8e9d64b62e10de1"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>handleRunError</b> ()</td></tr>
+<tr class="separator:a2ad12963badb3788c8e9d64b62e10de1 inherit pro_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ab2bdf8b3238991b7797b67491be23 inherit pro_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48ab2bdf8b3238991b7797b67491be23"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_net_base.html">NetBase</a>)</td></tr>
+<tr class="separator:a48ab2bdf8b3238991b7797b67491be23 inherit pro_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -239,19 +251,19 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> = <a cl
           <td class="memname">vector&lt; float &gt; caffe2::SimpleNet::TEST_Benchmark </td>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>warmup_runs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>main_runs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const bool&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>run_individual</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -269,9 +281,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> = <a cl
 <p>Benchmarks a network. </p>
 <p>This function returns a vector of float recording the number of milli- seconds spent during the benchmark. The 0-th item is the time spent per each network run, and if a net instantiation supports run_individual, the remainder of the vector returns the number of milliseconds spent per opeartor. </p>
 
-<p>Reimplemented from <a class="el" href="classcaffe2_1_1_net_base.html#a69aed01ddcd98e7fa13b174c4cd134a8">caffe2::NetBase</a>.</p>
+<p>Reimplemented from <a class="el" href="classcaffe2_1_1_net_base.html#ae3ecd57c1d75c2eceb240a5800fc20d7">caffe2::NetBase</a>.</p>
 
-<p>Definition at line <a class="el" href="net__simple_8cc_source.html#l00082">82</a> of file <a class="el" href="net__simple_8cc_source.html">net_simple.cc</a>.</p>
+<p>Definition at line <a class="el" href="net__simple_8cc_source.html#l00087">87</a> of file <a class="el" href="net__simple_8cc_source.html">net_simple.cc</a>.</p>
 
 </div>
 </div>
@@ -283,7 +295,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> = <a cl
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:56 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -306,7 +318,7 @@ Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

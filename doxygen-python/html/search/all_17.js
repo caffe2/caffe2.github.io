@@ -1,4 +1,28 @@
 var searchData=
 [
-  ['yellowfinoptimizer',['YellowFinOptimizer',['../classcaffe2_1_1python_1_1optimizer_1_1_yellow_fin_optimizer.html',1,'caffe2::python::optimizer']]]
+  ['wait',['wait',['../classtorch_1_1utils_1_1file__baton_1_1_file_baton.html#a94f97013ccb0539004cd26864ec82b60',1,'torch::utils::file_baton::FileBaton']]],
+  ['warning',['Warning',['../classtorch_1_1utils_1_1backcompat_1_1_warning.html',1,'torch::utils::backcompat']]],
+  ['watcherthread',['WatcherThread',['../classcaffe2_1_1python_1_1timeout__guard_1_1_watcher_thread.html',1,'caffe2::python::timeout_guard']]],
+  ['weak_5fscript',['weak_script',['../namespacetorch_1_1__jit__internal.html#aa9a06ebfcd894f902176790df10a2ed1',1,'torch::_jit_internal']]],
+  ['weakscriptmoduleproxy',['WeakScriptModuleProxy',['../classtorch_1_1jit_1_1_weak_script_module_proxy.html',1,'torch::jit']]],
+  ['weibull',['Weibull',['../classtorch_1_1distributions_1_1weibull_1_1_weibull.html',1,'torch::distributions::weibull']]],
+  ['weightdecaybuilder',['WeightDecayBuilder',['../classcaffe2_1_1python_1_1optimizer_1_1_weight_decay_builder.html',1,'caffe2::python::optimizer']]],
+  ['weightedrandomsampler',['WeightedRandomSampler',['../classtorch_1_1utils_1_1data_1_1sampler_1_1_weighted_random_sampler.html',1,'torch::utils::data::sampler']]],
+  ['weightnorm',['WeightNorm',['../classtorch_1_1nn_1_1utils_1_1weight__norm_1_1_weight_norm.html',1,'torch::nn::utils::weight_norm']]],
+  ['whilenet',['WhileNet',['../classcaffe2_1_1python_1_1net__builder_1_1_operations.html#aec96118718e5200b73b9e224fdbfba82',1,'caffe2::python::net_builder::Operations']]],
+  ['with_5foptions',['with_options',['../classtorch_1_1utils_1_1cpp__extension_1_1_build_extension.html#af0ba0456335b0152021fa07464b05dd7',1,'torch::utils::cpp_extension::BuildExtension']]],
+  ['wngradoptimizer',['WngradOptimizer',['../classcaffe2_1_1python_1_1optimizer_1_1_wngrad_optimizer.html',1,'caffe2::python::optimizer']]],
+  ['worker',['Worker',['../classcaffe2_1_1python_1_1parallel__workers_1_1_worker.html',1,'caffe2::python::parallel_workers']]],
+  ['workercoordinator',['WorkerCoordinator',['../classcaffe2_1_1python_1_1parallel__workers_1_1_worker_coordinator.html',1,'caffe2::python::parallel_workers']]],
+  ['workspace',['Workspace',['../classcaffe2_1_1python_1_1onnx_1_1workspace_1_1_workspace.html',1,'caffe2::python::onnx::workspace']]],
+  ['workspace',['workspace',['../namespaceworkspace.html',1,'']]],
+  ['workspacetype',['WorkspaceType',['../classcaffe2_1_1python_1_1task_1_1_workspace_type.html',1,'caffe2::python::task']]],
+  ['wrapdim',['WrapDim',['../classtools_1_1cwrap_1_1plugins_1_1_wrap_dim_1_1_wrap_dim.html',1,'tools::cwrap::plugins::WrapDim']]],
+  ['write',['write',['../classcaffe2_1_1python_1_1dataio_1_1_writer.html#a77a746b74ca09dd9aee005330cc6916d',1,'caffe2.python.dataio.Writer.write()'],['../classcaffe2_1_1python_1_1dataset_1_1___dataset_writer.html#a433878b4e120fddcd0e1d985b5f85f45',1,'caffe2.python.dataset._DatasetWriter.write()'],['../namespacetorch_1_1contrib_1_1__graph__vis.html#ab1f8cb5b3c5d90dfe3e736d0c6d4df33',1,'torch.contrib._graph_vis.write()']]],
+  ['write_5fcheckpoint_5fmetadata',['write_checkpoint_metadata',['../classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#ad543f0bd496f620d456a216ac0a897a2',1,'caffe2.python.checkpoint.CheckpointManager.write_checkpoint_metadata()'],['../classcaffe2_1_1python_1_1checkpoint_1_1_multi_node_checkpoint_manager.html#afd0f80486fd4e87d8b2507e4d61e40d1',1,'caffe2.python.checkpoint.MultiNodeCheckpointManager.write_checkpoint_metadata()']]],
+  ['write_5fex',['write_ex',['../classcaffe2_1_1python_1_1dataio_1_1_writer.html#a8c0252988fae6e79ed51fa5407e244f6',1,'caffe2::python::dataio::Writer']]],
+  ['write_5foutputs',['write_outputs',['../classgen_1_1_file_manager.html#a5d73e4bf65945d1badf054d94cd385b0',1,'gen::FileManager']]],
+  ['write_5frecord_5fex',['write_record_ex',['../classcaffe2_1_1python_1_1dataio_1_1_writer.html#a55b403eba95e44ab19e68dd164a9aaf1',1,'caffe2::python::dataio::Writer']]],
+  ['writer',['writer',['../classcaffe2_1_1python_1_1dataset_1_1_dataset.html#a4d20364935ea446580e4f6d3e0380dc1',1,'caffe2::python::dataset::Dataset']]],
+  ['writer',['Writer',['../classcaffe2_1_1python_1_1dataio_1_1_writer.html',1,'caffe2::python::dataio']]]
 ];

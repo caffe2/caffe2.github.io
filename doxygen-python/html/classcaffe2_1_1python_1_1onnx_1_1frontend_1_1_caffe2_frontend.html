@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -114,6 +114,9 @@ Inheritance diagram for caffe2.python.onnx.frontend.Caffe2Frontend:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aee9f2a1b8925418f47b8c024fb373b7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee9f2a1b8925418f47b8c024fb373b7b"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>dummy_name</b> (cls)</td></tr>
+<tr class="separator:aee9f2a1b8925418f47b8c024fb373b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae243896f59e1cae5dcfbd9e6328e82dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae243896f59e1cae5dcfbd9e6328e82dd"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>caffe2_arg_to_onnx_attr</b> (cls, op_def, arg)</td></tr>
 <tr class="separator:ae243896f59e1cae5dcfbd9e6328e82dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +129,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>caffe2_net_to_onnx_gra
 <tr class="memitem:ab4ec6f3ea62c74257f21b5758c9ba136"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4ec6f3ea62c74257f21b5758c9ba136"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>caffe2_init_net_to_initializer</b> (cls, init_net)</td></tr>
 <tr class="separator:ab4ec6f3ea62c74257f21b5758c9ba136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2475f63ac02d2a1db8a645690963d4b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2475f63ac02d2a1db8a645690963d4b2"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>ssa_rewrite</b> (cls, net, init_net, value_info)</td></tr>
+<tr class="separator:a2475f63ac02d2a1db8a645690963d4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4e0323ab44569e05fffc08cce570d44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4e0323ab44569e05fffc08cce570d44"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>caffe2_net_to_onnx_model</b> (cls, args, kwargs)</td></tr>
 <tr class="separator:ad4e0323ab44569e05fffc08cce570d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,20 +139,20 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>caffe2_net_to_onnx_mod
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:aa96ec749814ac13bcb7c8a9d1c918774"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa96ec749814ac13bcb7c8a9d1c918774"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>target_opset_version</b> = 6</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>target_opset_version</b> = 9</td></tr>
 <tr class="separator:aa96ec749814ac13bcb7c8a9d1c918774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="frontend_8py_source.html#l00036">36</a> of file <a class="el" href="frontend_8py_source.html">frontend.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2onnx_2frontend_8py_source.html#l00036">36</a> of file <a class="el" href="caffe2_2python_2onnx_2frontend_8py_source.html">frontend.py</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>caffe2/python/onnx/<a class="el" href="frontend_8py_source.html">frontend.py</a></li>
+<li>caffe2/python/onnx/<a class="el" href="caffe2_2python_2onnx_2frontend_8py_source.html">frontend.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -169,7 +175,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

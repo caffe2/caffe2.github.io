@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -100,8 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a>  </div>
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">caffe2::CPUContext Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
@@ -110,7 +109,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>The CPU Context, representing the bare minimum of what a Context class in Caffe2 should implement.  
  <a href="classcaffe2_1_1_c_p_u_context.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="core_2context_8h_source.html">context.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="context_8h_source.html">context.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for caffe2::CPUContext:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classcaffe2_1_1_c_p_u_context.png" usemap="#caffe2::CPUContext_map" alt=""/>
+  <map id="caffe2::CPUContext_map" name="caffe2::CPUContext_map">
+<area href="classat_1_1_base_context.html" title="Virtual interface for the Context class in Caffe2. " alt="at::BaseContext" shape="rect" coords="0,0,121,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -123,54 +131,92 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a04510c0e3d2eafce55a1aa43d3ca35e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04510c0e3d2eafce55a1aa43d3ca35e2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CPUContext</b> (const DeviceOption &amp;option)</td></tr>
 <tr class="separator:a04510c0e3d2eafce55a1aa43d3ca35e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af27d3d3dddb1b08c58edcaf0f12de6a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af27d3d3dddb1b08c58edcaf0f12de6a1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchToDevice</b> (int)</td></tr>
-<tr class="separator:af27d3d3dddb1b08c58edcaf0f12de6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c28e11488b3ae29d159d6e9d0a4488e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c28e11488b3ae29d159d6e9d0a4488e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchToDevice</b> ()</td></tr>
-<tr class="separator:a7c28e11488b3ae29d159d6e9d0a4488e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a707ba90ae57190e44854d628af9a9c8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a707ba90ae57190e44854d628af9a9c8b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WaitEvent</b> (const <a class="el" href="classcaffe2_1_1_event.html">Event</a> &amp;ev)</td></tr>
-<tr class="separator:a707ba90ae57190e44854d628af9a9c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a653bbc4bc1f3aa0355978f17c69d80a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a653bbc4bc1f3aa0355978f17c69d80a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Record</b> (<a class="el" href="classcaffe2_1_1_event.html">Event</a> *ev, const char *err_msg=nullptr) const </td></tr>
-<tr class="separator:a653bbc4bc1f3aa0355978f17c69d80a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14e06ffd44906855a72b3dbd3f0dc1b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14e06ffd44906855a72b3dbd3f0dc1b0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FinishDeviceComputation</b> ()</td></tr>
-<tr class="separator:a14e06ffd44906855a72b3dbd3f0dc1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b0fa9a27398a967c598ea46c0969652"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b0fa9a27398a967c598ea46c0969652"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CPUContext</b> (const <a class="el" href="structc10_1_1_device.html">at::Device</a> &amp;device)</td></tr>
+<tr class="separator:a8b0fa9a27398a967c598ea46c0969652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a740e8fb3755358de14e9b4294d548c60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a740e8fb3755358de14e9b4294d548c60"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchToDevice</b> (int) override</td></tr>
+<tr class="separator:a740e8fb3755358de14e9b4294d548c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a2f86a7521d9773ab2e13033329c17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85a2f86a7521d9773ab2e13033329c17"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WaitEvent</b> (const <a class="el" href="classcaffe2_1_1_event.html">Event</a> &amp;ev) override</td></tr>
+<tr class="separator:a85a2f86a7521d9773ab2e13033329c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ec70bfa7540ae89bdea6cdba92825b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9ec70bfa7540ae89bdea6cdba92825b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Record</b> (<a class="el" href="classcaffe2_1_1_event.html">Event</a> *ev, const char *err_msg=nullptr) const override</td></tr>
+<tr class="separator:af9ec70bfa7540ae89bdea6cdba92825b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b0e9242b80a1a805541a015ad6f3c02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b0e9242b80a1a805541a015ad6f3c02"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FinishDeviceComputation</b> () override</td></tr>
+<tr class="separator:a3b0e9242b80a1a805541a015ad6f3c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5d5227565a2363fc31cbb7ef8cd50c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5d5227565a2363fc31cbb7ef8cd50c7"></a>
 rand_gen_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>RandGenerator</b> ()</td></tr>
 <tr class="separator:ae5d5227565a2363fc31cbb7ef8cd50c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21152780dca3cf7357687493501a5b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae21152780dca3cf7357687493501a5b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyBytesSameDevice</b> (size_t nbytes, const void *src, void *dst) override</td></tr>
+<tr class="separator:ae21152780dca3cf7357687493501a5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43bdab68eafd3073c87e0f1d24ff5c6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43bdab68eafd3073c87e0f1d24ff5c6b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyBytesFromCPU</b> (size_t nbytes, const void *src, void *dst) override</td></tr>
+<tr class="separator:a43bdab68eafd3073c87e0f1d24ff5c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858cc29cfb60895b2fb66c4680481fab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a858cc29cfb60895b2fb66c4680481fab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyBytesToCPU</b> (size_t nbytes, const void *src, void *dst) override</td></tr>
+<tr class="separator:a858cc29cfb60895b2fb66c4680481fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee1448f83553228cabc21763dd7cea1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ee1448f83553228cabc21763dd7cea1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsNonFundamentalTypes</b> () const override</td></tr>
+<tr class="separator:a4ee1448f83553228cabc21763dd7cea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a917614c75176b110408e9b5a897ab337"><td class="memTemplParams" colspan="2"><a class="anchor" id="a917614c75176b110408e9b5a897ab337"></a>
 template&lt;class SrcContext , class DstContext &gt; </td></tr>
 <tr class="memitem:a917614c75176b110408e9b5a897ab337"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CopyBytes</b> (size_t nbytes, const void *src, void *dst)</td></tr>
 <tr class="separator:a917614c75176b110408e9b5a897ab337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3da6468ded2881ad4ecad1ffe2c07546"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3da6468ded2881ad4ecad1ffe2c07546"></a>
 template&lt;typename T , class SrcContext , class DstContext &gt; </td></tr>
-<tr class="memitem:a3da6468ded2881ad4ecad1ffe2c07546"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Copy</b> (size_t n, const T *src, T *dst)</td></tr>
+<tr class="memitem:a3da6468ded2881ad4ecad1ffe2c07546"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Copy</b> (size_t n, const <a class="el" href="struct_t.html">T</a> *src, <a class="el" href="struct_t.html">T</a> *dst)</td></tr>
 <tr class="separator:a3da6468ded2881ad4ecad1ffe2c07546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d6ada22ee1ae28e7450840256e43d6a"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7d6ada22ee1ae28e7450840256e43d6a"></a>
 template&lt;class SrcContext , class DstContext &gt; </td></tr>
 <tr class="memitem:a7d6ada22ee1ae28e7450840256e43d6a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CopyItems</b> (const <a class="el" href="classcaffe2_1_1_type_meta.html">TypeMeta</a> &amp;meta, size_t n, const void *src, void *dst)</td></tr>
 <tr class="separator:a7d6ada22ee1ae28e7450840256e43d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef7eac2c0d212d5b9a2ae104eaeb2a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ef7eac2c0d212d5b9a2ae104eaeb2a5"></a>
+<a class="el" href="structc10_1_1_device.html">at::Device</a>&#160;</td><td class="memItemRight" valign="bottom"><b>device</b> () const override</td></tr>
+<tr class="separator:a2ef7eac2c0d212d5b9a2ae104eaeb2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb8594708d2cd9b6e14a7f3ca9ed624"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cb8594708d2cd9b6e14a7f3ca9ed624"></a>
+DeviceType&#160;</td><td class="memItemRight" valign="bottom"><b>device_type</b> () const override</td></tr>
+<tr class="separator:a8cb8594708d2cd9b6e14a7f3ca9ed624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab62f272d10f10cba4860aa4e111f0f4"><td class="memTemplParams" colspan="2"><a class="anchor" id="aab62f272d10f10cba4860aa4e111f0f4"></a>
 template&lt;&gt; </td></tr>
 <tr class="memitem:aab62f272d10f10cba4860aa4e111f0f4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CopyBytes</b> (size_t nbytes, const void *src, void *dst)</td></tr>
 <tr class="separator:aab62f272d10f10cba4860aa4e111f0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab62f272d10f10cba4860aa4e111f0f4"><td class="memTemplParams" colspan="2"><a class="anchor" id="aab62f272d10f10cba4860aa4e111f0f4"></a>
-template&lt;&gt; </td></tr>
-<tr class="memitem:aab62f272d10f10cba4860aa4e111f0f4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CopyBytes</b> (size_t nbytes, const void *src, void *dst)</td></tr>
-<tr class="separator:aab62f272d10f10cba4860aa4e111f0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab62f272d10f10cba4860aa4e111f0f4"><td class="memTemplParams" colspan="2"><a class="anchor" id="aab62f272d10f10cba4860aa4e111f0f4"></a>
-template&lt;&gt; </td></tr>
-<tr class="memitem:aab62f272d10f10cba4860aa4e111f0f4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CopyBytes</b> (size_t nbytes, const void *src, void *dst)</td></tr>
-<tr class="separator:aab62f272d10f10cba4860aa4e111f0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classat_1_1_base_context"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classat_1_1_base_context')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classat_1_1_base_context.html">at::BaseContext</a></td></tr>
+<tr class="memitem:ac2761b6058f4f24d0623cc85c802bba3 inherit pub_methods_classat_1_1_base_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2761b6058f4f24d0623cc85c802bba3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchToDevice</b> ()</td></tr>
+<tr class="separator:ac2761b6058f4f24d0623cc85c802bba3 inherit pub_methods_classat_1_1_base_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031e4112baf290598e705245c89b1399 inherit pub_methods_classat_1_1_base_context"><td class="memTemplParams" colspan="2"><a class="anchor" id="a031e4112baf290598e705245c89b1399"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a031e4112baf290598e705245c89b1399 inherit pub_methods_classat_1_1_base_context"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CopySameDevice</b> (size_t n, const <a class="el" href="struct_t.html">T</a> *src, <a class="el" href="struct_t.html">T</a> *dst)</td></tr>
+<tr class="separator:a031e4112baf290598e705245c89b1399 inherit pub_methods_classat_1_1_base_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af578e8564d2de87d9beaf8ab11636b92 inherit pub_methods_classat_1_1_base_context"><td class="memTemplParams" colspan="2"><a class="anchor" id="af578e8564d2de87d9beaf8ab11636b92"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af578e8564d2de87d9beaf8ab11636b92 inherit pub_methods_classat_1_1_base_context"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CopyFromCPU</b> (size_t n, const <a class="el" href="struct_t.html">T</a> *src, <a class="el" href="struct_t.html">T</a> *dst)</td></tr>
+<tr class="separator:af578e8564d2de87d9beaf8ab11636b92 inherit pub_methods_classat_1_1_base_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae118be57f1140f791ba362201206317c inherit pub_methods_classat_1_1_base_context"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae118be57f1140f791ba362201206317c"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae118be57f1140f791ba362201206317c inherit pub_methods_classat_1_1_base_context"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CopyToCPU</b> (size_t n, const <a class="el" href="struct_t.html">T</a> *src, <a class="el" href="struct_t.html">T</a> *dst)</td></tr>
+<tr class="separator:ae118be57f1140f791ba362201206317c inherit pub_methods_classat_1_1_base_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9514a79cddbd8df0a0c6ccfc8215e8d2 inherit pub_methods_classat_1_1_base_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9514a79cddbd8df0a0c6ccfc8215e8d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnforceMetaCopyOK</b> ()</td></tr>
+<tr class="separator:a9514a79cddbd8df0a0c6ccfc8215e8d2 inherit pub_methods_classat_1_1_base_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3cd59fd15b5346eea937db2d9fe426 inherit pub_methods_classat_1_1_base_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d3cd59fd15b5346eea937db2d9fe426"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyItemsSameDevice</b> (const <a class="el" href="classcaffe2_1_1_type_meta.html">caffe2::TypeMeta</a> &amp;meta, size_t n, const void *src, void *dst)</td></tr>
+<tr class="separator:a0d3cd59fd15b5346eea937db2d9fe426 inherit pub_methods_classat_1_1_base_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a997f8693745cf1c41f0bdc411f1fea2e inherit pub_methods_classat_1_1_base_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a997f8693745cf1c41f0bdc411f1fea2e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyItemsFromCPU</b> (const <a class="el" href="classcaffe2_1_1_type_meta.html">caffe2::TypeMeta</a> &amp;meta, size_t n, const void *src, void *dst)</td></tr>
+<tr class="separator:a997f8693745cf1c41f0bdc411f1fea2e inherit pub_methods_classat_1_1_base_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd311b4fd7627d2f323019d4f329268e inherit pub_methods_classat_1_1_base_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd311b4fd7627d2f323019d4f329268e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyItemsToCPU</b> (const <a class="el" href="classcaffe2_1_1_type_meta.html">caffe2::TypeMeta</a> &amp;meta, size_t n, const void *src, void *dst)</td></tr>
+<tr class="separator:afd311b4fd7627d2f323019d4f329268e inherit pub_methods_classat_1_1_base_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6c0eb6dd15eec69d75ce74d0c629738f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c0eb6dd15eec69d75ce74d0c629738f"></a>
-static std::pair&lt; void *, MemoryDeleter &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>New</b> (size_t nbytes)</td></tr>
-<tr class="separator:a6c0eb6dd15eec69d75ce74d0c629738f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2fc5a72ccad2fbd160aa5c01a61a229"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2fc5a72ccad2fbd160aa5c01a61a229"></a>
+static <a class="el" href="classc10_1_1_data_ptr.html">at::DataPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>New</b> (size_t nbytes)</td></tr>
+<tr class="separator:ae2fc5a72ccad2fbd160aa5c01a61a229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08595066ce0036bfeed01c0be8586496"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08595066ce0036bfeed01c0be8586496"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasAsyncPartDefault</b> ()</td></tr>
 <tr class="separator:a08595066ce0036bfeed01c0be8586496"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,6 +226,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsAsyncS
 <tr class="memitem:aedfca73916c1eac8d0c7448510f4ab70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedfca73916c1eac8d0c7448510f4ab70"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStreamFree</b> (const DeviceOption &amp;, int)</td></tr>
 <tr class="separator:aedfca73916c1eac8d0c7448510f4ab70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f71b9c6361da4776f14ade1d9b55506"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f71b9c6361da4776f14ade1d9b55506"></a>
+static constexpr DeviceType&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeviceType</b> ()</td></tr>
+<tr class="separator:a1f71b9c6361da4776f14ade1d9b55506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -189,38 +238,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>random_seed_</b> {1701
 <tr class="memitem:afeb4e041dde06a6880585aa54688d19e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afeb4e041dde06a6880585aa54688d19e"></a>
 std::unique_ptr&lt; rand_gen_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>random_generator_</b></td></tr>
 <tr class="separator:afeb4e041dde06a6880585aa54688d19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a4b02640e26b89e6b865a8d8af4deced4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b02640e26b89e6b865a8d8af4deced4"></a>
-static CAFFE2_API <a class="el" href="classcaffe2_1_1_memory_allocation_reporter.html">MemoryAllocationReporter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>reporter_</b></td></tr>
-<tr class="separator:a4b02640e26b89e6b865a8d8af4deced4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The CPU Context, representing the bare minimum of what a Context class in Caffe2 should implement. </p>
-<p>See operator.h, especially Operator&lt;Context&gt;, for how Context are used in actual operator implementations that are associated with specific devices. In general, the Context class is passed in as a template argument, and the operator can use the functions defined in the context to execute whatever computation it has.</p>
-<p>A Context defines all the necessities to run an operator on a specific device. Specific Context classes have the freedom to choose what functions it implements, but there are a few functions that you should consider implementing if you want to write your own context class:</p><ul>
-<li>void SwitchToDevice(): any necessary code to switch to the device before running anything.</li>
-<li>void WaitEvent(const Event&amp; ev): make the current context to wait on an event. For example, for cuda, this is the equivalent of cudaStreamWaitEvent. For CPU context, it essentially synchronizes the event.</li>
-<li>void Record(Event* ev): record the async activities on the current context to the event. For example, for cuda, this is the equivalent of cudaEventRecord on the current stream. For CPU context, it is always synchronous.</li>
-<li>void FinishDeviceComputation(): any wrapping-up work after all the computation of the operator is done. If there are errors during the execution, throw exception. For example, in a <a class="el" href="classcaffe2_1_1_c_u_d_a_context.html">CUDAContext</a>, this function carries out a stream synchronization and spots potential errors for the cuda kernel calls.</li>
-<li>static std::pair&lt;void*, MemoryDeleter&gt; New(size_t nbytes): allocates memory and returns a deleter.</li>
-<li>template &lt;class SrcContext, class DstContext&gt; void CopyBytes(...): does cross context memory copy.</li>
-<li>template &lt;typename T, class SrcContext, class DstContext&gt; void Copy(...): usually a simple wrapper around the above CopyBytes function.</li>
-</ul>
-<p>We intentionally did not create a base class for the various possible Context classes there might be, since they are intended to be specified during compile time using templates rather than via polymorphism. You should also not have classes derived from existing context classes. </p>
+<p>// TODO modify docs See operator.h, especially Operator&lt;Context&gt;, for how Context are used in actual operator implementations that are associated with specific devices. In general, the Context class is passed in as a template argument, and the operator can use the functions defined in the context to execute whatever computation it has. </p>
 
-<p>Definition at line <a class="el" href="core_2context_8h_source.html#l00066">66</a> of file <a class="el" href="core_2context_8h_source.html">context.h</a>.</p>
+<p>Definition at line <a class="el" href="context_8h_source.html#l00040">40</a> of file <a class="el" href="context_8h_source.html">context.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>caffe2/core/<a class="el" href="core_2context_8h_source.html">context.h</a></li>
-<li>caffe2/core/<a class="el" href="allocator_8cc_source.html">allocator.cc</a></li>
-<li>caffe2/core/<a class="el" href="context__gpu_8h_source.html">context_gpu.h</a></li>
+<li>caffe2/core/<a class="el" href="context_8h_source.html">context.h</a></li>
+<li>caffe2/core/<a class="el" href="context_8cc_source.html">context.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:53 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -243,7 +275,7 @@ Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

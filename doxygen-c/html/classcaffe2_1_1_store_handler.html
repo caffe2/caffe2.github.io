@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -119,9 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ae73b681d0a2adcea612d5aa3808cf7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ae73b681d0a2adcea612d5aa3808cf7"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (const std::string &amp;name, const std::string &amp;data)=0</td></tr>
 <tr class="separator:a5ae73b681d0a2adcea612d5aa3808cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4873955afa42858a3853176fbc7755c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4873955afa42858a3853176fbc7755c2"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (const std::string &amp;name)=0</td></tr>
-<tr class="separator:a4873955afa42858a3853176fbc7755c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873cebaf18df214e440a0c3e063ba43f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a873cebaf18df214e440a0c3e063ba43f"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (const std::string &amp;name, const std::chrono::milliseconds &amp;timeout=kDefaultTimeout)=0</td></tr>
+<tr class="separator:a873cebaf18df214e440a0c3e063ba43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16462b1c49e8e18e1899322c103f3dd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16462b1c49e8e18e1899322c103f3dd2"></a>
 virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const std::string &amp;name, int64_t value)=0</td></tr>
 <tr class="separator:a16462b1c49e8e18e1899322c103f3dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,7 +141,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="store__handler_8h_source.html#l00011">11</a> of file <a class="el" href="store__handler_8h_source.html">store_handler.h</a>.</p>
+<p>Definition at line <a class="el" href="store__handler_8h_source.html#l00013">13</a> of file <a class="el" href="store__handler_8h_source.html">store_handler.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a488b491e425148906b35e83684bcd1d4"></a>
 <div class="memitem">
@@ -161,7 +161,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      std::chrono::seconds(30)</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="store__handler_8h_source.html#l00013">13</a> of file <a class="el" href="store__handler_8h_source.html">store_handler.h</a>.</p>
+<p>Definition at line <a class="el" href="store__handler_8h_source.html#l00015">15</a> of file <a class="el" href="store__handler_8h_source.html">store_handler.h</a>.</p>
 
 </div>
 </div>
@@ -183,7 +183,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      std::chrono::milliseconds::zero()</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="store__handler_8h_source.html#l00015">15</a> of file <a class="el" href="store__handler_8h_source.html">store_handler.h</a>.</p>
+<p>Definition at line <a class="el" href="store__handler_8h_source.html#l00017">17</a> of file <a class="el" href="store__handler_8h_source.html">store_handler.h</a>.</p>
 
 </div>
 </div>
@@ -195,7 +195,7 @@ Static Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -218,7 +218,7 @@ Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

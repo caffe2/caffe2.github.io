@@ -1,5 +1,24 @@
 var searchData=
 [
-  ['visitor',['Visitor',['../classcaffe2_1_1python_1_1net__printer_1_1_visitor.html',1,'caffe2::python::net_printer']]],
-  ['visualize',['visualize',['../namespacevisualize.html',1,'']]]
+  ['undefinedarguments',['UndefinedArguments',['../classtools_1_1cwrap_1_1plugins_1_1_nullable_arguments_1_1_undefined_arguments.html',1,'tools::cwrap::plugins::NullableArguments']]],
+  ['unfold',['Unfold',['../classtorch_1_1nn_1_1modules_1_1fold_1_1_unfold.html',1,'torch::nn::modules::fold']]],
+  ['uniform',['Uniform',['../classtorch_1_1distributions_1_1uniform_1_1_uniform.html',1,'torch::distributions::uniform']]],
+  ['uniform_5fsampling',['uniform_sampling',['../namespaceuniform__sampling.html',1,'']]],
+  ['uniformsampling',['UniformSampling',['../classcaffe2_1_1python_1_1layers_1_1uniform__sampling_1_1_uniform_sampling.html',1,'caffe2::python::layers::uniform_sampling']]],
+  ['unpoolingnet',['UnpoolingNet',['../classtest__nn_1_1_unpooling_net.html',1,'test_nn']]],
+  ['unrolledcell',['UnrolledCell',['../classcaffe2_1_1python_1_1rnn__cell_1_1_unrolled_cell.html',1,'caffe2::python::rnn_cell']]],
+  ['unserializable',['Unserializable',['../classtorch_1_1backends_1_1cudnn_1_1rnn_1_1_unserializable.html',1,'torch::backends::cudnn::rnn']]],
+  ['unsupported',['Unsupported',['../classcaffe2_1_1python_1_1onnx_1_1error_1_1_unsupported.html',1,'caffe2::python::onnx::error']]],
+  ['unsupportednodeerror',['UnsupportedNodeError',['../classtorch_1_1jit_1_1frontend_1_1_unsupported_node_error.html',1,'torch::jit::frontend']]],
+  ['uploadtaskgroupbuilder',['UploadTaskGroupBuilder',['../classcaffe2_1_1python_1_1checkpoint_1_1_upload_task_group_builder.html',1,'caffe2::python::checkpoint']]],
+  ['upsample',['Upsample',['../classtorch_1_1nn_1_1modules_1_1upsampling_1_1_upsample.html',1,'torch::nn::modules::upsampling']]],
+  ['upsamplingbilinear2d',['UpsamplingBilinear2d',['../classtorch_1_1nn_1_1modules_1_1upsampling_1_1_upsampling_bilinear2d.html',1,'torch::nn::modules::upsampling']]],
+  ['upsamplingnearest2d',['UpsamplingNearest2d',['../classtorch_1_1nn_1_1modules_1_1upsampling_1_1_upsampling_nearest2d.html',1,'torch::nn::modules::upsampling']]],
+  ['upscaleblock',['UpscaleBlock',['../classmodel__defs_1_1srresnet_1_1_upscale_block.html',1,'model_defs::srresnet']]],
+  ['usedblobnames',['UsedBlobNames',['../classcaffe2_1_1python_1_1core_1_1_net.html#aedb4bb62137546864994f586ba628751',1,'caffe2::python::core::Net']]],
+  ['usemodifierbase',['UseModifierBase',['../classcaffe2_1_1python_1_1modifier__context_1_1_use_modifier_base.html',1,'caffe2::python::modifier_context']]],
+  ['usenormalizer',['UseNormalizer',['../classcaffe2_1_1python_1_1normalizer__context_1_1_use_normalizer.html',1,'caffe2::python::normalizer_context']]],
+  ['useoptimizer',['UseOptimizer',['../classcaffe2_1_1python_1_1optimizer__context_1_1_use_optimizer.html',1,'caffe2::python::optimizer_context']]],
+  ['useregularizer',['UseRegularizer',['../classcaffe2_1_1python_1_1regularizer__context_1_1_use_regularizer.html',1,'caffe2::python::regularizer_context']]],
+  ['usesblob',['UsesBlob',['../classcaffe2_1_1python_1_1core_1_1_net.html#ad1319743bbdc88103edd6ed21c2309cb',1,'caffe2::python::core::Net']]]
 ];

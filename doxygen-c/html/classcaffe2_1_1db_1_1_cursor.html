@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -151,9 +151,9 @@ virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1db_1_1_cursor.html#af3f24f30b8cd7752f04feabaeea7a7a6">Valid</a> ()=0</td></tr>
 <tr class="memdesc:af3f24f30b8cd7752f04feabaeea7a7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the current location is valid - for example, if we have reached the end of the database, return false. <br /></td></tr>
 <tr class="separator:af3f24f30b8cd7752f04feabaeea7a7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af445a6efff18e6e84ca548b821dbf763"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af445a6efff18e6e84ca548b821dbf763"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1db_1_1_cursor.html">Cursor</a>)</td></tr>
-<tr class="separator:af445a6efff18e6e84ca548b821dbf763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9bd329b2d1b60537420439f4a348964"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9bd329b2d1b60537420439f4a348964"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1db_1_1_cursor.html">Cursor</a>)</td></tr>
+<tr class="separator:ac9bd329b2d1b60537420439f4a348964"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An abstract class for the cursor of the database while reading. </p>
@@ -185,7 +185,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Seek to a specific key (or if the key does not exist, seek to the immediate next). </p>
 <p>This is optional for dbs, and in default, SupportsSeek() returns false meaning that the db cursor does not support it. </p>
 
-<p>Implemented in <a class="el" href="classcaffe2_1_1db_1_1_blobs_queue_d_b_cursor.html#ae8a6575ac4f019f812e2c15daebef393">caffe2::db::BlobsQueueDBCursor</a>, <a class="el" href="classcaffe2_1_1db_1_1_l_m_d_b_cursor.html#a09445555ecc3270f2893b502b88c159a">caffe2::db::LMDBCursor</a>, <a class="el" href="classcaffe2_1_1db_1_1_rocks_d_b_cursor.html#a07b8f7e4e0f23783218959deea64d4ee">caffe2::db::RocksDBCursor</a>, <a class="el" href="classcaffe2_1_1db_1_1_zmq_d_b_cursor.html#adc9c2cb14aed41043e2dfb3d3cb7b4b1">caffe2::db::ZmqDBCursor</a>, <a class="el" href="classcaffe2_1_1db_1_1_mini_d_b_cursor.html#a7ad75f0ead5e22c35c569c198a1efe2d">caffe2::db::MiniDBCursor</a>, <a class="el" href="classcaffe2_1_1db_1_1_level_d_b_cursor.html#a0dc1d262ad596e65b06b1d6cd3cf24df">caffe2::db::LevelDBCursor</a>, and <a class="el" href="classcaffe2_1_1db_1_1_proto_d_b_cursor.html#abfb231914426fd9dc622d08e242e3307">caffe2::db::ProtoDBCursor</a>.</p>
+<p>Implemented in <a class="el" href="classcaffe2_1_1db_1_1_blobs_queue_d_b_cursor.html#ae8a6575ac4f019f812e2c15daebef393">caffe2::db::BlobsQueueDBCursor</a>, <a class="el" href="classcaffe2_1_1db_1_1_rocks_d_b_cursor.html#a07b8f7e4e0f23783218959deea64d4ee">caffe2::db::RocksDBCursor</a>, <a class="el" href="classcaffe2_1_1db_1_1_l_m_d_b_cursor.html#a09445555ecc3270f2893b502b88c159a">caffe2::db::LMDBCursor</a>, <a class="el" href="classcaffe2_1_1db_1_1_zmq_d_b_cursor.html#adc9c2cb14aed41043e2dfb3d3cb7b4b1">caffe2::db::ZmqDBCursor</a>, <a class="el" href="classcaffe2_1_1db_1_1_mini_d_b_cursor.html#a7ad75f0ead5e22c35c569c198a1efe2d">caffe2::db::MiniDBCursor</a>, <a class="el" href="classcaffe2_1_1db_1_1_level_d_b_cursor.html#a0dc1d262ad596e65b06b1d6cd3cf24df">caffe2::db::LevelDBCursor</a>, and <a class="el" href="classcaffe2_1_1db_1_1_proto_d_b_cursor.html#abfb231914426fd9dc622d08e242e3307">caffe2::db::ProtoDBCursor</a>.</p>
 
 </div>
 </div>
@@ -196,7 +196,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -219,7 +219,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['_5fcopy',['_Copy',['../classcaffe2_1_1_type_meta.html#acffaf281ee0421d732b0c4be00ea52cd',1,'caffe2::TypeMeta']]],
-  ['_5fcopynotallowed',['_CopyNotAllowed',['../classcaffe2_1_1_type_meta.html#ae539cfbcd826cd25152f3bacaa683d3c',1,'caffe2::TypeMeta']]],
-  ['_5fctor',['_Ctor',['../classcaffe2_1_1_type_meta.html#a3e5bd6d2be8c33082190e8f7b9195899',1,'caffe2::TypeMeta']]],
-  ['_5fdtor',['_Dtor',['../classcaffe2_1_1_type_meta.html#adcbb050c54fded128356b5de3621f0a9',1,'caffe2::TypeMeta']]]
+  ['_5fcopy',['_Copy',['../namespacecaffe2_1_1detail.html#a14241cd5c3d5b0a012d4c2bec4d612dc',1,'caffe2::detail']]],
+  ['_5fcopynotallowed',['_CopyNotAllowed',['../namespacecaffe2_1_1detail.html#a0fdcc3131131fbfe3a6c1d0ebba3aff7',1,'caffe2::detail']]],
+  ['_5fplacementdelete',['_PlacementDelete',['../namespacecaffe2_1_1detail.html#afa72930c5329b25f54eb1164705e73ec',1,'caffe2::detail']]],
+  ['_5fplacementnew',['_PlacementNew',['../namespacecaffe2_1_1detail.html#a847fda8c13aaa1f7d189f01772c739db',1,'caffe2::detail']]]
 ];

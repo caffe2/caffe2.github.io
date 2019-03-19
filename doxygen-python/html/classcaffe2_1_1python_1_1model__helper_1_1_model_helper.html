@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -134,9 +134,6 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>get_param_info</b> (se
 <tr class="memitem:ab544020b810dcdd6fa415f1f7b85dfbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab544020b810dcdd6fa415f1f7b85dfbe"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>add_param_DEPRECATED</b> (self, param, key=None, shape=None, length=None)</td></tr>
 <tr class="separator:ab544020b810dcdd6fa415f1f7b85dfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1c710d0973ce1a161780382e218912a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1c710d0973ce1a161780382e218912a"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>param_info</b> (self, grad_type=None, id=None)</td></tr>
-<tr class="separator:ac1c710d0973ce1a161780382e218912a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34c34b19233f300c129511068a21d989"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34c34b19233f300c129511068a21d989"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>AddParameter</b> (self, param, tags=None)</td></tr>
 <tr class="separator:a34c34b19233f300c129511068a21d989"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +176,12 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>GetDevices</b> (self)<
 <tr class="memitem:ab4eebc2b40048f744ac580c02ef7ba5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4eebc2b40048f744ac580c02ef7ba5e"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>__dir__</b> (self)</td></tr>
 <tr class="separator:ab4eebc2b40048f744ac580c02ef7ba5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac705f73bc8f4304d23fbf1f3a13e704c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac705f73bc8f4304d23fbf1f3a13e704c"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>GetCompleteNet</b> (self)</td></tr>
+<tr class="separator:ac705f73bc8f4304d23fbf1f3a13e704c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01042106a8ea304b8c794619328c4270"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01042106a8ea304b8c794619328c4270"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructInitTrainNetfromNet</b> (self, net)</td></tr>
+<tr class="separator:a01042106a8ea304b8c794619328c4270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -234,7 +237,7 @@ defining parameter initializations and operators.
 
     model = model_helper.ModelHelper(name="train_net")
     fc1 = brew.fc(model, input, output, dim_in, dim_out, **kwargs)</pre> 
-<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00074">74</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
+<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00076">76</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aaf9e04831a0c77978227fcb35fe89232"></a>
 <div class="memitem">
@@ -260,7 +263,7 @@ defining parameter initializations and operators.
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Catch-all for all other operators, mostly those without params.</pre> 
-<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00444">444</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
+<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00425">425</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
 
 </div>
 </div>
@@ -337,7 +340,7 @@ d. Call from scope 'scope_b/unshared', with overrides
   {'scope_b/shared': 'scope_b', 'scope_b': 'scope_a'}:
   'scope_a/unshared/w'
 </pre> 
-<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00160">160</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
+<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00162">162</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
 
 </div>
 </div>
@@ -367,7 +370,7 @@ d. Call from scope 'scope_b/unshared', with overrides
 <pre class="fragment">Given a list of parameters returns a dict from a parameter
 to a corresponding gradient
 </pre> 
-<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00353">353</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
+<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00334">334</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
 
 </div>
 </div>
@@ -399,7 +402,7 @@ are such parameters that are not optimized via gradient descent but are
 directly computed from data, such as the running mean and variance
 of Spatial Batch Normalization.
 </pre> 
-<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00410">410</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
+<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00391">391</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
 
 </div>
 </div>
@@ -429,7 +432,7 @@ of Spatial Batch Normalization.
 <pre class="fragment">Returns a map for param =&gt; grad.
 If params is not specified, all parameters will be considered.
 </pre> 
-<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00369">369</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
+<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00350">350</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
 
 </div>
 </div>
@@ -464,7 +467,7 @@ If params is not specified, all parameters will be considered.
 </div><div class="memdoc">
 <pre class="fragment">Returns the params in current namescope
 </pre> 
-<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00297">297</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
+<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00283">283</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
 
 </div>
 </div>
@@ -522,7 +525,7 @@ If params is not specified, all parameters will be considered.
       </table>
 </div><div class="memdoc">
 <pre class="fragment">TensorProtosDBInput.</pre> 
-<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00430">430</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
+<p>Definition at line <a class="el" href="model__helper_8py_source.html#l00411">411</a> of file <a class="el" href="model__helper_8py_source.html">model_helper.py</a>.</p>
 
 </div>
 </div>
@@ -533,7 +536,7 @@ If params is not specified, all parameters will be considered.
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -556,7 +559,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

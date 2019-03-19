@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -114,16 +114,16 @@ Inheritance diagram for caffe2::MutexSerializer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a61571bb8b5146438a42cd7676e4b7b62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_mutex_serializer.html#a61571bb8b5146438a42cd7676e4b7b62">Serialize</a> (const <a class="el" href="classcaffe2_1_1_blob.html">Blob</a> &amp;blob, const string &amp;name, BlobSerializerBase::SerializationAcceptor acceptor) override</td></tr>
-<tr class="memdesc:a61571bb8b5146438a42cd7676e4b7b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a std::unique_ptr&lt;std::mutex&gt;.  <a href="#a61571bb8b5146438a42cd7676e4b7b62">More...</a><br /></td></tr>
-<tr class="separator:a61571bb8b5146438a42cd7676e4b7b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b27619b6e8610ed7a46cb82021b51bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_mutex_serializer.html#a4b27619b6e8610ed7a46cb82021b51bb">Serialize</a> (const void *pointer, <a class="el" href="classcaffe2_1_1_type_meta.html">TypeMeta</a> typeMeta, const string &amp;name, BlobSerializerBase::SerializationAcceptor acceptor) override</td></tr>
+<tr class="memdesc:a4b27619b6e8610ed7a46cb82021b51bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a std::unique_ptr&lt;std::mutex&gt;.  <a href="#a4b27619b6e8610ed7a46cb82021b51bb">More...</a><br /></td></tr>
+<tr class="separator:a4b27619b6e8610ed7a46cb82021b51bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaffe2_1_1_blob_serializer_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1_blob_serializer_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1_blob_serializer_base.html">caffe2::BlobSerializerBase</a></td></tr>
-<tr class="memitem:a3ba21b968f45ca3b737ee209eebd37aa inherit pub_methods_classcaffe2_1_1_blob_serializer_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_blob_serializer_base.html#a3ba21b968f45ca3b737ee209eebd37aa">Serialize</a> (const <a class="el" href="classcaffe2_1_1_blob.html">Blob</a> &amp;blob, const std::string &amp;name, SerializationAcceptor acceptor)=0</td></tr>
-<tr class="memdesc:a3ba21b968f45ca3b737ee209eebd37aa inherit pub_methods_classcaffe2_1_1_blob_serializer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The virtual function that returns a serialized string for the input blob.  <a href="#a3ba21b968f45ca3b737ee209eebd37aa">More...</a><br /></td></tr>
-<tr class="separator:a3ba21b968f45ca3b737ee209eebd37aa inherit pub_methods_classcaffe2_1_1_blob_serializer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad23dc70230e15925d3d7b0ae3129cf86 inherit pub_methods_classcaffe2_1_1_blob_serializer_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad23dc70230e15925d3d7b0ae3129cf86"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeWithChunkSize</b> (const <a class="el" href="classcaffe2_1_1_blob.html">Blob</a> &amp;blob, const std::string &amp;name, SerializationAcceptor acceptor, int)</td></tr>
-<tr class="separator:ad23dc70230e15925d3d7b0ae3129cf86 inherit pub_methods_classcaffe2_1_1_blob_serializer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f46ad672d8a23f91b429598b12dff7 inherit pub_methods_classcaffe2_1_1_blob_serializer_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_blob_serializer_base.html#a86f46ad672d8a23f91b429598b12dff7">Serialize</a> (const void *pointer, <a class="el" href="classcaffe2_1_1_type_meta.html">TypeMeta</a> typeMeta, const std::string &amp;name, SerializationAcceptor acceptor)=0</td></tr>
+<tr class="memdesc:a86f46ad672d8a23f91b429598b12dff7 inherit pub_methods_classcaffe2_1_1_blob_serializer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The virtual function that returns a serialized string for the input blob.  <a href="#a86f46ad672d8a23f91b429598b12dff7">More...</a><br /></td></tr>
+<tr class="separator:a86f46ad672d8a23f91b429598b12dff7 inherit pub_methods_classcaffe2_1_1_blob_serializer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d885d58c4036251da999ba86513195 inherit pub_methods_classcaffe2_1_1_blob_serializer_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7d885d58c4036251da999ba86513195"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeWithChunkSize</b> (const void *pointer, <a class="el" href="classcaffe2_1_1_type_meta.html">TypeMeta</a> typeMeta, const std::string &amp;name, SerializationAcceptor acceptor, int)</td></tr>
+<tr class="separator:ab7d885d58c4036251da999ba86513195 inherit pub_methods_classcaffe2_1_1_blob_serializer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -134,9 +134,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SerializationAccepto
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="iter__op_8h_source.html#l00082">82</a> of file <a class="el" href="iter__op_8h_source.html">iter_op.h</a>.</p>
+<p>Definition at line <a class="el" href="iter__op_8h_source.html#l00083">83</a> of file <a class="el" href="iter__op_8h_source.html">iter_op.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a61571bb8b5146438a42cd7676e4b7b62"></a>
+<a class="anchor" id="a4b27619b6e8610ed7a46cb82021b51bb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -146,8 +146,14 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SerializationAccepto
         <tr>
           <td class="memname">void caffe2::MutexSerializer::Serialize </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classcaffe2_1_1_blob.html">Blob</a> &amp;&#160;</td>
-          <td class="paramname"><em>blob</em>, </td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcaffe2_1_1_type_meta.html">TypeMeta</a>&#160;</td>
+          <td class="paramname"><em>typeMeta</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -177,7 +183,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SerializationAccepto
 <p>Serializes a std::unique_ptr&lt;std::mutex&gt;. </p>
 <p>Note that this blob has to contain std::unique_ptr&lt;std::mutex&gt;, otherwise this function produces a fatal error. </p>
 
-<p>Definition at line <a class="el" href="iter__op_8cc_source.html#l00005">5</a> of file <a class="el" href="iter__op_8cc_source.html">iter_op.cc</a>.</p>
+<p>Definition at line <a class="el" href="iter__op_8cc_source.html#l00010">10</a> of file <a class="el" href="iter__op_8cc_source.html">iter_op.cc</a>.</p>
 
 </div>
 </div>
@@ -189,7 +195,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SerializationAccepto
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:59 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:55 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -212,7 +218,7 @@ Generated on Thu Apr 19 2018 13:03:59 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

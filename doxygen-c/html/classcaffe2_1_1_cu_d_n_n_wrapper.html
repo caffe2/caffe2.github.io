@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -135,15 +135,15 @@ template&lt;typename F &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:ae80753cb149bd22b2ea1222b181ff1dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae80753cb149bd22b2ea1222b181ff1dc"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>PerGPUCuDNNStates</b> = std::array&lt; std::array&lt; <a class="el" href="structcaffe2_1_1_cu_d_n_n_wrapper_1_1_synced_cu_d_n_n_state.html">SyncedCuDNNState</a>, CAFFE2_COMPILE_TIME_MAX_CUDNN_STATES &gt;, CAFFE2_COMPILE_TIME_MAX_GPUS &gt;</td></tr>
-<tr class="separator:ae80753cb149bd22b2ea1222b181ff1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46925e00646ce1dbb274f3c6aff6d0a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46925e00646ce1dbb274f3c6aff6d0a1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PerGPUCuDNNStates</b> = std::array&lt; std::array&lt; <a class="el" href="structcaffe2_1_1_cu_d_n_n_wrapper_1_1_synced_cu_d_n_n_state.html">SyncedCuDNNState</a>, CAFFE2_COMPILE_TIME_MAX_CUDNN_STATES &gt;, C10_COMPILE_TIME_MAX_GPUS &gt;</td></tr>
+<tr class="separator:a46925e00646ce1dbb274f3c6aff6d0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6525d33c8148461937d2625adb5f8f4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6525d33c8148461937d2625adb5f8f4f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_cu_d_n_n_wrapper.html">CuDNNWrapper</a>)</td></tr>
-<tr class="separator:a6525d33c8148461937d2625adb5f8f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f1917c47e67866e2cf9593b40653c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04f1917c47e67866e2cf9593b40653c4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_cu_d_n_n_wrapper.html">CuDNNWrapper</a>)</td></tr>
+<tr class="separator:a04f1917c47e67866e2cf9593b40653c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -167,7 +167,7 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>CA
 <div class="textblock"><p><a class="el" href="classcaffe2_1_1_cu_d_n_n_wrapper.html" title="CuDNNWrapper is a class that wraps the cudnn handles and cudnn workspaces. ">CuDNNWrapper</a> is a class that wraps the cudnn handles and cudnn workspaces. </p>
 <p>The wrapper ensures that for each thread and each gpu, there is one identical cudnn handle, which is also associated with the thread-local per-device cuda stream. The wrapper also hosts the device-specific cudnn workspace (scratch space for some cudnn functions). </p>
 
-<p>Definition at line <a class="el" href="cudnn__wrappers_8h_source.html#l00104">104</a> of file <a class="el" href="cudnn__wrappers_8h_source.html">cudnn_wrappers.h</a>.</p>
+<p>Definition at line <a class="el" href="cudnn__wrappers_8h_source.html#l00142">142</a> of file <a class="el" href="cudnn__wrappers_8h_source.html">cudnn_wrappers.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0efa9399b67e409f822eb979d61e0824"></a>
 <div class="memitem">
@@ -194,7 +194,7 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>CA
 <p>Creates a cudnn wrapper associated with a <a class="el" href="classcaffe2_1_1_c_u_d_a_context.html">CUDAContext</a> object. </p>
 <p>Note that the <a class="el" href="classcaffe2_1_1_c_u_d_a_context.html">CUDAContext</a> object should outlive the <a class="el" href="classcaffe2_1_1_cu_d_n_n_wrapper.html" title="CuDNNWrapper is a class that wraps the cudnn handles and cudnn workspaces. ">CuDNNWrapper</a>. </p>
 
-<p>Definition at line <a class="el" href="cudnn__wrappers_8h_source.html#l00110">110</a> of file <a class="el" href="cudnn__wrappers_8h_source.html">cudnn_wrappers.h</a>.</p>
+<p>Definition at line <a class="el" href="cudnn__wrappers_8h_source.html#l00148">148</a> of file <a class="el" href="cudnn__wrappers_8h_source.html">cudnn_wrappers.h</a>.</p>
 
 </div>
 </div>
@@ -206,7 +206,7 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>CA
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:53 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -229,7 +229,7 @@ Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

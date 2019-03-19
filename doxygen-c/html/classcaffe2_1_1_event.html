@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -111,12 +111,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a42a92c6d6c816e215b388731657e9273"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42a92c6d6c816e215b388731657e9273"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (const DeviceOption &amp;option)</td></tr>
 <tr class="separator:a42a92c6d6c816e215b388731657e9273"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24c941b35ecbf253ec880459938e76d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24c941b35ecbf253ec880459938e76d8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Record</b> (int recorder_type, const void *context, const char *err_msg=nullptr)</td></tr>
-<tr class="separator:a24c941b35ecbf253ec880459938e76d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8f5f1ccf79b2dbfe94ba2d4a7998d68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8f5f1ccf79b2dbfe94ba2d4a7998d68"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Wait</b> (int waiter_type, void *context) const </td></tr>
-<tr class="separator:ae8f5f1ccf79b2dbfe94ba2d4a7998d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4627b793a127e5d336121c8f07cb61e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4627b793a127e5d336121c8f07cb61e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Record</b> (DeviceType recorder_type, const void *context, const char *err_msg=nullptr)</td></tr>
+<tr class="separator:ab4627b793a127e5d336121c8f07cb61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49ec56a7ed2c61b47bffa93b60c111e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae49ec56a7ed2c61b47bffa93b60c111e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Wait</b> (DeviceType waiter_type, void *context) const </td></tr>
+<tr class="separator:ae49ec56a7ed2c61b47bffa93b60c111e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed2977dc7daa37c3f9e08d052508ca1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed2977dc7daa37c3f9e08d052508ca1b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Finish</b> () const </td></tr>
 <tr class="separator:aed2977dc7daa37c3f9e08d052508ca1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,12 +141,30 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFinished</b> () con
 <tr class="memitem:a7bd719cb4b2cae7ee51f9f2238e4d2ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bd719cb4b2cae7ee51f9f2238e4d2ac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFinished</b> (const char *err_msg=nullptr)</td></tr>
 <tr class="separator:a7bd719cb4b2cae7ee51f9f2238e4d2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e7f709ee96299ff9282fea7892524e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9e7f709ee96299ff9282fea7892524e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsCallback</b> () const </td></tr>
+<tr class="separator:ad9e7f709ee96299ff9282fea7892524e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639744f990e065e5d7a67f98c4705e9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a639744f990e065e5d7a67f98c4705e9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCallback</b> (EventCallbackFunction callback)</td></tr>
+<tr class="separator:a639744f990e065e5d7a67f98c4705e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d5f837707b9f3f95e7fe2c0ecd7e9ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d5f837707b9f3f95e7fe2c0ecd7e9ea"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanSchedule</b> (const <a class="el" href="classcaffe2_1_1_event.html">Event</a> &amp;child_event, bool supports_async) const </td></tr>
 <tr class="separator:a7d5f837707b9f3f95e7fe2c0ecd7e9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3871b2f9c194c4f87fe32fc408ccb857"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3871b2f9c194c4f87fe32fc408ccb857"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetType</b> () const </td></tr>
 <tr class="separator:a3871b2f9c194c4f87fe32fc408ccb857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261b2da230116488f344bb4cf844b20c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a261b2da230116488f344bb4cf844b20c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFinishedWithException</b> (const char *err_msg=nullptr)</td></tr>
+<tr class="separator:a261b2da230116488f344bb4cf844b20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb5e284bead4a3e8feefa9b9f232dc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdb5e284bead4a3e8feefa9b9f232dc3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasException</b> () const </td></tr>
+<tr class="separator:afdb5e284bead4a3e8feefa9b9f232dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163c4e395711723f8b5ca97e3db75115"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a163c4e395711723f8b5ca97e3db75115"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>ExceptionTimestamp</b> () const </td></tr>
+<tr class="separator:a163c4e395711723f8b5ca97e3db75115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa094ec4714a247db71bc5cd9f08ac1cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa094ec4714a247db71bc5cd9f08ac1cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RethrowException</b> () const </td></tr>
+<tr class="separator:aa094ec4714a247db71bc5cd9f08ac1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -163,41 +181,45 @@ std::shared_ptr&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a6726f35e585eea8ab6da9b916ccd46c1"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6726f35e585eea8ab6da9b916ccd46c1"></a>
-template&lt;int d&gt; </td></tr>
+template&lt;DeviceType t&gt; </td></tr>
 <tr class="memitem:a6726f35e585eea8ab6da9b916ccd46c1"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EventCreateFunctionRegisterer</b></td></tr>
 <tr class="separator:a6726f35e585eea8ab6da9b916ccd46c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4638126b2e006d9cda85262bd89d4203"><td class="memTemplParams" colspan="2"><a class="anchor" id="a4638126b2e006d9cda85262bd89d4203"></a>
-template&lt;int d&gt; </td></tr>
+template&lt;DeviceType t&gt; </td></tr>
 <tr class="memitem:a4638126b2e006d9cda85262bd89d4203"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EventRecordFunctionRegisterer</b></td></tr>
 <tr class="separator:a4638126b2e006d9cda85262bd89d4203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12da8a494b3801f1d8353ee0aa414319"><td class="memTemplParams" colspan="2"><a class="anchor" id="a12da8a494b3801f1d8353ee0aa414319"></a>
-template&lt;int w, int d&gt; </td></tr>
+template&lt;DeviceType w, DeviceType d&gt; </td></tr>
 <tr class="memitem:a12da8a494b3801f1d8353ee0aa414319"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EventWaitFunctionRegisterer</b></td></tr>
 <tr class="separator:a12da8a494b3801f1d8353ee0aa414319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6fa786558ec57c2e4f8b86d4a5ef1fc"><td class="memTemplParams" colspan="2"><a class="anchor" id="af6fa786558ec57c2e4f8b86d4a5ef1fc"></a>
-template&lt;int d&gt; </td></tr>
+template&lt;DeviceType t&gt; </td></tr>
 <tr class="memitem:af6fa786558ec57c2e4f8b86d4a5ef1fc"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EventFinishFunctionRegisterer</b></td></tr>
 <tr class="separator:af6fa786558ec57c2e4f8b86d4a5ef1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a761c76622d7bd9ec94127fbc18a12ea1"><td class="memTemplParams" colspan="2"><a class="anchor" id="a761c76622d7bd9ec94127fbc18a12ea1"></a>
-template&lt;int d&gt; </td></tr>
+template&lt;DeviceType t&gt; </td></tr>
 <tr class="memitem:a761c76622d7bd9ec94127fbc18a12ea1"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EventQueryFunctionRegisterer</b></td></tr>
 <tr class="separator:a761c76622d7bd9ec94127fbc18a12ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0127735d71c9054786187ec671da7404"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0127735d71c9054786187ec671da7404"></a>
-template&lt;int d&gt; </td></tr>
+template&lt;DeviceType t&gt; </td></tr>
 <tr class="memitem:a0127735d71c9054786187ec671da7404"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EventErrorMessageFunctionRegisterer</b></td></tr>
 <tr class="separator:a0127735d71c9054786187ec671da7404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d67ed825a38089bc242378472137ca"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae7d67ed825a38089bc242378472137ca"></a>
-template&lt;int d&gt; </td></tr>
+template&lt;DeviceType t&gt; </td></tr>
 <tr class="memitem:ae7d67ed825a38089bc242378472137ca"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EventSetFinishedFunctionRegisterer</b></td></tr>
 <tr class="separator:ae7d67ed825a38089bc242378472137ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e542c95a6f779abd51aab412fe143b"><td class="memTemplParams" colspan="2"><a class="anchor" id="ab1e542c95a6f779abd51aab412fe143b"></a>
+template&lt;DeviceType t&gt; </td></tr>
+<tr class="memitem:ab1e542c95a6f779abd51aab412fe143b"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EventSetCallbackFunctionRegisterer</b></td></tr>
+<tr class="separator:ab1e542c95a6f779abd51aab412fe143b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32f36f151f3ca3291f407e8130bba143"><td class="memTemplParams" colspan="2"><a class="anchor" id="a32f36f151f3ca3291f407e8130bba143"></a>
-template&lt;int d&gt; </td></tr>
+template&lt;DeviceType t&gt; </td></tr>
 <tr class="memitem:a32f36f151f3ca3291f407e8130bba143"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EventResetFunctionRegisterer</b></td></tr>
 <tr class="separator:a32f36f151f3ca3291f407e8130bba143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="event_8h_source.html#l00050">50</a> of file <a class="el" href="event_8h_source.html">event.h</a>.</p>
+<p>Definition at line <a class="el" href="event_8h_source.html#l00058">58</a> of file <a class="el" href="event_8h_source.html">event.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>caffe2/core/<a class="el" href="event_8h_source.html">event.h</a></li>
 <li>caffe2/core/<a class="el" href="event_8cc_source.html">event.cc</a></li>
@@ -206,7 +228,7 @@ template&lt;int d&gt; </td></tr>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:54 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -229,7 +251,7 @@ Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

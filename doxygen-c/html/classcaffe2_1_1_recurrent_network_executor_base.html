@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -124,10 +124,10 @@ Inheritance diagram for caffe2::RecurrentNetworkExecutorBase:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aeef6e93037470265bb797ec4f1458137"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeef6e93037470265bb797ec4f1458137"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Run</b> (int T)=0</td></tr>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Run</b> (int <a class="el" href="struct_t.html">T</a>)=0</td></tr>
 <tr class="separator:aeef6e93037470265bb797ec4f1458137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c849ee9066364b6db965427a1a1afa9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c849ee9066364b6db965427a1a1afa9"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunBackwards</b> (int T)=0</td></tr>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunBackwards</b> (int <a class="el" href="struct_t.html">T</a>)=0</td></tr>
 <tr class="separator:a6c849ee9066364b6db965427a1a1afa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac122275d245583e313dace8adaf11104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_recurrent_network_executor_base.html#ac122275d245583e313dace8adaf11104">EnsureTimestepInitialized</a> (int t, <a class="el" href="classcaffe2_1_1_workspace.html">Workspace</a> *ws, const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1_observer_base.html">ObserverBase</a>&lt; <a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> &gt;&gt;&gt; &amp;observers_list)</td></tr>
 <tr class="memdesc:ac122275d245583e313dace8adaf11104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callers must call EnsureTimestepInitialized before starting execution for each of the relevant timesteps.  <a href="#ac122275d245583e313dace8adaf11104">More...</a><br /></td></tr>
@@ -196,7 +196,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_parallel_timesteps
 <p>Its main benefit over running each RNN timestep as a separate net is that it can run ops in subsequent timesteps in parallel when possible. For example, multi-layer LSTMs allow for timestep parallelism because next timestep's lower layer can start executing at the same time as the same timestep's upper layer.</p>
 <p>There are two implementations of the RNN executor: one for CPUs (<a class="el" href="classcaffe2_1_1_threaded_recurrent_network_executor.html">ThreadedRecurrentNetworkExecutor</a>) and another for GPUs (<a class="el" href="classcaffe2_1_1_c_u_d_a_recurrent_network_executor.html">CUDARecurrentNetworkExecutor</a>). </p>
 
-<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00032">32</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
+<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00031">31</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac122275d245583e313dace8adaf11104"></a>
 <div class="memitem">
@@ -239,7 +239,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_parallel_timesteps
 <p>Callers must call EnsureTimestepInitialized before starting execution for each of the relevant timesteps. </p>
 <p>If timestep was initialized before, this is a no-op. First time this is called the dependencies of the operators in timestep are analyzed, and that incurs higher overhead than subsequent calls. </p>
 
-<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00066">66</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
+<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00074">74</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_parallel_timesteps
 <p>For debug purposes, print the dependency structure. </p>
 <p>Set rnn_executor_debug=1 in the <a class="el" href="classcaffe2_1_1_recurrent_network_op.html">RecurrentNetworkOp</a> to enable. </p>
 
-<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00424">424</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
+<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00418">418</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +297,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_parallel_timesteps
 <p>Set limit for the number of timesteps that run in parallel. </p>
 <p>Useful for forward-only execution when we rotate workspaces over timesteps, i.e when timestep[t] and timestep[t + p] have same workspace. </p>
 
-<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00191">191</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
+<p>Definition at line <a class="el" href="recurrent__network__executor_8h_source.html#l00185">185</a> of file <a class="el" href="recurrent__network__executor_8h_source.html">recurrent_network_executor.h</a>.</p>
 
 </div>
 </div>
@@ -308,7 +308,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_parallel_timesteps
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:56 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -331,7 +331,7 @@ Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

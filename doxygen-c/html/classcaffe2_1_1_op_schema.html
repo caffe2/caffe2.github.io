@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -100,13 +100,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a>  </div>
   <div class="headertitle">
 <div class="title">caffe2::OpSchema Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A class to record the schema of an op.  
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> class to record the schema of an op.  
  <a href="classcaffe2_1_1_op_schema.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="operator__schema_8h_source.html">operator_schema.h</a>&gt;</code></p>
@@ -134,9 +135,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a13854cc9d595235b466b2f3855f359a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13854cc9d595235b466b2f3855f359a2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>OpSchema</b> (const string &amp;<a class="el" href="classcaffe2_1_1_op_schema.html#a04ce12463029b41126ac79c701783607">file</a>, const int <a class="el" href="classcaffe2_1_1_op_schema.html#a6bcff5ce96e5dafcb5ce3a994630eecd">line</a>)</td></tr>
-<tr class="separator:a13854cc9d595235b466b2f3855f359a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c797be9aa910027968a21d601ba11dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c797be9aa910027968a21d601ba11dc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>OpSchema</b> (const string &amp;type, const string &amp;<a class="el" href="classcaffe2_1_1_op_schema.html#a04ce12463029b41126ac79c701783607">file</a>, const int <a class="el" href="classcaffe2_1_1_op_schema.html#a6bcff5ce96e5dafcb5ce3a994630eecd">line</a>)</td></tr>
+<tr class="separator:a7c797be9aa910027968a21d601ba11dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04ce12463029b41126ac79c701783607"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04ce12463029b41126ac79c701783607"></a>
 const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#a04ce12463029b41126ac79c701783607">file</a> () const </td></tr>
 <tr class="memdesc:a04ce12463029b41126ac79c701783607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the file that the op schema is registered from. <br /></td></tr>
@@ -155,7 +156,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:afbd651b38e372475519397800164e262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a775a361c6c260fe0ec81d10f901d0bb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a775a361c6c260fe0ec81d10f901d0bb4"></a>
 <a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#a775a361c6c260fe0ec81d10f901d0bb4">NumInputs</a> (int n)</td></tr>
-<tr class="memdesc:a775a361c6c260fe0ec81d10f901d0bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single input. <br /></td></tr>
+<tr class="memdesc:a775a361c6c260fe0ec81d10f901d0bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> single input. <br /></td></tr>
 <tr class="separator:a775a361c6c260fe0ec81d10f901d0bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e514c89369f0e6db9f38eee3dd2a34f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e514c89369f0e6db9f38eee3dd2a34f"></a>
 <a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#a4e514c89369f0e6db9f38eee3dd2a34f">NumInputs</a> (int min, int max)</td></tr>
@@ -171,7 +172,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:aab53436c850d74406e81e8c3601e4f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a628f3ab43315c5461b5b635621f953e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a628f3ab43315c5461b5b635621f953e3"></a>
 <a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#a628f3ab43315c5461b5b635621f953e3">NumOutputs</a> (int n)</td></tr>
-<tr class="memdesc:a628f3ab43315c5461b5b635621f953e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single output. <br /></td></tr>
+<tr class="memdesc:a628f3ab43315c5461b5b635621f953e3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> single output. <br /></td></tr>
 <tr class="separator:a628f3ab43315c5461b5b635621f953e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a699d42d5d9aaf230bf5d8de5da6bee91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a699d42d5d9aaf230bf5d8de5da6bee91"></a>
 <a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#a699d42d5d9aaf230bf5d8de5da6bee91">NumOutputs</a> (int min, int max)</td></tr>
@@ -223,6 +224,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#a8fe584509997c4bbace5202e051f1475">InheritOnnxSchema</a> (const std::string &amp;onnx_schema_name)</td></tr>
 <tr class="memdesc:a8fe584509997c4bbace5202e051f1475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the corresponding onnx schema name. <br /></td></tr>
 <tr class="separator:a8fe584509997c4bbace5202e051f1475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ef3fce1db6252ba8d27a5bf1fcecdf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76ef3fce1db6252ba8d27a5bf1fcecdf"></a>
+<a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#a76ef3fce1db6252ba8d27a5bf1fcecdf">InheritOnnxSchema</a> ()</td></tr>
+<tr class="memdesc:a76ef3fce1db6252ba8d27a5bf1fcecdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut to InheritOnnxSchema(type_) <br /></td></tr>
+<tr class="separator:a76ef3fce1db6252ba8d27a5bf1fcecdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0ddf6f2cc76cef36bf4c6f3683e9070"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0ddf6f2cc76cef36bf4c6f3683e9070"></a>
 <a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#ac0ddf6f2cc76cef36bf4c6f3683e9070">IdenticalTypeAndShape</a> ()</td></tr>
 <tr class="memdesc:ac0ddf6f2cc76cef36bf4c6f3683e9070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the tensor inference function to produce the same output as the input. <br /></td></tr>
@@ -233,12 +238,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a640339934a14711ad35af48f8eb9955f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a640339934a14711ad35af48f8eb9955f"></a>
 <a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>IdenticalTypeAndShapeOfInputDim</b> (int idx, int dim)</td></tr>
 <tr class="separator:a640339934a14711ad35af48f8eb9955f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea81b036a1de682d3948aa805c43d19d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea81b036a1de682d3948aa805c43d19d"></a>
+<a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>IdenticalTypeAndShapeOfMultipleInputs</b> (const vector&lt; int &gt; &amp;indices)</td></tr>
+<tr class="separator:aea81b036a1de682d3948aa805c43d19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cc3dda738a70eae39b9efa7ef5e9f14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cc3dda738a70eae39b9efa7ef5e9f14"></a>
 <a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ScalarType</b> (::caffe2::TensorProto_DataType dt)</td></tr>
 <tr class="separator:a6cc3dda738a70eae39b9efa7ef5e9f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac76e2d4c9aa3d0d5856a82711a749ab5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac76e2d4c9aa3d0d5856a82711a749ab5"></a>
 vector&lt; TensorShape &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#ac76e2d4c9aa3d0d5856a82711a749ab5">InferTensor</a> (const OperatorDef &amp;def, const vector&lt; TensorShape &gt; &amp;input_type_shape) const </td></tr>
-<tr class="memdesc:ac76e2d4c9aa3d0d5856a82711a749ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to allow one to infer the type and shape from the op schema. <br /></td></tr>
+<tr class="memdesc:ac76e2d4c9aa3d0d5856a82711a749ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> function to allow one to infer the type and shape from the op schema. <br /></td></tr>
 <tr class="separator:ac76e2d4c9aa3d0d5856a82711a749ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61d74a03e1ed793daa7879816a33cca7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61d74a03e1ed793daa7879816a33cca7"></a>
 <a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#a61d74a03e1ed793daa7879816a33cca7">CostInferenceFunction</a> (<a class="el" href="classcaffe2_1_1_op_schema.html#a23a13dd72c0a1d2157969888ed85970f">CostInferenceFunctionType</a> function)</td></tr>
@@ -273,7 +281,7 @@ struct <a class="el" href="structcaffe2_1_1_op_schema_1_1_cost.html">Cost</a>&#1
 <tr class="separator:a799dad0df384a071e2374fcf70683b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2004e2bf609df00b021bc8ffccb7488a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2004e2bf609df00b021bc8ffccb7488a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#a2004e2bf609df00b021bc8ffccb7488a">CalculateOutput</a> (int num_input) const </td></tr>
-<tr class="memdesc:a2004e2bf609df00b021bc8ffccb7488a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to allow one to get the number of outputs based on the number of inputs, if this schema supports it. <br /></td></tr>
+<tr class="memdesc:a2004e2bf609df00b021bc8ffccb7488a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> function to allow one to get the number of outputs based on the number of inputs, if this schema supports it. <br /></td></tr>
 <tr class="separator:a2004e2bf609df00b021bc8ffccb7488a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fc62b03cd37170d305fe75525748e49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fc62b03cd37170d305fe75525748e49"></a>
 const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>onnx_schema</b> () const </td></tr>
@@ -302,6 +310,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>num_inputs_outputs_al
 <tr class="memitem:af9e7e117775bd64323ab5efcbc6cbda8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9e7e117775bd64323ab5efcbc6cbda8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>inf</b> () const </td></tr>
 <tr class="separator:af9e7e117775bd64323ab5efcbc6cbda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9491528276269b612aa2ce04d1a777"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d9491528276269b612aa2ce04d1a777"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>inplace_enforced</b> (int x, int y) const </td></tr>
+<tr class="separator:a7d9491528276269b612aa2ce04d1a777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa586fbfe874c26a7db1097c5d04b0be2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa586fbfe874c26a7db1097c5d04b0be2"></a>
 const std::vector&lt; <a class="el" href="structcaffe2_1_1_op_schema_1_1_argument.html">Argument</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>args</b> () const </td></tr>
 <tr class="separator:aa586fbfe874c26a7db1097c5d04b0be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,19 +335,41 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>inputs_can_cross_devi
 std::pair&lt; std::vector&lt; DeviceOption &gt;, std::vector&lt; DeviceOption &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#af3087a3caba42306a85b49d291c4ac49">InferDevice</a> (const OperatorDef &amp;def) const </td></tr>
 <tr class="memdesc:af3087a3caba42306a85b49d291c4ac49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Infer required device location of an op's inputs and outputs. <br /></td></tr>
 <tr class="separator:af3087a3caba42306a85b49d291c4ac49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71738faed4e100beef921de6ff2a6ea1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71738faed4e100beef921de6ff2a6ea1"></a>
+<a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>WeightedValueKeyLengthInputFillers</b> (size_t value_index, size_t key_index, size_t length_index, size_t weight_index)</td></tr>
+<tr class="separator:a71738faed4e100beef921de6ff2a6ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e769200ae20ed4c022c92335d4c2d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3e769200ae20ed4c022c92335d4c2d1"></a>
+<a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ValueKeyLengthInputFillers</b> (size_t value_index, size_t key_index, size_t length_index)</td></tr>
+<tr class="separator:ad3e769200ae20ed4c022c92335d4c2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a55d8c1d4334fe2e620ac2887b42c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57a55d8c1d4334fe2e620ac2887b42c3"></a>
+<a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ValueLengthInputFillers</b> (size_t value_index, size_t length_index)</td></tr>
+<tr class="separator:a57a55d8c1d4334fe2e620ac2887b42c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448da5e8979ab483e2e1c87c7e1c062c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a448da5e8979ab483e2e1c87c7e1c062c"></a>
+<a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>DisallowInputFillers</b> ()</td></tr>
+<tr class="separator:a448da5e8979ab483e2e1c87c7e1c062c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb88c1a7a106bcdd74f4e5bd2dcc9442"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb88c1a7a106bcdd74f4e5bd2dcc9442"></a>
+std::vector&lt; <a class="el" href="classcaffe2_1_1_tensor_filler.html">TensorFiller</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InputFillers</b> (const std::vector&lt; std::vector&lt; int64_t &gt;&gt; &amp;shapes) const </td></tr>
+<tr class="separator:abb88c1a7a106bcdd74f4e5bd2dcc9442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:afdce21f47ce7356877ebfccfa843a2cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdce21f47ce7356877ebfccfa843a2cb"></a>
+static TensorInferenceFunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_op_schema.html#afdce21f47ce7356877ebfccfa843a2cb">NeedsAllInputShapes</a> (TensorInferenceFunctionType f)</td></tr>
+<tr class="memdesc:afdce21f47ce7356877ebfccfa843a2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> wrapper that makes an infer tensor function to return unknown shape for all outputs if any one of the inputs has unknown shape. <br /></td></tr>
+<tr class="separator:afdce21f47ce7356877ebfccfa843a2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a33634d21ac14f9c7d2e55f6707e131fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33634d21ac14f9c7d2e55f6707e131fa"></a>
-std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, const <a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;schema)</td></tr>
-<tr class="separator:a33634d21ac14f9c7d2e55f6707e131fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436c299c988bfd69849d3dddc0e82c5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a436c299c988bfd69849d3dddc0e82c5e"></a>
+CAFFE2_API friend std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, const <a class="el" href="classcaffe2_1_1_op_schema.html">OpSchema</a> &amp;schema)</td></tr>
+<tr class="separator:a436c299c988bfd69849d3dddc0e82c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class to record the schema of an op. </p>
+<div class="textblock"><p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> class to record the schema of an op. </p>
 <p><a class="el" href="classcaffe2_1_1_op_schema.html" title="A class to record the schema of an op. ">OpSchema</a> records the common interface of an op specified by its name. This is optional for each operator implemented in Caffe2 but is strongly recommended.</p>
 <p>To register an <a class="el" href="classcaffe2_1_1_op_schema.html" title="A class to record the schema of an op. ">OpSchema</a>, one can use the macro OPERATOR_SCHEMA(name) and then append the various functions in the class. For example, for an op that takes in two inputs, one output, and the first input and output could be in-place, can be written as </p><pre class="fragment">OPERATOR_SCHEMA(name)
     .NumInputs(2).NumOutputs(1).AllowInplace({{0, 0}});</pre> 
-<p>Definition at line <a class="el" href="operator__schema_8h_source.html#l00038">38</a> of file <a class="el" href="operator__schema_8h_source.html">operator_schema.h</a>.</p>
+<p>Definition at line <a class="el" href="operator__schema_8h_source.html#l00039">39</a> of file <a class="el" href="operator__schema_8h_source.html">operator_schema.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>caffe2/core/<a class="el" href="operator__schema_8h_source.html">operator_schema.h</a></li>
 <li>caffe2/core/<a class="el" href="operator__schema_8cc_source.html">operator_schema.cc</a></li>
@@ -345,7 +378,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:00 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:56 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -368,7 +401,7 @@ Generated on Thu Apr 19 2018 13:04:00 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

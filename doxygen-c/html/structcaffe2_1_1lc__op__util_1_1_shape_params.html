@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -123,18 +123,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>output_image_size</b><
 <tr class="memitem:a8901503a2c5c51d57d1b87a3b295fcad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8901503a2c5c51d57d1b87a3b295fcad"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_size</b></td></tr>
 <tr class="separator:a8901503a2c5c51d57d1b87a3b295fcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acda4150546ac6025bc82f5c87949a6ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acda4150546ac6025bc82f5c87949a6ea"></a>
-std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>input_image_dims</b></td></tr>
-<tr class="separator:acda4150546ac6025bc82f5c87949a6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddf0704430c3fd23f141d05d4299199"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ddf0704430c3fd23f141d05d4299199"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>X_dims</b></td></tr>
+<tr class="separator:a2ddf0704430c3fd23f141d05d4299199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232f7952c68386be0fd02e41e25e991a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a232f7952c68386be0fd02e41e25e991a"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>column_slice_dims</b></td></tr>
+<tr class="separator:a232f7952c68386be0fd02e41e25e991a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a181039058fa0761443e5261529bc06f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a181039058fa0761443e5261529bc06f9"></a>
 std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>column_dims</b></td></tr>
 <tr class="separator:a181039058fa0761443e5261529bc06f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9cd7bbebc65a4e75e029eeb8f5d3665"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9cd7bbebc65a4e75e029eeb8f5d3665"></a>
 std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>column_transposed_dims</b></td></tr>
 <tr class="separator:aa9cd7bbebc65a4e75e029eeb8f5d3665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88cacb195f486fa0a2d4a111950c1f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad88cacb195f486fa0a2d4a111950c1f0"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>column_axes</b></td></tr>
+<tr class="separator:ad88cacb195f486fa0a2d4a111950c1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f6e8714210ce28f910baec16407626"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38f6e8714210ce28f910baec16407626"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Y_dims</b></td></tr>
+<tr class="separator:a38f6e8714210ce28f910baec16407626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0df5d1e90f01c6e86d449c98f4fb789a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0df5d1e90f01c6e86d449c98f4fb789a"></a>
 std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Y_transposed_dims</b></td></tr>
 <tr class="separator:a0df5d1e90f01c6e86d449c98f4fb789a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240ca468b9828a75c163dba8179fe513"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a240ca468b9828a75c163dba8179fe513"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Y_axes</b></td></tr>
+<tr class="separator:a240ca468b9828a75c163dba8179fe513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -146,7 +158,7 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Y
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -169,7 +181,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

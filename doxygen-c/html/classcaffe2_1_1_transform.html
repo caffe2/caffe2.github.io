@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -164,8 +164,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPatternMatchType</
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classcaffe2_1_1_transform.html" title="The Transform Base Object. ">Transform</a> Base Object. </p>
-<p>A <a class="el" href="classcaffe2_1_1_transform.html" title="The Transform Base Object. ">Transform</a> is an operation which manipulates a Caffe2 NetDef. You can consider it as a function: Transform.ApplyTo(NetDef) -&gt; NetDef</p>
-<p>A <a class="el" href="classcaffe2_1_1_transform.html" title="The Transform Base Object. ">Transform</a> Operation does 4 things: 1) Creates a Graph object from a NetDef, which stores connections. 2) Pattern Matches on the Graph, to find subgraphs it wants to change. 3) Replaces the subgraphs that it's matched with new operators. 4) Creates a NetDef from the changed Graph, and returns it.</p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> <a class="el" href="classcaffe2_1_1_transform.html" title="The Transform Base Object. ">Transform</a> is an operation which manipulates a Caffe2 NetDef. You can consider it as a function: Transform.ApplyTo(NetDef) -&gt; NetDef</p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> <a class="el" href="classcaffe2_1_1_transform.html" title="The Transform Base Object. ">Transform</a> Operation does 4 things: 1) Creates a Graph object from a NetDef, which stores connections. 2) Pattern Matches on the Graph, to find subgraphs it wants to change. 3) Replaces the subgraphs that it's matched with new operators. 4) Creates a NetDef from the changed Graph, and returns it.</p>
 <p>The effect of a <a class="el" href="classcaffe2_1_1_transform.html" title="The Transform Base Object. ">Transform</a> is defined by its 3 protected virtual functions. 1) PatternRule determines for an ordered subgraph and a node, whether to consider adding the node to the subgraph. 2) ValidatorRule determines, for an ordered subgraph, whether it is a match. 3) ReplaceRule mutates the graph, based on a matched subgraph.</p>
 <p>This is the base class for all derived classes to base off. To create your own transform, write your implementations for PatternRule, ValidatorRule, and ReplaceRule. </p>
 
@@ -227,7 +227,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPatternMatchType</
 </div><div class="memdoc">
 
 <p>Generates all matches (stored as ordered subgraphs) and returns them. </p>
-<p>A match is stored as vector&lt;int&gt;, which is a mapping to OperatorDefs in Graph. The order matters. </p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> match is stored as vector&lt;int&gt;, which is a mapping to OperatorDefs in Graph. The order matters. </p>
 
 <p>Definition at line <a class="el" href="transform_8cc_source.html#l00015">15</a> of file <a class="el" href="transform_8cc_source.html">transform.cc</a>.</p>
 
@@ -241,7 +241,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPatternMatchType</
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -264,7 +264,7 @@ Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

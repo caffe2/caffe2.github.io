@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -114,15 +114,24 @@ Inheritance diagram for caffe2.python.layers.batch_distill_lr_loss.BatchDistillL
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6b12d70eb19117b5a17e367f3a0d0e99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b12d70eb19117b5a17e367f3a0d0e99"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, model, input_record, name='batch_distill_lr_loss', teacherWeight=0.0, kwargs)</td></tr>
-<tr class="separator:a6b12d70eb19117b5a17e367f3a0d0e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0adbcdb66bbe8feb5fe73ccf0fae1d22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0adbcdb66bbe8feb5fe73ccf0fae1d22"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, model, input_record, name='batch_distill_lr_loss', teacher_weight=0.0, filter_invalid_teacher_label=False, kwargs)</td></tr>
+<tr class="separator:a0adbcdb66bbe8feb5fe73ccf0fae1d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a829b6bffd92146bba20af169d98c6cc6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a829b6bffd92146bba20af169d98c6cc6"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>add_ops</b> (self, net)</td></tr>
 <tr class="separator:a829b6bffd92146bba20af169d98c6cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:aaf90ad34f95a7bf670e5a6135c35ab9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf90ad34f95a7bf670e5a6135c35ab9b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>threshold</b></td></tr>
+<tr class="separator:aaf90ad34f95a7bf670e5a6135c35ab9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f300bd51cbc1e19d7893956e911157"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80f300bd51cbc1e19d7893956e911157"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>neg_ONE</b></td></tr>
+<tr class="separator:a80f300bd51cbc1e19d7893956e911157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a02e9a91800c28161cc00c2420ab9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49a02e9a91800c28161cc00c2420ab9a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ONE</b></td></tr>
+<tr class="separator:a49a02e9a91800c28161cc00c2420ab9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42df8243d014909c00f388fe0bbb3205"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42df8243d014909c00f388fe0bbb3205"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>output_schema</b></td></tr>
 <tr class="separator:a42df8243d014909c00f388fe0bbb3205"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +146,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -160,7 +169,7 @@ Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

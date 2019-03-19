@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -105,12 +105,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a432462460499c3e1bd958a9c429e62e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a432462460499c3e1bd958a9c429e62e9"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, stepsize, threshold, device_option=caffe2_pb2.DeviceOption(), workspace_name=&quot;gradient_check&quot;)</td></tr>
-<tr class="separator:a432462460499c3e1bd958a9c429e62e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06414b8e0a949ac8905d8a757abd61b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06414b8e0a949ac8905d8a757abd61b4"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>GetLossAndGrad</b> (self, op, grad_ops, x, input_name, grad_name, outputs_with_grads)</td></tr>
-<tr class="separator:a06414b8e0a949ac8905d8a757abd61b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f8cd7b931f173473ed2c9c3f56983c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72f8cd7b931f173473ed2c9c3f56983c"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, stepsize, threshold, device_option=None, workspace_name=&quot;gradient_check&quot;, input_device_options=None)</td></tr>
+<tr class="separator:a72f8cd7b931f173473ed2c9c3f56983c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa17927fc914da5dd13f45e467d885c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfa17927fc914da5dd13f45e467d885c"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>GetLossAndGrad</b> (self, op, grad_ops, inputs, input_names, input_to_check, grad_name, outputs_with_grads)</td></tr>
+<tr class="separator:adfa17927fc914da5dd13f45e467d885c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59935dbb43b90606678a5e4105a388de"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1gradient__checker_1_1_gradient_checker.html#a59935dbb43b90606678a5e4105a388de">CheckSimple</a> (self, op, inputs, input_to_check, outputs_with_grads, grad_ops=None, input_device_options=None)</td></tr>
 <tr class="separator:a59935dbb43b90606678a5e4105a388de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -121,7 +121,7 @@ This is not the most efficient way to check gradients, as the Python
 interface will involve a lot of copies back and forth operations. Use at your
 own risk.
 </pre> 
-<p>Definition at line <a class="el" href="gradient__checker_8py_source.html#l00149">149</a> of file <a class="el" href="gradient__checker_8py_source.html">gradient_checker.py</a>.</p>
+<p>Definition at line <a class="el" href="gradient__checker_8py_source.html#l00155">155</a> of file <a class="el" href="gradient__checker_8py_source.html">gradient_checker.py</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a59935dbb43b90606678a5e4105a388de"></a>
 <div class="memitem">
@@ -194,7 +194,7 @@ Inputs:
 Outputs:
   boolean: True if it passes, False if it does not pass.
 </pre> 
-<p>Definition at line <a class="el" href="gradient__checker_8py_source.html#l00223">223</a> of file <a class="el" href="gradient__checker_8py_source.html">gradient_checker.py</a>.</p>
+<p>Definition at line <a class="el" href="gradient__checker_8py_source.html#l00237">237</a> of file <a class="el" href="gradient__checker_8py_source.html">gradient_checker.py</a>.</p>
 
 </div>
 </div>
@@ -205,7 +205,7 @@ Outputs:
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -228,7 +228,7 @@ Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

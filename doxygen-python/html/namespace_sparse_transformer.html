@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -89,9 +89,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">SparseTransformer Namespace Reference</div>  </div>
 </div><!--header-->
@@ -99,121 +96,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Module caffe2.experiments.python.SparseTransformer.  
 <a href="#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sparse_transformer_1_1_net_def_node.html">NetDefNode</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ae644ca926619d1d661a3c9efdd2b009c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sparse_transformer.html#ae644ca926619d1d661a3c9efdd2b009c">maskNallocate</a> (weight_name)</td></tr>
-<tr class="separator:ae644ca926619d1d661a3c9efdd2b009c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc52daec3efa1eeab9ee63e9202ed319"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sparse_transformer.html#abc52daec3efa1eeab9ee63e9202ed319">transFCRelu</a> (cur, id2node, name2id, ops, model)</td></tr>
-<tr class="separator:abc52daec3efa1eeab9ee63e9202ed319"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a891d9ca793a69f3a8e2e6c7b06050c6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a891d9ca793a69f3a8e2e6c7b06050c6b"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>Prune2Sparse</b> (cur, id2node, name2id, ops, model)</td></tr>
-<tr class="separator:a891d9ca793a69f3a8e2e6c7b06050c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab39d4021ac0c2dcc5e1b8c35b484b46c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sparse_transformer.html#ab39d4021ac0c2dcc5e1b8c35b484b46c">net2list</a> (net_root)</td></tr>
-<tr class="separator:ab39d4021ac0c2dcc5e1b8c35b484b46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26aaaa047eb903bb87013ababdd6f952"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26aaaa047eb903bb87013ababdd6f952"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>netbuilder</b> (model)</td></tr>
-<tr class="separator:a26aaaa047eb903bb87013ababdd6f952"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Module caffe2.experiments.python.SparseTransformer. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ae644ca926619d1d661a3c9efdd2b009c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SparseTransformer.maskNallocate </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>weight_name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Combine mask and weights
-create wcsr, iw, jw, return their names
-</pre> 
-<p>Definition at line <a class="el" href="_sparse_transformer_8py_source.html#l00042">42</a> of file <a class="el" href="_sparse_transformer_8py_source.html">SparseTransformer.py</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab39d4021ac0c2dcc5e1b8c35b484b46c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SparseTransformer.net2list </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>net_root</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Use topological order(BFS) to print the op of a net in a list
-</pre> 
-<p>Definition at line <a class="el" href="_sparse_transformer_8py_source.html#l00141">141</a> of file <a class="el" href="_sparse_transformer_8py_source.html">SparseTransformer.py</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abc52daec3efa1eeab9ee63e9202ed319"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SparseTransformer.transFCRelu </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cur</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>id2node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>name2id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>ops</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>model</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Add trans before and after this FC_Prune-&gt;(Relu)-&gt;FC_Prune chain.
-</pre> 
-<p>Definition at line <a class="el" href="_sparse_transformer_8py_source.html#l00058">58</a> of file <a class="el" href="_sparse_transformer_8py_source.html">SparseTransformer.py</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -236,7 +125,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

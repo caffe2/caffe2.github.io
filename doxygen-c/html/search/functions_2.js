@@ -1,5 +1,14 @@
 var searchData=
 [
-  ['blob',['Blob',['../classcaffe2_1_1_blob.html#a73c0b2eb60db62d71836ccbc840e9cd1',1,'caffe2::Blob']]],
-  ['blobs',['Blobs',['../classcaffe2_1_1_workspace.html#abbff5b6bd7b8634954963e167e9e6e7a',1,'caffe2::Workspace']]]
+  ['back',['back',['../classc10_1_1_array_ref.html#a13bab03b369684240f26a6629e0b8561',1,'c10::ArrayRef::back()'],['../classtorch_1_1_ordered_dict.html#a92329c8ea28f3017a96fa5bc93e69c28',1,'torch::OrderedDict::back()'],['../classtorch_1_1_ordered_dict.html#acfb461c36291cd734c0e2a81348694b1',1,'torch::OrderedDict::back() const ']]],
+  ['backward',['backward',['../classat_1_1_tensor.html#a93824bce43ce075e789f80a381fc0e2c',1,'at::Tensor::backward(c10::optional&lt; Tensor &gt; gradient=c10::nullopt, bool keep_graph=false, bool create_graph=false)'],['../classat_1_1_tensor.html#ac9b52340543acfa7b2c61ee8d43bd226',1,'at::Tensor::backward(c10::optional&lt; Tensor &gt; gradient=c10::nullopt, bool keep_graph=false, bool create_graph=false)'],['../structtorch_1_1autograd_1_1_variable.html#ad992d756853a851b4b922b76799b270b',1,'torch::autograd::Variable::backward()']]],
+  ['base',['base',['../structtorch_1_1autograd_1_1_variable.html#ac120fd3c5d1406867c6ab6f58c5e1cf0',1,'torch::autograd::Variable']]],
+  ['batchlambda',['BatchLambda',['../classtorch_1_1data_1_1transforms_1_1_batch_lambda.html#adbfa3c8d6ab4c848a694d476c31db4da',1,'torch::data::transforms::BatchLambda']]],
+  ['begin',['begin',['../classtorch_1_1data_1_1_data_loader_base.html#a9a932b57ca185a126b4054321d52c40f',1,'torch::data::DataLoaderBase::begin()'],['../classtorch_1_1nn_1_1_sequential_impl.html#a499ba7d0b1739ca9f05ca7cdadd21885',1,'torch::nn::SequentialImpl::begin()'],['../classtorch_1_1nn_1_1_sequential_impl.html#a8060bcde842681a14d7248ffa4a287ea',1,'torch::nn::SequentialImpl::begin() const '],['../classtorch_1_1_ordered_dict.html#a8ead9f7ababc1b577207e42005448254',1,'torch::OrderedDict::begin()'],['../classtorch_1_1_ordered_dict.html#a959015c8a943ad60e30951c4e18ecec6',1,'torch::OrderedDict::begin() const ']]],
+  ['blob',['Blob',['../classcaffe2_1_1_blob.html#aa81888495404bbe2ff12e6391121280d',1,'caffe2::Blob']]],
+  ['blobs',['Blobs',['../classcaffe2_1_1_workspace.html#abbff5b6bd7b8634954963e167e9e6e7a',1,'caffe2::Workspace']]],
+  ['buffer',['buffer',['../structtorch_1_1data_1_1detail_1_1sequencers_1_1_ordered_sequencer.html#a9132ec17a6ff3ead93bee493cc8ce3a4',1,'torch::data::detail::sequencers::OrderedSequencer']]],
+  ['buffer_5fat',['buffer_at',['../classtorch_1_1optim_1_1detail_1_1_optimizer_base.html#ab06dc3430b1d8bd15f840670b2798449',1,'torch::optim::detail::OptimizerBase::buffer_at(std::vector&lt; T &gt; &amp;buffers, size_t index)'],['../classtorch_1_1optim_1_1detail_1_1_optimizer_base.html#a2844f4aa01f3023d418f4fe63d6d3da2',1,'torch::optim::detail::OptimizerBase::buffer_at(std::vector&lt; Tensor &gt; &amp;buffers, size_t index)']]],
+  ['buffers',['buffers',['../classtorch_1_1nn_1_1_module.html#a92cc52f55f49f84f9d2b277ff4816c95',1,'torch::nn::Module']]],
+  ['bump_5fversion',['bump_version',['../structtorch_1_1autograd_1_1_variable.html#aa7a0fe2af7bc682b483bc30d723ec176',1,'torch::autograd::Variable']]]
 ];

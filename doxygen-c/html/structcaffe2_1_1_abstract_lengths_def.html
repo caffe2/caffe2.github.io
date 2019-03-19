@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -111,22 +111,22 @@ Public Types</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>OpDef</b> = ReducerDef</td></tr>
 <tr class="separator:a42114db6299dfabf97faf7f4b30a912c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c2ad224809fd7619dc80378dd43c2b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c2ad224809fd7619dc80378dd43c2b4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Reducer</b> = typename ReducerDef::template Reducer&lt; T, Context &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Reducer</b> = typename ReducerDef::template Reducer&lt; <a class="el" href="struct_t.html">T</a>, Context &gt;</td></tr>
 <tr class="separator:a1c2ad224809fd7619dc80378dd43c2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bb69414913fba9bf9f147dffad9ef38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bb69414913fba9bf9f147dffad9ef38"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ReducerGradient</b> = typename ReducerDef::template ReducerGradient&lt; T, Context &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ReducerGradient</b> = typename ReducerDef::template ReducerGradient&lt; <a class="el" href="struct_t.html">T</a>, Context &gt;</td></tr>
 <tr class="separator:a7bb69414913fba9bf9f147dffad9ef38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53fb5439c7e1344cbfee9e50c61be87a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53fb5439c7e1344cbfee9e50c61be87a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ForwardOp</b> = <a class="el" href="classcaffe2_1_1_abstract_lengths_op.html">AbstractLengthsOp</a>&lt; T, SIndex, Context, Reducer, false &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ForwardOp</b> = <a class="el" href="classcaffe2_1_1_abstract_lengths_op.html">AbstractLengthsOp</a>&lt; <a class="el" href="struct_t.html">T</a>, SIndex, Context, Reducer, false &gt;</td></tr>
 <tr class="separator:a53fb5439c7e1344cbfee9e50c61be87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d9d463bf9d6fb4b62c4a53dc59eefbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d9d463bf9d6fb4b62c4a53dc59eefbd"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>BackwardOp</b> = <a class="el" href="classcaffe2_1_1_abstract_lengths_gradient_op.html">AbstractLengthsGradientOp</a>&lt; T, SIndex, Context, ReducerGradient &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>BackwardOp</b> = <a class="el" href="classcaffe2_1_1_abstract_lengths_gradient_op.html">AbstractLengthsGradientOp</a>&lt; <a class="el" href="struct_t.html">T</a>, SIndex, Context, ReducerGradient &gt;</td></tr>
 <tr class="separator:a0d9d463bf9d6fb4b62c4a53dc59eefbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9385af7c15628f68cd186a9970b1fcfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9385af7c15628f68cd186a9970b1fcfa"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>WithMainInputBackwardOp</b> = <a class="el" href="classcaffe2_1_1_abstract_lengths_with_main_input_gradient_op.html">AbstractLengthsWithMainInputGradientOp</a>&lt; T, SIndex, Context, ReducerGradient, false &gt;</td></tr>
-<tr class="separator:a9385af7c15628f68cd186a9970b1fcfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf36e01a802b615479ae7a34f07dd240"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf36e01a802b615479ae7a34f07dd240"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>WithMainInputBackwardOp</b> = <a class="el" href="classcaffe2_1_1_abstract_lengths_with_main_input_gradient_op.html">AbstractLengthsWithMainInputGradientOp</a>&lt; <a class="el" href="struct_t.html">T</a>, <a class="el" href="struct_t.html">T</a>, SIndex, Context, ReducerGradient, false &gt;</td></tr>
+<tr class="separator:abf36e01a802b615479ae7a34f07dd240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7bc1aae6f84f047af4625ada5b0ba7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7bc1aae6f84f047af4625ada5b0ba7f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>WithMainInputAndForwardOutputBackwardOp</b> = <a class="el" href="classcaffe2_1_1_abstract_lengths_with_main_input_and_forward_output_gradient_op.html">AbstractLengthsWithMainInputAndForwardOutputGradientOp</a>&lt; T, SIndex, Context, ReducerGradient &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>WithMainInputAndForwardOutputBackwardOp</b> = <a class="el" href="classcaffe2_1_1_abstract_lengths_with_main_input_and_forward_output_gradient_op.html">AbstractLengthsWithMainInputAndForwardOutputGradientOp</a>&lt; <a class="el" href="struct_t.html">T</a>, SIndex, Context, ReducerGradient &gt;</td></tr>
 <tr class="separator:ae7bc1aae6f84f047af4625ada5b0ba7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c2a034791b6376d7cde193aa6b951b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c2a034791b6376d7cde193aa6b951b0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>GetGradient</b> = <a class="el" href="structcaffe2_1_1_lengths_op_get_gradient.html">LengthsOpGetGradient</a>&lt; <a class="el" href="classcaffe2_1_1_abstract_lengths_op.html">ForwardOp</a>, ReducerDef, ReducerGradient, false, GradientNeedIndices &gt;</td></tr>
@@ -151,7 +151,7 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 struct caffe2::AbstractLengthsDef&lt; T, SIndex, Context, ReducerDef, GradientNeedIndices &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="segment__reduction__op_8h_source.html#l01896">1896</a> of file <a class="el" href="segment__reduction__op_8h_source.html">segment_reduction_op.h</a>.</p>
+<p>Definition at line <a class="el" href="segment__reduction__op_8h_source.html#l01884">1884</a> of file <a class="el" href="segment__reduction__op_8h_source.html">segment_reduction_op.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="abc9cca1b908b79f80636705d60920502"></a>
 <div class="memitem">
@@ -163,7 +163,7 @@ template&lt;typename T , typename SIndex , typename Context , typename ReducerDe
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const char* <a class="el" href="structcaffe2_1_1_abstract_lengths_def.html">caffe2::AbstractLengthsDef</a>&lt; T, SIndex, Context, ReducerDef, GradientNeedIndices &gt;::doc</td>
+          <td class="memname">constexpr const char* <a class="el" href="structcaffe2_1_1_abstract_lengths_def.html">caffe2::AbstractLengthsDef</a>&lt; <a class="el" href="struct_t.html">T</a>, SIndex, Context, ReducerDef, GradientNeedIndices &gt;::doc</td>
         </tr>
       </table>
   </td>
@@ -172,8 +172,8 @@ template&lt;typename T , typename SIndex , typename Context , typename ReducerDe
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= R<span class="stringliteral">&quot;DOC(</span></div><div class="line"><span class="stringliteral">Applies &#39;{op}&#39; to each segment of the input tensor. Segments are defined</span></div><div class="line"><span class="stringliteral">by their LENGTHS.</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">LENGTHS is a vector that maps each of the first dimension slices of the</span></div><div class="line"><span class="stringliteral">DATA to a particular group (segment). Values belonging to the same segment are</span></div><div class="line"><span class="stringliteral">aggregated together.</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">For example LENGTHS = [2, 1] stands for segments DATA[0..1] and DATA[2]</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">The first dimension of the output is equal to the number of input segments,</span></div><div class="line"><span class="stringliteral">i.e. `len(LENGTHS)`. Other dimensions are inherited from the input tensor.</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">{op_doc}</span></div><div class="line"><span class="stringliteral">  )DOC&quot;</span></div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="segment__reduction__op_8h_source.html#l01899">1899</a> of file <a class="el" href="segment__reduction__op_8h_source.html">segment_reduction_op.h</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">= R<span class="stringliteral">&quot;DOC(</span></div><div class="line"><span class="stringliteral">Applies &#39;{op}&#39; to each segment of the input tensor. Segments are defined</span></div><div class="line"><span class="stringliteral">by their *LENGTHS*. *LENGTHS* is a vector that maps each of the slices of</span></div><div class="line"><span class="stringliteral">*DATA* to a particular segment. Values belonging to the same segment are</span></div><div class="line"><span class="stringliteral">aggregated together and considered for the &#39;{op}&#39; operation.</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">For example *LENGTHS = [2, 1]* stands for segments *DATA[0..1]* and *DATA[2]*</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">The sum of elements in *LENGTHS* must equal the number of elements in the first</span></div><div class="line"><span class="stringliteral">dimension of *DATA*. The length of *OUTPUT* is equal to the number of input</span></div><div class="line"><span class="stringliteral">segments, i.e. len(*LENGTHS*).</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">{op_doc}</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">{extra}</span></div><div class="line"><span class="stringliteral">  )DOC&quot;</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="segment__reduction__op_8h_source.html#l01887">1887</a> of file <a class="el" href="segment__reduction__op_8h_source.html">segment_reduction_op.h</a>.</p>
 
 </div>
 </div>
@@ -184,7 +184,7 @@ template&lt;typename T , typename SIndex , typename Context , typename ReducerDe
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:52 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -207,7 +207,7 @@ Generated on Thu Apr 19 2018 13:03:57 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

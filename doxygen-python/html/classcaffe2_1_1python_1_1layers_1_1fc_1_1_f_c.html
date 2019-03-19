@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classcaffe2_1_1python_1_1layers_1_1fc_1_1_f_c-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -116,9 +117,9 @@ Inheritance diagram for caffe2.python.layers.fc.FC:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a579b4aa8e6f4952e3a4cc138abb61abf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a579b4aa8e6f4952e3a4cc138abb61abf"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, model, input_record, output_dims, weight_init=None, bias_init=None, weight_optim=None, bias_optim=None, name='fc', weight_reg=None, bias_reg=None, kwargs)</td></tr>
-<tr class="separator:a579b4aa8e6f4952e3a4cc138abb61abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d12f11ac7c1467cbc7ff6248674a254"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d12f11ac7c1467cbc7ff6248674a254"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, model, input_record, output_dims, weight_init=None, bias_init=None, weight_optim=None, bias_optim=None, name='fc', weight_reg=None, bias_reg=None, clip_param=None, max_fc_size=None, axis=1, kwargs)</td></tr>
+<tr class="separator:a9d12f11ac7c1467cbc7ff6248674a254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b499ab15915a63f09eb6b7b62f47034"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b499ab15915a63f09eb6b7b62f47034"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>param_blobs</b> (self)</td></tr>
 <tr class="separator:a7b499ab15915a63f09eb6b7b62f47034"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,14 +204,35 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>export_output_for_metr
 def&#160;</td><td class="memItemRight" valign="bottom"><b>export_params_for_metrics</b> (self)</td></tr>
 <tr class="separator:aff871e9f0c90780087d61c965f59752d inherit pub_methods_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac82287d8c702800cdc337c9a3c5717b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac82287d8c702800cdc337c9a3c5717b0"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>calculate_fc_output_dims</b> (max_fc_size, input_dim, output_dim)</td></tr>
+<tr class="separator:ac82287d8c702800cdc337c9a3c5717b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a347e766b4f78d1e078d0f634f2d5b3d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a347e766b4f78d1e078d0f634f2d5b3d2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>axis</b></td></tr>
+<tr class="separator:a347e766b4f78d1e078d0f634f2d5b3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad498e1070d8f0c4b9a5de12abf3cee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ad498e1070d8f0c4b9a5de12abf3cee"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>clip_args</b></td></tr>
+<tr class="separator:a6ad498e1070d8f0c4b9a5de12abf3cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefe243862c65cdd5ffa86d00aee63e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acefe243862c65cdd5ffa86d00aee63e1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>output_dim_vec</b></td></tr>
+<tr class="separator:acefe243862c65cdd5ffa86d00aee63e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6a42f47b12bab63a6c6c13447619db3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6a42f47b12bab63a6c6c13447619db3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 <tr class="separator:ac6a42f47b12bab63a6c6c13447619db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad44a18d53e8b75baa52faac8d1b766"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adad44a18d53e8b75baa52faac8d1b766"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>b</b></td></tr>
 <tr class="separator:adad44a18d53e8b75baa52faac8d1b766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3be642cc9f58d5b1c52673094f11c55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3be642cc9f58d5b1c52673094f11c55"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>w_vec</b></td></tr>
+<tr class="separator:ad3be642cc9f58d5b1c52673094f11c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9063918dbcf6f1e90167d8623e0dc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d9063918dbcf6f1e90167d8623e0dc4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>b_vec</b></td></tr>
+<tr class="separator:a3d9063918dbcf6f1e90167d8623e0dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a4c47aab519808db2a11930cc6644de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a4c47aab519808db2a11930cc6644de"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>output_schema</b></td></tr>
 <tr class="separator:a9a4c47aab519808db2a11930cc6644de"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,6 +253,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a689674e8a5ca626ec8492966f42b257b inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a689674e8a5ca626ec8492966f42b257b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>request_only</b></td></tr>
 <tr class="separator:a689674e8a5ca626ec8492966f42b257b inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a845345f57cb00c528a3ab4f19551c17d inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a845345f57cb00c528a3ab4f19551c17d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>precomputation_request_only</b></td></tr>
+<tr class="separator:a845345f57cb00c528a3ab4f19551c17d inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a59df5cddf9775f4e06e688defc2c49 inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a59df5cddf9775f4e06e688defc2c49"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>precomputation_object_only</b></td></tr>
+<tr class="separator:a3a59df5cddf9775f4e06e688defc2c49 inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0619491c6bb1bc04b7840c735e72ee84 inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0619491c6bb1bc04b7840c735e72ee84"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>eval_output_schema</b></td></tr>
 <tr class="separator:a0619491c6bb1bc04b7840c735e72ee84 inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,7 +279,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -274,7 +302,7 @@ Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

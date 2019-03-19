@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">caffe2.python.checkpoint.CheckpointManager Class Reference</div>  </div>
@@ -121,6 +122,8 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, db
 <tr class="memitem:a1d22424bbe1ab4223e1b2460f421b182"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d22424bbe1ab4223e1b2460f421b182"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>blob_list</b> (self)</td></tr>
 <tr class="separator:a1d22424bbe1ab4223e1b2460f421b182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef6e1c162008384437ba8ba5a9a6f2d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a5ef6e1c162008384437ba8ba5a9a6f2d">collect_checkpoint_stats</a> (self, stats)</td></tr>
+<tr class="separator:a5ef6e1c162008384437ba8ba5a9a6f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45aa82dbeb2693b5d94d65b4bf3a0acc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a45aa82dbeb2693b5d94d65b4bf3a0acc">load</a> (self, epoch, path_prefix=None, path_type=None)</td></tr>
 <tr class="separator:a45aa82dbeb2693b5d94d65b4bf3a0acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10516c8e426b15e6de7b70e16bf50406"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a10516c8e426b15e6de7b70e16bf50406">load_blobs_from_checkpoint</a> (self, blob_names, epoch)</td></tr>
@@ -128,6 +131,8 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>blob_list</b> (self)</
 <tr class="memitem:afa13744f8b3236b964e22c1dc78c86a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa13744f8b3236b964e22c1dc78c86a6"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>check_db_exists</b> (self, epoch)</td></tr>
 <tr class="separator:afa13744f8b3236b964e22c1dc78c86a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96b5590aa138a44bac09a71caa9b5bd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#ad96b5590aa138a44bac09a71caa9b5bd">report_checkpoint_stats</a> (self, action_name)</td></tr>
+<tr class="separator:ad96b5590aa138a44bac09a71caa9b5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a867311ff75877980e657626fbb098004"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a867311ff75877980e657626fbb098004">save</a> (self, epoch)</td></tr>
 <tr class="separator:a867311ff75877980e657626fbb098004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad543f0bd496f620d456a216ac0a897a2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#ad543f0bd496f620d456a216ac0a897a2">write_checkpoint_metadata</a> (self, epoch)</td></tr>
@@ -138,6 +143,12 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>check_db_exists</b> (s
 <tr class="separator:a9524ecae48a980e8a6d7481ff54efebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a538f5ee05f4af8eeaa0e357e1747d9c2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1checkpoint_1_1_checkpoint_manager.html#a538f5ee05f4af8eeaa0e357e1747d9c2">cp_accessible</a> (self, epoch=None)</td></tr>
 <tr class="separator:a538f5ee05f4af8eeaa0e357e1747d9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a9f5d621b13864b60b70e190026fc1040"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f5d621b13864b60b70e190026fc1040"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>BLOB_NAMES</b> = &quot;blob_names&quot;</td></tr>
+<tr class="separator:a9f5d621b13864b60b70e190026fc1040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Controls saving and loading of workspaces on every epoch boundary of a job.
@@ -152,8 +163,40 @@ Args:
     metadata_handler: An optional object capable of reading/writing
         checkpoint info in storage of choice.
 </pre> 
-<p>Definition at line <a class="el" href="checkpoint_8py_source.html#l00143">143</a> of file <a class="el" href="checkpoint_8py_source.html">checkpoint.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2checkpoint_8py_source.html#l00149">149</a> of file <a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5ef6e1c162008384437ba8ba5a9a6f2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def caffe2.python.checkpoint.CheckpointManager.collect_checkpoint_stats </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>stats</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Add one checkpoint stats into the stats.
+
+Args:
+    stats: A dict of checkpoint stats that will be reported.
+</pre> 
+<p>Definition at line <a class="el" href="caffe2_2python_2checkpoint_8py_source.html#l00255">255</a> of file <a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a538f5ee05f4af8eeaa0e357e1747d9c2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +229,7 @@ it implies we need to check if checkpoint directory is accessible
 Returns:
     is_cp_accessible: A boolean. Returns True if Checkpoint data is accessible
 </pre> 
-<p>Definition at line <a class="el" href="checkpoint_8py_source.html#l00341">341</a> of file <a class="el" href="checkpoint_8py_source.html">checkpoint.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2checkpoint_8py_source.html#l00416">416</a> of file <a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a>.</p>
 
 </div>
 </div>
@@ -222,7 +265,7 @@ Retruns:
     epoch: the epoch-id to load checkpoints from
 or None if no checkpoints were written
 </pre> 
-<p>Definition at line <a class="el" href="checkpoint_8py_source.html#l00304">304</a> of file <a class="el" href="checkpoint_8py_source.html">checkpoint.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2checkpoint_8py_source.html#l00379">379</a> of file <a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a>.</p>
 
 </div>
 </div>
@@ -272,7 +315,7 @@ This task will determine which blobs need to be checkpointed.
 If retrieve_from_epoch is not None, then the checkpoint metadata is
 retrieved from a previously saved checkpoint.
 </pre> 
-<p>Definition at line <a class="el" href="checkpoint_8py_source.html#l00187">187</a> of file <a class="el" href="checkpoint_8py_source.html">checkpoint.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2checkpoint_8py_source.html#l00198">198</a> of file <a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a>.</p>
 
 </div>
 </div>
@@ -315,7 +358,7 @@ retrieved from a previously saved checkpoint.
 resumed from a given epoch. This task will run a Load op that will
 load and deserialize all relevant blobs from a persistent storage.
 </pre> 
-<p>Definition at line <a class="el" href="checkpoint_8py_source.html#l00221">221</a> of file <a class="el" href="checkpoint_8py_source.html">checkpoint.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2checkpoint_8py_source.html#l00271">271</a> of file <a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a>.</p>
 
 </div>
 </div>
@@ -361,7 +404,39 @@ Returns:
     A Task which loads the specified blobs from the checkpoint of the
     given epoch.
 </pre> 
-<p>Definition at line <a class="el" href="checkpoint_8py_source.html#l00239">239</a> of file <a class="el" href="checkpoint_8py_source.html">checkpoint.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2checkpoint_8py_source.html#l00295">295</a> of file <a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad96b5590aa138a44bac09a71caa9b5bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def caffe2.python.checkpoint.CheckpointManager.report_checkpoint_stats </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>action_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Report checkpoint operation stats for current node.
+
+Args:
+    action_name: A string of the name of checkpoint operation.
+</pre> 
+<p>Definition at line <a class="el" href="caffe2_2python_2checkpoint_8py_source.html#l00338">338</a> of file <a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a>.</p>
 
 </div>
 </div>
@@ -392,7 +467,7 @@ Returns:
 epoch is run. This will execute a Save ops to serialize and persist
 blobs present in the global workspace.
 </pre> 
-<p>Definition at line <a class="el" href="checkpoint_8py_source.html#l00279">279</a> of file <a class="el" href="checkpoint_8py_source.html">checkpoint.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2checkpoint_8py_source.html#l00350">350</a> of file <a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a>.</p>
 
 </div>
 </div>
@@ -439,7 +514,7 @@ Args:
 stored.
     path_type: Indicate the type of path where checkpoint files are stored.
 </pre> 
-<p>Definition at line <a class="el" href="checkpoint_8py_source.html#l00320">320</a> of file <a class="el" href="checkpoint_8py_source.html">checkpoint.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2checkpoint_8py_source.html#l00395">395</a> of file <a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a>.</p>
 
 </div>
 </div>
@@ -472,18 +547,18 @@ Args:
     epoch: An integer. The epoch-id for which checkpoint metadata is
 written
 </pre> 
-<p>Definition at line <a class="el" href="checkpoint_8py_source.html#l00293">293</a> of file <a class="el" href="checkpoint_8py_source.html">checkpoint.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2checkpoint_8py_source.html#l00368">368</a> of file <a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>caffe2/python/<a class="el" href="checkpoint_8py_source.html">checkpoint.py</a></li>
+<li>caffe2/python/<a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -506,7 +581,7 @@ Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

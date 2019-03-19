@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -111,16 +111,16 @@ Public Types</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>OpDef</b> = ReducerDef</td></tr>
 <tr class="separator:ad568ac86ba3d529073e25653de750a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5753e1075b6e725b5bd67cacbcd97d5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5753e1075b6e725b5bd67cacbcd97d5a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Reducer</b> = typename ReducerDef::template Reducer&lt; T, Context &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Reducer</b> = typename ReducerDef::template Reducer&lt; <a class="el" href="struct_t.html">T</a>, Context &gt;</td></tr>
 <tr class="separator:a5753e1075b6e725b5bd67cacbcd97d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc982a6be6f56a1e0622cdbf7b05ed36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc982a6be6f56a1e0622cdbf7b05ed36"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ReducerGradient</b> = typename ReducerDef::template ReducerGradient&lt; T, Context &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ReducerGradient</b> = typename ReducerDef::template ReducerGradient&lt; <a class="el" href="struct_t.html">T</a>, Context &gt;</td></tr>
 <tr class="separator:abc982a6be6f56a1e0622cdbf7b05ed36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e5cc05160417225ab5b1b7f5dae6163"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e5cc05160417225ab5b1b7f5dae6163"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ForwardOp</b> = <a class="el" href="classcaffe2_1_1_abstract_unsorted_segment_op.html">AbstractUnsortedSegmentOp</a>&lt; T, SIndex, Context, Reducer &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ForwardOp</b> = <a class="el" href="classcaffe2_1_1_abstract_unsorted_segment_op.html">AbstractUnsortedSegmentOp</a>&lt; <a class="el" href="struct_t.html">T</a>, SIndex, Context, Reducer &gt;</td></tr>
 <tr class="separator:a4e5cc05160417225ab5b1b7f5dae6163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ffdf29d16274ce88c2bc2aca9ef6b86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ffdf29d16274ce88c2bc2aca9ef6b86"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>BackwardOp</b> = <a class="el" href="classcaffe2_1_1_abstract_unsorted_segment_gradient_op.html">AbstractUnsortedSegmentGradientOp</a>&lt; T, SIndex, Context, ReducerGradient &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>BackwardOp</b> = <a class="el" href="classcaffe2_1_1_abstract_unsorted_segment_gradient_op.html">AbstractUnsortedSegmentGradientOp</a>&lt; <a class="el" href="struct_t.html">T</a>, SIndex, Context, ReducerGradient &gt;</td></tr>
 <tr class="separator:a5ffdf29d16274ce88c2bc2aca9ef6b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86f2b252c35525d4c0c55ed44d6881f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86f2b252c35525d4c0c55ed44d6881f9"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>GetGradient</b> = <a class="el" href="structcaffe2_1_1_segment_op_get_gradient.html">SegmentOpGetGradient</a>&lt; <a class="el" href="classcaffe2_1_1_abstract_unsorted_segment_op.html">ForwardOp</a>, ReducerDef, ReducerGradient, false, true &gt;</td></tr>
@@ -145,7 +145,7 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 struct caffe2::AbstractSparseUnsortedSegmentDef&lt; T, SIndex, Context, ReducerDef &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="segment__reduction__op_8h_source.html#l01298">1298</a> of file <a class="el" href="segment__reduction__op_8h_source.html">segment_reduction_op.h</a>.</p>
+<p>Definition at line <a class="el" href="segment__reduction__op_8h_source.html#l01290">1290</a> of file <a class="el" href="segment__reduction__op_8h_source.html">segment_reduction_op.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="ad6e60daff68a851a441ccd3b452a0ed4"></a>
 <div class="memitem">
@@ -157,7 +157,7 @@ template&lt;typename T , typename SIndex , typename Context , typename ReducerDe
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const char* <a class="el" href="structcaffe2_1_1_abstract_sparse_unsorted_segment_def.html">caffe2::AbstractSparseUnsortedSegmentDef</a>&lt; T, SIndex, Context, ReducerDef &gt;::doc</td>
+          <td class="memname">constexpr const char* <a class="el" href="structcaffe2_1_1_abstract_sparse_unsorted_segment_def.html">caffe2::AbstractSparseUnsortedSegmentDef</a>&lt; <a class="el" href="struct_t.html">T</a>, SIndex, Context, ReducerDef &gt;::doc</td>
         </tr>
       </table>
   </td>
@@ -167,7 +167,7 @@ template&lt;typename T , typename SIndex , typename Context , typename ReducerDe
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= R<span class="stringliteral">&quot;DOC(</span></div><div class="line"><span class="stringliteral">Pulls in slices of the input tensor, groups them into segments and applies</span></div><div class="line"><span class="stringliteral">&#39;{op}&#39; to each segment. Segments ids can appear in arbitrary order (unlike in</span></div><div class="line"><span class="stringliteral">SparseSortedSegment{op}).</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">This op is basically Gather and UnsortedSegment{op} fused together.</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">INDICES should contain integers in range 0..N-1 where N is the first dimension</span></div><div class="line"><span class="stringliteral">of DATA. INDICES represent which slices of DATA need to be pulled in.</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">SEGMENT_IDS is a vector that maps each referenced slice of the DATA to a</span></div><div class="line"><span class="stringliteral">particular group (segment). Values belonging to the same segment are aggregated</span></div><div class="line"><span class="stringliteral">together. SEGMENT_IDS should have the same dimension as INDICES.</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">If `num_segments` argument is passed it would be used as a first dimension for</span></div><div class="line"><span class="stringliteral">the output. Otherwise, it&#39;d be dynamically calculated from as the max value of</span></div><div class="line"><span class="stringliteral">SEGMENT_IDS plus one. Other output dimensions are inherited from the input</span></div><div class="line"><span class="stringliteral">tensor.</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">{op_doc}</span></div><div class="line"><span class="stringliteral">  )DOC&quot;</span></div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="segment__reduction__op_8h_source.html#l01301">1301</a> of file <a class="el" href="segment__reduction__op_8h_source.html">segment_reduction_op.h</a>.</p>
+<p>Definition at line <a class="el" href="segment__reduction__op_8h_source.html#l01293">1293</a> of file <a class="el" href="segment__reduction__op_8h_source.html">segment_reduction_op.h</a>.</p>
 
 </div>
 </div>
@@ -178,7 +178,7 @@ template&lt;typename T , typename SIndex , typename Context , typename ReducerDe
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:52 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -201,7 +201,7 @@ Generated on Thu Apr 19 2018 13:03:57 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

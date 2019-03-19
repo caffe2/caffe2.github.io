@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -103,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A struct to host thread-local cuda objects.  
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> struct to host thread-local cuda objects.  
  <a href="classcaffe2_1_1_thread_local_c_u_d_a_objects.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="context__gpu_8h_source.html">context_gpu.h</a>&gt;</code></p>
@@ -115,10 +115,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CUDAContext</b></td>
 <tr class="separator:a9e6a4d3a46fc5b180f945b1a753c5843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A struct to host thread-local cuda objects. </p>
-<p>In Caffe2, each thread has its own non-default cuda stream as well as related objects such as cublas and curand handles. This is achieved by having the <a class="el" href="classcaffe2_1_1_thread_local_c_u_d_a_objects.html" title="A struct to host thread-local cuda objects. ">ThreadLocalCUDAObjects</a> wrapper that takes care of allocating and deallocating these objects at the thread scope. This class is solely used inside <a class="el" href="classcaffe2_1_1_c_u_d_a_context.html">CUDAContext</a> and should not be used externally. </p>
+<div class="textblock"><p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> struct to host thread-local cuda objects. </p>
+<p>In Caffe2, each thread has its own non-default cuda stream as well as related objects such as cublas and curand handles. This is achieved by having the <a class="el" href="classcaffe2_1_1_thread_local_c_u_d_a_objects.html" title="A struct to host thread-local cuda objects. ">ThreadLocalCUDAObjects</a> wrapper that takes care of allocating and deallocating these objects at the thread scope. This class is solely used inside <a class="el" href="classcaffe2_1_1_c_u_d_a_context.html">CUDAContext</a> and should not be used externally.</p>
+<p>This class manages the mapping from logical stream ID (int stream_id passed around in Caffe2) and CUDAStream objects. We intend to eventually deprecate the logical stream ID interface, but not for now. </p>
 
-<p>Definition at line <a class="el" href="context__gpu_8h_source.html#l00039">39</a> of file <a class="el" href="context__gpu_8h_source.html">context_gpu.h</a>.</p>
+<p>Definition at line <a class="el" href="context__gpu_8h_source.html#l00056">56</a> of file <a class="el" href="context__gpu_8h_source.html">context_gpu.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/core/<a class="el" href="context__gpu_8h_source.html">context_gpu.h</a></li>
 </ul>
@@ -126,7 +127,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CUDAContext</b></td>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -149,7 +150,7 @@ Generated on Thu Apr 19 2018 13:04:01 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

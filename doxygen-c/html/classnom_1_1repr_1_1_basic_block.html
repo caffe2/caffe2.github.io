@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -104,19 +104,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A basic block holds a reference to a subgraph of the data flow graph as well as an ordering on instruction execution.  
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> basic block holds a reference to a subgraph of the data flow graph as well as an ordering on instruction execution.  
  <a href="classnom_1_1repr_1_1_basic_block.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_control_flow_8h_source.html">ControlFlow.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:afe9ea424b146d96f174e5335e092d866"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe9ea424b146d96f174e5335e092d866"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>NodeRef</b> = typename <a class="el" href="classnom_1_1_subgraph.html">Subgraph</a>&lt; T, U &gt;::NodeRef</td></tr>
-<tr class="separator:afe9ea424b146d96f174e5335e092d866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c22e0d0a79156694d74c1504398f3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38c22e0d0a79156694d74c1504398f3a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>NodeRef</b> = typename <a class="el" href="classnom_1_1_subgraph.html">Subgraph</a>&lt; <a class="el" href="struct_t.html">T</a>, U... &gt;::NodeRef</td></tr>
+<tr class="separator:a38c22e0d0a79156694d74c1504398f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a367ebdb94e75708c61d1d7f5e54013d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a367ebdb94e75708c61d1d7f5e54013d1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BasicBlock</b> (const <a class="el" href="classnom_1_1repr_1_1_basic_block.html">BasicBlock</a> &amp;)=delete</td></tr>
+<tr class="separator:a367ebdb94e75708c61d1d7f5e54013d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377fc639d8bacff42b9e2e35af326412"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a377fc639d8bacff42b9e2e35af326412"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BasicBlock</b> (<a class="el" href="classnom_1_1repr_1_1_basic_block.html">BasicBlock</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a377fc639d8bacff42b9e2e35af326412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4f9af5dddc6336440a06a42349458b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe4f9af5dddc6336440a06a42349458b"></a>
+<a class="el" href="classnom_1_1repr_1_1_basic_block.html">BasicBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classnom_1_1repr_1_1_basic_block.html">BasicBlock</a> &amp;)=delete</td></tr>
+<tr class="separator:afe4f9af5dddc6336440a06a42349458b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32da7eb70c139a2e537ae234054b5aaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32da7eb70c139a2e537ae234054b5aaf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>trackNode</b> (NodeRef node)</td></tr>
 <tr class="separator:a32da7eb70c139a2e537ae234054b5aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,27 +135,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>untrackNode</b> (Node
 <tr class="memitem:a9fbe647d92a5e1ee1013be1ab8c7bc2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fbe647d92a5e1ee1013be1ab8c7bc2d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>pushInstructionNode</b> (NodeRef node)</td></tr>
 <tr class="separator:a9fbe647d92a5e1ee1013be1ab8c7bc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ca25e9f9dac11298bb3da5f02cc486a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ca25e9f9dac11298bb3da5f02cc486a"></a>
-const std::vector&lt; NodeRef &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getInstructions</b> ()</td></tr>
-<tr class="separator:a2ca25e9f9dac11298bb3da5f02cc486a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8301fcfce23020251d6b4c2bc9f4b64f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8301fcfce23020251d6b4c2bc9f4b64f"></a>
-const bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasInstruction</b> (NodeRef instr) const </td></tr>
-<tr class="separator:a8301fcfce23020251d6b4c2bc9f4b64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe27e9cfdc1f82a86bbeae0dcacfa982"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe27e9cfdc1f82a86bbeae0dcacfa982"></a>
+const std::vector&lt; NodeRef &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getInstructions</b> () const </td></tr>
+<tr class="separator:afe27e9cfdc1f82a86bbeae0dcacfa982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc18a4ce5a597d3774900af74c03fa89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc18a4ce5a597d3774900af74c03fa89"></a>
+std::vector&lt; NodeRef &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>getMutableInstructions</b> ()</td></tr>
+<tr class="separator:afc18a4ce5a597d3774900af74c03fa89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1331f5106fe3cb6d0a826252a37b4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed1331f5106fe3cb6d0a826252a37b4e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasInstruction</b> (NodeRef instr) const </td></tr>
+<tr class="separator:aed1331f5106fe3cb6d0a826252a37b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb8e9861b056ef16e036a9cd7e4a029e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb8e9861b056ef16e036a9cd7e4a029e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>insertInstructionBefore</b> (NodeRef newInstr, NodeRef instr)</td></tr>
 <tr class="separator:aeb8e9861b056ef16e036a9cd7e4a029e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ac3f0ac20f1a2ff9ba5919896ae376"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21ac3f0ac20f1a2ff9ba5919896ae376"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moveInstructionBefore</b> (NodeRef instr1, NodeRef instr2)</td></tr>
+<tr class="separator:a21ac3f0ac20f1a2ff9ba5919896ae376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b25674b6bc6f8c2a8f0ab7ade65518f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b25674b6bc6f8c2a8f0ab7ade65518f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteInstruction</b> (NodeRef instr)</td></tr>
 <tr class="separator:a5b25674b6bc6f8c2a8f0ab7ade65518f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T, typename U&gt;<br />
+<div class="textblock"><h3>template&lt;typename T, typename... U&gt;<br />
 class nom::repr::BasicBlock&lt; T, U &gt;</h3>
 
-<p>A basic block holds a reference to a subgraph of the data flow graph as well as an ordering on instruction execution. </p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> basic block holds a reference to a subgraph of the data flow graph as well as an ordering on instruction execution. </p>
 <p>Basic blocks are used for control flow analysis. </p>
 
-<p>Definition at line <a class="el" href="_control_flow_8h_source.html#l00015">15</a> of file <a class="el" href="_control_flow_8h_source.html">ControlFlow.h</a>.</p>
+<p>Definition at line <a class="el" href="_control_flow_8h_source.html#l00018">18</a> of file <a class="el" href="_control_flow_8h_source.html">ControlFlow.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/core/nomnigraph/include/nomnigraph/Representations/<a class="el" href="_control_flow_8h_source.html">ControlFlow.h</a></li>
 </ul>
@@ -154,7 +169,7 @@ class nom::repr::BasicBlock&lt; T, U &gt;</h3>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -177,7 +192,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

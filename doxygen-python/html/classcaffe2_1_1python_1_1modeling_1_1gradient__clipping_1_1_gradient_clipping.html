@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -116,11 +116,11 @@ Inheritance diagram for caffe2.python.modeling.gradient_clipping.GradientClippin
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aca68d5bb38fd37bff4f6c2bb247c1b84"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1modeling_1_1gradient__clipping_1_1_gradient_clipping.html#aca68d5bb38fd37bff4f6c2bb247c1b84">__init__</a> (self, grad_clip_method, clip_norm_type, clip_threshold, use_parameter_norm=False, compute_norm_ratio=False)</td></tr>
-<tr class="separator:aca68d5bb38fd37bff4f6c2bb247c1b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a848881a336267379bb8bbf4dbb592982"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a848881a336267379bb8bbf4dbb592982"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>modify_net</b> (self, net, init_net=None, grad_map=None, blob_to_device=None)</td></tr>
-<tr class="separator:a848881a336267379bb8bbf4dbb592982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbac08520486bc43c3a5a75255030ba"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1modeling_1_1gradient__clipping_1_1_gradient_clipping.html#a2dbac08520486bc43c3a5a75255030ba">__init__</a> (self, grad_clip_method, clip_norm_type='l2_norm', clip_threshold=0.1, use_parameter_norm=False, compute_norm_ratio=False, clip_max=1, clip_min=-1, blobs_to_include=None, blobs_to_exclude=None)</td></tr>
+<tr class="separator:a2dbac08520486bc43c3a5a75255030ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49fa6160193609d798b40645e68f9666"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49fa6160193609d798b40645e68f9666"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>modify_net</b> (self, net, init_net=None, grad_map=None, blob_to_device=None, modify_output_record=False)</td></tr>
+<tr class="separator:a49fa6160193609d798b40645e68f9666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier.html">caffe2.python.modeling.net_modifier.NetModifier</a></td></tr>
 <tr class="memitem:ab892235616664e43d59bf2adc69cca70 inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab892235616664e43d59bf2adc69cca70"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self)</td></tr>
@@ -128,9 +128,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self)</t
 <tr class="memitem:aa5dff746f5da42ea996351efa24de4e1 inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5dff746f5da42ea996351efa24de4e1"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>modify_net</b> (self, net, init_net=None, grad_map=None, blob_to_device=None)</td></tr>
 <tr class="separator:aa5dff746f5da42ea996351efa24de4e1 inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af69d05435eb81b19647a2dc0cef74b54 inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af69d05435eb81b19647a2dc0cef74b54"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__call__</b> (self, net, init_net=None, grad_map=None, blob_to_device=None)</td></tr>
-<tr class="separator:af69d05435eb81b19647a2dc0cef74b54 inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469f8bd1fcf1ef4685ceea9baf5b27fd inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a469f8bd1fcf1ef4685ceea9baf5b27fd"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__call__</b> (self, net, init_net=None, grad_map=None, blob_to_device=None, modify_output_record=False)</td></tr>
+<tr class="separator:a469f8bd1fcf1ef4685ceea9baf5b27fd inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -149,6 +149,18 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a96367fc3025da8652b555fc101e412d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96367fc3025da8652b555fc101e412d3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>compute_norm_ratio</b></td></tr>
 <tr class="separator:a96367fc3025da8652b555fc101e412d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240963a5ba1f43e236d1872839cd85eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a240963a5ba1f43e236d1872839cd85eb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>clip_max</b></td></tr>
+<tr class="separator:a240963a5ba1f43e236d1872839cd85eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d848bb7ee5fc10eb553ba14ad31112"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5d848bb7ee5fc10eb553ba14ad31112"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>clip_min</b></td></tr>
+<tr class="separator:ad5d848bb7ee5fc10eb553ba14ad31112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4aa2d18e3a3267be608185555a9ff3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c4aa2d18e3a3267be608185555a9ff3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>blobs_to_include</b></td></tr>
+<tr class="separator:a7c4aa2d18e3a3267be608185555a9ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78c54a4e1542af8b306b2b5e5925353"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad78c54a4e1542af8b306b2b5e5925353"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>blobs_to_exclude</b></td></tr>
+<tr class="separator:ad78c54a4e1542af8b306b2b5e5925353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -161,8 +173,11 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>L2_NORM</b> = 'l2_n
 <tr class="memitem:a778e3af8594409cca089a40e36609e85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a778e3af8594409cca089a40e36609e85"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>BY_NORM</b> = 'by_norm'</td></tr>
 <tr class="separator:a778e3af8594409cca089a40e36609e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c186407349444becf51a56cf40d0fcb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c186407349444becf51a56cf40d0fcb"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>BY_VALUE</b> = 'by_value'</td></tr>
+<tr class="separator:a7c186407349444becf51a56cf40d0fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a2134d0a7d230ba794d79fc1aaa5c77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a2134d0a7d230ba794d79fc1aaa5c77"></a>
-list&#160;</td><td class="memItemRight" valign="bottom"><b>GRAD_CLIP_METHODS</b> = [BY_NORM]</td></tr>
+list&#160;</td><td class="memItemRight" valign="bottom"><b>GRAD_CLIP_METHODS</b> = [BY_NORM, BY_VALUE]</td></tr>
 <tr class="separator:a6a2134d0a7d230ba794d79fc1aaa5c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26fbb66eacd4e6e0c5fce4f35b6ce272"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26fbb66eacd4e6e0c5fce4f35b6ce272"></a>
 list&#160;</td><td class="memItemRight" valign="bottom"><b>CLIP_GRADIENT_NORM_TYPES</b> = [L2_NORM, L1_NORM]</td></tr>
@@ -172,7 +187,7 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>CLIP_GRADIENT_NORM_TY
 <div class="textblock">
 <p>Definition at line <a class="el" href="gradient__clipping_8py_source.html#l00016">16</a> of file <a class="el" href="gradient__clipping_8py_source.html">gradient_clipping.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aca68d5bb38fd37bff4f6c2bb247c1b84"></a>
+<a class="anchor" id="a2dbac08520486bc43c3a5a75255030ba"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -192,13 +207,13 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>CLIP_GRADIENT_NORM_TY
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>clip_norm_type</em>, </td>
+          <td class="paramname"><em>clip_norm_type</em> = <code>'l2_norm'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>clip_threshold</em>, </td>
+          <td class="paramname"><em>clip_threshold</em> = <code>0.1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -210,7 +225,31 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>CLIP_GRADIENT_NORM_TY
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>compute_norm_ratio</em> = <code>False</code>&#160;</td>
+          <td class="paramname"><em>compute_norm_ratio</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>clip_max</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>clip_min</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>blobs_to_include</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>blobs_to_exclude</em> = <code>None</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -229,8 +268,15 @@ use_parameter_norm: a boolean to indicate whether to incorporate
     the norm of the parameter
 compute_norm_ratio: a boolean to compute the ratio between gradient norm
     and parameter norm explicitly for debugging purpose
+clip_max: when clipping by_value, any value that is greater than
+    clip_max will be clipped to clip_max
+clip_min: when clipping by_value, any value that is smaller than
+    clip_min will be clipped to clip_min
+blobs_to_include: names of blobs whose gradient is to be clipped. If it is set
+    to none, all param 's gradient in grad_map will be clipped.
+blobs_to_exclude: names of blobs whose gradient is not to be clipped.
 </pre> 
-<p>Definition at line <a class="el" href="gradient__clipping_8py_source.html#l00027">27</a> of file <a class="el" href="gradient__clipping_8py_source.html">gradient_clipping.py</a>.</p>
+<p>Definition at line <a class="el" href="gradient__clipping_8py_source.html#l00030">30</a> of file <a class="el" href="gradient__clipping_8py_source.html">gradient_clipping.py</a>.</p>
 
 </div>
 </div>
@@ -241,7 +287,7 @@ compute_norm_ratio: a boolean to compute the ratio between gradient norm
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -264,7 +310,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

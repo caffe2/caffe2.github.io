@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -104,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A reader wrapper for <a class="el" href="classcaffe2_1_1db_1_1_d_b.html" title="An abstract class for accessing a database of key-value pairs. ">DB</a> that also allows us to serialize it.  
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> reader wrapper for <a class="el" href="classcaffe2_1_1db_1_1_d_b.html" title="An abstract class for accessing a database of key-value pairs. ">DB</a> that also allows us to serialize it.  
  <a href="classcaffe2_1_1db_1_1_d_b_reader.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="db_8h_source.html">db.h</a>&gt;</code></p>
@@ -143,7 +143,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DBReaderSerializer</
 <tr class="separator:ae9df34335cc98740563d22162a1ba3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A reader wrapper for <a class="el" href="classcaffe2_1_1db_1_1_d_b.html" title="An abstract class for accessing a database of key-value pairs. ">DB</a> that also allows us to serialize it. </p>
+<div class="textblock"><p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> reader wrapper for <a class="el" href="classcaffe2_1_1db_1_1_d_b.html" title="An abstract class for accessing a database of key-value pairs. ">DB</a> that also allows us to serialize it. </p>
 
 <p>Definition at line <a class="el" href="db_8h_source.html#l00144">144</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -171,7 +171,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DBReaderSerializer</
 <p>Returns the underlying cursor of the db reader. </p>
 <p>Note that if you directly use the cursor, the read will not be thread safe, because there is no mechanism to stop multiple threads from accessing the same cursor. You should consider using <a class="el" href="classcaffe2_1_1db_1_1_d_b_reader.html#a3eca647fed497c7997ba457a96f72251" title="Read a set of key and value from the db and move to next. ">Read()</a> explicitly. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00254">254</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00260">260</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -213,7 +213,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DBReaderSerializer</
 <p>If the cursor reaches its end, the reader will go back to the head of the db. This function can be used to enable multiple input ops to read the same db.</p>
 <p>Note(jiayq): we loosen the definition of a const function here a little bit: the state of the cursor is actually changed. However, this allows us to pass in a <a class="el" href="classcaffe2_1_1db_1_1_d_b_reader.html" title="A reader wrapper for DB that also allows us to serialize it. ">DBReader</a> to an <a class="el" href="classcaffe2_1_1_operator.html">Operator</a> without the need of a duplicated output blob. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00222">222</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00228">228</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -241,7 +241,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DBReaderSerializer</
 <p>Seeks to the first key. </p>
 <p>Thread safe. </p>
 
-<p>Definition at line <a class="el" href="db_8h_source.html#l00241">241</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
+<p>Definition at line <a class="el" href="db_8h_source.html#l00247">247</a> of file <a class="el" href="db_8h_source.html">db.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +252,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DBReaderSerializer</
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -275,7 +275,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

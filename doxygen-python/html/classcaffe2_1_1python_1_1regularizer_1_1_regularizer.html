@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -109,10 +109,13 @@ Inheritance diagram for caffe2.python.regularizer.Regularizer:</div>
  <div class="center">
   <img src="classcaffe2_1_1python_1_1regularizer_1_1_regularizer.png" usemap="#caffe2.python.regularizer.Regularizer_map" alt=""/>
   <map id="caffe2.python.regularizer.Regularizer_map" name="caffe2.python.regularizer.Regularizer_map">
-<area href="classcaffe2_1_1python_1_1regularizer_1_1_constant_norm.html" alt="caffe2.python.regularizer.ConstantNorm" shape="rect" coords="0,112,239,136"/>
-<area href="classcaffe2_1_1python_1_1regularizer_1_1_l1_norm.html" alt="caffe2.python.regularizer.L1Norm" shape="rect" coords="249,112,488,136"/>
-<area href="classcaffe2_1_1python_1_1regularizer_1_1_l2_norm.html" alt="caffe2.python.regularizer.L2Norm" shape="rect" coords="498,112,737,136"/>
-<area href="classcaffe2_1_1python_1_1regularizer_1_1_max_norm.html" alt="caffe2.python.regularizer.MaxNorm" shape="rect" coords="747,112,986,136"/>
+<area href="classcaffe2_1_1python_1_1regularizer_1_1_bounded_gradient_projection.html" alt="caffe2.python.regularizer.BoundedGradientProjection" shape="rect" coords="0,112,315,136"/>
+<area href="classcaffe2_1_1python_1_1regularizer_1_1_constant_norm.html" alt="caffe2.python.regularizer.ConstantNorm" shape="rect" coords="325,112,640,136"/>
+<area href="classcaffe2_1_1python_1_1regularizer_1_1_group_l1_norm.html" alt="caffe2.python.regularizer.GroupL1Norm" shape="rect" coords="650,112,965,136"/>
+<area href="classcaffe2_1_1python_1_1regularizer_1_1_l1_norm.html" alt="caffe2.python.regularizer.L1Norm" shape="rect" coords="975,112,1290,136"/>
+<area href="classcaffe2_1_1python_1_1regularizer_1_1_l2_norm.html" alt="caffe2.python.regularizer.L2Norm" shape="rect" coords="1300,112,1615,136"/>
+<area href="classcaffe2_1_1python_1_1regularizer_1_1_log_barrier.html" alt="caffe2.python.regularizer.LogBarrier" shape="rect" coords="1625,112,1940,136"/>
+<area href="classcaffe2_1_1python_1_1regularizer_1_1_max_norm.html" alt="caffe2.python.regularizer.MaxNorm" shape="rect" coords="1950,112,2265,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -121,19 +124,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afbe3fdf3669d1f9f3e0447aaf1800053"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbe3fdf3669d1f9f3e0447aaf1800053"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self)</td></tr>
 <tr class="separator:afbe3fdf3669d1f9f3e0447aaf1800053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28919556b6bfba5924102fd742a76d19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28919556b6bfba5924102fd742a76d19"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__call__</b> (self, net, param_init_net, param, grad=None)</td></tr>
-<tr class="separator:a28919556b6bfba5924102fd742a76d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd7a2c04fa087f4daa9750bcdbd40d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affd7a2c04fa087f4daa9750bcdbd40d4"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__call__</b> (self, net, param_init_net, param, grad=None, by=None)</td></tr>
+<tr class="separator:affd7a2c04fa087f4daa9750bcdbd40d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a55b8a4767984404c27f9917f0536d89d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55b8a4767984404c27f9917f0536d89d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>apply_after_optimizer</b></td></tr>
-<tr class="separator:a55b8a4767984404c27f9917f0536d89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a813b8e2fe1b6a2d3439f7b28ae2793d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a813b8e2fe1b6a2d3439f7b28ae2793d5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>kEpsilon</b></td></tr>
+<tr class="separator:a813b8e2fe1b6a2d3439f7b28ae2793d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="regularizer_8py_source.html#l00012">12</a> of file <a class="el" href="regularizer_8py_source.html">regularizer.py</a>.</p>
+<p>Definition at line <a class="el" href="regularizer_8py_source.html#l00014">14</a> of file <a class="el" href="regularizer_8py_source.html">regularizer.py</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/python/<a class="el" href="regularizer_8py_source.html">regularizer.py</a></li>
 </ul>
@@ -141,7 +144,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -164,7 +167,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

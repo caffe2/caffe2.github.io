@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -106,9 +106,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0e5382a28a5aad925dc9919afcd3badc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e5382a28a5aad925dc9919afcd3badc"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>SubgraphType</b> = <a class="el" href="classnom_1_1_subgraph.html">Subgraph</a>&lt; typename G::NodeType, typename G::EdgeType &gt;</td></tr>
-<tr class="separator:a0e5382a28a5aad925dc9919afcd3badc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a54734244942542ef41e1a1587fbf48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a54734244942542ef41e1a1587fbf48"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SubgraphType</b> = typename G::SubgraphType</td></tr>
+<tr class="separator:a6a54734244942542ef41e1a1587fbf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -116,10 +116,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Match</b> (G &amp;g)</td></tr>
 <tr class="separator:af5f27c38b103ce44da3e2289962b2ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e8de9cb97e539d18bee842384b6d400"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e8de9cb97e539d18bee842384b6d400"></a>
-std::vector&lt; <a class="el" href="classnom_1_1_subgraph.html">SubgraphType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>recursiveMatch</b> (typename G::NodeRef candidateNode, std::vector&lt; typename G::NodeRef &gt; stack, <a class="el" href="classnom_1_1_subgraph.html">SubgraphType</a> currentSubgraph)</td></tr>
+std::vector&lt; SubgraphType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>recursiveMatch</b> (typename G::NodeRef candidateNode, std::vector&lt; typename G::NodeRef &gt; stack, SubgraphType currentSubgraph)</td></tr>
 <tr class="separator:a9e8de9cb97e539d18bee842384b6d400"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3510a454b8bee430684a36534feba578"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3510a454b8bee430684a36534feba578"></a>
-std::vector&lt; <a class="el" href="classnom_1_1_subgraph.html">SubgraphType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>match</b> (G &amp;g)</td></tr>
+std::vector&lt; SubgraphType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>match</b> (G &amp;g)</td></tr>
 <tr class="separator:a3510a454b8bee430684a36534feba578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -127,7 +127,7 @@ std::vector&lt; <a class="el" href="classnom_1_1_subgraph.html">SubgraphType</a>
 class nom::Match&lt; G, EqualityClass &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="_match_8h_source.html#l00029">29</a> of file <a class="el" href="_match_8h_source.html">Match.h</a>.</p>
+<p>Definition at line <a class="el" href="_match_8h_source.html#l00031">31</a> of file <a class="el" href="_match_8h_source.html">Match.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/core/nomnigraph/include/nomnigraph/Transformations/<a class="el" href="_match_8h_source.html">Match.h</a></li>
 </ul>
@@ -135,7 +135,7 @@ class nom::Match&lt; G, EqualityClass &gt;</h3>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -158,7 +158,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

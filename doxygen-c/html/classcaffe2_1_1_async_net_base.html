@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -98,9 +98,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a>  </div>
+<a href="#friends">Friends</a>  </div>
   <div class="headertitle">
 <div class="title">caffe2::AsyncNetBase Class Reference</div>  </div>
 </div><!--header-->
@@ -111,10 +113,9 @@ Inheritance diagram for caffe2::AsyncNetBase:</div>
  <div class="center">
   <img src="classcaffe2_1_1_async_net_base.png" usemap="#caffe2::AsyncNetBase_map" alt=""/>
   <map id="caffe2::AsyncNetBase_map" name="caffe2::AsyncNetBase_map">
-<area href="classcaffe2_1_1_net_base.html" alt="caffe2::NetBase" shape="rect" coords="100,56,291,80"/>
-<area href="classcaffe2_1_1_observable.html" alt="caffe2::Observable&lt; NetBase &gt;" shape="rect" coords="100,0,291,24"/>
-<area href="classcaffe2_1_1_async_polling_net.html" alt="caffe2::AsyncPollingNet" shape="rect" coords="0,168,191,192"/>
-<area href="classcaffe2_1_1_async_scheduling_net.html" alt="caffe2::AsyncSchedulingNet" shape="rect" coords="201,168,392,192"/>
+<area href="classcaffe2_1_1_net_base.html" alt="caffe2::NetBase" shape="rect" coords="0,56,191,80"/>
+<area href="classcaffe2_1_1_observable.html" alt="caffe2::Observable&lt; NetBase &gt;" shape="rect" coords="0,0,191,24"/>
+<area href="classcaffe2_1_1_async_scheduling_net.html" alt="caffe2::AsyncSchedulingNet" shape="rect" coords="0,168,191,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -129,6 +130,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsAsync</b> () 
 <tr class="memitem:ae8440cd658913baee30d4884600f2841"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8440cd658913baee30d4884600f2841"></a>
 vector&lt; <a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetOperators</b> () const override</td></tr>
 <tr class="separator:ae8440cd658913baee30d4884600f2841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2089977a16691163d4b0b1d4605781fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2089977a16691163d4b0b1d4605781fc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunAsync</b> () override</td></tr>
+<tr class="separator:a2089977a16691163d4b0b1d4605781fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e341c2611c9953cd2c4d242225c36d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e341c2611c9953cd2c4d242225c36d4"></a>
+const dag_utils::ExecutionChains &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>TEST_execution_chains</b> () const </td></tr>
+<tr class="separator:a5e341c2611c9953cd2c4d242225c36d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3526c6f3f25d2c1ad38a87366d29e39e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3526c6f3f25d2c1ad38a87366d29e39e"></a>
+ProfDAGProtos&#160;</td><td class="memItemRight" valign="bottom"><b>GetOperatorStats</b> () const </td></tr>
+<tr class="separator:a3526c6f3f25d2c1ad38a87366d29e39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f05e1828425c23149a7d55f1f02ea6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2f05e1828425c23149a7d55f1f02ea6"></a>
+ProfDAGProtos&#160;</td><td class="memItemRight" valign="bottom"><b>GetPerOperatorCost</b> () const </td></tr>
+<tr class="separator:af2f05e1828425c23149a7d55f1f02ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a782a2812547fac3699b58e6e402dafea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a782a2812547fac3699b58e6e402dafea"></a>
+<a class="el" href="classcaffe2_1_1_prof_d_a_g_report.html">ProfDAGReport</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetProfReport</b> () const </td></tr>
+<tr class="separator:a782a2812547fac3699b58e6e402dafea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaffe2_1_1_net_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1_net_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1_net_base.html">caffe2::NetBase</a></td></tr>
 <tr class="memitem:ab815e80182d7a8a77ba16526b83041e7 inherit pub_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab815e80182d7a8a77ba16526b83041e7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>NetBase</b> (const std::shared_ptr&lt; const NetDef &gt; &amp;net_def, <a class="el" href="classcaffe2_1_1_workspace.html">Workspace</a> *ws)</td></tr>
@@ -142,12 +158,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Wait</b> ()</
 <tr class="memitem:a2dd5b7cc9ea8a07eb96ea4eee8b491bd inherit pub_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2dd5b7cc9ea8a07eb96ea4eee8b491bd"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Run</b> ()</td></tr>
 <tr class="separator:a2dd5b7cc9ea8a07eb96ea4eee8b491bd inherit pub_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba8d006dc4e1ded4d5f6098ef3b80fc inherit pub_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ba8d006dc4e1ded4d5f6098ef3b80fc"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunAsync</b> ()</td></tr>
-<tr class="separator:a8ba8d006dc4e1ded4d5f6098ef3b80fc inherit pub_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69aed01ddcd98e7fa13b174c4cd134a8 inherit pub_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_net_base.html#a69aed01ddcd98e7fa13b174c4cd134a8">TEST_Benchmark</a> (const int, const int, const bool)</td></tr>
-<tr class="memdesc:a69aed01ddcd98e7fa13b174c4cd134a8 inherit pub_methods_classcaffe2_1_1_net_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Benchmarks a network.  <a href="#a69aed01ddcd98e7fa13b174c4cd134a8">More...</a><br /></td></tr>
-<tr class="separator:a69aed01ddcd98e7fa13b174c4cd134a8 inherit pub_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3ecd57c1d75c2eceb240a5800fc20d7 inherit pub_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_net_base.html#ae3ecd57c1d75c2eceb240a5800fc20d7">TEST_Benchmark</a> (const int, const int, const bool)</td></tr>
+<tr class="memdesc:ae3ecd57c1d75c2eceb240a5800fc20d7 inherit pub_methods_classcaffe2_1_1_net_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Benchmarks a network.  <a href="#ae3ecd57c1d75c2eceb240a5800fc20d7">More...</a><br /></td></tr>
+<tr class="separator:ae3ecd57c1d75c2eceb240a5800fc20d7 inherit pub_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bd5e11c134d0312a7bd1c77179596c9 inherit pub_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bd5e11c134d0312a7bd1c77179596c9"></a>
 const vector&lt; string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>external_output</b> () const </td></tr>
 <tr class="separator:a3bd5e11c134d0312a7bd1c77179596c9 inherit pub_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +177,15 @@ const NetDef &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>debug_d
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_debug_def</b> () const </td></tr>
 <tr class="separator:a8be95e1d275d3f3041a8145436f9ee51 inherit pub_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaffe2_1_1_observable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1_observable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1_observable.html">caffe2::Observable&lt; NetBase &gt;</a></td></tr>
+<tr class="memitem:adf3f51ec5cb69d8d9d0190903234c9e7 inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf3f51ec5cb69d8d9d0190903234c9e7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Observable</b> (<a class="el" href="classcaffe2_1_1_observable.html">Observable</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:adf3f51ec5cb69d8d9d0190903234c9e7 inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5fb16d38308d8351ee3f51c76927fa inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d5fb16d38308d8351ee3f51c76927fa"></a>
+<a class="el" href="classcaffe2_1_1_observable.html">Observable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classcaffe2_1_1_observable.html">Observable</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a4d5fb16d38308d8351ee3f51c76927fa inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3144e1bee6c39e8f4c7b51f921a84ad inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3144e1bee6c39e8f4c7b51f921a84ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_observable.html">Observable</a>)</td></tr>
+<tr class="separator:ae3144e1bee6c39e8f4c7b51f921a84ad inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac04a21851203c49213fb12253a0523 inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ac04a21851203c49213fb12253a0523"></a>
 const <a class="el" href="classcaffe2_1_1_observer_base.html">Observer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AttachObserver</b> (std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1_observer_base.html">Observer</a> &gt; observer)</td></tr>
 <tr class="separator:a0ac04a21851203c49213fb12253a0523 inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,11 +202,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>StartAllObservers</b>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StopAllObservers</b> ()</td></tr>
 <tr class="separator:ad5b6c5df43d1f97d895b897fe6abcbca inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:acb67ff353867b7c49ba4163713377eb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb67ff353867b7c49ba4163713377eb0"></a>
+typedef std::unordered_map&lt; int, std::unordered_map&lt; int, std::shared_ptr&lt; <a class="el" href="classc10_1_1_task_thread_pool_base.html">TaskThreadPoolBase</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PoolsMap</b></td></tr>
+<tr class="separator:acb67ff353867b7c49ba4163713377eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a96fe2c596f8ef0234578cf620e92451f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96fe2c596f8ef0234578cf620e92451f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>canSchedule</b> (int chain_id, const std::vector&lt; EventStatus &gt; *status=nullptr)</td></tr>
-<tr class="separator:a96fe2c596f8ef0234578cf620e92451f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a36e1aef4c49f938d390740dbdf93c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93a36e1aef4c49f938d390740dbdf93c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canSchedule</b> (int chain_id, const std::vector&lt; EventStatus &gt; *status=nullptr, bool *parent_failed=nullptr)</td></tr>
+<tr class="separator:a93a36e1aef4c49f938d390740dbdf93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c41f17ee3ad59cd337df75a55d8491"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80c41f17ee3ad59cd337df75a55d8491"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canSchedule</b> (int parent_id, int child_id)</td></tr>
+<tr class="separator:a80c41f17ee3ad59cd337df75a55d8491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5954859c2aa190259efe6823acd199cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5954859c2aa190259efe6823acd199cf"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>tasksNum</b> () const </td></tr>
 <tr class="separator:a5954859c2aa190259efe6823acd199cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,18 +231,51 @@ const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="
 <tr class="memitem:ae6502480613125209dc1c2880573a5c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6502480613125209dc1c2880573a5c2"></a>
 const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>parents</b> (int task_id) const </td></tr>
 <tr class="separator:ae6502480613125209dc1c2880573a5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a30ef46191da54c87768bab3242857"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0a30ef46191da54c87768bab3242857"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>updateParentCount</b> (int child_id)</td></tr>
+<tr class="separator:ae0a30ef46191da54c87768bab3242857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4289c2c245ecac56dc9ff2a67b5fa2f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4289c2c245ecac56dc9ff2a67b5fa2f3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getParentCount</b> (int child_id)</td></tr>
+<tr class="separator:a4289c2c245ecac56dc9ff2a67b5fa2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56bc1e9928431fec93edf73127bb28b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56bc1e9928431fec93edf73127bb28b5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>testAndSetScheduled</b> (int task_id)</td></tr>
+<tr class="separator:a56bc1e9928431fec93edf73127bb28b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04bc92d0b090722d15c3c057818a7c6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04bc92d0b090722d15c3c057818a7c6b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>numOps</b> (int task_id) const </td></tr>
+<tr class="separator:a04bc92d0b090722d15c3c057818a7c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec45a378f4d3e29cb45b154d3dbc0138"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec45a378f4d3e29cb45b154d3dbc0138"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>firstTaskOpId</b> (int task_id) const </td></tr>
+<tr class="separator:aec45a378f4d3e29cb45b154d3dbc0138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25a35aade1208cee8f49aba0b195a39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab25a35aade1208cee8f49aba0b195a39"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>lastTaskOpId</b> (int task_id) const </td></tr>
+<tr class="separator:ab25a35aade1208cee8f49aba0b195a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54fce2a67006f485012710a1e4195955"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54fce2a67006f485012710a1e4195955"></a>
+const <a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>firstTaskOp</b> (int task_id) const </td></tr>
+<tr class="separator:a54fce2a67006f485012710a1e4195955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7664f0bb90ba90e6ed5ceb6232fef5af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7664f0bb90ba90e6ed5ceb6232fef5af"></a>
+const <a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>lastTaskOp</b> (int task_id) const </td></tr>
+<tr class="separator:a7664f0bb90ba90e6ed5ceb6232fef5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03b43c55e36ff2cc0bc23811c8b2eef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae03b43c55e36ff2cc0bc23811c8b2eef"></a>
+<a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>firstTaskOp</b> (int task_id)</td></tr>
+<tr class="separator:ae03b43c55e36ff2cc0bc23811c8b2eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850d83d89f3db495b7c30e2f38a40c6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a850d83d89f3db495b7c30e2f38a40c6b"></a>
+<a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>lastTaskOp</b> (int task_id)</td></tr>
+<tr class="separator:a850d83d89f3db495b7c30e2f38a40c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4da79b9276859925248e488daec3092"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4da79b9276859925248e488daec3092"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>asyncWait</b> (int task_id, int stream_id, const std::vector&lt; int &gt; &amp;wait_task_ids) const </td></tr>
 <tr class="separator:ad4da79b9276859925248e488daec3092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefde71b8abd7b6267ca9c0e92473930e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefde71b8abd7b6267ca9c0e92473930e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (int task_id, int stream_id)</td></tr>
-<tr class="separator:aefde71b8abd7b6267ca9c0e92473930e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4994d771ca67ba61ce790e2d0c009960"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4994d771ca67ba61ce790e2d0c009960"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (int task_id, int stream_id) noexcept</td></tr>
+<tr class="separator:a4994d771ca67ba61ce790e2d0c009960"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0cd029624ba9d9d0cbd4d4d06827691"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0cd029624ba9d9d0cbd4d4d06827691"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>stream</b> (int task_id)</td></tr>
 <tr class="separator:ad0cd029624ba9d9d0cbd4d4d06827691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae06c0562378b535c51215fbd7e9c6b04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae06c0562378b535c51215fbd7e9c6b04"></a>
-std::shared_ptr&lt; <a class="el" href="classcaffe2_1_1_task_thread_pool.html">TaskThreadPool</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pool</b> (const DeviceOption &amp;device_option)</td></tr>
-<tr class="separator:ae06c0562378b535c51215fbd7e9c6b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001fef2f3d045aa518615e5608528949"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a001fef2f3d045aa518615e5608528949"></a>
+<a class="el" href="classc10_1_1_task_thread_pool_base.html">TaskThreadPoolBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pool</b> (const DeviceOption &amp;device_option)</td></tr>
+<tr class="separator:a001fef2f3d045aa518615e5608528949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b1dbea51a2590fddc555a14a82ea41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8b1dbea51a2590fddc555a14a82ea41"></a>
+<a class="el" href="classc10_1_1_task_thread_pool_base.html">TaskThreadPoolBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pool</b> ()</td></tr>
+<tr class="separator:ae8b1dbea51a2590fddc555a14a82ea41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9505abd0a7b62a965bc36f321205aa2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9505abd0a7b62a965bc36f321205aa2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>finishTasks</b> (const std::unordered_set&lt; int &gt; &amp;task_ids)</td></tr>
 <tr class="separator:ae9505abd0a7b62a965bc36f321205aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,16 +285,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>finalizeEvents</b> ()
 <tr class="memitem:a987e948d0aaeca305f4679cbaa8c32a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a987e948d0aaeca305f4679cbaa8c32a2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isStreamFree</b> (int task_id, int stream_id) const </td></tr>
 <tr class="separator:a987e948d0aaeca305f4679cbaa8c32a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74057a6757ad43af264486afe31dfec9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74057a6757ad43af264486afe31dfec9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_async_net_base.html">AsyncNetBase</a>)</td></tr>
-<tr class="separator:a74057a6757ad43af264486afe31dfec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb881bab88cc58c2db8805a0a402ee22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb881bab88cc58c2db8805a0a402ee22"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
+<tr class="separator:abb881bab88cc58c2db8805a0a402ee22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f879b61832c693609e738704e9bbbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45f879b61832c693609e738704e9bbbd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>handleRunError</b> () override</td></tr>
+<tr class="separator:a45f879b61832c693609e738704e9bbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8606386100dee9ddfba03f284d8f9fd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8606386100dee9ddfba03f284d8f9fd0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleChainError</b> (int task_id, <a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> *op, const char *err_msg, bool save_exception=false) noexcept</td></tr>
+<tr class="separator:a8606386100dee9ddfba03f284d8f9fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5035a3b988b5b5f8a1a23cabebfeb19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5035a3b988b5b5f8a1a23cabebfeb19"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_async_net_base.html">AsyncNetBase</a>)</td></tr>
+<tr class="separator:af5035a3b988b5b5f8a1a23cabebfeb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classcaffe2_1_1_net_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcaffe2_1_1_net_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classcaffe2_1_1_net_base.html">caffe2::NetBase</a></td></tr>
 <tr class="memitem:a433cc796bb5acf72d50a67f397f145db inherit pro_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a433cc796bb5acf72d50a67f397f145db"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>DoRunAsync</b> ()</td></tr>
 <tr class="separator:a433cc796bb5acf72d50a67f397f145db inherit pro_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a3634ef9d22cd0be0207c383dd187e2 inherit pro_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a3634ef9d22cd0be0207c383dd187e2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_net_base.html">NetBase</a>)</td></tr>
-<tr class="separator:a1a3634ef9d22cd0be0207c383dd187e2 inherit pro_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ab2bdf8b3238991b7797b67491be23 inherit pro_methods_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48ab2bdf8b3238991b7797b67491be23"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_net_base.html">NetBase</a>)</td></tr>
+<tr class="separator:a48ab2bdf8b3238991b7797b67491be23 inherit pro_methods_classcaffe2_1_1_net_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:adec788d779dd4adfefaf71beac9f16ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adec788d779dd4adfefaf71beac9f16ed"></a>
+static std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getStreamCounters</b> ()</td></tr>
+<tr class="separator:adec788d779dd4adfefaf71beac9f16ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -246,18 +325,33 @@ std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight"
 <tr class="memitem:a11faf2da78a2cfe08a5cc2b3a14874ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11faf2da78a2cfe08a5cc2b3a14874ae"></a>
 std::vector&lt; <a class="el" href="structcaffe2_1_1dag__utils_1_1_op_graph_node.html">dag_utils::OpGraphNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>chain_nodes_</b></td></tr>
 <tr class="separator:a11faf2da78a2cfe08a5cc2b3a14874ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35135afe67c3ef5d70bb4c7e12a7b41b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35135afe67c3ef5d70bb4c7e12a7b41b"></a>
+dag_utils::ExecutionChains&#160;</td><td class="memItemRight" valign="bottom"><b>execution_chains_</b></td></tr>
+<tr class="separator:a35135afe67c3ef5d70bb4c7e12a7b41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57783edf01aaa70445d1c2b441c41c79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57783edf01aaa70445d1c2b441c41c79"></a>
 std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>pools_mutex_</b></td></tr>
 <tr class="separator:a57783edf01aaa70445d1c2b441c41c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e20b66870f6fcb75d7d83d137c873dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e20b66870f6fcb75d7d83d137c873dc"></a>
-std::shared_ptr&lt; <a class="el" href="classcaffe2_1_1_task_thread_pool.html">TaskThreadPool</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cpu_pool_</b></td></tr>
-<tr class="separator:a3e20b66870f6fcb75d7d83d137c873dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89afff20dec1fd61e98d583f445635f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89afff20dec1fd61e98d583f445635f3"></a>
-std::vector&lt; std::shared_ptr&lt; <a class="el" href="classcaffe2_1_1_task_thread_pool.html">TaskThreadPool</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cpu_pools_</b></td></tr>
-<tr class="separator:a89afff20dec1fd61e98d583f445635f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafc4e10995723c9c7f0774b4a01ca829"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafc4e10995723c9c7f0774b4a01ca829"></a>
-std::vector&lt; std::shared_ptr&lt; <a class="el" href="classcaffe2_1_1_task_thread_pool.html">TaskThreadPool</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>gpu_pools_</b></td></tr>
-<tr class="separator:aafc4e10995723c9c7f0774b4a01ca829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44eb280e70cb27b074e268f068ca5944"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44eb280e70cb27b074e268f068ca5944"></a>
+PoolsMap&#160;</td><td class="memItemRight" valign="bottom"><b>cpu_pools_</b></td></tr>
+<tr class="separator:a44eb280e70cb27b074e268f068ca5944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7daa8e4d40b12112413416b9867d99ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7daa8e4d40b12112413416b9867d99ab"></a>
+PoolsMap&#160;</td><td class="memItemRight" valign="bottom"><b>gpu_pools_</b></td></tr>
+<tr class="separator:a7daa8e4d40b12112413416b9867d99ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe595ccbb1c9c4bbf3d4070a0ab53be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbe595ccbb1c9c4bbf3d4070a0ab53be"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>num_workers_</b></td></tr>
+<tr class="separator:abbe595ccbb1c9c4bbf3d4070a0ab53be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a24b2dd1a636e1f9dddf466c4caad79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a24b2dd1a636e1f9dddf466c4caad79"></a>
+std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>success_</b></td></tr>
+<tr class="separator:a8a24b2dd1a636e1f9dddf466c4caad79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8d61462ebfecbc38549626e03d836f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f8d61462ebfecbc38549626e03d836f"></a>
+std::shared_ptr&lt; <a class="el" href="classcaffe2_1_1tracing_1_1_tracer.html">tracing::Tracer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tracer_</b></td></tr>
+<tr class="separator:a9f8d61462ebfecbc38549626e03d836f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b07c8a105530e76627290f51b095a95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b07c8a105530e76627290f51b095a95"></a>
+<a class="el" href="structcaffe2_1_1_execution_options.html">ExecutionOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><b>options_</b></td></tr>
+<tr class="separator:a0b07c8a105530e76627290f51b095a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f728e95b31572a56884e8efaf695c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1f728e95b31572a56884e8efaf695c3"></a>
+<a class="el" href="classcaffe2_1_1_prof_d_a_g_counters.html">ProfDAGCounters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>counters_</b></td></tr>
+<tr class="separator:af1f728e95b31572a56884e8efaf695c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classcaffe2_1_1_net_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcaffe2_1_1_net_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcaffe2_1_1_net_base.html">caffe2::NetBase</a></td></tr>
 <tr class="memitem:ae2a6086f00abd9bd8bcde009c67b3012 inherit pro_attribs_classcaffe2_1_1_net_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2a6086f00abd9bd8bcde009c67b3012"></a>
 vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>external_input_</b></td></tr>
@@ -279,11 +373,14 @@ std::shared_ptr&lt; const NetDef &gt;&#160;</td><td class="memItemRight" valign=
 std::vector&lt; std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1_observer_base.html">Observer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>observers_list_</b></td></tr>
 <tr class="separator:a1c0e56e277283cc9990397cfde2358d9 inherit pro_attribs_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a2f0a5db939aaf4d5a70d1bfd972d9499"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f0a5db939aaf4d5a70d1bfd972d9499"></a>
-static thread_local std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stream_counters_</b></td></tr>
-<tr class="separator:a2f0a5db939aaf4d5a70d1bfd972d9499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a2c07593357636f51e02331d518c0286b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c07593357636f51e02331d518c0286b"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>AsyncNetExecutorHelper</b></td></tr>
+<tr class="separator:a2c07593357636f51e02331d518c0286b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54e1fbd09f543f359ce021763b627d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac54e1fbd09f543f359ce021763b627d5"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>tracing::Tracer</b></td></tr>
+<tr class="separator:ac54e1fbd09f543f359ce021763b627d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -294,7 +391,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> = <a cl
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="net__async__base_8h_source.html#l00017">17</a> of file <a class="el" href="net__async__base_8h_source.html">net_async_base.h</a>.</p>
+<p>Definition at line <a class="el" href="net__async__base_8h_source.html#l00058">58</a> of file <a class="el" href="net__async__base_8h_source.html">net_async_base.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>caffe2/core/<a class="el" href="net__async__base_8h_source.html">net_async_base.h</a></li>
 <li>caffe2/core/<a class="el" href="net__async__base_8cc_source.html">net_async_base.cc</a></li>
@@ -303,7 +400,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> = <a cl
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:53 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -326,7 +423,7 @@ Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -115,24 +115,24 @@ Inheritance diagram for caffe2::BaseReducerGradient::Meta:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a146e88770b2f2f23e08fefbab1ca1425"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a146e88770b2f2f23e08fefbab1ca1425"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Meta</b> (const <a class="el" href="classcaffe2_1_1_tensor.html">Tensor</a>&lt; <a class="el" href="classcaffe2_1_1_c_p_u_context.html">CPUContext</a> &gt; &amp;out_grad, int skip_dims, bool first_dim=true)</td></tr>
-<tr class="separator:a146e88770b2f2f23e08fefbab1ca1425"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc8238d67ce75bb2fb6ca902e8620342"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc8238d67ce75bb2fb6ca902e8620342"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>observeOriginalInput</b> (int, const <a class="el" href="classcaffe2_1_1_tensor.html">Tensor</a>&lt; <a class="el" href="classcaffe2_1_1_c_p_u_context.html">CPUContext</a> &gt; &amp;, <a class="el" href="classcaffe2_1_1_tensor.html">Tensor</a>&lt; <a class="el" href="classcaffe2_1_1_c_p_u_context.html">CPUContext</a> &gt; *, int)</td></tr>
-<tr class="separator:adc8238d67ce75bb2fb6ca902e8620342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a025b786880d2efbf254de6abe412e9f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a025b786880d2efbf254de6abe412e9f9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>appendGradShape</b> (vector&lt; TIndex &gt; *output_shape)</td></tr>
-<tr class="separator:a025b786880d2efbf254de6abe412e9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f380852460b6e691af8c70aabb13997"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f380852460b6e691af8c70aabb13997"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Meta</b> (const <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> &amp;out_grad, int skip_dims, bool first_dim=true)</td></tr>
+<tr class="separator:a0f380852460b6e691af8c70aabb13997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24c0f185395fbe7c959fd225087de9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af24c0f185395fbe7c959fd225087de9a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>observeOriginalInput</b> (int, const <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> &amp;, <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> *, int)</td></tr>
+<tr class="separator:af24c0f185395fbe7c959fd225087de9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e9d81851a2641fd5c2fb018c497ea0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79e9d81851a2641fd5c2fb018c497ea0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>appendGradShape</b> (vector&lt; int64_t &gt; *output_shape)</td></tr>
+<tr class="separator:a79e9d81851a2641fd5c2fb018c497ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a2328aa3afd0fd848bbd7e32a7ebda8fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2328aa3afd0fd848bbd7e32a7ebda8fe"></a>
-TIndex&#160;</td><td class="memItemRight" valign="bottom"><b>block_size</b></td></tr>
-<tr class="separator:a2328aa3afd0fd848bbd7e32a7ebda8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb75afa3221f6e6405fecd06ac8e6b27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb75afa3221f6e6405fecd06ac8e6b27"></a>
-vector&lt; TIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>block_shape</b></td></tr>
-<tr class="separator:afb75afa3221f6e6405fecd06ac8e6b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b326ed3fa6d7d0a05ba54dfeb42378a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b326ed3fa6d7d0a05ba54dfeb42378a"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>block_size</b></td></tr>
+<tr class="separator:a4b326ed3fa6d7d0a05ba54dfeb42378a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c65b93743284e7fee3f7163fccd6e32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c65b93743284e7fee3f7163fccd6e32"></a>
+vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>block_shape</b></td></tr>
+<tr class="separator:a7c65b93743284e7fee3f7163fccd6e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84130c6eae87c279f48c345deb8527cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84130c6eae87c279f48c345deb8527cc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>first_dim</b></td></tr>
 <tr class="separator:a84130c6eae87c279f48c345deb8527cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,7 +147,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>first_dim</b></td></t
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:53 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -170,7 +170,7 @@ Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

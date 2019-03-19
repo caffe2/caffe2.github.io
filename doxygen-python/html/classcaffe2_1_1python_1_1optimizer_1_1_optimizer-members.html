@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -104,19 +104,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="directory">
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>__call__</b>(self, net, param_init_net, param, grad=None) (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>__init__</b>(self) (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>add_lr_multiplier</b>(self, lr_multiplier, is_gpu_blob=False) (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html#ad0ab1e271e8f6b88931278855fd9565f">add_lr_multiplier</a>(self, lr_multiplier)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>build_lr</b>(self, net, param_init_net, base_learning_rate, learning_rate_blob=None, policy=&quot;fixed&quot;, iter_val=0, kwargs) (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>dedup</b>(net, sparse_dedup_aggregator, grad) (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html#adc95d8cd959f46d0a7cd48880f196288">get_auxiliary_parameters</a>(self)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>get_cpu_blob_name</b>(self, base_str, node_name='') (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>get_gpu_blob_name</b>(self, base_str, gpu_id, node_name) (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html#a498428cad454f543e960b1faca2dbf08">make_unique_blob_name</a>(self, base_str)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>scale_learning_rate</b>(self, args, kwargs) (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>create_lars_inputs</b>(self, param_init_net, weight_decay, trust, lr_max) (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>dedup</b>(net, sparse_dedup_aggregator, grad) (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html#adc95d8cd959f46d0a7cd48880f196288">get_auxiliary_parameters</a>(self)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>get_cpu_blob_name</b>(self, base_str, node_name='') (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>get_gpu_blob_name</b>(self, base_str, gpu_id, node_name) (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html#a498428cad454f543e960b1faca2dbf08">make_unique_blob_name</a>(self, base_str)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>scale_learning_rate</b>(self, args, kwargs) (defined in <a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html">caffe2.python.optimizer.Optimizer</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -139,7 +140,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -143,9 +143,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aa18bb270444fc168b2bf7dbcb92ef99d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa18bb270444fc168b2bf7dbcb92ef99d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1db_1_1_d_b.html">DB</a>)</td></tr>
-<tr class="separator:aa18bb270444fc168b2bf7dbcb92ef99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565563e20a786836db564bd0ff0678e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a565563e20a786836db564bd0ff0678e2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1db_1_1_d_b.html">DB</a>)</td></tr>
+<tr class="separator:a565563e20a786836db564bd0ff0678e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -182,7 +182,7 @@ Mode&#160;</td><td class="memItemRight" valign="bottom"><b>mode_</b></td></tr>
 <p>Returns a cursor to read the database. </p>
 <p>The caller takes the ownership of the pointer. </p>
 
-<p>Implemented in <a class="el" href="classcaffe2_1_1db_1_1_mini_d_b.html#a1205f750c866c79a6784f9c3e029f8ad">caffe2::db::MiniDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_l_m_d_b.html#a12e5ff9e683d6ef861e0c0e45c80f03c">caffe2::db::LMDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_blobs_queue_d_b.html#a65617f648c4547f4785d4dca92887981">caffe2::db::BlobsQueueDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_zmq_d_b.html#a025ef4a4ffe4c57afc40db127c77dea7">caffe2::db::ZmqDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_rocks_d_b.html#a27500b764cf86b497bd980303ce13b73">caffe2::db::RocksDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_proto_d_b.html#ae734c16bb09b1ce885de33b4effc384f">caffe2::db::ProtoDB</a>, and <a class="el" href="classcaffe2_1_1db_1_1_level_d_b.html#a0b70b7c6dbba237a65ad597486c2618a">caffe2::db::LevelDB</a>.</p>
+<p>Implemented in <a class="el" href="classcaffe2_1_1db_1_1_mini_d_b.html#a1205f750c866c79a6784f9c3e029f8ad">caffe2::db::MiniDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_l_m_d_b.html#a12e5ff9e683d6ef861e0c0e45c80f03c">caffe2::db::LMDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_blobs_queue_d_b.html#a65617f648c4547f4785d4dca92887981">caffe2::db::BlobsQueueDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_rocks_d_b.html#a27500b764cf86b497bd980303ce13b73">caffe2::db::RocksDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_zmq_d_b.html#a025ef4a4ffe4c57afc40db127c77dea7">caffe2::db::ZmqDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_proto_d_b.html#ae734c16bb09b1ce885de33b4effc384f">caffe2::db::ProtoDB</a>, and <a class="el" href="classcaffe2_1_1db_1_1_level_d_b.html#a0b70b7c6dbba237a65ad597486c2618a">caffe2::db::LevelDB</a>.</p>
 
 </div>
 </div>
@@ -210,7 +210,7 @@ Mode&#160;</td><td class="memItemRight" valign="bottom"><b>mode_</b></td></tr>
 <p>Returns a transaction to write data to the database. </p>
 <p>The caller takes the ownership of the pointer. </p>
 
-<p>Implemented in <a class="el" href="classcaffe2_1_1db_1_1_mini_d_b.html#a6f03c1ecb3f8dc108f13e4ebc44fbc40">caffe2::db::MiniDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_blobs_queue_d_b.html#a07fc3ec32557c6bb7570cff79d004ec5">caffe2::db::BlobsQueueDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_l_m_d_b.html#a355a303d013d9ab2132dee282d09313e">caffe2::db::LMDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_zmq_d_b.html#a88da48fe6500a134844569d749fc7bbe">caffe2::db::ZmqDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_rocks_d_b.html#a28ad03d043bca4e1dcec46cbfc24a34b">caffe2::db::RocksDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_proto_d_b.html#a190c19152f7e771a86f9364d32496041">caffe2::db::ProtoDB</a>, and <a class="el" href="classcaffe2_1_1db_1_1_level_d_b.html#aee10781fcc13fe362aa1dbd3e332a256">caffe2::db::LevelDB</a>.</p>
+<p>Implemented in <a class="el" href="classcaffe2_1_1db_1_1_mini_d_b.html#a6f03c1ecb3f8dc108f13e4ebc44fbc40">caffe2::db::MiniDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_l_m_d_b.html#a355a303d013d9ab2132dee282d09313e">caffe2::db::LMDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_blobs_queue_d_b.html#a07fc3ec32557c6bb7570cff79d004ec5">caffe2::db::BlobsQueueDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_rocks_d_b.html#a28ad03d043bca4e1dcec46cbfc24a34b">caffe2::db::RocksDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_zmq_d_b.html#a88da48fe6500a134844569d749fc7bbe">caffe2::db::ZmqDB</a>, <a class="el" href="classcaffe2_1_1db_1_1_proto_d_b.html#a190c19152f7e771a86f9364d32496041">caffe2::db::ProtoDB</a>, and <a class="el" href="classcaffe2_1_1db_1_1_level_d_b.html#aee10781fcc13fe362aa1dbd3e332a256">caffe2::db::LevelDB</a>.</p>
 
 </div>
 </div>
@@ -221,7 +221,7 @@ Mode&#160;</td><td class="memItemRight" valign="bottom"><b>mode_</b></td></tr>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -244,7 +244,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

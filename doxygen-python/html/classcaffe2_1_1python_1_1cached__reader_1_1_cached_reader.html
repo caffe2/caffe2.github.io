@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -98,6 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classcaffe2_1_1python_1_1cached__reader_1_1_cached_reader-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">caffe2.python.cached_reader.CachedReader Class Reference</div>  </div>
@@ -109,27 +110,27 @@ Inheritance diagram for caffe2.python.cached_reader.CachedReader:</div>
  <div class="center">
   <img src="classcaffe2_1_1python_1_1cached__reader_1_1_cached_reader.png" usemap="#caffe2.python.cached_5Freader.CachedReader_map" alt=""/>
   <map id="caffe2.python.cached_5Freader.CachedReader_map" name="caffe2.python.cached_reader.CachedReader_map">
+<area href="classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader.html" alt="caffe2.python.db_file_reader.DBFileReader" shape="rect" coords="0,112,270,136"/>
 <area href="classcaffe2_1_1python_1_1dataio_1_1_reader.html" alt="caffe2.python.dataio.Reader" shape="rect" coords="0,56,270,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1cffee8f3eb22cd1b3e2889f5b3453e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cffee8f3eb22cd1b3e2889f5b3453e5"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, reader, db_type='leveldb', name='cached_reader')</td></tr>
-<tr class="separator:a1cffee8f3eb22cd1b3e2889f5b3453e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af587e4c63eecd6b13db138cfddbe7c73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af587e4c63eecd6b13db138cfddbe7c73"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>setup_ex</b> (self, init_net, finish_net)</td></tr>
-<tr class="separator:af587e4c63eecd6b13db138cfddbe7c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abab977824d65434f1d6eeef2f75212a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abab977824d65434f1d6eeef2f75212a8"></a>
+<tr class="memitem:a3795b144cd0050729476e71925b2029a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3795b144cd0050729476e71925b2029a"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, original_reader, db_path, db_type='LevelDB', name=None, batch_size=100)</td></tr>
+<tr class="separator:a3795b144cd0050729476e71925b2029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bfb9e9178c3fdece4919a46a9d95f5a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1cached__reader_1_1_cached_reader.html#a7bfb9e9178c3fdece4919a46a9d95f5a">build_cache_step</a> (self, overwrite=False)</td></tr>
+<tr class="separator:a7bfb9e9178c3fdece4919a46a9d95f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader.html">caffe2.python.db_file_reader.DBFileReader</a></td></tr>
+<tr class="memitem:a5768e4c6e5dbca06b497d1e94584b167 inherit pub_methods_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5768e4c6e5dbca06b497d1e94584b167"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, db_path, db_type, name=None, batch_size=100, loop_over=False, field_names=None)</td></tr>
+<tr class="separator:a5768e4c6e5dbca06b497d1e94584b167 inherit pub_methods_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b0df2667f7bccc334fc93ffe92510b inherit pub_methods_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader.html#ab3b0df2667f7bccc334fc93ffe92510b">setup_ex</a> (self, init_net, finish_net)</td></tr>
+<tr class="separator:ab3b0df2667f7bccc334fc93ffe92510b inherit pub_methods_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ec2444a588732c32d92f53b404e1b0 inherit pub_methods_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0ec2444a588732c32d92f53b404e1b0"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (self, read_net)</td></tr>
-<tr class="separator:abab977824d65434f1d6eeef2f75212a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73137680dc54689a8154d024e8d1dcd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73137680dc54689a8154d024e8d1dcd5"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>has_cache</b> (self)</td></tr>
-<tr class="separator:a73137680dc54689a8154d024e8d1dcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac38289badde46a205d4a8a718348d74c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac38289badde46a205d4a8a718348d74c"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>build_cache</b> (self, cache_path, overwrite=False)</td></tr>
-<tr class="separator:ac38289badde46a205d4a8a718348d74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af0ec2444a588732c32d92f53b404e1b0 inherit pub_methods_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaffe2_1_1python_1_1dataio_1_1_reader"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1python_1_1dataio_1_1_reader')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1python_1_1dataio_1_1_reader.html">caffe2.python.dataio.Reader</a></td></tr>
 <tr class="memitem:a6a66dcd8e3e2f578dfa559290245ac43 inherit pub_methods_classcaffe2_1_1python_1_1dataio_1_1_reader"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a66dcd8e3e2f578dfa559290245ac43"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, schema=None)</td></tr>
@@ -160,49 +161,94 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2c110e1dc7ed499cdd4b69a661d51b14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c110e1dc7ed499cdd4b69a661d51b14"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>original_reader</b></td></tr>
 <tr class="separator:a2c110e1dc7ed499cdd4b69a661d51b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8eca4cb950f6ee59787c90c7f4a8f25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8eca4cb950f6ee59787c90c7f4a8f25"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>cache_path</b></td></tr>
-<tr class="separator:ac8eca4cb950f6ee59787c90c7f4a8f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d93e3b3cc120623f03248f52040d99c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d93e3b3cc120623f03248f52040d99c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ds_reader</b></td></tr>
-<tr class="separator:a8d93e3b3cc120623f03248f52040d99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41a81fc993c0f4a3a046e05ecca14e6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41a81fc993c0f4a3a046e05ecca14e6d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ds</b></td></tr>
-<tr class="separator:a41a81fc993c0f4a3a046e05ecca14e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a655efdc5b94f856c5907f3e5989e3586"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a655efdc5b94f856c5907f3e5989e3586"></a>
+<tr class="inherit_header pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader.html">caffe2.python.db_file_reader.DBFileReader</a></td></tr>
+<tr class="memitem:a134e29a91fda5e8d751e7ea3ab1058e1 inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a134e29a91fda5e8d751e7ea3ab1058e1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>db_path</b></td></tr>
+<tr class="separator:a134e29a91fda5e8d751e7ea3ab1058e1 inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0728eb3b1b2660ae7b0658925ab17f34 inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0728eb3b1b2660ae7b0658925ab17f34"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>db_type</b></td></tr>
-<tr class="separator:a655efdc5b94f856c5907f3e5989e3586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af614122beb7fb7ca007aa1caec92493f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af614122beb7fb7ca007aa1caec92493f"></a>
+<tr class="separator:a0728eb3b1b2660ae7b0658925ab17f34 inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e04159939cb27af627e812a4f9ff7f4 inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e04159939cb27af627e812a4f9ff7f4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="separator:af614122beb7fb7ca007aa1caec92493f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b746da9ac25f210dfcd046dcf5c17a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b746da9ac25f210dfcd046dcf5c17a5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>field_names</b></td></tr>
-<tr class="separator:a7b746da9ac25f210dfcd046dcf5c17a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3e04159939cb27af627e812a4f9ff7f4 inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac89ceb30f03db9aac3e628c5f19e4744 inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac89ceb30f03db9aac3e628c5f19e4744"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>batch_size</b></td></tr>
+<tr class="separator:ac89ceb30f03db9aac3e628c5f19e4744 inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5e48e89fc86259e274a6e0e81260b2 inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e5e48e89fc86259e274a6e0e81260b2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>loop_over</b></td></tr>
+<tr class="separator:a8e5e48e89fc86259e274a6e0e81260b2 inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3dc3f7c456ea52ab0967639c11bf8e inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d3dc3f7c456ea52ab0967639c11bf8e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ds</b></td></tr>
+<tr class="separator:a2d3dc3f7c456ea52ab0967639c11bf8e inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40f31b2c73aed31be4867824070230f inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab40f31b2c73aed31be4867824070230f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ds_reader</b></td></tr>
+<tr class="separator:ab40f31b2c73aed31be4867824070230f inherit pub_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ac1b742517e94775148d32b8fb4e7a711"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1b742517e94775148d32b8fb4e7a711"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>default_name_suffix</b> = 'cached_reader'</td></tr>
+<tr class="separator:ac1b742517e94775148d32b8fb4e7a711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader.html">caffe2.python.db_file_reader.DBFileReader</a></td></tr>
+<tr class="memitem:a616e69c173e996b8de7c44ceffb4c4f3 inherit pub_static_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a616e69c173e996b8de7c44ceffb4c4f3"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>default_name_suffix</b> = 'db_file_reader'</td></tr>
+<tr class="separator:a616e69c173e996b8de7c44ceffb4c4f3 inherit pub_static_attribs_classcaffe2_1_1python_1_1db__file__reader_1_1_d_b_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">Reader with persistent in-file cache.
+<div class="textblock">
+<p>Definition at line <a class="el" href="cached__reader_8py_source.html#l00016">16</a> of file <a class="el" href="cached__reader_8py_source.html">cached_reader.py</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7bfb9e9178c3fdece4919a46a9d95f5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def caffe2.python.cached_reader.CachedReader.build_cache_step </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>overwrite</em> = <code>False</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Build a step for generating cache DB file.
 
-Example usage:
-cached_reader = CachedReader(reader)
-build_cache_step = cached_reader.build_cache('/tmp/cache.db')
-with LocalSession() as session:
-    session.run(build_cache_step)
+    If self.db_path exists and not overwritting, build an empty step.
+    Overwise, build a step as follows.
+    Pipe original reader to the _DatasetWriter,
+    so that dataset field blobs are populated.
+    Then save these blobs into a file.
 
-Every time new reader is created, it's expected that build_cache will be
-called before setup_ex and usage of the reader. build_cache will check
-existence of provided file path and in case it's missing will initialize it
-by reading data from original reader. All consequent attempts to read will
-ignore original reader (i.e. no additional data will be read from it).
+    Args:
+overwrite: bool. If true, ignore the existing file
+    and build a new one overwritting the existing one anyway.
+
+    Returns:
+build_cache_step: ExcutionStep.
+    The step to be run for building a cache DB file.
 </pre> 
-<p>Definition at line <a class="el" href="cached__reader_8py_source.html#l00017">17</a> of file <a class="el" href="cached__reader_8py_source.html">cached_reader.py</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p>Definition at line <a class="el" href="cached__reader_8py_source.html#l00085">85</a> of file <a class="el" href="cached__reader_8py_source.html">cached_reader.py</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/python/<a class="el" href="cached__reader_8py_source.html">cached_reader.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -225,7 +271,7 @@ Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

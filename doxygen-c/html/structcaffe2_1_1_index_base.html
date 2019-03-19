@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -115,9 +115,9 @@ Inheritance diagram for caffe2::IndexBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1f83630febe5fd42281977d80f652b63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f83630febe5fd42281977d80f652b63"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>IndexBase</b> (TIndexValue maxElements, const <a class="el" href="classcaffe2_1_1_type_meta.html">TypeMeta</a> &amp;type)</td></tr>
-<tr class="separator:a1f83630febe5fd42281977d80f652b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4b0e7979935854474a68c55491896c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b4b0e7979935854474a68c55491896c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IndexBase</b> (int64_tValue maxElements, const <a class="el" href="classcaffe2_1_1_type_meta.html">TypeMeta</a> &amp;type)</td></tr>
+<tr class="separator:a4b4b0e7979935854474a68c55491896c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcb5a645015e619da55123fb80125e0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcb5a645015e619da55123fb80125e0e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Freeze</b> ()</td></tr>
 <tr class="separator:afcb5a645015e619da55123fb80125e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,9 +130,9 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>maxElements</b> ()
 <tr class="memitem:a6f1d0eea8551c96d82254f9d5011c0aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f1d0eea8551c96d82254f9d5011c0aa"></a>
 const <a class="el" href="classcaffe2_1_1_type_meta.html">TypeMeta</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> () const </td></tr>
 <tr class="separator:a6f1d0eea8551c96d82254f9d5011c0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a9f9e7265fb34bce4ab612b8ee5ecb7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a9f9e7265fb34bce4ab612b8ee5ecb7"></a>
-TIndexValue&#160;</td><td class="memItemRight" valign="bottom"><b>Size</b> ()</td></tr>
-<tr class="separator:a3a9f9e7265fb34bce4ab612b8ee5ecb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417db873b8d52042bc58bc8ccc33f035"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a417db873b8d52042bc58bc8ccc33f035"></a>
+int64_tValue&#160;</td><td class="memItemRight" valign="bottom"><b>Size</b> ()</td></tr>
+<tr class="separator:a417db873b8d52042bc58bc8ccc33f035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -142,9 +142,9 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>maxElements_</b></
 <tr class="memitem:ab58ee7a122ac1e0138b82da5c5ec1c9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab58ee7a122ac1e0138b82da5c5ec1c9e"></a>
 <a class="el" href="classcaffe2_1_1_type_meta.html">TypeMeta</a>&#160;</td><td class="memItemRight" valign="bottom"><b>meta_</b></td></tr>
 <tr class="separator:ab58ee7a122ac1e0138b82da5c5ec1c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70224adc5ca19f9cba433078600d55c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70224adc5ca19f9cba433078600d55c5"></a>
-TIndexValue&#160;</td><td class="memItemRight" valign="bottom"><b>nextId_</b> {1}</td></tr>
-<tr class="separator:a70224adc5ca19f9cba433078600d55c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1bca8831484bbfecfb4fc039ab78432"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1bca8831484bbfecfb4fc039ab78432"></a>
+int64_tValue&#160;</td><td class="memItemRight" valign="bottom"><b>nextId_</b> {1}</td></tr>
+<tr class="separator:ac1bca8831484bbfecfb4fc039ab78432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f565630694081c118c00607d31a1347"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f565630694081c118c00607d31a1347"></a>
 std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>frozen_</b> {false}</td></tr>
 <tr class="separator:a9f565630694081c118c00607d31a1347"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,15 +154,15 @@ std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>dictMutex_</b><
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="index__ops_8cc_source.html#l00017">17</a> of file <a class="el" href="index__ops_8cc_source.html">index_ops.cc</a>.</p>
+<p>Definition at line <a class="el" href="index__ops_8h_source.html#l00019">19</a> of file <a class="el" href="index__ops_8h_source.html">index_ops.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>caffe2/operators/<a class="el" href="index__ops_8cc_source.html">index_ops.cc</a></li>
+<li>caffe2/operators/<a class="el" href="index__ops_8h_source.html">index_ops.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:59 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:55 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -185,7 +185,7 @@ Generated on Thu Apr 19 2018 13:03:59 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

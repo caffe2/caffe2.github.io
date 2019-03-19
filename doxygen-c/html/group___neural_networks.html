@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -220,10 +220,10 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:gad8097859ab1bdd06be52a8421df152d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result codes. <br /></td></tr>
 </td></tr>
 <tr class="separator:gad8097859ab1bdd06be52a8421df152d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadc29c2ff13d900c2f185ee95427fb06c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>ANEURALNETWORKS_MAX_SIZE_OF_IMMEDIATELY_COPIED_VALUES</b> = 128
- }<tr class="memdesc:gadc29c2ff13d900c2f185ee95427fb06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">For <a class="el" href="group___neural_networks.html#gab95e96267e0f955086b87a743dad44ca">ANeuralNetworksModel_setOperandValue</a>, values with a length smaller or equal to this will be immediately copied into the model.  <a href="group___neural_networks.html#gadc29c2ff13d900c2f185ee95427fb06c">More...</a><br /></td></tr>
+<tr class="memitem:ga16af7b253440dadd46a80a4b9fddba4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>ANEURALNETWORKS_MAX_SIZE_OF_IMMEDIATELY_COPIED_VALUES</b> = 128
+ }<tr class="memdesc:ga16af7b253440dadd46a80a4b9fddba4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">For <a class="el" href="group___neural_networks.html#gab95e96267e0f955086b87a743dad44ca">ANeuralNetworksModel_setOperandValue</a>, values with a length smaller or equal to this will be immediately copied into the model.  <a href="group___neural_networks.html#ga16af7b253440dadd46a80a4b9fddba4d">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:gadc29c2ff13d900c2f185ee95427fb06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga16af7b253440dadd46a80a4b9fddba4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -243,7 +243,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga2324b730b593482fda8f8f3a129ba06d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that we have finished modifying a model.  <a href="#ga2324b730b593482fda8f8f3a129ba06d">More...</a><br /></td></tr>
 <tr class="separator:ga2324b730b593482fda8f8f3a129ba06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4bf35bfd0530a80c1cbd38294bc3007"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___neural_networks.html#gab4bf35bfd0530a80c1cbd38294bc3007">ANeuralNetworksModel_addOperand</a> (<a class="el" href="group___neural_networks.html#ga4ce6f20a94d3a2de47fa5a810feeb9a4">ANeuralNetworksModel</a> *model, const <a class="el" href="struct_a_neural_networks_operand_type.html">ANeuralNetworksOperandType</a> *type)</td></tr>
-<tr class="memdesc:gab4bf35bfd0530a80c1cbd38294bc3007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an operand to a model.  <a href="#gab4bf35bfd0530a80c1cbd38294bc3007">More...</a><br /></td></tr>
+<tr class="memdesc:gab4bf35bfd0530a80c1cbd38294bc3007"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_add.html">Add</a> an operand to a model.  <a href="#gab4bf35bfd0530a80c1cbd38294bc3007">More...</a><br /></td></tr>
 <tr class="separator:gab4bf35bfd0530a80c1cbd38294bc3007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab95e96267e0f955086b87a743dad44ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___neural_networks.html#gab95e96267e0f955086b87a743dad44ca">ANeuralNetworksModel_setOperandValue</a> (<a class="el" href="group___neural_networks.html#ga4ce6f20a94d3a2de47fa5a810feeb9a4">ANeuralNetworksModel</a> *model, int32_t index, const void *buffer, size_t length)</td></tr>
 <tr class="memdesc:gab95e96267e0f955086b87a743dad44ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an operand to a constant value.  <a href="#gab95e96267e0f955086b87a743dad44ca">More...</a><br /></td></tr>
@@ -252,7 +252,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gadd7a4261e062051516fd49c7217c20b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an operand to a value stored in a memory object.  <a href="#gadd7a4261e062051516fd49c7217c20b8">More...</a><br /></td></tr>
 <tr class="separator:gadd7a4261e062051516fd49c7217c20b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5cf00af11c3bd21d27c0dff6ed7a15be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___neural_networks.html#ga5cf00af11c3bd21d27c0dff6ed7a15be">ANeuralNetworksModel_addOperation</a> (<a class="el" href="group___neural_networks.html#ga4ce6f20a94d3a2de47fa5a810feeb9a4">ANeuralNetworksModel</a> *model, ANeuralNetworksOperationType type, uint32_t inputCount, const uint32_t *inputs, uint32_t outputCount, const uint32_t *outputs)</td></tr>
-<tr class="memdesc:ga5cf00af11c3bd21d27c0dff6ed7a15be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an operation to a model.  <a href="#ga5cf00af11c3bd21d27c0dff6ed7a15be">More...</a><br /></td></tr>
+<tr class="memdesc:ga5cf00af11c3bd21d27c0dff6ed7a15be"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_add.html">Add</a> an operation to a model.  <a href="#ga5cf00af11c3bd21d27c0dff6ed7a15be">More...</a><br /></td></tr>
 <tr class="separator:ga5cf00af11c3bd21d27c0dff6ed7a15be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9bb7cd668b49da24e0c70ee6bf237a40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___neural_networks.html#ga9bb7cd668b49da24e0c70ee6bf237a40">ANeuralNetworksModel_identifyInputsAndOutputs</a> (<a class="el" href="group___neural_networks.html#ga4ce6f20a94d3a2de47fa5a810feeb9a4">ANeuralNetworksModel</a> *model, uint32_t inputCount, const uint32_t *inputs, uint32_t outputCount, const uint32_t *outputs)</td></tr>
 <tr class="memdesc:ga9bb7cd668b49da24e0c70ee6bf237a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specfifies which operands will be the model's inputs and outputs.  <a href="#ga9bb7cd668b49da24e0c70ee6bf237a40">More...</a><br /></td></tr>
@@ -340,8 +340,8 @@ Use the compilation as many times as needed with <a class="el" href="group___neu
 <li>
 Destroy the compilation with <a class="el" href="group___neural_networks.html#gab62e33fbdc133bc6c4bde11fcaec2234">ANeuralNetworksCompilation_free</a> once all executions using the compilation have completed.</li>
 </ul>
-<p>A compilation is completed by calling <a class="el" href="group___neural_networks.html#gaa9fe0549c392bd3cfdbfc05182679864">ANeuralNetworksCompilation_finish</a>. A compilation is destroyed by calling <a class="el" href="group___neural_networks.html#gab62e33fbdc133bc6c4bde11fcaec2234">ANeuralNetworksCompilation_free</a>.</p>
-<p>A compilation cannot be modified once <a class="el" href="group___neural_networks.html#gaa9fe0549c392bd3cfdbfc05182679864">ANeuralNetworksCompilation_finish</a> has been called on it.</p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> compilation is completed by calling <a class="el" href="group___neural_networks.html#gaa9fe0549c392bd3cfdbfc05182679864">ANeuralNetworksCompilation_finish</a>. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> compilation is destroyed by calling <a class="el" href="group___neural_networks.html#gab62e33fbdc133bc6c4bde11fcaec2234">ANeuralNetworksCompilation_free</a>.</p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> compilation cannot be modified once <a class="el" href="group___neural_networks.html#gaa9fe0549c392bd3cfdbfc05182679864">ANeuralNetworksCompilation_finish</a> has been called on it.</p>
 <p>It is the application's responsibility to make sure that only one thread modifies a compilation at a given time. It is however safe for more than one thread to use the compilation once <a class="el" href="group___neural_networks.html#gaa9fe0549c392bd3cfdbfc05182679864">ANeuralNetworksCompilation_finish</a> has returned.</p>
 <p>It is also the application's responsibility to ensure that there are no other uses of the compilation after calling <a class="el" href="group___neural_networks.html#gab62e33fbdc133bc6c4bde11fcaec2234">ANeuralNetworksCompilation_free</a>. This includes any execution object created using the compilation.</p>
 
@@ -421,8 +421,8 @@ Destroy the execution with <a class="el" href="group___neural_networks.html#ga44
 <li>
 <a class="el" href="group___neural_networks.html#gab4bf35bfd0530a80c1cbd38294bc3007">ANeuralNetworksModel_addOperand</a>, </li>
 </ul>
-<p>A model is completed by calling <a class="el" href="group___neural_networks.html#ga2324b730b593482fda8f8f3a129ba06d">ANeuralNetworksModel_finish</a>. A model is destroyed by calling <a class="el" href="group___neural_networks.html#ga2287b1751678d75a349faa36956602fb">ANeuralNetworksModel_free</a>.</p>
-<p>A model cannot be modified once <a class="el" href="group___neural_networks.html#ga2324b730b593482fda8f8f3a129ba06d">ANeuralNetworksModel_finish</a> has been called on it.</p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> model is completed by calling <a class="el" href="group___neural_networks.html#ga2324b730b593482fda8f8f3a129ba06d">ANeuralNetworksModel_finish</a>. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> model is destroyed by calling <a class="el" href="group___neural_networks.html#ga2287b1751678d75a349faa36956602fb">ANeuralNetworksModel_free</a>.</p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> model cannot be modified once <a class="el" href="group___neural_networks.html#ga2324b730b593482fda8f8f3a129ba06d">ANeuralNetworksModel_finish</a> has been called on it.</p>
 <p>It is the application's responsibility to make sure that only one thread modifies a model at a given time. It is however safe for more than one thread to use the model once <a class="el" href="group___neural_networks.html#ga2324b730b593482fda8f8f3a129ba06d">ANeuralNetworksModel_finish</a> has returned.</p>
 <p>It is also the application's responsibility to ensure that there are no other uses of the model after calling <a class="el" href="group___neural_networks.html#ga2287b1751678d75a349faa36956602fb">ANeuralNetworksModel_free</a>. This includes any compilation or execution object created using the model.</p>
 
@@ -446,7 +446,7 @@ Destroy the execution with <a class="el" href="group___neural_networks.html#ga44
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="gadc29c2ff13d900c2f185ee95427fb06c"></a>
+<a class="anchor" id="ga16af7b253440dadd46a80a4b9fddba4d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -509,23 +509,23 @@ Destroy the execution with <a class="el" href="group___neural_networks.html#ga44
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggaf06d1affd33f3bc698d0c04eceb23298a6aa658f93a72ca7356d9433f772ef578"></a>ANEURALNETWORKS_FLOAT32&#160;</td><td class="fielddoc">
 <p>The following entries are used to declare scalars. </p>
-<p>A 32 bit floating point scalar value. </p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 32 bit floating point scalar value. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaf06d1affd33f3bc698d0c04eceb23298acb165f692e9d189c820ceba84b3c21dc"></a>ANEURALNETWORKS_INT32&#160;</td><td class="fielddoc">
-<p>A signed 32 bit integer scalar value. </p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> signed 32 bit integer scalar value. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaf06d1affd33f3bc698d0c04eceb23298ad392906165c1e93c2a9719998d65223c"></a>ANEURALNETWORKS_UINT32&#160;</td><td class="fielddoc">
 <p>An unsigned 32 bit integer scalar value. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447"></a>ANEURALNETWORKS_TENSOR_FLOAT32&#160;</td><td class="fielddoc">
 <p>The following entries are used to declare tensors. </p>
-<p>A tensor of 32 bit floating point values. </p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor of 32 bit floating point values. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896"></a>ANEURALNETWORKS_TENSOR_INT32&#160;</td><td class="fielddoc">
-<p>A tensor of 32 bit integer values. </p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor of 32 bit integer values. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3"></a>ANEURALNETWORKS_TENSOR_QUANT8_ASYMM&#160;</td><td class="fielddoc">
-<p>A tensor of 8 bit integers that represent real numbers. </p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor of 8 bit integers that represent real numbers. </p>
 <p>Attached to this tensor are two numbers that can be used to convert the 8 bit integer to the real value and vice versa. These two numbers are:</p><ul>
 <li>scale: a 32 bit non-negative floating point value.</li>
 <li>zeroPoint: an 32 bit integer, in range [0, 255].</li>
@@ -568,8 +568,8 @@ output.dimension = {5, 4, 3, 2}
 </ul>
 <p>Supported tensor rank: up to 4</p>
 <p>Inputs:</p><ul>
-<li>0: A tensor.</li>
-<li>1: A tensor of the same type, and compatible dimensions as input0.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor.</li>
+<li>1: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor of the same type, and compatible dimensions as input0.</li>
 <li>2: An INT32 value, and has to be one of the <a class="el" href="group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414">FuseCode</a> values. Specifies the activation to invoke on the result of each addition.</li>
 </ul>
 <p>Outputs:</p><ul>
@@ -588,7 +588,7 @@ output.dimension = {5, 4, 3, 2}
 <p>Supported tensor rank: 4, with "NHWC" (i.e., Num_samples, Height, Width, and Channels) data layout.</p>
 <p>Both explicit padding and implicit padding are supported.</p>
 <p>Inputs (explicit padding):</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
 <li>1: An INT32 value, specifying the padding on the left, in the ‘width’ dimension.</li>
 <li>2: An INT32 value, specifying the padding on the right,in the ‘width’ dimension.</li>
 <li>3: An INT32 value, specifying the padding on the top, in the ‘height’ dimension.</li>
@@ -600,7 +600,7 @@ output.dimension = {5, 4, 3, 2}
 <li>9: An INT32 value, and has to be one of the <a class="el" href="group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414">FuseCode</a> values. Specifies the activation to invoke on the result of each addition.</li>
 </ul>
 <p>Inputs (implicit padding):</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
 <li>1: An INT32 value, specifying the implicit padding scheme, has to be one of the <a class="el" href="group___neural_networks.html#gab72e9e6263fd5b015bb7f41ec18ce220">PaddingCode</a> values.</li>
 <li>2: An INT32 value, specifying the stride when walking through input in the ‘width’ dimension.</li>
 <li>3: An INT32 value, specifying the stride when walking through input in the ‘height’ dimension.</li>
@@ -645,9 +645,9 @@ output.dimension = {5, 4, 3, 2}
 <p>Supported tensor rank: 4, with "NHWC" data layout.</p>
 <p>Both explicit padding and implicit padding are supported.</p>
 <p>Inputs (explicit padding):</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth_in], specifying the input.</li>
-<li>1: A 4-D tensor, of shape [depth_out, filter_height, filter_width, depth_in], specifying the filter.</li>
-<li>2: A 1-D tensor, of shape [depth_out], specifying the bias. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a> type, the bias should also be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a>. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the bias should be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, with zeroPoint of 0 and bias_scale == input_scale * filter_scale.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth_in], specifying the input.</li>
+<li>1: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [depth_out, filter_height, filter_width, depth_in], specifying the filter.</li>
+<li>2: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor, of shape [depth_out], specifying the bias. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a> type, the bias should also be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a>. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the bias should be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, with zeroPoint of 0 and bias_scale == input_scale * filter_scale.</li>
 <li>3: An INT32 value, specifying the padding on the left, in the ‘width’ dimension.</li>
 <li>4: An INT32 value, specifying the padding on the right,in the ‘width’ dimension.</li>
 <li>5: An INT32 value, specifying the padding on the top, in the ‘height’ dimension.</li>
@@ -657,9 +657,9 @@ output.dimension = {5, 4, 3, 2}
 <li>9: An INT32 value, and has to be one of the <a class="el" href="group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414">FuseCode</a> values. Specifies the activation to invoke on the result of each addition.</li>
 </ul>
 <p>Inputs (implicit padding):</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth_in], specifying the input.</li>
-<li>1: A 4-D tensor, of shape [depth_out, filter_height, filter_width, depth_in], specifying the filter.</li>
-<li>2: A 1-D tensor, of shape [depth_out], specifying the bias. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a> type, the bias should also be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a>. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the bias should be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, with zeroPoint of 0 and bias_scale == input_scale * filter_scale.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth_in], specifying the input.</li>
+<li>1: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [depth_out, filter_height, filter_width, depth_in], specifying the filter.</li>
+<li>2: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor, of shape [depth_out], specifying the bias. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a> type, the bias should also be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a>. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the bias should be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, with zeroPoint of 0 and bias_scale == input_scale * filter_scale.</li>
 <li>3: An INT32 value, specifying the implicit padding scheme, has to be one of the <a class="el" href="group___neural_networks.html#gab72e9e6263fd5b015bb7f41ec18ce220">PaddingCode</a> values.</li>
 <li>4: An INT32 value, specifying the stride when walking through input in the ‘width’ dimension.</li>
 <li>5: An INT32 value, specifying the stride when walking through input in the ‘height’ dimension.</li>
@@ -685,9 +685,9 @@ output.dimension = {5, 4, 3, 2}
 <p>Supported tensor rank: 4, with "NHWC" data layout.</p>
 <p>Both explicit padding and implicit padding are supported.</p>
 <p>Inputs (explicit padding):</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth_in], specifying the input.</li>
-<li>1: A 4-D tensor, of shape [1, filter_height, filter_width, depth_out], specifying the filter.</li>
-<li>2: A 1-D tensor, of shape [depth_out], specifying the bias. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a> type, the bias should also be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a>. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the bias should be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, with zeroPoint of 0 and bias_scale == input_scale * filter_scale.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth_in], specifying the input.</li>
+<li>1: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [1, filter_height, filter_width, depth_out], specifying the filter.</li>
+<li>2: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor, of shape [depth_out], specifying the bias. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a> type, the bias should also be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a>. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the bias should be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, with zeroPoint of 0 and bias_scale == input_scale * filter_scale.</li>
 <li>3: An INT32 value, specifying the padding on the left, in the ‘width’ dimension.</li>
 <li>4: An INT32 value, specifying the padding on the right,in the ‘width’ dimension.</li>
 <li>5: An INT32 value, specifying the padding on the top, in the ‘height’ dimension.</li>
@@ -698,9 +698,9 @@ output.dimension = {5, 4, 3, 2}
 <li>10: An INT32 value, and has to be one of the <a class="el" href="group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414">FuseCode</a> values. Specifies the activation to invoke on the result of each addition.</li>
 </ul>
 <p>Inputs (explicit padding):</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth_in], specifying the input.</li>
-<li>1: A 4-D tensor, of shape [1, filter_height, filter_width, depth_out], specifying the filter.</li>
-<li>2: A 1-D tensor, of shape [depth_out], specifying the bias. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a> type, the bias should also be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a>. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the bias should be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, with zeroPoint of 0 and bias_scale == input_scale * filter_scale.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth_in], specifying the input.</li>
+<li>1: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [1, filter_height, filter_width, depth_out], specifying the filter.</li>
+<li>2: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor, of shape [depth_out], specifying the bias. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a> type, the bias should also be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a>. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the bias should be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, with zeroPoint of 0 and bias_scale == input_scale * filter_scale.</li>
 <li>3: An INT32 value, specifying the implicit padding scheme, has to be one of the <a class="el" href="group___neural_networks.html#gab72e9e6263fd5b015bb7f41ec18ce220">PaddingCode</a> values.</li>
 <li>4: An INT32 value, specifying the stride when walking through input in the ‘width’ dimension.</li>
 <li>5: An INT32 value, specifying the stride when walking through input in the ‘height’ dimension.</li>
@@ -722,7 +722,7 @@ output.dimension = {5, 4, 3, 2}
 </ul>
 <p>Supported tensor rank: 4, with "NHWC" data layout.</p>
 <p>Inputs:</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth_in], specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth_in], specifying the input.</li>
 <li>1: An INT32 value, specifying the block_size. block_size must be &gt;=1 and block_size * block_size must be a divisor of the input depth.</li>
 </ul>
 <p>Outputs:</p><ul>
@@ -737,7 +737,7 @@ output.dimension = {5, 4, 3, 2}
 </ul>
 <p>Supported tensor rank: up to 4</p>
 <p>Inputs:</p><ul>
-<li>0: A tensor of type <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a>.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor of type <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a>.</li>
 </ul>
 <p>Outputs:</p><ul>
 <li>0: The output tensor of same shape as input0, but with type <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a>. </li>
@@ -750,11 +750,11 @@ output.dimension = {5, 4, 3, 2}
 <p>For example, if Values has shape of [40, 200, 300] and Lookups has shape of [3], we would expect all three values found in Lookups to be between 0 and 39. The resulting tensor will have shape of [3, 200, 300].</p>
 <p>If a value in Lookups is out of bounds, the operation will fail and an error will be reported.</p>
 <p>Inputs:</p><ul>
-<li>0: Lookups. A 1-D tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a> type. The values are indices into the first dimension of Values.</li>
+<li>0: Lookups. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a> type. The values are indices into the first dimension of Values.</li>
 <li>1: Values. An n-D tensor, where n &gt;= 2, from which sub-tensors are extracted.</li>
 </ul>
 <p>Output:</p><ul>
-<li>0: A n-D tensor with the same rank and shape as the Values tensor, except for the first dimension which has the same size as Lookups' only dimension. </li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> n-D tensor with the same rank and shape as the Values tensor, except for the first dimension which has the same size as Lookups' only dimension. </li>
 </ul>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaabbe492c60331b13038e39d4207940e0acdb4a57160153118dc6f87af0e4eccc5"></a>ANEURALNETWORKS_FLOOR&#160;</td><td class="fielddoc">
@@ -764,7 +764,7 @@ output.dimension = {5, 4, 3, 2}
 </ul>
 <p>Supported tensor rank: up to 4</p>
 <p>Inputs:</p><ul>
-<li>0: A tensor.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor.</li>
 </ul>
 <p>Outputs:</p><ul>
 <li>0: The output tensor, of the same type and dimensions as the input tensor. </li>
@@ -779,9 +779,9 @@ output.dimension = {5, 4, 3, 2}
 </ul>
 <p>Supported tensor rank: up to 4.</p>
 <p>Inputs:</p><ul>
-<li>0: A tensor, specifying the input. If rank is greater than 2, then it gets flattened to a 2-D <a class="el" href="struct_tensor.html">Tensor</a>. The 2-D <a class="el" href="struct_tensor.html">Tensor</a> is handled as if dimensions corresponded to shape [batch_size, input_size], where “batch_size” corresponds to the batching dimension, and “input_size” is the size of the input.</li>
-<li>1: A 2-D tensor, specifying the weights, of shape [num_units, input_size], where "num_units" corresponds to the number of output nodes.</li>
-<li>2: A 1-D tensor, of shape [num_units], specifying the bias. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a> type, the bias should also be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a>. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the bias should be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, with zeroPoint of 0 and bias_scale == input_scale * filter_scale.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor, specifying the input. If rank is greater than 2, then it gets flattened to a 2-D <a class="el" href="struct_tensor.html">Tensor</a>. The 2-D <a class="el" href="struct_tensor.html">Tensor</a> is handled as if dimensions corresponded to shape [batch_size, input_size], where “batch_size” corresponds to the batching dimension, and “input_size” is the size of the input.</li>
+<li>1: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor, specifying the weights, of shape [num_units, input_size], where "num_units" corresponds to the number of output nodes.</li>
+<li>2: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor, of shape [num_units], specifying the bias. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a> type, the bias should also be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a>. For input tensor of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the bias should be of <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, with zeroPoint of 0 and bias_scale == input_scale * filter_scale.</li>
 <li>3: An INT32 value, and has to be one of the <a class="el" href="group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414">FuseCode</a> values. Specifies the activation to invoke on the result of each addition.</li>
 </ul>
 <p>Outputs:</p><ul>
@@ -795,13 +795,13 @@ output.dimension = {5, 4, 3, 2}
 <p>For a hit, the corresponding sub-tensor of Values is included in the Output tensor. For a miss, the corresponding sub-tensor in Output will have zero values.</p>
 <p>For example, if Values has shape of [40, 200, 300], Keys should have a shape of [40]. If Lookups tensor has shape of [3], we're concatenating three slices, so the resulting tensor will have the shape of [3, 200, 300]. If the first entry in Lookups has the value 123456, we'll look for that value in Keys tensor. If the sixth entry of Keys contains 123456, we'll select the sixth slice of Values. If no entry in Keys has 123456, a slice of zeroes will be concatenated.</p>
 <p>Inputs:</p><ul>
-<li>0: Lookups. A 1-D <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a> tensor with shape [ k ].</li>
-<li>1: Keys. A 1-D <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a> tensor with shape [ n ]; Keys and Values pair represent a map, i.e., the ith element in Keys (Keys[i]) is the key to select the ith sub-tensor in Values (Values[i]), where 0 &lt;= i &lt;= n-1. Keys tensor <em>MUST</em> be sorted in ascending order.</li>
-<li>2: Values. A tensor with shape of [ n, … ]; i.e., the first dimension must be n.</li>
+<li>0: Lookups. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a> tensor with shape [ k ].</li>
+<li>1: Keys. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a> tensor with shape [ n ]; Keys and Values pair represent a map, i.e., the ith element in Keys (Keys[i]) is the key to select the ith sub-tensor in Values (Values[i]), where 0 &lt;= i &lt;= n-1. Keys tensor <em>MUST</em> be sorted in ascending order.</li>
+<li>2: Values. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor with shape of [ n, … ]; i.e., the first dimension must be n.</li>
 </ul>
 <p>Outputs:</p><ul>
-<li>0: Output. A tensor with shape [ k …].</li>
-<li>1: Hits. A boolean tensor with shape [ k ] indicates whether the lookup hits (True) or not (False). Stored as <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> with offset 0 and scale 1.0f. A non-zero byte represents True, a hit. A zero indicates otherwise. </li>
+<li>0: Output. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor with shape [ k …].</li>
+<li>1: Hits. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> boolean tensor with shape [ k ] indicates whether the lookup hits (True) or not (False). Stored as <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> with offset 0 and scale 1.0f. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> non-zero byte represents True, a hit. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> zero indicates otherwise. </li>
 </ul>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaabbe492c60331b13038e39d4207940e0abf295dee59560ff29d435226ec4c24bd"></a>ANEURALNETWORKS_L2_NORMALIZATION&#160;</td><td class="fielddoc">
@@ -815,7 +815,7 @@ output.dimension = {5, 4, 3, 2}
 </ul>
 <p>Supported tensor rank: 4, with "NHWC" data layout (i.e., Num_samples, Height, Width, and Channels).</p>
 <p>Inputs:</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth].</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth].</li>
 </ul>
 <p>Outputs:</p><ul>
 <li>0: The output 4-D tensor, of shape [batches, out_height, out_width, depth]. </li>
@@ -832,7 +832,7 @@ output.dimension = {5, 4, 3, 2}
 <p>Supported tensor rank: 4, with "NHWC" data layout.</p>
 <p>Both explicit padding and implicit padding are supported.</p>
 <p>Inputs (explicit padding):</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
 <li>1: An INT32 value, specifying the padding on the left, in the ‘width’ dimension.</li>
 <li>2: An INT32 value, specifying the padding on the right,in the ‘width’ dimension.</li>
 <li>3: An INT32 value, specifying the padding on the top, in the ‘height’ dimension.</li>
@@ -844,7 +844,7 @@ output.dimension = {5, 4, 3, 2}
 <li>9: An INT32 value, and has to be one of the <a class="el" href="group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414">FuseCode</a> values. Specifies the activation to invoke on the result of each addition.</li>
 </ul>
 <p>Inputs (implicit padding):</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
 <li>1: An INT32 value, specifying the implicit padding scheme, has to be one of the <a class="el" href="group___neural_networks.html#gab72e9e6263fd5b015bb7f41ec18ce220">PaddingCode</a> values.</li>
 <li>2: An INT32 value, specifying the stride when walking through input in the ‘width’ dimension.</li>
 <li>3: An INT32 value, specifying the stride when walking through input in the ‘height’ dimension.</li>
@@ -867,11 +867,11 @@ output = input / pow((bias + alpha * sqr_sum), beta)
 </ul>
 <p>Supported tensor rank: 4, with "NHWC" data layout.</p>
 <p>Inputs:</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
 <li>1: An INT32 value, specifying the radius of the normalization window.</li>
-<li>2: A FLOAT32 value, specifying the bias, must not be zero.</li>
-<li>3: A FLOAT32 value, specifying the scale factor, alpha.</li>
-<li>4: A FLOAT32 value, specifying the exponent, beta.</li>
+<li>2: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> FLOAT32 value, specifying the bias, must not be zero.</li>
+<li>3: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> FLOAT32 value, specifying the scale factor, alpha.</li>
+<li>4: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> FLOAT32 value, specifying the exponent, beta.</li>
 </ul>
 <p>Outputs:</p><ul>
 <li>0: The output tensor of same shape as input0. </li>
@@ -886,7 +886,7 @@ output = input / pow((bias + alpha * sqr_sum), beta)
 </ul>
 <p>Supported tensor rank: up to 4.</p>
 <p>Inputs:</p><ul>
-<li>0: A tensor, specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor, specifying the input.</li>
 </ul>
 <p>Outputs:</p><ul>
 <li>0: The output tensor of same shape as input0. For <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the scale must be 1.f / 256 and the zeroPoint must be 0. </li>
@@ -903,7 +903,7 @@ output = input / pow((bias + alpha * sqr_sum), beta)
 </li>
 </ul>
 <p>Outputs:</p><ul>
-<li>0: If the projection type is sparse: Output.Dim == { <a class="el" href="struct_tensor.html">Tensor</a>[0].Dim[0] } A tensor of int32 that represents hash signatures. If the projection type is Dense: Output.Dim == { <a class="el" href="struct_tensor.html">Tensor</a>[0].Dim[0] * <a class="el" href="struct_tensor.html">Tensor</a>[0].Dim[1] } A flattened tensor that represents projected bit vectors. </li>
+<li>0: If the projection type is sparse: Output.Dim == { <a class="el" href="struct_tensor.html">Tensor</a>[0].Dim[0] } <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor of int32 that represents hash signatures. If the projection type is Dense: Output.Dim == { <a class="el" href="struct_tensor.html">Tensor</a>[0].Dim[0] * <a class="el" href="struct_tensor.html">Tensor</a>[0].Dim[1] } <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> flattened tensor that represents projected bit vectors. </li>
 </ul>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaabbe492c60331b13038e39d4207940e0ad0377e8c305e596fb7f64ff896671fc5"></a>ANEURALNETWORKS_LSTM&#160;</td><td class="fielddoc">
@@ -918,39 +918,39 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 <li>If no projection layer: “projection_weights” and “projection_bias”.</li>
 <li>If no projection bias: “projection_bias”.</li>
 </ul>
-<p>Supported tensor types (type T):</p><ul>
+<p>Supported tensor types (type <a class="el" href="struct_t.html">T</a>):</p><ul>
 <li><a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a></li>
 </ul>
 <p>Inputs:</p><ul>
-<li>0: Input. A 2-D tensor of type T, of shape [batch_size, input_size], where “batch_size” corresponds to the batching dimension, and “input_size” is the size of the input.</li>
-<li>1: input_to_input_weights. A 2-D tensor of type T, of shape [num_units, input_size], where “num_units” corresponds to the number of cell units.</li>
-<li>2: input_to_forget_weights. A 2-D tensor of type T, of shape [num_units, input_size].</li>
-<li>3: input_to_cell_weights. A 2-D tensor of type T, of shape [num_units, input_size].</li>
-<li>4: input_to_output_weights. A 2-D tensor of type T, of shape [num_units, input_size].</li>
-<li>5: recurrent_to_input_weights. A 2-D tensor of type T, of shape [num_units, output_size], where “output_size” corresponds to either the number of cell units (i.e., “num_units”), or the second dimension of the “projection_weights”, if defined.</li>
-<li>6: recurrent_to_forget_weights. A 2-D tensor of type T, of shape [num_units, output_size].</li>
-<li>7: recurrent_to_cell_weights. A 2-D tensor of type T, of shape [num_units, output_size].</li>
-<li>8: recurrent_to_output_weights. A 2-D tensor of type T, of shape [num_units, output_size].</li>
-<li>9: cell_to_input_weights. A 1-D tensor of type T, of shape [num_units].</li>
-<li>10:cell_to_forget_weights. A 1-D tensor of type T, of shape [num_units].</li>
-<li>11:cell_to_output_weights. A 1-D tensor of type T, of shape [num_units].</li>
-<li>12:input_gate_bias. A 1-D tensor of type T, of shape [num_units].</li>
-<li>13:forget_gate_bias. A 1-D tensor of type T, of shape [num_units].</li>
-<li>14:cell_bias. A 1-D tensor of type T, of shape [num_units].</li>
-<li>15:output_gate_bias. A 1-D tensor of type T, of shape [num_units].</li>
-<li>16:projection_weights. A 2-D tensor of type T, of shape [output_size, num_units].</li>
-<li>17:projection_bias. A 1-D tensor of type T, of shape [output_size].</li>
-<li>18: output_state (in). A 2-D tensor of type T, of shape [batch_size, output_size].</li>
-<li>19: cell_state (in). A 2-D tensor of type T, of shape [batch_size, num_units].</li>
+<li>0: Input. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, input_size], where “batch_size” corresponds to the batching dimension, and “input_size” is the size of the input.</li>
+<li>1: input_to_input_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units, input_size], where “num_units” corresponds to the number of cell units.</li>
+<li>2: input_to_forget_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units, input_size].</li>
+<li>3: input_to_cell_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units, input_size].</li>
+<li>4: input_to_output_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units, input_size].</li>
+<li>5: recurrent_to_input_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units, output_size], where “output_size” corresponds to either the number of cell units (i.e., “num_units”), or the second dimension of the “projection_weights”, if defined.</li>
+<li>6: recurrent_to_forget_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units, output_size].</li>
+<li>7: recurrent_to_cell_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units, output_size].</li>
+<li>8: recurrent_to_output_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units, output_size].</li>
+<li>9: cell_to_input_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units].</li>
+<li>10:cell_to_forget_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units].</li>
+<li>11:cell_to_output_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units].</li>
+<li>12:input_gate_bias. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units].</li>
+<li>13:forget_gate_bias. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units].</li>
+<li>14:cell_bias. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units].</li>
+<li>15:output_gate_bias. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units].</li>
+<li>16:projection_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [output_size, num_units].</li>
+<li>17:projection_bias. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [output_size].</li>
+<li>18: output_state (in). <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, output_size].</li>
+<li>19: cell_state (in). <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, num_units].</li>
 <li>20:fused_activation_function. An optional <a class="el" href="group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414">FuseCode</a> value indicating the activation function. If “NONE” is specified then it results in a linear activation.</li>
-<li>21:cell_clip. A clipping threshold for the cell state, such that values are bound within [-cell_clip, cell_clip]. If set to 0.0 then clipping is disabled.</li>
-<li>22:proj_clip. A clipping threshold for the output from the projection layer, such that values are bound within [-proj_clip, proj_clip]. If set to 0.0 then clipping is disabled.</li>
+<li>21:cell_clip. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> clipping threshold for the cell state, such that values are bound within [-cell_clip, cell_clip]. If set to 0.0 then clipping is disabled.</li>
+<li>22:proj_clip. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> clipping threshold for the output from the projection layer, such that values are bound within [-proj_clip, proj_clip]. If set to 0.0 then clipping is disabled.</li>
 </ul>
 <p>Outputs:</p><ul>
-<li>0: scratch_buffer. A 3-D tensor of type T, of shape [batch_size, num_cell, 4].</li>
-<li>1: output_state (out). A 2-D tensor of type T, of shape [batch_size, output_size].</li>
-<li>2: cell_state (out). A 2-D tensor of type T, of shape [batch_size, num_units].</li>
-<li>3: output. A 2-D tensor of type T, of shape [batch_size, output_size]. This is effectively the same as the current “output_state” value. </li>
+<li>0: scratch_buffer. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 3-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, num_cell, 4].</li>
+<li>1: output_state (out). <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, output_size].</li>
+<li>2: cell_state (out). <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, num_units].</li>
+<li>3: output. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, output_size]. This is effectively the same as the current “output_state” value. </li>
 </ul>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaabbe492c60331b13038e39d4207940e0a0f227a4d98ad5af31f7fd4d255d246ce"></a>ANEURALNETWORKS_MAX_POOL_2D&#160;</td><td class="fielddoc">
@@ -965,7 +965,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 <p>Supported tensor rank: 4, with "NHWC" data layout.</p>
 <p>Both explicit padding and implicit padding are supported.</p>
 <p>Inputs (explicit padding):</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
 <li>1: An INT32 value, specifying the padding on the left, in the ‘width’ dimension.</li>
 <li>2: An INT32 value, specifying the padding on the right,in the ‘width’ dimension.</li>
 <li>3: An INT32 value, specifying the padding on the top, in the ‘height’ dimension.</li>
@@ -977,7 +977,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 <li>9: An INT32 value, and has to be one of the <a class="el" href="group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414">FuseCode</a> values. Specifies the activation to invoke on the result of each addition.</li>
 </ul>
 <p>Inputs (implicit padding):</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
 <li>1: An INT32 value, specifying the implicit padding scheme, has to be one of the <a class="el" href="group___neural_networks.html#gab72e9e6263fd5b015bb7f41ec18ce220">PaddingCode</a> values.</li>
 <li>2: An INT32 value, specifying the stride when walking through input in the ‘width’ dimension.</li>
 <li>3: An INT32 value, specifying the stride when walking through input in the ‘height’ dimension.</li>
@@ -1003,8 +1003,8 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 </ul>
 <p>Supported tensor rank: up to 4</p>
 <p>Inputs:</p><ul>
-<li>0: A tensor.</li>
-<li>1: A tensor of the same type, and compatible dimensions as input0.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor.</li>
+<li>1: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor of the same type, and compatible dimensions as input0.</li>
 <li>2: An INT32 value, and has to be one of the <a class="el" href="group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414">FuseCode</a> values. Specifies the activation to invoke on the result of each addition.</li>
 </ul>
 <p>Outputs:</p><ul>
@@ -1020,7 +1020,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 </ul>
 <p>Supported tensor rank: up to 4.</p>
 <p>Inputs:</p><ul>
-<li>0: A tensor, specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor, specifying the input.</li>
 </ul>
 <p>Outputs:</p><ul>
 <li>0: The output tensor of same shape as input0. </li>
@@ -1035,7 +1035,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 </ul>
 <p>Supported tensor rank: up to 4.</p>
 <p>Inputs:</p><ul>
-<li>0: A tensor, specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor, specifying the input.</li>
 </ul>
 <p>Outputs:</p><ul>
 <li>0: The output tensor of same shape as input0. </li>
@@ -1050,7 +1050,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 </ul>
 <p>Supported tensor rank: up to 4.</p>
 <p>Inputs:</p><ul>
-<li>0: A tensor, specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor, specifying the input.</li>
 </ul>
 <p>Outputs:</p><ul>
 <li>0: The output tensor of same shape as input0. </li>
@@ -1065,8 +1065,8 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 </ul>
 <p>Supported tensor rank: up to 4.</p>
 <p>Inputs:</p><ul>
-<li>0: A tensor, specifying the tensor to be reshaped.</li>
-<li>1: A 1-D tensor of type <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, defining the shape of the output tensor. The number of elements implied by shape must be the same as the number of elements in the input tensor.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor, specifying the tensor to be reshaped.</li>
+<li>1: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor of type <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298ac34965d8e76ac5acfddf5acd9e40f896">ANEURALNETWORKS_TENSOR_INT32</a>, defining the shape of the output tensor. The number of elements implied by shape must be the same as the number of elements in the input tensor.</li>
 </ul>
 <p>Outputs:</p><ul>
 <li>0: The output tensor, of shape specified by the input shape. </li>
@@ -1080,7 +1080,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 </ul>
 <p>Supported tensor rank: 4, with "NHWC" data layout.</p>
 <p>Inputs:</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth], specifying the input.</li>
 <li>1: An INT32 value, specifying the output height of the output tensor.</li>
 <li>2: An INT32 value, specifying the output width of the output tensor.</li>
 </ul>
@@ -1089,7 +1089,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 </ul>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaabbe492c60331b13038e39d4207940e0acd2684ac9c73bb29767b534e78a332e8"></a>ANEURALNETWORKS_RNN&#160;</td><td class="fielddoc">
-<p>A basic recurrent neural network layer. </p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> basic recurrent neural network layer. </p>
 <p>This layer implements the operation: outputs = state = activation(inputs * input_weights + state * recurrent_weights + bias)</p>
 <p>Where:</p><ul>
 <li>“input_weights” is a weight matrix that multiplies the inputs;</li>
@@ -1097,20 +1097,20 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 <li>“bias” is a bias vector (added to each output vector in the batch);</li>
 <li>“activation” is the function passed as the “fused_activation_function” argument (if not “NONE”).</li>
 </ul>
-<p>Supported tensor types (Type T):</p><ul>
+<p>Supported tensor types (Type <a class="el" href="struct_t.html">T</a>):</p><ul>
 <li><a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a></li>
 </ul>
 <p>Inputs:</p><ul>
-<li>0: input. A 2-D tensor of type T, of shape [batch_size, input_size], where “batch_size” corresponds to the batching dimension, and “input_size” is the size of the input.</li>
-<li>1: weights. A 2-D tensor of type T, of shape [num_units, input_size], where “num_units” corresponds to the number of units.</li>
-<li>2: recurrent_weights. A 2-D tensor of type T, of shape [num_units, num_units], with columns corresponding to the weights from each unit.</li>
-<li>3: bias. A 1-D tensor of type T, of shape [num_units].</li>
-<li>4: hidden state (in). A 2-D tensor of type T, of shape [batch_size, num_units].</li>
+<li>0: input. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, input_size], where “batch_size” corresponds to the batching dimension, and “input_size” is the size of the input.</li>
+<li>1: weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units, input_size], where “num_units” corresponds to the number of units.</li>
+<li>2: recurrent_weights. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units, num_units], with columns corresponding to the weights from each unit.</li>
+<li>3: bias. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 1-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units].</li>
+<li>4: hidden state (in). <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, num_units].</li>
 <li>5: fused_activation_function. An optional <a class="el" href="group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414">FuseCode</a> value indicating the activation function. If “NONE” is specified then it results in a linear activation.</li>
 </ul>
 <p>Outputs:</p><ul>
-<li>0: hidden state (out). A 2-D tensor of type T, of shape [batch_size, num_units].</li>
-<li>1: output. A 2-D tensor of type T, of shape [batch_size, num_units]. This is effectively the same as the current state value. </li>
+<li>0: hidden state (out). <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, num_units].</li>
+<li>1: output. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, num_units]. This is effectively the same as the current state value. </li>
 </ul>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaabbe492c60331b13038e39d4207940e0a2bfbb83a537701e2843a3d5004250c2c"></a>ANEURALNETWORKS_SOFTMAX&#160;</td><td class="fielddoc">
@@ -1124,8 +1124,8 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 </ul>
 <p>Supported tensor rank: 2 or 4.</p>
 <p>Inputs:</p><ul>
-<li>0: A 2-D or 4-D tensor, specifying the tensor to be reshaped.</li>
-<li>1: A FLOAT32 value, specifying the positive scaling factor for the exponent, beta.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D or 4-D tensor, specifying the tensor to be reshaped.</li>
+<li>1: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> FLOAT32 value, specifying the positive scaling factor for the exponent, beta.</li>
 </ul>
 <p>Outputs:</p><ul>
 <li>0: The output tensor of same shape as input0. For <a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298a07984961d5c7c12f0f8c811bedd85dc3">ANEURALNETWORKS_TENSOR_QUANT8_ASYMM</a> type, the scale must be 1.f / 256 and the zeroPoint must be 0. </li>
@@ -1142,7 +1142,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 </ul>
 <p>Supported tensor rank: 4, with "NHWC" data layout.</p>
 <p>Inputs:</p><ul>
-<li>0: A 4-D tensor, of shape [batches, height, width, depth_in], specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 4-D tensor, of shape [batches, height, width, depth_in], specifying the input.</li>
 <li>1: An INT32 value, specifying the block_size. block_size must be &gt;=1 and block_size must be a divisor of both the input height and width.</li>
 </ul>
 <p>Outputs:</p><ul>
@@ -1153,7 +1153,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 <p>SVDF op is a kind of stateful layer derived from the notion that a densely connected layer that's processing a sequence of input frames can be approximated by using a singular value decomposition of each of its nodes. </p>
 <p>The implementation is based on:</p>
 <p><a href="https://research.google.com/pubs/archive/43813.pdf">https://research.google.com/pubs/archive/43813.pdf</a></p>
-<p>P. Nakkiran, R. Alvarez, R. Prabhavalkar, C. Parada. “Compressing Deep Neural Networks using a Rank-Constrained Topology”. INTERSPEECH, 2015.</p>
+<p>P. Nakkiran, R. Alvarez, R. Prabhavalkar, <a class="el" href="struct_c.html">C</a>. Parada. “Compressing Deep Neural Networks using a Rank-Constrained Topology”. INTERSPEECH, 2015.</p>
 <p>It processes the incoming input using a 2-stage filtering mechanism:</p><ul>
 <li>stage 1 performs filtering on the "features" dimension, whose outputs get pushed into a memory of fixed-size memory_size.</li>
 <li>stage 2 performs filtering on the "time" dimension of the memory_size memoized outputs of stage 1.</li>
@@ -1167,21 +1167,21 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 <li>“activation” is the function passed as the “fused_activation_function” argument (if not “NONE”).</li>
 </ul>
 <p>Each rank adds a dimension to the weights matrices by means of stacking the filters.</p>
-<p>Supported tensor types (type T):</p><ul>
+<p>Supported tensor types (type <a class="el" href="struct_t.html">T</a>):</p><ul>
 <li><a class="el" href="group___neural_networks.html#ggaf06d1affd33f3bc698d0c04eceb23298aee4bc05d71c31e22e39e05470e965447">ANEURALNETWORKS_TENSOR_FLOAT32</a></li>
 </ul>
 <p>Inputs:</p><ul>
-<li>0: input. A 2-D tensor of type T, of shape [batch_size, input_size], where “batch_size” corresponds to the batching dimension, and “input_size” is the size of the input.</li>
-<li>1: weights_feature. A 2-D tensor of type T, of shape [num_units, input_size], where “num_units” corresponds to the number of units.</li>
-<li>2: weights_time. A 2-D tensor of type T, of shape [num_units, memory_size], where “memory_size” corresponds to the fixed-size of the memory.</li>
-<li>3: bias. An optional 1-D tensor of type T, of shape [num_units].</li>
-<li>4: state (in). A 2-D tensor of type T, of shape [batch_size, (memory_size - 1) * num_units * rank].</li>
+<li>0: input. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, input_size], where “batch_size” corresponds to the batching dimension, and “input_size” is the size of the input.</li>
+<li>1: weights_feature. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units, input_size], where “num_units” corresponds to the number of units.</li>
+<li>2: weights_time. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units, memory_size], where “memory_size” corresponds to the fixed-size of the memory.</li>
+<li>3: bias. An optional 1-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [num_units].</li>
+<li>4: state (in). <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, (memory_size - 1) * num_units * rank].</li>
 <li>5: rank. The rank of the SVD approximation.</li>
 <li>6: fused_activation_function. An optional <a class="el" href="group___neural_networks.html#ga4ec620045a39909a6bf00b3ee0c4d414">FuseCode</a> value indicating the activation function. If “NONE” is specified then it results in a linear activation.</li>
 </ul>
 <p>Outputs:</p><ul>
-<li>0: state (out). A 2-D tensor of type T, of shape [batch_size, (memory_size - 1) * num_units * rank].</li>
-<li>1: output. A 2-D tensor of type T, of shape [batch_size, num_units]. </li>
+<li>0: state (out). <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, (memory_size - 1) * num_units * rank].</li>
+<li>1: output. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> 2-D tensor of type <a class="el" href="struct_t.html">T</a>, of shape [batch_size, num_units]. </li>
 </ul>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaabbe492c60331b13038e39d4207940e0a4b63c9caab823f112d82d853a77381e5"></a>ANEURALNETWORKS_TANH&#160;</td><td class="fielddoc">
@@ -1192,7 +1192,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 </ul>
 <p>Supported tensor rank: up to 4.</p>
 <p>Inputs:</p><ul>
-<li>0: A tensor, specifying the input.</li>
+<li>0: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor, specifying the input.</li>
 </ul>
 <p>Outputs:</p><ul>
 <li>0: The output tensor of same shape as input0. </li>
@@ -1901,7 +1901,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
       </table>
 </div><div class="memdoc">
 
-<p>Add an operand to a model. </p>
+<p><a class="el" href="class_add.html">Add</a> an operand to a model. </p>
 <p>The order in which the operands are added is important. The first one added to a model will have the index value 0, the second 1, etc. These indexes are used as operand identifiers in <a class="el" href="group___neural_networks.html#ga5cf00af11c3bd21d27c0dff6ed7a15be">ANeuralNetworksModel_addOperation</a>, <a class="el" href="group___neural_networks.html#gaf5540f8785a31b550ba7e7a78eed6a85">ANeuralNetworksExecution_setInput</a>, <a class="el" href="group___neural_networks.html#gaa8a30670b12f540765f00b1b6d3be011">ANeuralNetworksExecution_setInputFromMemory</a>, <a class="el" href="group___neural_networks.html#ga16ce3c18aa2574df91f7b7932bfdf48d">ANeuralNetworksExecution_setOutput</a>, <a class="el" href="group___neural_networks.html#ga379a9efd313e22d7d8e1e1bef7c0defb">ANeuralNetworksExecution_setOutputFromMemory</a> and <a class="el" href="">ANeuralNetworksExecution_setOperandValue</a>.</p>
 <p>To build a model that can accomodate inputs of various sizes, as you may want to do for a CNN, set the size of the dimensions that will vary at run time to 0. If you do so, provide the full dimensions when calling <a class="el" href="group___neural_networks.html#gaf5540f8785a31b550ba7e7a78eed6a85">ANeuralNetworksExecution_setInput</a> or <a class="el" href="group___neural_networks.html#gaa8a30670b12f540765f00b1b6d3be011">ANeuralNetworksExecution_setInputFromMemory</a>.</p>
 <p>Attempting to modify a model once <a class="el" href="group___neural_networks.html#ga2324b730b593482fda8f8f3a129ba06d">ANeuralNetworksModel_finish</a> has been called will return an error.</p>
@@ -1965,7 +1965,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
       </table>
 </div><div class="memdoc">
 
-<p>Add an operation to a model. </p>
+<p><a class="el" href="class_add.html">Add</a> an operation to a model. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">model</td><td>The model to be modified. </td></tr>
@@ -2175,7 +2175,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
   <table class="params">
     <tr><td class="paramname">model</td><td>The model to be modified. </td></tr>
     <tr><td class="paramname">index</td><td>The index of the model operand we're setting. </td></tr>
-    <tr><td class="paramname">buffer</td><td>A pointer to the data to use. </td></tr>
+    <tr><td class="paramname">buffer</td><td><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> pointer to the data to use. </td></tr>
     <tr><td class="paramname">length</td><td>The size in bytes of the data value.</td></tr>
   </table>
   </dd>
@@ -2227,7 +2227,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 </div><div class="memdoc">
 
 <p>Sets an operand to a value stored in a memory object. </p>
-<p>The content of the memory is not copied. A reference to that memory is stored inside the model. The application is responsible for not changing the content of the memory region until all executions using this model have completed. As the data may be copied during processing, modifying the data after this call yields undefined results.</p>
+<p>The content of the memory is not copied. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> reference to that memory is stored inside the model. The application is responsible for not changing the content of the memory region until all executions using this model have completed. As the data may be copied during processing, modifying the data after this call yields undefined results.</p>
 <p>To indicate that an optional operand should be considered missing, use <a class="el" href="group___neural_networks.html#gab95e96267e0f955086b87a743dad44ca">ANeuralNetworksModel_setOperandValue</a> instead, passing nullptr for buffer.</p>
 <p>Attempting to modify a model once <a class="el" href="group___neural_networks.html#ga2324b730b593482fda8f8f3a129ba06d">ANeuralNetworksModel_finish</a> has been called will return an error.</p>
 <p>See <a class="el" href="group___neural_networks.html#ga4ce6f20a94d3a2de47fa5a810feeb9a4">ANeuralNetworksModel</a> for information on multithreaded usage.</p>
@@ -2235,7 +2235,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
   <table class="params">
     <tr><td class="paramname">model</td><td>The model to be modified. </td></tr>
     <tr><td class="paramname">index</td><td>The index of the model operand we're setting. </td></tr>
-    <tr><td class="paramname">buffer</td><td>A pointer to the data to use. </td></tr>
+    <tr><td class="paramname">buffer</td><td><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> pointer to the data to use. </td></tr>
     <tr><td class="paramname">memory</td><td>The memory containing the data. </td></tr>
     <tr><td class="paramname">offset</td><td>This specifies the location of the data within the memory. The offset is in bytes from the start of memory. </td></tr>
     <tr><td class="paramname">length</td><td>The size in bytes of the data value.</td></tr>
@@ -2318,7 +2318,7 @@ recurrent neural network architectures for large scale acoustic modeling." INTER
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:51 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -2341,7 +2341,7 @@ Generated on Thu Apr 19 2018 13:03:57 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

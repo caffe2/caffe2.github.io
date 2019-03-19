@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -117,9 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d17a1458d10f4ebf1c8d39cfc27e10d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d17a1458d10f4ebf1c8d39cfc27e10d"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, blobs, logging_frequency)</td></tr>
 <tr class="separator:a6d17a1458d10f4ebf1c8d39cfc27e10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa715d38cccec0fc45562d899db75add"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa715d38cccec0fc45562d899db75add"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>modify_net</b> (self, net, init_net=None, grad_map=None, blob_to_device=None)</td></tr>
-<tr class="separator:afa715d38cccec0fc45562d899db75add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8cd315aebc43514b1208a93e3e882f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8cd315aebc43514b1208a93e3e882f7"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>modify_net</b> (self, net, init_net=None, grad_map=None, blob_to_device=None, modify_output_record=False)</td></tr>
+<tr class="separator:aa8cd315aebc43514b1208a93e3e882f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1bbdaac97585e3a8cd05c02c77b3f0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1bbdaac97585e3a8cd05c02c77b3f0c"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>field_name_suffix</b> (self)</td></tr>
 <tr class="separator:ad1bbdaac97585e3a8cd05c02c77b3f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,9 +130,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self)</t
 <tr class="memitem:aa5dff746f5da42ea996351efa24de4e1 inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5dff746f5da42ea996351efa24de4e1"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>modify_net</b> (self, net, init_net=None, grad_map=None, blob_to_device=None)</td></tr>
 <tr class="separator:aa5dff746f5da42ea996351efa24de4e1 inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af69d05435eb81b19647a2dc0cef74b54 inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af69d05435eb81b19647a2dc0cef74b54"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__call__</b> (self, net, init_net=None, grad_map=None, blob_to_device=None)</td></tr>
-<tr class="separator:af69d05435eb81b19647a2dc0cef74b54 inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469f8bd1fcf1ef4685ceea9baf5b27fd inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a469f8bd1fcf1ef4685ceea9baf5b27fd"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__call__</b> (self, net, init_net=None, grad_map=None, blob_to_device=None, modify_output_record=False)</td></tr>
+<tr class="separator:a469f8bd1fcf1ef4685ceea9baf5b27fd inherit pub_methods_classcaffe2_1_1python_1_1modeling_1_1net__modifier_1_1_net_modifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">This class modifies the net passed in by adding ops to compute statistics
@@ -151,7 +151,7 @@ Args:
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -174,7 +174,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

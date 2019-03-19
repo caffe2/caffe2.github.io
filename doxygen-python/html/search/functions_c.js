@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['names',['names',['../classcaffe2_1_1python_1_1task_1_1_task_output_list.html#af31cf127855a9147a5e69c5e3b7eb54a',1,'caffe2::python::task::TaskOutputList']]],
-  ['net',['net',['../classcaffe2_1_1python_1_1net__builder_1_1_operations.html#a7e6fd63f586eedf6afaa806cfdd999f7',1,'caffe2::python::net_builder::Operations']]],
-  ['net2list',['net2list',['../namespace_sparse_transformer.html#ab39d4021ac0c2dcc5e1b8c35b484b46c',1,'SparseTransformer']]],
-  ['nextblob',['NextBlob',['../classcaffe2_1_1python_1_1core_1_1_net.html#af311dda28d4ae0f49feef9bd10fed65a',1,'caffe2::python::core::Net']]],
-  ['nextname',['NextName',['../classcaffe2_1_1python_1_1core_1_1_net.html#a305bd1b0120f20c54f4e508b526cac49',1,'caffe2::python::core::Net']]],
-  ['nextscopedblob',['NextScopedBlob',['../classcaffe2_1_1python_1_1core_1_1_net.html#a9c4d58bb6c5a5d6c89d11872a4392f88',1,'caffe2::python::core::Net']]],
-  ['nodes',['nodes',['../classcaffe2_1_1python_1_1task_1_1_cluster.html#a834f113370c3cd7aa2151f36039e4c61',1,'caffe2::python::task::Cluster']]]
+  ['make_5funique_5fblob_5fname',['make_unique_blob_name',['../classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html#a498428cad454f543e960b1faca2dbf08',1,'caffe2::python::optimizer::Optimizer']]],
+  ['maybeaddcolor',['MaybeAddColor',['../namespacecaffe2_1_1python_1_1binarysize.html#afed2b5ec2c712256e674ab0d7b9e2715',1,'caffe2::python::binarysize']]],
+  ['mean',['mean',['../classtorch_1_1distributions_1_1distribution_1_1_distribution.html#aec78c27116ef17bfe81a864d62f271a0',1,'torch::distributions::distribution::Distribution']]],
+  ['metrics_5fschema',['metrics_schema',['../classcaffe2_1_1python_1_1layer__model__helper_1_1_layer_model_helper.html#a0d22a4d60341d8673deacc1599325129',1,'caffe2::python::layer_model_helper::LayerModelHelper']]],
+  ['multilineequalandthen',['multiLineEqualAndThen',['../classverify_1_1_errors.html#added3cd8f89ddc5a03134422a75b12fe',1,'verify::Errors']]]
 ];

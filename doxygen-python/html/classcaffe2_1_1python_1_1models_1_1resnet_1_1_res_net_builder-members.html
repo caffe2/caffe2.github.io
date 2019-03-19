@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -102,24 +102,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>__init__</b>(self, model, prev_blob, no_bias, is_test, spatial_bn_mom=0.9) (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>add_bottleneck</b>(self, input_filters, base_filters, output_filters, down_sampling=False, spatial_batch_norm=True) (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>add_conv</b>(self, in_filters, out_filters, kernel, stride=1, pad=0) (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>__init__</b>(self, model, prev_blob, no_bias, is_test, bn_epsilon=1e-5, bn_momentum=0.9) (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>add_bottleneck</b>(self, input_filters, base_filters, output_filters, stride=1, group=1, spatial_batch_norm=True) (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>add_conv</b>(self, in_filters, out_filters, kernel, stride=1, group=1, pad=0) (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>add_relu</b>(self) (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>add_simple_block</b>(self, input_filters, num_filters, down_sampling=False, spatial_batch_norm=True) (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>add_spatial_bn</b>(self, num_filters) (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>bn_epsilon</b> (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>bn_momentum</b> (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>comp_count</b> (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>comp_idx</b> (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>is_test</b> (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>model</b> (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>no_bias</b> (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>prev_blob</b> (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>spatial_bn_mom</b> (defined in <a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a>)</td><td class="entry"><a class="el" href="classcaffe2_1_1python_1_1models_1_1resnet_1_1_res_net_builder.html">caffe2.python.models.resnet.ResNetBuilder</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -142,7 +143,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -144,6 +144,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>output_list</b> (self)
 <tr class="memitem:a956c87e5c1181dc64abb88d52a92be51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a956c87e5c1181dc64abb88d52a92be51"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b> (self)</td></tr>
 <tr class="separator:a956c87e5c1181dc64abb88d52a92be51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8199d6cd8c16abe0b33bd78310c63116"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8199d6cd8c16abe0b33bd78310c63116"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__repr__</b> (self)</td></tr>
+<tr class="separator:a8199d6cd8c16abe0b33bd78310c63116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -190,14 +193,14 @@ Example:
         with ops.task_instance_exit():
             ops.Add([globl, local], [globl])
         with ops.task_exit():
-            ops.Mul([globl, globl], [blobl])
+            ops.Mul([globl, globl], [globl])
 
 The task above will create 2 instances that will run in parallel.
 Each instance will copy `local` to `globl` 100 times, Then Add `local`
 to `globl` once. The `Mul` will only execute once, after all the instances
 of the task have finished.
 </pre> 
-<p>Definition at line <a class="el" href="task_8py_source.html#l00422">422</a> of file <a class="el" href="task_8py_source.html">task.py</a>.</p>
+<p>Definition at line <a class="el" href="task_8py_source.html#l00446">446</a> of file <a class="el" href="task_8py_source.html">task.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a74af9fce14c5a96806149e7a3e1e3491"></a>
 <div class="memitem">
@@ -270,7 +273,7 @@ Args:
           times at runtime, and all instances will run
           concurrently.
 </pre> 
-<p>Definition at line <a class="el" href="task_8py_source.html#l00477">477</a> of file <a class="el" href="task_8py_source.html">task.py</a>.</p>
+<p>Definition at line <a class="el" href="task_8py_source.html#l00501">501</a> of file <a class="el" href="task_8py_source.html">task.py</a>.</p>
 
 </div>
 </div>
@@ -281,7 +284,7 @@ Args:
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -304,7 +307,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

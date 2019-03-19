@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -114,9 +114,9 @@ Inheritance diagram for caffe2.python.checkpoint.Job:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1946e254ed843cfef92d87c4a98bf180"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1946e254ed843cfef92d87c4a98bf180"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, init_group=None, epoch_group=None, download_group=None, exit_group=None, stop_signals=None, nodes_to_checkpoint=None)</td></tr>
-<tr class="separator:a1946e254ed843cfef92d87c4a98bf180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98bc4d40e85e98e65e9b52b8cd9c58a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98bc4d40e85e98e65e9b52b8cd9c58a2"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, init_group=None, epoch_group=None, download_group=None, exit_group=None, stop_conditions=None, nodes_to_checkpoint=None)</td></tr>
+<tr class="separator:a98bc4d40e85e98e65e9b52b8cd9c58a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e14f9dad72651ffb38ba12d876e7a09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e14f9dad72651ffb38ba12d876e7a09"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>nodes_to_checkpoint</b> (self)</td></tr>
 <tr class="separator:a9e14f9dad72651ffb38ba12d876e7a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,9 +129,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>__enter__</b> (self)</
 <tr class="memitem:ae7289757bff7a779c3f73a13c3048e2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7289757bff7a779c3f73a13c3048e2c"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>__exit__</b> (self, args)</td></tr>
 <tr class="separator:ae7289757bff7a779c3f73a13c3048e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa3617050c2fa3d99a6d7b9153966d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfa3617050c2fa3d99a6d7b9153966d4"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>add_stop_signal</b> (self, output)</td></tr>
-<tr class="separator:adfa3617050c2fa3d99a6d7b9153966d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac87923353555c4e83df2a4e3afcb58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ac87923353555c4e83df2a4e3afcb58"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>add_stop_condition</b> (self, output)</td></tr>
+<tr class="separator:a6ac87923353555c4e83df2a4e3afcb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -147,9 +147,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa911eacc15c0302d191bc2cdade7f754"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa911eacc15c0302d191bc2cdade7f754"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>exit_group</b></td></tr>
 <tr class="separator:aa911eacc15c0302d191bc2cdade7f754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a098a10d5d0882604cdc52b38b50afe63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a098a10d5d0882604cdc52b38b50afe63"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>stop_signals</b></td></tr>
-<tr class="separator:a098a10d5d0882604cdc52b38b50afe63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b4edb309a6e21ca4214d5d3e19706a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64b4edb309a6e21ca4214d5d3e19706a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>stop_conditions</b></td></tr>
+<tr class="separator:a64b4edb309a6e21ca4214d5d3e19706a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">A Job defines three TaskGroups: the `init_group`, the `epoch_group` and the
@@ -160,7 +160,7 @@ initialize globally persistent blobs such as model weights, accumulators
 and data file lists.
 
 The `epoch_group` will be run in a loop after init_group. The loop will
-exit when any of the stop signals added with `add_stop_signal` is True
+exit when any of the stop signals added with `add_stop_condition` is True
 at the end of an epoch.
 
 The download_group will be run only once, after all the executions of
@@ -182,7 +182,7 @@ def build_reader(partitions):
     with Job.current().epoch_group:
         limited_reader = ReaderWithLimit(reader, num_iter=10000)
         data_queue = pipe(limited_reader, num_threads=8)
-        Job.current().add_stop_signal(limited_reader.data_finished())
+        Job.current().add_stop_condition(limited_reader.data_finished())
     return data_queue
 
 def build_hogwild_trainer(reader, model):
@@ -198,15 +198,15 @@ with Job() as job:
     model = build_model(params)
     build_hogwild_trainer(reader, model)
 </pre> 
-<p>Definition at line <a class="el" href="checkpoint_8py_source.html#l00019">19</a> of file <a class="el" href="checkpoint_8py_source.html">checkpoint.py</a>.</p>
+<p>Definition at line <a class="el" href="caffe2_2python_2checkpoint_8py_source.html#l00027">27</a> of file <a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>caffe2/python/<a class="el" href="checkpoint_8py_source.html">checkpoint.py</a></li>
+<li>caffe2/python/<a class="el" href="caffe2_2python_2checkpoint_8py_source.html">checkpoint.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -229,7 +229,7 @@ Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -129,12 +129,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>FixedDispatch</b> = 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abce76b957ec261bdb8774d28f6c311b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abce76b957ec261bdb8774d28f6c311b3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>WeightedSumReducer</b> (const <a class="el" href="structcaffe2_1_1_base_reducer_1_1_meta.html">Meta</a> &amp;meta, T *out, <a class="el" href="classcaffe2_1_1_c_p_u_context.html">CPUContext</a> *)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WeightedSumReducer</b> (const <a class="el" href="structcaffe2_1_1_base_reducer_1_1_meta.html">Meta</a> &amp;meta, <a class="el" href="struct_t.html">T</a> *out, <a class="el" href="classcaffe2_1_1_c_p_u_context.html">CPUContext</a> *)</td></tr>
 <tr class="separator:abce76b957ec261bdb8774d28f6c311b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad02c7a3347f9dd41de996e38aef30eab"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad02c7a3347f9dd41de996e38aef30eab"></a>
+<tr class="memitem:a2dcafeb40335b92777ce2b35d8abfa04"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2dcafeb40335b92777ce2b35d8abfa04"></a>
 template&lt;int FixedSize&gt; </td></tr>
-<tr class="memitem:ad02c7a3347f9dd41de996e38aef30eab"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process</b> (const <a class="el" href="structcaffe2_1_1_base_reducer_1_1_meta.html">Meta</a> &amp;meta, const T *in, TIndex offset, <a class="el" href="classcaffe2_1_1_c_p_u_context.html">CPUContext</a> *context)</td></tr>
-<tr class="separator:ad02c7a3347f9dd41de996e38aef30eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dcafeb40335b92777ce2b35d8abfa04"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process</b> (const <a class="el" href="structcaffe2_1_1_base_reducer_1_1_meta.html">Meta</a> &amp;meta, const <a class="el" href="struct_t.html">T</a> *in, int64_t offset, <a class="el" href="classcaffe2_1_1_c_p_u_context.html">CPUContext</a> *context)</td></tr>
+<tr class="separator:a2dcafeb40335b92777ce2b35d8abfa04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaffe2_1_1_base_reducer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1_base_reducer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1_base_reducer.html">caffe2::BaseReducer</a></td></tr>
 <tr class="memitem:a61284845b92c7ffcbe5c4fa3fc094ebd inherit pub_methods_classcaffe2_1_1_base_reducer"><td class="memTemplParams" colspan="2"><a class="anchor" id="a61284845b92c7ffcbe5c4fa3fc094ebd"></a>
 template&lt;int FixedSize&gt; </td></tr>
@@ -156,7 +156,7 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kInpu
 class caffe2::WeightedSumReducer&lt; T, CPUContext &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="reducer__functors_8h_source.html#l00511">511</a> of file <a class="el" href="reducer__functors_8h_source.html">reducer_functors.h</a>.</p>
+<p>Definition at line <a class="el" href="reducer__functors_8h_source.html#l00507">507</a> of file <a class="el" href="reducer__functors_8h_source.html">reducer_functors.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/operators/<a class="el" href="reducer__functors_8h_source.html">reducer_functors.h</a></li>
 </ul>
@@ -164,7 +164,7 @@ class caffe2::WeightedSumReducer&lt; T, CPUContext &gt;</h3>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -187,7 +187,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

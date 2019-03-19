@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -104,25 +104,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A simple graph implementation.  
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> simple graph implementation.  
  <a href="classnom_1_1_graph.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_graph_8h_source.html">Graph.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a466f7ed36824725390eea0f9a5616d03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a466f7ed36824725390eea0f9a5616d03"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>NodeRef</b> = <a class="el" href="classnom_1_1_node.html">Node</a>&lt; T, U &gt; *</td></tr>
-<tr class="separator:a466f7ed36824725390eea0f9a5616d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add24cb0309e6b2d48035f7a37dd75124"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add24cb0309e6b2d48035f7a37dd75124"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>EdgeRef</b> = <a class="el" href="classnom_1_1_edge.html">Edge</a>&lt; T, U &gt; *</td></tr>
-<tr class="separator:add24cb0309e6b2d48035f7a37dd75124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73cbd1414c32b4e3760d872059511cf5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73cbd1414c32b4e3760d872059511cf5"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>NodeType</b> = T</td></tr>
-<tr class="separator:a73cbd1414c32b4e3760d872059511cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ad275c4ee570991f107cacb70d93144"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ad275c4ee570991f107cacb70d93144"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>EdgeType</b> = U</td></tr>
-<tr class="separator:a3ad275c4ee570991f107cacb70d93144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de13a1c5bb1460065a43d69b8b262d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2de13a1c5bb1460065a43d69b8b262d2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SubgraphType</b> = <a class="el" href="classnom_1_1_subgraph.html">Subgraph</a>&lt; <a class="el" href="struct_t.html">T</a>, U... &gt;</td></tr>
+<tr class="separator:a2de13a1c5bb1460065a43d69b8b262d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1643ec954871380ba3ddb1ac96b8e3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1643ec954871380ba3ddb1ac96b8e3d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>NodeRef</b> = <a class="el" href="classnom_1_1_node.html">Node</a>&lt; <a class="el" href="struct_t.html">T</a>, U... &gt; *</td></tr>
+<tr class="separator:ac1643ec954871380ba3ddb1ac96b8e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6b9a87188cfabfe26be79a5b719757"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac6b9a87188cfabfe26be79a5b719757"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>EdgeRef</b> = <a class="el" href="classnom_1_1_edge.html">Edge</a>&lt; <a class="el" href="struct_t.html">T</a>, U... &gt; *</td></tr>
+<tr class="separator:aac6b9a87188cfabfe26be79a5b719757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -135,69 +132,101 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9f118c8b8bd08d893667a401fd627068"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f118c8b8bd08d893667a401fd627068"></a>
 <a class="el" href="classnom_1_1_graph.html">Graph</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classnom_1_1_graph.html">Graph</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a9f118c8b8bd08d893667a401fd627068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a470b07c42c8b6a177f3077f2c87522bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnom_1_1_node.html">NodeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#a470b07c42c8b6a177f3077f2c87522bc">createNode</a> (T &amp;&amp;data)</td></tr>
+<tr class="memitem:a470b07c42c8b6a177f3077f2c87522bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnom_1_1_node.html">NodeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#a470b07c42c8b6a177f3077f2c87522bc">createNode</a> (<a class="el" href="struct_t.html">T</a> &amp;&amp;data)</td></tr>
 <tr class="memdesc:a470b07c42c8b6a177f3077f2c87522bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a node and retains ownership of it.  <a href="#a470b07c42c8b6a177f3077f2c87522bc">More...</a><br /></td></tr>
 <tr class="separator:a470b07c42c8b6a177f3077f2c87522bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af427bba9c118652fa65c70e6ccc06bc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af427bba9c118652fa65c70e6ccc06bc5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swapNode</b> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> node, <a class="el" href="classnom_1_1_graph.html">Graph</a>&lt; T, U &gt; &amp;otherGraph)</td></tr>
-<tr class="separator:af427bba9c118652fa65c70e6ccc06bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed1b8fdda2ccc7cdecc13975006f5643"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed1b8fdda2ccc7cdecc13975006f5643"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swapEdge</b> (<a class="el" href="classnom_1_1_edge.html">EdgeRef</a> edge, <a class="el" href="classnom_1_1_graph.html">Graph</a>&lt; T, U &gt; &amp;otherGraph)</td></tr>
-<tr class="separator:aed1b8fdda2ccc7cdecc13975006f5643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1dae8eb6eaf7e2886b6f1ea32229c7"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6f1dae8eb6eaf7e2886b6f1ea32229c7"></a>
+template&lt;class Arg &gt; </td></tr>
+<tr class="memitem:a6f1dae8eb6eaf7e2886b6f1ea32229c7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnom_1_1_node.html">NodeRef</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createNode</b> (Arg &amp;&amp;arg)</td></tr>
+<tr class="separator:a6f1dae8eb6eaf7e2886b6f1ea32229c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30dfb04bc9f758f35a37102f5e6ac996"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30dfb04bc9f758f35a37102f5e6ac996"></a>
 <a class="el" href="classnom_1_1_node.html">NodeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createNode</b> ()</td></tr>
 <tr class="separator:a30dfb04bc9f758f35a37102f5e6ac996"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5b55c9a2423997b89f38ec56131a687"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#ae5b55c9a2423997b89f38ec56131a687">replaceNode</a> (const <a class="el" href="classnom_1_1_node.html">NodeRef</a> &amp;old, const <a class="el" href="classnom_1_1_node.html">NodeRef</a> &amp;newTail, const <a class="el" href="classnom_1_1_node.html">NodeRef</a> &amp;newHead_=nullptr)</td></tr>
-<tr class="memdesc:ae5b55c9a2423997b89f38ec56131a687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace a node in the graph with a generic set of nodes.  <a href="#ae5b55c9a2423997b89f38ec56131a687">More...</a><br /></td></tr>
-<tr class="separator:ae5b55c9a2423997b89f38ec56131a687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8369d2785fc17c02c7ab2fbd12679db2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnom_1_1_edge.html">EdgeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#a8369d2785fc17c02c7ab2fbd12679db2">createEdge</a> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> tail, <a class="el" href="classnom_1_1_node.html">NodeRef</a> head)</td></tr>
-<tr class="memdesc:a8369d2785fc17c02c7ab2fbd12679db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a directed edge and retains ownership of it.  <a href="#a8369d2785fc17c02c7ab2fbd12679db2">More...</a><br /></td></tr>
-<tr class="separator:a8369d2785fc17c02c7ab2fbd12679db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fbce5670477ff84b4fab1cdc3e835d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fbce5670477ff84b4fab1cdc3e835d7"></a>
-<a class="el" href="classnom_1_1_edge.html">EdgeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createEdge</b> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> tail, <a class="el" href="classnom_1_1_node.html">NodeRef</a> head, U &amp;&amp;data)</td></tr>
-<tr class="separator:a2fbce5670477ff84b4fab1cdc3e835d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adffee3cd40116e62950b4b2dc5e734ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnom_1_1_edge.html">EdgeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#adffee3cd40116e62950b4b2dc5e734ed">getEdge</a> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> tail, <a class="el" href="classnom_1_1_node.html">NodeRef</a> head)</td></tr>
-<tr class="memdesc:adffee3cd40116e62950b4b2dc5e734ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the edge between two nodes if it exists.  <a href="#adffee3cd40116e62950b4b2dc5e734ed">More...</a><br /></td></tr>
-<tr class="separator:adffee3cd40116e62950b4b2dc5e734ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a292828f28fb4eeef64bc2bfe0a1b4d0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#a292828f28fb4eeef64bc2bfe0a1b4d0a">deleteNode</a> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> n, bool deleteEdges=true)</td></tr>
-<tr class="memdesc:a292828f28fb4eeef64bc2bfe0a1b4d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a node from the graph.  <a href="#a292828f28fb4eeef64bc2bfe0a1b4d0a">More...</a><br /></td></tr>
-<tr class="separator:a292828f28fb4eeef64bc2bfe0a1b4d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71d8534a8d3234f87b1def0dc010067"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab71d8534a8d3234f87b1def0dc010067"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moveNode</b> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> node, <a class="el" href="classnom_1_1_graph.html">Graph</a>&lt; <a class="el" href="struct_t.html">T</a>, U... &gt; *destGraph)</td></tr>
+<tr class="separator:ab71d8534a8d3234f87b1def0dc010067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4bbf3c2f9aecb58f7c359b7095ac95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b4bbf3c2f9aecb58f7c359b7095ac95"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moveEdge</b> (<a class="el" href="classnom_1_1_edge.html">EdgeRef</a> edge, <a class="el" href="classnom_1_1_graph.html">Graph</a>&lt; <a class="el" href="struct_t.html">T</a>, U... &gt; *destGraph)</td></tr>
+<tr class="separator:a1b4bbf3c2f9aecb58f7c359b7095ac95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab08a9b575311ef598014a1a5621fc07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab08a9b575311ef598014a1a5621fc07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moveSubgraph</b> (const <a class="el" href="classnom_1_1_subgraph.html">Subgraph</a>&lt; <a class="el" href="struct_t.html">T</a>, U... &gt; &amp;subgraph, <a class="el" href="classnom_1_1_graph.html">Graph</a>&lt; <a class="el" href="struct_t.html">T</a>, U... &gt; *destGraph)</td></tr>
+<tr class="separator:aab08a9b575311ef598014a1a5621fc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa079d02f6569eefe03e6ec8000d24c6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa079d02f6569eefe03e6ec8000d24c6b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isValid</b> ()</td></tr>
+<tr class="separator:aa079d02f6569eefe03e6ec8000d24c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68b29f29c5139b30cbb7067cc1dee86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad68b29f29c5139b30cbb7067cc1dee86"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swapNodes</b> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> n1, <a class="el" href="classnom_1_1_node.html">NodeRef</a> n2)</td></tr>
+<tr class="separator:ad68b29f29c5139b30cbb7067cc1dee86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0d1d451623c8c19e6be7ccf78de37e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#aac0d1d451623c8c19e6be7ccf78de37e">replaceNode</a> (const <a class="el" href="classnom_1_1_node.html">NodeRef</a> &amp;oldNode, const <a class="el" href="classnom_1_1_node.html">NodeRef</a> &amp;newNode)</td></tr>
+<tr class="memdesc:aac0d1d451623c8c19e6be7ccf78de37e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace a node in the graph with another node.  <a href="#aac0d1d451623c8c19e6be7ccf78de37e">More...</a><br /></td></tr>
+<tr class="separator:aac0d1d451623c8c19e6be7ccf78de37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd866c0ff5647429b03209ea79aef0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbd866c0ff5647429b03209ea79aef0a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceOutEdges</b> (const <a class="el" href="classnom_1_1_node.html">NodeRef</a> &amp;oldNode, const <a class="el" href="classnom_1_1_node.html">NodeRef</a> &amp;newNode)</td></tr>
+<tr class="separator:adbd866c0ff5647429b03209ea79aef0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec340e5814fb055f7d53ef1ceb5bd6cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec340e5814fb055f7d53ef1ceb5bd6cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceInEdges</b> (const <a class="el" href="classnom_1_1_node.html">NodeRef</a> &amp;oldNode, const <a class="el" href="classnom_1_1_node.html">NodeRef</a> &amp;newNode)</td></tr>
+<tr class="separator:aec340e5814fb055f7d53ef1ceb5bd6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae062fc6f6f9ca01109d22136746f48f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnom_1_1_edge.html">EdgeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#ae062fc6f6f9ca01109d22136746f48f6">createEdge</a> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> tail, <a class="el" href="classnom_1_1_node.html">NodeRef</a> head, U...data)</td></tr>
+<tr class="memdesc:ae062fc6f6f9ca01109d22136746f48f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a directed edge and retains ownership of it.  <a href="#ae062fc6f6f9ca01109d22136746f48f6">More...</a><br /></td></tr>
+<tr class="separator:ae062fc6f6f9ca01109d22136746f48f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eda8ec8de9ea9119daee2f9b61c998e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnom_1_1_edge.html">EdgeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#a1eda8ec8de9ea9119daee2f9b61c998e">getEdgeIfExists</a> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> tail, <a class="el" href="classnom_1_1_node.html">NodeRef</a> head) const </td></tr>
+<tr class="memdesc:a1eda8ec8de9ea9119daee2f9b61c998e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the edge between two nodes if it exists.  <a href="#a1eda8ec8de9ea9119daee2f9b61c998e">More...</a><br /></td></tr>
+<tr class="separator:a1eda8ec8de9ea9119daee2f9b61c998e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db7a1094de8e4f36e73baca8eb50909"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8db7a1094de8e4f36e73baca8eb50909"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#a8db7a1094de8e4f36e73baca8eb50909">hasEdge</a> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> tail, <a class="el" href="classnom_1_1_node.html">NodeRef</a> head) const </td></tr>
+<tr class="memdesc:a8db7a1094de8e4f36e73baca8eb50909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there is an edge between the given two nodes. <br /></td></tr>
+<tr class="separator:a8db7a1094de8e4f36e73baca8eb50909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb7294053e10fb4e0a75b55209a910f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bb7294053e10fb4e0a75b55209a910f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasEdge</b> (<a class="el" href="classnom_1_1_edge.html">EdgeRef</a> e) const </td></tr>
+<tr class="separator:a0bb7294053e10fb4e0a75b55209a910f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23fdefa3aaec25369f6d41fd731f8bb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnom_1_1_edge.html">EdgeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#a23fdefa3aaec25369f6d41fd731f8bb8">getEdge</a> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> tail, <a class="el" href="classnom_1_1_node.html">NodeRef</a> head) const </td></tr>
+<tr class="memdesc:a23fdefa3aaec25369f6d41fd731f8bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the edge between two nodes if it exists.  <a href="#a23fdefa3aaec25369f6d41fd731f8bb8">More...</a><br /></td></tr>
+<tr class="separator:a23fdefa3aaec25369f6d41fd731f8bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0102cb267b0f5508f3373ce26282fba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#ac0102cb267b0f5508f3373ce26282fba">deleteNode</a> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> n)</td></tr>
+<tr class="memdesc:ac0102cb267b0f5508f3373ce26282fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a node from the graph.  <a href="#ac0102cb267b0f5508f3373ce26282fba">More...</a><br /></td></tr>
+<tr class="separator:ac0102cb267b0f5508f3373ce26282fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b106d85e511a73557ab9e23b877e8f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b106d85e511a73557ab9e23b877e8f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteNodes</b> (const std::unordered_set&lt; <a class="el" href="classnom_1_1_node.html">NodeRef</a> &gt; &amp;nodes)</td></tr>
+<tr class="separator:a2b106d85e511a73557ab9e23b877e8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2207e58729437270fc2056d487601094"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2207e58729437270fc2056d487601094"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasNode</b> (<a class="el" href="classnom_1_1_node.html">NodeRef</a> node) const </td></tr>
+<tr class="separator:a2207e58729437270fc2056d487601094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf7f6a602de717061ca7c384c25bd5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnom_1_1_graph.html#a9cf7f6a602de717061ca7c384c25bd5a">deleteEdge</a> (<a class="el" href="classnom_1_1_edge.html">EdgeRef</a> e)</td></tr>
 <tr class="memdesc:a9cf7f6a602de717061ca7c384c25bd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a edge from the graph.  <a href="#a9cf7f6a602de717061ca7c384c25bd5a">More...</a><br /></td></tr>
 <tr class="separator:a9cf7f6a602de717061ca7c384c25bd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a223b41b6be4dbeff347369b17630d51d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a223b41b6be4dbeff347369b17630d51d"></a>
 const std::vector&lt; <a class="el" href="classnom_1_1_node.html">NodeRef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getMutableNodes</b> ()</td></tr>
 <tr class="separator:a223b41b6be4dbeff347369b17630d51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f39fed669e66c87442453e59d0bf72b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f39fed669e66c87442453e59d0bf72b"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getNodesCount</b> () const </td></tr>
+<tr class="separator:a3f39fed669e66c87442453e59d0bf72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bb15194b12bb59cc68d9f129493c987"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9bb15194b12bb59cc68d9f129493c987"></a>
 const std::vector&lt; <a class="el" href="classnom_1_1_edge.html">EdgeRef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getMutableEdges</b> ()</td></tr>
 <tr class="separator:a9bb15194b12bb59cc68d9f129493c987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d4eb2e41612570242a86abcad83c7cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d4eb2e41612570242a86abcad83c7cf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printEdges</b> ()</td></tr>
-<tr class="separator:a1d4eb2e41612570242a86abcad83c7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3225091cecd4bf5f238cee9972f5a1d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3225091cecd4bf5f238cee9972f5a1d6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printNodes</b> () const </td></tr>
-<tr class="separator:a3225091cecd4bf5f238cee9972f5a1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba20adca0b7e0b04b4f80a7989edf2bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba20adca0b7e0b04b4f80a7989edf2bc"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getEdgesCount</b> () const </td></tr>
+<tr class="separator:aba20adca0b7e0b04b4f80a7989edf2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T, typename U&gt;<br />
+<div class="textblock"><h3>template&lt;typename T, typename... U&gt;<br />
 class nom::Graph&lt; T, U &gt;</h3>
 
-<p>A simple graph implementation. </p>
+<p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> simple graph implementation. </p>
 <p>Everything is owned by the graph to simplify storage concerns. </p>
 
-<p>Definition at line <a class="el" href="_graph_8h_source.html#l00030">30</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
+<p>Definition at line <a class="el" href="_graph_8h_source.html#l00029">29</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8369d2785fc17c02c7ab2fbd12679db2"></a>
+<a class="anchor" id="ae062fc6f6f9ca01109d22136746f48f6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename U&gt; </div>
+template&lt;typename T, typename... U&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnom_1_1_edge.html">EdgeRef</a> <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; T, U &gt;::createEdge </td>
+          <td class="memname"><a class="el" href="classnom_1_1_edge.html">EdgeRef</a> <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; <a class="el" href="struct_t.html">T</a>, U &gt;::createEdge </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnom_1_1_node.html">NodeRef</a>&#160;</td>
           <td class="paramname"><em>tail</em>, </td>
@@ -206,7 +235,13 @@ template&lt;typename T, typename U&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classnom_1_1_node.html">NodeRef</a>&#160;</td>
-          <td class="paramname"><em>head</em>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U...&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -222,9 +257,9 @@ template&lt;typename T, typename U&gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a directed edge and retains ownership of it. </p>
-<p><code>tail</code> The node that will have this edge as an out-edge. <code>head</code> The node that will have this edge as an in-edge. </p><dl class="section return"><dt>Returns</dt><dd>A reference to the edge created. </dd></dl>
+<p><code>tail</code> The node that will have this edge as an out-edge. <code>head</code> The node that will have this edge as an in-edge. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> reference to the edge created. </dd></dl>
 
-<p>Definition at line <a class="el" href="_graph_8h_source.html#l00230">230</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
+<p>Definition at line <a class="el" href="_graph_8h_source.html#l00415">415</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
 
 </div>
 </div>
@@ -232,15 +267,15 @@ template&lt;typename T, typename U&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename U&gt; </div>
+template&lt;typename T, typename... U&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnom_1_1_node.html">NodeRef</a> <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; T, U &gt;::createNode </td>
+          <td class="memname"><a class="el" href="classnom_1_1_node.html">NodeRef</a> <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; <a class="el" href="struct_t.html">T</a>, U &gt;::createNode </td>
           <td>(</td>
-          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_t.html">T</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
@@ -253,9 +288,9 @@ template&lt;typename T, typename U&gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a node and retains ownership of it. </p>
-<p><code>data</code> An rvalue of the data being held in the node. </p><dl class="section return"><dt>Returns</dt><dd>A reference to the node created. </dd></dl>
+<p><code>data</code> An rvalue of the data being held in the node. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> reference to the node created. </dd></dl>
 
-<p>Definition at line <a class="el" href="_graph_8h_source.html#l00164">164</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
+<p>Definition at line <a class="el" href="_graph_8h_source.html#l00240">240</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
 
 </div>
 </div>
@@ -263,13 +298,13 @@ template&lt;typename T, typename U&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename U&gt; </div>
+template&lt;typename T, typename... U&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; T, U &gt;::deleteEdge </td>
+          <td class="memname">void <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; <a class="el" href="struct_t.html">T</a>, U &gt;::deleteEdge </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnom_1_1_edge.html">EdgeRef</a>&#160;</td>
           <td class="paramname"><em>e</em></td><td>)</td>
@@ -284,37 +319,27 @@ template&lt;typename T, typename U&gt; </div>
 </div><div class="memdoc">
 
 <p>Deletes a edge from the graph. </p>
-<p><code>e</code> A reference to the edge. </p>
+<p><code>e</code> <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> reference to the edge. </p>
 
-<p>Definition at line <a class="el" href="_graph_8h_source.html#l00283">283</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
+<p>Definition at line <a class="el" href="_graph_8h_source.html#l00496">496</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a292828f28fb4eeef64bc2bfe0a1b4d0a"></a>
+<a class="anchor" id="ac0102cb267b0f5508f3373ce26282fba"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename U&gt; </div>
+template&lt;typename T, typename... U&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; T, U &gt;::deleteNode </td>
+          <td class="memname">void <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; <a class="el" href="struct_t.html">T</a>, U &gt;::deleteNode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnom_1_1_node.html">NodeRef</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>deleteEdges</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -327,27 +352,26 @@ template&lt;typename T, typename U&gt; </div>
 <p>Deletes a node from the graph. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">n</td><td>A reference to the node. </td></tr>
-    <tr><td class="paramname">deleteEdges</td><td>(optional) Whether or not to delete the edges related to the node. </td></tr>
+    <tr><td class="paramname">n</td><td><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> reference to the node. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_graph_8h_source.html#l00264">264</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
+<p>Definition at line <a class="el" href="_graph_8h_source.html#l00460">460</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adffee3cd40116e62950b4b2dc5e734ed"></a>
+<a class="anchor" id="a23fdefa3aaec25369f6d41fd731f8bb8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename U&gt; </div>
+template&lt;typename T, typename... U&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnom_1_1_edge.html">EdgeRef</a> <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; T, U &gt;::getEdge </td>
+          <td class="memname"><a class="el" href="classnom_1_1_edge.html">EdgeRef</a> <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; <a class="el" href="struct_t.html">T</a>, U &gt;::getEdge </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnom_1_1_node.html">NodeRef</a>&#160;</td>
           <td class="paramname"><em>tail</em>, </td>
@@ -361,7 +385,7 @@ template&lt;typename T, typename U&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -374,36 +398,71 @@ template&lt;typename T, typename U&gt; </div>
 <p>Get a reference to the edge between two nodes if it exists. </p>
 <p>note: will fail assertion if the edge does not exist. </p>
 
-<p>Definition at line <a class="el" href="_graph_8h_source.html#l00250">250</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
+<p>Definition at line <a class="el" href="_graph_8h_source.html#l00452">452</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae5b55c9a2423997b89f38ec56131a687"></a>
+<a class="anchor" id="a1eda8ec8de9ea9119daee2f9b61c998e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename U&gt; </div>
+template&lt;typename T, typename... U&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; T, U &gt;::replaceNode </td>
+          <td class="memname"><a class="el" href="classnom_1_1_edge.html">EdgeRef</a> <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; <a class="el" href="struct_t.html">T</a>, U &gt;::getEdgeIfExists </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnom_1_1_node.html">NodeRef</a>&#160;</td>
+          <td class="paramname"><em>tail</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnom_1_1_node.html">NodeRef</a>&#160;</td>
+          <td class="paramname"><em>head</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a reference to the edge between two nodes if it exists. </p>
+<p>Returns nullptr if the edge does not exist. </p>
+
+<p>Definition at line <a class="el" href="_graph_8h_source.html#l00427">427</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac0d1d451623c8c19e6be7ccf78de37e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, typename... U&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classnom_1_1_graph.html">nom::Graph</a>&lt; <a class="el" href="struct_t.html">T</a>, U &gt;::replaceNode </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classnom_1_1_node.html">NodeRef</a> &amp;&#160;</td>
-          <td class="paramname"><em>old</em>, </td>
+          <td class="paramname"><em>oldNode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classnom_1_1_node.html">NodeRef</a> &amp;&#160;</td>
-          <td class="paramname"><em>newTail</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classnom_1_1_node.html">NodeRef</a> &amp;&#160;</td>
-          <td class="paramname"><em>newHead_</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>newNode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -418,10 +477,10 @@ template&lt;typename T, typename U&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Replace a node in the graph with a generic set of nodes. </p>
-<dl class="section note"><dt>Note</dt><dd>The node replaced simply has its edges cut, but it not deleted from the graph. Call <a class="el" href="classnom_1_1_graph.html#a292828f28fb4eeef64bc2bfe0a1b4d0a" title="Deletes a node from the graph. ">Graph::deleteNode</a> to delete it. <code>old</code> A node to be replaced in the graph. <code>newTail</code> The node that inherit the old node's in-edges <code>newHead</code> (optional) The node that inherit the old node's out-edges </dd></dl>
+<p>Replace a node in the graph with another node. </p>
+<dl class="section note"><dt>Note</dt><dd>The node replaced simply has its edges cut, but it not deleted from the graph. Call <a class="el" href="classnom_1_1_graph.html#ac0102cb267b0f5508f3373ce26282fba" title="Deletes a node from the graph. ">Graph::deleteNode</a> to delete it. <code>oldNode</code> <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> node to be replaced in the graph. <code>newNode</code> The node that inherit the old node's in-edges and out-edges. </dd></dl>
 
-<p>Definition at line <a class="el" href="_graph_8h_source.html#l00203">203</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
+<p>Definition at line <a class="el" href="_graph_8h_source.html#l00384">384</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +491,7 @@ template&lt;typename T, typename U&gt; </div>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -455,7 +514,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

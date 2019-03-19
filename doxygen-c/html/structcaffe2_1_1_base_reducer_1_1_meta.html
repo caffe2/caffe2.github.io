@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -118,34 +118,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abe4ea955462f0353793cd659b174cb01"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe4ea955462f0353793cd659b174cb01"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Meta</b> (bool first=true)</td></tr>
 <tr class="separator:abe4ea955462f0353793cd659b174cb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab77e7dce040291122528d77ba894b79a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab77e7dce040291122528d77ba894b79a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>computeMeta</b> (const std::vector&lt; TIndex &gt; &amp;dims, int skip_dims)</td></tr>
-<tr class="separator:ab77e7dce040291122528d77ba894b79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa3c0606fbd8343c36fb357f90c9651d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa3c0606fbd8343c36fb357f90c9651d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>observeInput</b> (int input, const <a class="el" href="classcaffe2_1_1_tensor.html">Tensor</a>&lt; <a class="el" href="classcaffe2_1_1_c_p_u_context.html">CPUContext</a> &gt; &amp;value, int skip_dims)</td></tr>
-<tr class="separator:aaa3c0606fbd8343c36fb357f90c9651d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e555c543b77103cfe3f7f863c2df13d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e555c543b77103cfe3f7f863c2df13d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>appendOutputShape</b> (vector&lt; TIndex &gt; *output_shape)</td></tr>
-<tr class="separator:a5e555c543b77103cfe3f7f863c2df13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0dece99cadea736800362f9a180c4d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0dece99cadea736800362f9a180c4d5"></a>
-vector&lt; TIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getOutputShape</b> (const TensorShape &amp;in, int skip_dims)</td></tr>
-<tr class="separator:ae0dece99cadea736800362f9a180c4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69648415ca98ed27164dba9907061ed7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69648415ca98ed27164dba9907061ed7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>computeMeta</b> (<a class="el" href="classc10_1_1_array_ref.html">at::IntArrayRef</a> dims, int skip_dims)</td></tr>
+<tr class="separator:a69648415ca98ed27164dba9907061ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf3cb152946ee9e67133aa82dc7b085f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf3cb152946ee9e67133aa82dc7b085f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>observeInput</b> (int input, const <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> &amp;value, int skip_dims)</td></tr>
+<tr class="separator:abf3cb152946ee9e67133aa82dc7b085f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e99b69c7ac376ca7f04f619dcec2b5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e99b69c7ac376ca7f04f619dcec2b5c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>appendOutputShape</b> (vector&lt; int64_t &gt; *output_shape)</td></tr>
+<tr class="separator:a2e99b69c7ac376ca7f04f619dcec2b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ec92eecd324a4e9d71f7b9c3752926"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23ec92eecd324a4e9d71f7b9c3752926"></a>
+vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getOutputShape</b> (const TensorShape &amp;in, int skip_dims)</td></tr>
+<tr class="separator:a23ec92eecd324a4e9d71f7b9c3752926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a70f19e4709a45a74cc7ce880feb99003"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70f19e4709a45a74cc7ce880feb99003"></a>
-TIndex&#160;</td><td class="memItemRight" valign="bottom"><b>block_size</b></td></tr>
-<tr class="separator:a70f19e4709a45a74cc7ce880feb99003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b6275fc5d89963a5367970dbe5203b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b6275fc5d89963a5367970dbe5203b1"></a>
-vector&lt; TIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>block_shape</b></td></tr>
-<tr class="separator:a5b6275fc5d89963a5367970dbe5203b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05394b0e3582135d700903408e677016"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05394b0e3582135d700903408e677016"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>block_size</b></td></tr>
+<tr class="separator:a05394b0e3582135d700903408e677016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b039556157ebc0b41a3ae51715ca583"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b039556157ebc0b41a3ae51715ca583"></a>
+vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>block_shape</b></td></tr>
+<tr class="separator:a1b039556157ebc0b41a3ae51715ca583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd3fe780c9bf056b350a9fecb07dc083"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd3fe780c9bf056b350a9fecb07dc083"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>first_dim</b></td></tr>
 <tr class="separator:abd3fe780c9bf056b350a9fecb07dc083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="reducer__functors_8h_source.html#l00330">330</a> of file <a class="el" href="reducer__functors_8h_source.html">reducer_functors.h</a>.</p>
+<p>Definition at line <a class="el" href="reducer__functors_8h_source.html#l00331">331</a> of file <a class="el" href="reducer__functors_8h_source.html">reducer_functors.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>caffe2/operators/<a class="el" href="reducer__functors_8h_source.html">reducer_functors.h</a></li>
 </ul>
@@ -153,7 +153,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>first_dim</b></td></t
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:53 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -176,7 +176,7 @@ Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

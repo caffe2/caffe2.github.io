@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -117,11 +117,12 @@ Inheritance diagram for caffe2::BlobSerializerBase:</div>
 <area href="classcaffe2_1_1dataset__ops_1_1_shared_tensor_vector_ptr_serializer.html" alt="caffe2::dataset_ops::SharedTensorVectorPtrSerializer" shape="rect" coords="325,56,640,80"/>
 <area href="classcaffe2_1_1db_1_1_d_b_reader_serializer.html" alt="caffe2::db::DBReaderSerializer" shape="rect" coords="325,112,640,136"/>
 <area href="classcaffe2_1_1_index_serializer.html" alt="caffe2::IndexSerializer" shape="rect" coords="325,168,640,192"/>
-<area href="classcaffe2_1_1_map_serializer.html" alt="caffe2::MapSerializer&lt; KEY_T, VALUE_T &gt;" shape="rect" coords="325,224,640,248"/>
-<area href="classcaffe2_1_1_mutex_serializer.html" alt="caffe2::MutexSerializer" shape="rect" coords="325,280,640,304"/>
-<area href="classcaffe2_1_1_q_tensor_serializer.html" alt="caffe2::QTensorSerializer&lt; Context &gt;" shape="rect" coords="325,336,640,360"/>
-<area href="classcaffe2_1_1_string_serializer.html" title="StringSerializer is the serializer for String. " alt="caffe2::StringSerializer" shape="rect" coords="325,392,640,416"/>
-<area href="classcaffe2_1_1_tensor_serializer.html" title="TensorSerializer is the serializer for Tensors. " alt="caffe2::TensorSerializer&lt; Context &gt;" shape="rect" coords="325,448,640,472"/>
+<area href="classcaffe2_1_1int8_1_1_int8_tensor_c_p_u_serializer.html" alt="caffe2::int8::Int8TensorCPUSerializer" shape="rect" coords="325,224,640,248"/>
+<area href="classcaffe2_1_1_map_serializer.html" alt="caffe2::MapSerializer&lt; KEY_T, VALUE_T &gt;" shape="rect" coords="325,280,640,304"/>
+<area href="classcaffe2_1_1_mutex_serializer.html" alt="caffe2::MutexSerializer" shape="rect" coords="325,336,640,360"/>
+<area href="classcaffe2_1_1_q_tensor_serializer.html" alt="caffe2::QTensorSerializer&lt; Context &gt;" shape="rect" coords="325,392,640,416"/>
+<area href="classcaffe2_1_1_string_serializer.html" title="StringSerializer is the serializer for String. " alt="caffe2::StringSerializer" shape="rect" coords="325,448,640,472"/>
+<area href="classcaffe2_1_1_tensor_serializer.html" title="TensorSerializer is the serializer for Tensors. " alt="caffe2::TensorSerializer" shape="rect" coords="325,504,640,528"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -133,20 +134,20 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SerializationAccepto
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3ba21b968f45ca3b737ee209eebd37aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_blob_serializer_base.html#a3ba21b968f45ca3b737ee209eebd37aa">Serialize</a> (const <a class="el" href="classcaffe2_1_1_blob.html">Blob</a> &amp;blob, const std::string &amp;name, SerializationAcceptor acceptor)=0</td></tr>
-<tr class="memdesc:a3ba21b968f45ca3b737ee209eebd37aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The virtual function that returns a serialized string for the input blob.  <a href="#a3ba21b968f45ca3b737ee209eebd37aa">More...</a><br /></td></tr>
-<tr class="separator:a3ba21b968f45ca3b737ee209eebd37aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad23dc70230e15925d3d7b0ae3129cf86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad23dc70230e15925d3d7b0ae3129cf86"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeWithChunkSize</b> (const <a class="el" href="classcaffe2_1_1_blob.html">Blob</a> &amp;blob, const std::string &amp;name, SerializationAcceptor acceptor, int)</td></tr>
-<tr class="separator:ad23dc70230e15925d3d7b0ae3129cf86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f46ad672d8a23f91b429598b12dff7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_blob_serializer_base.html#a86f46ad672d8a23f91b429598b12dff7">Serialize</a> (const void *pointer, <a class="el" href="classcaffe2_1_1_type_meta.html">TypeMeta</a> typeMeta, const std::string &amp;name, SerializationAcceptor acceptor)=0</td></tr>
+<tr class="memdesc:a86f46ad672d8a23f91b429598b12dff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The virtual function that returns a serialized string for the input blob.  <a href="#a86f46ad672d8a23f91b429598b12dff7">More...</a><br /></td></tr>
+<tr class="separator:a86f46ad672d8a23f91b429598b12dff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d885d58c4036251da999ba86513195"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7d885d58c4036251da999ba86513195"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeWithChunkSize</b> (const void *pointer, <a class="el" href="classcaffe2_1_1_type_meta.html">TypeMeta</a> typeMeta, const std::string &amp;name, SerializationAcceptor acceptor, int)</td></tr>
+<tr class="separator:ab7d885d58c4036251da999ba86513195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classcaffe2_1_1_blob_serializer_base.html" title="BlobSerializerBase is an abstract class that serializes a blob to a string. ">BlobSerializerBase</a> is an abstract class that serializes a blob to a string. </p>
 <p>This class exists purely for the purpose of registering type-specific serialization code. If you need to serialize a specific type, you should write your own Serializer class, and then register it using REGISTER_BLOB_SERIALIZER. For a detailed example, see <a class="el" href="classcaffe2_1_1_tensor_serializer.html" title="TensorSerializer is the serializer for Tensors. ">TensorSerializer</a> for details. </p>
 
-<p>Definition at line <a class="el" href="blob__serializer__base_8h_source.html#l00023">23</a> of file <a class="el" href="blob__serializer__base_8h_source.html">blob_serializer_base.h</a>.</p>
+<p>Definition at line <a class="el" href="blob__serializer__base_8h_source.html#l00027">27</a> of file <a class="el" href="blob__serializer__base_8h_source.html">blob_serializer_base.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a3ba21b968f45ca3b737ee209eebd37aa"></a>
+<a class="anchor" id="a86f46ad672d8a23f91b429598b12dff7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -156,8 +157,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeWith
         <tr>
           <td class="memname">virtual void caffe2::BlobSerializerBase::Serialize </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classcaffe2_1_1_blob.html">Blob</a> &amp;&#160;</td>
-          <td class="paramname"><em>blob</em>, </td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcaffe2_1_1_type_meta.html">TypeMeta</a>&#160;</td>
+          <td class="paramname"><em>typeMeta</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -203,7 +210,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeWith
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:53 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -226,7 +233,7 @@ Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

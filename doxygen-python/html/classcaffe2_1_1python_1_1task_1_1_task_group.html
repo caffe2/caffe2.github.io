@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -117,6 +117,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f191a8e44e865b40bbff12658cf846a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f191a8e44e865b40bbff12658cf846a"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, workspace_type=None)</td></tr>
 <tr class="separator:a6f191a8e44e865b40bbff12658cf846a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf3908786af68b88099221405259033"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cf3908786af68b88099221405259033"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>add_remote_net</b> (self, net)</td></tr>
+<tr class="separator:a0cf3908786af68b88099221405259033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab117aaa649637a07e07e6f46271bc320"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab117aaa649637a07e07e6f46271bc320"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>remote_nets</b> (self)</td></tr>
+<tr class="separator:ab117aaa649637a07e07e6f46271bc320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0640e901c2bedc4f6e39c223c90b6ac9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0640e901c2bedc4f6e39c223c90b6ac9"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (self, task)</td></tr>
 <tr class="separator:a0640e901c2bedc4f6e39c223c90b6ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +148,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>to_task</b> (self, nod
 <tr class="memitem:af29eb1a9a365391c10ce3992deb496ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af29eb1a9a365391c10ce3992deb496ed"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>workspace_type</b> (self)</td></tr>
 <tr class="separator:af29eb1a9a365391c10ce3992deb496ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9b505f849a133f819de085ad3a3b9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d9b505f849a133f819de085ad3a3b9e"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__repr__</b> (self)</td></tr>
+<tr class="separator:a6d9b505f849a133f819de085ad3a3b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -178,7 +187,7 @@ Example:
     # s4 will run at node 'n1'
     session.run(tg)
 </pre> 
-<p>Definition at line <a class="el" href="task_8py_source.html#l00159">159</a> of file <a class="el" href="task_8py_source.html">task.py</a>.</p>
+<p>Definition at line <a class="el" href="task_8py_source.html#l00166">166</a> of file <a class="el" href="task_8py_source.html">task.py</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a40d986bf59bdfb622ddb66f49b42134f"></a>
 <div class="memitem">
@@ -217,7 +226,7 @@ Example:
 </div><div class="memdoc">
 <pre class="fragment">DEPRECATED. Use report_step instead.
 </pre> 
-<p>Definition at line <a class="el" href="task_8py_source.html#l00246">246</a> of file <a class="el" href="task_8py_source.html">task.py</a>.</p>
+<p>Definition at line <a class="el" href="task_8py_source.html#l00260">260</a> of file <a class="el" href="task_8py_source.html">task.py</a>.</p>
 
 </div>
 </div>
@@ -261,7 +270,7 @@ every `interval_ms` milliseconds for the duration of the TaskGroup
 execution on each of the nodes. It is guaranteed that this step
 will be run at least once after every Task in the node has finished.
 </pre> 
-<p>Definition at line <a class="el" href="task_8py_source.html#l00235">235</a> of file <a class="el" href="task_8py_source.html">task.py</a>.</p>
+<p>Definition at line <a class="el" href="task_8py_source.html#l00249">249</a> of file <a class="el" href="task_8py_source.html">task.py</a>.</p>
 
 </div>
 </div>
@@ -272,7 +281,7 @@ will be run at least once after every Task in the node has finished.
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -295,7 +304,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

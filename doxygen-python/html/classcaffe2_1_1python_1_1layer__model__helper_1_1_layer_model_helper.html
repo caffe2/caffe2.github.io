@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -126,6 +126,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>set_initialize_params<
 <tr class="memitem:a91745bd328ccb08765dc3116669dc435"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91745bd328ccb08765dc3116669dc435"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>add_metric_field</b> (self, name, value)</td></tr>
 <tr class="separator:a91745bd328ccb08765dc3116669dc435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b860c425376f71915373ccf7edda5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58b860c425376f71915373ccf7edda5e"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>add_ad_hoc_plot_blob</b> (self, blob, dtype=None)</td></tr>
+<tr class="separator:a58b860c425376f71915373ccf7edda5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab035a97433b9a623283c1b7601b679d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab035a97433b9a623283c1b7601b679d9"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>add_global_constant</b> (self, name, array=None, dtype=None, initializer=None)</td></tr>
 <tr class="separator:ab035a97433b9a623283c1b7601b679d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,6 +194,12 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>preproc_output_schema<
 <tr class="memitem:a22aa015194a4925093c9975a1074de7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22aa015194a4925093c9975a1074de7f"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>preproc_output_schema</b> (self, schema)</td></tr>
 <tr class="separator:a22aa015194a4925093c9975a1074de7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1537011f14622ebf7288e3589070cd5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1537011f14622ebf7288e3589070cd5f"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>prediction</b> (self)</td></tr>
+<tr class="separator:a1537011f14622ebf7288e3589070cd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45b698f73115bc42433b00c0b385685"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae45b698f73115bc42433b00c0b385685"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>add_prediction</b> (self, prediction, weight=1.0)</td></tr>
+<tr class="separator:ae45b698f73115bc42433b00c0b385685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49a05b3afb8ede493eb1b298436501bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49a05b3afb8ede493eb1b298436501bc"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>loss</b> (self)</td></tr>
 <tr class="separator:a49a05b3afb8ede493eb1b298436501bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,12 +230,12 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>apply_regularizers_on_
 <tr class="memitem:af345df3a26a8ed6cee099e8a5c8778a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af345df3a26a8ed6cee099e8a5c8778a9"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>apply_regularizers_after_optimizer</b> (self, train_net, train_init_net, grad_map, blob_to_device=None)</td></tr>
 <tr class="separator:af345df3a26a8ed6cee099e8a5c8778a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b01402fb4da17a960f97e8a2f10c4e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b01402fb4da17a960f97e8a2f10c4e7"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>apply_post_grad_net_modifiers</b> (self, trainer_net, trainer_init_net, grad_map, blob_to_device=None)</td></tr>
-<tr class="separator:a7b01402fb4da17a960f97e8a2f10c4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34f37332cf7e9aaaae7bdb491d41eedb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34f37332cf7e9aaaae7bdb491d41eedb"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>apply_final_net_modifiers</b> (self, trainer_net, trainer_init_net, grad_map, blob_to_device=None)</td></tr>
-<tr class="separator:a34f37332cf7e9aaaae7bdb491d41eedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85aa647690c920b82aca5cb7475c547"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad85aa647690c920b82aca5cb7475c547"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>apply_post_grad_net_modifiers</b> (self, trainer_net, trainer_init_net, grad_map, blob_to_device=None, modify_output_record=False)</td></tr>
+<tr class="separator:ad85aa647690c920b82aca5cb7475c547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf53b6364cba4c9904a4f32cb37809a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cf53b6364cba4c9904a4f32cb37809a"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>apply_final_net_modifiers</b> (self, trainer_net, trainer_init_net, grad_map, blob_to_device=None, modify_output_record=False)</td></tr>
+<tr class="separator:a7cf53b6364cba4c9904a4f32cb37809a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a460da1bd475fbbb2f924f0a7d943354d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a460da1bd475fbbb2f924f0a7d943354d"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>apply_optimizers</b> (self, train_net, train_init_net, grad_map, blob_to_device=None)</td></tr>
 <tr class="separator:a460da1bd475fbbb2f924f0a7d943354d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,9 +266,6 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>get_param_info</b> (se
 <tr class="memitem:ab544020b810dcdd6fa415f1f7b85dfbe inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab544020b810dcdd6fa415f1f7b85dfbe"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>add_param_DEPRECATED</b> (self, param, key=None, shape=None, length=None)</td></tr>
 <tr class="separator:ab544020b810dcdd6fa415f1f7b85dfbe inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1c710d0973ce1a161780382e218912a inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1c710d0973ce1a161780382e218912a"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>param_info</b> (self, grad_type=None, id=None)</td></tr>
-<tr class="separator:ac1c710d0973ce1a161780382e218912a inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34c34b19233f300c129511068a21d989 inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34c34b19233f300c129511068a21d989"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>AddParameter</b> (self, param, tags=None)</td></tr>
 <tr class="separator:a34c34b19233f300c129511068a21d989 inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,6 +308,12 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>GetDevices</b> (self)<
 <tr class="memitem:ab4eebc2b40048f744ac580c02ef7ba5e inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4eebc2b40048f744ac580c02ef7ba5e"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>__dir__</b> (self)</td></tr>
 <tr class="separator:ab4eebc2b40048f744ac580c02ef7ba5e inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac705f73bc8f4304d23fbf1f3a13e704c inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac705f73bc8f4304d23fbf1f3a13e704c"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>GetCompleteNet</b> (self)</td></tr>
+<tr class="separator:ac705f73bc8f4304d23fbf1f3a13e704c inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01042106a8ea304b8c794619328c4270 inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01042106a8ea304b8c794619328c4270"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructInitTrainNetfromNet</b> (self, net)</td></tr>
+<tr class="separator:a01042106a8ea304b8c794619328c4270 inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -314,6 +326,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1657ad416045a34d43de93d4249aeb88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1657ad416045a34d43de93d4249aeb88"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>param_init_net</b></td></tr>
 <tr class="separator:a1657ad416045a34d43de93d4249aeb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e0cb10b6446f5baf300e0f8322d297"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28e0cb10b6446f5baf300e0f8322d297"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ad_hoc_diagnose_blobs_and_operations</b></td></tr>
+<tr class="separator:a28e0cb10b6446f5baf300e0f8322d297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc4f8ae098d63e34548c5e8a2a23da2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfc4f8ae098d63e34548c5e8a2a23da2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ad_hoc_plot_blobs</b></td></tr>
+<tr class="separator:abfc4f8ae098d63e34548c5e8a2a23da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46395f8f60b79c4e2d239252a6c88d07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46395f8f60b79c4e2d239252a6c88d07"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>global_constants</b></td></tr>
 <tr class="separator:a46395f8f60b79c4e2d239252a6c88d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -437,7 +455,7 @@ metric reporting.
 During the training/evaluation this schema will be appended to the
 schema that represents model output.
 </pre> 
-<p>Definition at line <a class="el" href="layer__model__helper_8py_source.html#l00362">362</a> of file <a class="el" href="layer__model__helper_8py_source.html">layer_model_helper.py</a>.</p>
+<p>Definition at line <a class="el" href="layer__model__helper_8py_source.html#l00376">376</a> of file <a class="el" href="layer__model__helper_8py_source.html">layer_model_helper.py</a>.</p>
 
 </div>
 </div>
@@ -448,7 +466,7 @@ schema that represents model output.
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -471,7 +489,7 @@ Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

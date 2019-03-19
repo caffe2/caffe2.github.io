@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -126,9 +126,9 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcaffe2_1_1transform_1_1_graph.html#a1fb6e02cbae33c7dd04d20bcc05c054c">DeactivateSubgraph</a> (std::vector&lt; int &gt; subgraph)</td></tr>
 <tr class="memdesc:a1fb6e02cbae33c7dd04d20bcc05c054c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate a subgraph, and get rid of all edges into this subgraph. <br /></td></tr>
 <tr class="separator:a1fb6e02cbae33c7dd04d20bcc05c054c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9091884928a0735680570bd86a24350"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9091884928a0735680570bd86a24350"></a>
-const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const </td></tr>
-<tr class="separator:ab9091884928a0735680570bd86a24350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e1c7dd2c469336bbd53414726b3c09a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e1c7dd2c469336bbd53414726b3c09a"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const </td></tr>
+<tr class="separator:a2e1c7dd2c469336bbd53414726b3c09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa826734dd65310a0949d67968ef7018e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa826734dd65310a0949d67968ef7018e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>push_node</b> (const <a class="el" href="structcaffe2_1_1transform_1_1_node.html">Node</a> &amp;new_node)</td></tr>
 <tr class="separator:aa826734dd65310a0949d67968ef7018e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,7 +181,7 @@ const std::set&lt; string &gt; &amp;&#160;</td><td class="memItemRight" valign="
 <p><a class="el" href="structcaffe2_1_1transform_1_1_graph.html" title="Graph representation of a Netdef. ">Graph</a> generation. </p>
 <p>Given a netdef, returns a <a class="el" href="structcaffe2_1_1transform_1_1_graph.html" title="Graph representation of a Netdef. ">Graph</a>.</p>
 <p>Each node represents an operator. An edge exists between two nodes if the parent op writes to a blob, which is the input of the child blob, with no other op writing to the blob in between the execution order.</p>
-<p>Time Complexity: O(E), where E is the number of blobs </p>
+<p>Time Complexity: O(E), where <a class="el" href="struct_e.html">E</a> is the number of blobs </p>
 
 <p>Definition at line <a class="el" href="graph_8cc_source.html#l00012">12</a> of file <a class="el" href="graph_8cc_source.html">graph.cc</a>.</p>
 
@@ -202,7 +202,7 @@ const std::set&lt; string &gt; &amp;&#160;</td><td class="memItemRight" valign="
 </div><div class="memdoc">
 
 <p>Generates a NetDef Representation for the current graph. </p>
-<p>Nodes are visited in topological order, which is proper Opdef ordering. TODO(benz): There exists conflicts with repeated blob names, where topological sorting is not sufficient for correct netdef representation, unless blobs are renamed. For example, if after a transformation, We have operator ancestry: A &ndash;&gt; B &ndash;&gt; C, and also A &ndash;&gt; D &ndash;&gt; E, where B -&gt; C and D -&gt; E uses the same blob name, then A, B, D, E, C is a correct topological ordering, but D will write to the blob that C reads from, instead of B. Currently believe that there will always be ambiguity unless blobs are renamed. This is solved by performing SSA on all transformed blob names. </p>
+<p>Nodes are visited in topological order, which is proper Opdef ordering. TODO(benz): There exists conflicts with repeated blob names, where topological sorting is not sufficient for correct netdef representation, unless blobs are renamed. For example, if after a transformation, We have operator ancestry: <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> &ndash;&gt; <a class="el" href="struct_b.html">B</a> &ndash;&gt; <a class="el" href="struct_c.html">C</a>, and also <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> &ndash;&gt; <a class="el" href="struct_d.html">D</a> &ndash;&gt; <a class="el" href="struct_e.html">E</a>, where <a class="el" href="struct_b.html">B</a> -&gt; <a class="el" href="struct_c.html">C</a> and <a class="el" href="struct_d.html">D</a> -&gt; <a class="el" href="struct_e.html">E</a> uses the same blob name, then <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a>, <a class="el" href="struct_b.html">B</a>, <a class="el" href="struct_d.html">D</a>, <a class="el" href="struct_e.html">E</a>, <a class="el" href="struct_c.html">C</a> is a correct topological ordering, but <a class="el" href="struct_d.html">D</a> will write to the blob that <a class="el" href="struct_c.html">C</a> reads from, instead of <a class="el" href="struct_b.html">B</a>. Currently believe that there will always be ambiguity unless blobs are renamed. This is solved by performing SSA on all transformed blob names. </p>
 
 <p>Definition at line <a class="el" href="graph_8cc_source.html#l00101">101</a> of file <a class="el" href="graph_8cc_source.html">graph.cc</a>.</p>
 
@@ -260,7 +260,7 @@ const std::set&lt; string &gt; &amp;&#160;</td><td class="memItemRight" valign="
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -283,7 +283,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

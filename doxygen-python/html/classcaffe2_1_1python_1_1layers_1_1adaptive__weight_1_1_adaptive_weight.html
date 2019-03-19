@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -115,15 +115,27 @@ Inheritance diagram for caffe2.python.layers.adaptive_weight.AdaptiveWeight:</di
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa5a58cbc62d18f2a15be1006ca298822"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5a58cbc62d18f2a15be1006ca298822"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, model, input_record, name='adaptive_weight', optimizer=None, weights=None, kwargs)</td></tr>
-<tr class="separator:aa5a58cbc62d18f2a15be1006ca298822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac8794747db528b386c4093531b6254"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ac8794747db528b386c4093531b6254"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, model, input_record, name=&quot;adaptive_weight&quot;, optimizer=None, weights=None, enable_diagnose=False, estimation_method=&quot;log_std&quot;, pos_optim_method=&quot;log_barrier&quot;, reg_lambda=0.1, kwargs)</td></tr>
+<tr class="separator:a9ac8794747db528b386c4093531b6254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa44e375c9fdb3ac0cf4333dd3c76cfe5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa44e375c9fdb3ac0cf4333dd3c76cfe5"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>concat_data</b> (self, net)</td></tr>
 <tr class="separator:aa44e375c9fdb3ac0cf4333dd3c76cfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf69325cf0df5de32e5875748849e7ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf69325cf0df5de32e5875748849e7ec"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>compute_adaptive_sum</b> (self, x, net)</td></tr>
-<tr class="separator:adf69325cf0df5de32e5875748849e7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7104d52f3474aef146f2933c5cd214"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1layers_1_1adaptive__weight_1_1_adaptive_weight.html#abe7104d52f3474aef146f2933c5cd214">log_std_init</a> (self)</td></tr>
+<tr class="separator:abe7104d52f3474aef146f2933c5cd214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e907f1c227c80382a48607c15ada5ac"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1layers_1_1adaptive__weight_1_1_adaptive_weight.html#a1e907f1c227c80382a48607c15ada5ac">log_std_weight</a> (self, x, net, weight)</td></tr>
+<tr class="separator:a1e907f1c227c80382a48607c15ada5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f74ad5439f6311c53c52275dd6aa79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31f74ad5439f6311c53c52275dd6aa79"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>log_std_reg</b> (self, net, reg)</td></tr>
+<tr class="separator:a31f74ad5439f6311c53c52275dd6aa79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab523f02b68740852d0613b58603900e6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1python_1_1layers_1_1adaptive__weight_1_1_adaptive_weight.html#ab523f02b68740852d0613b58603900e6">inv_var_init</a> (self)</td></tr>
+<tr class="separator:ab523f02b68740852d0613b58603900e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7271130d6646d9e53cb7b8abcf15fa5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7271130d6646d9e53cb7b8abcf15fa5d"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>inv_var_weight</b> (self, x, net, weight)</td></tr>
+<tr class="separator:a7271130d6646d9e53cb7b8abcf15fa5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1194abbbc9c520b0c37348e6136129bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1194abbbc9c520b0c37348e6136129bb"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>inv_var_reg</b> (self, net, reg)</td></tr>
+<tr class="separator:a1194abbbc9c520b0c37348e6136129bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4bfd263048b0aee5d6f1f91ef817769"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4bfd263048b0aee5d6f1f91ef817769"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>add_ops</b> (self, net)</td></tr>
 <tr class="separator:ae4bfd263048b0aee5d6f1f91ef817769"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,9 +214,42 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1d5f4db3947e649e1321f019e2f7f501"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d5f4db3947e649e1321f019e2f7f501"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>num</b></td></tr>
 <tr class="separator:a1d5f4db3947e649e1321f019e2f7f501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173fb23128e4f4a3b230088b9f7b40f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a173fb23128e4f4a3b230088b9f7b40f3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>optimizer</b></td></tr>
+<tr class="separator:a173fb23128e4f4a3b230088b9f7b40f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b05e2363a6815acab1badaa8a25e85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1b05e2363a6815acab1badaa8a25e85"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>weights</b></td></tr>
+<tr class="separator:aa1b05e2363a6815acab1badaa8a25e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c39c0573298c41e9782f173dc05af3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c39c0573298c41e9782f173dc05af3e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>estimation_method</b></td></tr>
+<tr class="separator:a6c39c0573298c41e9782f173dc05af3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41aa9c64ebf17412b59a994398e2d18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa41aa9c64ebf17412b59a994398e2d18"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>pos_optim_method</b></td></tr>
+<tr class="separator:aa41aa9c64ebf17412b59a994398e2d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad640d27a6afac10449ea7bf2ba93657c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad640d27a6afac10449ea7bf2ba93657c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>reg_lambda</b></td></tr>
+<tr class="separator:ad640d27a6afac10449ea7bf2ba93657c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5c3285d460f27190840b339da3c022"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d5c3285d460f27190840b339da3c022"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>enable_diagnose</b></td></tr>
+<tr class="separator:a7d5c3285d460f27190840b339da3c022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4bbbceab80faa59630f9b100387509e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4bbbceab80faa59630f9b100387509e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>init_func</b></td></tr>
+<tr class="separator:ad4bbbceab80faa59630f9b100387509e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92962e9cae64db2940fe0d72c836e3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab92962e9cae64db2940fe0d72c836e3a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>weight_func</b></td></tr>
+<tr class="separator:ab92962e9cae64db2940fe0d72c836e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c96da42f5e1360e9c7568458ce9d126"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c96da42f5e1360e9c7568458ce9d126"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>reg_func</b></td></tr>
+<tr class="separator:a0c96da42f5e1360e9c7568458ce9d126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e73de87b7cd0fcf4e9772f2d6d234d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e73de87b7cd0fcf4e9772f2d6d234d7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>weight_i</b></td></tr>
+<tr class="separator:a2e73de87b7cd0fcf4e9772f2d6d234d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51301a8e485296a62a9f818cd9e56d31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51301a8e485296a62a9f818cd9e56d31"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>mu</b></td></tr>
 <tr class="separator:a51301a8e485296a62a9f818cd9e56d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8802faca25d968da392d293a267220cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8802faca25d968da392d293a267220cf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>k</b></td></tr>
+<tr class="separator:a8802faca25d968da392d293a267220cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer.html">caffe2.python.layers.layers.ModelLayer</a></td></tr>
 <tr class="memitem:aa7d55878786e169cf119a49ed5a62d30 inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7d55878786e169cf119a49ed5a62d30"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
@@ -218,6 +263,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a689674e8a5ca626ec8492966f42b257b inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a689674e8a5ca626ec8492966f42b257b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>request_only</b></td></tr>
 <tr class="separator:a689674e8a5ca626ec8492966f42b257b inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a845345f57cb00c528a3ab4f19551c17d inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a845345f57cb00c528a3ab4f19551c17d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>precomputation_request_only</b></td></tr>
+<tr class="separator:a845345f57cb00c528a3ab4f19551c17d inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a59df5cddf9775f4e06e688defc2c49 inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a59df5cddf9775f4e06e688defc2c49"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>precomputation_object_only</b></td></tr>
+<tr class="separator:a3a59df5cddf9775f4e06e688defc2c49 inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0619491c6bb1bc04b7840c735e72ee84 inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0619491c6bb1bc04b7840c735e72ee84"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>eval_output_schema</b></td></tr>
 <tr class="separator:a0619491c6bb1bc04b7840c735e72ee84 inherit pub_attribs_classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,14 +282,98 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="adaptive__weight_8py_source.html#l00016">16</a> of file <a class="el" href="adaptive__weight_8py_source.html">adaptive_weight.py</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ab523f02b68740852d0613b58603900e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def caffe2.python.layers.adaptive_weight.AdaptiveWeight.inv_var_init </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">k = 1 / variance
+per task objective:
+min 1 / 2 * k  X - 1 / 2 * log k
+</pre> 
+<p>Definition at line <a class="el" href="adaptive__weight_8py_source.html#l00107">107</a> of file <a class="el" href="adaptive__weight_8py_source.html">adaptive_weight.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abe7104d52f3474aef146f2933c5cd214"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def caffe2.python.layers.adaptive_weight.AdaptiveWeight.log_std_init </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">mu = 2 log sigma, sigma = standard variance
+per task objective:
+min 1 / 2 / e^mu X + mu / 2
+</pre> 
+<p>Definition at line <a class="el" href="adaptive__weight_8py_source.html#l00076">76</a> of file <a class="el" href="adaptive__weight_8py_source.html">adaptive_weight.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e907f1c227c80382a48607c15ada5ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def caffe2.python.layers.adaptive_weight.AdaptiveWeight.log_std_weight </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>net</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">min 1 / 2 / e^mu X + mu / 2
+</pre> 
+<p>Definition at line <a class="el" href="adaptive__weight_8py_source.html#l00094">94</a> of file <a class="el" href="adaptive__weight_8py_source.html">adaptive_weight.py</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/python/layers/<a class="el" href="adaptive__weight_8py_source.html">adaptive_weight.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -261,7 +396,7 @@ Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

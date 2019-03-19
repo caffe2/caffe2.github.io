@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['parser',['parser',['../namespaceparser.html',1,'']]],
-  ['pipeline',['pipeline',['../namespacepipeline.html',1,'']]],
-  ['pooling',['pooling',['../namespacepooling.html',1,'']]],
-  ['position_5fweighted',['position_weighted',['../namespaceposition__weighted.html',1,'']]],
-  ['predictor_5fconstants',['predictor_constants',['../namespacepredictor__constants.html',1,'']]],
-  ['predictor_5fexporter',['predictor_exporter',['../namespacepredictor__exporter.html',1,'']]],
-  ['predictor_5fpy_5futils',['predictor_py_utils',['../namespacepredictor__py__utils.html',1,'']]]
+  ['onnx',['onnx',['../namespaceonnx.html',1,'']]],
+  ['optim_5fbaseline',['optim_baseline',['../namespaceoptim__baseline.html',1,'']]],
+  ['optimizer_5fcontext',['optimizer_context',['../namespaceoptimizer__context.html',1,'']]],
+  ['optimizer_5ftest_5futil',['optimizer_test_util',['../namespaceoptimizer__test__util.html',1,'']]]
 ];

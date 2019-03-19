@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -110,17 +110,12 @@ Inheritance diagram for caffe2::NetBase:</div>
  <div class="center">
   <img src="classcaffe2_1_1_net_base.png" usemap="#caffe2::NetBase_map" alt=""/>
   <map id="caffe2::NetBase_map" name="caffe2::NetBase_map">
-<area href="classcaffe2_1_1_observable.html" alt="caffe2::Observable&lt; NetBase &gt;" shape="rect" coords="760,0,1054,24"/>
-<area href="classcaffe2_1_1_async_net_base.html" alt="caffe2::AsyncNetBase" shape="rect" coords="152,112,446,136"/>
-<area href="classcaffe2_1_1_async_simple_net.html" alt="caffe2::AsyncSimpleNet" shape="rect" coords="456,112,750,136"/>
-<area href="classcaffe2_1_1_d_a_g_net_base.html" alt="caffe2::DAGNetBase" shape="rect" coords="760,112,1054,136"/>
-<area href="classcaffe2_1_1_g_l_net.html" alt="caffe2::GLNet" shape="rect" coords="1064,112,1358,136"/>
-<area href="classcaffe2_1_1_simple_net.html" alt="caffe2::SimpleNet" shape="rect" coords="1368,112,1662,136"/>
-<area href="classcaffe2_1_1_async_polling_net.html" alt="caffe2::AsyncPollingNet" shape="rect" coords="0,168,294,192"/>
-<area href="classcaffe2_1_1_async_scheduling_net.html" alt="caffe2::AsyncSchedulingNet" shape="rect" coords="304,168,598,192"/>
-<area href="classcaffe2_1_1_async_d_a_g_net.html" alt="caffe2::AsyncDAGNet" shape="rect" coords="608,168,902,192"/>
-<area href="classcaffe2_1_1_d_a_g_net.html" alt="caffe2::DAGNet" shape="rect" coords="912,168,1206,192"/>
-<area href="classcaffe2_1_1gpu__single__thread_1_1_single_thread_async_net.html" alt="caffe2::gpu_single_thread::SingleThreadAsyncNet" shape="rect" coords="1368,168,1662,192"/>
+<area href="classcaffe2_1_1_observable.html" alt="caffe2::Observable&lt; NetBase &gt;" shape="rect" coords="201,0,392,24"/>
+<area href="classcaffe2_1_1_async_net_base.html" alt="caffe2::AsyncNetBase" shape="rect" coords="0,112,191,136"/>
+<area href="classcaffe2_1_1_parallel_net.html" alt="caffe2::ParallelNet" shape="rect" coords="201,112,392,136"/>
+<area href="classcaffe2_1_1_simple_net.html" alt="caffe2::SimpleNet" shape="rect" coords="402,112,593,136"/>
+<area href="classcaffe2_1_1_async_scheduling_net.html" alt="caffe2::AsyncSchedulingNet" shape="rect" coords="0,168,191,192"/>
+<area href="classcaffe2_1_1_simple_ref_count_net.html" alt="caffe2::SimpleRefCountNet" shape="rect" coords="402,168,593,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -144,9 +139,9 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Run</b> ()</t
 <tr class="memitem:a8ba8d006dc4e1ded4d5f6098ef3b80fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ba8d006dc4e1ded4d5f6098ef3b80fc"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunAsync</b> ()</td></tr>
 <tr class="separator:a8ba8d006dc4e1ded4d5f6098ef3b80fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69aed01ddcd98e7fa13b174c4cd134a8"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_net_base.html#a69aed01ddcd98e7fa13b174c4cd134a8">TEST_Benchmark</a> (const int, const int, const bool)</td></tr>
-<tr class="memdesc:a69aed01ddcd98e7fa13b174c4cd134a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Benchmarks a network.  <a href="#a69aed01ddcd98e7fa13b174c4cd134a8">More...</a><br /></td></tr>
-<tr class="separator:a69aed01ddcd98e7fa13b174c4cd134a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3ecd57c1d75c2eceb240a5800fc20d7"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_net_base.html#ae3ecd57c1d75c2eceb240a5800fc20d7">TEST_Benchmark</a> (const int, const int, const bool)</td></tr>
+<tr class="memdesc:ae3ecd57c1d75c2eceb240a5800fc20d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Benchmarks a network.  <a href="#ae3ecd57c1d75c2eceb240a5800fc20d7">More...</a><br /></td></tr>
+<tr class="separator:ae3ecd57c1d75c2eceb240a5800fc20d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bd5e11c134d0312a7bd1c77179596c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bd5e11c134d0312a7bd1c77179596c9"></a>
 const vector&lt; string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>external_output</b> () const </td></tr>
 <tr class="separator:a3bd5e11c134d0312a7bd1c77179596c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +161,15 @@ const NetDef &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>debug_d
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_debug_def</b> () const </td></tr>
 <tr class="separator:a8be95e1d275d3f3041a8145436f9ee51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaffe2_1_1_observable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1_observable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1_observable.html">caffe2::Observable&lt; NetBase &gt;</a></td></tr>
+<tr class="memitem:adf3f51ec5cb69d8d9d0190903234c9e7 inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf3f51ec5cb69d8d9d0190903234c9e7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Observable</b> (<a class="el" href="classcaffe2_1_1_observable.html">Observable</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:adf3f51ec5cb69d8d9d0190903234c9e7 inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5fb16d38308d8351ee3f51c76927fa inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d5fb16d38308d8351ee3f51c76927fa"></a>
+<a class="el" href="classcaffe2_1_1_observable.html">Observable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classcaffe2_1_1_observable.html">Observable</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a4d5fb16d38308d8351ee3f51c76927fa inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3144e1bee6c39e8f4c7b51f921a84ad inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3144e1bee6c39e8f4c7b51f921a84ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_observable.html">Observable</a>)</td></tr>
+<tr class="separator:ae3144e1bee6c39e8f4c7b51f921a84ad inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac04a21851203c49213fb12253a0523 inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ac04a21851203c49213fb12253a0523"></a>
 const <a class="el" href="classcaffe2_1_1_observer_base.html">Observer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AttachObserver</b> (std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1_observer_base.html">Observer</a> &gt; observer)</td></tr>
 <tr class="separator:a0ac04a21851203c49213fb12253a0523 inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,9 +191,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a433cc796bb5acf72d50a67f397f145db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a433cc796bb5acf72d50a67f397f145db"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>DoRunAsync</b> ()</td></tr>
 <tr class="separator:a433cc796bb5acf72d50a67f397f145db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a3634ef9d22cd0be0207c383dd187e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a3634ef9d22cd0be0207c383dd187e2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_net_base.html">NetBase</a>)</td></tr>
-<tr class="separator:a1a3634ef9d22cd0be0207c383dd187e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad12963badb3788c8e9d64b62e10de1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ad12963badb3788c8e9d64b62e10de1"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>handleRunError</b> ()</td></tr>
+<tr class="separator:a2ad12963badb3788c8e9d64b62e10de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ab2bdf8b3238991b7797b67491be23"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48ab2bdf8b3238991b7797b67491be23"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_net_base.html">NetBase</a>)</td></tr>
+<tr class="separator:a48ab2bdf8b3238991b7797b67491be23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -222,9 +229,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> = <a cl
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="net_8h_source.html#l00035">35</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8h_source.html#l00038">38</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a69aed01ddcd98e7fa13b174c4cd134a8"></a>
+<a class="anchor" id="ae3ecd57c1d75c2eceb240a5800fc20d7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -232,22 +239,22 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> = <a cl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual vector&lt;float&gt; caffe2::NetBase::TEST_Benchmark </td>
+          <td class="memname">std::vector&lt; float &gt; caffe2::NetBase::TEST_Benchmark </td>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>warmup_runs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>main_runs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const bool&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>run_individual</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -257,7 +264,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> = <a cl
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -265,9 +272,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> = <a cl
 <p>Benchmarks a network. </p>
 <p>This function returns a vector of float recording the number of milli- seconds spent during the benchmark. The 0-th item is the time spent per each network run, and if a net instantiation supports run_individual, the remainder of the vector returns the number of milliseconds spent per opeartor. </p>
 
-<p>Reimplemented in <a class="el" href="classcaffe2_1_1_d_a_g_net_base.html#a6d325ca3e2e4557bee26b773757465e3">caffe2::DAGNetBase</a>, <a class="el" href="classcaffe2_1_1_g_l_net.html#a81ffaab5835f98682674b5e4f8e57a20">caffe2::GLNet</a>, <a class="el" href="classcaffe2_1_1_async_simple_net.html#a1766f137a639177634af5de98d8f60e7">caffe2::AsyncSimpleNet</a>, and <a class="el" href="classcaffe2_1_1_simple_net.html#a130a5cdba80ddb6e52bd45c0da276e26">caffe2::SimpleNet</a>.</p>
+<p>Reimplemented in <a class="el" href="classcaffe2_1_1_simple_net.html#a130a5cdba80ddb6e52bd45c0da276e26">caffe2::SimpleNet</a>.</p>
 
-<p>Definition at line <a class="el" href="net_8h_source.html#l00077">77</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+<p>Definition at line <a class="el" href="net_8cc_source.html#l00193">193</a> of file <a class="el" href="net_8cc_source.html">net.cc</a>.</p>
 
 </div>
 </div>
@@ -279,7 +286,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> = <a cl
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:59 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:55 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -302,7 +309,7 @@ Generated on Thu Apr 19 2018 13:03:59 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

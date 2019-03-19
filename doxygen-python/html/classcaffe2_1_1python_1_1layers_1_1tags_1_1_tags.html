@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -154,9 +154,6 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>PREPROCESSING</b> =
 <tr class="memitem:a2c38f1fbcfc7f1509a5446226f3be83a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c38f1fbcfc7f1509a5446226f3be83a"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>HANDLE_AS_SPARSE_LAYER</b> = 'handle_as_sparse_layer'</td></tr>
 <tr class="separator:a2c38f1fbcfc7f1509a5446226f3be83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8927b2d6a5da1291309c0cde6fabb7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8927b2d6a5da1291309c0cde6fabb7b"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>GRADIENT_FROM_PS</b> = 'gradient_from_ps'</td></tr>
-<tr class="separator:ad8927b2d6a5da1291309c0cde6fabb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a4e15dcba0fa86e98feafa608f308fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a4e15dcba0fa86e98feafa608f308fb"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>PREFER_GPU</b> = 'prefer_gpu'</td></tr>
 <tr class="separator:a6a4e15dcba0fa86e98feafa608f308fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,12 +169,24 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>SPARSE_DONT_SHARD</
 <tr class="memitem:a2a8bbd77945846fa686ddc27fa8625c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a8bbd77945846fa686ddc27fa8625c8"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>COMPONENT</b> = 'component:'</td></tr>
 <tr class="separator:a2a8bbd77945846fa686ddc27fa8625c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717c00ab31a8b6811d19e397edfbb829"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a717c00ab31a8b6811d19e397edfbb829"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>EXTRA_INFO</b> = 'extra_info:'</td></tr>
+<tr class="separator:a717c00ab31a8b6811d19e397edfbb829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d9d564b062da6ba9020df6fd399d4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43d9d564b062da6ba9020df6fd399d4d"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>EMPTY_TAG</b> = 'empty_tag'</td></tr>
+<tr class="separator:a43d9d564b062da6ba9020df6fd399d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a766b1e78e6e9b5b4646f22c7c6e338f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a766b1e78e6e9b5b4646f22c7c6e338f7"></a>
 tuple&#160;</td><td class="memItemRight" valign="bottom"><b>DT_TAGS</b> = (SPARSE_SHARDED, SPARSE_DONT_SHARD, COMPONENT)</td></tr>
 <tr class="separator:a766b1e78e6e9b5b4646f22c7c6e338f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb10a7cd726b8c68dcc6211f010ed0c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb10a7cd726b8c68dcc6211f010ed0c6"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>PREDICTION_SCHEMA</b> = 'prediction_schema'</td></tr>
 <tr class="separator:abb10a7cd726b8c68dcc6211f010ed0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da9063757bee9e93a38fe69199e006b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9da9063757bee9e93a38fe69199e006b"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>FEATURE_TRANSFORM</b> = 'feature_transform'</td></tr>
+<tr class="separator:a9da9063757bee9e93a38fe69199e006b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4adc302fcf62a20b35888f958d555af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4adc302fcf62a20b35888f958d555af"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>FEATURE_TRANSFORM_SCHEMA</b> = 'feature_transform_schema'</td></tr>
+<tr class="separator:ab4adc302fcf62a20b35888f958d555af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -189,7 +198,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>PREDICTION_SCHEMA</
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -212,7 +221,7 @@ Generated on Thu Apr 19 2018 13:04:05 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -114,43 +114,32 @@ Inheritance diagram for nom::repr::Annotation:</div>
  <div class="center">
   <img src="classnom_1_1repr_1_1_annotation.png" usemap="#nom::repr::Annotation_map" alt=""/>
   <map id="nom::repr::Annotation_map" name="nom::repr::Annotation_map">
-<area href="classnom_1_1repr_1_1_device_annotation.html" alt="nom::repr::DeviceAnnotation" shape="rect" coords="0,56,171,80"/>
+<area href="classcaffe2_1_1_caffe2_annotation.html" alt="caffe2::Caffe2Annotation" shape="rect" coords="0,56,152,80"/>
+<area href="class_onnx_annotation.html" alt="OnnxAnnotation" shape="rect" coords="162,56,314,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a03a324ad76a18788469b5528c2984615"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03a324ad76a18788469b5528c2984615"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AnnotationKind</b> { <b>Generic</b>, 
-<b>Device</b>
+<b>Caffe2</b>
  }</td></tr>
 <tr class="separator:a03a324ad76a18788469b5528c2984615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac4bfd3fa937a3eef8c350bfde2895df9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4bfd3fa937a3eef8c350bfde2895df9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Annotation</b> (AnnotationKind K)</td></tr>
-<tr class="separator:ac4bfd3fa937a3eef8c350bfde2895df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e1d0c24be4352cc584ee22614a051c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12e1d0c24be4352cc584ee22614a051c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Annotation</b> (AnnotationKind kind)</td></tr>
+<tr class="separator:a12e1d0c24be4352cc584ee22614a051c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a232fe1d870d56b5ebd98a4d1751838ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a232fe1d870d56b5ebd98a4d1751838ef"></a>
 AnnotationKind&#160;</td><td class="memItemRight" valign="bottom"><b>getKind</b> () const </td></tr>
 <tr class="separator:a232fe1d870d56b5ebd98a4d1751838ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbb23fcfc2b823ddde908479cc116e89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbb23fcfc2b823ddde908479cc116e89"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Annotation</b> (const <a class="el" href="classnom_1_1repr_1_1_annotation.html">Annotation</a> &amp;)=delete</td></tr>
-<tr class="separator:afbb23fcfc2b823ddde908479cc116e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b24ad88ee6c86d80fc1a31b5cc05f5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b24ad88ee6c86d80fc1a31b5cc05f5a"></a>
-<a class="el" href="classnom_1_1repr_1_1_annotation.html">Annotation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classnom_1_1repr_1_1_annotation.html">Annotation</a> &amp;)=delete</td></tr>
-<tr class="separator:a5b24ad88ee6c86d80fc1a31b5cc05f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4577cded7e4e164082edba489d45b348"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4577cded7e4e164082edba489d45b348"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>getSaved</b> () const </td></tr>
-<tr class="separator:a4577cded7e4e164082edba489d45b348"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaccfaa2d435a0dd6ddf3a8991f53d607"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaccfaa2d435a0dd6ddf3a8991f53d607"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSaved</b> (void *saved)</td></tr>
-<tr class="separator:aaccfaa2d435a0dd6ddf3a8991f53d607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Annotations allow for generic manipulation of neural network operations. </p>
 <p>The base class contains a saved void* pointer for external use. Derived classes add richer semantics to the annotation and it is encouraged to use them. </p>
 
-<p>Definition at line <a class="el" href="_neural_net_8h_source.html#l00037">37</a> of file <a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>.</p>
+<p>Definition at line <a class="el" href="_neural_net_8h_source.html#l00044">44</a> of file <a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/core/nomnigraph/include/nomnigraph/Representations/<a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a></li>
 </ul>
@@ -158,7 +147,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSaved</b> (void *s
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -181,7 +170,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

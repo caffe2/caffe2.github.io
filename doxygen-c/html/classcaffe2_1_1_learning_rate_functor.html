@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -109,21 +109,22 @@ Inheritance diagram for caffe2::LearningRateFunctor&lt; T &gt;:</div>
   <img src="classcaffe2_1_1_learning_rate_functor.png" usemap="#caffe2::LearningRateFunctor_3C_20T_20_3E_map" alt=""/>
   <map id="caffe2::LearningRateFunctor_3C_20T_20_3E_map" name="caffe2::LearningRateFunctor&lt; T &gt;_map">
 <area href="classcaffe2_1_1_alternate_learning_rate.html" alt="caffe2::AlternateLearningRate&lt; T &gt;" shape="rect" coords="265,56,520,80"/>
-<area href="classcaffe2_1_1_constant_warmup_learning_rate.html" alt="caffe2::ConstantWarmupLearningRate&lt; T &gt;" shape="rect" coords="265,112,520,136"/>
-<area href="classcaffe2_1_1_exp_learning_rate.html" alt="caffe2::ExpLearningRate&lt; T &gt;" shape="rect" coords="265,168,520,192"/>
-<area href="classcaffe2_1_1_fixed_learning_rate.html" alt="caffe2::FixedLearningRate&lt; T &gt;" shape="rect" coords="265,224,520,248"/>
-<area href="classcaffe2_1_1_hill_learning_rate.html" alt="caffe2::HillLearningRate&lt; T &gt;" shape="rect" coords="265,280,520,304"/>
-<area href="classcaffe2_1_1_inv_learning_rate.html" alt="caffe2::InvLearningRate&lt; T &gt;" shape="rect" coords="265,336,520,360"/>
-<area href="classcaffe2_1_1_linear_warmup_learning_rate.html" alt="caffe2::LinearWarmupLearningRate&lt; T &gt;" shape="rect" coords="265,392,520,416"/>
-<area href="classcaffe2_1_1_poly_learning_rate.html" alt="caffe2::PolyLearningRate&lt; T &gt;" shape="rect" coords="265,448,520,472"/>
-<area href="classcaffe2_1_1_step_learning_rate.html" alt="caffe2::StepLearningRate&lt; T &gt;" shape="rect" coords="265,504,520,528"/>
+<area href="classcaffe2_1_1_composite_learning_rate.html" alt="caffe2::CompositeLearningRate&lt; T &gt;" shape="rect" coords="265,112,520,136"/>
+<area href="classcaffe2_1_1_constant_warmup_learning_rate.html" alt="caffe2::ConstantWarmupLearningRate&lt; T &gt;" shape="rect" coords="265,168,520,192"/>
+<area href="classcaffe2_1_1_exp_learning_rate.html" alt="caffe2::ExpLearningRate&lt; T &gt;" shape="rect" coords="265,224,520,248"/>
+<area href="classcaffe2_1_1_fixed_learning_rate.html" alt="caffe2::FixedLearningRate&lt; T &gt;" shape="rect" coords="265,280,520,304"/>
+<area href="classcaffe2_1_1_hill_learning_rate.html" alt="caffe2::HillLearningRate&lt; T &gt;" shape="rect" coords="265,336,520,360"/>
+<area href="classcaffe2_1_1_inv_learning_rate.html" alt="caffe2::InvLearningRate&lt; T &gt;" shape="rect" coords="265,392,520,416"/>
+<area href="classcaffe2_1_1_linear_warmup_learning_rate.html" alt="caffe2::LinearWarmupLearningRate&lt; T &gt;" shape="rect" coords="265,448,520,472"/>
+<area href="classcaffe2_1_1_poly_learning_rate.html" alt="caffe2::PolyLearningRate&lt; T &gt;" shape="rect" coords="265,504,520,528"/>
+<area href="classcaffe2_1_1_step_learning_rate.html" alt="caffe2::StepLearningRate&lt; T &gt;" shape="rect" coords="265,560,520,584"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a91bd1ec36d5706f1ca90ba2ca1899189"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91bd1ec36d5706f1ca90ba2ca1899189"></a>
-virtual T&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const int64_t iter) const =0</td></tr>
+virtual <a class="el" href="struct_t.html">T</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const int64_t iter) const =0</td></tr>
 <tr class="separator:a91bd1ec36d5706f1ca90ba2ca1899189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -131,7 +132,7 @@ virtual T&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (
 class caffe2::LearningRateFunctor&lt; T &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="learning__rate__functors_8h_source.html#l00012">12</a> of file <a class="el" href="learning__rate__functors_8h_source.html">learning_rate_functors.h</a>.</p>
+<p>Definition at line <a class="el" href="learning__rate__functors_8h_source.html#l00015">15</a> of file <a class="el" href="learning__rate__functors_8h_source.html">learning_rate_functors.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/sgd/<a class="el" href="learning__rate__functors_8h_source.html">learning_rate_functors.h</a></li>
 </ul>
@@ -139,7 +140,7 @@ class caffe2::LearningRateFunctor&lt; T &gt;</h3>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:59 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:55 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -162,7 +163,7 @@ Generated on Thu Apr 19 2018 13:03:59 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

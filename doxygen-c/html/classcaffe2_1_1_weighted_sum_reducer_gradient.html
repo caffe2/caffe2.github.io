@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -129,16 +129,16 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>FixedDispatch</b> = 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a17dc4b9833a38630de76349c607fcc6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17dc4b9833a38630de76349c607fcc6d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>WeightedSumReducerGradient</b> (const <a class="el" href="structcaffe2_1_1_weighted_sum_reducer_gradient_1_1_meta.html">Meta</a> &amp;, const T *s_grad, <a class="el" href="classcaffe2_1_1_c_p_u_context.html">CPUContext</a> *)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WeightedSumReducerGradient</b> (const <a class="el" href="structcaffe2_1_1_weighted_sum_reducer_gradient_1_1_meta.html">Meta</a> &amp;, const <a class="el" href="struct_t.html">T</a> *s_grad, <a class="el" href="classcaffe2_1_1_c_p_u_context.html">CPUContext</a> *)</td></tr>
 <tr class="separator:a17dc4b9833a38630de76349c607fcc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ac2a9f3ae465652b54f3e0bfcff1fbe"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9ac2a9f3ae465652b54f3e0bfcff1fbe"></a>
+<tr class="memitem:a2b738014014e52ddc557ca891eaf99d0"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2b738014014e52ddc557ca891eaf99d0"></a>
 template&lt;int FixedSize&gt; </td></tr>
-<tr class="memitem:a9ac2a9f3ae465652b54f3e0bfcff1fbe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fillGrad</b> (const <a class="el" href="structcaffe2_1_1_weighted_sum_reducer_gradient_1_1_meta.html">Meta</a> &amp;meta, T *data_grad, TIndex offset, Context *context, const int)</td></tr>
-<tr class="separator:a9ac2a9f3ae465652b54f3e0bfcff1fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc6dadc9aa8bc8c0612bbfc47221cae0"><td class="memTemplParams" colspan="2"><a class="anchor" id="acc6dadc9aa8bc8c0612bbfc47221cae0"></a>
+<tr class="memitem:a2b738014014e52ddc557ca891eaf99d0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fillGrad</b> (const <a class="el" href="structcaffe2_1_1_weighted_sum_reducer_gradient_1_1_meta.html">Meta</a> &amp;meta, <a class="el" href="struct_t.html">T</a> *data_grad, int64_t offset, Context *context, const int)</td></tr>
+<tr class="separator:a2b738014014e52ddc557ca891eaf99d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7cbce523c9410d5292b46e95d65fa8"><td class="memTemplParams" colspan="2"><a class="anchor" id="a4c7cbce523c9410d5292b46e95d65fa8"></a>
 template&lt;int FixedSize&gt; </td></tr>
-<tr class="memitem:acc6dadc9aa8bc8c0612bbfc47221cae0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fillGradWithMainInput</b> (const <a class="el" href="structcaffe2_1_1_weighted_sum_reducer_gradient_1_1_meta.html">Meta</a> &amp;meta, const T *data, T *data_grad, TIndex offset, Context *context, const int)</td></tr>
-<tr class="separator:acc6dadc9aa8bc8c0612bbfc47221cae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7cbce523c9410d5292b46e95d65fa8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fillGradWithMainInput</b> (const <a class="el" href="structcaffe2_1_1_weighted_sum_reducer_gradient_1_1_meta.html">Meta</a> &amp;meta, const <a class="el" href="struct_t.html">T</a> *data, <a class="el" href="struct_t.html">T</a> *data_grad, int64_t offset, Context *context, const int)</td></tr>
+<tr class="separator:a4c7cbce523c9410d5292b46e95d65fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -173,7 +173,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>requiresForwar
 class caffe2::WeightedSumReducerGradient&lt; T, Context &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="reducer__functors_8h_source.html#l00508">508</a> of file <a class="el" href="reducer__functors_8h_source.html">reducer_functors.h</a>.</p>
+<p>Definition at line <a class="el" href="reducer__functors_8h_source.html#l00504">504</a> of file <a class="el" href="reducer__functors_8h_source.html">reducer_functors.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>caffe2/operators/<a class="el" href="reducer__functors_8h_source.html">reducer_functors.h</a></li>
 </ul>
@@ -181,7 +181,7 @@ class caffe2::WeightedSumReducerGradient&lt; T, Context &gt;</h3>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -204,7 +204,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

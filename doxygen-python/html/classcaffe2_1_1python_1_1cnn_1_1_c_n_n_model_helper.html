@@ -48,7 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -169,6 +169,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>Softmax</b> (self, arg
 <tr class="memitem:a60ae41dcad182fe5b0d158b62c804f36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60ae41dcad182fe5b0d158b62c804f36"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>SpatialBN</b> (self, args, kwargs)</td></tr>
 <tr class="separator:a60ae41dcad182fe5b0d158b62c804f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd490b2208cf93ba85aeafc67e433a19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd490b2208cf93ba85aeafc67e433a19"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>SpatialGN</b> (self, args, kwargs)</td></tr>
+<tr class="separator:afd490b2208cf93ba85aeafc67e433a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26ccdc71f19eede1d3cd585b972dd50c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26ccdc71f19eede1d3cd585b972dd50c"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceNorm</b> (self, args, kwargs)</td></tr>
 <tr class="separator:a26ccdc71f19eede1d3cd585b972dd50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,9 +246,6 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>get_param_info</b> (se
 <tr class="memitem:ab544020b810dcdd6fa415f1f7b85dfbe inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab544020b810dcdd6fa415f1f7b85dfbe"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>add_param_DEPRECATED</b> (self, param, key=None, shape=None, length=None)</td></tr>
 <tr class="separator:ab544020b810dcdd6fa415f1f7b85dfbe inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1c710d0973ce1a161780382e218912a inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1c710d0973ce1a161780382e218912a"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>param_info</b> (self, grad_type=None, id=None)</td></tr>
-<tr class="separator:ac1c710d0973ce1a161780382e218912a inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34c34b19233f300c129511068a21d989 inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34c34b19233f300c129511068a21d989"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>AddParameter</b> (self, param, tags=None)</td></tr>
 <tr class="separator:a34c34b19233f300c129511068a21d989 inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,6 +288,12 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>GetDevices</b> (self)<
 <tr class="memitem:ab4eebc2b40048f744ac580c02ef7ba5e inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4eebc2b40048f744ac580c02ef7ba5e"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>__dir__</b> (self)</td></tr>
 <tr class="separator:ab4eebc2b40048f744ac580c02ef7ba5e inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac705f73bc8f4304d23fbf1f3a13e704c inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac705f73bc8f4304d23fbf1f3a13e704c"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>GetCompleteNet</b> (self)</td></tr>
+<tr class="separator:ac705f73bc8f4304d23fbf1f3a13e704c inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01042106a8ea304b8c794619328c4270 inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01042106a8ea304b8c794619328c4270"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructInitTrainNetfromNet</b> (self, net)</td></tr>
+<tr class="separator:a01042106a8ea304b8c794619328c4270 inherit pub_methods_classcaffe2_1_1python_1_1model__helper_1_1_model_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -377,7 +383,7 @@ manually define parameter initializations and operators separately.
       </table>
 </div><div class="memdoc">
 <pre class="fragment">The old depth concat function - we should move to use concat.</pre> 
-<p>Definition at line <a class="el" href="cnn_8py_source.html#l00178">178</a> of file <a class="el" href="cnn_8py_source.html">cnn.py</a>.</p>
+<p>Definition at line <a class="el" href="cnn_8py_source.html#l00181">181</a> of file <a class="el" href="cnn_8py_source.html">cnn.py</a>.</p>
 
 </div>
 </div>
@@ -388,7 +394,7 @@ manually define parameter initializations and operators separately.
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:07:04 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -411,7 +417,7 @@ Generated on Thu Apr 19 2018 13:04:04 for Caffe2 - Python API by &#160;<a href="
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

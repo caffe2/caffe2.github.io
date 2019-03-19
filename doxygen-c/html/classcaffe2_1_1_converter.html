@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -98,9 +98,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">caffe2::Converter Class Reference</div>  </div>
+<div class="title">caffe2::Converter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
@@ -118,6 +119,18 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> ()</td
 <tr class="memitem:a3b8d09eb3a6cfedee7a57100ceb3bb80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b8d09eb3a6cfedee7a57100ceb3bb80"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
 <tr class="separator:a3b8d09eb3a6cfedee7a57100ceb3bb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5238b26e68cc207be2f97f2b9a3875e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5238b26e68cc207be2f97f2b9a3875e8"></a>
+virtual std::unique_ptr&lt; <a class="el" href="classnom_1_1repr_1_1_neural_net_operator.html">nom::repr::NeuralNetOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>convertToNeuralNetOperator</b> (const OperatorDef &amp;)=0</td></tr>
+<tr class="separator:a5238b26e68cc207be2f97f2b9a3875e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e36754acdff9a343159640df5f6705"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7e36754acdff9a343159640df5f6705"></a>
+virtual OperatorDef&#160;</td><td class="memItemRight" valign="bottom"><b>convertToOperatorDef</b> (const <a class="el" href="classnom_1_1repr_1_1_neural_net_operator.html">nom::repr::NeuralNetOperator</a> *)</td></tr>
+<tr class="separator:ad7e36754acdff9a343159640df5f6705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a318eabce8ad316b7f4003df7f9055e5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a318eabce8ad316b7f4003df7f9055e5c"></a>
+static std::map&lt; std::string, <a class="el" href="structc10_1_1_argument.html">caffe2::Argument</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getArgumentsFromOperator</b> (caffe2::OperatorDef op)</td></tr>
+<tr class="separator:a318eabce8ad316b7f4003df7f9055e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -148,15 +161,17 @@ std::thread&#160;</td><td class="memItemRight" valign="bottom"><b>thread_</b></t
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="make__image__db_8cc_source.html#l00069">69</a> of file <a class="el" href="make__image__db_8cc_source.html">make_image_db.cc</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p>Definition at line <a class="el" href="make__image__db_8cc_source.html#l00073">73</a> of file <a class="el" href="make__image__db_8cc_source.html">make_image_db.cc</a>.</p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>binaries/<a class="el" href="make__image__db_8cc_source.html">make_image_db.cc</a></li>
+<li>caffe2/opt/<a class="el" href="converter_8h_source.html">converter.h</a></li>
+<li>caffe2/opt/<a class="el" href="converter_8cc_source.html">converter.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:53 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -179,7 +194,7 @@ Generated on Thu Apr 19 2018 13:03:58 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacecaffe2.html">caffe2</a></li><li class="navelem"><b>detail</b></li><li class="navelem"><a class="el" href="classcaffe2_1_1detail_1_1_tensor_descriptors.html">TensorDescriptors</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaffe2.html">caffe2</a></li><li class="navelem"><a class="el" href="namespacecaffe2_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classcaffe2_1_1detail_1_1_tensor_descriptors.html">TensorDescriptors</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -105,6 +105,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa1aa670b4954ea37bcc0f23f3b84f2c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1aa670b4954ea37bcc0f23f3b84f2c9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TensorDescriptors</b> (size_t n, std::vector&lt; int &gt; &amp;dim, std::vector&lt; int &gt; &amp;stride)</td></tr>
+<tr class="separator:aa1aa670b4954ea37bcc0f23f3b84f2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d9a47180c7d0e777a5d597f78e39c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3d9a47180c7d0e777a5d597f78e39c6"></a>
+const miopenTensorDescriptor_t *&#160;</td><td class="memItemRight" valign="bottom"><b>descs</b> () const </td></tr>
+<tr class="separator:aa3d9a47180c7d0e777a5d597f78e39c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d1e359d083718c04e5a4dc25f335bce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d1e359d083718c04e5a4dc25f335bce"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TensorDescriptors</b> (size_t n, const std::vector&lt; int &gt; &amp;dim, const std::vector&lt; int &gt; &amp;stride)</td></tr>
 <tr class="separator:a0d1e359d083718c04e5a4dc25f335bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,8 +123,9 @@ const cudnnTensorDescriptor_t *&#160;</td><td class="memItemRight" valign="botto
 class caffe2::detail::TensorDescriptors&lt; T &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="recurrent__op__cudnn_8h_source.html#l00014">14</a> of file <a class="el" href="recurrent__op__cudnn_8h_source.html">recurrent_op_cudnn.h</a>.</p>
+<p>Definition at line <a class="el" href="recurrent__op__miopen_8h_source.html#l00014">14</a> of file <a class="el" href="recurrent__op__miopen_8h_source.html">recurrent_op_miopen.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>caffe2/operators/rnn/hip/<a class="el" href="recurrent__op__miopen_8h_source.html">recurrent_op_miopen.h</a></li>
 <li>caffe2/operators/rnn/<a class="el" href="recurrent__op__cudnn_8h_source.html">recurrent_op_cudnn.h</a></li>
 <li>caffe2/operators/rnn/<a class="el" href="recurrent__op__cudnn_8cc_source.html">recurrent_op_cudnn.cc</a></li>
 </ul>
@@ -126,7 +133,7 @@ class caffe2::detail::TensorDescriptors&lt; T &gt;</h3>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -149,7 +156,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

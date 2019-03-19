@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -97,11 +97,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">caffe2::Operator&lt; Context &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">caffe2::Operator&lt; Context &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -110,362 +108,414 @@ Inheritance diagram for caffe2::Operator&lt; Context &gt;:</div>
  <div class="center">
   <img src="classcaffe2_1_1_operator.png" usemap="#caffe2::Operator_3C_20Context_20_3E_map" alt=""/>
   <map id="caffe2::Operator_3C_20Context_20_3E_map" name="caffe2::Operator&lt; Context &gt;_map">
-<area href="classcaffe2_1_1_operator_base.html" alt="caffe2::OperatorBase" shape="rect" coords="0,56,747,80"/>
-<area href="classcaffe2_1_1_observable.html" alt="caffe2::Observable&lt; OperatorBase &gt;" shape="rect" coords="0,0,747,24"/>
-<area href="classcaffe2_1_1_abstract_lengths_gradient_op.html" alt="caffe2::AbstractLengthsGradientOp&lt; T, TLengths, Context, ReducerGradient, GradientNeedIndices &gt;" shape="rect" coords="757,168,1504,192"/>
-<area href="classcaffe2_1_1_abstract_lengths_op.html" title="Segment reduction op with optional fused embedding lookup. " alt="caffe2::AbstractLengthsOp&lt; TData, TLengths, Context, Reducer, SparseFused, InputAccessor &gt;" shape="rect" coords="757,224,1504,248"/>
-<area href="classcaffe2_1_1_abstract_lengths_with_main_input_and_forward_output_gradient_op.html" alt="caffe2::AbstractLengthsWithMainInputAndForwardOutputGradientOp&lt; T, TLengths, Context, ReducerGradient &gt;" shape="rect" coords="757,280,1504,304"/>
-<area href="classcaffe2_1_1_abstract_lengths_with_main_input_gradient_op.html" alt="caffe2::AbstractLengthsWithMainInputGradientOp&lt; T, TLengths, Context, ReducerGradient, SparseFused, GradientNeedIndices &gt;" shape="rect" coords="757,336,1504,360"/>
-<area href="classcaffe2_1_1_abstract_reduce_front_or_back_gradient_op.html" alt="caffe2::AbstractReduceFrontOrBackGradientOp&lt; T, Context, ReducerGradient, FirstDim &gt;" shape="rect" coords="757,392,1504,416"/>
-<area href="classcaffe2_1_1_abstract_reduce_front_or_back_op.html" title="Simple non-segmented reduction over the first few dimensions of the tensor. " alt="caffe2::AbstractReduceFrontOrBackOp&lt; T, Context, Reducer, FirstDim, InputAccessor &gt;" shape="rect" coords="757,448,1504,472"/>
-<area href="classcaffe2_1_1_abstract_sorted_segment_gradient_op.html" alt="caffe2::AbstractSortedSegmentGradientOp&lt; T, SIndex, Context, ReducerGradient &gt;" shape="rect" coords="757,504,1504,528"/>
-<area href="classcaffe2_1_1_abstract_sorted_segment_op.html" title="Segment reduction op with optional fused embedding lookup. " alt="caffe2::AbstractSortedSegmentOp&lt; T, SIndex, Context, Reducer, SparseFused, InputAccessor &gt;" shape="rect" coords="757,560,1504,584"/>
-<area href="classcaffe2_1_1_abstract_sorted_segment_range_gradient_op.html" alt="caffe2::AbstractSortedSegmentRangeGradientOp&lt; T, SIndex, Context, RangeReducerGradient &gt;" shape="rect" coords="757,616,1504,640"/>
-<area href="classcaffe2_1_1_abstract_sorted_segment_range_op.html" title="Base implementation for segment reduction op that leverages continuity of the data. " alt="caffe2::AbstractSortedSegmentRangeOp&lt; T, SIndex, Context, RangeReducer, InputAccessor &gt;" shape="rect" coords="757,672,1504,696"/>
-<area href="classcaffe2_1_1_abstract_unsorted_segment_gradient_op.html" alt="caffe2::AbstractUnsortedSegmentGradientOp&lt; T, SIndex, Context, ReducerGradient &gt;" shape="rect" coords="757,728,1504,752"/>
-<area href="classcaffe2_1_1_abstract_unsorted_segment_op.html" title="Unsorted segment reduction op with optional fused embedding lookup. " alt="caffe2::AbstractUnsortedSegmentOp&lt; T, SIndex, Context, Reducer, SparseFused, InputAccessor &gt;" shape="rect" coords="757,784,1504,808"/>
-<area href="classcaffe2_1_1_accumulate_histogram_op.html" alt="caffe2::AccumulateHistogramOp&lt; T, Context &gt;" shape="rect" coords="757,840,1504,864"/>
-<area href="classcaffe2_1_1_accumulate_input_gradient_op.html" alt="caffe2::AccumulateInputGradientOp&lt; Context &gt;" shape="rect" coords="757,896,1504,920"/>
-<area href="classcaffe2_1_1_accumulate_op.html" alt="caffe2::AccumulateOp&lt; T, Context &gt;" shape="rect" coords="757,952,1504,976"/>
-<area href="classcaffe2_1_1_accuracy_op.html" alt="caffe2::AccuracyOp&lt; T, Context &gt;" shape="rect" coords="757,1008,1504,1032"/>
-<area href="classcaffe2_1_1_adagrad_op.html" alt="caffe2::AdagradOp&lt; T, Context &gt;" shape="rect" coords="757,1064,1504,1088"/>
-<area href="classcaffe2_1_1_adam_op.html" alt="caffe2::AdamOp&lt; T, Context &gt;" shape="rect" coords="757,1120,1504,1144"/>
-<area href="classcaffe2_1_1_add_padding_op.html" alt="caffe2::AddPaddingOp&lt; Context &gt;" shape="rect" coords="757,1176,1504,1200"/>
-<area href="classcaffe2_1_1_affine_channel_gradient_op.html" alt="caffe2::AffineChannelGradientOp&lt; T, Context &gt;" shape="rect" coords="757,1232,1504,1256"/>
-<area href="classcaffe2_1_1_affine_channel_op.html" alt="caffe2::AffineChannelOp&lt; T, Context &gt;" shape="rect" coords="757,1288,1504,1312"/>
-<area href="classcaffe2_1_1_alias_op.html" title="Alias op makes the output and the input share the same underlying storage. " alt="caffe2::AliasOp&lt; Context &gt;" shape="rect" coords="757,1344,1504,1368"/>
-<area href="classcaffe2_1_1_a_p_meter_op.html" alt="caffe2::APMeterOp&lt; T, Context &gt;" shape="rect" coords="757,1400,1504,1424"/>
-<area href="classcaffe2_1_1_arg_op_base.html" alt="caffe2::ArgOpBase&lt; T, Context &gt;" shape="rect" coords="757,1456,1504,1480"/>
-<area href="classcaffe2_1_1_assert_op.html" alt="caffe2::AssertOp&lt; Context &gt;" shape="rect" coords="757,1512,1504,1536"/>
-<area href="classcaffe2_1_1_atomic_iter_op.html" alt="caffe2::AtomicIterOp&lt; Context &gt;" shape="rect" coords="757,1568,1504,1592"/>
-<area href="classcaffe2_1_1_batch_box_cox_op.html" alt="caffe2::BatchBoxCoxOp&lt; Context &gt;" shape="rect" coords="757,1624,1504,1648"/>
-<area href="classcaffe2_1_1_batch_bucket_one_hot_op.html" alt="caffe2::BatchBucketOneHotOp&lt; Context &gt;" shape="rect" coords="757,1680,1504,1704"/>
-<area href="classcaffe2_1_1_batch_dense_to_sparse_op.html" alt="caffe2::BatchDenseToSparseOp&lt; T, Context &gt;" shape="rect" coords="757,1736,1504,1760"/>
-<area href="classcaffe2_1_1_batch_gather_gradient_op.html" alt="caffe2::BatchGatherGradientOp&lt; Context &gt;" shape="rect" coords="757,1792,1504,1816"/>
-<area href="classcaffe2_1_1_batch_gather_op.html" alt="caffe2::BatchGatherOp&lt; Context &gt;" shape="rect" coords="757,1848,1504,1872"/>
-<area href="classcaffe2_1_1_batch_mat_mul_op.html" alt="caffe2::BatchMatMulOp&lt; Context, Engine &gt;" shape="rect" coords="757,1904,1504,1928"/>
-<area href="classcaffe2_1_1_batch_one_hot_op.html" alt="caffe2::BatchOneHotOp&lt; Context &gt;" shape="rect" coords="757,1960,1504,1984"/>
-<area href="classcaffe2_1_1_batch_permutation_gradient_op.html" alt="caffe2::BatchPermutationGradientOp&lt; T, Context &gt;" shape="rect" coords="757,2016,1504,2040"/>
-<area href="classcaffe2_1_1_batch_permutation_op.html" alt="caffe2::BatchPermutationOp&lt; T, Context &gt;" shape="rect" coords="757,2072,1504,2096"/>
-<area href="classcaffe2_1_1_batch_sparse_to_dense_op.html" alt="caffe2::BatchSparseToDenseOp&lt; T, Context &gt;" shape="rect" coords="757,2128,1504,2152"/>
-<area href="classcaffe2_1_1_b_box_transform_op.html" alt="caffe2::BBoxTransformOp&lt; T, Context &gt;" shape="rect" coords="757,2184,1504,2208"/>
-<area href="classcaffe2_1_1_bernoulli_j_s_d_gradient_op.html" alt="caffe2::BernoulliJSDGradientOp&lt; T, Context &gt;" shape="rect" coords="757,2240,1504,2264"/>
-<area href="classcaffe2_1_1_bernoulli_j_s_d_op.html" alt="caffe2::BernoulliJSDOp&lt; T, Context &gt;" shape="rect" coords="757,2296,1504,2320"/>
-<area href="classcaffe2_1_1_binary_elementwise_op.html" title="Performs a binary operation (e.g. " alt="caffe2::BinaryElementwiseOp&lt; InputTypes, Context, Functor, TypeMap &gt;" shape="rect" coords="757,2352,1504,2376"/>
-<area href="classcaffe2_1_1_boolean_mask_op.html" alt="caffe2::BooleanMaskOp&lt; Context &gt;" shape="rect" coords="757,2408,1504,2432"/>
-<area href="classcaffe2_1_1_boolean_unmask_op.html" alt="caffe2::BooleanUnmaskOp&lt; Context &gt;" shape="rect" coords="757,2464,1504,2488"/>
-<area href="classcaffe2_1_1_box_with_n_m_s_limit_op.html" alt="caffe2::BoxWithNMSLimitOp&lt; Context &gt;" shape="rect" coords="757,2520,1504,2544"/>
-<area href="classcaffe2_1_1_cast_op.html" alt="caffe2::CastOp&lt; Context &gt;" shape="rect" coords="757,2576,1504,2600"/>
-<area href="classcaffe2_1_1_ceil_op.html" alt="caffe2::CeilOp&lt; T, Context &gt;" shape="rect" coords="757,2632,1504,2656"/>
-<area href="classcaffe2_1_1_channel_backprop_stats_op.html" alt="caffe2::ChannelBackpropStatsOp&lt; Context &gt;" shape="rect" coords="757,2688,1504,2712"/>
-<area href="classcaffe2_1_1_channel_stats_op.html" alt="caffe2::ChannelStatsOp&lt; Context &gt;" shape="rect" coords="757,2744,1504,2768"/>
-<area href="classcaffe2_1_1_check_counter_done_op.html" alt="caffe2::CheckCounterDoneOp&lt; T, Context &gt;" shape="rect" coords="757,2800,1504,2824"/>
-<area href="classcaffe2_1_1_checkpoint_op.html" alt="caffe2::CheckpointOp&lt; Context &gt;" shape="rect" coords="757,2856,1504,2880"/>
-<area href="classcaffe2_1_1_clip_gradient_op.html" alt="caffe2::ClipGradientOp&lt; T, Context &gt;" shape="rect" coords="757,2912,1504,2936"/>
-<area href="classcaffe2_1_1_clip_op.html" alt="caffe2::ClipOp&lt; T, Context &gt;" shape="rect" coords="757,2968,1504,2992"/>
-<area href="classcaffe2_1_1_clip_tensor_by_scaling_op.html" alt="caffe2::ClipTensorByScalingOp&lt; Context &gt;" shape="rect" coords="757,3024,1504,3048"/>
-<area href="classcaffe2_1_1_close_blobs_queue_op.html" alt="caffe2::CloseBlobsQueueOp&lt; Context &gt;" shape="rect" coords="757,3080,1504,3104"/>
-<area href="classcaffe2_1_1_col2_im_op.html" alt="caffe2::Col2ImOp&lt; T, Context &gt;" shape="rect" coords="757,3136,1504,3160"/>
-<area href="classcaffe2_1_1_collect_and_distribute_fpn_rpn_proposals_op.html" alt="caffe2::CollectAndDistributeFpnRpnProposalsOp&lt; Context &gt;" shape="rect" coords="757,3192,1504,3216"/>
-<area href="classcaffe2_1_1_concat_op.html" alt="caffe2::ConcatOp&lt; Context &gt;" shape="rect" coords="757,3248,1504,3272"/>
-<area href="classcaffe2_1_1_conditional_op.html" alt="caffe2::ConditionalOp&lt; Context &gt;" shape="rect" coords="757,3304,1504,3328"/>
-<area href="classcaffe2_1_1_conv_pool_op_base.html" alt="caffe2::ConvPoolOpBase&lt; Context &gt;" shape="rect" coords="757,3360,1504,3384"/>
-<area href="classcaffe2_1_1_conv_transpose_unpool_base.html" alt="caffe2::ConvTransposeUnpoolBase&lt; Context &gt;" shape="rect" coords="757,3416,1504,3440"/>
-<area href="classcaffe2_1_1_copy_op.html" alt="caffe2::CopyOp&lt; Context, DstContext, SrcContext &gt;" shape="rect" coords="757,3472,1504,3496"/>
-<area href="classcaffe2_1_1_cosine_embedding_criterion_gradient_op.html" alt="caffe2::CosineEmbeddingCriterionGradientOp&lt; Context &gt;" shape="rect" coords="757,3528,1504,3552"/>
-<area href="classcaffe2_1_1_cosine_embedding_criterion_op.html" alt="caffe2::CosineEmbeddingCriterionOp&lt; Context &gt;" shape="rect" coords="757,3584,1504,3608"/>
-<area href="classcaffe2_1_1_cosine_similarity_gradient_op.html" alt="caffe2::CosineSimilarityGradientOp&lt; T, Context &gt;" shape="rect" coords="757,3640,1504,3664"/>
-<area href="classcaffe2_1_1_cosine_similarity_op.html" alt="caffe2::CosineSimilarityOp&lt; T, Context &gt;" shape="rect" coords="757,3696,1504,3720"/>
-<area href="classcaffe2_1_1_count_down_op.html" alt="caffe2::CountDownOp&lt; T, Context &gt;" shape="rect" coords="757,3752,1504,3776"/>
-<area href="classcaffe2_1_1_count_up_op.html" alt="caffe2::CountUpOp&lt; T, Context &gt;" shape="rect" coords="757,3808,1504,3832"/>
-<area href="classcaffe2_1_1_create_blobs_queue_op.html" alt="caffe2::CreateBlobsQueueOp&lt; Context &gt;" shape="rect" coords="757,3864,1504,3888"/>
-<area href="classcaffe2_1_1_create_counter_op.html" alt="caffe2::CreateCounterOp&lt; T, Context &gt;" shape="rect" coords="757,3920,1504,3944"/>
-<area href="classcaffe2_1_1_create_d_b_op.html" alt="caffe2::CreateDBOp&lt; Context &gt;" shape="rect" coords="757,3976,1504,4000"/>
-<area href="classcaffe2_1_1_create_map_op.html" alt="caffe2::CreateMapOp&lt; Context &gt;" shape="rect" coords="757,4032,1504,4056"/>
-<area href="classcaffe2_1_1_create_scope_op.html" alt="caffe2::CreateScopeOp&lt; Context &gt;" shape="rect" coords="757,4088,1504,4112"/>
-<area href="classcaffe2_1_1_cross_entropy_gradient_op.html" alt="caffe2::CrossEntropyGradientOp&lt; T, Context &gt;" shape="rect" coords="757,4144,1504,4168"/>
-<area href="classcaffe2_1_1_cross_entropy_op.html" alt="caffe2::CrossEntropyOp&lt; T, Context &gt;" shape="rect" coords="757,4200,1504,4224"/>
-<area href="classcaffe2_1_1_d_b_exists_op.html" alt="caffe2::DBExistsOp&lt; Context &gt;" shape="rect" coords="757,4256,1504,4280"/>
-<area href="classcaffe2_1_1_dequeue_blobs_op.html" alt="caffe2::DequeueBlobsOp&lt; Context &gt;" shape="rect" coords="757,4312,1504,4336"/>
-<area href="classcaffe2_1_1_div_gradient_op.html" alt="caffe2::DivGradientOp&lt; Context &gt;" shape="rect" coords="757,4368,1504,4392"/>
-<area href="classcaffe2_1_1_do_op.html" alt="caffe2::DoOp&lt; Context &gt;" shape="rect" coords="757,4424,1504,4448"/>
-<area href="classcaffe2_1_1_dot_product_gradient_op.html" alt="caffe2::DotProductGradientOp&lt; T, Context &gt;" shape="rect" coords="757,4480,1504,4504"/>
-<area href="classcaffe2_1_1_dot_product_op.html" alt="caffe2::DotProductOp&lt; T, Context &gt;" shape="rect" coords="757,4536,1504,4560"/>
-<area href="classcaffe2_1_1_dot_product_with_padding_gradient_op.html" alt="caffe2::DotProductWithPaddingGradientOp&lt; T, Context &gt;" shape="rect" coords="757,4592,1504,4616"/>
-<area href="classcaffe2_1_1_dot_product_with_padding_op.html" alt="caffe2::DotProductWithPaddingOp&lt; T, Context &gt;" shape="rect" coords="757,4648,1504,4672"/>
-<area href="classcaffe2_1_1_dropout_gradient_op.html" alt="caffe2::DropoutGradientOp&lt; T, Context &gt;" shape="rect" coords="757,4704,1504,4728"/>
-<area href="classcaffe2_1_1_dropout_op.html" alt="caffe2::DropoutOp&lt; T, Context &gt;" shape="rect" coords="757,4760,1504,4784"/>
-<area href="classcaffe2_1_1_elementwise_linear_gradient_op.html" alt="caffe2::ElementwiseLinearGradientOp&lt; T, Context, Engine &gt;" shape="rect" coords="757,4816,1504,4840"/>
-<area href="classcaffe2_1_1_elementwise_linear_op.html" alt="caffe2::ElementwiseLinearOp&lt; T, Context, Engine &gt;" shape="rect" coords="757,4872,1504,4896"/>
-<area href="classcaffe2_1_1_elu_gradient_op.html" alt="caffe2::EluGradientOp&lt; T, Context &gt;" shape="rect" coords="757,4928,1504,4952"/>
-<area href="classcaffe2_1_1_elu_op.html" alt="caffe2::EluOp&lt; T, Context &gt;" shape="rect" coords="757,4984,1504,5008"/>
-<area href="classcaffe2_1_1_enqueue_blobs_op.html" alt="caffe2::EnqueueBlobsOp&lt; Context &gt;" shape="rect" coords="757,5040,1504,5064"/>
-<area href="classcaffe2_1_1_ensure_dense_op.html" title="Pass inputs to outputs. " alt="caffe2::EnsureDenseOp&lt; Context &gt;" shape="rect" coords="757,5096,1504,5120"/>
-<area href="classcaffe2_1_1_expand_dims_op.html" alt="caffe2::ExpandDimsOp&lt; Context &gt;" shape="rect" coords="757,5152,1504,5176"/>
-<area href="classcaffe2_1_1_feed_blob_op.html" alt="caffe2::FeedBlobOp&lt; Context &gt;" shape="rect" coords="757,5208,1504,5232"/>
-<area href="classcaffe2_1_1_file_store_handler_create_op.html" alt="caffe2::FileStoreHandlerCreateOp&lt; Context &gt;" shape="rect" coords="757,5264,1504,5288"/>
-<area href="classcaffe2_1_1_filler_op.html" alt="caffe2::FillerOp&lt; Context &gt;" shape="rect" coords="757,5320,1504,5344"/>
-<area href="classcaffe2_1_1_find_duplicate_elements_op.html" alt="caffe2::FindDuplicateElementsOp&lt; Context &gt;" shape="rect" coords="757,5376,1504,5400"/>
-<area href="classcaffe2_1_1_find_op.html" alt="caffe2::FindOp&lt; Context &gt;" shape="rect" coords="757,5432,1504,5456"/>
-<area href="classcaffe2_1_1_flatten_op.html" alt="caffe2::FlattenOp&lt; Context &gt;" shape="rect" coords="757,5488,1504,5512"/>
-<area href="classcaffe2_1_1_flatten_to_vec_op.html" alt="caffe2::FlattenToVecOp&lt; Context &gt;" shape="rect" coords="757,5544,1504,5568"/>
-<area href="classcaffe2_1_1_flexible_top_k_gradient_op.html" alt="caffe2::FlexibleTopKGradientOp&lt; T, Context &gt;" shape="rect" coords="757,5600,1504,5624"/>
-<area href="classcaffe2_1_1_flexible_top_k_op.html" alt="caffe2::FlexibleTopKOp&lt; T, Context &gt;" shape="rect" coords="757,5656,1504,5680"/>
-<area href="classcaffe2_1_1_float_to_fused8_bit_rowwise_quantized_op.html" alt="caffe2::FloatToFused8BitRowwiseQuantizedOp&lt; Context &gt;" shape="rect" coords="757,5712,1504,5736"/>
-<area href="classcaffe2_1_1_float_to_half_op.html" alt="caffe2::FloatToHalfOp&lt; Context &gt;" shape="rect" coords="757,5768,1504,5792"/>
-<area href="classcaffe2_1_1_float_to_rowwise_quantized8_bits_op.html" alt="caffe2::FloatToRowwiseQuantized8BitsOp&lt; Context &gt;" shape="rect" coords="757,5824,1504,5848"/>
-<area href="classcaffe2_1_1_floor_op.html" alt="caffe2::FloorOp&lt; T, Context &gt;" shape="rect" coords="757,5880,1504,5904"/>
-<area href="classcaffe2_1_1_f_p16_momentum_s_g_d_update_op.html" alt="caffe2::FP16MomentumSGDUpdateOp&lt; T, Context &gt;" shape="rect" coords="757,5936,1504,5960"/>
-<area href="classcaffe2_1_1_f_p32_momentum_s_g_d_update_op.html" alt="caffe2::FP32MomentumSGDUpdateOp&lt; T, Context &gt;" shape="rect" coords="757,5992,1504,6016"/>
-<area href="classcaffe2_1_1_free_op.html" alt="caffe2::FreeOp&lt; Context &gt;" shape="rect" coords="757,6048,1504,6072"/>
-<area href="classcaffe2_1_1_ftrl_op.html" alt="caffe2::FtrlOp&lt; T, Context &gt;" shape="rect" coords="757,6104,1504,6128"/>
-<area href="classcaffe2_1_1_fully_connected_decomp_gradient_op.html" alt="caffe2::FullyConnectedDecompGradientOp&lt; T, Context, Engine &gt;" shape="rect" coords="757,6160,1504,6184"/>
-<area href="classcaffe2_1_1_fully_connected_gradient_op.html" alt="caffe2::FullyConnectedGradientOp&lt; Context, Engine, TransposeWeight &gt;" shape="rect" coords="757,6216,1504,6240"/>
-<area href="classcaffe2_1_1_fully_connected_op.html" alt="caffe2::FullyConnectedOp&lt; Context, Engine, TransposeWeight &gt;" shape="rect" coords="757,6272,1504,6296"/>
-<area href="classcaffe2_1_1_fully_connected_op___s_p_a_r_s_e.html" alt="caffe2::FullyConnectedOp_SPARSE&lt; T, Context, Engine &gt;" shape="rect" coords="757,6328,1504,6352"/>
-<area href="classcaffe2_1_1_fully_connected_op_decomp.html" alt="caffe2::FullyConnectedOpDecomp&lt; T, Context, Engine &gt;" shape="rect" coords="757,6384,1504,6408"/>
-<area href="classcaffe2_1_1_fully_connected_op_prune.html" alt="caffe2::FullyConnectedOpPrune&lt; T, Context, Engine &gt;" shape="rect" coords="757,6440,1504,6464"/>
-<area href="classcaffe2_1_1_fully_connected_prune_gradient_op.html" alt="caffe2::FullyConnectedPruneGradientOp&lt; T, Context, Engine &gt;" shape="rect" coords="757,6496,1504,6520"/>
-<area href="classcaffe2_1_1_fun_hash_gradient_op.html" alt="caffe2::FunHashGradientOp&lt; T, Context &gt;" shape="rect" coords="757,6552,1504,6576"/>
-<area href="classcaffe2_1_1_fun_hash_op.html" alt="caffe2::FunHashOp&lt; T, Context &gt;" shape="rect" coords="757,6608,1504,6632"/>
-<area href="classcaffe2_1_1_fused8_bit_rowwise_quantized_to_float_op.html" alt="caffe2::Fused8BitRowwiseQuantizedToFloatOp&lt; Context &gt;" shape="rect" coords="757,6664,1504,6688"/>
-<area href="classcaffe2_1_1_gather_fused8_bit_rowwise_op.html" alt="caffe2::GatherFused8BitRowwiseOp&lt; Context &gt;" shape="rect" coords="757,6720,1504,6744"/>
-<area href="classcaffe2_1_1_gather_op.html" alt="caffe2::GatherOp&lt; Context &gt;" shape="rect" coords="757,6776,1504,6800"/>
-<area href="classcaffe2_1_1_gather_padding_op.html" alt="caffe2::GatherPaddingOp&lt; Context &gt;" shape="rect" coords="757,6832,1504,6856"/>
-<area href="classcaffe2_1_1_gather_ranges_op.html" alt="caffe2::GatherRangesOp&lt; Context &gt;" shape="rect" coords="757,6888,1504,6912"/>
-<area href="classcaffe2_1_1_gather_ranges_to_dense_op.html" alt="caffe2::GatherRangesToDenseOp&lt; Context &gt;" shape="rect" coords="757,6944,1504,6968"/>
-<area href="classcaffe2_1_1_generate_proposals_op.html" alt="caffe2::GenerateProposalsOp&lt; Context &gt;" shape="rect" coords="757,7000,1504,7024"/>
-<area href="classcaffe2_1_1_glu_op.html" alt="caffe2::GluOp&lt; T, Context &gt;" shape="rect" coords="757,7056,1504,7080"/>
-<area href="classcaffe2_1_1_group_spatial_softmax_gradient_op.html" alt="caffe2::GroupSpatialSoftmaxGradientOp&lt; T, Context &gt;" shape="rect" coords="757,7112,1504,7136"/>
-<area href="classcaffe2_1_1_group_spatial_softmax_op.html" alt="caffe2::GroupSpatialSoftmaxOp&lt; T, Context &gt;" shape="rect" coords="757,7168,1504,7192"/>
-<area href="classcaffe2_1_1_g_r_u_unit_gradient_op.html" alt="caffe2::GRUUnitGradientOp&lt; T, Context &gt;" shape="rect" coords="757,7224,1504,7248"/>
-<area href="classcaffe2_1_1_g_r_u_unit_op.html" alt="caffe2::GRUUnitOp&lt; T, Context &gt;" shape="rect" coords="757,7280,1504,7304"/>
-<area href="classcaffe2_1_1_half_to_float_op.html" alt="caffe2::HalfToFloatOp&lt; Context &gt;" shape="rect" coords="757,7336,1504,7360"/>
-<area href="classcaffe2_1_1_has_elements_op.html" alt="caffe2::HasElementsOp&lt; Context &gt;" shape="rect" coords="757,7392,1504,7416"/>
-<area href="classcaffe2_1_1_has_scope_op.html" alt="caffe2::HasScopeOp&lt; Context &gt;" shape="rect" coords="757,7448,1504,7472"/>
-<area href="classcaffe2_1_1_h_softmax_op_base.html" alt="caffe2::HSoftmaxOpBase&lt; T, Context &gt;" shape="rect" coords="757,7504,1504,7528"/>
-<area href="classcaffe2_1_1_huffman_tree_hierarchy_op.html" alt="caffe2::HuffmanTreeHierarchyOp&lt; T, Context &gt;" shape="rect" coords="757,7560,1504,7584"/>
-<area href="classcaffe2_1_1_if_op.html" alt="caffe2::IfOp&lt; Context &gt;" shape="rect" coords="757,7616,1504,7640"/>
-<area href="classcaffe2_1_1_im2_col_op.html" alt="caffe2::Im2ColOp&lt; T, Context &gt;" shape="rect" coords="757,7672,1504,7696"/>
-<area href="classcaffe2_1_1_index_hash_op.html" alt="caffe2::IndexHashOp&lt; Context &gt;" shape="rect" coords="757,7728,1504,7752"/>
-<area href="classcaffe2_1_1_instance_norm_gradient_op.html" alt="caffe2::InstanceNormGradientOp&lt; T, Context &gt;" shape="rect" coords="757,7784,1504,7808"/>
-<area href="classcaffe2_1_1_instance_norm_op.html" alt="caffe2::InstanceNormOp&lt; T, Context &gt;" shape="rect" coords="757,7840,1504,7864"/>
-<area href="classcaffe2_1_1_is_empty_op.html" alt="caffe2::IsEmptyOp&lt; Context &gt;" shape="rect" coords="757,7896,1504,7920"/>
-<area href="classcaffe2_1_1_is_member_of_op.html" alt="caffe2::IsMemberOfOp&lt; Context &gt;" shape="rect" coords="757,7952,1504,7976"/>
-<area href="classcaffe2_1_1_iter_op.html" alt="caffe2::IterOp&lt; Context &gt;" shape="rect" coords="757,8008,1504,8032"/>
-<area href="classcaffe2_1_1_key_split_op.html" alt="caffe2::KeySplitOp&lt; T, Context &gt;" shape="rect" coords="757,8064,1504,8088"/>
-<area href="classcaffe2_1_1_key_value_to_map_op.html" alt="caffe2::KeyValueToMapOp&lt; Context &gt;" shape="rect" coords="757,8120,1504,8144"/>
-<area href="classcaffe2_1_1_l1_distance_gradient_op.html" alt="caffe2::L1DistanceGradientOp&lt; T, Context &gt;" shape="rect" coords="757,8176,1504,8200"/>
-<area href="classcaffe2_1_1_l1_distance_op.html" alt="caffe2::L1DistanceOp&lt; T, Context &gt;" shape="rect" coords="757,8232,1504,8256"/>
-<area href="classcaffe2_1_1_label_cross_entropy_gradient_op.html" alt="caffe2::LabelCrossEntropyGradientOp&lt; T, Context &gt;" shape="rect" coords="757,8288,1504,8312"/>
-<area href="classcaffe2_1_1_label_cross_entropy_op.html" alt="caffe2::LabelCrossEntropyOp&lt; T, Context &gt;" shape="rect" coords="757,8344,1504,8368"/>
-<area href="classcaffe2_1_1_lambda_rank_ndcg_gradient_op.html" alt="caffe2::LambdaRankNdcgGradientOp&lt; T, Context &gt;" shape="rect" coords="757,8400,1504,8424"/>
-<area href="classcaffe2_1_1_lambda_rank_ndcg_op.html" alt="caffe2::LambdaRankNdcgOp&lt; T, Context &gt;" shape="rect" coords="757,8456,1504,8480"/>
-<area href="classcaffe2_1_1_lars_op.html" alt="caffe2::LarsOp&lt; T, Context &gt;" shape="rect" coords="757,8512,1504,8536"/>
-<area href="classcaffe2_1_1_layer_norm_gradient_op.html" alt="caffe2::LayerNormGradientOp&lt; Context &gt;" shape="rect" coords="757,8568,1504,8592"/>
-<area href="classcaffe2_1_1_layer_norm_op.html" alt="caffe2::LayerNormOp&lt; Context &gt;" shape="rect" coords="757,8624,1504,8648"/>
-<area href="classcaffe2_1_1_leaky_relu_gradient_op.html" alt="caffe2::LeakyReluGradientOp&lt; T, Context &gt;" shape="rect" coords="757,8680,1504,8704"/>
-<area href="classcaffe2_1_1_leaky_relu_op.html" alt="caffe2::LeakyReluOp&lt; T, Context &gt;" shape="rect" coords="757,8736,1504,8760"/>
-<area href="classcaffe2_1_1_learning_rate_op.html" alt="caffe2::LearningRateOp&lt; T, Context &gt;" shape="rect" coords="757,8792,1504,8816"/>
-<area href="classcaffe2_1_1_lengths_gather_op.html" alt="caffe2::LengthsGatherOp&lt; Context &gt;" shape="rect" coords="757,8848,1504,8872"/>
-<area href="classcaffe2_1_1_lengths_range_fill_op.html" alt="caffe2::LengthsRangeFillOp&lt; Context &gt;" shape="rect" coords="757,8904,1504,8928"/>
-<area href="classcaffe2_1_1_lengths_tile_op.html" alt="caffe2::LengthsTileOp&lt; Context &gt;" shape="rect" coords="757,8960,1504,8984"/>
-<area href="classcaffe2_1_1_lengths_top_k_gradient_op.html" alt="caffe2::LengthsTopKGradientOp&lt; T, Context &gt;" shape="rect" coords="757,9016,1504,9040"/>
-<area href="classcaffe2_1_1_lengths_top_k_op.html" alt="caffe2::LengthsTopKOp&lt; T, Context &gt;" shape="rect" coords="757,9072,1504,9096"/>
-<area href="classcaffe2_1_1_lengths_to_ranges_op.html" alt="caffe2::LengthsToRangesOp&lt; Context &gt;" shape="rect" coords="757,9128,1504,9152"/>
-<area href="classcaffe2_1_1_lengths_to_segment_ids_op.html" alt="caffe2::LengthsToSegmentIdsOp&lt; Context &gt;" shape="rect" coords="757,9184,1504,9208"/>
-<area href="classcaffe2_1_1_lengths_to_shape_op.html" alt="caffe2::LengthsToShapeOp&lt; Context &gt;" shape="rect" coords="757,9240,1504,9264"/>
-<area href="classcaffe2_1_1_lengths_to_weights_op.html" alt="caffe2::LengthsToWeightsOp&lt; Context &gt;" shape="rect" coords="757,9296,1504,9320"/>
-<area href="classcaffe2_1_1_load_op.html" alt="caffe2::LoadOp&lt; Context &gt;" shape="rect" coords="757,9352,1504,9376"/>
-<area href="classcaffe2_1_1_logit_gradient_op.html" alt="caffe2::LogitGradientOp&lt; T, Context &gt;" shape="rect" coords="757,9408,1504,9432"/>
-<area href="classcaffe2_1_1_lp_norm_gradient_op.html" alt="caffe2::LpNormGradientOp&lt; T, Context &gt;" shape="rect" coords="757,9464,1504,9488"/>
-<area href="classcaffe2_1_1_lp_norm_op.html" alt="caffe2::LpNormOp&lt; T, Context &gt;" shape="rect" coords="757,9520,1504,9544"/>
-<area href="classcaffe2_1_1_l_r_n_op_base.html" alt="caffe2::LRNOpBase&lt; T, Context &gt;" shape="rect" coords="757,9576,1504,9600"/>
-<area href="classcaffe2_1_1_l_s_t_m_unit_gradient_op.html" alt="caffe2::LSTMUnitGradientOp&lt; Context &gt;" shape="rect" coords="757,9632,1504,9656"/>
-<area href="classcaffe2_1_1_l_s_t_m_unit_op.html" alt="caffe2::LSTMUnitOp&lt; Context &gt;" shape="rect" coords="757,9688,1504,9712"/>
-<area href="classcaffe2_1_1_make_two_class_gradient_op.html" alt="caffe2::MakeTwoClassGradientOp&lt; T, Context &gt;" shape="rect" coords="757,9744,1504,9768"/>
-<area href="classcaffe2_1_1_make_two_class_op.html" alt="caffe2::MakeTwoClassOp&lt; T, Context &gt;" shape="rect" coords="757,9800,1504,9824"/>
-<area href="classcaffe2_1_1_map_to_key_value_op.html" alt="caffe2::MapToKeyValueOp&lt; Context &gt;" shape="rect" coords="757,9856,1504,9880"/>
-<area href="classcaffe2_1_1_margin_ranking_criterion_gradient_op.html" alt="caffe2::MarginRankingCriterionGradientOp&lt; Context &gt;" shape="rect" coords="757,9912,1504,9936"/>
-<area href="classcaffe2_1_1_margin_ranking_criterion_op.html" alt="caffe2::MarginRankingCriterionOp&lt; Context &gt;" shape="rect" coords="757,9968,1504,9992"/>
-<area href="classcaffe2_1_1_mat_mul_op.html" alt="caffe2::MatMulOp&lt; T, Context, Engine &gt;" shape="rect" coords="757,10024,1504,10048"/>
-<area href="classcaffe2_1_1_max_min_op_base.html" alt="caffe2::MaxMinOpBase&lt; T, Context &gt;" shape="rect" coords="757,10080,1504,10104"/>
-<area href="classcaffe2_1_1_max_reduce_dims_gradient_op.html" alt="caffe2::MaxReduceDimsGradientOp&lt; T, Context, FIRSTDIMS &gt;" shape="rect" coords="757,10136,1504,10160"/>
-<area href="classcaffe2_1_1_max_reduce_dims_op.html" alt="caffe2::MaxReduceDimsOp&lt; T, Context, FIRSTDIMS &gt;" shape="rect" coords="757,10192,1504,10216"/>
-<area href="classcaffe2_1_1_max_reduction_gradient_op.html" alt="caffe2::MaxReductionGradientOp&lt; T, Context, ROWWISE &gt;" shape="rect" coords="757,10248,1504,10272"/>
-<area href="classcaffe2_1_1_max_reduction_op.html" alt="caffe2::MaxReductionOp&lt; T, Context, ROWWISE &gt;" shape="rect" coords="757,10304,1504,10328"/>
-<area href="classcaffe2_1_1_mean_gradient_op.html" alt="caffe2::MeanGradientOp&lt; Context &gt;" shape="rect" coords="757,10360,1504,10384"/>
-<area href="classcaffe2_1_1_mean_op.html" alt="caffe2::MeanOp&lt; Context &gt;" shape="rect" coords="757,10416,1504,10440"/>
-<area href="classcaffe2_1_1_merge_dim_op.html" alt="caffe2::MergeDimOp&lt; Context &gt;" shape="rect" coords="757,10472,1504,10496"/>
-<area href="classcaffe2_1_1_merge_id_lists_op.html" alt="caffe2::MergeIdListsOp&lt; Context &gt;" shape="rect" coords="757,10528,1504,10552"/>
-<area href="classcaffe2_1_1_mod_op.html" alt="caffe2::ModOp&lt; Context &gt;" shape="rect" coords="757,10584,1504,10608"/>
-<area href="classcaffe2_1_1_momentum_s_g_d_op.html" alt="caffe2::MomentumSGDOp&lt; T, Context &gt;" shape="rect" coords="757,10640,1504,10664"/>
-<area href="classcaffe2_1_1_momentum_s_g_d_update_op.html" alt="caffe2::MomentumSGDUpdateOp&lt; T, Context &gt;" shape="rect" coords="757,10696,1504,10720"/>
-<area href="classcaffe2_1_1_multi_class_accuracy_op.html" alt="caffe2::MultiClassAccuracyOp&lt; T, Context &gt;" shape="rect" coords="757,10752,1504,10776"/>
-<area href="classcaffe2_1_1_nan_check_op.html" alt="caffe2::NanCheckOp&lt; Context &gt;" shape="rect" coords="757,10808,1504,10832"/>
-<area href="classcaffe2_1_1_n_c_h_w2_n_h_w_c_op.html" alt="caffe2::NCHW2NHWCOp&lt; T, Context &gt;" shape="rect" coords="757,10864,1504,10888"/>
-<area href="classcaffe2_1_1_negate_gradient_op.html" alt="caffe2::NegateGradientOp&lt; Context &gt;" shape="rect" coords="757,10920,1504,10944"/>
-<area href="classcaffe2_1_1_n_gram_from_categorical_op.html" alt="caffe2::NGramFromCategoricalOp&lt; F, T, Context &gt;" shape="rect" coords="757,10976,1504,11000"/>
-<area href="classcaffe2_1_1_n_h_w_c2_n_c_h_w_op.html" alt="caffe2::NHWC2NCHWOp&lt; T, Context &gt;" shape="rect" coords="757,11032,1504,11056"/>
-<area href="classcaffe2_1_1_no_default_engine_op.html" title="A helper class to denote that an op does not have a default engine. " alt="caffe2::NoDefaultEngineOp&lt; Context &gt;" shape="rect" coords="757,11088,1504,11112"/>
-<area href="classcaffe2_1_1_normalize_gradient_op.html" alt="caffe2::NormalizeGradientOp&lt; T, Context &gt;" shape="rect" coords="757,11144,1504,11168"/>
-<area href="classcaffe2_1_1_normalize_l1_op.html" alt="caffe2::NormalizeL1Op&lt; T, Context &gt;" shape="rect" coords="757,11200,1504,11224"/>
-<area href="classcaffe2_1_1_normalize_op.html" alt="caffe2::NormalizeOp&lt; T, Context &gt;" shape="rect" coords="757,11256,1504,11280"/>
-<area href="classcaffe2_1_1_one_hot_op.html" alt="caffe2::OneHotOp&lt; Context &gt;" shape="rect" coords="757,11312,1504,11336"/>
-<area href="classcaffe2_1_1_o_n_n_x_while_op.html" alt="caffe2::ONNXWhileOp&lt; Context &gt;" shape="rect" coords="757,11368,1504,11392"/>
-<area href="classcaffe2_1_1_pack_r_n_n_sequence_op_base.html" alt="caffe2::PackRNNSequenceOpBase&lt; Context, Forward &gt;" shape="rect" coords="757,11424,1504,11448"/>
-<area href="classcaffe2_1_1_pack_segments_op.html" alt="caffe2::PackSegmentsOp&lt; Context &gt;" shape="rect" coords="757,11480,1504,11504"/>
-<area href="classcaffe2_1_1_pad_empty_samples_op.html" alt="caffe2::PadEmptySamplesOp&lt; Context &gt;" shape="rect" coords="757,11536,1504,11560"/>
-<area href="classcaffe2_1_1_pair_wise_loss_gradient_op.html" alt="caffe2::PairWiseLossGradientOp&lt; T, Context &gt;" shape="rect" coords="757,11592,1504,11616"/>
-<area href="classcaffe2_1_1_pair_wise_loss_op.html" alt="caffe2::PairWiseLossOp&lt; T, Context &gt;" shape="rect" coords="757,11648,1504,11672"/>
-<area href="classcaffe2_1_1_percentile_op.html" alt="caffe2::PercentileOp&lt; Context &gt;" shape="rect" coords="757,11704,1504,11728"/>
-<area href="classcaffe2_1_1_perplexity_op.html" alt="caffe2::PerplexityOp&lt; T, Context &gt;" shape="rect" coords="757,11760,1504,11784"/>
-<area href="classcaffe2_1_1_piecewise_linear_transform_op.html" alt="caffe2::PiecewiseLinearTransformOp&lt; T, Context &gt;" shape="rect" coords="757,11816,1504,11840"/>
-<area href="classcaffe2_1_1_pow_op.html" alt="caffe2::PowOp&lt; InputTypes, Context, Functor, TypeMap &gt;" shape="rect" coords="757,11872,1504,11896"/>
-<area href="classcaffe2_1_1_p_relu_gradient_op.html" alt="caffe2::PReluGradientOp&lt; T, Context &gt;" shape="rect" coords="757,11928,1504,11952"/>
-<area href="classcaffe2_1_1_p_relu_op.html" alt="caffe2::PReluOp&lt; T, Context &gt;" shape="rect" coords="757,11984,1504,12008"/>
-<area href="classcaffe2_1_1_prepend_dim_op.html" alt="caffe2::PrependDimOp&lt; Context &gt;" shape="rect" coords="757,12040,1504,12064"/>
-<area href="classcaffe2_1_1_print_op.html" alt="caffe2::PrintOp&lt; Context &gt;" shape="rect" coords="757,12096,1504,12120"/>
-<area href="classcaffe2_1_1_p_s_ro_i_pool_gradient_op.html" alt="caffe2::PSRoIPoolGradientOp&lt; T, Context &gt;" shape="rect" coords="757,12152,1504,12176"/>
-<area href="classcaffe2_1_1_p_s_ro_i_pool_op.html" alt="caffe2::PSRoIPoolOp&lt; T, Context &gt;" shape="rect" coords="757,12208,1504,12232"/>
-<area href="classcaffe2_1_1_range_op.html" alt="caffe2::RangeOp&lt; Context &gt;" shape="rect" coords="757,12264,1504,12288"/>
-<area href="classcaffe2_1_1_recurrent_network_blob_fetcher_op.html" alt="caffe2::RecurrentNetworkBlobFetcherOp&lt; Context &gt;" shape="rect" coords="757,12320,1504,12344"/>
-<area href="classcaffe2_1_1_recurrent_network_gradient_op.html" alt="caffe2::RecurrentNetworkGradientOp&lt; Context &gt;" shape="rect" coords="757,12376,1504,12400"/>
-<area href="classcaffe2_1_1_recurrent_network_op.html" alt="caffe2::RecurrentNetworkOp&lt; Context &gt;" shape="rect" coords="757,12432,1504,12456"/>
-<area href="classcaffe2_1_1_redis_store_handler_create_op.html" alt="caffe2::RedisStoreHandlerCreateOp&lt; Context &gt;" shape="rect" coords="757,12488,1504,12512"/>
-<area href="classcaffe2_1_1_reduce_op_base.html" alt="caffe2::ReduceOpBase&lt; T, Context &gt;" shape="rect" coords="757,12544,1504,12568"/>
-<area href="classcaffe2_1_1_reduce_tail_sum_op.html" alt="caffe2::ReduceTailSumOp&lt; T, Context &gt;" shape="rect" coords="757,12600,1504,12624"/>
-<area href="classcaffe2_1_1_relu_gradient_op.html" alt="caffe2::ReluGradientOp&lt; T, Context &gt;" shape="rect" coords="757,12656,1504,12680"/>
-<area href="classcaffe2_1_1_relu_op.html" alt="caffe2::ReluOp&lt; T, Context &gt;" shape="rect" coords="757,12712,1504,12736"/>
-<area href="classcaffe2_1_1_remove_data_blocks_op.html" alt="caffe2::RemoveDataBlocksOp&lt; Context &gt;" shape="rect" coords="757,12768,1504,12792"/>
-<area href="classcaffe2_1_1_remove_padding_op.html" alt="caffe2::RemovePaddingOp&lt; Context &gt;" shape="rect" coords="757,12824,1504,12848"/>
-<area href="classcaffe2_1_1_replace_na_n_op.html" alt="caffe2::ReplaceNaNOp&lt; Context &gt;" shape="rect" coords="757,12880,1504,12904"/>
-<area href="classcaffe2_1_1_reset_counter_op.html" alt="caffe2::ResetCounterOp&lt; T, Context &gt;" shape="rect" coords="757,12936,1504,12960"/>
-<area href="classcaffe2_1_1_reshape_op.html" alt="caffe2::ReshapeOp&lt; F, Context &gt;" shape="rect" coords="757,12992,1504,13016"/>
-<area href="classcaffe2_1_1_resize_like_op.html" alt="caffe2::ResizeLikeOp&lt; Context &gt;" shape="rect" coords="757,13048,1504,13072"/>
-<area href="classcaffe2_1_1_resize_nearest_gradient_op.html" alt="caffe2::ResizeNearestGradientOp&lt; T, Context &gt;" shape="rect" coords="757,13104,1504,13128"/>
-<area href="classcaffe2_1_1_resize_nearest_op.html" alt="caffe2::ResizeNearestOp&lt; T, Context &gt;" shape="rect" coords="757,13160,1504,13184"/>
-<area href="classcaffe2_1_1_retrieve_count_op.html" alt="caffe2::RetrieveCountOp&lt; T, Context &gt;" shape="rect" coords="757,13216,1504,13240"/>
-<area href="classcaffe2_1_1_reverse_packed_segs_op.html" alt="caffe2::ReversePackedSegsOp&lt; Context &gt;" shape="rect" coords="757,13272,1504,13296"/>
-<area href="classcaffe2_1_1_r_m_a_c_regions_op.html" alt="caffe2::RMACRegionsOp&lt; Context &gt;" shape="rect" coords="757,13328,1504,13352"/>
-<area href="classcaffe2_1_1_rms_prop_op.html" alt="caffe2::RmsPropOp&lt; T, Context &gt;" shape="rect" coords="757,13384,1504,13408"/>
-<area href="classcaffe2_1_1_r_n_n_apply_link_op.html" alt="caffe2::RNNApplyLinkOp&lt; Context &gt;" shape="rect" coords="757,13440,1504,13464"/>
-<area href="classcaffe2_1_1_ro_i_align_gradient_op.html" alt="caffe2::RoIAlignGradientOp&lt; T, Context &gt;" shape="rect" coords="757,13496,1504,13520"/>
-<area href="classcaffe2_1_1_ro_i_align_op.html" alt="caffe2::RoIAlignOp&lt; T, Context &gt;" shape="rect" coords="757,13552,1504,13576"/>
-<area href="classcaffe2_1_1_ro_i_pool_f_gradient_op.html" alt="caffe2::RoIPoolFGradientOp&lt; T, Context &gt;" shape="rect" coords="757,13608,1504,13632"/>
-<area href="classcaffe2_1_1_ro_i_pool_f_op.html" alt="caffe2::RoIPoolFOp&lt; T, Context &gt;" shape="rect" coords="757,13664,1504,13688"/>
-<area href="classcaffe2_1_1_ro_i_pool_gradient_op.html" alt="caffe2::RoIPoolGradientOp&lt; T, Context &gt;" shape="rect" coords="757,13720,1504,13744"/>
-<area href="classcaffe2_1_1_ro_i_pool_op.html" alt="caffe2::RoIPoolOp&lt; T, Context &gt;" shape="rect" coords="757,13776,1504,13800"/>
-<area href="classcaffe2_1_1_row_mul_op.html" alt="caffe2::RowMulOp&lt; T, Context &gt;" shape="rect" coords="757,13832,1504,13856"/>
-<area href="classcaffe2_1_1_rowwise8_bit_quantized_to_float_op.html" alt="caffe2::Rowwise8BitQuantizedToFloatOp&lt; Context &gt;" shape="rect" coords="757,13888,1504,13912"/>
-<area href="classcaffe2_1_1_row_wise_arg_max_op.html" alt="caffe2::RowWiseArgMaxOp&lt; Context &gt;" shape="rect" coords="757,13944,1504,13968"/>
-<area href="classcaffe2_1_1_row_wise_sparse_adagrad_op.html" alt="caffe2::RowWiseSparseAdagradOp&lt; T, Context &gt;" shape="rect" coords="757,14000,1504,14024"/>
-<area href="classcaffe2_1_1_row_wise_sparse_adam_op.html" alt="caffe2::RowWiseSparseAdamOp&lt; T, Context &gt;" shape="rect" coords="757,14056,1504,14080"/>
-<area href="classcaffe2_1_1_safe_dequeue_blobs_op.html" alt="caffe2::SafeDequeueBlobsOp&lt; Context &gt;" shape="rect" coords="757,14112,1504,14136"/>
-<area href="classcaffe2_1_1_safe_enqueue_blobs_op.html" alt="caffe2::SafeEnqueueBlobsOp&lt; Context &gt;" shape="rect" coords="757,14168,1504,14192"/>
-<area href="classcaffe2_1_1_sample_as_gradient_op.html" alt="caffe2::SampleAsGradientOp&lt; T, Context &gt;" shape="rect" coords="757,14224,1504,14248"/>
-<area href="classcaffe2_1_1_sample_as_op.html" alt="caffe2::SampleAsOp&lt; T, Context &gt;" shape="rect" coords="757,14280,1504,14304"/>
-<area href="classcaffe2_1_1_save_op.html" alt="caffe2::SaveOp&lt; Context &gt;" shape="rect" coords="757,14336,1504,14360"/>
-<area href="classcaffe2_1_1_scale_op.html" alt="caffe2::ScaleOp&lt; Context &gt;" shape="rect" coords="757,14392,1504,14416"/>
-<area href="classcaffe2_1_1_scatter_assign_op.html" title="Update slices of the tensor in-place by overriding. " alt="caffe2::ScatterAssignOp&lt; Context &gt;" shape="rect" coords="757,14448,1504,14472"/>
-<area href="classcaffe2_1_1_scatter_weighted_sum_op.html" title="Update slices of the tensor in-place with weighted sum. " alt="caffe2::ScatterWeightedSumOp&lt; T, Context &gt;" shape="rect" coords="757,14504,1504,14528"/>
-<area href="classcaffe2_1_1_segment_ids_to_lengths_op.html" alt="caffe2::SegmentIdsToLengthsOp&lt; Context &gt;" shape="rect" coords="757,14560,1504,14584"/>
-<area href="classcaffe2_1_1_segment_ids_to_ranges_op.html" alt="caffe2::SegmentIdsToRangesOp&lt; Context &gt;" shape="rect" coords="757,14616,1504,14640"/>
-<area href="classcaffe2_1_1_select_gradient_op_base.html" alt="caffe2::SelectGradientOpBase&lt; T, Context &gt;" shape="rect" coords="757,14672,1504,14696"/>
-<area href="classcaffe2_1_1_select_smooth_l1_loss_gradient_op.html" alt="caffe2::SelectSmoothL1LossGradientOp&lt; T, Context &gt;" shape="rect" coords="757,14728,1504,14752"/>
-<area href="classcaffe2_1_1_select_smooth_l1_loss_op.html" alt="caffe2::SelectSmoothL1LossOp&lt; T, Context &gt;" shape="rect" coords="757,14784,1504,14808"/>
-<area href="classcaffe2_1_1_selu_gradient_op.html" alt="caffe2::SeluGradientOp&lt; T, Context &gt;" shape="rect" coords="757,14840,1504,14864"/>
-<area href="classcaffe2_1_1_selu_op.html" alt="caffe2::SeluOp&lt; T, Context &gt;" shape="rect" coords="757,14896,1504,14920"/>
-<area href="classcaffe2_1_1_sequence_mask_op.html" alt="caffe2::SequenceMaskOp&lt; Context &gt;" shape="rect" coords="757,14952,1504,14976"/>
-<area href="classcaffe2_1_1_shape_op.html" alt="caffe2::ShapeOp&lt; Context &gt;" shape="rect" coords="757,15008,1504,15032"/>
-<area href="classcaffe2_1_1_sigmoid_cross_entropy_loss_gradient_op.html" alt="caffe2::SigmoidCrossEntropyLossGradientOp&lt; T, Context &gt;" shape="rect" coords="757,15064,1504,15088"/>
-<area href="classcaffe2_1_1_sigmoid_cross_entropy_loss_op.html" alt="caffe2::SigmoidCrossEntropyLossOp&lt; T, Context &gt;" shape="rect" coords="757,15120,1504,15144"/>
-<area href="classcaffe2_1_1_sigmoid_cross_entropy_with_logits_gradient_op.html" alt="caffe2::SigmoidCrossEntropyWithLogitsGradientOp&lt; T, Context &gt;" shape="rect" coords="757,15176,1504,15200"/>
-<area href="classcaffe2_1_1_sigmoid_cross_entropy_with_logits_op.html" alt="caffe2::SigmoidCrossEntropyWithLogitsOp&lt; T, Context &gt;" shape="rect" coords="757,15232,1504,15256"/>
-<area href="classcaffe2_1_1_sigmoid_focal_loss_gradient_op.html" alt="caffe2::SigmoidFocalLossGradientOp&lt; T, Context &gt;" shape="rect" coords="757,15288,1504,15312"/>
-<area href="classcaffe2_1_1_sigmoid_focal_loss_op.html" alt="caffe2::SigmoidFocalLossOp&lt; T, Context &gt;" shape="rect" coords="757,15344,1504,15368"/>
-<area href="classcaffe2_1_1_sinusoid_position_encoding_op.html" alt="caffe2::SinusoidPositionEncodingOp&lt; Context &gt;" shape="rect" coords="757,15400,1504,15424"/>
-<area href="classcaffe2_1_1_size_op.html" alt="caffe2::SizeOp&lt; Context &gt;" shape="rect" coords="757,15456,1504,15480"/>
-<area href="classcaffe2_1_1_slice_gradient_op.html" alt="caffe2::SliceGradientOp&lt; SIndex, Context &gt;" shape="rect" coords="757,15512,1504,15536"/>
-<area href="classcaffe2_1_1_slice_op.html" alt="caffe2::SliceOp&lt; SIndex, Context &gt;" shape="rect" coords="757,15568,1504,15592"/>
-<area href="classcaffe2_1_1_smooth_l1_loss_gradient_op.html" alt="caffe2::SmoothL1LossGradientOp&lt; T, Context &gt;" shape="rect" coords="757,15624,1504,15648"/>
-<area href="classcaffe2_1_1_smooth_l1_loss_op.html" alt="caffe2::SmoothL1LossOp&lt; T, Context &gt;" shape="rect" coords="757,15680,1504,15704"/>
-<area href="classcaffe2_1_1_softmax_focal_loss_gradient_op.html" alt="caffe2::SoftmaxFocalLossGradientOp&lt; T, Context &gt;" shape="rect" coords="757,15736,1504,15760"/>
-<area href="classcaffe2_1_1_softmax_focal_loss_op.html" alt="caffe2::SoftmaxFocalLossOp&lt; T, Context &gt;" shape="rect" coords="757,15792,1504,15816"/>
-<area href="classcaffe2_1_1_softmax_gradient_op.html" alt="caffe2::SoftmaxGradientOp&lt; T, Context &gt;" shape="rect" coords="757,15848,1504,15872"/>
-<area href="classcaffe2_1_1_softmax_op.html" alt="caffe2::SoftmaxOp&lt; T, Context &gt;" shape="rect" coords="757,15904,1504,15928"/>
-<area href="classcaffe2_1_1_softmax_with_loss_gradient_op.html" alt="caffe2::SoftmaxWithLossGradientOp&lt; T, Context &gt;" shape="rect" coords="757,15960,1504,15984"/>
-<area href="classcaffe2_1_1_softmax_with_loss_op.html" alt="caffe2::SoftmaxWithLossOp&lt; T, Context &gt;" shape="rect" coords="757,16016,1504,16040"/>
-<area href="classcaffe2_1_1_softplus_gradient_op.html" alt="caffe2::SoftplusGradientOp&lt; T, Context &gt;" shape="rect" coords="757,16072,1504,16096"/>
-<area href="classcaffe2_1_1_softplus_op.html" alt="caffe2::SoftplusOp&lt; T, Context &gt;" shape="rect" coords="757,16128,1504,16152"/>
-<area href="classcaffe2_1_1_space_batch_op_base.html" alt="caffe2::SpaceBatchOpBase&lt; Context &gt;" shape="rect" coords="757,16184,1504,16208"/>
-<area href="classcaffe2_1_1_sparse_adagrad_op.html" alt="caffe2::SparseAdagradOp&lt; T, Context &gt;" shape="rect" coords="757,16240,1504,16264"/>
-<area href="classcaffe2_1_1_sparse_adam_op.html" alt="caffe2::SparseAdamOp&lt; T, Context &gt;" shape="rect" coords="757,16296,1504,16320"/>
-<area href="classcaffe2_1_1_sparse_fun_hash_gradient_op.html" alt="caffe2::SparseFunHashGradientOp&lt; T, Context &gt;" shape="rect" coords="757,16352,1504,16376"/>
-<area href="classcaffe2_1_1_sparse_fun_hash_op.html" alt="caffe2::SparseFunHashOp&lt; T, Context &gt;" shape="rect" coords="757,16408,1504,16432"/>
-<area href="classcaffe2_1_1_sparse_lengths8_bits_rowwise_op.html" alt="caffe2::SparseLengths8BitsRowwiseOp&lt; Context, USE_WEIGHTS, USE_MEAN, OutDataT &gt;" shape="rect" coords="757,16464,1504,16488"/>
-<area href="classcaffe2_1_1_sparse_lengths_fused8_bit_rowwise_op.html" alt="caffe2::SparseLengthsFused8BitRowwiseOp&lt; Context, with_weights, is_mean &gt;" shape="rect" coords="757,16520,1504,16544"/>
-<area href="classcaffe2_1_1_sparse_matrix_reshape_op.html" alt="caffe2::SparseMatrixReshapeOp&lt; Context &gt;" shape="rect" coords="757,16576,1504,16600"/>
-<area href="classcaffe2_1_1_sparse_momentum_s_g_d_update_op.html" alt="caffe2::SparseMomentumSGDUpdateOp&lt; T, Context &gt;" shape="rect" coords="757,16632,1504,16656"/>
-<area href="classcaffe2_1_1_sparse_normalize_op.html" alt="caffe2::SparseNormalizeOp&lt; T, Context &gt;" shape="rect" coords="757,16688,1504,16712"/>
-<area href="classcaffe2_1_1_sparse_to_dense_mask_base.html" alt="caffe2::SparseToDenseMaskBase&lt; Context &gt;" shape="rect" coords="757,16744,1504,16768"/>
-<area href="classcaffe2_1_1_sparse_to_dense_op.html" alt="caffe2::SparseToDenseOp&lt; Context &gt;" shape="rect" coords="757,16800,1504,16824"/>
-<area href="classcaffe2_1_1_spatial_b_n_gradient_op.html" alt="caffe2::SpatialBNGradientOp&lt; Context &gt;" shape="rect" coords="757,16856,1504,16880"/>
-<area href="classcaffe2_1_1_spatial_b_n_op.html" alt="caffe2::SpatialBNOp&lt; Context &gt;" shape="rect" coords="757,16912,1504,16936"/>
-<area href="classcaffe2_1_1_spatial_narrow_as_gradient_op.html" alt="caffe2::SpatialNarrowAsGradientOp&lt; Context &gt;" shape="rect" coords="757,16968,1504,16992"/>
-<area href="classcaffe2_1_1_spatial_narrow_as_op.html" alt="caffe2::SpatialNarrowAsOp&lt; Context &gt;" shape="rect" coords="757,17024,1504,17048"/>
-<area href="classcaffe2_1_1_spatial_softmax_with_loss_gradient_op.html" alt="caffe2::SpatialSoftmaxWithLossGradientOp&lt; T, Context &gt;" shape="rect" coords="757,17080,1504,17104"/>
-<area href="classcaffe2_1_1_spatial_softmax_with_loss_op.html" alt="caffe2::SpatialSoftmaxWithLossOp&lt; T, Context &gt;" shape="rect" coords="757,17136,1504,17160"/>
-<area href="classcaffe2_1_1_split_op.html" alt="caffe2::SplitOp&lt; Context &gt;" shape="rect" coords="757,17192,1504,17216"/>
-<area href="classcaffe2_1_1_squared_l2_distance_gradient_op.html" alt="caffe2::SquaredL2DistanceGradientOp&lt; T, Context &gt;" shape="rect" coords="757,17248,1504,17272"/>
-<area href="classcaffe2_1_1_squared_l2_distance_op.html" alt="caffe2::SquaredL2DistanceOp&lt; T, Context &gt;" shape="rect" coords="757,17304,1504,17328"/>
-<area href="classcaffe2_1_1_square_root_divide_op.html" alt="caffe2::SquareRootDivideOp&lt; Context &gt;" shape="rect" coords="757,17360,1504,17384"/>
-<area href="classcaffe2_1_1_squeeze_op.html" alt="caffe2::SqueezeOp&lt; Context &gt;" shape="rect" coords="757,17416,1504,17440"/>
-<area href="classcaffe2_1_1_stop_gradient_op.html" alt="caffe2::StopGradientOp&lt; Context &gt;" shape="rect" coords="757,17472,1504,17496"/>
-<area href="classcaffe2_1_1_string_join_op.html" alt="caffe2::StringJoinOp&lt; Context &gt;" shape="rect" coords="757,17528,1504,17552"/>
-<area href="classcaffe2_1_1_stump_func_op.html" alt="caffe2::StumpFuncOp&lt; TIN, TOUT, Context &gt;" shape="rect" coords="757,17584,1504,17608"/>
-<area href="classcaffe2_1_1_sum_elements_gradient_op.html" alt="caffe2::SumElementsGradientOp&lt; T, Context &gt;" shape="rect" coords="757,17640,1504,17664"/>
-<area href="classcaffe2_1_1_sum_elements_int_op.html" alt="caffe2::SumElementsIntOp&lt; T, Context &gt;" shape="rect" coords="757,17696,1504,17720"/>
-<area href="classcaffe2_1_1_sum_elements_op.html" alt="caffe2::SumElementsOp&lt; T, Context &gt;" shape="rect" coords="757,17752,1504,17776"/>
-<area href="classcaffe2_1_1_summarize_op.html" alt="caffe2::SummarizeOp&lt; T, Context &gt;" shape="rect" coords="757,17808,1504,17832"/>
-<area href="classcaffe2_1_1_sum_op.html" alt="caffe2::SumOp&lt; Context &gt;" shape="rect" coords="757,17864,1504,17888"/>
-<area href="classcaffe2_1_1_sum_reduce_dims_gradient_op.html" alt="caffe2::SumReduceDimsGradientOp&lt; Context, FIRSTDIMS, NORMALIZE &gt;" shape="rect" coords="757,17920,1504,17944"/>
-<area href="classcaffe2_1_1_sum_reduce_dims_op.html" alt="caffe2::SumReduceDimsOp&lt; Context, FIRSTDIMS, NORMALIZE &gt;" shape="rect" coords="757,17976,1504,18000"/>
-<area href="classcaffe2_1_1_sum_reduce_like_op.html" alt="caffe2::SumReduceLikeOp&lt; Context &gt;" shape="rect" coords="757,18032,1504,18056"/>
-<area href="classcaffe2_1_1_sum_sqr_elements_op.html" alt="caffe2::SumSqrElementsOp&lt; Context &gt;" shape="rect" coords="757,18088,1504,18112"/>
-<area href="classcaffe2_1_1_swish_gradient_op.html" alt="caffe2::SwishGradientOp&lt; Context &gt;" shape="rect" coords="757,18144,1504,18168"/>
-<area href="classcaffe2_1_1_thresholded_relu_gradient_op.html" alt="caffe2::ThresholdedReluGradientOp&lt; T, Context &gt;" shape="rect" coords="757,18200,1504,18224"/>
-<area href="classcaffe2_1_1_thresholded_relu_op.html" alt="caffe2::ThresholdedReluOp&lt; T, Context &gt;" shape="rect" coords="757,18256,1504,18280"/>
-<area href="classcaffe2_1_1_tile_gradient_op.html" alt="caffe2::TileGradientOp&lt; T, Context &gt;" shape="rect" coords="757,18312,1504,18336"/>
-<area href="classcaffe2_1_1_tile_op.html" alt="caffe2::TileOp&lt; Context &gt;" shape="rect" coords="757,18368,1504,18392"/>
-<area href="classcaffe2_1_1_top_k_gradient_op.html" alt="caffe2::TopKGradientOp&lt; T, Context &gt;" shape="rect" coords="757,18424,1504,18448"/>
-<area href="classcaffe2_1_1_top_k_op.html" alt="caffe2::TopKOp&lt; T, Context &gt;" shape="rect" coords="757,18480,1504,18504"/>
-<area href="classcaffe2_1_1_transpose_op.html" alt="caffe2::TransposeOp&lt; Context &gt;" shape="rect" coords="757,18536,1504,18560"/>
-<area href="classcaffe2_1_1_t_t_contraction_gradient_op.html" alt="caffe2::TTContractionGradientOp&lt; T, Context, Engine &gt;" shape="rect" coords="757,18592,1504,18616"/>
-<area href="classcaffe2_1_1_t_t_contraction_op.html" alt="caffe2::TTContractionOp&lt; T, Context, Engine &gt;" shape="rect" coords="757,18648,1504,18672"/>
-<area href="classcaffe2_1_1_t_t_linear_gradient_op.html" alt="caffe2::TTLinearGradientOp&lt; T, Context, Engine &gt;" shape="rect" coords="757,18704,1504,18728"/>
-<area href="classcaffe2_1_1_t_t_linear_op.html" alt="caffe2::TTLinearOp&lt; T, Context, Engine &gt;" shape="rect" coords="757,18760,1504,18784"/>
-<area href="classcaffe2_1_1_t_t_pad_gradient_op.html" alt="caffe2::TTPadGradientOp&lt; T, Context, Engine &gt;" shape="rect" coords="757,18816,1504,18840"/>
-<area href="classcaffe2_1_1_t_t_pad_op.html" alt="caffe2::TTPadOp&lt; T, Context, Engine &gt;" shape="rect" coords="757,18872,1504,18896"/>
-<area href="classcaffe2_1_1_unary_elementwise_with_args_op.html" alt="caffe2::UnaryElementwiseWithArgsOp&lt; InputTypes, Context, Functor, TypeMap &gt;" shape="rect" coords="757,18928,1504,18952"/>
-<area href="classcaffe2_1_1_unique_op.html" title="Deduplicates input indices vector and optionally produces reverse remapping. " alt="caffe2::UniqueOp&lt; Context &gt;" shape="rect" coords="757,18984,1504,19008"/>
-<area href="classcaffe2_1_1_unpack_segments_op.html" alt="caffe2::UnpackSegmentsOp&lt; Context &gt;" shape="rect" coords="757,19040,1504,19064"/>
-<area href="classcaffe2_1_1_unsafe_coalesce_op.html" alt="caffe2::UnsafeCoalesceOp&lt; Context &gt;" shape="rect" coords="757,19096,1504,19120"/>
-<area href="classcaffe2_1_1_upsample_nearest_gradient_op.html" alt="caffe2::UpsampleNearestGradientOp&lt; T, Context &gt;" shape="rect" coords="757,19152,1504,19176"/>
-<area href="classcaffe2_1_1_upsample_nearest_op.html" alt="caffe2::UpsampleNearestOp&lt; T, Context &gt;" shape="rect" coords="757,19208,1504,19232"/>
-<area href="classcaffe2_1_1_variable_length_sequence_padding_op.html" alt="caffe2::VariableLengthSequencePaddingOp&lt; T, Context &gt;" shape="rect" coords="757,19264,1504,19288"/>
-<area href="classcaffe2_1_1_wall_clock_time_op.html" alt="caffe2::WallClockTimeOp&lt; Context &gt;" shape="rect" coords="757,19320,1504,19344"/>
-<area href="classcaffe2_1_1_weighted_multi_sampling_op.html" alt="caffe2::WeightedMultiSamplingOp&lt; Context &gt;" shape="rect" coords="757,19376,1504,19400"/>
-<area href="classcaffe2_1_1_weighted_sample_dequeue_blobs_op.html" alt="caffe2::WeightedSampleDequeueBlobsOp&lt; Context &gt;" shape="rect" coords="757,19432,1504,19456"/>
-<area href="classcaffe2_1_1_weighted_sample_op.html" alt="caffe2::WeightedSampleOp&lt; T, Context &gt;" shape="rect" coords="757,19488,1504,19512"/>
-<area href="classcaffe2_1_1_weighted_sigmoid_cross_entropy_with_logits_gradient_op.html" alt="caffe2::WeightedSigmoidCrossEntropyWithLogitsGradientOp&lt; T, Context &gt;" shape="rect" coords="757,19544,1504,19568"/>
-<area href="classcaffe2_1_1_weighted_sigmoid_cross_entropy_with_logits_op.html" alt="caffe2::WeightedSigmoidCrossEntropyWithLogitsOp&lt; T, Context &gt;" shape="rect" coords="757,19600,1504,19624"/>
-<area href="classcaffe2_1_1_weighted_sum_gradient_op.html" alt="caffe2::WeightedSumGradientOp&lt; Context &gt;" shape="rect" coords="757,19656,1504,19680"/>
-<area href="classcaffe2_1_1_weighted_sum_op.html" alt="caffe2::WeightedSumOp&lt; Context &gt;" shape="rect" coords="757,19712,1504,19736"/>
-<area href="classcaffe2_1_1_where_op.html" alt="caffe2::WhereOp&lt; Context &gt;" shape="rect" coords="757,19768,1504,19792"/>
-<area href="classcaffe2_1_1_while_op.html" alt="caffe2::WhileOp&lt; Context &gt;" shape="rect" coords="757,19824,1504,19848"/>
-<area href="classcaffe2_1_1_yellow_fin_op.html" alt="caffe2::YellowFinOp&lt; T, Context &gt;" shape="rect" coords="757,19880,1504,19904"/>
-<area href="classcaffe2_1_1_zero_gradient_op.html" alt="caffe2::ZeroGradientOp&lt; Context &gt;" shape="rect" coords="757,19936,1504,19960"/>
+<area href="classcaffe2_1_1_operator_base.html" alt="caffe2::OperatorBase" shape="rect" coords="0,56,824,80"/>
+<area href="classcaffe2_1_1_observable.html" alt="caffe2::Observable&lt; OperatorBase &gt;" shape="rect" coords="0,0,824,24"/>
+<area href="classcaffe2_1_1_abstract_lengths_gradient_op.html" alt="caffe2::AbstractLengthsGradientOp&lt; T, TLengths, Context, ReducerGradient, GradientNeedIndices &gt;" shape="rect" coords="834,168,1658,192"/>
+<area href="classcaffe2_1_1_abstract_lengths_op.html" title="Segment reduction op with optional fused embedding lookup. " alt="caffe2::AbstractLengthsOp&lt; TData, TLengths, Context, Reducer, SparseFused, InputAccessor &gt;" shape="rect" coords="834,224,1658,248"/>
+<area href="classcaffe2_1_1_abstract_lengths_with_main_input_and_forward_output_gradient_op.html" alt="caffe2::AbstractLengthsWithMainInputAndForwardOutputGradientOp&lt; T, TLengths, Context, ReducerGradient &gt;" shape="rect" coords="834,280,1658,304"/>
+<area href="classcaffe2_1_1_abstract_lengths_with_main_input_gradient_op.html" alt="caffe2::AbstractLengthsWithMainInputGradientOp&lt; Tembedding, T, TLengths, Context, ReducerGradient, SparseFused, GradientNeedIndices &gt;" shape="rect" coords="834,336,1658,360"/>
+<area href="classcaffe2_1_1_abstract_reduce_front_or_back_gradient_op.html" alt="caffe2::AbstractReduceFrontOrBackGradientOp&lt; T, Context, ReducerGradient, FirstDim &gt;" shape="rect" coords="834,392,1658,416"/>
+<area href="classcaffe2_1_1_abstract_reduce_front_or_back_op.html" title="Simple non-segmented reduction over the first few dimensions of the tensor. " alt="caffe2::AbstractReduceFrontOrBackOp&lt; T, Context, Reducer, FirstDim, InputAccessor &gt;" shape="rect" coords="834,448,1658,472"/>
+<area href="classcaffe2_1_1_abstract_sorted_segment_gradient_op.html" alt="caffe2::AbstractSortedSegmentGradientOp&lt; T, SIndex, Context, ReducerGradient &gt;" shape="rect" coords="834,504,1658,528"/>
+<area href="classcaffe2_1_1_abstract_sorted_segment_op.html" title="Segment reduction op with optional fused embedding lookup. " alt="caffe2::AbstractSortedSegmentOp&lt; T, SIndex, Context, Reducer, SparseFused, InputAccessor &gt;" shape="rect" coords="834,560,1658,584"/>
+<area href="classcaffe2_1_1_abstract_sorted_segment_range_gradient_op.html" alt="caffe2::AbstractSortedSegmentRangeGradientOp&lt; T, SIndex, Context, RangeReducerGradient &gt;" shape="rect" coords="834,616,1658,640"/>
+<area href="classcaffe2_1_1_abstract_sorted_segment_range_op.html" title="Base implementation for segment reduction op that leverages continuity of the data. " alt="caffe2::AbstractSortedSegmentRangeOp&lt; T, SIndex, Context, RangeReducer, InputAccessor &gt;" shape="rect" coords="834,672,1658,696"/>
+<area href="classcaffe2_1_1_abstract_unsorted_segment_gradient_op.html" alt="caffe2::AbstractUnsortedSegmentGradientOp&lt; T, SIndex, Context, ReducerGradient &gt;" shape="rect" coords="834,728,1658,752"/>
+<area href="classcaffe2_1_1_abstract_unsorted_segment_op.html" title="Unsorted segment reduction op with optional fused embedding lookup. " alt="caffe2::AbstractUnsortedSegmentOp&lt; T, SIndex, Context, Reducer, SparseFused, InputAccessor &gt;" shape="rect" coords="834,784,1658,808"/>
+<area href="classcaffe2_1_1_accumulate_histogram_op.html" alt="caffe2::AccumulateHistogramOp&lt; T, Context &gt;" shape="rect" coords="834,840,1658,864"/>
+<area href="classcaffe2_1_1_accumulate_input_gradient_op.html" alt="caffe2::AccumulateInputGradientOp&lt; Context &gt;" shape="rect" coords="834,896,1658,920"/>
+<area href="classcaffe2_1_1_accumulate_op.html" alt="caffe2::AccumulateOp&lt; T, Context &gt;" shape="rect" coords="834,952,1658,976"/>
+<area href="classcaffe2_1_1_accuracy_op.html" alt="caffe2::AccuracyOp&lt; T, Context &gt;" shape="rect" coords="834,1008,1658,1032"/>
+<area href="classcaffe2_1_1_adadelta_op.html" alt="caffe2::AdadeltaOp&lt; Context &gt;" shape="rect" coords="834,1064,1658,1088"/>
+<area href="classcaffe2_1_1_adagrad_op.html" alt="caffe2::AdagradOp&lt; T, Context &gt;" shape="rect" coords="834,1120,1658,1144"/>
+<area href="classcaffe2_1_1_adam_op.html" alt="caffe2::AdamOp&lt; T, Context &gt;" shape="rect" coords="834,1176,1658,1200"/>
+<area href="classcaffe2_1_1_add_padding_op.html" alt="caffe2::AddPaddingOp&lt; Context &gt;" shape="rect" coords="834,1232,1658,1256"/>
+<area href="classcaffe2_1_1_adjust_batch_op.html" alt="caffe2::AdjustBatchOp&lt; Context &gt;" shape="rect" coords="834,1288,1658,1312"/>
+<area href="classcaffe2_1_1_affine_channel_gradient_op.html" alt="caffe2::AffineChannelGradientOp&lt; T, Context &gt;" shape="rect" coords="834,1344,1658,1368"/>
+<area href="classcaffe2_1_1_affine_channel_op.html" alt="caffe2::AffineChannelOp&lt; T, Context &gt;" shape="rect" coords="834,1400,1658,1424"/>
+<area href="classcaffe2_1_1_alias_op.html" title="Alias op makes the output and the input share the same underlying storage. " alt="caffe2::AliasOp&lt; Context &gt;" shape="rect" coords="834,1456,1658,1480"/>
+<area href="classcaffe2_1_1_a_p_meter_op.html" alt="caffe2::APMeterOp&lt; T, Context &gt;" shape="rect" coords="834,1512,1658,1536"/>
+<area href="classcaffe2_1_1_arg_op.html" alt="caffe2::ArgOp&lt; Context, Reducer &gt;" shape="rect" coords="834,1568,1658,1592"/>
+<area href="classcaffe2_1_1_assert_op.html" alt="caffe2::AssertOp&lt; Context &gt;" shape="rect" coords="834,1624,1658,1648"/>
+<area href="classcaffe2_1_1_atomic_iter_op.html" alt="caffe2::AtomicIterOp&lt; Context &gt;" shape="rect" coords="834,1680,1658,1704"/>
+<area href="classcaffe2_1_1_batch_box_cox_op.html" alt="caffe2::BatchBoxCoxOp&lt; Context &gt;" shape="rect" coords="834,1736,1658,1760"/>
+<area href="classcaffe2_1_1_batch_bucketize_op.html" alt="caffe2::BatchBucketizeOp&lt; Context &gt;" shape="rect" coords="834,1792,1658,1816"/>
+<area href="classcaffe2_1_1_batch_bucket_one_hot_op.html" alt="caffe2::BatchBucketOneHotOp&lt; Context &gt;" shape="rect" coords="834,1848,1658,1872"/>
+<area href="classcaffe2_1_1_batch_dense_to_sparse_op.html" alt="caffe2::BatchDenseToSparseOp&lt; T, Context &gt;" shape="rect" coords="834,1904,1658,1928"/>
+<area href="classcaffe2_1_1_batch_gather_gradient_op.html" alt="caffe2::BatchGatherGradientOp&lt; Context &gt;" shape="rect" coords="834,1960,1658,1984"/>
+<area href="classcaffe2_1_1_batch_gather_op.html" alt="caffe2::BatchGatherOp&lt; Context &gt;" shape="rect" coords="834,2016,1658,2040"/>
+<area href="classcaffe2_1_1_batch_mat_mul_op.html" alt="caffe2::BatchMatMulOp&lt; Context, Engine &gt;" shape="rect" coords="834,2072,1658,2096"/>
+<area href="classcaffe2_1_1_batch_moments_gradient_op.html" alt="caffe2::BatchMomentsGradientOp&lt; T, Context &gt;" shape="rect" coords="834,2128,1658,2152"/>
+<area href="classcaffe2_1_1_batch_moments_op.html" alt="caffe2::BatchMomentsOp&lt; T, Context &gt;" shape="rect" coords="834,2184,1658,2208"/>
+<area href="classcaffe2_1_1_batch_one_hot_op.html" alt="caffe2::BatchOneHotOp&lt; Context &gt;" shape="rect" coords="834,2240,1658,2264"/>
+<area href="classcaffe2_1_1_batch_permutation_gradient_op.html" alt="caffe2::BatchPermutationGradientOp&lt; T, Context &gt;" shape="rect" coords="834,2296,1658,2320"/>
+<area href="classcaffe2_1_1_batch_permutation_op.html" alt="caffe2::BatchPermutationOp&lt; T, Context &gt;" shape="rect" coords="834,2352,1658,2376"/>
+<area href="classcaffe2_1_1_batch_sparse_to_dense_op.html" alt="caffe2::BatchSparseToDenseOp&lt; T, Context &gt;" shape="rect" coords="834,2408,1658,2432"/>
+<area href="classcaffe2_1_1_b_box_transform_op.html" alt="caffe2::BBoxTransformOp&lt; T, Context &gt;" shape="rect" coords="834,2464,1658,2488"/>
+<area href="classcaffe2_1_1_bernoulli_j_s_d_gradient_op.html" alt="caffe2::BernoulliJSDGradientOp&lt; T, Context &gt;" shape="rect" coords="834,2520,1658,2544"/>
+<area href="classcaffe2_1_1_bernoulli_j_s_d_op.html" alt="caffe2::BernoulliJSDOp&lt; T, Context &gt;" shape="rect" coords="834,2576,1658,2600"/>
+<area href="classcaffe2_1_1_binary_elementwise_with_args_gradient_op.html" alt="caffe2::BinaryElementwiseWithArgsGradientOp&lt; InputTypes, Context, Functor, OutputTypeMap, GradientTypeMap &gt;" shape="rect" coords="834,2632,1658,2656"/>
+<area href="classcaffe2_1_1_binary_elementwise_with_args_op.html" alt="caffe2::BinaryElementwiseWithArgsOp&lt; InputTypes, Context, Functor, OutputTypeMap &gt;" shape="rect" coords="834,2688,1658,2712"/>
+<area href="classcaffe2_1_1_bisect_percentile_op.html" alt="caffe2::BisectPercentileOp&lt; Context &gt;" shape="rect" coords="834,2744,1658,2768"/>
+<area href="classcaffe2_1_1_boolean_mask_op.html" alt="caffe2::BooleanMaskOp&lt; Context &gt;" shape="rect" coords="834,2800,1658,2824"/>
+<area href="classcaffe2_1_1_boolean_unmask_op.html" alt="caffe2::BooleanUnmaskOp&lt; Context &gt;" shape="rect" coords="834,2856,1658,2880"/>
+<area href="classcaffe2_1_1_box_with_n_m_s_limit_op.html" alt="caffe2::BoxWithNMSLimitOp&lt; Context &gt;" shape="rect" coords="834,2912,1658,2936"/>
+<area href="classcaffe2_1_1_byte_weight_dequant_op.html" alt="caffe2::ByteWeightDequantOp&lt; Context &gt;" shape="rect" coords="834,2968,1658,2992"/>
+<area href="classcaffe2_1_1_cast_op.html" alt="caffe2::CastOp&lt; Context &gt;" shape="rect" coords="834,3024,1658,3048"/>
+<area href="classcaffe2_1_1_ceil_op.html" alt="caffe2::CeilOp&lt; T, Context &gt;" shape="rect" coords="834,3080,1658,3104"/>
+<area href="classcaffe2_1_1_channel_backprop_stats_op.html" alt="caffe2::ChannelBackpropStatsOp&lt; Context &gt;" shape="rect" coords="834,3136,1658,3160"/>
+<area href="classcaffe2_1_1_channel_shuffle_gradient_op.html" alt="caffe2::ChannelShuffleGradientOp&lt; T, Context &gt;" shape="rect" coords="834,3192,1658,3216"/>
+<area href="classcaffe2_1_1_channel_shuffle_op.html" alt="caffe2::ChannelShuffleOp&lt; T, Context &gt;" shape="rect" coords="834,3248,1658,3272"/>
+<area href="classcaffe2_1_1_channel_stats_op.html" alt="caffe2::ChannelStatsOp&lt; Context &gt;" shape="rect" coords="834,3304,1658,3328"/>
+<area href="classcaffe2_1_1_check_counter_done_op.html" alt="caffe2::CheckCounterDoneOp&lt; T, Context &gt;" shape="rect" coords="834,3360,1658,3384"/>
+<area href="classcaffe2_1_1_checkpoint_op.html" alt="caffe2::CheckpointOp&lt; Context &gt;" shape="rect" coords="834,3416,1658,3440"/>
+<area href="classcaffe2_1_1_clip_gradient_op.html" alt="caffe2::ClipGradientOp&lt; T, Context &gt;" shape="rect" coords="834,3472,1658,3496"/>
+<area href="classcaffe2_1_1_clip_op.html" alt="caffe2::ClipOp&lt; T, Context &gt;" shape="rect" coords="834,3528,1658,3552"/>
+<area href="classcaffe2_1_1_clip_tensor_by_scaling_op.html" alt="caffe2::ClipTensorByScalingOp&lt; Context &gt;" shape="rect" coords="834,3584,1658,3608"/>
+<area href="classcaffe2_1_1_close_blobs_queue_op.html" alt="caffe2::CloseBlobsQueueOp&lt; Context &gt;" shape="rect" coords="834,3640,1658,3664"/>
+<area href="classcaffe2_1_1_col2_im_op.html" alt="caffe2::Col2ImOp&lt; T, Context &gt;" shape="rect" coords="834,3696,1658,3720"/>
+<area href="classcaffe2_1_1_collect_and_distribute_fpn_rpn_proposals_op.html" alt="caffe2::CollectAndDistributeFpnRpnProposalsOp&lt; Context &gt;" shape="rect" coords="834,3752,1658,3776"/>
+<area href="classcaffe2_1_1_concat_op.html" alt="caffe2::ConcatOp&lt; Context &gt;" shape="rect" coords="834,3808,1658,3832"/>
+<area href="classcaffe2_1_1_conditional_op.html" alt="caffe2::ConditionalOp&lt; Context &gt;" shape="rect" coords="834,3864,1658,3888"/>
+<area href="classcaffe2_1_1_conv_pool_op_base.html" alt="caffe2::ConvPoolOpBase&lt; Context &gt;" shape="rect" coords="834,3920,1658,3944"/>
+<area href="classcaffe2_1_1_conv_transpose_unpool_base.html" alt="caffe2::ConvTransposeUnpoolBase&lt; Context &gt;" shape="rect" coords="834,3976,1658,4000"/>
+<area href="classcaffe2_1_1_copy_op.html" alt="caffe2::CopyOp&lt; Context, DstContext, SrcContext &gt;" shape="rect" coords="834,4032,1658,4056"/>
+<area href="classcaffe2_1_1_cosine_embedding_criterion_gradient_op.html" alt="caffe2::CosineEmbeddingCriterionGradientOp&lt; Context &gt;" shape="rect" coords="834,4088,1658,4112"/>
+<area href="classcaffe2_1_1_cosine_embedding_criterion_op.html" alt="caffe2::CosineEmbeddingCriterionOp&lt; Context &gt;" shape="rect" coords="834,4144,1658,4168"/>
+<area href="classcaffe2_1_1_cosine_similarity_gradient_op.html" alt="caffe2::CosineSimilarityGradientOp&lt; T, Context &gt;" shape="rect" coords="834,4200,1658,4224"/>
+<area href="classcaffe2_1_1_cosine_similarity_op.html" alt="caffe2::CosineSimilarityOp&lt; T, Context &gt;" shape="rect" coords="834,4256,1658,4280"/>
+<area href="classcaffe2_1_1_count_down_op.html" alt="caffe2::CountDownOp&lt; T, Context &gt;" shape="rect" coords="834,4312,1658,4336"/>
+<area href="classcaffe2_1_1_count_up_op.html" alt="caffe2::CountUpOp&lt; T, Context &gt;" shape="rect" coords="834,4368,1658,4392"/>
+<area href="classcaffe2_1_1_create_blobs_queue_op.html" alt="caffe2::CreateBlobsQueueOp&lt; Context &gt;" shape="rect" coords="834,4424,1658,4448"/>
+<area href="classcaffe2_1_1_create_counter_op.html" alt="caffe2::CreateCounterOp&lt; T, Context &gt;" shape="rect" coords="834,4480,1658,4504"/>
+<area href="classcaffe2_1_1_create_d_b_op.html" alt="caffe2::CreateDBOp&lt; Context &gt;" shape="rect" coords="834,4536,1658,4560"/>
+<area href="classcaffe2_1_1_create_map_op.html" alt="caffe2::CreateMapOp&lt; Context &gt;" shape="rect" coords="834,4592,1658,4616"/>
+<area href="classcaffe2_1_1_create_scope_op.html" alt="caffe2::CreateScopeOp&lt; Context &gt;" shape="rect" coords="834,4648,1658,4672"/>
+<area href="classcaffe2_1_1_cross_entropy_gradient_op.html" alt="caffe2::CrossEntropyGradientOp&lt; T, Context &gt;" shape="rect" coords="834,4704,1658,4728"/>
+<area href="classcaffe2_1_1_cross_entropy_op.html" alt="caffe2::CrossEntropyOp&lt; T, Context &gt;" shape="rect" coords="834,4760,1658,4784"/>
+<area href="classcaffe2_1_1_c_t_c_beam_search_decoder_op.html" alt="caffe2::CTCBeamSearchDecoderOp&lt; Context &gt;" shape="rect" coords="834,4816,1658,4840"/>
+<area href="classcaffe2_1_1_c_t_c_greedy_decoder_op.html" alt="caffe2::CTCGreedyDecoderOp&lt; Context &gt;" shape="rect" coords="834,4872,1658,4896"/>
+<area href="classcaffe2_1_1_data_couple_op.html" alt="caffe2::DataCoupleOp&lt; Context &gt;" shape="rect" coords="834,4928,1658,4952"/>
+<area href="classcaffe2_1_1_d_b_exists_op.html" alt="caffe2::DBExistsOp&lt; Context &gt;" shape="rect" coords="834,4984,1658,5008"/>
+<area href="classcaffe2_1_1_dense_vector_to_id_list_op.html" alt="caffe2::DenseVectorToIdListOp&lt; Context &gt;" shape="rect" coords="834,5040,1658,5064"/>
+<area href="classcaffe2_1_1_dequeue_blobs_op.html" alt="caffe2::DequeueBlobsOp&lt; Context &gt;" shape="rect" coords="834,5096,1658,5120"/>
+<area href="classcaffe2_1_1detail_1_1_c10_operator_wrapper.html" alt="caffe2::detail::C10OperatorWrapper&lt; Context &gt;" shape="rect" coords="834,5152,1658,5176"/>
+<area href="classcaffe2_1_1_do_op.html" alt="caffe2::DoOp&lt; Context &gt;" shape="rect" coords="834,5208,1658,5232"/>
+<area href="classcaffe2_1_1_dot_product_gradient_op.html" alt="caffe2::DotProductGradientOp&lt; T, Context &gt;" shape="rect" coords="834,5264,1658,5288"/>
+<area href="classcaffe2_1_1_dot_product_op.html" alt="caffe2::DotProductOp&lt; T, Context &gt;" shape="rect" coords="834,5320,1658,5344"/>
+<area href="classcaffe2_1_1_dot_product_with_padding_gradient_op.html" alt="caffe2::DotProductWithPaddingGradientOp&lt; T, Context &gt;" shape="rect" coords="834,5376,1658,5400"/>
+<area href="classcaffe2_1_1_dot_product_with_padding_op.html" alt="caffe2::DotProductWithPaddingOp&lt; T, Context &gt;" shape="rect" coords="834,5432,1658,5456"/>
+<area href="classcaffe2_1_1_dropout_gradient_op.html" alt="caffe2::DropoutGradientOp&lt; T, Context &gt;" shape="rect" coords="834,5488,1658,5512"/>
+<area href="classcaffe2_1_1_dropout_op.html" alt="caffe2::DropoutOp&lt; T, Context &gt;" shape="rect" coords="834,5544,1658,5568"/>
+<area href="classcaffe2_1_1_elementwise_linear_gradient_op.html" alt="caffe2::ElementwiseLinearGradientOp&lt; T, Context, Engine &gt;" shape="rect" coords="834,5600,1658,5624"/>
+<area href="classcaffe2_1_1_elementwise_linear_op.html" alt="caffe2::ElementwiseLinearOp&lt; T, Context, Engine &gt;" shape="rect" coords="834,5656,1658,5680"/>
+<area href="classcaffe2_1_1_enforce_finite_op.html" alt="caffe2::EnforceFiniteOp&lt; Context &gt;" shape="rect" coords="834,5712,1658,5736"/>
+<area href="classcaffe2_1_1_enqueue_blobs_op.html" alt="caffe2::EnqueueBlobsOp&lt; Context &gt;" shape="rect" coords="834,5768,1658,5792"/>
+<area href="classcaffe2_1_1_ensure_clipped_op.html" alt="caffe2::EnsureClippedOp&lt; T, Context &gt;" shape="rect" coords="834,5824,1658,5848"/>
+<area href="classcaffe2_1_1_ensure_c_p_u_output_op.html" alt="caffe2::EnsureCPUOutputOp&lt; Context &gt;" shape="rect" coords="834,5880,1658,5904"/>
+<area href="classcaffe2_1_1_ensure_dense_op.html" title="Pass inputs to outputs. " alt="caffe2::EnsureDenseOp&lt; Context &gt;" shape="rect" coords="834,5936,1658,5960"/>
+<area href="classcaffe2_1_1_expand_dims_op.html" alt="caffe2::ExpandDimsOp&lt; Context &gt;" shape="rect" coords="834,5992,1658,6016"/>
+<area href="classcaffe2_1_1_expand_gradient_op.html" alt="caffe2::ExpandGradientOp&lt; InputTypes, Context &gt;" shape="rect" coords="834,6048,1658,6072"/>
+<area href="classcaffe2_1_1_expand_op.html" alt="caffe2::ExpandOp&lt; InputTypes, Context &gt;" shape="rect" coords="834,6104,1658,6128"/>
+<area href="classcaffe2_1_1_feed_blob_op.html" alt="caffe2::FeedBlobOp&lt; Context &gt;" shape="rect" coords="834,6160,1658,6184"/>
+<area href="classcaffe2_1_1_file_store_handler_create_op.html" alt="caffe2::FileStoreHandlerCreateOp&lt; Context &gt;" shape="rect" coords="834,6216,1658,6240"/>
+<area href="classcaffe2_1_1_filler_op.html" alt="caffe2::FillerOp&lt; Context &gt;" shape="rect" coords="834,6272,1658,6296"/>
+<area href="classcaffe2_1_1_find_duplicate_elements_op.html" alt="caffe2::FindDuplicateElementsOp&lt; Context &gt;" shape="rect" coords="834,6328,1658,6352"/>
+<area href="classcaffe2_1_1_find_op.html" alt="caffe2::FindOp&lt; Context &gt;" shape="rect" coords="834,6384,1658,6408"/>
+<area href="classcaffe2_1_1_flatten_op.html" alt="caffe2::FlattenOp&lt; Context &gt;" shape="rect" coords="834,6440,1658,6464"/>
+<area href="classcaffe2_1_1_flatten_to_vec_op.html" alt="caffe2::FlattenToVecOp&lt; Context &gt;" shape="rect" coords="834,6496,1658,6520"/>
+<area href="classcaffe2_1_1_flexible_top_k_gradient_op.html" alt="caffe2::FlexibleTopKGradientOp&lt; T, Context &gt;" shape="rect" coords="834,6552,1658,6576"/>
+<area href="classcaffe2_1_1_flexible_top_k_op.html" alt="caffe2::FlexibleTopKOp&lt; T, Context &gt;" shape="rect" coords="834,6608,1658,6632"/>
+<area href="classcaffe2_1_1_float_to_fused8_bit_rowwise_quantized_op.html" alt="caffe2::FloatToFused8BitRowwiseQuantizedOp&lt; T, convert, Context &gt;" shape="rect" coords="834,6664,1658,6688"/>
+<area href="classcaffe2_1_1_float_to_fused_rand_rowwise_quantized_op.html" alt="caffe2::FloatToFusedRandRowwiseQuantizedOp&lt; Context &gt;" shape="rect" coords="834,6720,1658,6744"/>
+<area href="classcaffe2_1_1_float_to_half_op.html" alt="caffe2::FloatToHalfOp&lt; Context &gt;" shape="rect" coords="834,6776,1658,6800"/>
+<area href="classcaffe2_1_1_float_to_rowwise_quantized8_bits_op.html" alt="caffe2::FloatToRowwiseQuantized8BitsOp&lt; Context &gt;" shape="rect" coords="834,6832,1658,6856"/>
+<area href="classcaffe2_1_1_floor_op.html" alt="caffe2::FloorOp&lt; T, Context &gt;" shape="rect" coords="834,6888,1658,6912"/>
+<area href="classcaffe2_1_1_f_p16_momentum_s_g_d_update_op.html" alt="caffe2::FP16MomentumSGDUpdateOp&lt; T, Context &gt;" shape="rect" coords="834,6944,1658,6968"/>
+<area href="classcaffe2_1_1_f_p32_momentum_s_g_d_update_op.html" alt="caffe2::FP32MomentumSGDUpdateOp&lt; T, Context &gt;" shape="rect" coords="834,7000,1658,7024"/>
+<area href="classcaffe2_1_1_free_op.html" alt="caffe2::FreeOp&lt; Context &gt;" shape="rect" coords="834,7056,1658,7080"/>
+<area href="classcaffe2_1_1_ftrl_op.html" alt="caffe2::FtrlOp&lt; T, Context &gt;" shape="rect" coords="834,7112,1658,7136"/>
+<area href="classcaffe2_1_1_fully_connected_decomp_gradient_op.html" alt="caffe2::FullyConnectedDecompGradientOp&lt; T, Context, Engine &gt;" shape="rect" coords="834,7168,1658,7192"/>
+<area href="classcaffe2_1_1_fully_connected_fake_lowp_f_p_op.html" alt="caffe2::FullyConnectedFakeLowpFPOp&lt; Q, Context, Engine, TransposeWeight &gt;" shape="rect" coords="834,7224,1658,7248"/>
+<area href="classcaffe2_1_1_fully_connected_gradient_fake_lowp_f_p_op.html" alt="caffe2::FullyConnectedGradientFakeLowpFPOp&lt; Q, Context, Engine, TransposeWeight &gt;" shape="rect" coords="834,7280,1658,7304"/>
+<area href="classcaffe2_1_1_fully_connected_gradient_op.html" alt="caffe2::FullyConnectedGradientOp&lt; Context, Engine, TransposeWeight &gt;" shape="rect" coords="834,7336,1658,7360"/>
+<area href="classcaffe2_1_1_fully_connected_op.html" alt="caffe2::FullyConnectedOp&lt; Context, Engine, TransposeWeight &gt;" shape="rect" coords="834,7392,1658,7416"/>
+<area href="classcaffe2_1_1_fully_connected_op___s_p_a_r_s_e.html" alt="caffe2::FullyConnectedOp_SPARSE&lt; T, Context, Engine &gt;" shape="rect" coords="834,7448,1658,7472"/>
+<area href="classcaffe2_1_1_fully_connected_op_decomp.html" alt="caffe2::FullyConnectedOpDecomp&lt; T, Context, Engine &gt;" shape="rect" coords="834,7504,1658,7528"/>
+<area href="classcaffe2_1_1_fully_connected_op_prune.html" alt="caffe2::FullyConnectedOpPrune&lt; T, Context, Engine &gt;" shape="rect" coords="834,7560,1658,7584"/>
+<area href="classcaffe2_1_1_fully_connected_prune_gradient_op.html" alt="caffe2::FullyConnectedPruneGradientOp&lt; T, Context, Engine &gt;" shape="rect" coords="834,7616,1658,7640"/>
+<area href="classcaffe2_1_1_fun_hash_gradient_op.html" alt="caffe2::FunHashGradientOp&lt; T, Context &gt;" shape="rect" coords="834,7672,1658,7696"/>
+<area href="classcaffe2_1_1_fun_hash_op.html" alt="caffe2::FunHashOp&lt; T, Context &gt;" shape="rect" coords="834,7728,1658,7752"/>
+<area href="classcaffe2_1_1_fused8_bit_rowwise_quantized_to_float_op.html" alt="caffe2::Fused8BitRowwiseQuantizedToFloatOp&lt; T, convert, Context &gt;" shape="rect" coords="834,7784,1658,7808"/>
+<area href="classcaffe2_1_1_fused_rand_rowwise_quantized_to_float_op.html" alt="caffe2::FusedRandRowwiseQuantizedToFloatOp&lt; Context &gt;" shape="rect" coords="834,7840,1658,7864"/>
+<area href="classcaffe2_1_1_gather_fused8_bit_rowwise_op.html" alt="caffe2::GatherFused8BitRowwiseOp&lt; Context &gt;" shape="rect" coords="834,7896,1658,7920"/>
+<area href="classcaffe2_1_1_gather_op.html" alt="caffe2::GatherOp&lt; Context &gt;" shape="rect" coords="834,7952,1658,7976"/>
+<area href="classcaffe2_1_1_gather_padding_op.html" alt="caffe2::GatherPaddingOp&lt; Context &gt;" shape="rect" coords="834,8008,1658,8032"/>
+<area href="classcaffe2_1_1_gather_ranges_op.html" alt="caffe2::GatherRangesOp&lt; Context &gt;" shape="rect" coords="834,8064,1658,8088"/>
+<area href="classcaffe2_1_1_gather_ranges_to_dense_op.html" alt="caffe2::GatherRangesToDenseOp&lt; Context &gt;" shape="rect" coords="834,8120,1658,8144"/>
+<area href="classcaffe2_1_1_generate_proposals_op.html" alt="caffe2::GenerateProposalsOp&lt; Context &gt;" shape="rect" coords="834,8176,1658,8200"/>
+<area href="classcaffe2_1_1_g_ftrl_op.html" alt="caffe2::GFtrlOp&lt; T, Context &gt;" shape="rect" coords="834,8232,1658,8256"/>
+<area href="classcaffe2_1_1_glu_op.html" alt="caffe2::GluOp&lt; T, Context &gt;" shape="rect" coords="834,8288,1658,8312"/>
+<area href="classcaffe2_1_1_group_norm_gradient_op.html" alt="caffe2::GroupNormGradientOp&lt; T, Context &gt;" shape="rect" coords="834,8344,1658,8368"/>
+<area href="classcaffe2_1_1_group_norm_op.html" alt="caffe2::GroupNormOp&lt; T, Context &gt;" shape="rect" coords="834,8400,1658,8424"/>
+<area href="classcaffe2_1_1_group_spatial_softmax_gradient_op.html" alt="caffe2::GroupSpatialSoftmaxGradientOp&lt; T, Context &gt;" shape="rect" coords="834,8456,1658,8480"/>
+<area href="classcaffe2_1_1_group_spatial_softmax_op.html" alt="caffe2::GroupSpatialSoftmaxOp&lt; T, Context &gt;" shape="rect" coords="834,8512,1658,8536"/>
+<area href="classcaffe2_1_1_g_r_u_unit_gradient_op.html" alt="caffe2::GRUUnitGradientOp&lt; T, Context &gt;" shape="rect" coords="834,8568,1658,8592"/>
+<area href="classcaffe2_1_1_g_r_u_unit_op.html" alt="caffe2::GRUUnitOp&lt; T, Context &gt;" shape="rect" coords="834,8624,1658,8648"/>
+<area href="classcaffe2_1_1_half_to_float_op.html" alt="caffe2::HalfToFloatOp&lt; Context &gt;" shape="rect" coords="834,8680,1658,8704"/>
+<area href="classcaffe2_1_1_has_elements_op.html" alt="caffe2::HasElementsOp&lt; Context &gt;" shape="rect" coords="834,8736,1658,8760"/>
+<area href="classcaffe2_1_1_has_scope_op.html" alt="caffe2::HasScopeOp&lt; Context &gt;" shape="rect" coords="834,8792,1658,8816"/>
+<area href="classcaffe2_1_1_heatmap_max_keypoint_op.html" alt="caffe2::HeatmapMaxKeypointOp&lt; T, Context &gt;" shape="rect" coords="834,8848,1658,8872"/>
+<area href="classcaffe2_1_1_h_softmax_op_base.html" alt="caffe2::HSoftmaxOpBase&lt; T, Context &gt;" shape="rect" coords="834,8904,1658,8928"/>
+<area href="classcaffe2_1_1_huffman_tree_hierarchy_op.html" alt="caffe2::HuffmanTreeHierarchyOp&lt; T, Context &gt;" shape="rect" coords="834,8960,1658,8984"/>
+<area href="classcaffe2_1_1_if_op.html" alt="caffe2::IfOp&lt; Context &gt;" shape="rect" coords="834,9016,1658,9040"/>
+<area href="classcaffe2_1_1_im2_col_op.html" alt="caffe2::Im2ColOp&lt; T, Context &gt;" shape="rect" coords="834,9072,1658,9096"/>
+<area href="classcaffe2_1_1_index_hash_op.html" alt="caffe2::IndexHashOp&lt; Context &gt;" shape="rect" coords="834,9128,1658,9152"/>
+<area href="classcaffe2_1_1_instance_norm_gradient_op.html" alt="caffe2::InstanceNormGradientOp&lt; T, Context &gt;" shape="rect" coords="834,9184,1658,9208"/>
+<area href="classcaffe2_1_1_instance_norm_op.html" alt="caffe2::InstanceNormOp&lt; T, Context &gt;" shape="rect" coords="834,9240,1658,9264"/>
+<area href="classcaffe2_1_1_integral_image_gradient_op.html" alt="caffe2::IntegralImageGradientOp&lt; T, Context &gt;" shape="rect" coords="834,9296,1658,9320"/>
+<area href="classcaffe2_1_1_integral_image_op.html" alt="caffe2::IntegralImageOp&lt; T, Context &gt;" shape="rect" coords="834,9352,1658,9376"/>
+<area href="classcaffe2_1_1_is_empty_op.html" alt="caffe2::IsEmptyOp&lt; Context &gt;" shape="rect" coords="834,9408,1658,9432"/>
+<area href="classcaffe2_1_1_is_member_of_op.html" alt="caffe2::IsMemberOfOp&lt; Context &gt;" shape="rect" coords="834,9464,1658,9488"/>
+<area href="classcaffe2_1_1_is_nan_op.html" alt="caffe2::IsNanOp&lt; Context &gt;" shape="rect" coords="834,9520,1658,9544"/>
+<area href="classcaffe2_1_1_iter_op.html" alt="caffe2::IterOp&lt; Context &gt;" shape="rect" coords="834,9576,1658,9600"/>
+<area href="classcaffe2_1_1_key_split_op.html" alt="caffe2::KeySplitOp&lt; T, Context &gt;" shape="rect" coords="834,9632,1658,9656"/>
+<area href="classcaffe2_1_1_key_value_to_map_op.html" alt="caffe2::KeyValueToMapOp&lt; Context &gt;" shape="rect" coords="834,9688,1658,9712"/>
+<area href="classcaffe2_1_1_l1_distance_gradient_op.html" alt="caffe2::L1DistanceGradientOp&lt; T, Context &gt;" shape="rect" coords="834,9744,1658,9768"/>
+<area href="classcaffe2_1_1_l1_distance_op.html" alt="caffe2::L1DistanceOp&lt; T, Context &gt;" shape="rect" coords="834,9800,1658,9824"/>
+<area href="classcaffe2_1_1_label_cross_entropy_gradient_op.html" alt="caffe2::LabelCrossEntropyGradientOp&lt; T, Context &gt;" shape="rect" coords="834,9856,1658,9880"/>
+<area href="classcaffe2_1_1_label_cross_entropy_op.html" alt="caffe2::LabelCrossEntropyOp&lt; T, Context &gt;" shape="rect" coords="834,9912,1658,9936"/>
+<area href="classcaffe2_1_1_lambda_rank_ndcg_gradient_op.html" alt="caffe2::LambdaRankNdcgGradientOp&lt; T, Context &gt;" shape="rect" coords="834,9968,1658,9992"/>
+<area href="classcaffe2_1_1_lambda_rank_ndcg_op.html" alt="caffe2::LambdaRankNdcgOp&lt; T, Context &gt;" shape="rect" coords="834,10024,1658,10048"/>
+<area href="classcaffe2_1_1_lars_op.html" alt="caffe2::LarsOp&lt; T, Context &gt;" shape="rect" coords="834,10080,1658,10104"/>
+<area href="classcaffe2_1_1_layer_norm_gradient_op.html" alt="caffe2::LayerNormGradientOp&lt; Context &gt;" shape="rect" coords="834,10136,1658,10160"/>
+<area href="classcaffe2_1_1_layer_norm_op.html" alt="caffe2::LayerNormOp&lt; Context &gt;" shape="rect" coords="834,10192,1658,10216"/>
+<area href="classcaffe2_1_1_leaky_relu_gradient_op.html" alt="caffe2::LeakyReluGradientOp&lt; T, Context &gt;" shape="rect" coords="834,10248,1658,10272"/>
+<area href="classcaffe2_1_1_leaky_relu_op.html" alt="caffe2::LeakyReluOp&lt; T, Context &gt;" shape="rect" coords="834,10304,1658,10328"/>
+<area href="classcaffe2_1_1_learning_rate_adaption_op.html" alt="caffe2::LearningRateAdaptionOp&lt; T, Context &gt;" shape="rect" coords="834,10360,1658,10384"/>
+<area href="classcaffe2_1_1_learning_rate_op.html" alt="caffe2::LearningRateOp&lt; T, Context &gt;" shape="rect" coords="834,10416,1658,10440"/>
+<area href="classcaffe2_1_1_lengths_gather_op.html" alt="caffe2::LengthsGatherOp&lt; Context &gt;" shape="rect" coords="834,10472,1658,10496"/>
+<area href="classcaffe2_1_1_lengths_pad_op.html" alt="caffe2::LengthsPadOp&lt; Context &gt;" shape="rect" coords="834,10528,1658,10552"/>
+<area href="classcaffe2_1_1_lengths_range_fill_op.html" alt="caffe2::LengthsRangeFillOp&lt; Context &gt;" shape="rect" coords="834,10584,1658,10608"/>
+<area href="classcaffe2_1_1_lengths_split_op.html" alt="caffe2::LengthsSplitOp&lt; Context &gt;" shape="rect" coords="834,10640,1658,10664"/>
+<area href="classcaffe2_1_1_lengths_tile_op.html" alt="caffe2::LengthsTileOp&lt; Context &gt;" shape="rect" coords="834,10696,1658,10720"/>
+<area href="classcaffe2_1_1_lengths_top_k_gradient_op.html" alt="caffe2::LengthsTopKGradientOp&lt; T, Context &gt;" shape="rect" coords="834,10752,1658,10776"/>
+<area href="classcaffe2_1_1_lengths_top_k_op.html" alt="caffe2::LengthsTopKOp&lt; T, Context &gt;" shape="rect" coords="834,10808,1658,10832"/>
+<area href="classcaffe2_1_1_lengths_to_ranges_op.html" alt="caffe2::LengthsToRangesOp&lt; Context &gt;" shape="rect" coords="834,10864,1658,10888"/>
+<area href="classcaffe2_1_1_lengths_to_segment_ids_op.html" alt="caffe2::LengthsToSegmentIdsOp&lt; Context &gt;" shape="rect" coords="834,10920,1658,10944"/>
+<area href="classcaffe2_1_1_lengths_to_shape_op.html" alt="caffe2::LengthsToShapeOp&lt; Context &gt;" shape="rect" coords="834,10976,1658,11000"/>
+<area href="classcaffe2_1_1_lengths_to_weights_op.html" alt="caffe2::LengthsToWeightsOp&lt; Context &gt;" shape="rect" coords="834,11032,1658,11056"/>
+<area href="classcaffe2_1_1_load_op.html" alt="caffe2::LoadOp&lt; Context &gt;" shape="rect" coords="834,11088,1658,11112"/>
+<area href="classcaffe2_1_1_logit_gradient_op.html" alt="caffe2::LogitGradientOp&lt; T, Context &gt;" shape="rect" coords="834,11144,1658,11168"/>
+<area href="classcaffe2_1_1_lp_norm_gradient_op.html" alt="caffe2::LpNormGradientOp&lt; T, Context &gt;" shape="rect" coords="834,11200,1658,11224"/>
+<area href="classcaffe2_1_1_lp_norm_op.html" alt="caffe2::LpNormOp&lt; T, Context &gt;" shape="rect" coords="834,11256,1658,11280"/>
+<area href="classcaffe2_1_1_l_r_n_op_base.html" alt="caffe2::LRNOpBase&lt; T, Context &gt;" shape="rect" coords="834,11312,1658,11336"/>
+<area href="classcaffe2_1_1_l_s_t_m_unit_gradient_op.html" alt="caffe2::LSTMUnitGradientOp&lt; Context &gt;" shape="rect" coords="834,11368,1658,11392"/>
+<area href="classcaffe2_1_1_l_s_t_m_unit_op.html" alt="caffe2::LSTMUnitOp&lt; Context &gt;" shape="rect" coords="834,11424,1658,11448"/>
+<area href="classcaffe2_1_1_make_two_class_gradient_op.html" alt="caffe2::MakeTwoClassGradientOp&lt; T, Context &gt;" shape="rect" coords="834,11480,1658,11504"/>
+<area href="classcaffe2_1_1_make_two_class_op.html" alt="caffe2::MakeTwoClassOp&lt; T, Context &gt;" shape="rect" coords="834,11536,1658,11560"/>
+<area href="classcaffe2_1_1_map_to_key_value_op.html" alt="caffe2::MapToKeyValueOp&lt; Context &gt;" shape="rect" coords="834,11592,1658,11616"/>
+<area href="classcaffe2_1_1_margin_ranking_criterion_gradient_op.html" alt="caffe2::MarginRankingCriterionGradientOp&lt; Context &gt;" shape="rect" coords="834,11648,1658,11672"/>
+<area href="classcaffe2_1_1_margin_ranking_criterion_op.html" alt="caffe2::MarginRankingCriterionOp&lt; Context &gt;" shape="rect" coords="834,11704,1658,11728"/>
+<area href="classcaffe2_1_1_mat_mul_op.html" alt="caffe2::MatMulOp&lt; T, Context, Engine &gt;" shape="rect" coords="834,11760,1658,11784"/>
+<area href="classcaffe2_1_1_max_op.html" alt="caffe2::MaxOp&lt; T, Context &gt;" shape="rect" coords="834,11816,1658,11840"/>
+<area href="classcaffe2_1_1_max_reduce_dims_gradient_op.html" alt="caffe2::MaxReduceDimsGradientOp&lt; T, Context, FIRSTDIMS &gt;" shape="rect" coords="834,11872,1658,11896"/>
+<area href="classcaffe2_1_1_max_reduce_dims_op.html" alt="caffe2::MaxReduceDimsOp&lt; T, Context, FIRSTDIMS &gt;" shape="rect" coords="834,11928,1658,11952"/>
+<area href="classcaffe2_1_1_max_reduction_gradient_op.html" alt="caffe2::MaxReductionGradientOp&lt; T, Context, ROWWISE &gt;" shape="rect" coords="834,11984,1658,12008"/>
+<area href="classcaffe2_1_1_max_reduction_op.html" alt="caffe2::MaxReductionOp&lt; T, Context, ROWWISE &gt;" shape="rect" coords="834,12040,1658,12064"/>
+<area href="classcaffe2_1_1_mean_gradient_op.html" alt="caffe2::MeanGradientOp&lt; Context &gt;" shape="rect" coords="834,12096,1658,12120"/>
+<area href="classcaffe2_1_1_mean_op.html" alt="caffe2::MeanOp&lt; Context &gt;" shape="rect" coords="834,12152,1658,12176"/>
+<area href="classcaffe2_1_1_merge_dim_op.html" alt="caffe2::MergeDimOp&lt; Context &gt;" shape="rect" coords="834,12208,1658,12232"/>
+<area href="classcaffe2_1_1_merge_id_lists_op.html" alt="caffe2::MergeIdListsOp&lt; Context &gt;" shape="rect" coords="834,12264,1658,12288"/>
+<area href="classcaffe2_1_1_merge_multi_list_feature_tensors_op.html" alt="caffe2::MergeMultiListFeatureTensorsOp&lt; Context &gt;" shape="rect" coords="834,12320,1658,12344"/>
+<area href="classcaffe2_1_1_merge_multi_list_or_map_feature_tensors_gradient_op.html" alt="caffe2::MergeMultiListOrMapFeatureTensorsGradientOp&lt; Context &gt;" shape="rect" coords="834,12376,1658,12400"/>
+<area href="classcaffe2_1_1_merge_multi_map_feature_tensors_op.html" alt="caffe2::MergeMultiMapFeatureTensorsOp&lt; Context &gt;" shape="rect" coords="834,12432,1658,12456"/>
+<area href="classcaffe2_1_1_merge_multi_scalar_feature_tensors_gradient_op.html" alt="caffe2::MergeMultiScalarFeatureTensorsGradientOp&lt; Context &gt;" shape="rect" coords="834,12488,1658,12512"/>
+<area href="classcaffe2_1_1_merge_multi_scalar_feature_tensors_op.html" alt="caffe2::MergeMultiScalarFeatureTensorsOp&lt; Context &gt;" shape="rect" coords="834,12544,1658,12568"/>
+<area href="classcaffe2_1_1_merge_single_list_feature_tensors_op.html" alt="caffe2::MergeSingleListFeatureTensorsOp&lt; Context &gt;" shape="rect" coords="834,12600,1658,12624"/>
+<area href="classcaffe2_1_1_merge_single_list_or_map_feature_tensors_gradient_op.html" alt="caffe2::MergeSingleListOrMapFeatureTensorsGradientOp&lt; Context &gt;" shape="rect" coords="834,12656,1658,12680"/>
+<area href="classcaffe2_1_1_merge_single_map_feature_tensors_op.html" alt="caffe2::MergeSingleMapFeatureTensorsOp&lt; Context &gt;" shape="rect" coords="834,12712,1658,12736"/>
+<area href="classcaffe2_1_1_merge_single_scalar_feature_tensors_gradient_op.html" alt="caffe2::MergeSingleScalarFeatureTensorsGradientOp&lt; Context &gt;" shape="rect" coords="834,12768,1658,12792"/>
+<area href="classcaffe2_1_1_merge_single_scalar_feature_tensors_op.html" alt="caffe2::MergeSingleScalarFeatureTensorsOp&lt; Context &gt;" shape="rect" coords="834,12824,1658,12848"/>
+<area href="classcaffe2_1_1_min_op.html" alt="caffe2::MinOp&lt; T, Context &gt;" shape="rect" coords="834,12880,1658,12904"/>
+<area href="classcaffe2_1_1_mod_op.html" alt="caffe2::ModOp&lt; Context &gt;" shape="rect" coords="834,12936,1658,12960"/>
+<area href="classcaffe2_1_1_moments_gradient_op.html" alt="caffe2::MomentsGradientOp&lt; T, Context &gt;" shape="rect" coords="834,12992,1658,13016"/>
+<area href="classcaffe2_1_1_moments_op.html" alt="caffe2::MomentsOp&lt; T, Context &gt;" shape="rect" coords="834,13048,1658,13072"/>
+<area href="classcaffe2_1_1_momentum_s_g_d_op.html" alt="caffe2::MomentumSGDOp&lt; T, Context &gt;" shape="rect" coords="834,13104,1658,13128"/>
+<area href="classcaffe2_1_1_momentum_s_g_d_update_op.html" alt="caffe2::MomentumSGDUpdateOp&lt; T, Context &gt;" shape="rect" coords="834,13160,1658,13184"/>
+<area href="classcaffe2_1_1_multi_class_accuracy_op.html" alt="caffe2::MultiClassAccuracyOp&lt; T, Context &gt;" shape="rect" coords="834,13216,1658,13240"/>
+<area href="classcaffe2_1_1_nan_check_op.html" alt="caffe2::NanCheckOp&lt; Context &gt;" shape="rect" coords="834,13272,1658,13296"/>
+<area href="classcaffe2_1_1_n_c_h_w2_n_h_w_c_op.html" alt="caffe2::NCHW2NHWCOp&lt; T, Context &gt;" shape="rect" coords="834,13328,1658,13352"/>
+<area href="classcaffe2_1_1_negate_gradient_op.html" alt="caffe2::NegateGradientOp&lt; Context &gt;" shape="rect" coords="834,13384,1658,13408"/>
+<area href="classcaffe2_1_1_n_gram_from_categorical_op.html" alt="caffe2::NGramFromCategoricalOp&lt; F, T, Context &gt;" shape="rect" coords="834,13440,1658,13464"/>
+<area href="classcaffe2_1_1_n_h_w_c2_n_c_h_w_op.html" alt="caffe2::NHWC2NCHWOp&lt; T, Context &gt;" shape="rect" coords="834,13496,1658,13520"/>
+<area href="classcaffe2_1_1_no_default_engine_op.html" title="A helper class to denote that an op does not have a default engine. " alt="caffe2::NoDefaultEngineOp&lt; Context &gt;" shape="rect" coords="834,13552,1658,13576"/>
+<area href="classcaffe2_1_1_normalize_gradient_op.html" alt="caffe2::NormalizeGradientOp&lt; T, Context &gt;" shape="rect" coords="834,13608,1658,13632"/>
+<area href="classcaffe2_1_1_normalize_l1_op.html" alt="caffe2::NormalizeL1Op&lt; T, Context &gt;" shape="rect" coords="834,13664,1658,13688"/>
+<area href="classcaffe2_1_1_normalize_op.html" alt="caffe2::NormalizeOp&lt; T, Context &gt;" shape="rect" coords="834,13720,1658,13744"/>
+<area href="classcaffe2_1_1_numpy_tile_op.html" alt="caffe2::NumpyTileOp&lt; Context &gt;" shape="rect" coords="834,13776,1658,13800"/>
+<area href="classcaffe2_1_1_one_hot_op.html" alt="caffe2::OneHotOp&lt; Context &gt;" shape="rect" coords="834,13832,1658,13856"/>
+<area href="classcaffe2_1_1_onnxifi_op.html" alt="caffe2::OnnxifiOp&lt; T, Context &gt;" shape="rect" coords="834,13888,1658,13912"/>
+<area href="classcaffe2_1_1_o_n_n_x_while_op.html" alt="caffe2::ONNXWhileOp&lt; Context &gt;" shape="rect" coords="834,13944,1658,13968"/>
+<area href="classcaffe2_1_1_pack_r_n_n_sequence_op_base.html" alt="caffe2::PackRNNSequenceOpBase&lt; Context, Forward &gt;" shape="rect" coords="834,14000,1658,14024"/>
+<area href="classcaffe2_1_1_pack_segments_op.html" alt="caffe2::PackSegmentsOp&lt; Context &gt;" shape="rect" coords="834,14056,1658,14080"/>
+<area href="classcaffe2_1_1_pad_empty_samples_op.html" alt="caffe2::PadEmptySamplesOp&lt; Context &gt;" shape="rect" coords="834,14112,1658,14136"/>
+<area href="classcaffe2_1_1_pair_wise_loss_gradient_op.html" alt="caffe2::PairWiseLossGradientOp&lt; T, Context &gt;" shape="rect" coords="834,14168,1658,14192"/>
+<area href="classcaffe2_1_1_pair_wise_loss_op.html" alt="caffe2::PairWiseLossOp&lt; T, Context &gt;" shape="rect" coords="834,14224,1658,14248"/>
+<area href="classcaffe2_1_1_percentile_op.html" alt="caffe2::PercentileOp&lt; Context &gt;" shape="rect" coords="834,14280,1658,14304"/>
+<area href="classcaffe2_1_1_perplexity_op.html" alt="caffe2::PerplexityOp&lt; T, Context &gt;" shape="rect" coords="834,14336,1658,14360"/>
+<area href="classcaffe2_1_1_piecewise_linear_transform_op.html" alt="caffe2::PiecewiseLinearTransformOp&lt; T, Context &gt;" shape="rect" coords="834,14392,1658,14416"/>
+<area href="classcaffe2_1_1_pow_op.html" alt="caffe2::PowOp&lt; InputTypes, Context, Functor, TypeMap &gt;" shape="rect" coords="834,14448,1658,14472"/>
+<area href="classcaffe2_1_1_p_relu_gradient_op.html" alt="caffe2::PReluGradientOp&lt; T, Context &gt;" shape="rect" coords="834,14504,1658,14528"/>
+<area href="classcaffe2_1_1_p_relu_op.html" alt="caffe2::PReluOp&lt; T, Context &gt;" shape="rect" coords="834,14560,1658,14584"/>
+<area href="classcaffe2_1_1_prepend_dim_op.html" alt="caffe2::PrependDimOp&lt; Context &gt;" shape="rect" coords="834,14616,1658,14640"/>
+<area href="classcaffe2_1_1_print_op.html" alt="caffe2::PrintOp&lt; Context &gt;" shape="rect" coords="834,14672,1658,14696"/>
+<area href="classcaffe2_1_1_p_s_ro_i_pool_gradient_op.html" alt="caffe2::PSRoIPoolGradientOp&lt; T, Context &gt;" shape="rect" coords="834,14728,1658,14752"/>
+<area href="classcaffe2_1_1_p_s_ro_i_pool_op.html" alt="caffe2::PSRoIPoolOp&lt; T, Context &gt;" shape="rect" coords="834,14784,1658,14808"/>
+<area href="classcaffe2_1_1_range_op.html" alt="caffe2::RangeOp&lt; Context &gt;" shape="rect" coords="834,14840,1658,14864"/>
+<area href="classcaffe2_1_1_recurrent_network_blob_fetcher_op.html" alt="caffe2::RecurrentNetworkBlobFetcherOp&lt; Context &gt;" shape="rect" coords="834,14896,1658,14920"/>
+<area href="classcaffe2_1_1_recurrent_network_gradient_op.html" alt="caffe2::RecurrentNetworkGradientOp&lt; Context &gt;" shape="rect" coords="834,14952,1658,14976"/>
+<area href="classcaffe2_1_1_recurrent_network_op.html" alt="caffe2::RecurrentNetworkOp&lt; Context &gt;" shape="rect" coords="834,15008,1658,15032"/>
+<area href="classcaffe2_1_1_redis_store_handler_create_op.html" alt="caffe2::RedisStoreHandlerCreateOp&lt; Context &gt;" shape="rect" coords="834,15064,1658,15088"/>
+<area href="classcaffe2_1_1_reduce_gradient_op.html" alt="caffe2::ReduceGradientOp&lt; InputTypes, Context, Reducer &gt;" shape="rect" coords="834,15120,1658,15144"/>
+<area href="classcaffe2_1_1_reduce_op.html" alt="caffe2::ReduceOp&lt; InputTypes, Context, Reducer &gt;" shape="rect" coords="834,15176,1658,15200"/>
+<area href="classcaffe2_1_1_reduce_tail_sum_op.html" alt="caffe2::ReduceTailSumOp&lt; T, Context &gt;" shape="rect" coords="834,15232,1658,15256"/>
+<area href="classcaffe2_1_1_remove_data_blocks_op.html" alt="caffe2::RemoveDataBlocksOp&lt; Context &gt;" shape="rect" coords="834,15288,1658,15312"/>
+<area href="classcaffe2_1_1_remove_padding_op.html" alt="caffe2::RemovePaddingOp&lt; Context &gt;" shape="rect" coords="834,15344,1658,15368"/>
+<area href="classcaffe2_1_1_replace_na_n_op.html" alt="caffe2::ReplaceNaNOp&lt; Context &gt;" shape="rect" coords="834,15400,1658,15424"/>
+<area href="classcaffe2_1_1_reset_counter_op.html" alt="caffe2::ResetCounterOp&lt; T, Context &gt;" shape="rect" coords="834,15456,1658,15480"/>
+<area href="classcaffe2_1_1_reshape_op.html" alt="caffe2::ReshapeOp&lt; F, Context &gt;" shape="rect" coords="834,15512,1658,15536"/>
+<area href="classcaffe2_1_1_resize_like_op.html" alt="caffe2::ResizeLikeOp&lt; Context &gt;" shape="rect" coords="834,15568,1658,15592"/>
+<area href="classcaffe2_1_1_resize_nearest_gradient_op.html" alt="caffe2::ResizeNearestGradientOp&lt; T, Context &gt;" shape="rect" coords="834,15624,1658,15648"/>
+<area href="classcaffe2_1_1_resize_nearest_op.html" alt="caffe2::ResizeNearestOp&lt; T, Context &gt;" shape="rect" coords="834,15680,1658,15704"/>
+<area href="classcaffe2_1_1_retrieve_count_op.html" alt="caffe2::RetrieveCountOp&lt; T, Context &gt;" shape="rect" coords="834,15736,1658,15760"/>
+<area href="classcaffe2_1_1_reverse_packed_segs_op.html" alt="caffe2::ReversePackedSegsOp&lt; Context &gt;" shape="rect" coords="834,15792,1658,15816"/>
+<area href="classcaffe2_1_1_r_m_a_c_regions_op.html" alt="caffe2::RMACRegionsOp&lt; Context &gt;" shape="rect" coords="834,15848,1658,15872"/>
+<area href="classcaffe2_1_1_rms_prop_op.html" alt="caffe2::RmsPropOp&lt; T, Context &gt;" shape="rect" coords="834,15904,1658,15928"/>
+<area href="classcaffe2_1_1_r_n_n_apply_link_op.html" alt="caffe2::RNNApplyLinkOp&lt; Context &gt;" shape="rect" coords="834,15960,1658,15984"/>
+<area href="classcaffe2_1_1_ro_i_align_gradient_op.html" alt="caffe2::RoIAlignGradientOp&lt; T, Context &gt;" shape="rect" coords="834,16016,1658,16040"/>
+<area href="classcaffe2_1_1_ro_i_align_op.html" alt="caffe2::RoIAlignOp&lt; T, Context &gt;" shape="rect" coords="834,16072,1658,16096"/>
+<area href="classcaffe2_1_1_ro_i_align_rotated_gradient_op.html" alt="caffe2::RoIAlignRotatedGradientOp&lt; T, Context &gt;" shape="rect" coords="834,16128,1658,16152"/>
+<area href="classcaffe2_1_1_ro_i_align_rotated_op.html" alt="caffe2::RoIAlignRotatedOp&lt; T, Context &gt;" shape="rect" coords="834,16184,1658,16208"/>
+<area href="classcaffe2_1_1_ro_i_pool_f_gradient_op.html" alt="caffe2::RoIPoolFGradientOp&lt; T, Context &gt;" shape="rect" coords="834,16240,1658,16264"/>
+<area href="classcaffe2_1_1_ro_i_pool_f_op.html" alt="caffe2::RoIPoolFOp&lt; T, Context &gt;" shape="rect" coords="834,16296,1658,16320"/>
+<area href="classcaffe2_1_1_ro_i_pool_gradient_op.html" alt="caffe2::RoIPoolGradientOp&lt; T, Context &gt;" shape="rect" coords="834,16352,1658,16376"/>
+<area href="classcaffe2_1_1_ro_i_pool_op.html" alt="caffe2::RoIPoolOp&lt; T, Context &gt;" shape="rect" coords="834,16408,1658,16432"/>
+<area href="classcaffe2_1_1_row_mul_op.html" alt="caffe2::RowMulOp&lt; T, Context &gt;" shape="rect" coords="834,16464,1658,16488"/>
+<area href="classcaffe2_1_1_rowwise8_bit_quantized_to_float_op.html" alt="caffe2::Rowwise8BitQuantizedToFloatOp&lt; Context &gt;" shape="rect" coords="834,16520,1658,16544"/>
+<area href="classcaffe2_1_1_row_wise_sparse_adagrad_op.html" alt="caffe2::RowWiseSparseAdagradOp&lt; T, Context &gt;" shape="rect" coords="834,16576,1658,16600"/>
+<area href="classcaffe2_1_1_row_wise_sparse_adam_op.html" alt="caffe2::RowWiseSparseAdamOp&lt; T, Context &gt;" shape="rect" coords="834,16632,1658,16656"/>
+<area href="classcaffe2_1_1_safe_dequeue_blobs_op.html" alt="caffe2::SafeDequeueBlobsOp&lt; Context &gt;" shape="rect" coords="834,16688,1658,16712"/>
+<area href="classcaffe2_1_1_safe_enqueue_blobs_op.html" alt="caffe2::SafeEnqueueBlobsOp&lt; Context &gt;" shape="rect" coords="834,16744,1658,16768"/>
+<area href="classcaffe2_1_1_sample_as_gradient_op.html" alt="caffe2::SampleAsGradientOp&lt; T, Context &gt;" shape="rect" coords="834,16800,1658,16824"/>
+<area href="classcaffe2_1_1_sample_as_op.html" alt="caffe2::SampleAsOp&lt; T, Context &gt;" shape="rect" coords="834,16856,1658,16880"/>
+<area href="classcaffe2_1_1_save_op.html" alt="caffe2::SaveOp&lt; Context &gt;" shape="rect" coords="834,16912,1658,16936"/>
+<area href="classcaffe2_1_1_scale_op.html" alt="caffe2::ScaleOp&lt; Context &gt;" shape="rect" coords="834,16968,1658,16992"/>
+<area href="classcaffe2_1_1_scatter_assign_op.html" title="Update slices of the tensor in-place by overriding. " alt="caffe2::ScatterAssignOp&lt; Context &gt;" shape="rect" coords="834,17024,1658,17048"/>
+<area href="classcaffe2_1_1_scatter_weighted_sum_op.html" title="Update slices of the tensor in-place with weighted sum. " alt="caffe2::ScatterWeightedSumOp&lt; T, Context &gt;" shape="rect" coords="834,17080,1658,17104"/>
+<area href="classcaffe2_1_1_segment_ids_to_lengths_op.html" alt="caffe2::SegmentIdsToLengthsOp&lt; Context &gt;" shape="rect" coords="834,17136,1658,17160"/>
+<area href="classcaffe2_1_1_segment_ids_to_ranges_op.html" alt="caffe2::SegmentIdsToRangesOp&lt; Context &gt;" shape="rect" coords="834,17192,1658,17216"/>
+<area href="classcaffe2_1_1_select_gradient_op_base.html" alt="caffe2::SelectGradientOpBase&lt; T, Context &gt;" shape="rect" coords="834,17248,1658,17272"/>
+<area href="classcaffe2_1_1_select_smooth_l1_loss_gradient_op.html" alt="caffe2::SelectSmoothL1LossGradientOp&lt; T, Context &gt;" shape="rect" coords="834,17304,1658,17328"/>
+<area href="classcaffe2_1_1_select_smooth_l1_loss_op.html" alt="caffe2::SelectSmoothL1LossOp&lt; T, Context &gt;" shape="rect" coords="834,17360,1658,17384"/>
+<area href="classcaffe2_1_1_selu_gradient_op.html" alt="caffe2::SeluGradientOp&lt; T, Context &gt;" shape="rect" coords="834,17416,1658,17440"/>
+<area href="classcaffe2_1_1_selu_op.html" alt="caffe2::SeluOp&lt; T, Context &gt;" shape="rect" coords="834,17472,1658,17496"/>
+<area href="classcaffe2_1_1_sequence_mask_op.html" alt="caffe2::SequenceMaskOp&lt; Context &gt;" shape="rect" coords="834,17528,1658,17552"/>
+<area href="classcaffe2_1_1_shape_op.html" alt="caffe2::ShapeOp&lt; Context &gt;" shape="rect" coords="834,17584,1658,17608"/>
+<area href="classcaffe2_1_1_sigmoid_cross_entropy_loss_gradient_op.html" alt="caffe2::SigmoidCrossEntropyLossGradientOp&lt; T, Context &gt;" shape="rect" coords="834,17640,1658,17664"/>
+<area href="classcaffe2_1_1_sigmoid_cross_entropy_loss_op.html" alt="caffe2::SigmoidCrossEntropyLossOp&lt; T, Context &gt;" shape="rect" coords="834,17696,1658,17720"/>
+<area href="classcaffe2_1_1_sigmoid_cross_entropy_with_logits_gradient_op.html" alt="caffe2::SigmoidCrossEntropyWithLogitsGradientOp&lt; T, Context &gt;" shape="rect" coords="834,17752,1658,17776"/>
+<area href="classcaffe2_1_1_sigmoid_cross_entropy_with_logits_op.html" alt="caffe2::SigmoidCrossEntropyWithLogitsOp&lt; T, Context &gt;" shape="rect" coords="834,17808,1658,17832"/>
+<area href="classcaffe2_1_1_sigmoid_focal_loss_gradient_op.html" alt="caffe2::SigmoidFocalLossGradientOp&lt; T, Context &gt;" shape="rect" coords="834,17864,1658,17888"/>
+<area href="classcaffe2_1_1_sigmoid_focal_loss_op.html" alt="caffe2::SigmoidFocalLossOp&lt; T, Context &gt;" shape="rect" coords="834,17920,1658,17944"/>
+<area href="classcaffe2_1_1_sinusoid_position_encoding_op.html" alt="caffe2::SinusoidPositionEncodingOp&lt; Context &gt;" shape="rect" coords="834,17976,1658,18000"/>
+<area href="classcaffe2_1_1_size_op.html" alt="caffe2::SizeOp&lt; Context &gt;" shape="rect" coords="834,18032,1658,18056"/>
+<area href="classcaffe2_1_1_slice_gradient_op.html" alt="caffe2::SliceGradientOp&lt; Context &gt;" shape="rect" coords="834,18088,1658,18112"/>
+<area href="classcaffe2_1_1_slice_op.html" alt="caffe2::SliceOp&lt; Context &gt;" shape="rect" coords="834,18144,1658,18168"/>
+<area href="classcaffe2_1_1_smooth_l1_loss_gradient_op.html" alt="caffe2::SmoothL1LossGradientOp&lt; T, Context &gt;" shape="rect" coords="834,18200,1658,18224"/>
+<area href="classcaffe2_1_1_smooth_l1_loss_op.html" alt="caffe2::SmoothL1LossOp&lt; T, Context &gt;" shape="rect" coords="834,18256,1658,18280"/>
+<area href="classcaffe2_1_1_softmax_focal_loss_gradient_op.html" alt="caffe2::SoftmaxFocalLossGradientOp&lt; T, Context &gt;" shape="rect" coords="834,18312,1658,18336"/>
+<area href="classcaffe2_1_1_softmax_focal_loss_op.html" alt="caffe2::SoftmaxFocalLossOp&lt; T, Context &gt;" shape="rect" coords="834,18368,1658,18392"/>
+<area href="classcaffe2_1_1_softmax_gradient_op.html" alt="caffe2::SoftmaxGradientOp&lt; T, Context &gt;" shape="rect" coords="834,18424,1658,18448"/>
+<area href="classcaffe2_1_1_softmax_op.html" alt="caffe2::SoftmaxOp&lt; T, Context &gt;" shape="rect" coords="834,18480,1658,18504"/>
+<area href="classcaffe2_1_1_softmax_with_loss_gradient_op.html" alt="caffe2::SoftmaxWithLossGradientOp&lt; T, Context &gt;" shape="rect" coords="834,18536,1658,18560"/>
+<area href="classcaffe2_1_1_softmax_with_loss_op.html" alt="caffe2::SoftmaxWithLossOp&lt; T, Context &gt;" shape="rect" coords="834,18592,1658,18616"/>
+<area href="classcaffe2_1_1_softplus_gradient_op.html" alt="caffe2::SoftplusGradientOp&lt; T, Context &gt;" shape="rect" coords="834,18648,1658,18672"/>
+<area href="classcaffe2_1_1_softplus_op.html" alt="caffe2::SoftplusOp&lt; T, Context &gt;" shape="rect" coords="834,18704,1658,18728"/>
+<area href="classcaffe2_1_1_space_batch_op_base.html" alt="caffe2::SpaceBatchOpBase&lt; Context &gt;" shape="rect" coords="834,18760,1658,18784"/>
+<area href="classcaffe2_1_1_sparse_adadelta_op.html" alt="caffe2::SparseAdadeltaOp&lt; Context &gt;" shape="rect" coords="834,18816,1658,18840"/>
+<area href="classcaffe2_1_1_sparse_adagrad_op.html" alt="caffe2::SparseAdagradOp&lt; T, Context &gt;" shape="rect" coords="834,18872,1658,18896"/>
+<area href="classcaffe2_1_1_sparse_adam_op.html" alt="caffe2::SparseAdamOp&lt; T, Context &gt;" shape="rect" coords="834,18928,1658,18952"/>
+<area href="classcaffe2_1_1_sparse_fun_hash_gradient_op.html" alt="caffe2::SparseFunHashGradientOp&lt; T, Context &gt;" shape="rect" coords="834,18984,1658,19008"/>
+<area href="classcaffe2_1_1_sparse_fun_hash_op.html" alt="caffe2::SparseFunHashOp&lt; T, Context &gt;" shape="rect" coords="834,19040,1658,19064"/>
+<area href="classcaffe2_1_1_sparse_lengths8_bits_rowwise_op.html" alt="caffe2::SparseLengths8BitsRowwiseOp&lt; Context, USE_WEIGHTS, USE_MEAN, OutDataT &gt;" shape="rect" coords="834,19096,1658,19120"/>
+<area href="classcaffe2_1_1_sparse_lengths_fused8_bit_rowwise_op.html" alt="caffe2::SparseLengthsFused8BitRowwiseOp&lt; Context, with_weights, is_mean &gt;" shape="rect" coords="834,19152,1658,19176"/>
+<area href="classcaffe2_1_1_sparse_matrix_reshape_op.html" alt="caffe2::SparseMatrixReshapeOp&lt; Context &gt;" shape="rect" coords="834,19208,1658,19232"/>
+<area href="classcaffe2_1_1_sparse_momentum_s_g_d_update_op.html" alt="caffe2::SparseMomentumSGDUpdateOp&lt; T, Context &gt;" shape="rect" coords="834,19264,1658,19288"/>
+<area href="classcaffe2_1_1_sparse_normalize_op.html" alt="caffe2::SparseNormalizeOp&lt; T, Context &gt;" shape="rect" coords="834,19320,1658,19344"/>
+<area href="classcaffe2_1_1_sparse_to_dense_mask_base.html" alt="caffe2::SparseToDenseMaskBase&lt; Context &gt;" shape="rect" coords="834,19376,1658,19400"/>
+<area href="classcaffe2_1_1_sparse_to_dense_op.html" alt="caffe2::SparseToDenseOp&lt; Context &gt;" shape="rect" coords="834,19432,1658,19456"/>
+<area href="classcaffe2_1_1_sparse_wngrad_op.html" alt="caffe2::SparseWngradOp&lt; T, Context &gt;" shape="rect" coords="834,19488,1658,19512"/>
+<area href="classcaffe2_1_1_spatial_b_n_gradient_op.html" alt="caffe2::SpatialBNGradientOp&lt; Context &gt;" shape="rect" coords="834,19544,1658,19568"/>
+<area href="classcaffe2_1_1_spatial_b_n_op.html" alt="caffe2::SpatialBNOp&lt; Context &gt;" shape="rect" coords="834,19600,1658,19624"/>
+<area href="classcaffe2_1_1_spatial_narrow_as_gradient_op.html" alt="caffe2::SpatialNarrowAsGradientOp&lt; Context &gt;" shape="rect" coords="834,19656,1658,19680"/>
+<area href="classcaffe2_1_1_spatial_narrow_as_op.html" alt="caffe2::SpatialNarrowAsOp&lt; Context &gt;" shape="rect" coords="834,19712,1658,19736"/>
+<area href="classcaffe2_1_1_spatial_softmax_with_loss_gradient_op.html" alt="caffe2::SpatialSoftmaxWithLossGradientOp&lt; T, Context &gt;" shape="rect" coords="834,19768,1658,19792"/>
+<area href="classcaffe2_1_1_spatial_softmax_with_loss_op.html" alt="caffe2::SpatialSoftmaxWithLossOp&lt; T, Context &gt;" shape="rect" coords="834,19824,1658,19848"/>
+<area href="classcaffe2_1_1_split_by_lengths_op.html" alt="caffe2::SplitByLengthsOp&lt; Context &gt;" shape="rect" coords="834,19880,1658,19904"/>
+<area href="classcaffe2_1_1_split_op.html" alt="caffe2::SplitOp&lt; Context &gt;" shape="rect" coords="834,19936,1658,19960"/>
+<area href="classcaffe2_1_1_squared_l2_distance_gradient_op.html" alt="caffe2::SquaredL2DistanceGradientOp&lt; T, Context &gt;" shape="rect" coords="834,19992,1658,20016"/>
+<area href="classcaffe2_1_1_squared_l2_distance_op.html" alt="caffe2::SquaredL2DistanceOp&lt; T, Context &gt;" shape="rect" coords="834,20048,1658,20072"/>
+<area href="classcaffe2_1_1_square_root_divide_op.html" alt="caffe2::SquareRootDivideOp&lt; Context &gt;" shape="rect" coords="834,20104,1658,20128"/>
+<area href="classcaffe2_1_1_squeeze_op.html" alt="caffe2::SqueezeOp&lt; Context &gt;" shape="rect" coords="834,20160,1658,20184"/>
+<area href="classcaffe2_1_1_stop_gradient_op.html" alt="caffe2::StopGradientOp&lt; Context &gt;" shape="rect" coords="834,20216,1658,20240"/>
+<area href="classcaffe2_1_1_string_join_op.html" alt="caffe2::StringJoinOp&lt; Context &gt;" shape="rect" coords="834,20272,1658,20296"/>
+<area href="classcaffe2_1_1_stump_func_index_op.html" alt="caffe2::StumpFuncIndexOp&lt; TIN, TOUT, Context &gt;" shape="rect" coords="834,20328,1658,20352"/>
+<area href="classcaffe2_1_1_stump_func_op.html" alt="caffe2::StumpFuncOp&lt; TIN, TOUT, Context &gt;" shape="rect" coords="834,20384,1658,20408"/>
+<area href="classcaffe2_1_1_sum_elements_gradient_op.html" alt="caffe2::SumElementsGradientOp&lt; T, Context &gt;" shape="rect" coords="834,20440,1658,20464"/>
+<area href="classcaffe2_1_1_sum_elements_int_op.html" alt="caffe2::SumElementsIntOp&lt; T, Context &gt;" shape="rect" coords="834,20496,1658,20520"/>
+<area href="classcaffe2_1_1_sum_elements_op.html" alt="caffe2::SumElementsOp&lt; T, Context &gt;" shape="rect" coords="834,20552,1658,20576"/>
+<area href="classcaffe2_1_1_summarize_op.html" alt="caffe2::SummarizeOp&lt; T, Context &gt;" shape="rect" coords="834,20608,1658,20632"/>
+<area href="classcaffe2_1_1_sum_op.html" alt="caffe2::SumOp&lt; Context &gt;" shape="rect" coords="834,20664,1658,20688"/>
+<area href="classcaffe2_1_1_sum_reduce_dims_gradient_op.html" alt="caffe2::SumReduceDimsGradientOp&lt; Context, FIRSTDIMS, NORMALIZE &gt;" shape="rect" coords="834,20720,1658,20744"/>
+<area href="classcaffe2_1_1_sum_reduce_dims_op.html" alt="caffe2::SumReduceDimsOp&lt; Context, FIRSTDIMS, NORMALIZE &gt;" shape="rect" coords="834,20776,1658,20800"/>
+<area href="classcaffe2_1_1_sum_reduce_like_op.html" alt="caffe2::SumReduceLikeOp&lt; Context &gt;" shape="rect" coords="834,20832,1658,20856"/>
+<area href="classcaffe2_1_1_sum_sqr_elements_op.html" alt="caffe2::SumSqrElementsOp&lt; Context &gt;" shape="rect" coords="834,20888,1658,20912"/>
+<area href="classcaffe2_1_1_swish_gradient_op.html" alt="caffe2::SwishGradientOp&lt; Context &gt;" shape="rect" coords="834,20944,1658,20968"/>
+<area href="classcaffe2_1_1_thresholded_relu_gradient_op.html" alt="caffe2::ThresholdedReluGradientOp&lt; T, Context &gt;" shape="rect" coords="834,21000,1658,21024"/>
+<area href="classcaffe2_1_1_thresholded_relu_op.html" alt="caffe2::ThresholdedReluOp&lt; T, Context &gt;" shape="rect" coords="834,21056,1658,21080"/>
+<area href="classcaffe2_1_1_tile_gradient_op.html" alt="caffe2::TileGradientOp&lt; Context &gt;" shape="rect" coords="834,21112,1658,21136"/>
+<area href="classcaffe2_1_1_tile_op.html" alt="caffe2::TileOp&lt; Context &gt;" shape="rect" coords="834,21168,1658,21192"/>
+<area href="classcaffe2_1_1_top_k_gradient_op.html" alt="caffe2::TopKGradientOp&lt; T, Context &gt;" shape="rect" coords="834,21224,1658,21248"/>
+<area href="classcaffe2_1_1_top_k_op.html" alt="caffe2::TopKOp&lt; T, Context &gt;" shape="rect" coords="834,21280,1658,21304"/>
+<area href="classcaffe2_1_1_transpose_op.html" alt="caffe2::TransposeOp&lt; Context &gt;" shape="rect" coords="834,21336,1658,21360"/>
+<area href="classcaffe2_1_1_t_t_contraction_gradient_op.html" alt="caffe2::TTContractionGradientOp&lt; T, Context, Engine &gt;" shape="rect" coords="834,21392,1658,21416"/>
+<area href="classcaffe2_1_1_t_t_contraction_op.html" alt="caffe2::TTContractionOp&lt; T, Context, Engine &gt;" shape="rect" coords="834,21448,1658,21472"/>
+<area href="classcaffe2_1_1_t_t_linear_gradient_op.html" alt="caffe2::TTLinearGradientOp&lt; T, Context, Engine &gt;" shape="rect" coords="834,21504,1658,21528"/>
+<area href="classcaffe2_1_1_t_t_linear_op.html" alt="caffe2::TTLinearOp&lt; T, Context, Engine &gt;" shape="rect" coords="834,21560,1658,21584"/>
+<area href="classcaffe2_1_1_t_t_pad_gradient_op.html" alt="caffe2::TTPadGradientOp&lt; T, Context, Engine &gt;" shape="rect" coords="834,21616,1658,21640"/>
+<area href="classcaffe2_1_1_t_t_pad_op.html" alt="caffe2::TTPadOp&lt; T, Context, Engine &gt;" shape="rect" coords="834,21672,1658,21696"/>
+<area href="classcaffe2_1_1_unary_elementwise_with_args_op.html" alt="caffe2::UnaryElementwiseWithArgsOp&lt; InputTypes, Context, Functor, OutputTypeMap &gt;" shape="rect" coords="834,21728,1658,21752"/>
+<area href="classcaffe2_1_1_unique_op.html" title="Deduplicates input indices vector and optionally produces reverse remapping. " alt="caffe2::UniqueOp&lt; Context &gt;" shape="rect" coords="834,21784,1658,21808"/>
+<area href="classcaffe2_1_1_unpack_segments_op.html" alt="caffe2::UnpackSegmentsOp&lt; Context &gt;" shape="rect" coords="834,21840,1658,21864"/>
+<area href="classcaffe2_1_1_upsample_bilinear_gradient_op.html" alt="caffe2::UpsampleBilinearGradientOp&lt; T, Context &gt;" shape="rect" coords="834,21896,1658,21920"/>
+<area href="classcaffe2_1_1_upsample_bilinear_op.html" alt="caffe2::UpsampleBilinearOp&lt; T, Context &gt;" shape="rect" coords="834,21952,1658,21976"/>
+<area href="classcaffe2_1_1_upsample_nearest_gradient_op.html" alt="caffe2::UpsampleNearestGradientOp&lt; T, Context &gt;" shape="rect" coords="834,22008,1658,22032"/>
+<area href="classcaffe2_1_1_upsample_nearest_op.html" alt="caffe2::UpsampleNearestOp&lt; T, Context &gt;" shape="rect" coords="834,22064,1658,22088"/>
+<area href="classcaffe2_1_1_variable_length_sequence_padding_op.html" alt="caffe2::VariableLengthSequencePaddingOp&lt; T, Context &gt;" shape="rect" coords="834,22120,1658,22144"/>
+<area href="classcaffe2_1_1_wall_clock_time_op.html" alt="caffe2::WallClockTimeOp&lt; Context &gt;" shape="rect" coords="834,22176,1658,22200"/>
+<area href="classcaffe2_1_1_weighted_multi_sampling_op.html" alt="caffe2::WeightedMultiSamplingOp&lt; Context &gt;" shape="rect" coords="834,22232,1658,22256"/>
+<area href="classcaffe2_1_1_weighted_sample_dequeue_blobs_op.html" alt="caffe2::WeightedSampleDequeueBlobsOp&lt; Context &gt;" shape="rect" coords="834,22288,1658,22312"/>
+<area href="classcaffe2_1_1_weighted_sample_op.html" alt="caffe2::WeightedSampleOp&lt; T, Context &gt;" shape="rect" coords="834,22344,1658,22368"/>
+<area href="classcaffe2_1_1_weighted_sigmoid_cross_entropy_with_logits_gradient_op.html" alt="caffe2::WeightedSigmoidCrossEntropyWithLogitsGradientOp&lt; T, Context &gt;" shape="rect" coords="834,22400,1658,22424"/>
+<area href="classcaffe2_1_1_weighted_sigmoid_cross_entropy_with_logits_op.html" alt="caffe2::WeightedSigmoidCrossEntropyWithLogitsOp&lt; T, Context &gt;" shape="rect" coords="834,22456,1658,22480"/>
+<area href="classcaffe2_1_1_weighted_sum_gradient_op.html" alt="caffe2::WeightedSumGradientOp&lt; Context &gt;" shape="rect" coords="834,22512,1658,22536"/>
+<area href="classcaffe2_1_1_weighted_sum_op.html" alt="caffe2::WeightedSumOp&lt; Context &gt;" shape="rect" coords="834,22568,1658,22592"/>
+<area href="classcaffe2_1_1_where_op.html" alt="caffe2::WhereOp&lt; Context &gt;" shape="rect" coords="834,22624,1658,22648"/>
+<area href="classcaffe2_1_1_while_op.html" alt="caffe2::WhileOp&lt; Context &gt;" shape="rect" coords="834,22680,1658,22704"/>
+<area href="classcaffe2_1_1_wngrad_op.html" alt="caffe2::WngradOp&lt; T, Context &gt;" shape="rect" coords="834,22736,1658,22760"/>
+<area href="classcaffe2_1_1_yellow_fin_op.html" alt="caffe2::YellowFinOp&lt; T, Context &gt;" shape="rect" coords="834,22792,1658,22816"/>
+<area href="classcaffe2_1_1_zero_gradient_op.html" alt="caffe2::ZeroGradientOp&lt; Context &gt;" shape="rect" coords="834,22848,1658,22872"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -474,70 +524,87 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a11e7e5d4a068a77c0ac390237284200e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11e7e5d4a068a77c0ac390237284200e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Operator</b> (const OperatorDef &amp;operator_def, <a class="el" href="classcaffe2_1_1_workspace.html">Workspace</a> *ws)</td></tr>
 <tr class="separator:a11e7e5d4a068a77c0ac390237284200e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a1a7f7bf02f217dfa1a88e551416d16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a1a7f7bf02f217dfa1a88e551416d16"></a>
-const <a class="el" href="classcaffe2_1_1_tensor.html">Tensor</a>&lt; Context &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Input</b> (int idx)</td></tr>
-<tr class="separator:a1a1a7f7bf02f217dfa1a88e551416d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa03ef95ddee6606d0e5d003d7f4f13e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa03ef95ddee6606d0e5d003d7f4f13e"></a>
-<a class="el" href="classcaffe2_1_1_tensor.html">Tensor</a>&lt; Context &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>Output</b> (int idx)</td></tr>
-<tr class="separator:afa03ef95ddee6606d0e5d003d7f4f13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ee36b4abdb455c35d51ae8911e19439"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ee36b4abdb455c35d51ae8911e19439"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WaitEvent</b> (const <a class="el" href="classcaffe2_1_1_event.html">Event</a> &amp;ev, int stream_id=-1) final</td></tr>
-<tr class="separator:a5ee36b4abdb455c35d51ae8911e19439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbeb98d23872c9601e00a9fa265ca708"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbeb98d23872c9601e00a9fa265ca708"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WaitEvents</b> (const std::vector&lt; const <a class="el" href="classcaffe2_1_1_event.html">Event</a> * &gt; &amp;events, int stream_id=-1) final</td></tr>
-<tr class="separator:afbeb98d23872c9601e00a9fa265ca708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2522e099b50e70994f45496a9273d67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2522e099b50e70994f45496a9273d67"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Run</b> (int stream_id=0) final</td></tr>
-<tr class="separator:ab2522e099b50e70994f45496a9273d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae32111f9bf9176efdf3be9fe5c582c76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae32111f9bf9176efdf3be9fe5c582c76"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunAsync</b> (int stream_id=0) final</td></tr>
-<tr class="separator:ae32111f9bf9176efdf3be9fe5c582c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab49891e4009152ee6dab5c7964023973"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab49891e4009152ee6dab5c7964023973"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStreamFree</b> (int stream_id) const override</td></tr>
-<tr class="separator:ab49891e4009152ee6dab5c7964023973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a593635d5d44a08386481ac0bf0c23f65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a593635d5d44a08386481ac0bf0c23f65"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunOnDevice</b> ()=0</td></tr>
-<tr class="separator:a593635d5d44a08386481ac0bf0c23f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a4add8fa12337f70ee28c463060a721"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a4add8fa12337f70ee28c463060a721"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasAsyncPart</b> () const override</td></tr>
-<tr class="separator:a9a4add8fa12337f70ee28c463060a721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a873525f8429339d2e3a60b5e452b1abd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a873525f8429339d2e3a60b5e452b1abd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsAsyncScheduling</b> () const override</td></tr>
-<tr class="separator:a873525f8429339d2e3a60b5e452b1abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5278af1b908353a66364bb19746b1013"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5278af1b908353a66364bb19746b1013"></a>
-const Context *&#160;</td><td class="memItemRight" valign="bottom"><b>getContext</b> () const </td></tr>
-<tr class="separator:a5278af1b908353a66364bb19746b1013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da66bf0566e0bf5a5985c5c306ddf7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1da66bf0566e0bf5a5985c5c306ddf7d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Operator</b> (const <a class="el" href="structc10_1_1_function_schema.html">c10::FunctionSchema</a> &amp;fn_schema, std::vector&lt; <a class="el" href="structc10_1_1_i_value.html">c10::IValue</a> &gt; inputs, std::vector&lt; <a class="el" href="classat_1_1_tensor.html">at::Tensor</a> &gt; outputs)</td></tr>
+<tr class="separator:a1da66bf0566e0bf5a5985c5c306ddf7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fccd50f05bd788ba46d27d1e0161ecf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_operator.html#a7fccd50f05bd788ba46d27d1e0161ecf">Input</a> (int idx, DeviceType type=Context::GetDeviceType())</td></tr>
+<tr class="memdesc:a7fccd50f05bd788ba46d27d1e0161ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a non-owning reference to the input at position 'idx' for this operator.  <a href="#a7fccd50f05bd788ba46d27d1e0161ecf">More...</a><br /></td></tr>
+<tr class="separator:a7fccd50f05bd788ba46d27d1e0161ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf1b9bca7b0aca63351c3280370732c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaaf1b9bca7b0aca63351c3280370732c"></a>
+<a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_operator.html#aaaf1b9bca7b0aca63351c3280370732c">XOutput</a> (int idx, <a class="el" href="classc10_1_1_array_ref.html">at::IntArrayRef</a> dims, <a class="el" href="structc10_1_1_tensor_options.html">at::TensorOptions</a> options)</td></tr>
+<tr class="memdesc:aaaf1b9bca7b0aca63351c3280370732c"><td class="mdescLeft">&#160;</td><td class="mdescRight">XOutput is a modernized version of Output which returns a <a class="el" href="classcaffe2_1_1_tensor.html" title="Tensor class holds a shared pointer to the implementation TensorImpl, redirects API calls to TensorIm...">Tensor</a> rather than a Tensor* (the raw pointer in the latter case is useless, as <a class="el" href="classcaffe2_1_1_tensor.html" title="Tensor class holds a shared pointer to the implementation TensorImpl, redirects API calls to TensorIm...">Tensor</a> is a pointer type.) <br /></td></tr>
+<tr class="separator:aaaf1b9bca7b0aca63351c3280370732c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaffe2_1_1_operator_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1_operator_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1_operator_base.html">caffe2::OperatorBase</a></td></tr>
 <tr class="memitem:a8b17e9c59924c0f253c8ce58823e71f7 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b17e9c59924c0f253c8ce58823e71f7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>OperatorBase</b> (const OperatorDef &amp;operator_def, <a class="el" href="classcaffe2_1_1_workspace.html">Workspace</a> *ws)</td></tr>
 <tr class="separator:a8b17e9c59924c0f253c8ce58823e71f7 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea9894ea6afb210d521812b521e49965 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea9894ea6afb210d521812b521e49965"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>OperatorBase</b> (const <a class="el" href="structc10_1_1_function_schema.html">c10::FunctionSchema</a> &amp;schema, std::vector&lt; <a class="el" href="structc10_1_1_i_value.html">c10::IValue</a> &gt; inputs, std::vector&lt; <a class="el" href="classat_1_1_tensor.html">at::Tensor</a> &gt; outputs)</td></tr>
+<tr class="separator:aea9894ea6afb210d521812b521e49965 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee04389d627e4b406de59371ead0546 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adee04389d627e4b406de59371ead0546"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_operator_base.html#adee04389d627e4b406de59371ead0546">isLegacyOperator</a> () const </td></tr>
+<tr class="memdesc:adee04389d627e4b406de59371ead0546 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the operator was instantiated with OperatorDef New operators should be instantiated with FunctionSchema. <br /></td></tr>
+<tr class="separator:adee04389d627e4b406de59371ead0546 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a498afec40f28e90e9537ba07ed3c4 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57a498afec40f28e90e9537ba07ed3c4"></a>
+const <a class="el" href="structc10_1_1_function_schema.html">c10::FunctionSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getFunctionSchema</b> () const </td></tr>
+<tr class="separator:a57a498afec40f28e90e9537ba07ed3c4 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d92f66a58019292c021a9fa8bd626fd inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d92f66a58019292c021a9fa8bd626fd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_operator_base.html#a4d92f66a58019292c021a9fa8bd626fd">HasArgument</a> (const string &amp;name) const </td></tr>
 <tr class="memdesc:a4d92f66a58019292c021a9fa8bd626fd inherit pub_methods_classcaffe2_1_1_operator_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the operator has an argument of the given name. <br /></td></tr>
 <tr class="separator:a4d92f66a58019292c021a9fa8bd626fd inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a36903f725162e9597c6366ea37cbdf inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1a36903f725162e9597c6366ea37cbdf"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1a36903f725162e9597c6366ea37cbdf inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSingleArgument</b> (const string &amp;name, const T &amp;default_value) const </td></tr>
+<tr class="memitem:a1a36903f725162e9597c6366ea37cbdf inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_t.html">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSingleArgument</b> (const string &amp;name, const <a class="el" href="struct_t.html">T</a> &amp;default_value) const </td></tr>
 <tr class="separator:a1a36903f725162e9597c6366ea37cbdf inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8db67b3a94d3f5ad7c34710416eafbe6 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="a8db67b3a94d3f5ad7c34710416eafbe6"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a8db67b3a94d3f5ad7c34710416eafbe6 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>HasSingleArgumentOfType</b> (const string &amp;name) const </td></tr>
 <tr class="separator:a8db67b3a94d3f5ad7c34710416eafbe6 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30eeccc5d3f332c733ff23a2debd2662 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="a30eeccc5d3f332c733ff23a2debd2662"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a30eeccc5d3f332c733ff23a2debd2662 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; <a class="el" href="struct_t.html">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetVectorFromIValueList</b> (const <a class="el" href="structc10_1_1_i_value.html">c10::IValue</a> &amp;value) const </td></tr>
+<tr class="separator:a30eeccc5d3f332c733ff23a2debd2662 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c7beb3cea506ecdd38a5b90e941628e inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7c7beb3cea506ecdd38a5b90e941628e"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7c7beb3cea506ecdd38a5b90e941628e inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetRepeatedArgument</b> (const string &amp;name, const vector&lt; T &gt; &amp;default_value={}) const </td></tr>
+<tr class="memitem:a7c7beb3cea506ecdd38a5b90e941628e inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; <a class="el" href="struct_t.html">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetRepeatedArgument</b> (const string &amp;name, const vector&lt; <a class="el" href="struct_t.html">T</a> &gt; &amp;default_value={}) const </td></tr>
 <tr class="separator:a7c7beb3cea506ecdd38a5b90e941628e inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b6ec26dec5eb520419dc5a57f2235ef inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1b6ec26dec5eb520419dc5a57f2235ef"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1b6ec26dec5eb520419dc5a57f2235ef inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Input</b> (int idx)</td></tr>
+<tr class="memitem:a1b6ec26dec5eb520419dc5a57f2235ef inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="struct_t.html">T</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Input</b> (int idx)</td></tr>
 <tr class="separator:a1b6ec26dec5eb520419dc5a57f2235ef inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacb8606a6ab25dd183dec6435a9d90c inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="acacb8606a6ab25dd183dec6435a9d90c"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acacb8606a6ab25dd183dec6435a9d90c inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="struct_t.html">T</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Input</b> (int idx, DeviceType type)</td></tr>
+<tr class="separator:acacb8606a6ab25dd183dec6435a9d90c inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08832a753a297fe95ca095cd7696532f inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="a08832a753a297fe95ca095cd7696532f"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a08832a753a297fe95ca095cd7696532f inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Output</b> (int idx)</td></tr>
+<tr class="memitem:a08832a753a297fe95ca095cd7696532f inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_t.html">T</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Output</b> (int idx)</td></tr>
 <tr class="separator:a08832a753a297fe95ca095cd7696532f inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bccbbd5ad8990b459d9d144232a8d07 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6bccbbd5ad8990b459d9d144232a8d07"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6bccbbd5ad8990b459d9d144232a8d07 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_t.html">T</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Output</b> (int idx, DeviceType type)</td></tr>
+<tr class="separator:a6bccbbd5ad8990b459d9d144232a8d07 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b16e457d90d81b93fd72f073319d1da inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b16e457d90d81b93fd72f073319d1da"></a>
+<a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XOutputTensor</b> (int idx, <a class="el" href="classc10_1_1_array_ref.html">at::IntArrayRef</a> dims, <a class="el" href="structc10_1_1_tensor_options.html">at::TensorOptions</a> options)</td></tr>
+<tr class="separator:a9b16e457d90d81b93fd72f073319d1da inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47f7f7c0761be6d60c87b6223fa7edc inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac47f7f7c0761be6d60c87b6223fa7edc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOutputTensor</b> (int idx, <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> tensor)</td></tr>
+<tr class="separator:ac47f7f7c0761be6d60c87b6223fa7edc inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2787a3a8af04b8d4da61fc4308fa3b58 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2787a3a8af04b8d4da61fc4308fa3b58"></a>
+<a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OutputTensorOrUndefined</b> (int idx)</td></tr>
+<tr class="separator:a2787a3a8af04b8d4da61fc4308fa3b58 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad147e8fa147f784f1b928630234182ae inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad147e8fa147f784f1b928630234182ae"></a>
+<a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>OutputTensor</b> (int idx, <a class="el" href="classc10_1_1_array_ref.html">at::IntArrayRef</a> dims, <a class="el" href="structc10_1_1_tensor_options.html">at::TensorOptions</a> options)</td></tr>
+<tr class="separator:ad147e8fa147f784f1b928630234182ae inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6d89a11da267de59c81f546bca4a4dd inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6d89a11da267de59c81f546bca4a4dd"></a>
+<a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>OutputTensorCopyFrom</b> (int idx, <a class="el" href="structc10_1_1_tensor_options.html">at::TensorOptions</a> options, const <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> &amp;src, bool async=false)</td></tr>
+<tr class="separator:af6d89a11da267de59c81f546bca4a4dd inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8cb6d3395b5ef4e0b91a9922cb29708 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8cb6d3395b5ef4e0b91a9922cb29708"></a>
+<a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>OutputTensorAlias</b> (int idx, const <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a> &amp;src)</td></tr>
+<tr class="separator:aa8cb6d3395b5ef4e0b91a9922cb29708 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae310ebe834186c7f4b886b85fa144c97 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae310ebe834186c7f4b886b85fa144c97"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae310ebe834186c7f4b886b85fa144c97 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Output</b> (int idx, T *allocated)</td></tr>
+<tr class="memitem:ae310ebe834186c7f4b886b85fa144c97 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_t.html">T</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Output</b> (int idx, <a class="el" href="struct_t.html">T</a> *allocated)</td></tr>
 <tr class="separator:ae310ebe834186c7f4b886b85fa144c97 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47873956fbdb29d5532c331c012d3b3f inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47873956fbdb29d5532c331c012d3b3f"></a>
 const <a class="el" href="classcaffe2_1_1_blob.html">Blob</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>InputBlob</b> (int idx)</td></tr>
@@ -545,14 +612,23 @@ const <a class="el" href="classcaffe2_1_1_blob.html">Blob</a> &amp;&#160;</td><t
 <tr class="memitem:a8622ec5cdc90909f4f104367cb8cbec9 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8622ec5cdc90909f4f104367cb8cbec9"></a>
 <a class="el" href="classcaffe2_1_1_blob.html">Blob</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>OutputBlob</b> (int idx)</td></tr>
 <tr class="separator:a8622ec5cdc90909f4f104367cb8cbec9 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5504548fb6cddadeebd29fc3e778b0 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf5504548fb6cddadeebd29fc3e778b0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInputOutputAlias</b> (int i, int j)</td></tr>
+<tr class="separator:adf5504548fb6cddadeebd29fc3e778b0 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a133ae1c5c18749c44dcd516d240ca2ca inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="a133ae1c5c18749c44dcd516d240ca2ca"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a133ae1c5c18749c44dcd516d240ca2ca inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>InputIsType</b> (int idx)</td></tr>
 <tr class="separator:a133ae1c5c18749c44dcd516d240ca2ca inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78974bd56114b446c2f310926b6509a inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa78974bd56114b446c2f310926b6509a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InputIsTensorType</b> (int idx, DeviceType device_type)</td></tr>
+<tr class="separator:aa78974bd56114b446c2f310926b6509a inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f20d5cfa7c441fa5dcc315d90f3832a inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2f20d5cfa7c441fa5dcc315d90f3832a"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a2f20d5cfa7c441fa5dcc315d90f3832a inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>OutputIsType</b> (int idx)</td></tr>
 <tr class="separator:a2f20d5cfa7c441fa5dcc315d90f3832a inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e1e53a9693ba10e5df06064aef9ca5 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0e1e53a9693ba10e5df06064aef9ca5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OutputIsTensorType</b> (int idx, DeviceType type)</td></tr>
+<tr class="separator:ad0e1e53a9693ba10e5df06064aef9ca5 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8790afd3ef8d1e1c628a0d778d2ee9 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c8790afd3ef8d1e1c628a0d778d2ee9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>InputSize</b> () const </td></tr>
 <tr class="separator:a5c8790afd3ef8d1e1c628a0d778d2ee9 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -565,17 +641,35 @@ const vector&lt; const <a class="el" href="classcaffe2_1_1_blob.html">Blob</a> *
 <tr class="memitem:a5b81892866eda316c3500b089ad381a7 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b81892866eda316c3500b089ad381a7"></a>
 const vector&lt; <a class="el" href="classcaffe2_1_1_blob.html">Blob</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Outputs</b> ()</td></tr>
 <tr class="separator:a5b81892866eda316c3500b089ad381a7 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a261bcca4bd3fbd53d7856eaec3d66350 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a261bcca4bd3fbd53d7856eaec3d66350"></a>
-vector&lt; TensorShape &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InputTensorShapes</b> ()</td></tr>
-<tr class="separator:a261bcca4bd3fbd53d7856eaec3d66350 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757ae71403fe62f4d1f41fcfa6e5f15a inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a757ae71403fe62f4d1f41fcfa6e5f15a"></a>
+vector&lt; TensorShape &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InputTensorShapes</b> () const </td></tr>
+<tr class="separator:a757ae71403fe62f4d1f41fcfa6e5f15a inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ed93ed297412e78b47d21dec365fea inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43ed93ed297412e78b47d21dec365fea"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>WaitEvent</b> (const <a class="el" href="classcaffe2_1_1_event.html">Event</a> &amp;ev, int=-1)</td></tr>
+<tr class="separator:a43ed93ed297412e78b47d21dec365fea inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ef986d9e9dae91d896e24108b3cf4c9 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ef986d9e9dae91d896e24108b3cf4c9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Wait</b> (const <a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> &amp;other, int stream_id=-1)</td></tr>
 <tr class="separator:a4ef986d9e9dae91d896e24108b3cf4c9 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9ed0076284ecad6a605f64bfca60b3 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b9ed0076284ecad6a605f64bfca60b3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>WaitEvents</b> (const std::vector&lt; const <a class="el" href="classcaffe2_1_1_event.html">Event</a> * &gt; &amp;events, int=-1)</td></tr>
+<tr class="separator:a1b9ed0076284ecad6a605f64bfca60b3 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae58f3adb68b3efe44a98b56834af5c2d inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae58f3adb68b3efe44a98b56834af5c2d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Finish</b> ()</td></tr>
 <tr class="separator:ae58f3adb68b3efe44a98b56834af5c2d inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c02464d9a51e715f4432e7f7d64a65f inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c02464d9a51e715f4432e7f7d64a65f"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Run</b> (int=0)</td></tr>
+<tr class="separator:a3c02464d9a51e715f4432e7f7d64a65f inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac486bee5646fcae90199208e42355d38 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac486bee5646fcae90199208e42355d38"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasAsyncPart</b> () const </td></tr>
+<tr class="separator:ac486bee5646fcae90199208e42355d38 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a08c64a598e183a1570b8dead9ad43 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39a08c64a598e183a1570b8dead9ad43"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsAsyncScheduling</b> () const </td></tr>
+<tr class="separator:a39a08c64a598e183a1570b8dead9ad43 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db24ec01b6e4b7466aa66a5af402e4c inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3db24ec01b6e4b7466aa66a5af402e4c"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunAsync</b> (int stream_id=0)</td></tr>
+<tr class="separator:a3db24ec01b6e4b7466aa66a5af402e4c inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ef146c48b3fd0e03b00254b309d62e2 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ef146c48b3fd0e03b00254b309d62e2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRelatedBlobInfo</b> (<a class="el" href="classcaffe2_1_1_enforce_not_met.html">EnforceNotMet</a> *err)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRelatedBlobInfo</b> (<a class="el" href="classc10_1_1_error.html">EnforceNotMet</a> *err)</td></tr>
 <tr class="separator:a6ef146c48b3fd0e03b00254b309d62e2 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa43cd37d326ef3601daf9061f8de5964 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa43cd37d326ef3601daf9061f8de5964"></a>
 const OperatorDef &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>debug_def</b> () const </td></tr>
@@ -613,6 +707,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableEvent</b> ()</
 <tr class="memitem:acf56fc9e02c9253e8dd7b7f4a2abd83b inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf56fc9e02c9253e8dd7b7f4a2abd83b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEventDisabled</b> () const </td></tr>
 <tr class="separator:acf56fc9e02c9253e8dd7b7f4a2abd83b inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0e746267070c49f8c04600ece116f1 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a0e746267070c49f8c04600ece116f1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SyncDeviceBarrierForObservers</b> ()</td></tr>
+<tr class="separator:a8a0e746267070c49f8c04600ece116f1 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6bfcf98a51f74027551e7cb2b2b2b2d inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6bfcf98a51f74027551e7cb2b2b2b2d"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStreamFree</b> (int) const </td></tr>
+<tr class="separator:ad6bfcf98a51f74027551e7cb2b2b2b2d inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3e7bf672f3bf37c92d2c6192082f7c6 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3e7bf672f3bf37c92d2c6192082f7c6"></a>
 const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const </td></tr>
 <tr class="separator:aa3e7bf672f3bf37c92d2c6192082f7c6 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -622,7 +722,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>annotate_engine</b> (
 <tr class="memitem:a157f0453944c47a4bfdb8deb5c9a4ae8 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a157f0453944c47a4bfdb8deb5c9a4ae8"></a>
 const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>engine</b> () const </td></tr>
 <tr class="separator:a157f0453944c47a4bfdb8deb5c9a4ae8 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6d7b78262d98f6b677031da81613f5 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c6d7b78262d98f6b677031da81613f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetExecutorHelper</b> (<a class="el" href="classcaffe2_1_1_executor_helper.html">ExecutorHelper</a> *helper)</td></tr>
+<tr class="separator:a4c6d7b78262d98f6b677031da81613f5 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0509c91bd70fd2a446741d526debfa40 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0509c91bd70fd2a446741d526debfa40"></a>
+<a class="el" href="classcaffe2_1_1_executor_helper.html">ExecutorHelper</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetExecutorHelper</b> () const </td></tr>
+<tr class="separator:a0509c91bd70fd2a446741d526debfa40 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e05eb5a8329b044173dbe2533a7c5c inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87e05eb5a8329b044173dbe2533a7c5c"></a>
+std::vector&lt; <a class="el" href="classat_1_1_tensor.html">at::Tensor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>move_newstyle_outputs</b> ()&amp;&amp;</td></tr>
+<tr class="separator:a87e05eb5a8329b044173dbe2533a7c5c inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bdd37b14f2e4d2260657b1cb6cdb03c inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2bdd37b14f2e4d2260657b1cb6cdb03c"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a2bdd37b14f2e4d2260657b1cb6cdb03c inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">NetDef&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSingleArgument</b> (const std::string &amp;name, const NetDef &amp;default_value) const </td></tr>
+<tr class="separator:a2bdd37b14f2e4d2260657b1cb6cdb03c inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae658ac6683619f48f1e8e107e7563ac1 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae658ac6683619f48f1e8e107e7563ac1"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:ae658ac6683619f48f1e8e107e7563ac1 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetVectorFromIValueList</b> (const <a class="el" href="structc10_1_1_i_value.html">c10::IValue</a> &amp;value) const </td></tr>
+<tr class="separator:ae658ac6683619f48f1e8e107e7563ac1 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135222ec2555017a0401ccd69f7724a6 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="a135222ec2555017a0401ccd69f7724a6"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a135222ec2555017a0401ccd69f7724a6 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetVectorFromIValueList</b> (const <a class="el" href="structc10_1_1_i_value.html">c10::IValue</a> &amp;value) const </td></tr>
+<tr class="separator:a135222ec2555017a0401ccd69f7724a6 inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e7adffb5e2ea85a4291908e9ddc8fa inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae3e7adffb5e2ea85a4291908e9ddc8fa"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:ae3e7adffb5e2ea85a4291908e9ddc8fa inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetVectorFromIValueList</b> (const <a class="el" href="structc10_1_1_i_value.html">c10::IValue</a> &amp;value) const </td></tr>
+<tr class="separator:ae3e7adffb5e2ea85a4291908e9ddc8fa inherit pub_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaffe2_1_1_observable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1_observable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1_observable.html">caffe2::Observable&lt; OperatorBase &gt;</a></td></tr>
+<tr class="memitem:adf3f51ec5cb69d8d9d0190903234c9e7 inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf3f51ec5cb69d8d9d0190903234c9e7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Observable</b> (<a class="el" href="classcaffe2_1_1_observable.html">Observable</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:adf3f51ec5cb69d8d9d0190903234c9e7 inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5fb16d38308d8351ee3f51c76927fa inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d5fb16d38308d8351ee3f51c76927fa"></a>
+<a class="el" href="classcaffe2_1_1_observable.html">Observable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classcaffe2_1_1_observable.html">Observable</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a4d5fb16d38308d8351ee3f51c76927fa inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3144e1bee6c39e8f4c7b51f921a84ad inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3144e1bee6c39e8f4c7b51f921a84ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_observable.html">Observable</a>)</td></tr>
+<tr class="separator:ae3144e1bee6c39e8f4c7b51f921a84ad inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac04a21851203c49213fb12253a0523 inherit pub_methods_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ac04a21851203c49213fb12253a0523"></a>
 const <a class="el" href="classcaffe2_1_1_observer_base.html">Observer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AttachObserver</b> (std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1_observer_base.html">Observer</a> &gt; observer)</td></tr>
 <tr class="separator:a0ac04a21851203c49213fb12253a0523 inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -639,24 +773,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>StartAllObservers</b>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StopAllObservers</b> ()</td></tr>
 <tr class="separator:ad5b6c5df43d1f97d895b897fe6abcbca inherit pub_methods_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:abb6b26b9d6d77aa5ac1db7d5b2d50ce5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb6b26b9d6d77aa5ac1db7d5b2d50ce5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordEvent</b> (const char *err_msg=nullptr) final</td></tr>
-<tr class="separator:abb6b26b9d6d77aa5ac1db7d5b2d50ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a572f1512cdb09990676e049a2698404e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a572f1512cdb09990676e049a2698404e"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getErrorMsg</b> ()</td></tr>
-<tr class="separator:a572f1512cdb09990676e049a2698404e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classcaffe2_1_1_observable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classcaffe2_1_1_observable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classcaffe2_1_1_observable.html">caffe2::Observable&lt; OperatorBase &gt;</a></td></tr>
+<tr class="memitem:abb49f4db328e1b117e3999f29459def5 inherit pub_types_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb49f4db328e1b117e3999f29459def5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> = <a class="el" href="classcaffe2_1_1_observer_base.html">ObserverBase</a>&lt; <a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> &gt;</td></tr>
+<tr class="separator:abb49f4db328e1b117e3999f29459def5 inherit pub_types_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classcaffe2_1_1_operator_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classcaffe2_1_1_operator_base')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classcaffe2_1_1_operator_base.html">caffe2::OperatorBase</a></td></tr>
+<tr class="memitem:a98488fe34d115027b4a84e5ebdb8d251 inherit pub_static_attribs_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98488fe34d115027b4a84e5ebdb8d251"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>kNoNetPositionSet</b> = -1</td></tr>
+<tr class="separator:a98488fe34d115027b4a84e5ebdb8d251 inherit pub_static_attribs_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classcaffe2_1_1_operator_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcaffe2_1_1_operator_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classcaffe2_1_1_operator_base.html">caffe2::OperatorBase</a></td></tr>
-<tr class="memitem:ab8f85e9bb2251c93454bbd403c357aa9 inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8f85e9bb2251c93454bbd403c357aa9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a>)</td></tr>
-<tr class="separator:ab8f85e9bb2251c93454bbd403c357aa9 inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:af4c08188782db9c1461a50a20923a3b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4c08188782db9c1461a50a20923a3b9"></a>
-Context&#160;</td><td class="memItemRight" valign="bottom"><b>context_</b></td></tr>
-<tr class="separator:af4c08188782db9c1461a50a20923a3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7204a11de21c12325f7597e2c899b8e0 inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7204a11de21c12325f7597e2c899b8e0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordEvent</b> (const char *=nullptr)</td></tr>
+<tr class="separator:a7204a11de21c12325f7597e2c899b8e0 inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96bd5313a3bb0491d5f51835a333c8b7 inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96bd5313a3bb0491d5f51835a333c8b7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEventFinished</b> (const char *err_msg=nullptr)</td></tr>
+<tr class="separator:a96bd5313a3bb0491d5f51835a333c8b7 inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeff1fa79f116f9631084e41394536ae inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afeff1fa79f116f9631084e41394536ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEventFinishedWithException</b> (const char *err_msg=nullptr)</td></tr>
+<tr class="separator:afeff1fa79f116f9631084e41394536ae inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b31b7d20db91064d46f55a2fe68e32d inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b31b7d20db91064d46f55a2fe68e32d"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getErrorMsg</b> ()</td></tr>
+<tr class="separator:a1b31b7d20db91064d46f55a2fe68e32d inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35aac921e0b1ab8f9495bad3c2da7e2 inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad35aac921e0b1ab8f9495bad3c2da7e2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C10_DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a>)</td></tr>
+<tr class="separator:ad35aac921e0b1ab8f9495bad3c2da7e2 inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classcaffe2_1_1_operator_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcaffe2_1_1_operator_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcaffe2_1_1_operator_base.html">caffe2::OperatorBase</a></td></tr>
 <tr class="memitem:a500d504fa58edf7eab1c3e6c6b4bf6b1 inherit pro_attribs_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a500d504fa58edf7eab1c3e6c6b4bf6b1"></a>
 std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1_event.html">Event</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>event_</b></td></tr>
@@ -665,32 +807,63 @@ std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1_event.html">Event</a> &g
 <tr class="memitem:a1c0e56e277283cc9990397cfde2358d9 inherit pro_attribs_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c0e56e277283cc9990397cfde2358d9"></a>
 std::vector&lt; std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1_observer_base.html">Observer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>observers_list_</b></td></tr>
 <tr class="separator:a1c0e56e277283cc9990397cfde2358d9 inherit pro_attribs_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classcaffe2_1_1_observable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classcaffe2_1_1_observable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classcaffe2_1_1_observable.html">caffe2::Observable&lt; OperatorBase &gt;</a></td></tr>
-<tr class="memitem:abb49f4db328e1b117e3999f29459def5 inherit pub_types_classcaffe2_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb49f4db328e1b117e3999f29459def5"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> = <a class="el" href="classcaffe2_1_1_observer_base.html">ObserverBase</a>&lt; <a class="el" href="classcaffe2_1_1_operator_base.html">OperatorBase</a> &gt;</td></tr>
-<tr class="separator:abb49f4db328e1b117e3999f29459def5 inherit pub_types_classcaffe2_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_attribs_classcaffe2_1_1_operator_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classcaffe2_1_1_operator_base')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classcaffe2_1_1_operator_base.html">caffe2::OperatorBase</a></td></tr>
-<tr class="memitem:a6469b8d61dc1107bc3c649ac47bbd24d inherit pub_static_attribs_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6469b8d61dc1107bc3c649ac47bbd24d"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kNoNetPositionSet</b> = -1</td></tr>
-<tr class="separator:a6469b8d61dc1107bc3c649ac47bbd24d inherit pub_static_attribs_classcaffe2_1_1_operator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Context&gt;<br />
 class caffe2::Operator&lt; Context &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="core_2operator_8h_source.html#l00325">325</a> of file <a class="el" href="core_2operator_8h_source.html">operator.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>caffe2/core/<a class="el" href="core_2operator_8h_source.html">operator.h</a></li>
+<p>Definition at line <a class="el" href="caffe2_2core_2operator_8h_source.html#l00677">677</a> of file <a class="el" href="caffe2_2core_2operator_8h_source.html">operator.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7fccd50f05bd788ba46d27d1e0161ecf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Context&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a>&amp; <a class="el" href="classcaffe2_1_1_operator.html">caffe2::Operator</a>&lt; Context &gt;::Input </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DeviceType&#160;</td>
+          <td class="paramname"><em>type</em> = <code>Context::GetDeviceType()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve a non-owning reference to the input at position 'idx' for this operator. </p>
+<p>The returned reference is valid for the duration of the RunOnDevice call. The optional 'type' parameter can be used to assert a required device type for the input (by default, we assert that the tensor is consistent with the device type implied by the Context parameter of an <a class="el" href="classcaffe2_1_1_operator.html">Operator</a>.) </p>
+
+<p>Definition at line <a class="el" href="caffe2_2core_2operator_8h_source.html#l00702">702</a> of file <a class="el" href="caffe2_2core_2operator_8h_source.html">operator.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>caffe2/core/<a class="el" href="caffe2_2core_2operator_8h_source.html">operator.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:00 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:56 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -713,7 +886,7 @@ Generated on Thu Apr 19 2018 13:04:00 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

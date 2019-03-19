@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -97,8 +97,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
 <div class="title">caffe2::Workspace Class Reference</div>  </div>
@@ -138,16 +140,16 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_workspace.html#a7d346429c55c5539078e2d53a2d476aa">Workspace</a> (const <a class="el" href="classcaffe2_1_1_workspace.html">Workspace</a> *shared, const std::unordered_map&lt; string, string &gt; &amp;forwarded_blobs)</td></tr>
 <tr class="memdesc:a7d346429c55c5539078e2d53a2d476aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes workspace with parent workspace, blob name remapping (new name -&gt; parent blob name), no other blobs are inherited from parent workspace. <br /></td></tr>
 <tr class="separator:a7d346429c55c5539078e2d53a2d476aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98b082669950457a5a31993a42de32b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98b082669950457a5a31993a42de32b4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_workspace.html#a98b082669950457a5a31993a42de32b4">Workspace</a> (const string &amp;root_folder, <a class="el" href="classcaffe2_1_1_workspace.html">Workspace</a> *shared)</td></tr>
-<tr class="memdesc:a98b082669950457a5a31993a42de32b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a workspace with a root folder and a shared workspace. <br /></td></tr>
-<tr class="separator:a98b082669950457a5a31993a42de32b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bb3082a063afa66816e1ae5a4501954"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bb3082a063afa66816e1ae5a4501954"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_workspace.html#a8bb3082a063afa66816e1ae5a4501954">Workspace</a> (const string &amp;root_folder, const <a class="el" href="classcaffe2_1_1_workspace.html">Workspace</a> *shared)</td></tr>
+<tr class="memdesc:a8bb3082a063afa66816e1ae5a4501954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a workspace with a root folder and a shared workspace. <br /></td></tr>
+<tr class="separator:a8bb3082a063afa66816e1ae5a4501954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6da83107180ddafe0e8bed95f1ec48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_workspace.html#aba6da83107180ddafe0e8bed95f1ec48">AddBlobMapping</a> (const <a class="el" href="classcaffe2_1_1_workspace.html">Workspace</a> *parent, const std::unordered_map&lt; string, string &gt; &amp;forwarded_blobs, bool skip_defined_blobs=false)</td></tr>
 <tr class="memdesc:aba6da83107180ddafe0e8bed95f1ec48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds blob mappings from workspace to the blobs from parent workspace.  <a href="#aba6da83107180ddafe0e8bed95f1ec48">More...</a><br /></td></tr>
 <tr class="separator:aba6da83107180ddafe0e8bed95f1ec48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7babdb407d47f7d588973d2ab80e5e37"><td class="memTemplParams" colspan="2">template&lt;class Context &gt; </td></tr>
 <tr class="memitem:a7babdb407d47f7d588973d2ab80e5e37"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_workspace.html#a7babdb407d47f7d588973d2ab80e5e37">CopyForwardedTensors</a> (const std::unordered_set&lt; std::string &gt; &amp;blobs)</td></tr>
-<tr class="memdesc:a7babdb407d47f7d588973d2ab80e5e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts prevously mapped tensor blobs to local blobs, copies values from parent workspace blobs into new local blobs.  <a href="#a7babdb407d47f7d588973d2ab80e5e37">More...</a><br /></td></tr>
+<tr class="memdesc:a7babdb407d47f7d588973d2ab80e5e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts previously mapped tensor blobs to local blobs, copies values from parent workspace blobs into new local blobs.  <a href="#a7babdb407d47f7d588973d2ab80e5e37">More...</a><br /></td></tr>
 <tr class="separator:a7babdb407d47f7d588973d2ab80e5e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3158ca87421fe5d3104837b7c913289"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3158ca87421fe5d3104837b7c913289"></a>
 vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_workspace.html#ad3158ca87421fe5d3104837b7c913289">LocalBlobs</a> () const </td></tr>
@@ -210,7 +212,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:abac16fc4557c8fa9cd06482809ec7b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a plan that has multiple nets and execution steps. <br /></td></tr>
 <tr class="separator:abac16fc4557c8fa9cd06482809ec7b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9756e3b1c6ea104e41787bc819b019ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9756e3b1c6ea104e41787bc819b019ce"></a>
-<a class="el" href="classcaffe2_1_1_thread_pool.html">ThreadPool</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetThreadPool</b> ()</td></tr>
+<a class="el" href="classc10_1_1_thread_pool.html">ThreadPool</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetThreadPool</b> ()</td></tr>
 <tr class="separator:a9756e3b1c6ea104e41787bc819b019ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9a2d094ab09fae2ce337139d934434c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9a2d094ab09fae2ce337139d934434c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunOperatorOnce</b> (const OperatorDef &amp;op_def)</td></tr>
@@ -219,10 +221,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunOperatorOnce</b> (
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunNetOnce</b> (const NetDef &amp;net_def)</td></tr>
 <tr class="separator:a348f7315f6ebe620d4234635e9edd151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa7a1a4a5d7f4824fa3692a1b3187aca0"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:aa7a1a4a5d7f4824fa3692a1b3187aca0"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1_workspace.html#aa7a1a4a5d7f4824fa3692a1b3187aca0">ForEach</a> (F f)</td></tr>
+<tr class="memdesc:aa7a1a4a5d7f4824fa3692a1b3187aca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function f on each workspace that currently exists.  <a href="#aa7a1a4a5d7f4824fa3692a1b3187aca0">More...</a><br /></td></tr>
+<tr class="separator:aa7a1a4a5d7f4824fa3692a1b3187aca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a1156f721ce2f2691b5efea1574bf990e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1156f721ce2f2691b5efea1574bf990e"></a>
-std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>last_failed_op_net_position</b></td></tr>
+std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>last_failed_op_net_position</b> {}</td></tr>
 <tr class="separator:a1156f721ce2f2691b5efea1574bf990e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -323,7 +332,7 @@ std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>l
 <p>Adds blob mappings from workspace to the blobs from parent workspace. </p>
 <p>Creates blobs under possibly new names that redirect read/write operations to the blobs in the parent workspace. Arguments: parent - pointer to parent workspace forwarded_blobs - map from new blob name to blob name in parent's workspace skip_defined_blob - if set skips blobs with names that already exist in the workspace, otherwise throws exception </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00183">183</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00179">179</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -343,7 +352,7 @@ std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>l
 <p>Return a list of blob names. </p>
 <p>This may be a bit slow since it will involve creation of multiple temp variables. For best performance, simply use <a class="el" href="classcaffe2_1_1_workspace.html#ab0b28346a24f95f330d3d4d491b39311" title="Checks if a blob with the given name is present in the current workspace. ">HasBlob()</a> and <a class="el" href="classcaffe2_1_1_workspace.html#aeae0d3e73cf44e447b034d2f0bbd4c6b" title="Gets the blob with the given name as a const pointer. ">GetBlob()</a>. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00084">84</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00080">80</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -371,10 +380,10 @@ template&lt;class Context &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Converts prevously mapped tensor blobs to local blobs, copies values from parent workspace blobs into new local blobs. </p>
+<p>Converts previously mapped tensor blobs to local blobs, copies values from parent workspace blobs into new local blobs. </p>
 <p>Ignores undefined blobs. </p>
 
-<p>Definition at line <a class="el" href="workspace_8h_source.html#l00129">129</a> of file <a class="el" href="workspace_8h_source.html">workspace.h</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8h_source.html#l00137">137</a> of file <a class="el" href="workspace_8h_source.html">workspace.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +404,7 @@ template&lt;class Context &gt; </div>
 <p>Creates a blob of the given name. </p>
 <p>The pointer to the blob is returned, but the workspace keeps ownership of the pointer. If a blob of the given name already exists, the creation is skipped and the existing blob is returned. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00104">104</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00100">100</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -416,7 +425,7 @@ template&lt;class Context &gt; </div>
 <p>Similar to <a class="el" href="classcaffe2_1_1_workspace.html#a224e2d844e235c2db1804b7f45cd6822" title="Creates a blob of the given name. ">CreateBlob()</a>, but it creates a blob in the local workspace even if another blob with the same name already exists in the parent workspace &ndash; in such case the new blob hides the blob in parent workspace. </p>
 <p>If a blob of the given name already exists in the local workspace, the creation is skipped and the existing blob is returned. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00118">118</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00114">114</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -448,7 +457,38 @@ template&lt;class Context &gt; </div>
 <p>If there is anything wrong during the creation of the network, a nullptr is returned. The <a class="el" href="classcaffe2_1_1_workspace.html" title="Workspace is a class that holds all the related objects created during runtime: (1) all blobs...">Workspace</a> keeps ownership of the pointer.</p>
 <p>If there is already a net created in the workspace with the given name, CreateNet will overwrite it if overwrite=true is specified. Otherwise, an exception is thrown. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00218">218</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00214">214</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7a1a4a5d7f4824fa3692a1b3187aca0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void caffe2::Workspace::ForEach </td>
+          <td>(</td>
+          <td class="paramtype">F&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies a function f on each workspace that currently exists. </p>
+<p>This function is thread safe and there is no race condition between workspaces being passed to f in this thread and destroyed in another. </p>
+
+<p>Definition at line <a class="el" href="workspace_8h_source.html#l00302">302</a> of file <a class="el" href="workspace_8h_source.html">workspace.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +509,7 @@ template&lt;class Context &gt; </div>
 <p>Gets the blob with the given name as a const pointer. </p>
 <p>If the blob does not exist, a nullptr is returned. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00164">164</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00160">160</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -490,7 +530,7 @@ template&lt;class Context &gt; </div>
 <p>Gets the blob with the given name as a mutable pointer. </p>
 <p>If the blob does not exist, a nullptr is returned. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00214">214</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00210">210</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -511,7 +551,7 @@ template&lt;class Context &gt; </div>
 <p>Gets the pointer to a created net. </p>
 <p>The workspace keeps ownership of the network. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00255">255</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00251">251</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -532,7 +572,7 @@ template&lt;class Context &gt; </div>
 <p>Remove the blob of the given name. </p>
 <p>Return true if removed and false if not exist. Will NOT remove from the shared workspace. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00151">151</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00147">147</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -561,9 +601,9 @@ template&lt;class Context &gt; </div>
 </div><div class="memdoc">
 
 <p>Renames a local workspace blob. </p>
-<p>If blob is not found in the local blob list or if the target name is already present in local or any parent blob list the function will through. </p>
+<p>If blob is not found in the local blob list or if the target name is already present in local or any parent blob list the function will throw. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00128">128</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00124">124</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -584,7 +624,7 @@ template&lt;class Context &gt; </div>
 <p>Finds and runs the instantiated network with the given name. </p>
 <p>If the network does not exist or there are errors running the network, the function returns false. </p>
 
-<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00269">269</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
+<p>Definition at line <a class="el" href="workspace_8cc_source.html#l00265">265</a> of file <a class="el" href="workspace_8cc_source.html">workspace.cc</a>.</p>
 
 </div>
 </div>
@@ -596,7 +636,7 @@ template&lt;class Context &gt; </div>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -619,7 +659,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>

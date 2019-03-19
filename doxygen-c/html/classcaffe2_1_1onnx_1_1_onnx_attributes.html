@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
-      <li><a href="https://github.com/pytorch/pytorch"><span>GitHub</span></a></li>
+      <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -111,19 +111,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a13d2077459236996af7f450d86baaacf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13d2077459236996af7f450d86baaacf"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasAttribute</b> (const std::string &amp;key) const </td></tr>
 <tr class="separator:a13d2077459236996af7f450d86baaacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7301eae534e7a6f6833fdf21ad59e34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7301eae534e7a6f6833fdf21ad59e34"></a>
-AttributeProto *&#160;</td><td class="memItemRight" valign="bottom"><b>AddRewrittenAttibute</b> (const std::string &amp;key)</td></tr>
-<tr class="separator:ac7301eae534e7a6f6833fdf21ad59e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3070771b1a283e5d21c3c8476c4f459"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3070771b1a283e5d21c3c8476c4f459"></a>
+AttributeProto *&#160;</td><td class="memItemRight" valign="bottom"><b>AddRewrittenAttribute</b> (const std::string &amp;key)</td></tr>
+<tr class="separator:af3070771b1a283e5d21c3c8476c4f459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d42ad4b47b896f4a881cfb71714a9d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d42ad4b47b896f4a881cfb71714a9d7"></a>
-::google::protobuf::RepeatedPtrField&lt; caffe2::Argument &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnnxAttrToCaffe2Arg</b> (std::function&lt; std::string(const std::string &amp;)&gt; mapper) const </td></tr>
+::google::protobuf::RepeatedPtrField&lt; <a class="el" href="structc10_1_1_argument.html">caffe2::Argument</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnnxAttrToCaffe2Arg</b> (std::function&lt; std::string(const std::string &amp;)&gt; mapper) const </td></tr>
 <tr class="separator:a4d42ad4b47b896f4a881cfb71714a9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe20d3025403deff67179a01e2647f5"><td class="memTemplParams" colspan="2"><a class="anchor" id="aebe20d3025403deff67179a01e2647f5"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aebe20d3025403deff67179a01e2647f5"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const std::string &amp;key) const </td></tr>
+<tr class="memitem:aebe20d3025403deff67179a01e2647f5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_t.html">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const std::string &amp;key) const </td></tr>
 <tr class="separator:aebe20d3025403deff67179a01e2647f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e78443b6b3f264892fa62f9ff95a019"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1e78443b6b3f264892fa62f9ff95a019"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1e78443b6b3f264892fa62f9ff95a019"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const std::string &amp;key, const T &amp;default_value) const </td></tr>
+<tr class="memitem:a1e78443b6b3f264892fa62f9ff95a019"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_t.html">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const std::string &amp;key, const <a class="el" href="struct_t.html">T</a> &amp;default_value) const </td></tr>
 <tr class="separator:a1e78443b6b3f264892fa62f9ff95a019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e411e3121017f9e54c6cdd4376b0a9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e411e3121017f9e54c6cdd4376b0a9c"></a>
 const AttributeProto *&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (const std::string &amp;key)</td></tr>
@@ -144,6 +144,10 @@ template&lt;&gt; </td></tr>
 template&lt;&gt; </td></tr>
 <tr class="memitem:a785f992e4f29ef21ea06c8727025643c"><td class="memTemplItemLeft" align="right" valign="top">::google::protobuf::RepeatedField&lt;::google::protobuf::int64 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const std::string &amp;key) const </td></tr>
 <tr class="separator:a785f992e4f29ef21ea06c8727025643c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9ebcdb993031e7d2ce30d094ba5e43"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3d9ebcdb993031e7d2ce30d094ba5e43"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a3d9ebcdb993031e7d2ce30d094ba5e43"><td class="memTemplItemLeft" align="right" valign="top">::google::protobuf::RepeatedField&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const std::string &amp;key) const </td></tr>
+<tr class="separator:a3d9ebcdb993031e7d2ce30d094ba5e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bbe02b1aebdd6e3bf97e5c5c95dd9a3"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0bbe02b1aebdd6e3bf97e5c5c95dd9a3"></a>
 template&lt;&gt; </td></tr>
 <tr class="memitem:a0bbe02b1aebdd6e3bf97e5c5c95dd9a3"><td class="memTemplItemLeft" align="right" valign="top">const TensorProto *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const std::string &amp;key) const </td></tr>
@@ -156,10 +160,14 @@ template&lt;&gt; </td></tr>
 template&lt;&gt; </td></tr>
 <tr class="memitem:a785f992e4f29ef21ea06c8727025643c"><td class="memTemplItemLeft" align="right" valign="top">::google::protobuf::RepeatedField&lt;::google::protobuf::int64 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const std::string &amp;key) const </td></tr>
 <tr class="separator:a785f992e4f29ef21ea06c8727025643c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9ebcdb993031e7d2ce30d094ba5e43"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3d9ebcdb993031e7d2ce30d094ba5e43"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a3d9ebcdb993031e7d2ce30d094ba5e43"><td class="memTemplItemLeft" align="right" valign="top">::google::protobuf::RepeatedField&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const std::string &amp;key) const </td></tr>
+<tr class="separator:a3d9ebcdb993031e7d2ce30d094ba5e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="backend_8h_source.html#l00033">33</a> of file <a class="el" href="backend_8h_source.html">backend.h</a>.</p>
+<p>Definition at line <a class="el" href="backend_8h_source.html#l00055">55</a> of file <a class="el" href="backend_8h_source.html">backend.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>caffe2/onnx/<a class="el" href="backend_8h_source.html">backend.h</a></li>
 <li>caffe2/onnx/<a class="el" href="backend_8cc_source.html">backend.cc</a></li>
@@ -168,7 +176,7 @@ template&lt;&gt; </td></tr>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 19 2019 13:06:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -191,7 +199,7 @@ Generated on Thu Apr 19 2018 13:04:02 for Caffe2 - C++ API by &#160;<a href="htt
         <a class="footerLink" href="https://twitter.com/fbOpenSource" target="_blank">Twitter</a>
       </div>
       <div class="footerSection rightAlign">
-        <a class="footerLink" href="https://github.com/pytorch/pytorch" target="_blank">Contribute to this project on GitHub</a>
+        <a class="footerLink" href="https://github.com/caffe2/caffe2" target="_blank">Contribute to this project on GitHub</a>
       </div>
     </div>
   </div>
