@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae872dff39274fe10bfb4200bc70a4a54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae872dff39274fe10bfb4200bc70a4a54"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>__new__</b> (cls, data, batch_sizes=None, sorted_indices=None, unsorted_indices=None)</td></tr>
 <tr class="separator:ae872dff39274fe10bfb4200bc70a4a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6d284784632dceb0168e91c9fb0d98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d6d284784632dceb0168e91c9fb0d98"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>pin_memory</b> (self)</td></tr>
+<tr class="separator:a7d6d284784632dceb0168e91c9fb0d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a515fce613e910d5b8ae6878e4eca5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtorch_1_1nn_1_1utils_1_1rnn_1_1_packed_sequence.html#a69a515fce613e910d5b8ae6878e4eca5">cuda</a> (self, args, kwargs)</td></tr>
 <tr class="separator:a69a515fce613e910d5b8ae6878e4eca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adff4b34a71823aa702c658003955d471"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtorch_1_1nn_1_1utils_1_1rnn_1_1_packed_sequence.html#adff4b34a71823aa702c658003955d471">cpu</a> (self)</td></tr>
@@ -150,6 +153,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>to</b> (self, args, kw
 <tr class="memitem:ade80500b3f3ca5117d2a9970ddddd6c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade80500b3f3ca5117d2a9970ddddd6c2"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>is_cuda</b> (self)</td></tr>
 <tr class="separator:ade80500b3f3ca5117d2a9970ddddd6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d4dc86fe527d762f8a0ff2439e3f89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36d4dc86fe527d762f8a0ff2439e3f89"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>is_pinned</b> (self)</td></tr>
+<tr class="separator:a36d4dc86fe527d762f8a0ff2439e3f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -169,7 +175,7 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>is_cuda</b> (self)</td
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Returns a CPU copy if `self.data` not already on the CPU</pre> 
-<p>Definition at line <a class="el" href="nn_2utils_2rnn_8py_source.html#l00070">70</a> of file <a class="el" href="nn_2utils_2rnn_8py_source.html">rnn.py</a>.</p>
+<p>Definition at line <a class="el" href="nn_2utils_2rnn_8py_source.html#l00100">100</a> of file <a class="el" href="nn_2utils_2rnn_8py_source.html">rnn.py</a>.</p>
 
 </div>
 </div>
@@ -203,7 +209,7 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>is_cuda</b> (self)</td
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Returns a GPU copy if `self.data` not already on the GPU</pre> 
-<p>Definition at line <a class="el" href="nn_2utils_2rnn_8py_source.html#l00061">61</a> of file <a class="el" href="nn_2utils_2rnn_8py_source.html">rnn.py</a>.</p>
+<p>Definition at line <a class="el" href="nn_2utils_2rnn_8py_source.html#l00089">89</a> of file <a class="el" href="nn_2utils_2rnn_8py_source.html">rnn.py</a>.</p>
 
 </div>
 </div>
@@ -214,7 +220,7 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>is_cuda</b> (self)</td
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 19 2019 13:07:06 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 20 2019 13:07:40 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

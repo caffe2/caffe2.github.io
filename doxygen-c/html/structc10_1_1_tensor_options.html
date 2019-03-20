@@ -117,9 +117,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a12ac9e5d7803f54a52a99330b949308f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_options.html#a12ac9e5d7803f54a52a99330b949308f">TensorOptions</a> (Args &amp;&amp;...args)</td></tr>
 <tr class="memdesc:a12ac9e5d7803f54a52a99330b949308f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code> object from arguments allowed in <code><a class="el" href="structc10_1_1_device.html" title="Represents a a compute device on which a tensor is located. ">Device</a></code> constructors.  <a href="#a12ac9e5d7803f54a52a99330b949308f">More...</a><br /></td></tr>
 <tr class="separator:a12ac9e5d7803f54a52a99330b949308f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6cb2691257f85b95e5ff76dc3b90e12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_options.html#ac6cb2691257f85b95e5ff76dc3b90e12">TensorOptions</a> (<a class="el" href="namespacec10.html#ad64cdd76c7657cda0c865ef9e5992fd3">Backend</a> backend)</td></tr>
-<tr class="memdesc:ac6cb2691257f85b95e5ff76dc3b90e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code> object from a backend, forwarded to the <code><a class="el" href="structc10_1_1_device.html" title="Represents a a compute device on which a tensor is located. ">Device</a></code> constructor.  <a href="#ac6cb2691257f85b95e5ff76dc3b90e12">More...</a><br /></td></tr>
-<tr class="separator:ac6cb2691257f85b95e5ff76dc3b90e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb7f6407cbe48ce5f4d07d3d8d1e74c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb7f6407cbe48ce5f4d07d3d8d1e74c8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_options.html#afb7f6407cbe48ce5f4d07d3d8d1e74c8">TensorOptions</a> (<a class="el" href="classcaffe2_1_1_type_meta.html">caffe2::TypeMeta</a> <a class="el" href="structc10_1_1_tensor_options.html#a22604ea700fac87e28083dd5f7e67366">dtype</a>)</td></tr>
 <tr class="memdesc:afb7f6407cbe48ce5f4d07d3d8d1e74c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code> object with the given dtype. <br /></td></tr>
@@ -230,6 +227,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="memitem:aad3ccac264ed546a76d17dac77d72aeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad3ccac264ed546a76d17dac77d72aeb"></a>
 <a class="el" href="namespacec10.html#ad64cdd76c7657cda0c865ef9e5992fd3">Backend</a>&#160;</td><td class="memItemRight" valign="bottom"><b>backend</b> () const noexcept</td></tr>
 <tr class="separator:aad3ccac264ed546a76d17dac77d72aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c0fc990bc68e63cc935d687b7ba3f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3c0fc990bc68e63cc935d687b7ba3f4"></a>
+<a class="el" href="classc10_1_1_tensor_type_id.html">TensorTypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>computeTensorTypeId</b> () const </td></tr>
+<tr class="separator:af3c0fc990bc68e63cc935d687b7ba3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -298,34 +298,6 @@ template&lt;typename... Args, typename  = c10::guts::enable_if_t&lt;std::is_cons
 
 </div>
 </div>
-<a class="anchor" id="ac6cb2691257f85b95e5ff76dc3b90e12"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">c10::TensorOptions::TensorOptions </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacec10.html#ad64cdd76c7657cda0c865ef9e5992fd3">Backend</a>&#160;</td>
-          <td class="paramname"><em>backend</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructs a <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code> object from a backend, forwarded to the <code><a class="el" href="structc10_1_1_device.html" title="Represents a a compute device on which a tensor is located. ">Device</a></code> constructor. </p>
-
-<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00138">138</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a665ab9e9cee61d418514b3028dd9532c"></a>
 <div class="memitem">
@@ -351,7 +323,7 @@ template&lt;typename... Args, typename  = c10::guts::enable_if_t&lt;std::is_cons
 
 <p>Return a copy of <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code> with <code>device</code> set to the given one, or cleared if <code>device</code> is <code>nullopt</code>. </p>
 
-<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00174">174</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
+<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00169">169</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +354,7 @@ template&lt;typename... Args&gt; </div>
 <p>Return a copy of <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code> with <code>device</code> set to the given one. </p>
 <p>(This overload ensures that variadic template <a class="el" href="classc10_1_1optional.html">c10::optional</a> constructor for <a class="el" href="structc10_1_1_device.html" title="Represents a a compute device on which a tensor is located. ">Device</a> work correctly.) </p>
 
-<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00184">184</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
+<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00179">179</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +383,7 @@ template&lt;typename... Args&gt; </div>
 <p>Return a copy of <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code>, but with device set to CUDA, and the device index set to the given one. </p>
 <p>TODO: This function encourages bad behavior (assuming CUDA is the only device that matters). Get rid of it / rename it. </p>
 
-<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00193">193</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
+<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00188">188</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
 
 </div>
 </div>
@@ -438,7 +410,7 @@ template&lt;typename... Args&gt; </div>
 
 <p>Returns the device of the <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code>, or <code>c10::nullopt</code> if device is not specified. </p>
 
-<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00252">252</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
+<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00247">247</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
 
 </div>
 </div>
@@ -465,7 +437,7 @@ template&lt;typename... Args&gt; </div>
 
 <p>Returns the dtype of the <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code>, or <code>c10::nullopt</code> if device is not specified. </p>
 
-<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00273">273</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
+<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00268">268</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +464,7 @@ template&lt;typename... Args&gt; </div>
 
 <p>Returns the <code>is_variable</code> property of the <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code>, or <code>c10::nullopt</code> if <code>is_variable</code> is not specified. </p>
 
-<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00322">322</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
+<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00317">317</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +491,7 @@ template&lt;typename... Args&gt; </div>
 
 <p>Returns the layout of the <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code>, or <code>c10::nullopt</code> if layout is not specified. </p>
 
-<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00289">289</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
+<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00284">284</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
 
 </div>
 </div>
@@ -547,7 +519,7 @@ template&lt;typename... Args&gt; </div>
 
 <p>True if any of the elements of this <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code> do not match that of the other. </p>
 
-<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00168">168</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
+<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00163">163</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
 
 </div>
 </div>
@@ -574,7 +546,7 @@ template&lt;typename... Args&gt; </div>
 
 <p>Returns the <code>requires_grad</code> property of the <code><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a></code>, or <code>c10::nullopt</code> if <code>requires_grad</code> is not specified. </p>
 
-<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00305">305</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
+<p>Definition at line <a class="el" href="c10_2core_2_tensor_options_8h_source.html#l00300">300</a> of file <a class="el" href="c10_2core_2_tensor_options_8h_source.html">TensorOptions.h</a>.</p>
 
 </div>
 </div>
@@ -585,7 +557,7 @@ template&lt;typename... Args&gt; </div>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 19 2019 13:06:52 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 20 2019 13:07:26 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
