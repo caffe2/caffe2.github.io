@@ -278,18 +278,12 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>allclose</b> 
 <tr class="memitem:ac68ee9ac5b6e036f6c19298b2e016698"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac68ee9ac5b6e036f6c19298b2e016698"></a>
 virtual <a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>any</b> (const <a class="el" href="classat_1_1_tensor.html">Tensor</a> &amp;self, int64_t dim, bool keepdim) const =0</td></tr>
 <tr class="separator:ac68ee9ac5b6e036f6c19298b2e016698"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac09f7be727395659bfea21cde412c760"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac09f7be727395659bfea21cde412c760"></a>
-virtual <a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argmax</b> (const <a class="el" href="classat_1_1_tensor.html">Tensor</a> &amp;self, int64_t dim, bool keepdim) const =0</td></tr>
-<tr class="separator:ac09f7be727395659bfea21cde412c760"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162ed9e8dd902c7200d1a141e55fe1de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a162ed9e8dd902c7200d1a141e55fe1de"></a>
-virtual <a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argmax</b> (const <a class="el" href="classat_1_1_tensor.html">Tensor</a> &amp;self) const =0</td></tr>
-<tr class="separator:a162ed9e8dd902c7200d1a141e55fe1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71ae9119a4922a42d3ccd31cbe14afb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71ae9119a4922a42d3ccd31cbe14afb8"></a>
-virtual <a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argmin</b> (const <a class="el" href="classat_1_1_tensor.html">Tensor</a> &amp;self, int64_t dim, bool keepdim) const =0</td></tr>
-<tr class="separator:a71ae9119a4922a42d3ccd31cbe14afb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af84798961c41ca17a979e53156ef9429"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af84798961c41ca17a979e53156ef9429"></a>
-virtual <a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argmin</b> (const <a class="el" href="classat_1_1_tensor.html">Tensor</a> &amp;self) const =0</td></tr>
-<tr class="separator:af84798961c41ca17a979e53156ef9429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e24e5e5e4f1d2cd7cda9feee5e7ec0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e24e5e5e4f1d2cd7cda9feee5e7ec0a"></a>
+virtual <a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argmax</b> (const <a class="el" href="classat_1_1_tensor.html">Tensor</a> &amp;self, <a class="el" href="classc10_1_1optional.html">c10::optional</a>&lt; int64_t &gt; dim, bool keepdim) const =0</td></tr>
+<tr class="separator:a0e24e5e5e4f1d2cd7cda9feee5e7ec0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8be9a2b9ac548f982b58a0c45babf3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e8be9a2b9ac548f982b58a0c45babf3"></a>
+virtual <a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argmin</b> (const <a class="el" href="classat_1_1_tensor.html">Tensor</a> &amp;self, <a class="el" href="classc10_1_1optional.html">c10::optional</a>&lt; int64_t &gt; dim, bool keepdim) const =0</td></tr>
+<tr class="separator:a1e8be9a2b9ac548f982b58a0c45babf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0432130029737c4fff9f1211655b43b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0432130029737c4fff9f1211655b43b7"></a>
 virtual <a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>as_strided</b> (const <a class="el" href="classat_1_1_tensor.html">Tensor</a> &amp;self, <a class="el" href="classc10_1_1_array_ref.html">IntArrayRef</a> size, <a class="el" href="classc10_1_1_array_ref.html">IntArrayRef</a> stride, <a class="el" href="classc10_1_1optional.html">c10::optional</a>&lt; int64_t &gt; storage_offset) const =0</td></tr>
 <tr class="separator:a0432130029737c4fff9f1211655b43b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1683,7 +1677,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_undefined_</b></td
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{pure_virtual_type_method_declarations}</div><div class="line"><span class="keyword">protected</span>:</div><div class="line">  TensorTypeId type_id_</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="aten_2src_2_a_ten_2core_2_type_8h_source.html#l00622">622</a> of file <a class="el" href="aten_2src_2_a_ten_2core_2_type_8h_source.html">Type.h</a>.</p>
+<p>Definition at line <a class="el" href="aten_2src_2_a_ten_2core_2_type_8h_source.html#l00620">620</a> of file <a class="el" href="aten_2src_2_a_ten_2core_2_type_8h_source.html">Type.h</a>.</p>
 
 </div>
 </div>
@@ -1694,7 +1688,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_undefined_</b></td
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 20 2019 13:07:26 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 21 2019 13:06:25 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

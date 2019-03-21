@@ -405,18 +405,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allclose</b> (const <
 <tr class="memitem:ad49222ef40bb1d42d076cf34aeaf5905"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad49222ef40bb1d42d076cf34aeaf5905"></a>
 <a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>any</b> (int64_t dim, bool keepdim=false) const </td></tr>
 <tr class="separator:ad49222ef40bb1d42d076cf34aeaf5905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab807c021b0fd17c309a9896c2d158986"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab807c021b0fd17c309a9896c2d158986"></a>
-<a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argmax</b> (int64_t dim, bool keepdim=false) const </td></tr>
-<tr class="separator:ab807c021b0fd17c309a9896c2d158986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa82f7ffe806e7162305e36f02ec37b66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa82f7ffe806e7162305e36f02ec37b66"></a>
-<a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argmax</b> () const </td></tr>
-<tr class="separator:aa82f7ffe806e7162305e36f02ec37b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c2d1e51a2e90756dc29eb953e5326ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c2d1e51a2e90756dc29eb953e5326ab"></a>
-<a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argmin</b> (int64_t dim, bool keepdim=false) const </td></tr>
-<tr class="separator:a7c2d1e51a2e90756dc29eb953e5326ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a039139e4b9de7453f34e44c7e70cde8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a039139e4b9de7453f34e44c7e70cde8a"></a>
-<a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argmin</b> () const </td></tr>
-<tr class="separator:a039139e4b9de7453f34e44c7e70cde8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646e2fd104f43a95759f1fad72c5235c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a646e2fd104f43a95759f1fad72c5235c"></a>
+<a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argmax</b> (<a class="el" href="classc10_1_1optional.html">c10::optional</a>&lt; int64_t &gt; dim=c10::nullopt, bool keepdim=false) const </td></tr>
+<tr class="separator:a646e2fd104f43a95759f1fad72c5235c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f36611065a2c44147704ee3a0d78427"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f36611065a2c44147704ee3a0d78427"></a>
+<a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argmin</b> (<a class="el" href="classc10_1_1optional.html">c10::optional</a>&lt; int64_t &gt; dim=c10::nullopt, bool keepdim=false) const </td></tr>
+<tr class="separator:a3f36611065a2c44147704ee3a0d78427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ef085ab4c2437fdd481a38237369ff7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ef085ab4c2437fdd481a38237369ff7"></a>
 <a class="el" href="classat_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>as_strided</b> (<a class="el" href="classc10_1_1_array_ref.html">IntArrayRef</a> size, <a class="el" href="classc10_1_1_array_ref.html">IntArrayRef</a> stride, <a class="el" href="classc10_1_1optional.html">c10::optional</a>&lt; int64_t &gt; storage_offset=c10::nullopt) const </td></tr>
 <tr class="separator:a9ef085ab4c2437fdd481a38237369ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1924,25 +1918,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>WeakTensor</b></td>
 <p>Returns true if the <code><a class="el" href="classat_1_1_tensor.html">Tensor</a></code> is actually a <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">torch::autograd::Variable</a></code>. </p>
 <p>Defined in Type.h because of include order issues. </p>
 
-<p>Definition at line <a class="el" href="core_2_tensor_methods_8h_source.html#l01289">1289</a> of file <a class="el" href="core_2_tensor_methods_8h_source.html">TensorMethods.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a69373da37abb04b8bbe57215eab17305"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a> at::Tensor::options </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the <code>TensorOptions</code> corresponding to this <code><a class="el" href="classat_1_1_tensor.html">Tensor</a></code>. </p>
-<p>Defined in TensorOptions.h. </p>
+<p>Definition at line <a class="el" href="core_2_tensor_methods_8h_source.html#l01283">1283</a> of file <a class="el" href="core_2_tensor_methods_8h_source.html">TensorMethods.h</a>.</p>
 
 </div>
 </div>
@@ -1974,6 +1950,24 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>WeakTensor</b></td>
 
 </div>
 </div>
+<a class="anchor" id="a69373da37abb04b8bbe57215eab17305"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc10_1_1_tensor_options.html">TensorOptions</a> at::Tensor::options </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the <code>TensorOptions</code> corresponding to this <code><a class="el" href="classat_1_1_tensor.html">Tensor</a></code>. </p>
+<p>Defined in TensorOptions.h. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>aten/src/ATen/core/<a class="el" href="aten_2src_2_a_ten_2core_2_tensor_8h_source.html">Tensor.h</a></li>
 <li>aten/src/ATen/core/<a class="el" href="aten_2src_2_a_ten_2core_2_tensor_8cpp_source.html">Tensor.cpp</a></li>
@@ -1984,7 +1978,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>WeakTensor</b></td>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 20 2019 13:07:26 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 21 2019 13:06:25 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

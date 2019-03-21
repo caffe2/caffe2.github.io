@@ -5,7 +5,7 @@ var searchData=
   ['unaryelementwisewithargsop',['UnaryElementwiseWithArgsOp',['../classcaffe2_1_1_unary_elementwise_with_args_op.html',1,'caffe2']]],
   ['unaryfunctorwithdefaultctor',['UnaryFunctorWithDefaultCtor',['../structcaffe2_1_1_unary_functor_with_default_ctor.html',1,'caffe2']]],
   ['unaryop',['UnaryOp',['../structtorch_1_1jit_1_1script_1_1_unary_op.html',1,'torch::jit::script']]],
-  ['uncopyabledataset',['UnCopyableDataset',['../struct_un_copyable_dataset.html',1,'UnCopyableDataset'],['../struct_uncopyable_dataset.html',1,'UncopyableDataset']]],
+  ['uncopyabledataset',['UncopyableDataset',['../struct_uncopyable_dataset.html',1,'UncopyableDataset'],['../struct_un_copyable_dataset.html',1,'UnCopyableDataset']]],
   ['undefinedtensorimpl',['UndefinedTensorImpl',['../structc10_1_1_undefined_tensor_impl.html',1,'c10']]],
   ['undefinedtype',['UndefinedType',['../structat_1_1_undefined_type.html',1,'at']]],
   ['uniformfillop',['UniformFillOp',['../classcaffe2_1_1_uniform_fill_op.html',1,'caffe2']]],

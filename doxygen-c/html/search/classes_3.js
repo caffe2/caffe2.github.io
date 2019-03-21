@@ -300,7 +300,6 @@ var searchData=
   ['cudnnsoftmaxop',['CuDNNSoftmaxOp',['../classcaffe2_1_1_cu_d_n_n_softmax_op.html',1,'caffe2']]],
   ['cudnnstate',['CuDNNState',['../classcaffe2_1_1_cu_d_n_n_state.html',1,'caffe2']]],
   ['cudnntensordescwrapper',['cudnnTensorDescWrapper',['../classcaffe2_1_1cudnn_tensor_desc_wrapper.html',1,'caffe2']]],
-  ['cudnntransposeop',['CuDNNTransposeOp',['../classcaffe2_1_1_cu_d_n_n_transpose_op.html',1,'caffe2']]],
   ['cudnntypewrapper',['cudnnTypeWrapper',['../classcaffe2_1_1cudnn_type_wrapper.html',1,'caffe2']]],
   ['cudnntypewrapper_3c_20at_3a_3ahalf_20_3e',['cudnnTypeWrapper&lt; at::Half &gt;',['../classcaffe2_1_1cudnn_type_wrapper_3_01at_1_1_half_01_4.html',1,'caffe2']]],
   ['cudnntypewrapper_3c_20double_20_3e',['cudnnTypeWrapper&lt; double &gt;',['../classcaffe2_1_1cudnn_type_wrapper_3_01double_01_4.html',1,'caffe2']]],

@@ -2,8 +2,8 @@ var searchData=
 [
   ['validiterator',['ValidIterator',['../structtorch_1_1data_1_1detail_1_1_valid_iterator.html',1,'torch::data::detail']]],
   ['value',['Value',['../classtorch_1_1nn_1_1_any_module_1_1_value.html',1,'torch::nn::AnyModule']]],
-  ['value',['Value',['../classnom_1_1repr_1_1_value.html',1,'nom::repr']]],
   ['value',['Value',['../structtorch_1_1jit_1_1_value.html',1,'torch::jit']]],
+  ['value',['Value',['../classnom_1_1repr_1_1_value.html',1,'nom::repr']]],
   ['valueerror',['ValueError',['../structtorch_1_1_value_error.html',1,'torch']]],
   ['var',['Var',['../structtorch_1_1jit_1_1script_1_1_var.html',1,'torch::jit::script']]],
   ['var',['Var',['../structat_1_1native_1_1_var.html',1,'at::native']]],
