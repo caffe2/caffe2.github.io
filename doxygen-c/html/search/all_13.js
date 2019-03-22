@@ -287,7 +287,7 @@ var searchData=
   ['storehandlertimeoutexception',['StoreHandlerTimeoutException',['../structcaffe2_1_1_store_handler_timeout_exception.html',1,'caffe2']]],
   ['storesetop',['StoreSetOp',['../classcaffe2_1_1_store_set_op.html',1,'caffe2']]],
   ['storewaitop',['StoreWaitOp',['../classcaffe2_1_1_store_wait_op.html',1,'caffe2']]],
-  ['stream',['Stream',['../classc10_1_1_stream.html#ab0b99edd63d5bc9b470f54dba78393ca',1,'c10::Stream::Stream(Unsafe, Device device, StreamId id)'],['../classc10_1_1_stream.html#a8ef436fee2dd43f1e503fb8aaefda8b5',1,'c10::Stream::Stream(Default, Device device)'],['../classc10_1_1cuda_1_1_c_u_d_a_stream.html#abd1cc1f30b7dcd24d155ea52eb33c3da',1,'c10::cuda::CUDAStream::stream()']]],
+  ['stream',['stream',['../classc10_1_1cuda_1_1_c_u_d_a_stream.html#abd1cc1f30b7dcd24d155ea52eb33c3da',1,'c10::cuda::CUDAStream::stream()'],['../classc10_1_1_stream.html#ab0b99edd63d5bc9b470f54dba78393ca',1,'c10::Stream::Stream(Unsafe, Device device, StreamId id)'],['../classc10_1_1_stream.html#a8ef436fee2dd43f1e503fb8aaefda8b5',1,'c10::Stream::Stream(Default, Device device)']]],
   ['stream',['Stream',['../structat_1_1native_1_1_stream.html',1,'at::native']]],
   ['stream',['Stream',['../classc10_1_1_stream.html',1,'c10']]],
   ['streamguard',['StreamGuard',['../structc10_1_1_stream_guard.html',1,'c10']]],

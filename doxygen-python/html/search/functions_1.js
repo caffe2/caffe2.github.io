@@ -6,7 +6,7 @@ var searchData=
   ['add_5flr_5fmultiplier',['add_lr_multiplier',['../classcaffe2_1_1python_1_1optimizer_1_1_optimizer.html#ad0ab1e271e8f6b88931278855fd9565f',1,'caffe2::python::optimizer::Optimizer']]],
   ['add_5foperators',['add_operators',['../classcaffe2_1_1python_1_1layers_1_1layers_1_1_model_layer.html#aaf615d74e4be396200d540ff617d00bf',1,'caffe2::python::layers::layers::ModelLayer']]],
   ['adderr',['addErr',['../classverify_1_1_errors.html#a22f52731afff449c64d930e31d4dfea2',1,'verify::Errors']]],
-  ['adderrctxt',['addErrCtxt',['../classverify_1_1_errors.html#a9ade1cf1d5b66609d3417ba076675aa2',1,'verify::Errors']]],
+  ['adderrctxt',['addErrCtxt',['../classverify_1_1_errors.html#aa045ca50d64c1d5dcf5d7b0113748cb7',1,'verify::Errors']]],
   ['addgradientoperators',['AddGradientOperators',['../classcaffe2_1_1python_1_1core_1_1_net.html#a05a5b931daedb23c17d608b8108cb0c9',1,'caffe2::python::core::Net']]],
   ['addparam',['AddParam',['../classcaffe2_1_1python_1_1models_1_1seq2seq_1_1seq2seq__model__helper_1_1_seq2_seq_model_helper.html#ae631333471a405d8b869405272b08c31',1,'caffe2::python::models::seq2seq::seq2seq_model_helper::Seq2SeqModelHelper']]],
   ['all_5fscalars',['all_scalars',['../classcaffe2_1_1python_1_1schema_1_1_field.html#a82cae72e7c979cc3ba522dafc78a432d',1,'caffe2::python::schema::Field']]],

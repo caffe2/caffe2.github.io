@@ -387,15 +387,22 @@ Data Fields</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:afcefb94933a9ea7015fe9b6aa3d98243"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcefb94933a9ea7015fe9b6aa3d98243"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunOnDeviceImpl</b> (const int N, const int G, const int <a class="el" href="struct_d.html">D</a>, const int HxW, const <a class="el" href="struct_t.html">T</a> *dY_data, const <a class="el" href="struct_t.html">T</a> *X_data, const <a class="el" href="struct_t.html">T</a> *mu_data, const <a class="el" href="struct_t.html">T</a> *rsig_data, const <a class="el" href="struct_t.html">T</a> *gamma_data, <a class="el" href="struct_t.html">T</a> *dX_data, <a class="el" href="struct_t.html">T</a> *dgamma_data, <a class="el" href="struct_t.html">T</a> *dbeta_data)</td></tr>
-<tr class="separator:afcefb94933a9ea7015fe9b6aa3d98243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6208e05a35e62fe5b538eabfb5a38d45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6208e05a35e62fe5b538eabfb5a38d45"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunOnDeviceWithOrderNCHW</b> (int N, int G, int K, int HxW, const <a class="el" href="struct_t.html">T</a> *dY_data, const <a class="el" href="struct_t.html">T</a> *X_data, const <a class="el" href="struct_t.html">T</a> *mu_data, const <a class="el" href="struct_t.html">T</a> *rsig_data, const <a class="el" href="struct_t.html">T</a> *gamma_data, <a class="el" href="struct_t.html">T</a> *dX_data, <a class="el" href="struct_t.html">T</a> *dgamma_data, <a class="el" href="struct_t.html">T</a> *dbeta_data)</td></tr>
+<tr class="separator:a6208e05a35e62fe5b538eabfb5a38d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b22d6963a1214b5ecdaeef14e14280e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b22d6963a1214b5ecdaeef14e14280e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RunOnDeviceWithOrderNHWC</b> (int N, int G, int K, int HxW, const <a class="el" href="struct_t.html">T</a> *dY_data, const <a class="el" href="struct_t.html">T</a> *X_data, const <a class="el" href="struct_t.html">T</a> *mu_data, const <a class="el" href="struct_t.html">T</a> *rsig_data, const <a class="el" href="struct_t.html">T</a> *gamma_data, <a class="el" href="struct_t.html">T</a> *dX_data, <a class="el" href="struct_t.html">T</a> *dgamma_data, <a class="el" href="struct_t.html">T</a> *dbeta_data)</td></tr>
+<tr class="separator:a1b22d6963a1214b5ecdaeef14e14280e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdb4cd78eaabe8b347bbbedf56ccf09a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdb4cd78eaabe8b347bbbedf56ccf09a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>INPUT_TAGS</b> (OUTPUT_GRAD, INPUT, GAMMA, BETA, MU, INV_SIGMA)</td></tr>
 <tr class="separator:abdb4cd78eaabe8b347bbbedf56ccf09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa729533b15bc5d411d30d5efeb372ba4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa729533b15bc5d411d30d5efeb372ba4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>OUTPUT_TAGS</b> (INPUT_GRAD, GAMMA_GRAD, BETA_GRAD)</td></tr>
 <tr class="separator:aa729533b15bc5d411d30d5efeb372ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d064539dea141b620e8e99d7c9fa22c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0d064539dea141b620e8e99d7c9fa22c"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a0d064539dea141b620e8e99d7c9fa22c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RunOnDeviceWithOrderNCHW</b> (const int N, const int G, const int K, const int HxW, const float *dY_data, const float *X_data, const float *mu_data, const float *rsig_data, const float *gamma_data, float *dX_data, float *dgamma_data, float *dbeta_data)</td></tr>
+<tr class="separator:a0d064539dea141b620e8e99d7c9fa22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classcaffe2_1_1_operator_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcaffe2_1_1_operator_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classcaffe2_1_1_operator_base.html">caffe2::OperatorBase</a></td></tr>
 <tr class="memitem:a7204a11de21c12325f7597e2c899b8e0 inherit pro_methods_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7204a11de21c12325f7597e2c899b8e0"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordEvent</b> (const char *=nullptr)</td></tr>
@@ -427,6 +434,18 @@ const StorageOrder&#160;</td><td class="memItemRight" valign="bottom"><b>order_<
 <tr class="memitem:a5320cafa1a29c0bb3bd6c3bc6d6a6e7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5320cafa1a29c0bb3bd6c3bc6d6a6e7c"></a>
 <a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>db_</b></td></tr>
 <tr class="separator:a5320cafa1a29c0bb3bd6c3bc6d6a6e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb5f322e9d927f73b4c4d2c4b3a1ca2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bb5f322e9d927f73b4c4d2c4b3a1ca2"></a>
+<a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dY_scale_</b></td></tr>
+<tr class="separator:a2bb5f322e9d927f73b4c4d2c4b3a1ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf522b7814dcdaf54e0797cfe0a682e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf522b7814dcdaf54e0797cfe0a682e2"></a>
+<a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>X_scale_</b></td></tr>
+<tr class="separator:abf522b7814dcdaf54e0797cfe0a682e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7195a6d6cd1d11c6942d87b264e8f8e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7195a6d6cd1d11c6942d87b264e8f8e3"></a>
+<a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bias_</b></td></tr>
+<tr class="separator:a7195a6d6cd1d11c6942d87b264e8f8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e698a0492016dd765ccf6facb190e01"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e698a0492016dd765ccf6facb190e01"></a>
+<a class="el" href="classnom_1_1repr_1_1_tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ones_</b></td></tr>
+<tr class="separator:a1e698a0492016dd765ccf6facb190e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classcaffe2_1_1_operator_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcaffe2_1_1_operator_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcaffe2_1_1_operator_base.html">caffe2::OperatorBase</a></td></tr>
 <tr class="memitem:a500d504fa58edf7eab1c3e6c6b4bf6b1 inherit pro_attribs_classcaffe2_1_1_operator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a500d504fa58edf7eab1c3e6c6b4bf6b1"></a>
 std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1_event.html">Event</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>event_</b></td></tr>
@@ -452,7 +471,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>kNoNetPos
 class caffe2::GroupNormGradientOp&lt; T, Context &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="group__norm__op_8h_source.html#l00195">195</a> of file <a class="el" href="group__norm__op_8h_source.html">group_norm_op.h</a>.</p>
+<p>Definition at line <a class="el" href="group__norm__op_8h_source.html#l00198">198</a> of file <a class="el" href="group__norm__op_8h_source.html">group_norm_op.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>caffe2/operators/<a class="el" href="group__norm__op_8h_source.html">group_norm_op.h</a></li>
 <li>caffe2/operators/<a class="el" href="group__norm__op_8cc_source.html">group_norm_op.cc</a></li>
@@ -461,7 +480,7 @@ class caffe2::GroupNormGradientOp&lt; T, Context &gt;</h3>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 21 2019 13:06:27 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 22 2019 13:07:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

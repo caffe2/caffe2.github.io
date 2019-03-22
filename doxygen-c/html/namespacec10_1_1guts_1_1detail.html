@@ -175,10 +175,10 @@ template&lt;class T , size_t N, size_t... I&gt; </td></tr>
 template&lt;class T , size_t N, size_t... I&gt; </td></tr>
 <tr class="memitem:a7abb36e7757cf83110ab20ac1e24fbb0"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classc10_1_1guts_1_1array.html">array</a>&lt; <a class="el" href="struct_t.html">T</a>, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_array_</b> (const <a class="el" href="struct_t.html">T</a>(&amp;arr)[N], <a class="el" href="structc10_1_1guts_1_1integer__sequence.html">guts::index_sequence</a>&lt; I... &gt;)</td></tr>
 <tr class="separator:a7abb36e7757cf83110ab20ac1e24fbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dfa06d597b96dde07f1216d0473bd16"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3dfa06d597b96dde07f1216d0473bd16"></a>
+<tr class="memitem:a64894a04ba9f0f47598c93f03ca490cf"><td class="memTemplParams" colspan="2"><a class="anchor" id="a64894a04ba9f0f47598c93f03ca490cf"></a>
 template&lt;class F , class Tuple , std::size_t... I&gt; </td></tr>
-<tr class="memitem:a3dfa06d597b96dde07f1216d0473bd16"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>apply_impl</b> (F &amp;&amp;f, Tuple &amp;&amp;t, <a class="el" href="structc10_1_1guts_1_1integer__sequence.html">guts::index_sequence</a>&lt; I... &gt;) -&gt; decltype(forward&lt; F &gt;(f)(std::get&lt; I &gt;(forward&lt; Tuple &gt;(t))...))</td></tr>
-<tr class="separator:a3dfa06d597b96dde07f1216d0473bd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64894a04ba9f0f47598c93f03ca490cf"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>apply_impl</b> (F &amp;&amp;f, Tuple &amp;&amp;t, <a class="el" href="structc10_1_1guts_1_1integer__sequence.html">guts::index_sequence</a>&lt; I... &gt;) -&gt; decltype(c10::guts::forward&lt; F &gt;(f)(std::get&lt; I &gt;(c10::guts::forward&lt; Tuple &gt;(t))...))</td></tr>
+<tr class="separator:a64894a04ba9f0f47598c93f03ca490cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Some added features not available in std::array. </p>
@@ -197,7 +197,7 @@ template&lt;class F , class Tuple , std::size_t... I&gt; </td></tr>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 21 2019 13:06:25 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 22 2019 13:07:00 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
