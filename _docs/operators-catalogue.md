@@ -5127,6 +5127,20 @@ Initial 'count': 5 Initial 'done' value: False  Testing CountUp operator...
 
 
 
+## Crash
+
+Crashes the program. Use for testing
+
+
+### Code
+
+
+[operators/crash_op.cc](https://github.com/pytorch/pytorch/blob/master/operators/crash_op.cc)
+
+---
+
+
+
 ## CreateAtomicBool
 
 Create an unique_ptr blob to hold an atomic<bool>
