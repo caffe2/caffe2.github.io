@@ -2054,9 +2054,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_view_</b></td></tr
 <tr class="memitem:aedca2a8a332a648e3f99f54f1aa7321d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedca2a8a332a648e3f99f54f1aa7321d"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>output_nr_</b></td></tr>
 <tr class="separator:aedca2a8a332a648e3f99f54f1aa7321d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6767bf2cc16c59c61bf83114c0bc9e90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6767bf2cc16c59c61bf83114c0bc9e90"></a>
-PyObject *&#160;</td><td class="memItemRight" valign="bottom"><b>pyobj_</b> = nullptr</td></tr>
-<tr class="separator:a6767bf2cc16c59c61bf83114c0bc9e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2de0d79f6f0f34d9ece55d5664de61fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2de0d79f6f0f34d9ece55d5664de61fc"></a>
 std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>mutex_</b></td></tr>
 <tr class="separator:a2de0d79f6f0f34d9ece55d5664de61fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2147,7 +2144,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Returns the <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> that this <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> is a view of. </p>
 <p>If this <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> is not a view, throw a <code>std::runtime_error</code>. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00738">738</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00737">737</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2175,7 +2172,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Retrieves the current value of the <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code>'s version counter. </p>
 <p>Equivalent to calling <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html#af60bfa11004007579f0dd4413e8b0072" title="Retrieves this Variables version counter. ">version_counter()</a>.<a class="el" href="structtorch_1_1autograd_1_1_variable.html#afc03d497e638655992c1efed0daf8773" title="Retrieves the current value of the Variable&#39;s version counter. ">current_version()</a></code>. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00707">707</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00706">706</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2203,7 +2200,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Returns a copy of this <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> that is detached from its autograd graph and has a blank version. </p>
 <p>This method is OK to call if the <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> is a view. NOTE: Previously, if we change the tensor metadata (e.g. sizes / strides / storage / storage_offset) of a tensor created from <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html#a35108f695afe113fc3f7d38b1c8e2034" title="Returns a copy of this Variable that is detached from its autograd graph and has a blank version...">detach()</a></code>, those metadata in the original tensor will also be updated. However, the new behavior is that those metadata changes to the detached tensor will not update the original tensor anymore, and in the <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html#a35108f695afe113fc3f7d38b1c8e2034" title="Returns a copy of this Variable that is detached from its autograd graph and has a blank version...">detach()</a></code> function we need to set <code>allow_tensor_metadata_change_</code> to false to make such changes explicitly illegal, in order to prevent users from changing metadata of the detached tensor and expecting the original tensor to also be updated. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00673">673</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00672">672</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2223,7 +2220,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Like <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html#a35108f695afe113fc3f7d38b1c8e2034" title="Returns a copy of this Variable that is detached from its autograd graph and has a blank version...">detach()</a></code>, but removes this <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> in-place. </p>
 <p>This method may only be called on non-view <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code>s. You can use <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html#a1403792282c068334dc954960ba16267" title="Returns true if this Variable is a view of another Variable. ">is_view()</a></code> to check this. If this <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> is a view, throws an <code>std::runtime_error()</code>. </p>
 
-<p>Definition at line <a class="el" href="variable_8cpp_source.html#l00134">134</a> of file <a class="el" href="variable_8cpp_source.html">variable.cpp</a>.</p>
+<p>Definition at line <a class="el" href="variable_8cpp_source.html#l00133">133</a> of file <a class="el" href="variable_8cpp_source.html">variable.cpp</a>.</p>
 
 </div>
 </div>
@@ -2242,7 +2239,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 
 <p>Gets the gradient accumulator of the <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> if it has one, or else create one on the fly and return it. </p>
 
-<p>Definition at line <a class="el" href="variable_8cpp_source.html#l00111">111</a> of file <a class="el" href="variable_8cpp_source.html">variable.cpp</a>.</p>
+<p>Definition at line <a class="el" href="variable_8cpp_source.html#l00110">110</a> of file <a class="el" href="variable_8cpp_source.html">variable.cpp</a>.</p>
 
 </div>
 </div>
@@ -2263,7 +2260,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>If this is a leaf variable, the pointer returned will be null.</p>
 <p>For View Variables: Gets the up-to-date grad_fn. If the shared data or base was modified, we re-create the grad_fn to express the up-to-date view relationship between this and the base <a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a>. </p>
 
-<p>Definition at line <a class="el" href="variable_8cpp_source.html#l00201">201</a> of file <a class="el" href="variable_8cpp_source.html">variable.cpp</a>.</p>
+<p>Definition at line <a class="el" href="variable_8cpp_source.html#l00200">200</a> of file <a class="el" href="variable_8cpp_source.html">variable.cpp</a>.</p>
 
 </div>
 </div>
@@ -2319,7 +2316,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Returns the input index of the gradient <code>Function</code> to which this <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> is connected. </p>
 <p>Note: input indexes of the gradient <code>Function</code> correspond to output indexes of the corresponding forward <code>Function</code>. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00687">687</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00686">686</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2341,7 +2338,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Called after in-place modifications.</p>
 <p>For View Variables: Called after in-place modifications. Modifies the grad_fn of the base <a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a>. </p>
 
-<p>Definition at line <a class="el" href="variable_8cpp_source.html#l00236">236</a> of file <a class="el" href="variable_8cpp_source.html">variable.cpp</a>.</p>
+<p>Definition at line <a class="el" href="variable_8cpp_source.html#l00235">235</a> of file <a class="el" href="variable_8cpp_source.html">variable.cpp</a>.</p>
 
 </div>
 </div>
@@ -2370,7 +2367,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Sets the <code><a class="el" href="struct_tensor.html">Tensor</a></code> held by this <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> to the one supplied. </p>
 <p>It is rarely necessary to call this; it's used, for example, when a non-sparse gradient gets added to a sparse gradient, requiring the type of the gradient <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> to become non-sparse. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00678">678</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00677">677</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2399,7 +2396,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Set the gradient accumulator of the <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code>. </p>
 <p>This is only applicable to leaf variables. Interior variables should call <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html#a10a2a4f6c07a4df39ab5f600d8183485" title="Set the gradient edge – i.e. ">set_gradient_edge()</a></code>. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00664">664</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00663">663</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2428,7 +2425,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Set the gradient edge &ndash; i.e. </p>
 <p><code>grad_fn</code> and <code>input_nr</code> &ndash; of the <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code>. NOTE: This will always set the <code>grad_fn</code>, even if this is a leaf variable, and never the <code>grad_accumulator</code>. For the latter, use <code>set_grad_accumulator</code>. This allows late construction of an interior <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code>. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00682">682</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00681">681</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2467,7 +2464,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Sets the <code>requires_grad</code> property of <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code>. </p>
 <p>This should be true for leaf variables that want to accumulate gradients, and false for all other variables. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00361">361</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00360">360</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2495,7 +2492,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Attempts to get a pointer to the gradient accumulator of the <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code>, if it still exists. </p>
 <p>If the gradient accumulator function has been destroyed, returns a <code>nullptr</code>. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00669">669</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00668">668</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2541,7 +2538,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Creates a <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> from the given <code><a class="el" href="struct_tensor.html">Tensor</a></code>, copying its underlying <code>TensorImpl</code>. </p>
 <p><code>requires_grad</code> should be set only for leaves, and determines whether the <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> will accumulate gradients. NOTE: <code>data</code> must <em>not</em> be a <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> already. Its dynamic type <em>must</em> be <code><a class="el" href="struct_tensor.html">Tensor</a></code>. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00577">577</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00576">576</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2586,7 +2583,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Creates a <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> from the given <code><a class="el" href="struct_tensor.html">Tensor</a></code> and specify a <code>gradient_edge</code>, i.e. </p>
 <p>a (function, input_nr) pair specifying the function in the autograd graph, and what particular input of that function, this variable is connected to. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00610">610</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00609">609</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2631,7 +2628,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Creates a <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code> from the given <code><a class="el" href="struct_tensor.html">Tensor</a></code>, consuming its underlying <code>TensorImpl</code>. </p>
 <p>This is intended to be used from functions that immediately create a <code><a class="el" href="struct_tensor.html">Tensor</a></code>, convert it to a <code><a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a></code>, and then free it; it has been found to decrease the overhead of those operations, in some situations. The comments about <code>requires_grad</code> and <code>data</code> on the above version also apply to this one. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00594">594</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00593">593</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2691,7 +2688,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>Differentiable view. Track history with DifferentiableViewImpl.</p>
 <p>Non-differentiable view. Just share version counter. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00547">547</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00546">546</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2709,7 +2706,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>The value of the version_counter at the time grad_fn was created. </p>
 <p>The grad_fn field is stale if attr_version != version_counter.current_version(). </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00393">393</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00392">392</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2726,7 +2723,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <p>The underlying data tensor for this <a class="el" href="structtorch_1_1autograd_1_1_variable.html" title="Variable A Variable augments a Tensor with the ability to interact in our autograd machinery...">Variable</a>. </p>
 <p>This field will be removed once VariableImpl and TensorImpl are merged. </p>
 
-<p>Definition at line <a class="el" href="variable_8h_source.html#l00442">442</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
+<p>Definition at line <a class="el" href="variable_8h_source.html#l00441">441</a> of file <a class="el" href="variable_8h_source.html">variable.h</a>.</p>
 
 </div>
 </div>
@@ -2738,7 +2735,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_invariants</b
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 23 2019 13:05:59 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 24 2019 13:06:32 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
