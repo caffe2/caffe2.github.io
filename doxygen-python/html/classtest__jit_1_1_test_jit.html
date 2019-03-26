@@ -185,6 +185,24 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>test_cse</b> (self)</t
 <tr class="memitem:a8ec4c3faf88525dff049a6c442f3c2b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ec4c3faf88525dff049a6c442f3c2b5"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>test_recursive_cse</b> (self)</td></tr>
 <tr class="separator:a8ec4c3faf88525dff049a6c442f3c2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85afdfbe06b85c01cd1d34b8530b989b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85afdfbe06b85c01cd1d34b8530b989b"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>test_expand_fakequant</b> (self)</td></tr>
+<tr class="separator:a85afdfbe06b85c01cd1d34b8530b989b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14705b650a1b90f76565816dd25e2a8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14705b650a1b90f76565816dd25e2a8a"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>test_expand_propagate_qinfo</b> (self)</td></tr>
+<tr class="separator:a14705b650a1b90f76565816dd25e2a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29cc802008a37912e39c8f545ef08f7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29cc802008a37912e39c8f545ef08f7d"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>test_expand_insert_observers</b> (self)</td></tr>
+<tr class="separator:a29cc802008a37912e39c8f545ef08f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22e0e01513373cc963df7734e4bfd15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac22e0e01513373cc963df7734e4bfd15"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>test_expand_insert_fakequant</b> (self)</td></tr>
+<tr class="separator:ac22e0e01513373cc963df7734e4bfd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a191c50af8149552bd365b6e40a9cfd57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a191c50af8149552bd365b6e40a9cfd57"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>test_expand_quantlint</b> (self)</td></tr>
+<tr class="separator:a191c50af8149552bd365b6e40a9cfd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d311f76ef1652fa5d1414a867b95c57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d311f76ef1652fa5d1414a867b95c57"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>test_expand_fold_quant_inputs</b> (self)</td></tr>
+<tr class="separator:a1d311f76ef1652fa5d1414a867b95c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac409199d1e8f27d2f88a94b182897973"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac409199d1e8f27d2f88a94b182897973"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>test_shape_analysis_broadcast</b> (self)</td></tr>
 <tr class="separator:ac409199d1e8f27d2f88a94b182897973"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -345,6 +363,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>test_constant_prop_non
 <tr class="memitem:a8e4af21544ead0fb5456c311786fd692"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e4af21544ead0fb5456c311786fd692"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>test_constant_prop_if_inline</b> (self)</td></tr>
 <tr class="separator:a8e4af21544ead0fb5456c311786fd692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083f311976ba17bbccf9aa21a498f519"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a083f311976ba17bbccf9aa21a498f519"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>test_short_circuit_optimization</b> (self)</td></tr>
+<tr class="separator:a083f311976ba17bbccf9aa21a498f519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d3957d97e4fdb97b58867391d9ae602"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d3957d97e4fdb97b58867391d9ae602"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>test_trace_records_names</b> (self)</td></tr>
 <tr class="separator:a3d3957d97e4fdb97b58867391d9ae602"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -627,7 +648,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>longMessage</b> = Tru
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Check that inputs to traced functions are flattened</pre> 
-<p>Definition at line <a class="el" href="test__jit_8py_source.html#l01254">1254</a> of file <a class="el" href="test__jit_8py_source.html">test_jit.py</a>.</p>
+<p>Definition at line <a class="el" href="test__jit_8py_source.html#l01272">1272</a> of file <a class="el" href="test__jit_8py_source.html">test_jit.py</a>.</p>
 
 </div>
 </div>
@@ -645,7 +666,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>longMessage</b> = Tru
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Check that outputs of traced functions retain the original structure and nesting</pre> 
-<p>Definition at line <a class="el" href="test__jit_8py_source.html#l01245">1245</a> of file <a class="el" href="test__jit_8py_source.html">test_jit.py</a>.</p>
+<p>Definition at line <a class="el" href="test__jit_8py_source.html#l01263">1263</a> of file <a class="el" href="test__jit_8py_source.html">test_jit.py</a>.</p>
 
 </div>
 </div>
@@ -656,7 +677,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>longMessage</b> = Tru
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 25 2019 13:06:09 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 26 2019 13:06:11 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

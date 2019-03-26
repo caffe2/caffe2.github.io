@@ -19,5 +19,7 @@ var searchData=
   ['keys',['Keys',['../classc10_1_1_registry.html#aa4c3c5f771d47bae8ab333b1a9bc0c1d',1,'c10::Registry::Keys()'],['../classtorch_1_1_ordered_dict.html#aa995f9e8fa762b970e0794f8939e2936',1,'torch::OrderedDict::keys()']]],
   ['keysplitop',['KeySplitOp',['../classcaffe2_1_1_key_split_op.html',1,'caffe2']]],
   ['keyvaluetomapop',['KeyValueToMapOp',['../classcaffe2_1_1_key_value_to_map_op.html',1,'caffe2']]],
-  ['kldivergenceminimization',['KLDivergenceMinimization',['../classdnnlowp_1_1_k_l_divergence_minimization.html',1,'dnnlowp']]]
+  ['kldivergenceminimization',['KLDivergenceMinimization',['../classdnnlowp_1_1_k_l_divergence_minimization.html',1,'dnnlowp']]],
+  ['ku8',['kU8',['../namespacetorch.html#a5c00c565e7da60d3c19b850c8cb653c7',1,'torch']]],
+  ['kuint8',['kUInt8',['../namespacetorch.html#a8020f04bd2e1a116176f1f50e199f331',1,'torch']]]
 ];

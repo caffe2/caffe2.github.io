@@ -56,7 +56,7 @@ var searchData=
   ['deleteedge',['deleteEdge',['../classnom_1_1_graph.html#a9cf7f6a602de717061ca7c384c25bd5a',1,'nom::Graph']]],
   ['deletenet',['DeleteNet',['../classcaffe2_1_1_workspace.html#a1c1f09e34bc5725b3ca0e96b60357e7c',1,'caffe2::Workspace']]],
   ['deletenode',['deleteNode',['../classnom_1_1_graph.html#ac0102cb267b0f5508f3373ce26282fba',1,'nom::Graph']]],
-  ['deleter',['deleter',['../struct_d_l_managed_tensor.html#a3b5ac9adc40f2dbaf072531eb957d7ea',1,'DLManagedTensor']]],
+  ['deleter',['deleter',['../struct_d_l_managed_tensor.html#a3b5ac9adc40f2dbaf072531eb957d7ea',1,'DLManagedTensor::deleter()'],['../namespacetorch.html#a700f6dc2cebac675a1747189a402a6a0',1,'torch::Deleter()']]],
   ['demangle',['demangle',['../namespacec10.html#a103edec35d888a4d657a84c7a5da0b8b',1,'c10']]],
   ['demangle_5ftype',['demangle_type',['../namespacec10.html#a9bc154747f3775649649c79ba44657ba',1,'c10']]],
   ['densevectortoidlistop',['DenseVectorToIdListOp',['../classcaffe2_1_1_dense_vector_to_id_list_op.html',1,'caffe2']]],

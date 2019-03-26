@@ -1,6 +1,12 @@
 var searchData=
 [
-  ['tensor',['tensor',['../structat_1_1_operand_info.html#a39cba031b7fd96fe931f627d65485e42',1,'at::OperandInfo']]],
-  ['total_5fexample_5fcount_5fin_5fqueue_5f',['total_example_count_in_queue_',['../classtorch_1_1data_1_1datasets_1_1detail_1_1_batch_data_buffer.html#a4c6d679a802a66de7e089ca6e2576974',1,'torch::data::datasets::detail::BatchDataBuffer']]],
-  ['type',['type',['../structat_1_1_operand_info.html#a4aa395c5e54f0371cda7ff3f90160a5a',1,'at::OperandInfo::type()'],['../group___neural_networks.html#gaebe0bf8514de064d1d68e8857a3dccfd',1,'ANeuralNetworksOperandType::type()']]]
+  ['scale',['scale',['../group___neural_networks.html#gaee95637670d7b7179b28a9d5a22f621a',1,'ANeuralNetworksOperandType']]],
+  ['sequence_5fnumber_5f',['sequence_number_',['../classtorch_1_1data_1_1_data_loader_base.html#a155e6961e52b0b3eab1974710ab8a4b5',1,'torch::data::DataLoaderBase']]],
+  ['sequencer_5f',['sequencer_',['../classtorch_1_1data_1_1_data_loader_base.html#a2a0bfdb7cbe9564432642203e0d2ea18',1,'torch::data::DataLoaderBase']]],
+  ['shape',['shape',['../struct_d_l_tensor.html#a6e33904029ec8a18658b6bd62be28688',1,'DLTensor']]],
+  ['shuttle_5f',['shuttle_',['../classtorch_1_1data_1_1_data_loader_base.html#a02f99281b0c03302fdbd7d9deac76333',1,'torch::data::DataLoaderBase']]],
+  ['state',['state',['../structtorch_1_1nn_1_1_r_n_n_output.html#ab3cfb381a88265f15681a1cb5e32decc',1,'torch::nn::RNNOutput']]],
+  ['stream',['stream',['../namespacetorch.html#a30da3b9add17e41fcb37c3b7ce982466',1,'torch']]],
+  ['stride_5fbytes',['stride_bytes',['../structat_1_1_operand_info.html#a96428f647f0097f4d765cc8b0a9f797b',1,'at::OperandInfo']]],
+  ['strides',['strides',['../struct_d_l_tensor.html#a0ad3b8079e712f711b716d34d418d44e',1,'DLTensor']]]
 ];

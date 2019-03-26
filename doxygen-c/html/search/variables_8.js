@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lanes',['lanes',['../struct_d_l_data_type.html#a24de092fe56d358c1582e41499862594',1,'DLDataType']]]
+  ['ku8',['kU8',['../namespacetorch.html#a5c00c565e7da60d3c19b850c8cb653c7',1,'torch']]],
+  ['kuint8',['kUInt8',['../namespacetorch.html#a8020f04bd2e1a116176f1f50e199f331',1,'torch']]]
 ];
