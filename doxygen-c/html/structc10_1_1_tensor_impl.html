@@ -288,12 +288,6 @@ std::unique_ptr&lt; <a class="el" href="structc10_1_1_autograd_meta_interface.ht
 <tr class="memitem:a42e83a594d1549c67921a79ff226257a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42e83a594d1549c67921a79ff226257a"></a>
 virtual <a class="el" href="classc10_1_1intrusive__ptr.html">c10::intrusive_ptr</a>&lt; <a class="el" href="structc10_1_1_tensor_impl.html">TensorImpl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>shallow_copy_and_detach</b> () const </td></tr>
 <tr class="separator:a42e83a594d1549c67921a79ff226257a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca7ba5174387a58d6d1c6dc9603ef4e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca7ba5174387a58d6d1c6dc9603ef4e9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_pyobj</b> (PyObject *pyobj) noexcept</td></tr>
-<tr class="separator:aca7ba5174387a58d6d1c6dc9603ef4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba94ad40fd2e5db67a79d4b2e07c736"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ba94ad40fd2e5db67a79d4b2e07c736"></a>
-PyObject *&#160;</td><td class="memItemRight" valign="bottom"><b>pyobj</b> () const noexcept</td></tr>
-<tr class="separator:a6ba94ad40fd2e5db67a79d4b2e07c736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f9c5b2101ccad1d8f83446820cd7c07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f9c5b2101ccad1d8f83446820cd7c07"></a>
 DeviceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_impl.html#a5f9c5b2101ccad1d8f83446820cd7c07">device_type</a> () const </td></tr>
 <tr class="memdesc:a5f9c5b2101ccad1d8f83446820cd7c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">The device type of a <a class="el" href="struct_tensor.html">Tensor</a>, e.g., DeviceType::CPU or DeviceType::CUDA. <br /></td></tr>
@@ -332,9 +326,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShareExternalPointer<
 <tr class="memitem:aef23733a10c22f034c111faa2787eb15"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_t.html">T</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_impl.html#aef23733a10c22f034c111faa2787eb15">mutable_data</a> ()</td></tr>
 <tr class="memdesc:aef23733a10c22f034c111faa2787eb15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a typed pointer of the underlying storage.  <a href="#aef23733a10c22f034c111faa2787eb15">More...</a><br /></td></tr>
 <tr class="separator:aef23733a10c22f034c111faa2787eb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6cc24a26f0fc34beb6ec663dbd49232"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_impl.html#ad6cc24a26f0fc34beb6ec663dbd49232">storage_initialized</a> () const </td></tr>
-<tr class="memdesc:ad6cc24a26f0fc34beb6ec663dbd49232"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if a tensor is storage initialized.  <a href="#ad6cc24a26f0fc34beb6ec663dbd49232">More...</a><br /></td></tr>
-<tr class="separator:ad6cc24a26f0fc34beb6ec663dbd49232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f93ba4342dad6abb175a9e69cac8478"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_impl.html#a5f93ba4342dad6abb175a9e69cac8478">storage_initialized</a> () const noexcept</td></tr>
+<tr class="memdesc:a5f93ba4342dad6abb175a9e69cac8478"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if a tensor is storage initialized.  <a href="#a5f93ba4342dad6abb175a9e69cac8478">More...</a><br /></td></tr>
+<tr class="separator:a5f93ba4342dad6abb175a9e69cac8478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a944bc5a7f7a9514afd6dae6b34924ab7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_impl.html#a944bc5a7f7a9514afd6dae6b34924ab7">dtype_initialized</a> () const noexcept</td></tr>
 <tr class="memdesc:a944bc5a7f7a9514afd6dae6b34924ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if a tensor is dtype initialized.  <a href="#a944bc5a7f7a9514afd6dae6b34924ab7">More...</a><br /></td></tr>
 <tr class="separator:a944bc5a7f7a9514afd6dae6b34924ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -372,9 +366,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a72f073f6bd616b46ad263fdbbc1193ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72f073f6bd616b46ad263fdbbc1193ea"></a>
 std::unique_ptr&lt; <a class="el" href="structc10_1_1_autograd_meta_interface.html">c10::AutogradMetaInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>autograd_meta_</b> = nullptr</td></tr>
 <tr class="separator:a72f073f6bd616b46ad263fdbbc1193ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f8d87c5fdf20a1af379fb91e0903008"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f8d87c5fdf20a1af379fb91e0903008"></a>
-PyObject *&#160;</td><td class="memItemRight" valign="bottom"><b>pyobj_</b> = nullptr</td></tr>
-<tr class="separator:a6f8d87c5fdf20a1af379fb91e0903008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf92cd32b02c0cb9e00b4427e33fdbbc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf92cd32b02c0cb9e00b4427e33fdbbc"></a>
 <a class="el" href="classc10_1_1_small_vector.html">SmallVector</a>&lt; int64_t, 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sizes_</b></td></tr>
 <tr class="separator:aaf92cd32b02c0cb9e00b4427e33fdbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -429,7 +420,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>reserved_</b> = false
 </li>
 </ul>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00212">212</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00211">211</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a70af485166cfc35904dd7f22f5bcd430"></a>
 <div class="memitem">
@@ -499,7 +490,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>reserved_</b> = false
 <p>True if a tensor allows changes to its metadata (e.g. </p>
 <p>sizes / strides / storage / storage_offset). </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00825">825</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00821">821</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +523,7 @@ template&lt;typename T &gt; </div>
 <p>WARNING: If a tensor is not contiguous, you MUST use strides when performing index calculations to determine the location of elements in the tensor. We recommend using 'TensorAccessor' to handle this computation for you; this class is available from '<a class="el" href="struct_tensor.html">Tensor</a>'.</p>
 <p>WARNING: It is NOT valid to call this method on a Variable. See Note [We regret making Variable hold a <a class="el" href="struct_tensor.html">Tensor</a>] </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00565">565</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00564">564</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -562,7 +553,7 @@ template&lt;typename T &gt; </div>
 <p>WARNING: The data pointed to by this tensor may not contiguous; do NOT assume that <a class="el" href="structc10_1_1_tensor_impl.html#a7ca17502803f574e11aea0fcb961a7c8" title="Return the size of a single element of this tensor in bytes. ">itemsize()</a> * <a class="el" href="structc10_1_1_tensor_impl.html#a8e3b32d6afc37de6fbceda4556d03617" title="The number of elements in a tensor. ">numel()</a> is sufficient to compute the bytes that can be validly read from this tensor.</p>
 <p>WARNING: It is NOT valid to call this method on a Variable. See Note [We regret making Variable hold a <a class="el" href="struct_tensor.html">Tensor</a>] </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00598">598</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00595">595</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -620,7 +611,7 @@ template&lt;typename T &gt; </div>
 <p>True if a tensor is dtype initialized. </p>
 <p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor allocated with Caffe2-style constructors is dtype uninitialized until the first time <a class="el" href="structc10_1_1_tensor_impl.html#aef23733a10c22f034c111faa2787eb15" title="Returns a typed pointer of the underlying storage. ">mutable_data&lt;T&gt;()</a> is called. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01259">1259</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01246">1246</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -660,7 +651,7 @@ template&lt;typename T &gt; </div>
 <p>The underlying data may be reallocated in order to accommodate the new elements, in which case this tensors' capacity is grown at a factor of growthPct. This ensures that Extend runs on an amortized O(1) time complexity.</p>
 <p>This op is auto-asynchronous if the underlying device (CUDA) supports it. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00916">916</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00904">904</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -688,7 +679,7 @@ template&lt;typename T &gt; </div>
 <p>Release whatever memory the tensor was holding but keep size and type information. </p>
 <p>Subsequent call to mutable_data will trigger new memory allocation. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01083">1083</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01071">1071</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -790,7 +781,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented in <a class="el" href="structat_1_1_sparse_tensor_impl.html#a0c36dae2617b770b1d00f8fa413a6f8f">at::SparseTensorImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00332">332</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00331">331</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -818,7 +809,7 @@ template&lt;typename T &gt; </div>
 <p>True if a tensor is a variable. </p>
 <p>See Note [<a class="el" href="struct_tensor.html">Tensor</a> versus Variable in C++] </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00813">813</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00809">809</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -850,7 +841,7 @@ template&lt;typename T &gt; </div>
 <p>Why did we opt for wrapped numbers, as opposed to just having an extra function add(Tensor, Scalar)? This helps greatly reduce the amount of code we have to write for add, when actually a Tensor-Scalar addition is really just a Tensor-Tensor addition when the RHS is 0-dim (except for promotion behavior.)</p>
 <p>WARNING: It is NOT valid to call this method on a Variable. See Note [We regret making Variable hold a <a class="el" href="struct_tensor.html">Tensor</a>] </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00442">442</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00441">441</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -912,7 +903,7 @@ template&lt;typename T &gt; </div>
 <p>Returns a typed pointer of the underlying storage. </p>
 <p>For fundamental types, we reuse possible existing storage if there is sufficient capacity. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01233">1233</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01221">1221</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -940,7 +931,7 @@ template&lt;typename T &gt; </div>
 <p>The number of elements in a tensor. </p>
 <p>WARNING: Previously, if you were using the Caffe2 API, you could test <a class="el" href="structc10_1_1_tensor_impl.html#a8e3b32d6afc37de6fbceda4556d03617" title="The number of elements in a tensor. ">numel()</a> == -1 to see if a tensor was uninitialized. This is no longer true; numel always accurately reports the product of sizes of a tensor. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00318">318</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00317">317</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -970,7 +961,7 @@ template&lt;typename T &gt; </div>
 <p>Since we will need to know the type of the data for allocation, a TypeMeta object is passed in to specify the necessary information. This is conceptually equivalent of calling <a class="el" href="structc10_1_1_tensor_impl.html#aef23733a10c22f034c111faa2787eb15" title="Returns a typed pointer of the underlying storage. ">mutable_data&lt;T&gt;()</a> where the TypeMeta parameter meta is derived from the type <a class="el" href="struct_t.html">T</a>. This function differs from <a class="el" href="structc10_1_1_tensor_impl.html#aef23733a10c22f034c111faa2787eb15" title="Returns a typed pointer of the underlying storage. ">mutable_data&lt;T&gt;()</a> in the sense that the type <a class="el" href="struct_t.html">T</a> can be specified during runtime via the TypeMeta object.</p>
 <p>If the existing data does not match the desired type, it will be deleted and a new storage will be created. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01172">1172</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01160">1160</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -998,7 +989,7 @@ template&lt;typename T &gt; </div>
 <p>Recompute the cached contiguity of a tensor. </p>
 <p>Call this if you modify sizes or strides. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01371">1371</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01358">1358</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1017,7 @@ template&lt;typename T &gt; </div>
 <p>Recompute the cached numel of a tensor. </p>
 <p>Call this if you modify sizes. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01362">1362</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01349">1349</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1085,7 +1076,7 @@ template&lt;typename T &gt; </div>
 <p>Tensors which require gradient have history tracked for any operations performed on them, so that we can automatically differentiate back to them. <a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor that requires gradient and has no history is a "leaf" tensor, which we accumulate gradients into.</p>
 <p>It is only valid to call this method on a Variable. See Note [<a class="el" href="struct_tensor.html">Tensor</a> versus Variable in C++]. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00522">522</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00521">521</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1116,7 +1107,7 @@ template&lt;class T &gt; </div>
 <p>Reserve space for the underlying tensor. </p>
 <p>This must be called after <a class="el" href="structc10_1_1_tensor_impl.html#a47ce59523d6014898bf0ab9a6e039196" title="Resizes a tensor. ">Resize()</a>, since we only specify the first dimension This does not copy over the old data to the newly allocated space </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00981">981</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00969">969</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1145,7 +1136,7 @@ template&lt;class T &gt; </div>
 <p>Resizes the tensor without touching underlying storage. </p>
 <p>This requires the total size of the tensor to remains constant. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01055">1055</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01043">1043</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1178,7 +1169,7 @@ template&lt;typename... Ts&gt; </div>
 <p>The underlying storage may be deleted after calling Resize: if the new shape leads to a different number of items in the tensor, the old memory is deleted and new memory will be allocated next time you call <a class="el" href="structc10_1_1_tensor_impl.html#aef23733a10c22f034c111faa2787eb15" title="Returns a typed pointer of the underlying storage. ">mutable_data()</a>. However, if the shape is different but the total number of items is the same, the underlying storage is kept.</p>
 <p>This method respects caffe2_keep_on_shrink. Consult the internal logic of this method to see exactly under what circumstances this flag matters. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01026">1026</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01014">1014</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1210,7 +1201,7 @@ template&lt;typename... Ts&gt; </div>
 
 <p>Reimplemented in <a class="el" href="structat_1_1_sparse_tensor_impl.html#afe0c268576fc6edeae58c80a30cab3e9">at::SparseTensorImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00676">676</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00672">672</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1239,7 +1230,7 @@ template&lt;typename... Ts&gt; </div>
 <p>Set whether a tensor allows changes to its metadata (e.g. </p>
 <p>sizes / strides / storage / storage_offset). </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00818">818</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00814">814</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1268,7 +1259,7 @@ template&lt;typename... Ts&gt; </div>
 <p>Set whether or not a tensor requires gradient. </p>
 <p>It is only valid to call this method on a Variable. See Note [<a class="el" href="struct_tensor.html">Tensor</a> versus Variable in C++]. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00504">504</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00503">503</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1310,7 +1301,7 @@ template&lt;typename... Ts&gt; </div>
 
 <p>Reimplemented in <a class="el" href="structat_1_1_sparse_tensor_impl.html#a05a95c73a6dd4b33a4603afbb5729900">at::SparseTensorImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00692">692</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00688">688</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1350,7 +1341,7 @@ template&lt;typename... Ts&gt; </div>
 <p>WARNING: This function does not check if the requested sizes/strides are in bounds for the storage that is allocated; this is the responsibility of the caller</p>
 <p>WARNING: It is NOT valid to call this method on a Variable. See Note [We regret making Variable hold a <a class="el" href="struct_tensor.html">Tensor</a>] </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00759">759</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00755">755</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1380,7 +1371,7 @@ template&lt;typename... Ts&gt; </div>
 <p>WARNING: This function does not check if the requested sizes/strides are in bounds for the storage that is allocated; this is the responsibility of the caller</p>
 <p>WARNING: It is NOT valid to call this method on a Variable. See Note [We regret making Variable hold a <a class="el" href="struct_tensor.html">Tensor</a>] </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00734">734</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00730">730</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1411,7 +1402,7 @@ template&lt;typename... Ts&gt; </div>
 
 <p>Reimplemented in <a class="el" href="structat_1_1_sparse_tensor_impl.html#a9cee74438ad0692e11a8c6451b2540f5">at::SparseTensorImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00719">719</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00715">715</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1452,7 +1443,7 @@ template&lt;typename... Ts&gt; </div>
 
 <p>Reimplemented in <a class="el" href="structat_1_1_sparse_tensor_impl.html#a77f38dca456a927e70e0ec0c86064ac9">at::SparseTensorImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00705">705</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00701">701</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1482,7 +1473,7 @@ template&lt;typename... Ts&gt; </div>
 <p>You probably don't want to call this, unless you are writing binding code.</p>
 <p>WARNING: It is NOT valid to call this method on a Variable. See Note [We regret making Variable hold a <a class="el" href="struct_tensor.html">Tensor</a>] </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00455">455</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00454">454</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1512,7 +1503,7 @@ template&lt;typename... Ts&gt; </div>
 <p>To share data between two tensors, the sizes of the two tensors must be equal already. The reason we do not implicitly do a Resize to make the two tensors have the same shape is that we want to allow tensors of different shapes but the same number of items to still be able to share data. This allows one to e.g. have a n-dimensional <a class="el" href="struct_tensor.html">Tensor</a> and a flattened version sharing the same underlying storage.</p>
 <p>The source tensor should already have its data allocated. </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01102">1102</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01090">1090</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1570,7 +1561,7 @@ template&lt;typename... Ts&gt; </div>
 <p>This is just like <a class="el" href="structc10_1_1_tensor_impl.html#a63073c2e89fa7a07327764a3f44fe002" title="Return a typed data pointer to the actual data which this tensor refers to. ">data()</a>, except it works with Variables. </p>
 <p>This function will go away once Variable and <a class="el" href="struct_tensor.html">Tensor</a> are merged. See Note [We regret making Variable hold a <a class="el" href="struct_tensor.html">Tensor</a>] </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00613">613</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00609">609</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1605,7 +1596,7 @@ template&lt;typename... Ts&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad6cc24a26f0fc34beb6ec663dbd49232"></a>
+<a class="anchor" id="a5f93ba4342dad6abb175a9e69cac8478"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1621,7 +1612,7 @@ template&lt;typename... Ts&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1629,7 +1620,7 @@ template&lt;typename... Ts&gt; </div>
 <p>True if a tensor is storage initialized. </p>
 <p><a class="el" href="class_a.html" title="does bound shape inference given a C2 net. ">A</a> tensor may become storage UNINITIALIZED after a <a class="el" href="structc10_1_1_tensor_impl.html#a47ce59523d6014898bf0ab9a6e039196" title="Resizes a tensor. ">Resize()</a> or <a class="el" href="structc10_1_1_tensor_impl.html#a12f517489c9841da628d8a92b361521f" title="Release whatever memory the tensor was holding but keep size and type information. ">FreeMemory()</a> </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01249">1249</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l01237">1237</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1661,7 +1652,7 @@ template&lt;typename... Ts&gt; </div>
 
 <p>Reimplemented in <a class="el" href="structat_1_1_sparse_tensor_impl.html#ada5faa634372fa15a4d6a91f90ea39da">at::SparseTensorImpl</a>, and <a class="el" href="structc10_1_1_undefined_tensor_impl.html#a164302c882d59d6238d8eb19071ce49a">c10::UndefinedTensorImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00654">654</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00650">650</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1720,7 +1711,7 @@ template&lt;typename... Ts&gt; </div>
 <p>In the future, this will be the sole piece of information required to dispatch to an operator; however, at the moment, it is not used for dispatch.</p>
 <p><a class="el" href="structc10_1_1_tensor_impl.html#a3fff488761f6870393167667d0496f9d" title="Return the TensorTypeId corresponding to this Tensor. ">type_id()</a> and type() are NOT in one-to-one correspondence; we only have a single <a class="el" href="structc10_1_1_tensor_impl.html#a3fff488761f6870393167667d0496f9d" title="Return the TensorTypeId corresponding to this Tensor. ">type_id()</a> for CPU tensors, but many Types (CPUFloatTensor, CPUDoubleTensor...) </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00275">275</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00274">274</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1751,7 +1742,7 @@ template&lt;typename T &gt; </div>
 <p>You are responsible for ensuring that all invariants required by <a class="el" href="structc10_1_1_tensor_impl.html#a63073c2e89fa7a07327764a3f44fe002" title="Return a typed data pointer to the actual data which this tensor refers to. ">data()</a> are upheld here.</p>
 <p>WARNING: It is NOT valid to call this method on a Variable. See Note [We regret making Variable hold a <a class="el" href="struct_tensor.html">Tensor</a>] </p>
 
-<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00625">625</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_tensor_impl_8h_source.html#l00621">621</a> of file <a class="el" href="_tensor_impl_8h_source.html">TensorImpl.h</a>.</p>
 
 </div>
 </div>
@@ -1763,7 +1754,7 @@ template&lt;typename T &gt; </div>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 26 2019 13:05:59 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 21 2019 13:06:25 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

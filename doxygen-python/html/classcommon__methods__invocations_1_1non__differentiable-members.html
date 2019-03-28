@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: torch/csrc/jit/passes/quantization.h Source File</title>
+<title>Caffe2 - Python API: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo" width="56"><a href="/"><img alt="Logo" src="Caffe2-with-name-55-tall.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Caffe2 - C++ API
+   <div id="projectname">Caffe2 - Python API
    </div>
    <div id="projectbrief">A deep learning, cross platform ML framework</div>
   </td>
@@ -43,10 +43,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li><a href="namespaces.html"><span>Packages</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
       <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
@@ -70,8 +69,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -90,20 +91,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e164125afd4f8f52f497b29f866a4ef6.html">torch</a></li><li class="navelem"><a class="el" href="dir_91e75ef7950e2f69d345584f55c92322.html">csrc</a></li><li class="navelem"><a class="el" href="dir_f129c722a3a2f7b242d0c1addcfc5ee4.html">jit</a></li><li class="navelem"><a class="el" href="dir_461b5a2fd72c95f5fe46bbda6686c1b4.html">passes</a></li>  </ul>
+<li class="navelem"><b>common_methods_invocations</b></li><li class="navelem"><a class="el" href="classcommon__methods__invocations_1_1non__differentiable.html">non_differentiable</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">quantization.h</div>  </div>
+<div class="title">common_methods_invocations.non_differentiable Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;torch/csrc/jit/ir.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacetorch.html">torch</a> {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>jit {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;TORCH_API <span class="keywordtype">void</span> ExpandFakeQuantNodes(std::shared_ptr&lt;Graph&gt;&amp; graph);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;TORCH_API <span class="keywordtype">void</span> PropagateQuantInfo(std::shared_ptr&lt;Graph&gt;&amp; graph);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;TORCH_API <span class="keywordtype">void</span> InsertObserverNodes(std::shared_ptr&lt;Graph&gt;&amp; graph);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;TORCH_API <span class="keywordtype">void</span> InsertFakeQuantNodes(std::shared_ptr&lt;Graph&gt;&amp; graph);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;TORCH_API <span class="keywordtype">void</span> QuantLinting(std::shared_ptr&lt;Graph&gt;&amp; graph);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;TORCH_API <span class="keywordtype">void</span> FoldQuantNodesIntoInputsOutputs(std::shared_ptr&lt;Graph&gt;&amp; graph);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace jit</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// namespace torch</span></div><div class="ttc" id="namespacetorch_html"><div class="ttname"><a href="namespacetorch.html">torch</a></div><div class="ttdoc">This file defines passes used for quantization. </div><div class="ttdef"><b>Definition:</b> <a href="jit__type_8h_source.html#l00017">jit_type.h:17</a></div></div>
-</div><!-- fragment --></div><!-- contents -->
+
+<p>This is the complete list of members for <a class="el" href="classcommon__methods__invocations_1_1non__differentiable.html">common_methods_invocations.non_differentiable</a>, including all inherited members.</p>
+<table class="directory">
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>__init__</b>(self, tensor) (defined in <a class="el" href="classcommon__methods__invocations_1_1non__differentiable.html">common_methods_invocations.non_differentiable</a>)</td><td class="entry"><a class="el" href="classcommon__methods__invocations_1_1non__differentiable.html">common_methods_invocations.non_differentiable</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>tensor</b> (defined in <a class="el" href="classcommon__methods__invocations_1_1non__differentiable.html">common_methods_invocations.non_differentiable</a>)</td><td class="entry"><a class="el" href="classcommon__methods__invocations_1_1non__differentiable.html">common_methods_invocations.non_differentiable</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 26 2019 13:05:57 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 21 2019 13:06:38 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

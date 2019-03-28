@@ -14,6 +14,7 @@ var searchData=
   ['schedulertestnet',['SchedulerTestNet',['../classtest__optim_1_1_scheduler_test_net.html',1,'test_optim']]],
   ['schema',['schema',['../namespaceschema.html',1,'']]],
   ['scope',['scope',['../namespacescope.html',1,'']]],
+  ['scriptclass',['ScriptClass',['../classtorch_1_1jit_1_1_script_class.html',1,'torch::jit']]],
   ['scriptmeta',['ScriptMeta',['../classtorch_1_1jit_1_1_script_meta.html',1,'torch::jit']]],
   ['scriptmodule',['ScriptModule',['../classtorch_1_1jit_1_1_script_module.html',1,'torch::jit']]],
   ['search_5fplugins',['search_plugins',['../classtools_1_1cwrap_1_1cwrap_1_1cwrap.html#a79ba013fdee9911014a612724efae1b5',1,'tools::cwrap::cwrap::cwrap']]],

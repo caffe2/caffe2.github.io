@@ -6,6 +6,7 @@ var searchData=
   ['scalar',['Scalar',['../classcaffe2_1_1python_1_1schema_1_1_scalar.html',1,'caffe2::python::schema']]],
   ['scatter',['Scatter',['../classtorch_1_1nn_1_1parallel_1_1__functions_1_1_scatter.html',1,'torch::nn::parallel::_functions']]],
   ['schedulertestnet',['SchedulerTestNet',['../classtest__optim_1_1_scheduler_test_net.html',1,'test_optim']]],
+  ['scriptclass',['ScriptClass',['../classtorch_1_1jit_1_1_script_class.html',1,'torch::jit']]],
   ['scriptmeta',['ScriptMeta',['../classtorch_1_1jit_1_1_script_meta.html',1,'torch::jit']]],
   ['scriptmodule',['ScriptModule',['../classtorch_1_1jit_1_1_script_module.html',1,'torch::jit']]],
   ['seeddataset',['SeedDataset',['../classtest__dataloader_1_1_seed_dataset.html',1,'test_dataloader']]],

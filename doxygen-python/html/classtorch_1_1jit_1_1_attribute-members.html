@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: torch::jit::script::ScriptTypeParser Class Reference</title>
+<title>Caffe2 - Python API: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo" width="56"><a href="/"><img alt="Logo" src="Caffe2-with-name-55-tall.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Caffe2 - C++ API
+   <div id="projectname">Caffe2 - Python API
    </div>
    <div id="projectbrief">A deep learning, cross platform ML framework</div>
   </td>
@@ -43,9 +43,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="namespaces.html"><span>Packages</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
@@ -70,10 +69,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -92,51 +91,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacetorch.html">torch</a></li><li class="navelem"><b>jit</b></li><li class="navelem"><b>script</b></li><li class="navelem"><a class="el" href="classtorch_1_1jit_1_1script_1_1_script_type_parser.html">ScriptTypeParser</a></li>  </ul>
+<li class="navelem"><b>torch</b></li><li class="navelem"><b>jit</b></li><li class="navelem"><a class="el" href="classtorch_1_1jit_1_1_attribute.html">Attribute</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">torch::jit::script::ScriptTypeParser Class Reference</div>  </div>
+<div class="title">torch.jit.Attribute Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>class <a class="el" href="classtorch_1_1jit_1_1script_1_1_script_type_parser.html" title="class ScriptTypeParser ">ScriptTypeParser</a>  
- <a href="classtorch_1_1jit_1_1script_1_1_script_type_parser.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="script__type__parser_8h_source.html">script_type_parser.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a582e1d7d83f96be5e8942be270007367"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a582e1d7d83f96be5e8942be270007367"></a>
-<a class="el" href="classc10_1_1optional.html">c10::optional</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parseBaseTypeName</b> (const <a class="el" href="structtorch_1_1jit_1_1script_1_1_expr.html">Expr</a> &amp;expr) const </td></tr>
-<tr class="separator:a582e1d7d83f96be5e8942be270007367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac81f3be7630e8325a70172151a23d426"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac81f3be7630e8325a70172151a23d426"></a>
-c10::TypePtr&#160;</td><td class="memItemRight" valign="bottom"><b>parseTypeFromExpr</b> (const <a class="el" href="structtorch_1_1jit_1_1script_1_1_expr.html">Expr</a> &amp;expr) const </td></tr>
-<tr class="separator:ac81f3be7630e8325a70172151a23d426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb2325e01b99107f9afea8eb07b6fcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeb2325e01b99107f9afea8eb07b6fcd"></a>
-<a class="el" href="classc10_1_1optional.html">c10::optional</a>&lt; std::pair&lt; c10::TypePtr, int32_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parseBroadcastList</b> (const <a class="el" href="structtorch_1_1jit_1_1script_1_1_expr.html">Expr</a> &amp;expr) const </td></tr>
-<tr class="separator:aeeb2325e01b99107f9afea8eb07b6fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1a834f7ce92bcc0837e4a0639fe50a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1a834f7ce92bcc0837e4a0639fe50a1"></a>
-c10::TypePtr&#160;</td><td class="memItemRight" valign="bottom"><b>parseType</b> (const std::string &amp;str)</td></tr>
-<tr class="separator:ac1a834f7ce92bcc0837e4a0639fe50a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>class <a class="el" href="classtorch_1_1jit_1_1script_1_1_script_type_parser.html" title="class ScriptTypeParser ">ScriptTypeParser</a> </p>
-<p>Parses expressions in our typed AST format (<a class="el" href="structtorch_1_1jit_1_1script_1_1_tree_view.html">TreeView</a>) into types and typenames. </p>
-
-<p>Definition at line <a class="el" href="script__type__parser_8h_source.html#l00016">16</a> of file <a class="el" href="script__type__parser_8h_source.html">script_type_parser.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>torch/csrc/jit/script/<a class="el" href="script__type__parser_8h_source.html">script_type_parser.h</a></li>
-<li>torch/csrc/jit/script/<a class="el" href="script__type__parser_8cpp_source.html">script_type_parser.cpp</a></li>
-</ul>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="classtorch_1_1jit_1_1_attribute.html">torch.jit.Attribute</a>, including all inherited members.</p>
+<table class="directory">
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>__init__</b>(self, value, the_type) (defined in <a class="el" href="classtorch_1_1jit_1_1_attribute.html">torch.jit.Attribute</a>)</td><td class="entry"><a class="el" href="classtorch_1_1jit_1_1_attribute.html">torch.jit.Attribute</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>type</b> (defined in <a class="el" href="classtorch_1_1jit_1_1_attribute.html">torch.jit.Attribute</a>)</td><td class="entry"><a class="el" href="classtorch_1_1jit_1_1_attribute.html">torch.jit.Attribute</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>value</b> (defined in <a class="el" href="classtorch_1_1jit_1_1_attribute.html">torch.jit.Attribute</a>)</td><td class="entry"><a class="el" href="classtorch_1_1jit_1_1_attribute.html">torch.jit.Attribute</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 26 2019 13:06:05 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 21 2019 13:06:39 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

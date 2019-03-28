@@ -369,7 +369,7 @@ CAFFE2_API friend std::ostream &amp;&#160;</td><td class="memItemRight" valign="
 <p><a class="el" href="classcaffe2_1_1_op_schema.html" title="A class to record the schema of an op. ">OpSchema</a> records the common interface of an op specified by its name. This is optional for each operator implemented in Caffe2 but is strongly recommended.</p>
 <p>To register an <a class="el" href="classcaffe2_1_1_op_schema.html" title="A class to record the schema of an op. ">OpSchema</a>, one can use the macro OPERATOR_SCHEMA(name) and then append the various functions in the class. For example, for an op that takes in two inputs, one output, and the first input and output could be in-place, can be written as </p><pre class="fragment">OPERATOR_SCHEMA(name)
     .NumInputs(2).NumOutputs(1).AllowInplace({{0, 0}});</pre> 
-<p>Definition at line <a class="el" href="operator__schema_8h_source.html#l00040">40</a> of file <a class="el" href="operator__schema_8h_source.html">operator_schema.h</a>.</p>
+<p>Definition at line <a class="el" href="operator__schema_8h_source.html#l00039">39</a> of file <a class="el" href="operator__schema_8h_source.html">operator_schema.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>caffe2/core/<a class="el" href="operator__schema_8h_source.html">operator_schema.h</a></li>
 <li>caffe2/core/<a class="el" href="operator__schema_8cc_source.html">operator_schema.cc</a></li>
@@ -378,7 +378,7 @@ CAFFE2_API friend std::ostream &amp;&#160;</td><td class="memItemRight" valign="
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 26 2019 13:06:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 21 2019 13:06:29 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

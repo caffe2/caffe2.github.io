@@ -466,9 +466,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:afdfbb4500783abbf7f5e34cf4e9f4d86 inherit pub_static_methods_classcaffe2_1_1_conv_pool_op_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdfbb4500783abbf7f5e34cf4e9f4d86"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>InferOutputSize</b> (const <a class="el" href="classc10_1_1_array_ref.html">at::IntArrayRef</a> &amp;input_dims, const int output_channel, const StorageOrder order, const bool global_pooling, const LegacyPadding legacy_pad, const std::vector&lt; int &gt; &amp;dilation, const std::vector&lt; int &gt; &amp;stride, std::vector&lt; int &gt; *kernel, std::vector&lt; int &gt; *pads, std::vector&lt; int &gt; *output_dims)</td></tr>
 <tr class="separator:afdfbb4500783abbf7f5e34cf4e9f4d86 inherit pub_static_methods_classcaffe2_1_1_conv_pool_op_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a733bedb3bdebebc055ed0fe4454caa83 inherit pub_static_methods_classcaffe2_1_1_conv_pool_op_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a733bedb3bdebebc055ed0fe4454caa83"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>InferOutputSize64</b> (const <a class="el" href="classc10_1_1_array_ref.html">at::IntArrayRef</a> &amp;input_dims, const int output_channel, const StorageOrder order, const bool global_pooling, const LegacyPadding legacy_pad, const std::vector&lt; int &gt; &amp;dilation, const std::vector&lt; int &gt; &amp;stride, std::vector&lt; int &gt; *kernel, std::vector&lt; int &gt; *pads, std::vector&lt; int64_t &gt; *output_dims)</td></tr>
-<tr class="separator:a733bedb3bdebebc055ed0fe4454caa83 inherit pub_static_methods_classcaffe2_1_1_conv_pool_op_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cafb774b182dd8d3bbefd24292d68a9 inherit pub_static_methods_classcaffe2_1_1_conv_pool_op_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cafb774b182dd8d3bbefd24292d68a9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>InferOutputSize64</b> (const at::IntList &amp;input_dims, const int output_channel, const StorageOrder order, const bool global_pooling, const LegacyPadding legacy_pad, const std::vector&lt; int &gt; &amp;dilation, const std::vector&lt; int &gt; &amp;stride, std::vector&lt; int &gt; *kernel, std::vector&lt; int &gt; *pads, std::vector&lt; int64_t &gt; *output_dims)</td></tr>
+<tr class="separator:a5cafb774b182dd8d3bbefd24292d68a9 inherit pub_static_methods_classcaffe2_1_1_conv_pool_op_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28d183c7d83fd4a925ec0af27654f45a inherit pub_static_methods_classcaffe2_1_1_conv_pool_op_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28d183c7d83fd4a925ec0af27654f45a"></a>
 static struct <a class="el" href="structcaffe2_1_1_op_schema_1_1_cost.html">OpSchema::Cost</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CostInferenceForConv</b> (const OperatorDef &amp;def, const vector&lt; TensorShape &gt; &amp;inputs)</td></tr>
 <tr class="separator:a28d183c7d83fd4a925ec0af27654f45a inherit pub_static_methods_classcaffe2_1_1_conv_pool_op_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -599,7 +599,7 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1_observer
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 26 2019 13:06:01 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 21 2019 13:06:28 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

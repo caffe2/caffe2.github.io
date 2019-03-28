@@ -320,12 +320,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 std::unique_ptr&lt; <a class="el" href="structc10_1_1_autograd_meta_interface.html">c10::AutogradMetaInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_impl.html#ad7caeea7f6629be2b78b1a43db6b4603">detach_autograd_meta</a> ()</td></tr>
 <tr class="memdesc:ad7caeea7f6629be2b78b1a43db6b4603 inherit pub_methods_structc10_1_1_tensor_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach the autograd metadata unique_ptr from this tensor, and return it. <br /></td></tr>
 <tr class="separator:ad7caeea7f6629be2b78b1a43db6b4603 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca7ba5174387a58d6d1c6dc9603ef4e9 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca7ba5174387a58d6d1c6dc9603ef4e9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_pyobj</b> (PyObject *pyobj) noexcept</td></tr>
-<tr class="separator:aca7ba5174387a58d6d1c6dc9603ef4e9 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba94ad40fd2e5db67a79d4b2e07c736 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ba94ad40fd2e5db67a79d4b2e07c736"></a>
-PyObject *&#160;</td><td class="memItemRight" valign="bottom"><b>pyobj</b> () const noexcept</td></tr>
-<tr class="separator:a6ba94ad40fd2e5db67a79d4b2e07c736 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f9c5b2101ccad1d8f83446820cd7c07 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f9c5b2101ccad1d8f83446820cd7c07"></a>
 DeviceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_impl.html#a5f9c5b2101ccad1d8f83446820cd7c07">device_type</a> () const </td></tr>
 <tr class="memdesc:a5f9c5b2101ccad1d8f83446820cd7c07 inherit pub_methods_structc10_1_1_tensor_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">The device type of a <a class="el" href="struct_tensor.html">Tensor</a>, e.g., DeviceType::CPU or DeviceType::CUDA. <br /></td></tr>
@@ -364,9 +358,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShareExternalPointer<
 <tr class="memitem:aef23733a10c22f034c111faa2787eb15 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_t.html">T</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_impl.html#aef23733a10c22f034c111faa2787eb15">mutable_data</a> ()</td></tr>
 <tr class="memdesc:aef23733a10c22f034c111faa2787eb15 inherit pub_methods_structc10_1_1_tensor_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a typed pointer of the underlying storage.  <a href="#aef23733a10c22f034c111faa2787eb15">More...</a><br /></td></tr>
 <tr class="separator:aef23733a10c22f034c111faa2787eb15 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6cc24a26f0fc34beb6ec663dbd49232 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_impl.html#ad6cc24a26f0fc34beb6ec663dbd49232">storage_initialized</a> () const </td></tr>
-<tr class="memdesc:ad6cc24a26f0fc34beb6ec663dbd49232 inherit pub_methods_structc10_1_1_tensor_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if a tensor is storage initialized.  <a href="#ad6cc24a26f0fc34beb6ec663dbd49232">More...</a><br /></td></tr>
-<tr class="separator:ad6cc24a26f0fc34beb6ec663dbd49232 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f93ba4342dad6abb175a9e69cac8478 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_impl.html#a5f93ba4342dad6abb175a9e69cac8478">storage_initialized</a> () const noexcept</td></tr>
+<tr class="memdesc:a5f93ba4342dad6abb175a9e69cac8478 inherit pub_methods_structc10_1_1_tensor_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if a tensor is storage initialized.  <a href="#a5f93ba4342dad6abb175a9e69cac8478">More...</a><br /></td></tr>
+<tr class="separator:a5f93ba4342dad6abb175a9e69cac8478 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a944bc5a7f7a9514afd6dae6b34924ab7 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc10_1_1_tensor_impl.html#a944bc5a7f7a9514afd6dae6b34924ab7">dtype_initialized</a> () const noexcept</td></tr>
 <tr class="memdesc:a944bc5a7f7a9514afd6dae6b34924ab7 inherit pub_methods_structc10_1_1_tensor_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if a tensor is dtype initialized.  <a href="#a944bc5a7f7a9514afd6dae6b34924ab7">More...</a><br /></td></tr>
 <tr class="separator:a944bc5a7f7a9514afd6dae6b34924ab7 inherit pub_methods_structc10_1_1_tensor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -421,9 +415,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a72f073f6bd616b46ad263fdbbc1193ea inherit pro_attribs_structc10_1_1_tensor_impl"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72f073f6bd616b46ad263fdbbc1193ea"></a>
 std::unique_ptr&lt; <a class="el" href="structc10_1_1_autograd_meta_interface.html">c10::AutogradMetaInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>autograd_meta_</b> = nullptr</td></tr>
 <tr class="separator:a72f073f6bd616b46ad263fdbbc1193ea inherit pro_attribs_structc10_1_1_tensor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f8d87c5fdf20a1af379fb91e0903008 inherit pro_attribs_structc10_1_1_tensor_impl"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f8d87c5fdf20a1af379fb91e0903008"></a>
-PyObject *&#160;</td><td class="memItemRight" valign="bottom"><b>pyobj_</b> = nullptr</td></tr>
-<tr class="separator:a6f8d87c5fdf20a1af379fb91e0903008 inherit pro_attribs_structc10_1_1_tensor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf92cd32b02c0cb9e00b4427e33fdbbc inherit pro_attribs_structc10_1_1_tensor_impl"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf92cd32b02c0cb9e00b4427e33fdbbc"></a>
 <a class="el" href="classc10_1_1_small_vector.html">SmallVector</a>&lt; int64_t, 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sizes_</b></td></tr>
 <tr class="separator:aaf92cd32b02c0cb9e00b4427e33fdbbc inherit pro_attribs_structc10_1_1_tensor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -861,7 +852,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>reserved_</b> = false
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 26 2019 13:05:58 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 21 2019 13:06:25 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

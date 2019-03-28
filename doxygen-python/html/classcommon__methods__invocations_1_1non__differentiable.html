@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - Python API: torch/backends/mkldnn/__init__.py Source File</title>
+<title>Caffe2 - Python API: common_methods_invocations.non_differentiable Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -44,8 +44,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="namespaces.html"><span>Packages</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="/doxygen-c/html/classes.html"><span>C++&#160;API</span></a></li>
       <li><a href="/doxygen-python/html/annotated.html"><span>Python&#160;API</span></a></li>
       <li><a href="https://github.com/caffe2/caffe2"><span>GitHub</span></a></li>
@@ -69,7 +69,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -88,19 +91,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e164125afd4f8f52f497b29f866a4ef6.html">torch</a></li><li class="navelem"><a class="el" href="dir_bb1c8203c9cda7b82a8c44675757af67.html">backends</a></li><li class="navelem"><a class="el" href="dir_f5130eb2087e52f4abfe12ee71c51e18.html">mkldnn</a></li>  </ul>
+<li class="navelem"><b>common_methods_invocations</b></li><li class="navelem"><a class="el" href="classcommon__methods__invocations_1_1non__differentiable.html">non_differentiable</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="classcommon__methods__invocations_1_1non__differentiable-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">__init__.py</div>  </div>
+<div class="title">common_methods_invocations.non_differentiable Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> torch</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">def </span>is_available():</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="stringliteral">r&quot;&quot;&quot;Returns whether PyTorch is built with MKL-DNN support.&quot;&quot;&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordflow">return</span> torch._C.has_mkldnn</div></div><!-- fragment --></div><!-- contents -->
+<div class="dynheader">
+Inheritance diagram for common_methods_invocations.non_differentiable:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classcommon__methods__invocations_1_1non__differentiable.png" usemap="#common_5Fmethods_5Finvocations.non_5Fdifferentiable_map" alt=""/>
+  <map id="common_5Fmethods_5Finvocations.non_5Fdifferentiable_map" name="common_methods_invocations.non_differentiable_map">
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aab7cec5cf6d8da17afa2b5d6f783963e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab7cec5cf6d8da17afa2b5d6f783963e"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, tensor)</td></tr>
+<tr class="separator:aab7cec5cf6d8da17afa2b5d6f783963e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ab0efa9e9bce35cfec334567e4158ff9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0efa9e9bce35cfec334567e4158ff9e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>tensor</b></td></tr>
+<tr class="separator:ab0efa9e9bce35cfec334567e4158ff9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="common__methods__invocations_8py_source.html#l00075">75</a> of file <a class="el" href="common__methods__invocations_8py_source.html">common_methods_invocations.py</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>test/<a class="el" href="common__methods__invocations_8py_source.html">common_methods_invocations.py</a></li>
+</ul>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 26 2019 13:06:09 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 21 2019 13:06:38 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

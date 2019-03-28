@@ -141,10 +141,10 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, ms
 <tr class="separator:a070f1dd86a9229f8a03adfb4c5309470"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b9d676f1ea09869131b385359ac644e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classverify_1_1_errors.html#a3b9d676f1ea09869131b385359ac644e">failIfErrs</a> (self)</td></tr>
 <tr class="separator:a3b9d676f1ea09869131b385359ac644e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dab2763f075fee5d5034975f6d0950e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classverify_1_1_errors.html#a8dab2763f075fee5d5034975f6d0950e">recover</a> (self)</td></tr>
-<tr class="separator:a8dab2763f075fee5d5034975f6d0950e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa045ca50d64c1d5dcf5d7b0113748cb7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classverify_1_1_errors.html#aa045ca50d64c1d5dcf5d7b0113748cb7">addErrCtxt</a> (self, msg)</td></tr>
-<tr class="separator:aa045ca50d64c1d5dcf5d7b0113748cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae8fcb0877cb68905ecdb302c9e731b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classverify_1_1_errors.html#a0ae8fcb0877cb68905ecdb302c9e731b">recover</a> (parent_self)</td></tr>
+<tr class="separator:a0ae8fcb0877cb68905ecdb302c9e731b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ade1cf1d5b66609d3417ba076675aa2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classverify_1_1_errors.html#a9ade1cf1d5b66609d3417ba076675aa2">addErrCtxt</a> (parent_self, msg)</td></tr>
+<tr class="separator:a9ade1cf1d5b66609d3417ba076675aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae0e93052c933811a6b2c1f611c7da8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae0e93052c933811a6b2c1f611c7da8a"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>__enter__</b> (self)</td></tr>
 <tr class="separator:aae0e93052c933811a6b2c1f611c7da8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,7 +212,7 @@ It is intended to be used like a context manager:
 
 </div>
 </div>
-<a class="anchor" id="aa045ca50d64c1d5dcf5d7b0113748cb7"></a>
+<a class="anchor" id="a9ade1cf1d5b66609d3417ba076675aa2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -220,7 +220,7 @@ It is intended to be used like a context manager:
           <td class="memname">def verify.Errors.addErrCtxt </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
+          <td class="paramname"><em>parent_self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -242,7 +242,7 @@ applicable to all errors in the area.  Example usage:
 &gt;&gt;&gt; with errs.addErrCtx("Some text"):
 &gt;&gt;&gt;     ...
 </pre> 
-<p>Definition at line <a class="el" href="verify_8py_source.html#l00198">198</a> of file <a class="el" href="verify_8py_source.html">verify.py</a>.</p>
+<p>Definition at line <a class="el" href="verify_8py_source.html#l00196">196</a> of file <a class="el" href="verify_8py_source.html">verify.py</a>.</p>
 
 </div>
 </div>
@@ -553,7 +553,7 @@ invokes continuation 'k' with the error message.
 
 </div>
 </div>
-<a class="anchor" id="a8dab2763f075fee5d5034975f6d0950e"></a>
+<a class="anchor" id="a0ae8fcb0877cb68905ecdb302c9e731b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -561,7 +561,7 @@ invokes continuation 'k' with the error message.
           <td class="memname">def verify.Errors.recover </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
+          <td class="paramname"><em>parent_self</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -708,7 +708,7 @@ aborts execution if they are not.
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 26 2019 13:06:13 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 21 2019 13:06:40 for Caffe2 - Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
