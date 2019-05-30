@@ -4,7 +4,6 @@ title: Install
 layout: docs-getting-started
 permalink: /docs/getting-started.html
 ---
-<p>&nbsp;</p>
 {% capture mac %}{% include_relative getting-started/mac.md %}{% endcapture %}
 {% capture ubuntu %}{% include_relative getting-started/ubuntu.md %}{% endcapture %}
 {% capture centos %}{% include_relative getting-started/centos.md %}{% endcapture %}
