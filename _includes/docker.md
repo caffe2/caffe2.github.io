@@ -1,4 +1,4 @@
-{% capture outro %}{% include_relative getting-started/outro.md %}{% endcapture %}
+{% capture outro %}{% include outro.md %}{% endcapture %}
 
 {{ outro | markdownify }}
 
