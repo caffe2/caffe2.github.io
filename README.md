@@ -1,3 +1,10 @@
+## Please Note: Caffe2 APIs are being deprecated
+Caffe2 is now a part of PyTorch.
+
+While the APIs will continue to work, we encourage you to use the PyTorch APIs.
+
+Read more [here](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTorch_1_0.html) or visit [pytorch.org](https://pytorch.org/)
+
 ## User Documentation for Caffe2
 
 This directory will contain the user and feature documentation for Caffe2. The documentation will be hosted on GitHub pages.
