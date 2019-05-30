@@ -6,9 +6,13 @@
         <img class="projectLogo" height="75px" src="{{ '/static/logo.svg' | relative_url }}" alt="{{ site.title }}" title="{{ site.title }}" />
         <h2 id="project_tagline">{{ site.tagline }}</h2></div>
         <section id="intro">
-          <p>
-            {{ site.description }}
-          </p>
+            {% if page.excerpt %}
+              <p>{{ page.excerpt | strip_html }}</p>
+            {% else %}
+              <p>
+                {{ site.description }}
+              </p>
+            {% endif %}
         </section>
         <div id="promo" class="section promoSection">
           {% for promo in site.data.promo %}

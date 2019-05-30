@@ -6,7 +6,7 @@
       <h2 id="project_tagline" class="fbossFontLight">{{ site.tagline }}</h2>
 
       <section id="intro">
-        <p>{{ site.description }}</p>
+        <p>{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}</p>
       </section>
       <div id="promo" class="section promoSection">
         {% for promo in site.data.promo %}
