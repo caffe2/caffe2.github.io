@@ -1,7 +1,7 @@
 ---
 docid: getting-started
 title: Install
-layout: docs-getting-started
+layout: doc-getting-started
 permalink: /docs/getting-started.html
 ---
 {% capture mac %}{% include_relative getting-started/mac.md %}{% endcapture %}
