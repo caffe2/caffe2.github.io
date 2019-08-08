@@ -99,7 +99,7 @@ Caffe2 provides some of the utility ops to manipulate above representations and 
 
 ### Converting between representations
 
-* `LengthsToSegmentIds` takes a vector of lengths and produces a sorted segment vector that has the length of sum of the input vector and each segment id is replicated corresponding number of times. Simple implementation in python would be `[id for _ in range(x) for id,x in enumerate(lengths)]`
+* `LengthsToSegmentIds` takes a vector of lengths and produces a sorted segment vector that has the length of sum of the lengths vector and each segment id is replicated corresponding number of times. Simple implementation in python would be `[id for id,x in enumerate(lengths) for _ in range(x)]`
 * `SegmentIdsToLengthsOp` is the reverse operation going from sorted segment ids back to the length vector.
 
 ### Basic sparse operations
